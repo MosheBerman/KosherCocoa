@@ -190,6 +190,7 @@
 		4618BB7C1664216E00AD3CE5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = KC;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Moshe Berman";
 			};
