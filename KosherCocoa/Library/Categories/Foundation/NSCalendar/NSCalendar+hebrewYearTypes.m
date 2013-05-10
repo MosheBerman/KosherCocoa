@@ -14,24 +14,31 @@
 //  Returns a weekday, 1-7
 + (kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;
 {
-    NSInteger hebrewYear = [[self hebrewCalendar] yearsInDate:date];
+    NSCalendar *hebrewCalendar = [self hebrewCalendar];
     
-    NSDate *roshHashana = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:[NSCalendar hebrewCalendar]];
+    NSInteger hebrewYear = [hebrewCalendar yearsInDate:date];
     
-    return [[self hebrewCalendar] weekdayInDate:roshHashana];
+    NSDate *roshHashana = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:hebrewCalendar];
+    
+    return [hebrewCalendar weekdayInDate:roshHashana];
 }
 
 // Returns a year length, as per the comments in the kYearLength enum
 
 + (kYearLength)lengthOfHebrewYearContainingDate:(NSDate *)date
 {
+    
+    NSCalendar *hebrewCalendar = [self hebrewCalendar];
+    
     NSInteger hebrewYear = [[NSCalendar hebrewCalendar] yearsInDate:date];
     
-    NSDate *previousRoshHashana = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:[NSCalendar hebrewCalendar]];
-    NSDate *nextRoshHashana = [NSDate dateWithDay:1 Month:1 Year:hebrewYear+1 andCalendar:[NSCalendar hebrewCalendar]];
+    NSDate *previousRoshHashana = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:hebrewCalendar];
+    NSDate *nextRoshHashana = [NSDate dateWithDay:1 Month:1 Year:hebrewYear+1 andCalendar:hebrewCalendar];
     
     //  We only care about the ones place in the length.
-    NSInteger length = [[NSCalendar hebrewCalendar] daysFromDate:previousRoshHashana toDate:nextRoshHashana] % 10;
+    NSInteger length = [[NSCalendar hebrewCalendar] daysFromDate:previousRoshHashana toDate:nextRoshHashana];
+    
+    length = length % 10;
     
     //  Years that end in a '3' are considered short
     if (length == 3)

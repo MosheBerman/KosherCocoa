@@ -9,6 +9,7 @@
 #ifndef __KosherCocoaConstants_h
 #define __KosherCocoaConstants_h
 
+
 /* ------------ Zenith constants --------------- */
 
 #define kZenithGeometric 90.0
