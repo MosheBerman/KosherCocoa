@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460E3EE1172EF7AF009CF6CA /* SefiratHaomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EC9172EF7AF009CF6CA /* SefiratHaomer.m */; };
+		460E3EE2172EF7AF009CF6CA /* SefiratHaomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EC9172EF7AF009CF6CA /* SefiratHaomer.m */; };
+		460E3EE3172EF7AF009CF6CA /* ParashatHashavua.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ECB172EF7AF009CF6CA /* ParashatHashavua.m */; };
+		460E3EE4172EF7AF009CF6CA /* ParashatHashavua.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ECB172EF7AF009CF6CA /* ParashatHashavua.m */; };
+		460E3EE5172EF7AF009CF6CA /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ECF172EF7AF009CF6CA /* trigonometry.c */; };
+		460E3EE6172EF7AF009CF6CA /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ECF172EF7AF009CF6CA /* trigonometry.c */; };
+		460E3EE7172EF7AF009CF6CA /* AstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED3172EF7AF009CF6CA /* AstronomicalCalculator.m */; };
+		460E3EE8172EF7AF009CF6CA /* AstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED3172EF7AF009CF6CA /* AstronomicalCalculator.m */; };
+		460E3EE9172EF7AF009CF6CA /* AstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED5172EF7AF009CF6CA /* AstronomicalCalendar.m */; };
+		460E3EEA172EF7AF009CF6CA /* AstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED5172EF7AF009CF6CA /* AstronomicalCalendar.m */; };
+		460E3EEB172EF7AF009CF6CA /* EarthViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED7172EF7AF009CF6CA /* EarthViewer.m */; };
+		460E3EEC172EF7AF009CF6CA /* EarthViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED7172EF7AF009CF6CA /* EarthViewer.m */; };
+		460E3EED172EF7AF009CF6CA /* GeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED9172EF7AF009CF6CA /* GeoLocation.m */; };
+		460E3EEE172EF7AF009CF6CA /* GeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3ED9172EF7AF009CF6CA /* GeoLocation.m */; };
+		460E3EEF172EF7AF009CF6CA /* SunriseAndSunset.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EDB172EF7AF009CF6CA /* SunriseAndSunset.m */; };
+		460E3EF0172EF7AF009CF6CA /* SunriseAndSunset.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EDB172EF7AF009CF6CA /* SunriseAndSunset.m */; };
+		460E3EF1172EF7AF009CF6CA /* ComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EDE172EF7AF009CF6CA /* ComplexZmanimCalendar.m */; };
+		460E3EF2172EF7AF009CF6CA /* ComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EDE172EF7AF009CF6CA /* ComplexZmanimCalendar.m */; };
+		460E3EF3172EF7AF009CF6CA /* ZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EE0172EF7AF009CF6CA /* ZmanimCalendar.m */; };
+		460E3EF4172EF7AF009CF6CA /* ZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EE0172EF7AF009CF6CA /* ZmanimCalendar.m */; };
+		460E3F0C172F07E6009CF6CA /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EFA172F07E6009CF6CA /* NSCalendar+Components.m */; };
+		460E3F0D172F07E6009CF6CA /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EFA172F07E6009CF6CA /* NSCalendar+Components.m */; };
+		460E3F0E172F07E6009CF6CA /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EFC172F07E6009CF6CA /* NSCalendar+DateComparison.m */; };
+		460E3F0F172F07E6009CF6CA /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EFC172F07E6009CF6CA /* NSCalendar+DateComparison.m */; };
+		460E3F10172F07E6009CF6CA /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EFE172F07E6009CF6CA /* NSCalendar+DateManipulation.m */; };
+		460E3F11172F07E6009CF6CA /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3EFE172F07E6009CF6CA /* NSCalendar+DateManipulation.m */; };
+		460E3F12172F07E6009CF6CA /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F00172F07E6009CF6CA /* NSCalendar+Juncture.m */; };
+		460E3F13172F07E6009CF6CA /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F00172F07E6009CF6CA /* NSCalendar+Juncture.m */; };
+		460E3F14172F07E6009CF6CA /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F02172F07E6009CF6CA /* NSCalendar+Ranges.m */; };
+		460E3F15172F07E6009CF6CA /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F02172F07E6009CF6CA /* NSCalendar+Ranges.m */; };
+		460E3F16172F07E6009CF6CA /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F05172F07E6009CF6CA /* NSDate+Components.m */; };
+		460E3F17172F07E6009CF6CA /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F05172F07E6009CF6CA /* NSDate+Components.m */; };
+		460E3F18172F07E6009CF6CA /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F07172F07E6009CF6CA /* NSDate+Description.m */; };
+		460E3F19172F07E6009CF6CA /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F07172F07E6009CF6CA /* NSDate+Description.m */; };
+		460E3F1A172F07E6009CF6CA /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F09172F07E6009CF6CA /* NSDateComponents+AllComponents.m */; };
+		460E3F1B172F07E6009CF6CA /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 460E3F09172F07E6009CF6CA /* NSDateComponents+AllComponents.m */; };
 		4618BB891664216E00AD3CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB881664216E00AD3CE5 /* Foundation.framework */; };
 		4618BB8E1664216E00AD3CE5 /* KosherCocoa.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4618BB8D1664216E00AD3CE5 /* KosherCocoa.h */; };
 		4618BB901664216E00AD3CE5 /* KosherCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618BB8F1664216E00AD3CE5 /* KosherCocoa.m */; };
@@ -16,6 +52,8 @@
 		4618BB9E1664216F00AD3CE5 /* libKosherCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB851664216E00AD3CE5 /* libKosherCocoa.a */; };
 		4618BBA41664216F00AD3CE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4618BBA21664216F00AD3CE5 /* InfoPlist.strings */; };
 		4618BBA71664216F00AD3CE5 /* KosherCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */; };
+		46B4548A173C026A00104D2D /* NSCalendar+hebrewYearTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B45489173C026A00104D2D /* NSCalendar+hebrewYearTypes.m */; };
+		46B4548B173C026A00104D2D /* NSCalendar+hebrewYearTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B45489173C026A00104D2D /* NSCalendar+hebrewYearTypes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +80,44 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		460E3EC8172EF7AF009CF6CA /* SefiratHaomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SefiratHaomer.h; sourceTree = "<group>"; };
+		460E3EC9172EF7AF009CF6CA /* SefiratHaomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SefiratHaomer.m; sourceTree = "<group>"; };
+		460E3ECA172EF7AF009CF6CA /* ParashatHashavua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParashatHashavua.h; sourceTree = "<group>"; };
+		460E3ECB172EF7AF009CF6CA /* ParashatHashavua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParashatHashavua.m; sourceTree = "<group>"; };
+		460E3ECD172EF7AF009CF6CA /* KosherCocoaConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KosherCocoaConstants.h; path = Headers/KosherCocoaConstants.h; sourceTree = "<group>"; };
+		460E3ECF172EF7AF009CF6CA /* trigonometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trigonometry.c; sourceTree = "<group>"; };
+		460E3ED0172EF7AF009CF6CA /* trigonometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trigonometry.h; sourceTree = "<group>"; };
+		460E3ED2172EF7AF009CF6CA /* AstronomicalCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalCalculator.h; sourceTree = "<group>"; };
+		460E3ED3172EF7AF009CF6CA /* AstronomicalCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalCalculator.m; sourceTree = "<group>"; };
+		460E3ED4172EF7AF009CF6CA /* AstronomicalCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalCalendar.h; sourceTree = "<group>"; };
+		460E3ED5172EF7AF009CF6CA /* AstronomicalCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalCalendar.m; sourceTree = "<group>"; };
+		460E3ED6172EF7AF009CF6CA /* EarthViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthViewer.h; sourceTree = "<group>"; };
+		460E3ED7172EF7AF009CF6CA /* EarthViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthViewer.m; sourceTree = "<group>"; };
+		460E3ED8172EF7AF009CF6CA /* GeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoLocation.h; sourceTree = "<group>"; };
+		460E3ED9172EF7AF009CF6CA /* GeoLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoLocation.m; sourceTree = "<group>"; };
+		460E3EDA172EF7AF009CF6CA /* SunriseAndSunset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunriseAndSunset.h; sourceTree = "<group>"; };
+		460E3EDB172EF7AF009CF6CA /* SunriseAndSunset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunriseAndSunset.m; sourceTree = "<group>"; };
+		460E3EDD172EF7AF009CF6CA /* ComplexZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexZmanimCalendar.h; sourceTree = "<group>"; };
+		460E3EDE172EF7AF009CF6CA /* ComplexZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexZmanimCalendar.m; sourceTree = "<group>"; };
+		460E3EDF172EF7AF009CF6CA /* ZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZmanimCalendar.h; sourceTree = "<group>"; };
+		460E3EE0172EF7AF009CF6CA /* ZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZmanimCalendar.m; sourceTree = "<group>"; };
+		460E3EF7172F07E6009CF6CA /* MBCalendarCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = MBCalendarCategories.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3EF9172F07E6009CF6CA /* NSCalendar+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSCalendar+Components.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3EFA172F07E6009CF6CA /* NSCalendar+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSCalendar+Components.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		460E3EFB172F07E6009CF6CA /* NSCalendar+DateComparison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSCalendar+DateComparison.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3EFC172F07E6009CF6CA /* NSCalendar+DateComparison.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSCalendar+DateComparison.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		460E3EFD172F07E6009CF6CA /* NSCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSCalendar+DateManipulation.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3EFE172F07E6009CF6CA /* NSCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSCalendar+DateManipulation.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		460E3EFF172F07E6009CF6CA /* NSCalendar+Juncture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSCalendar+Juncture.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3F00172F07E6009CF6CA /* NSCalendar+Juncture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSCalendar+Juncture.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		460E3F01172F07E6009CF6CA /* NSCalendar+Ranges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSCalendar+Ranges.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3F02172F07E6009CF6CA /* NSCalendar+Ranges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSCalendar+Ranges.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		460E3F04172F07E6009CF6CA /* NSDate+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDate+Components.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3F05172F07E6009CF6CA /* NSDate+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDate+Components.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		460E3F06172F07E6009CF6CA /* NSDate+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDate+Description.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3F07172F07E6009CF6CA /* NSDate+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDate+Description.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		460E3F08172F07E6009CF6CA /* NSDateComponents+AllComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSDateComponents+AllComponents.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		460E3F09172F07E6009CF6CA /* NSDateComponents+AllComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSDateComponents+AllComponents.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		4618BB851664216E00AD3CE5 /* libKosherCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKosherCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4618BB881664216E00AD3CE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4618BB8C1664216E00AD3CE5 /* KosherCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KosherCocoa-Prefix.pch"; sourceTree = "<group>"; };
@@ -54,6 +130,8 @@
 		4618BBA31664216F00AD3CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTests.h; sourceTree = "<group>"; };
 		4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KosherCocoaTests.m; sourceTree = "<group>"; };
+		46B45488173C026A00104D2D /* NSCalendar+hebrewYearTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+hebrewYearTypes.h"; sourceTree = "<group>"; };
+		46B45489173C026A00104D2D /* NSCalendar+hebrewYearTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+hebrewYearTypes.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +157,125 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460E3EC6172EF7AF009CF6CA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				460E3ECD172EF7AF009CF6CA /* KosherCocoaConstants.h */,
+				460E3EF5172F07E6009CF6CA /* Categories */,
+				460E3EC7172EF7AF009CF6CA /* Calendar */,
+				460E3ECC172EF7AF009CF6CA /* Headers */,
+				460E3ECE172EF7AF009CF6CA /* Required */,
+				460E3ED1172EF7AF009CF6CA /* Times */,
+				460E3EDC172EF7AF009CF6CA /* Zmanim */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		460E3EC7172EF7AF009CF6CA /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				460E3EC8172EF7AF009CF6CA /* SefiratHaomer.h */,
+				460E3EC9172EF7AF009CF6CA /* SefiratHaomer.m */,
+				460E3ECA172EF7AF009CF6CA /* ParashatHashavua.h */,
+				460E3ECB172EF7AF009CF6CA /* ParashatHashavua.m */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		460E3ECC172EF7AF009CF6CA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		460E3ECE172EF7AF009CF6CA /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				460E3ECF172EF7AF009CF6CA /* trigonometry.c */,
+				460E3ED0172EF7AF009CF6CA /* trigonometry.h */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
+		460E3ED1172EF7AF009CF6CA /* Times */ = {
+			isa = PBXGroup;
+			children = (
+				460E3ED2172EF7AF009CF6CA /* AstronomicalCalculator.h */,
+				460E3ED3172EF7AF009CF6CA /* AstronomicalCalculator.m */,
+				460E3ED4172EF7AF009CF6CA /* AstronomicalCalendar.h */,
+				460E3ED5172EF7AF009CF6CA /* AstronomicalCalendar.m */,
+				460E3ED6172EF7AF009CF6CA /* EarthViewer.h */,
+				460E3ED7172EF7AF009CF6CA /* EarthViewer.m */,
+				460E3ED8172EF7AF009CF6CA /* GeoLocation.h */,
+				460E3ED9172EF7AF009CF6CA /* GeoLocation.m */,
+				460E3EDA172EF7AF009CF6CA /* SunriseAndSunset.h */,
+				460E3EDB172EF7AF009CF6CA /* SunriseAndSunset.m */,
+			);
+			path = Times;
+			sourceTree = "<group>";
+		};
+		460E3EDC172EF7AF009CF6CA /* Zmanim */ = {
+			isa = PBXGroup;
+			children = (
+				460E3EDD172EF7AF009CF6CA /* ComplexZmanimCalendar.h */,
+				460E3EDE172EF7AF009CF6CA /* ComplexZmanimCalendar.m */,
+				460E3EDF172EF7AF009CF6CA /* ZmanimCalendar.h */,
+				460E3EE0172EF7AF009CF6CA /* ZmanimCalendar.m */,
+			);
+			path = Zmanim;
+			sourceTree = "<group>";
+		};
+		460E3EF5172F07E6009CF6CA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				460E3EF6172F07E6009CF6CA /* Foundation */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		460E3EF6172F07E6009CF6CA /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				460E3EF7172F07E6009CF6CA /* MBCalendarCategories.h */,
+				460E3EF8172F07E6009CF6CA /* NSCalendar */,
+				460E3F03172F07E6009CF6CA /* NSDate */,
+				460E3F08172F07E6009CF6CA /* NSDateComponents+AllComponents.h */,
+				460E3F09172F07E6009CF6CA /* NSDateComponents+AllComponents.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		460E3EF8172F07E6009CF6CA /* NSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				460E3EF9172F07E6009CF6CA /* NSCalendar+Components.h */,
+				460E3EFA172F07E6009CF6CA /* NSCalendar+Components.m */,
+				460E3EFB172F07E6009CF6CA /* NSCalendar+DateComparison.h */,
+				460E3EFC172F07E6009CF6CA /* NSCalendar+DateComparison.m */,
+				460E3EFD172F07E6009CF6CA /* NSCalendar+DateManipulation.h */,
+				460E3EFE172F07E6009CF6CA /* NSCalendar+DateManipulation.m */,
+				460E3EFF172F07E6009CF6CA /* NSCalendar+Juncture.h */,
+				460E3F00172F07E6009CF6CA /* NSCalendar+Juncture.m */,
+				460E3F01172F07E6009CF6CA /* NSCalendar+Ranges.h */,
+				460E3F02172F07E6009CF6CA /* NSCalendar+Ranges.m */,
+				46B45488173C026A00104D2D /* NSCalendar+hebrewYearTypes.h */,
+				46B45489173C026A00104D2D /* NSCalendar+hebrewYearTypes.m */,
+			);
+			path = NSCalendar;
+			sourceTree = "<group>";
+		};
+		460E3F03172F07E6009CF6CA /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				460E3F04172F07E6009CF6CA /* NSDate+Components.h */,
+				460E3F05172F07E6009CF6CA /* NSDate+Components.m */,
+				460E3F06172F07E6009CF6CA /* NSDate+Description.h */,
+				460E3F07172F07E6009CF6CA /* NSDate+Description.m */,
+			);
+			path = NSDate;
+			sourceTree = "<group>";
+		};
 		4618BB7A1664216E00AD3CE5 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +310,7 @@
 			children = (
 				4618BB8D1664216E00AD3CE5 /* KosherCocoa.h */,
 				4618BB8F1664216E00AD3CE5 /* KosherCocoa.m */,
+				460E3EC6172EF7AF009CF6CA /* Library */,
 				4618BB8B1664216E00AD3CE5 /* Supporting Files */,
 			);
 			path = KosherCocoa;
@@ -245,6 +443,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4618BB901664216E00AD3CE5 /* KosherCocoa.m in Sources */,
+				460E3EE1172EF7AF009CF6CA /* SefiratHaomer.m in Sources */,
+				460E3EE3172EF7AF009CF6CA /* ParashatHashavua.m in Sources */,
+				460E3EE5172EF7AF009CF6CA /* trigonometry.c in Sources */,
+				460E3EE7172EF7AF009CF6CA /* AstronomicalCalculator.m in Sources */,
+				460E3EE9172EF7AF009CF6CA /* AstronomicalCalendar.m in Sources */,
+				460E3EEB172EF7AF009CF6CA /* EarthViewer.m in Sources */,
+				460E3EED172EF7AF009CF6CA /* GeoLocation.m in Sources */,
+				460E3EEF172EF7AF009CF6CA /* SunriseAndSunset.m in Sources */,
+				460E3EF1172EF7AF009CF6CA /* ComplexZmanimCalendar.m in Sources */,
+				460E3EF3172EF7AF009CF6CA /* ZmanimCalendar.m in Sources */,
+				460E3F0C172F07E6009CF6CA /* NSCalendar+Components.m in Sources */,
+				460E3F0E172F07E6009CF6CA /* NSCalendar+DateComparison.m in Sources */,
+				460E3F10172F07E6009CF6CA /* NSCalendar+DateManipulation.m in Sources */,
+				460E3F12172F07E6009CF6CA /* NSCalendar+Juncture.m in Sources */,
+				460E3F14172F07E6009CF6CA /* NSCalendar+Ranges.m in Sources */,
+				460E3F16172F07E6009CF6CA /* NSDate+Components.m in Sources */,
+				460E3F18172F07E6009CF6CA /* NSDate+Description.m in Sources */,
+				460E3F1A172F07E6009CF6CA /* NSDateComponents+AllComponents.m in Sources */,
+				46B4548A173C026A00104D2D /* NSCalendar+hebrewYearTypes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +470,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				4618BBA71664216F00AD3CE5 /* KosherCocoaTests.m in Sources */,
+				460E3EE2172EF7AF009CF6CA /* SefiratHaomer.m in Sources */,
+				460E3EE4172EF7AF009CF6CA /* ParashatHashavua.m in Sources */,
+				460E3EE6172EF7AF009CF6CA /* trigonometry.c in Sources */,
+				460E3EE8172EF7AF009CF6CA /* AstronomicalCalculator.m in Sources */,
+				460E3EEA172EF7AF009CF6CA /* AstronomicalCalendar.m in Sources */,
+				460E3EEC172EF7AF009CF6CA /* EarthViewer.m in Sources */,
+				460E3EEE172EF7AF009CF6CA /* GeoLocation.m in Sources */,
+				460E3EF0172EF7AF009CF6CA /* SunriseAndSunset.m in Sources */,
+				460E3EF2172EF7AF009CF6CA /* ComplexZmanimCalendar.m in Sources */,
+				460E3EF4172EF7AF009CF6CA /* ZmanimCalendar.m in Sources */,
+				460E3F0D172F07E6009CF6CA /* NSCalendar+Components.m in Sources */,
+				460E3F0F172F07E6009CF6CA /* NSCalendar+DateComparison.m in Sources */,
+				460E3F11172F07E6009CF6CA /* NSCalendar+DateManipulation.m in Sources */,
+				460E3F13172F07E6009CF6CA /* NSCalendar+Juncture.m in Sources */,
+				460E3F15172F07E6009CF6CA /* NSCalendar+Ranges.m in Sources */,
+				460E3F17172F07E6009CF6CA /* NSDate+Components.m in Sources */,
+				460E3F19172F07E6009CF6CA /* NSDate+Description.m in Sources */,
+				460E3F1B172F07E6009CF6CA /* NSDateComponents+AllComponents.m in Sources */,
+				46B4548B173C026A00104D2D /* NSCalendar+hebrewYearTypes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +633,7 @@
 				4618BBAC1664216F00AD3CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4618BBAD1664216F00AD3CE5 /* Build configuration list for PBXNativeTarget "KosherCocoaTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +642,7 @@
 				4618BBAF1664216F00AD3CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
