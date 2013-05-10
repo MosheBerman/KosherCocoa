@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Moshe Berman. All rights reserved.
 //
 
-#import "NSCalendar+hebrewYearTypes.h"
+#import "NSCalendar+HebrewYearTypes.h"
 #import "MBCalendarCategories.h"
 
 @implementation NSCalendar (HebrewYearTypes)
