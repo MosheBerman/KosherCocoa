@@ -14,7 +14,7 @@
 #import "NSCalendar+DateManipulation.h"
 #import "NSCalendar+Ranges.h"
 #import "NSCalendar+Juncture.h"
-#import "NSCalendar+hebrewYearTypes.h"
+#import "NSCalendar+HebrewYearTypes.h"
 
 #import "NSDate+Components.h"
 

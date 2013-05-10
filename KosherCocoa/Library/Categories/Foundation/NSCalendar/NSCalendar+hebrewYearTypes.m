@@ -9,7 +9,7 @@
 #import "NSCalendar+hebrewYearTypes.h"
 #import "MBCalendarCategories.h"
 
-@implementation NSCalendar (hebrewYearTypes)
+@implementation NSCalendar (HebrewYearTypes)
 
 //  Returns a weekday, 1-7
 + (kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;

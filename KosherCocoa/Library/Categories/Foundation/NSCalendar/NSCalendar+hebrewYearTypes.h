@@ -54,7 +54,7 @@ typedef enum {
 } kYearLength;
 
 
-@interface NSCalendar (hebrewYearTypes)
+@interface NSCalendar (HebrewYearTypes)
 
 //  Returns a weekday, 1-7
 + (kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;
