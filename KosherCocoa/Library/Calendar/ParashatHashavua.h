@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MBCalendarCategories.h"
+#import "KCParasha.h"
 
 @interface ParashatHashavua : NSObject
 
@@ -17,12 +18,20 @@
 //  Return the parsha for the weekly parsha for a given date
 //
 
-- (NSString *)parashaForDate:(NSDate *)date inDiaspora:(BOOL)isInDiaspora;
+- (KCParasha *)parashaInDiasporaForDate:(NSDate *)date;
+- (KCParasha *)parashaInIsraelForDate:(NSDate *)date;
 
-//
-//
-//
+/*
 
-- (NSArray *)parshiotForYearType:(kHebrewYearType)type inDiaspora:(BOOL)diaspora;
+ Returns a listing of all parshiot for the 
+ supplied year type. You can get the year 
+ type from the NSCalendar class method,
+ typeOfHebrewYearContainingDate: as defined
+ in NSDate+HebrewYearTypes category method.
+ 
+ */
+
+- (NSArray *)parshiotInDiasporaDuringYearType:(kHebrewYearType)typeOfYear;
+- (NSArray *)parshiotInIsraelDuringYearType:(kHebrewYearType)typeOfYear;
 
 @end
