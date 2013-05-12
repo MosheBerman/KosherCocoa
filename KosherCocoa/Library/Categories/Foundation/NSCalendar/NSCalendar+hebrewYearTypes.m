@@ -53,6 +53,7 @@
     {
         return kYearLengthLong;
     }
+    
     return -1;
 }
 
@@ -185,7 +186,7 @@
             }
             
             //  ...that begin on Saturday are type N
-            if (weekday == kWeekdaySaturday)
+            else if (weekday == kWeekdaySaturday)
             {
                 return kHebrewYearTypeN;
             }
