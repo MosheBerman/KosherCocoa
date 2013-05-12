@@ -11,12 +11,12 @@
 @implementation AstronomicalCalculator
 
 - (double) UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation{
-    NSAssert(0==1, @"This method must be overridden in a subclass.");
+    [super doesNotRecognizeSelector:_cmd];
     return 0;
 }
 
 - (double) UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation{
-    NSAssert(0==1, @"This method must be overridden in a subclass.");    
+    [super doesNotRecognizeSelector:_cmd];
     return 0;
 }
 @end
