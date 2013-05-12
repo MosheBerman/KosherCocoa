@@ -212,6 +212,7 @@
                      @(KCParashaBeharAndBechukotai),
                      
                      @(KCParashaBamidbar),
+                     @(KCParashaShavuot2),
                      @(KCParashaNaso),
                      @(KCParashaBehaalotecha),
                      @(KCParashaShelach),
@@ -784,6 +785,7 @@
                      @(KCParashaBechukotai),
                      
                      @(KCParashaBamidbar),
+                     @(KCParashaShavuot2),
                      @(KCParashaNaso),
                      @(KCParashaBehaalotecha),
                      @(KCParashaShelach),
@@ -807,7 +809,762 @@
 
 - (NSArray *)parshiotInIsraelDuringYearType:(kHebrewYearType)typeOfYear
 {
-    return nil;
+    NSArray *parshiot;
+    
+    if (typeOfYear == kHebrewYearTypeA) //  Monday, 353, regular
+    {
+        parshiot = @[@(KCParashaVayeilech),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @( KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhelAndPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaPesach3),
+                     @(KCParashaShemini),
+                     @(KCParashaTazriaAndMetzora),
+                     @(KCParashaAchareiMotAndKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBeharAndBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavimAndVayeilech)];
+    }
+    
+    else if(typeOfYear == kHebrewYearTypeB) //  Shabbat, 353, regular
+    {
+        
+        parshiot = @[@(KCParashaRoshHashana1),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot3),
+                     @(KCParashaSheminiAtzeret),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhelAndPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(kCParashaPesach7),
+                     @(KCParashaShemini),
+                     @(KCParashaTazriaAndMetzora),
+                     @(KCParashaAchareiMotAndKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBeharAndBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavim)];
+    }
+    
+    //  Tuesday, 354, regular || Monday, 355, regular
+    else if(typeOfYear == kHebrewYearTypeC || typeOfYear == kHebrewYearTypeE)
+    {
+        parshiot = @[@(KCParashaVayeilech),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhelAndPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaPesach3),
+                     @(KCParashaShemini),
+                     @(KCParashaTazriaAndMetzora),
+                     @(KCParashaAchareiMotAndKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBeharAndBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),              //  Diverge from diaspora here
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),          //   Converge with diaspora here
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavimAndVayeilech)];
+    }
+    
+    //  Thursday, 354, regular
+    else if(typeOfYear == kHebrewYearTypeD)
+    {
+        parshiot = @[@(KCParashaHaazinu),
+                     @(KCParashaYomKippur),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhelAndPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaPesach1),
+                     @(KCParashaShemini),                   //  Diverge from diaspora here
+                     @(KCParashaTazriaAndMetzora),
+                     @(KCParashaAchareiMotAndKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),                //  Converge with diaspora here
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukatAndBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavim)];
+    }
+    
+    //  Thursday, 355, regular
+    else if(typeOfYear == kHebrewYearTypeF)
+    {
+        parshiot = @[@(KCParashaHaazinu),
+                     @(KCParashaYomKippur),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhel),
+                     @(KCParashaPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaPesach3),
+                     @(KCParashaShemini),
+                     @(KCParashaTazriaAndMetzora),
+                     @(KCParashaAchareiMotAndKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBeharAndBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavim)];
+    }
+    
+    //  Shabbat, 355, regular
+    else if(typeOfYear == kHebrewYearTypeG)
+    {
+        parshiot = @[@(KCParashaRoshHashana1),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot1),
+                     @(KCParashaSheminiAtzeret),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhelAndPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaPesach3),
+                     @(KCParashaShemini),
+                     @(KCParashaTazriaAndMetzora),
+                     @(KCParashaAchareiMotAndKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBeharAndBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavimAndVayeilech)];
+    }
+    
+    //  Monday, 383, leap
+    else if(typeOfYear == kHebrewYearTypeH)
+    {
+        parshiot = @[@(KCParashaVayeilech),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhel),
+                     @(KCParashaPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaShemini),
+                     @(KCParashaTazria),
+                     @(KCParashaMetzora),
+                     @(KCParashaPesach3),
+                     @(KCParashaAchareiMot),
+                     @(KCParashaKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),              //  Diverge from diaspora here
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),           //  Converge with diaspora here
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavimAndVayeilech)];
+    }
+    
+    //  Thursday, 383, leap
+    else if(typeOfYear == kHebrewYearTypeI)
+    {
+        parshiot = @[@(KCParashaHaazinu),
+                     @(KCParashaYomKippur),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhel),
+                     @(KCParashaPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaShemini),
+                     @(KCParashaTazria),
+                     @(KCParashaMetzora),
+                     @(KCParashaAchareiMot),
+                     @(KCParashaPesach3),
+                     @(KCParashaKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatot),
+                     @(KCParashaMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavim)];
+    }
+    
+    //  Monday, 385, leap ||  Tuesday, 384, leap
+    else if((typeOfYear == kHebrewYearTypeL) || (typeOfYear == kHebrewYearTypeK))
+    {
+        
+        
+        parshiot = @[@(KCParashaVayeilech),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhel),
+                     @(KCParashaPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaShemini),
+                     @(KCParashaTazria),
+                     @(KCParashaMetzora),
+                     @(KCParashaPesach1),
+                     @(KCParashaAchareiMot),    //  Diverge from diaspora here
+                     @(KCParashaKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatot),
+                     @(KCParashaMasei),     //  Converge with diaspora here
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavim)];
+    }
+    
+    //  Shabbat, 383, leap
+    else if(typeOfYear == kHebrewYearTypeJ)
+    {
+        parshiot = @[@(KCParashaRoshHashana1),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot3),
+                     @(KCParashaSheminiAtzeret),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhel),
+                     @(KCParashaPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaShemini),
+                     @(KCParashaTazria),
+                     @(KCParashaMetzora),
+                     @(KCParashaPesach3),
+                     @(KCParashaAchareiMot),
+                     @(KCParashaKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavimAndVayeilech)];
+    }
+    
+    //  Thursday,   385, leap
+    else if(typeOfYear == kHebrewYearTypeM)
+    {
+        parshiot = @[@(KCParashaHaazinu),
+                     @(KCParashaYomKippur),
+                     @(KCParashaSukkot3),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhel),
+                     @(KCParashaPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaShemini),
+                     @(KCParashaTazria),
+                     @(KCParashaMetzora),
+                     @(KCParashaAchareiMot),
+                     @(KCParashaPesach3),
+                     @(KCParashaKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),
+                     @(KCParashaMatot),
+                     @(KCParashaMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavimAndVayeilech)];
+        
+    }
+    
+    //  Shabbat, 385, leap
+    if(typeOfYear == kHebrewYearTypeN)
+    {
+        parshiot = @[@(KCParashaRoshHashana1),
+                     @(KCParashaHaazinu),
+                     @(KCParashaSukkot3),
+                     @(KCParashaSheminiAtzeret),
+                     
+                     @(KCParashaBereshit),
+                     @(KCParashaNoach),
+                     @(KCParashaLechLecha),
+                     @(KCParashaVayeira),
+                     @(KCParashaChayeiSarah),
+                     @(KCParashaToldot),
+                     @(KCParashaVayeitsei),
+                     @(KCParashaVayishlach),
+                     @(KCParashaVayeishev),
+                     @(KCParashaMiketz),
+                     @(KCParashaVayigash),
+                     @(KCParashaVayechi),
+                     
+                     @(KCParashaShemot),
+                     @(KCParashaVaera),
+                     @(KCParashaBo),
+                     @(KCParashaBeshalach),
+                     @(KCParashaYitro),
+                     @(KCParashaMishpatim),
+                     @(KCParashaTerumah),
+                     @(KCParashaTetzaveh),
+                     @(KCParashaKiTissa),
+                     @(KCParashaVayakhel),
+                     @(KCParashaPekudei),
+                     
+                     @(KCParashaVayikra),
+                     @(KCParashaTzav),
+                     @(KCParashaShemini),
+                     @(KCParashaTazria),
+                     @(KCParashaMetzora),
+                     @(KCParashaPesach3),
+                     @(KCParashaAchareiMot),
+                     @(KCParashaKedoshim),
+                     @(KCParashaEmor),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),
+                     
+                     @(KCParashaBamidbar),
+                     @(KCParashaNaso),              //  Diverge from diaspora here
+                     @(KCParashaBehaalotecha),
+                     @(KCParashaShelach),
+                     @(KCParashaKorach),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
+                     @(KCParashaPinchas),           //  Converge with diaspora here
+                     @(KCParashaMatotAndMasei),
+                     
+                     @(KCParashaDevarim),
+                     @(KCParashaVaetchanan),
+                     @(KCParashaEikev),
+                     @(KCParashaReeh),
+                     @(KCParashaShoftim),
+                     @(KCParashaKiTeitzei),
+                     @(KCParashaKiTavo),
+                     @(KCParashaNitzavimAndVayeilech)];
+    }
+    
+    return parshiot;
 }
 
 #pragma mark - Internal: Get a Parasha Object for a Date
