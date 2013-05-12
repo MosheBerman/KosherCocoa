@@ -28,6 +28,7 @@
                                   @"Toldot",
                                   @"Vayeitsei",
                                   @"Vayishlach",
+                                  @"Vayeishev",
                                   @"Miketz",
                                   @"Vayigash",
                                   @"Vayechi",
@@ -202,11 +203,7 @@
 
 /* Returns the transliterated name of the parasha */
 - (NSString *)nameTransliterated
-{
-    if (_identifier >= [[self transliteratedNames] count]) {
-        return @"Out of bounds";
-    }
-    
+{    
     return [self transliteratedNames][_identifier];
 }
 
