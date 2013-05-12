@@ -12,7 +12,7 @@
 
  This enum contains an identifier for each of the
  possible weekly readings. Double readings and holiday
- readings are treated seperately from "base" parshiot.
+ readings are treated seperately from single parasha readings.
  
  */
 
@@ -21,6 +21,7 @@ typedef enum {
     KCParashaNoach,
     KCParashaLechLecha,
     KCParashaVayeira,
+    KCParashaChayeiSarah,
     KCParashaToldot,
     KCParashaVayeitsei,
     KCParashaVayishlach,
@@ -36,29 +37,36 @@ typedef enum {
     KCParashaMishpatim,
     KCParashaTerumah,
     KCParashaTetzaveh,
+    KCParashaTerumahAndTetzaveh,    //  Terumah - Tetzaveh
     KCParashaKiTissa,
     KCParashaVayakhel,
     KCParashaPekudei,
+    KCParashaVayakhelAndPekudei,    //  Vayakhel - Pekudei
     KCParashaVayikra,
     KCParashaTzav,
     KCParashaShemini,
     KCParashaTazria,
     KCParashaMetzora,
+    KCParashaTazriaAndMetzora,
     KCParashaAchareiMot,
     KCParashaKedoshim,
+    KCParashaAchareiMotAndKedoshim, //  Acharei - Kedoshim
     KCParashaEmor,
     KCParashaBehar,
     KCParashaBechukotai,
+    KCParashaBeharAndBechukotai,    //  Behar - Bechukotai
     KCParashaBamidbar,
     KCParashaNaso,
-    KCParashaMehaalotcha,
+    KCParashaBehaalotecha,
     KCParashaShelach,
     KCParashaKorach,
     KCParashaChukat,
     KCParashaBalak,
+    KCParashaChukatAndBalak,        //  Chukat - Balak
     KCParashaPinchas,
     KCParashaMatot,
     KCParashaMasei,
+    KCParashaMatotAndMasei,         //  Matot - Masei
     KCParashaDevarim,
     KCParashaVaetchanan,
     KCParashaEikev,
@@ -68,15 +76,29 @@ typedef enum {
     KCParashaKiTavo,
     KCParashaNitzavim,
     KCParashaVayeilech,
+    KCParashaNitzavimAndVayeilech,  //  Nitzavim - Vayeilech
     KCParashaHaazinu,
-    KCParashaVezotHaberacha
+    KCParashaVezotHaberacha,
+    KCParashaRoshHashana1,  //  Rosh Hashana falls on Shabbat
+    KCParashaYomKippur,     //  Yom Kippur falls on Shabbat
+    KCParashaSukkot1,       //  Sukkot falls on Shabbat
+    KCParashaSukkot3,       //  Chol Hamoed Sukkot falls on Shabbat
+    KCParashaSheminiAtzeret,//  Shemini Atzeret falls on Shabbat
+    KCParashaPesach1,       //  The first night of pesach falls on Shabbat
+    KCParashaPesach3,       //  Chol Hamoed Pesach contains a Shabbat
+    kCParashaPesach7,       //  The 7th day of Pesach falls on Shabbat
+    KCParashaPesach8,       //  In diaspora, the 8th day of Pesach falls on Shabbat
+    KCParashaShavuot2,      //  The second day of Shavuot falls on Shabbat
 } KCParashaIdentifier;
 
 @interface KCParasha : NSObject
 
 @property (nonatomic, assign) KCParashaIdentifier identifier;
 
-- (NSString *)name;
-- (NSString *)nameTransliterated;
+- (id)initWithIdentifier:(KCParashaIdentifier)identifier;
++ (id)parashaWithIdentifier:(KCParashaIdentifier)identifier;
+
+- (NSString *)name; //  The hebrew name of the parasha
+- (NSString *)nameTransliterated;   //  The name of the parasha, transliterated into English
 
 @end
