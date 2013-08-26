@@ -6,8 +6,8 @@
 //
 //
 
-#ifndef Gabbai_KosherCocoa_h
-#define Gabbai_KosherCocoa_h
+#ifndef KosherCocoa_KosherCocoa_h
+#define KosherCocoa_KosherCocoa_h
 
 #import "JewishCalendar.h"
 
