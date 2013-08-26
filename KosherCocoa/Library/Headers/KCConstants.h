@@ -2,8 +2,9 @@
  *
  *  Created by Moshe Berman on Sunday, August 25, 2013.
  *
- *  This file contains the various constants in use by 
- *  the KosherCocoa framework.
+ *  This file contains the various constants in use by the KosherCocoa framework.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */
 
 /** KCAstronomical.h

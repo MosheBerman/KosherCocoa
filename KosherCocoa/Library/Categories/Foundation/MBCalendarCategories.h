@@ -17,5 +17,7 @@
 #import "NSCalendar+HebrewYearTypes.h"
 
 #import "NSDate+Components.h"
+#import "NSDate+ConvenientDates.h"
+#import "NSDate+Description.h"
 
 #endif

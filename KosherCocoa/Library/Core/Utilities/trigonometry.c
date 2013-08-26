@@ -1,24 +1,31 @@
-//
-//  MathAdditions.c
-//  Zmanim
-//
-//  Created by Moshe Berman on 3/24/11.
-//  Copyright 2011 MosheBerman.com. All rights reserved.
-//
+/** MathAdditions.c
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 3/24/11.
+ *  Modified by Moshe Berman on 8/25/13.
+ *
+ *  
+ */
 
 #include "trigonometry.h"
 
-//
-//  A utility function for converting degrees to radians
-//
+/** toRadians
+ *
+ *  A utility function for converting degrees to radians
+ *
+ *  @param degrees The number of degrees to convert.
+ *  @return The number of radians that corresponds to the supplied number of degrees.
+ */
 
 double toRadians(double degrees){
     return degrees * M_PI / 180.0;
 }
 
-//
-//  A utility function for converting radians to degrees
-//
+/**
+ *  A utility function for converting radians to degrees
+ *
+ *
+ */
 
 double toDegrees(double radians){
     return radians * 180.0 / M_PI;
