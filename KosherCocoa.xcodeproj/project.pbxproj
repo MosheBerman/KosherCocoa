@@ -60,6 +60,8 @@
 		466A3B2A17CAF3B900056F16 /* SunriseAndSunsetCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF017CAF3B900056F16 /* SunriseAndSunsetCalculator.m */; };
 		466A3B2B17CAF3B900056F16 /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF217CAF3B900056F16 /* trigonometry.c */; };
 		466A3B2C17CAF3B900056F16 /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF217CAF3B900056F16 /* trigonometry.c */; };
+		466A3B2F17CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
+		466A3B3017CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +154,8 @@
 		466A3AFC17CAF3B900056F16 /* KCZenith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZenith.h; sourceTree = "<group>"; };
 		466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZenithExtended.h; sourceTree = "<group>"; };
 		466A3AFE17CAF3B900056F16 /* KosherCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KosherCocoa.h; sourceTree = "<group>"; };
+		466A3B2D17CB9CD900056F16 /* NSDate+ConvenientDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ConvenientDates.h"; sourceTree = "<group>"; };
+		466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,6 +301,8 @@
 			children = (
 				466A3AC817CAF3B900056F16 /* NSDate+Components.h */,
 				466A3AC917CAF3B900056F16 /* NSDate+Components.m */,
+				466A3B2D17CB9CD900056F16 /* NSDate+ConvenientDates.h */,
+				466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */,
 				466A3ACA17CAF3B900056F16 /* NSDate+Description.h */,
 				466A3ACB17CAF3B900056F16 /* NSDate+Description.m */,
 			);
@@ -549,6 +555,7 @@
 				466A3B2717CAF3B900056F16 /* GeoLocation.m in Sources */,
 				466A3B2917CAF3B900056F16 /* SunriseAndSunsetCalculator.m in Sources */,
 				466A3B2B17CAF3B900056F16 /* trigonometry.c in Sources */,
+				466A3B2F17CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +587,7 @@
 				466A3B2817CAF3B900056F16 /* GeoLocation.m in Sources */,
 				466A3B2A17CAF3B900056F16 /* SunriseAndSunsetCalculator.m in Sources */,
 				466A3B2C17CAF3B900056F16 /* trigonometry.c in Sources */,
+				466A3B3017CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
