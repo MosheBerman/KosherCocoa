@@ -9,12 +9,6 @@
 #ifndef KosherCocoa_KosherCocoa_h
 #define KosherCocoa_KosherCocoa_h
 
-#import "JewishCalendar.h"
-
-#import "WeeklyParsha.h"
-
-#import "SefiraDay.h"
-
-#import "SefiraString.h"
+#import
 
 #endif

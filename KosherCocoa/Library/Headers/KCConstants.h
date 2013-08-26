@@ -6,6 +6,12 @@
  *  the KosherCocoa framework.
  */
 
+/** KCAstronomical.h
+ *
+ *  Degrees per hour,  and 
+ *
+ */
+
 #import "KCAstronomical.h"
 #import "KCBearing.h"
 #import "KCHebrewYear.h"

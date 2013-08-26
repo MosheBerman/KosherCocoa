@@ -33,13 +33,12 @@
 
 #define kRefraction 34.0f / 60.0
 
-//  TODO: Rename this to kEarthRadiusInKilometers for clarity
 
-/** kEarthRadius
+/** kEarthRadiusInKilometers
  *
  *  The diameter of the earth's radius in kilometers.
  */
 
-#define kEarthRadius 6356.9
+#define kEarthRadiusInKilometers 6356.9
 
 #endif //__KC_KCAstronomical_h
