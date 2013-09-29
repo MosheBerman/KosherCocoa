@@ -6,19 +6,19 @@
 //  Copyright 2011 MosheBerman.com. All rights reserved.
 //
 
-#import "KCParashatHashavua.h"
+#import "KCParashatHashavuaCalculator.h"
 #import "KCConstants.h"
 
 #define kOutOfRangeString @"[KosherCocoa] Error: Parsha out of range."
 
-@interface KCParashatHashavua ()
+@interface KCParashatHashavuaCalculator ()
 
 @property (nonatomic, strong) NSCalendar *gregorianCalendar;
 @property (nonatomic, strong) NSCalendar *hebrewCalendar;
 
 @end
 
-@implementation KCParashatHashavua
+@implementation KCParashatHashavuaCalculator
 
 #pragma mark - Initializer
 

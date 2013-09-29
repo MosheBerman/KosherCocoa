@@ -50,7 +50,7 @@
  *  This method initializes a new instance of KCAstronomicalCalendars.
  *
  *  @param aGeoLocation A geolocation object representing the user.
- *  @see KCGeoLocation
+ *  @see KCGeoLocation.h
  *  @return An instance of KCAstronomicalCalendar.
  */
 
@@ -125,25 +125,24 @@
  */
 
 /**
- *  This method <#does something#>.
+ *  This method returns an NSDate representing the time of sunset on 
+ *  the KCAstronomicalCalendar instance's workingDate property.
  *
- *  <#optional discussion#>
+ *  This method takes elevation into account.
  *
- *  @param <#parameter name #> <#description#>
- *  @return <#return value#>
+ *  @return An NSDate representing sunset on workingDate.
  */
 
 - (NSDate *)sunset;
 
 /**
- *  This method <#does something#>.
+ *  This method returns an NSDate representing the time of sunset on
+ *  the KCAstronomicalCalendar instance's workingDate property.
  *
- *  <#optional discussion#>
+ *  This method does not take elevation into account.
  *
- *  @param <#parameter name #> <#description#>
- *  @return <#return value#>
+ *  @return An NSDate representing sunset on workingDate.
  */
-
 
 - (NSDate *)seaLevelSunset;
 

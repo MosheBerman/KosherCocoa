@@ -39,11 +39,6 @@
  * -----
  */
 
-- (double) UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
-
-- (double) UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
-
-
 /**
  *  A method returning the sunrise in UTC as a double. If an error was
  *  encountered in the calculation (as expected in some locations, such

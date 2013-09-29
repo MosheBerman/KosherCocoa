@@ -52,19 +52,21 @@
 //returns false for Chanukah, Erev Yom tov and fast days.
 
 /**
- *  This method determines if the.
+ *  This method determines if the given date is a Jewish Holiday.
  *
- *  <#optional discussion#>
- *
- *  @param <#parameter name #> <#description#>
- *  @return <#return value#>
+ *  @return bool YES for holidays, false for fast days and chanukah.
  */
 - (BOOL)isYomTov;
 
-//Returns true if the current day is Chol Hamoed of Pesach or Succos.
+/** 
+ *
+ */
+    
 - (BOOL)isCholHamoed;
 
-//Returns true if the current day is Chol Hamoed of Succos.
+/**
+ *
+ */
 - (BOOL)isCholHamoedSuccos;
 
 //Returns if a given day is chol hamoed pesach

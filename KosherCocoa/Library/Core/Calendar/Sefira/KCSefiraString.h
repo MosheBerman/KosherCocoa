@@ -8,9 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface KCSefiraString : NSObject {
-    NSInteger day;
-}
+@interface KCSefiraString : NSObject
 
 @property NSInteger day;
 
@@ -25,7 +23,7 @@
 //  This method returns a string in hebrew for the current day's number
 //
 
-- (NSString *)dayStringInHebrew:(NSInteger)day;
+- (NSString *)stringRepresentationForDay:(NSInteger)day;
 
 //
 //  This returns a string for today's middah in hebrew

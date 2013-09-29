@@ -40,8 +40,8 @@
 		466A3B1617CAF3B900056F16 /* KCDafYomiCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD817CAF3B900056F16 /* KCDafYomiCalculator.m */; };
 		466A3B1717CAF3B900056F16 /* KCParasha.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADB17CAF3B900056F16 /* KCParasha.m */; };
 		466A3B1817CAF3B900056F16 /* KCParasha.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADB17CAF3B900056F16 /* KCParasha.m */; };
-		466A3B1917CAF3B900056F16 /* KCParashatHashavua.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavua.m */; };
-		466A3B1A17CAF3B900056F16 /* KCParashatHashavua.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavua.m */; };
+		466A3B1917CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */; };
+		466A3B1A17CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */; };
 		466A3B1B17CAF3B900056F16 /* KCSefiraString.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE017CAF3B900056F16 /* KCSefiraString.m */; };
 		466A3B1C17CAF3B900056F16 /* KCSefiraString.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE017CAF3B900056F16 /* KCSefiraString.m */; };
 		466A3B1D17CAF3B900056F16 /* KCSefiratHaomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomer.m */; };
@@ -97,6 +97,26 @@
 		4618BBA31664216F00AD3CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTests.h; sourceTree = "<group>"; };
 		4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KosherCocoaTests.m; sourceTree = "<group>"; };
+		4668A4FD17DCFC5C00EB4169 /* AstronomicalCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AstronomicalCalendar.java; sourceTree = "<group>"; };
+		4668A4FE17DCFC5C00EB4169 /* ComplexZmanimCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ComplexZmanimCalendar.java; sourceTree = "<group>"; };
+		4668A50017DCFC5C00EB4169 /* Daf.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Daf.java; sourceTree = "<group>"; };
+		4668A50117DCFC5C00EB4169 /* HebrewDateFormatter.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = HebrewDateFormatter.java; sourceTree = "<group>"; };
+		4668A50217DCFC5C00EB4169 /* JewishCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = JewishCalendar.java; sourceTree = "<group>"; };
+		4668A50317DCFC5C00EB4169 /* JewishDate.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = JewishDate.java; sourceTree = "<group>"; };
+		4668A50417DCFC5C00EB4169 /* package.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = package.html; sourceTree = "<group>"; };
+		4668A50517DCFC5C00EB4169 /* YomiCalculator.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = YomiCalculator.java; sourceTree = "<group>"; };
+		4668A50617DCFC5C00EB4169 /* package.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = package.html; sourceTree = "<group>"; };
+		4668A50817DCFC5C00EB4169 /* AstronomicalCalculator.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AstronomicalCalculator.java; sourceTree = "<group>"; };
+		4668A50917DCFC5C00EB4169 /* GeoLocation.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = GeoLocation.java; sourceTree = "<group>"; };
+		4668A50A17DCFC5C00EB4169 /* GeoLocationUtils.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = GeoLocationUtils.java; sourceTree = "<group>"; };
+		4668A50B17DCFC5C00EB4169 /* NOAACalculator.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = NOAACalculator.java; sourceTree = "<group>"; };
+		4668A50C17DCFC5C00EB4169 /* package.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = package.html; sourceTree = "<group>"; };
+		4668A50D17DCFC5C00EB4169 /* SunTimesCalculator.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = SunTimesCalculator.java; sourceTree = "<group>"; };
+		4668A50E17DCFC5C00EB4169 /* Time.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Time.java; sourceTree = "<group>"; };
+		4668A50F17DCFC5C00EB4169 /* Zman.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Zman.java; sourceTree = "<group>"; };
+		4668A51017DCFC5C00EB4169 /* ZmanimCalculator.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ZmanimCalculator.java; sourceTree = "<group>"; };
+		4668A51117DCFC5C00EB4169 /* ZmanimFormatter.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ZmanimFormatter.java; sourceTree = "<group>"; };
+		4668A51217DCFC5C00EB4169 /* ZmanimCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ZmanimCalendar.java; sourceTree = "<group>"; };
 		466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCalendarCategories.h; sourceTree = "<group>"; };
 		466A3ABB17CAF3B900056F16 /* NSCalendar+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Components.h"; sourceTree = "<group>"; };
 		466A3ABC17CAF3B900056F16 /* NSCalendar+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Components.m"; sourceTree = "<group>"; };
@@ -124,8 +144,8 @@
 		466A3AD817CAF3B900056F16 /* KCDafYomiCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCDafYomiCalculator.m; sourceTree = "<group>"; };
 		466A3ADA17CAF3B900056F16 /* KCParasha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParasha.h; sourceTree = "<group>"; };
 		466A3ADB17CAF3B900056F16 /* KCParasha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParasha.m; sourceTree = "<group>"; };
-		466A3ADC17CAF3B900056F16 /* KCParashatHashavua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashatHashavua.h; sourceTree = "<group>"; };
-		466A3ADD17CAF3B900056F16 /* KCParashatHashavua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParashatHashavua.m; sourceTree = "<group>"; };
+		466A3ADC17CAF3B900056F16 /* KCParashatHashavuaCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashatHashavuaCalculator.h; sourceTree = "<group>"; };
+		466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParashatHashavuaCalculator.m; sourceTree = "<group>"; };
 		466A3ADF17CAF3B900056F16 /* KCSefiraString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiraString.h; sourceTree = "<group>"; };
 		466A3AE017CAF3B900056F16 /* KCSefiraString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraString.m; sourceTree = "<group>"; };
 		466A3AE117CAF3B900056F16 /* KCSefiratHaomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiratHaomer.h; sourceTree = "<group>"; };
@@ -156,6 +176,7 @@
 		466A3AFE17CAF3B900056F16 /* KosherCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KosherCocoa.h; sourceTree = "<group>"; };
 		466A3B2D17CB9CD900056F16 /* NSDate+ConvenientDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ConvenientDates.h"; sourceTree = "<group>"; };
 		466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
+		468C006E17F1E3450070CDB5 /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +234,7 @@
 		4618BB8A1664216E00AD3CE5 /* KosherCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				4668A4FB17DCFC5C00EB4169 /* java */,
 				466A3AB617CAF3B900056F16 /* Library */,
 				4618BB8B1664216E00AD3CE5 /* Supporting Files */,
 			);
@@ -244,6 +266,57 @@
 				4618BBA21664216F00AD3CE5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4668A4FB17DCFC5C00EB4169 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				4668A4FC17DCFC5C00EB4169 /* zmanim */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		4668A4FC17DCFC5C00EB4169 /* zmanim */ = {
+			isa = PBXGroup;
+			children = (
+				4668A4FD17DCFC5C00EB4169 /* AstronomicalCalendar.java */,
+				4668A4FE17DCFC5C00EB4169 /* ComplexZmanimCalendar.java */,
+				4668A4FF17DCFC5C00EB4169 /* hebrewcalendar */,
+				4668A50617DCFC5C00EB4169 /* package.html */,
+				4668A50717DCFC5C00EB4169 /* util */,
+				4668A51217DCFC5C00EB4169 /* ZmanimCalendar.java */,
+			);
+			path = zmanim;
+			sourceTree = "<group>";
+		};
+		4668A4FF17DCFC5C00EB4169 /* hebrewcalendar */ = {
+			isa = PBXGroup;
+			children = (
+				4668A50017DCFC5C00EB4169 /* Daf.java */,
+				4668A50117DCFC5C00EB4169 /* HebrewDateFormatter.java */,
+				4668A50217DCFC5C00EB4169 /* JewishCalendar.java */,
+				4668A50317DCFC5C00EB4169 /* JewishDate.java */,
+				4668A50417DCFC5C00EB4169 /* package.html */,
+				4668A50517DCFC5C00EB4169 /* YomiCalculator.java */,
+			);
+			path = hebrewcalendar;
+			sourceTree = "<group>";
+		};
+		4668A50717DCFC5C00EB4169 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				4668A50817DCFC5C00EB4169 /* AstronomicalCalculator.java */,
+				4668A50917DCFC5C00EB4169 /* GeoLocation.java */,
+				4668A50A17DCFC5C00EB4169 /* GeoLocationUtils.java */,
+				4668A50B17DCFC5C00EB4169 /* NOAACalculator.java */,
+				4668A50C17DCFC5C00EB4169 /* package.html */,
+				4668A50D17DCFC5C00EB4169 /* SunTimesCalculator.java */,
+				4668A50E17DCFC5C00EB4169 /* Time.java */,
+				4668A50F17DCFC5C00EB4169 /* Zman.java */,
+				4668A51017DCFC5C00EB4169 /* ZmanimCalculator.java */,
+				4668A51117DCFC5C00EB4169 /* ZmanimFormatter.java */,
+			);
+			path = util;
 			sourceTree = "<group>";
 		};
 		466A3AB617CAF3B900056F16 /* Library */ = {
@@ -365,8 +438,8 @@
 			children = (
 				466A3ADA17CAF3B900056F16 /* KCParasha.h */,
 				466A3ADB17CAF3B900056F16 /* KCParasha.m */,
-				466A3ADC17CAF3B900056F16 /* KCParashatHashavua.h */,
-				466A3ADD17CAF3B900056F16 /* KCParashatHashavua.m */,
+				466A3ADC17CAF3B900056F16 /* KCParashatHashavuaCalculator.h */,
+				466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */,
 			);
 			path = Parasha;
 			sourceTree = "<group>";
@@ -427,6 +500,7 @@
 				466A3AF917CAF3B900056F16 /* KCJewishHolidays.h */,
 				466A3AFA17CAF3B900056F16 /* KCMolad.h */,
 				466A3AFB17CAF3B900056F16 /* KCSunCalculationTypes.h */,
+				468C006E17F1E3450070CDB5 /* KCTractates.h */,
 				466A3AFC17CAF3B900056F16 /* KCZenith.h */,
 				466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */,
 			);
@@ -443,6 +517,7 @@
 				4618BB811664216E00AD3CE5 /* Sources */,
 				4618BB821664216E00AD3CE5 /* Frameworks */,
 				4618BB831664216E00AD3CE5 /* CopyFiles */,
+				4686780517DD013B0072AA03 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -479,7 +554,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KC;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Moshe Berman";
 			};
 			buildConfigurationList = 4618BB7F1664216E00AD3CE5 /* Build configuration list for PBXProject "KosherCocoa" */;
@@ -525,6 +600,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		4686780517DD013B0072AA03 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"KosherCocoa\";\ncompanyID=\"com.mosheberman\";\ncompanyURL=\"http://mosheberman.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -545,7 +633,7 @@
 				466A3B1317CAF3B900056F16 /* KCDaf.m in Sources */,
 				466A3B1517CAF3B900056F16 /* KCDafYomiCalculator.m in Sources */,
 				466A3B1717CAF3B900056F16 /* KCParasha.m in Sources */,
-				466A3B1917CAF3B900056F16 /* KCParashatHashavua.m in Sources */,
+				466A3B1917CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
 				466A3B1B17CAF3B900056F16 /* KCSefiraString.m in Sources */,
 				466A3B1D17CAF3B900056F16 /* KCSefiratHaomer.m in Sources */,
 				466A3B1F17CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
@@ -577,7 +665,7 @@
 				466A3B1417CAF3B900056F16 /* KCDaf.m in Sources */,
 				466A3B1617CAF3B900056F16 /* KCDafYomiCalculator.m in Sources */,
 				466A3B1817CAF3B900056F16 /* KCParasha.m in Sources */,
-				466A3B1A17CAF3B900056F16 /* KCParashatHashavua.m in Sources */,
+				466A3B1A17CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
 				466A3B1C17CAF3B900056F16 /* KCSefiraString.m in Sources */,
 				466A3B1E17CAF3B900056F16 /* KCSefiratHaomer.m in Sources */,
 				466A3B2017CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
@@ -635,6 +723,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;

@@ -1,23 +1,16 @@
-//
-//  ComplexZmanimCalendar.m
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 7/24/11.
-//  Copyright 2011 Moshe Berman. All rights reserved.
-//
-// This class extends ZmanimCalendar and provides many more zmanim than available in the ZmanimCalendar. 
-// The basis for most zmanim in this class are from the sefer Yisroel Vehazmanim by 
-// Rabbi Yisroel Dovid Harfenes.
-// As an example of the number of different zmanim made available by this class, there are methods
-// to return 12  different calculations for   alos (dawn) available in this class. The real power 
-// of this API is the ease in calculating zmanim that are not part of the API. The methods for doing 
-// zmanim calculations not present in this class or it's superclass the ZmanimCalendar are contained
-// in the AstronomicalCalendar, the base class of the calendars in our API since they are generic 
-// methods for calculating time based on degrees or time before or after sunrise and sunset and are 
-// of interest for calculation beyond zmanim calculations.
-//
+/**
+ *  ComplexZmanimCalendar.m
+ *  KosherCocoa2
+ *
+ *  Created by Moshe Berman on 7/24/11.
+ *  Copyright 2011 Moshe Berman. All rights reserved.
+ *
+ */
 
 #import "KCComplexZmanimCalendar.h"
+#import "MBCalendarCategories.h"
+
+
 
 @implementation KCComplexZmanimCalendar
 
@@ -37,13 +30,16 @@
     return [self temporalHourFromSunrise:[self alos19Point8Degrees] toSunset:[self tzais19Point8Degrees]];
 }
 
+
 - (long) shaahZmanis18Degrees{
     return [self temporalHourFromSunrise:[self alos18Degrees] toSunset:[self tzais18Degrees]];
 }
 
+
 - (long) shaahZmanis26Degrees{
     return [self temporalHourFromSunrise:[self alos26Degrees] toSunset:[self tzais26Degrees]];
 }
+
 
 - (long) shaahZmanis16Point1Degrees{
     return [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self tzais16Point1Degrees]];
@@ -98,14 +94,11 @@
 }
 
 - (NSDate *) alos60{
-    return [[self seaLevelSunrise] dateByAddingTimeInterval:-60*kSecondsInAMinute];
+    return [self dateBySubtractingHours:1 fromDate:[self seaLevelSunrise]];
 }
 
-//
-//  Return nil if we can't compute, like the arctic circle
-//
 
-- (NSDate *) alos72Zmanis{
+- (NSDate *)alos72Zmanis {
     long shaahZmanis = [self shaahZmanisGra];
     
     if (shaahZmanis == LONG_MIN) {
@@ -116,7 +109,9 @@
 }
 
 - (NSDate *) alos90{
-    return  [[self seaLevelSunrise] dateByAddingTimeInterval:-90 * kSecondsInAMinute];
+    
+    NSDate *baseDate = [self seaLevelSunrise];
+    return [self dateBySubtractingMinutes:90 fromDate:baseDate];
 }
 
 - (NSDate *) alos90Zmanis{
@@ -130,7 +125,8 @@
 }
 
 - (NSDate *) alos96{
-    return [[self seaLevelSunrise] dateByAddingTimeInterval:-96 * kSecondsInAMinute ];
+    NSDate *baseDate = [self seaLevelSunrise];
+    return [self dateBySubtractingMinutes:96 fromDate:baseDate];
 }
 
 - (NSDate *) alos96Zmanis{
@@ -145,9 +141,8 @@
 }
 
 - (NSDate *) alos120{
-    
-    return [[self seaLevelSunrise] dateByAddingTimeInterval:-120 * kSecondsInAMinute];
-
+    NSDate *baseDate = [self seaLevelSunrise];
+    return [self dateBySubtractingMinutes:120 fromDate:baseDate];
 }
 
 - (NSDate *) alos120Zmanis{
@@ -221,7 +216,8 @@
 }
 
 - (NSDate *) sofZmanShma3HoursBeforeChatzos{
-    return [[self chatzos] dateByAddingTimeInterval:-180 * kSecondsInAMinute];
+    NSDate *baseDate = [self chatzos];
+    return [self dateBySubtractingHours:3 fromDate:baseDate];
 }
 
 - (NSDate *) sofZmanShmaMGA120Minutes{
@@ -230,21 +226,21 @@
 
 - (NSDate *) sofZmanShmaAlos16Point1ToSunset{
     long shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self seaLevelSunset]];
-    /*
+    
     if (shaahZmanis == LONG_MIN) {
         return nil;
     }
-    */
+    
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:shaahZmanis*3];
 }
 
 - (NSDate *) sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees{
     long shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self tzaisGeonim7Point083Degrees]];
-    /*
+    
      if (shaahZmanis == LONG_MIN) {
         return nil;
-     }     
-     */
+     }
+    
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:shaahZmanis * 3];
                         
 }
@@ -299,12 +295,13 @@
 }
 
 - (NSDate *) sofZmanTfila2HoursBeforeChatzos{
-    return [[self chatzos] dateByAddingTimeInterval:-120 * kSecondsInAMinute];
+        
+    return [self dateBySubtractingHours:2 fromDate:[self chatzos]];
 }
 
 - (NSDate *) minchaGedola30Minutes{
 
-    return [[self chatzos] dateByAddingTimeInterval:kSecondsInAMinute * 30];
+    return [self dateByAddingMinutes:30 toDate:[self chatzos]];
     
 } //30 minutes after chatzos
 
@@ -396,11 +393,13 @@
 }
 
 - (NSDate *) bainHashmashosRT58Point5Minutes{
-    return [[self seaLevelSunset] dateByAddingTimeInterval:58.5 * kSecondsInAMinute];
+    NSDate *baseDate = [self seaLevelSunset];
+    return [self dateByAddingMinutes:58.5 toDate:baseDate];
 }
 
 - (NSDate *) bainHashmashosRT13Point5MinutesBefore7Point083Degrees{
-    return [[self sunsetOffsetByDegrees:kZenithSevenPointZeroEightThree] dateByAddingTimeInterval:-13.5 * kSecondsInAMinute];
+    NSDate *baseDate = [self sunsetOffsetByDegrees:kZenithSevenPointZeroEightThree];
+    return [self dateBySubtractingMinutes:13.5 fromDate:baseDate];
 }
 
 - (NSDate *) bainHashmashosRT2Stars{
@@ -447,15 +446,15 @@
 }
 
 - (NSDate *) tzais50{
-    return [[self seaLevelSunset] dateByAddingTimeInterval:50 * kSecondsInAMinute];
+    return [self dateByAddingMinutes:50 toDate:[self seaLevelSunset]];
 }
 
 - (NSDate *) tzais60{
-    return [[self seaLevelSunset] dateByAddingTimeInterval:60 * kSecondsInAMinute];
+    return [self dateByAddingMinutes:60 toDate:[self seaLevelSunset]];
 }
 
 - (NSDate *) tzaisAteretTorah{
-    return [[self seaLevelSunset] dateByAddingTimeInterval:ateretTorahSunsetOffset * kSecondsInAMinute];
+    return [self dateByAddingMinutes:[self ateretTorahSunsetOffset] toDate:[self seaLevelSunset]];
 }
 
 - (NSDate *) sofZmanShmaAteretTorah{
@@ -479,7 +478,7 @@
 }
 
 - (NSDate *) misheyakirAteretTorahWithMinutes:(double)minutes{
-    return [[self alos72Zmanis] dateByAddingTimeInterval:minutes*kSecondsInAMinute];
+    return [self dateByAddingMinutes:minutes toDate:[self alos72Zmanis]];
 }
 
 - (NSDate *) tzais72Zmanis{
@@ -513,11 +512,11 @@
 }
 
 - (NSDate *) tzais90{
-    return [[self seaLevelSunset] dateByAddingTimeInterval:90*kSecondsInAMinute];
+    return [self dateByAddingMinutes:90 toDate:[self seaLevelSunset]];
 }
 
 - (NSDate *) tzais120{
-    return [[self seaLevelSunset] dateByAddingTimeInterval:120*kSecondsInAMinute];
+    return [self dateByAddingMinutes:120 toDate:[self seaLevelSunset]];
 }
 
 - (NSDate *) tzais120Zmanis{
@@ -545,7 +544,7 @@
 }
 
 - (NSDate *) tzais96{
-    return [[self seaLevelSunset] dateByAddingTimeInterval:96*kSecondsInAMinute];
+    return [self dateByAddingMinutes:96 toDate:[self seaLevelSunset]];
 }
 
 - (NSDate *) fixedLocalChatzos{
@@ -553,11 +552,11 @@
 }
 
 - (NSDate *) sofZmanShmaFixedLocal{
-    return [[self fixedLocalChatzos] dateByAddingTimeInterval:-180*kSecondsInAMinute];
+    return [self dateBySubtractingMinutes:180 fromDate:[self fixedLocalChatzos]];
 }
 
 - (NSDate *) sofZmanTfilaFixedLocal{
-    return [[self fixedLocalChatzos] dateByAddingTimeInterval:-120*kSecondsInAMinute];
+    return [self dateBySubtractingMinutes:120 fromDate:[self fixedLocalChatzos]];
 }
 
 - (NSDate *) sofZmanAchilasChametzGra{
@@ -595,9 +594,10 @@
  *         does not set, a null will be returned. See detailed explanation on top of the
  *         {@link AstronomicalCalendar} documentation.
  */
-- (NSDate *)solarMidnight{
+
+- (NSDate *)solarMidnight {
     KCComplexZmanimCalendar *clonedCalendar = [self copy];
-    [clonedCalendar setWorkingDate:[clonedCalendar.workingDate dateByAddingTimeInterval:kSecondsInADay]];
+    [clonedCalendar setWorkingDate:[self dateByAddingDays:1 toDate:clonedCalendar.workingDate]];
     NSDate *sunset = [self sunset];
     NSDate *sunrise = [self sunrise];
     

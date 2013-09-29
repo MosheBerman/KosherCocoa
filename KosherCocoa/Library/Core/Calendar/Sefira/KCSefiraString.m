@@ -20,17 +20,13 @@
     return self;
 }
 
-//
-//  Return a Nusach Ashkenaz or Sefard (not sefardi) string for the day
-//
-
-- (NSString *)dayStringInHebrew:(NSInteger)tempDay{
+- (NSString *)stringRepresentationForDay:(NSInteger)tempDay{
     
-    NSMutableString * kNusachPrefixString;    
-    NSArray *strings;
+//    NSMutableString * kNusachPrefixString;    
+//    NSArray *strings;
     
     //
-    //  Choose the "beiz" or "lamed" depending on
+    //  Choose the "beit" or` "lamed" depending on
     //  the user's nusach
     //
 	

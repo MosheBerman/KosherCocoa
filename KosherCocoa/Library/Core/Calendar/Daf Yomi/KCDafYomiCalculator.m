@@ -77,7 +77,7 @@
             } else if (masechta == 38) {
                 blatt += 33;
             }
-            dafYomi = [[KCDaf alloc] initWithMesechta:masechta andDaf:blatt];
+            dafYomi = [[KCDaf alloc] initWithTractateIndex:masechta andPageNumber:blatt];
             break;
         }
     }

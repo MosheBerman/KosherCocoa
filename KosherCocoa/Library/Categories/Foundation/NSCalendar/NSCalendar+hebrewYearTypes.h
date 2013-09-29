@@ -1,14 +1,18 @@
-//
-//  NSCalendar+hebrewYearTypes.h
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 5/9/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
+/**
+ *  NSCalendar+hebrewYearTypes.h
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 5/9/13.
+ *  Updated by Moshe Berman on 9/24/13.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import <Foundation/Foundation.h>
 
-/*
+/**
+ 
+ A type representing a hebrew year configuration.
  
  There are fourteen year configurations, as per
  Arthur Spier, 'The Comprehensive Hebrew Calendar,
@@ -20,7 +24,9 @@
  
  */
 
-typedef enum
+typedef NSInteger kHebrewYearType;
+
+enum
 {
     kHebrewYearTypeA = 0, //  Monday,     353, regular
     kHebrewYearTypeB,     //  Shabbat,    353, regular
@@ -36,9 +42,17 @@ typedef enum
     kHebrewYearTypeL,     //  Monday,     385, leap
     kHebrewYearTypeM,     //  Thursday,   385, leap
     kHebrewYearTypeN,     //  Shabbat,    385, leap
-} kHebrewYearType;
+};
 
-typedef enum {
+/**
+ *  A type representing the days of the week.
+ *
+ *  The related enum values are index-1, not index-0. (Sunday is 1, Monday is 2, etc.)
+ */
+
+typedef NSInteger kWeekday;
+
+enum {
     kWeekdaySunday = 1,
     kWeekdayMonday,
     kWeekdayTuesday,
@@ -46,13 +60,28 @@ typedef enum {
     kWeekdayThursday,
     kWeekdayFriday,
     kWeekdaySaturday
-} kWeekday;
+ };
 
-typedef enum {
+/** 
+ *  A type representing the length of a hebrew year.
+ *
+ *  There are 6 possible lengths (in days) that a Hebrew year can be.
+ *  They are: 353, 354, 355, 383, 384, and 385 days. A year that has 
+ *  353 days is "short", a year with 354 is "regular", 355 is "long."
+ *
+ *  The 30 day discrepancy will occur in leap years because 
+ *  of the extra month. The "length" of the year is the same as
+ *  if there was no extra month. (383 is the same as 353.)
+ *
+ */
+
+typedef NSInteger kYearLength;
+
+enum {
     kYearLengthShort = 0,    //  Years that are 353/383 days long
     kYearLengthRegular,      //  Years that are 354/384 days long
     kYearLengthLong          //  Years that are 355/385 days long
-} kYearLength;
+}s;
 
 
 @interface NSCalendar (HebrewYearTypes)

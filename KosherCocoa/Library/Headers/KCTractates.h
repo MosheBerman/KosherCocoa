@@ -11,11 +11,11 @@
 #ifndef KosherCocoa_KCTractates_h
 #define KosherCocoa_KCTractates_h
 
-/** kTractate
- *
- *  An enum representing the tractates of the Babylonian Talmud.
- */
-enum kTractate {
+/** A type representing a volume in the Babylonian Talmud. */
+typedef NSInteger kTractate;
+
+/**  An enum representing the volume of the Babylonian Talmud. */
+enum {
     kTractateBerachos = 0,
     kTractateShabbos,
     kTractateEruvin,

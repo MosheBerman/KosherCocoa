@@ -1,14 +1,19 @@
-//
-//  KCParasha.h
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 5/10/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
+/**
+ *  KCParasha.h
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 5/10/13.
+ *  Updated by Moshe Berman on 9/24/13.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import <Foundation/Foundation.h>
 
-/* 
+/** The type for parasha enum values. */
+typedef NSInteger KCParashaIdentifier;
+
+/**
 
  This enum contains an identifier for each of the
  possible weekly readings. Double readings and holiday
@@ -16,7 +21,7 @@
  
  */
 
-typedef enum {
+enum {
     KCParashaBereshit = 0,
     KCParashaNoach,
     KCParashaLechLecha,
@@ -89,7 +94,7 @@ typedef enum {
     kCParashaPesach7,       //  The 7th day of Pesach falls on Shabbat
     KCParashaPesach8,       //  In diaspora, the 8th day of Pesach falls on Shabbat
     KCParashaShavuot2,      //  The second day of Shavuot falls on Shabbat
-} KCParashaIdentifier;
+};
 
 @interface KCParasha : NSObject
 

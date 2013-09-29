@@ -11,7 +11,7 @@
 #import "MBCalendarCategories.h"
 #import "NSDate+Components.h"
 
-#import "ParashatHashavua.h"
+#import "KCParashatHashavuaCalculator.h"
 
 
 @interface KosherCocoaTests ()
@@ -351,8 +351,8 @@
         NSDate *workingDate = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:[self hebrewCalendar]];
         kHebrewYearType type = [NSCalendar typeOfHebrewYearContainingDate:workingDate];
         
-        ParashatHashavua *parasha = [ParashatHashavua new];
-        NSArray *parshiot = [parasha parshiotForYearType:type inDiaspora:YES];
+        KCParashatHashavuaCalculator *parasha = [KCParashatHashavuaCalculator new];
+        NSArray *parshiot = [parasha parshiotInDiasporaDuringYearType:type];
         
         NSLog(@"Parshiot for %i (Type: %i): %@", hebrewYear, i+1, parshiot);
     }
