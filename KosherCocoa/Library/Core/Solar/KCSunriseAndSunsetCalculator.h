@@ -1,10 +1,11 @@
-/** SunriseAndSunset.h
+/** 
+ *  SunriseAndSunset.h
  *  KosherCocoa 2
  *
  *  Created by Moshe Berman on 3/29/11.
  *  Modified by Moshe Berman on 8/25/13
  *
- *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */
 
 #import <Foundation/Foundation.h>
@@ -13,10 +14,7 @@
 #import "KCConstants.h"
 #import "KCAstronomicalCalculator.h"
 
-/**
- *
- *  The class interface
- */
+/** A class that uses the United States Naval Almanac Algorithm to calculate sunrise and sunset. */
 
 @interface KCSunriseAndSunsetCalculator : KCAstronomicalCalculator
 
@@ -29,10 +27,14 @@
 @property (nonatomic, strong) KCGeoLocation *geoLocation;
 
 /**
+ *  This method instantiates a new KCSunriseAndSunsetCalculator 
+ *  using the supplied KCGeolocation.
  *
+ *  @param <#parameter name #> <#description#>
+ *  @return <#return value#>
  */
 
-- (id)initWithGeoLocation:(KCGeoLocation *)aGeoLocation;
+- (id)initWithGeoLocation:(KCGeoLocation *)geolocation;
 
 /**-----
  * @name Calculations

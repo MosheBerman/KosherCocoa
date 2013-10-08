@@ -1,20 +1,18 @@
-//
-//  SunriseAndSunset.m
-//  Zmanim
-//
-//  Created by Moshe Berman on 3/29/11.
-//  Copyright 2011 MosheBerman.com. All rights reserved.
-//
+/**
+ *  SunriseAndSunset.h
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 3/29/11.
+ *  Modified by Moshe Berman on 8/25/13
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import "KCSunriseAndSunsetCalculator.h"
 
 @implementation KCSunriseAndSunsetCalculator
 
-//
-//  The initializer.
-//
-
-- (id)initWithGeoLocation:(KCGeoLocation *)aGeoLocation
+- (id)initWithGeoLocation:(KCGeoLocation *)geolocation
 {
     
     self = [super init];
@@ -30,11 +28,11 @@
         //
         
         
-        if (aGeoLocation == nil)
+        if (!geolocation)
         {
             
             //
-            //  Create the GeoLocation
+            //  Create the default KCGeoLocation
             //
             
             KCGeoLocation *tempG = [[KCGeoLocation alloc] initWithName:@"Default" andLatitude:0.0 andLongitude:0.0 andTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0.0]];
@@ -43,7 +41,7 @@
             //  Assign it to the geoLoc object
             //
             
-            aGeoLocation = tempG;
+            geolocation = tempG;
             
         }
         
@@ -51,7 +49,7 @@
         //  Store the geoLocation object
         //
         
-        self.geoLocation = aGeoLocation;
+        _geoLocation = geolocation;
     }
     
     return self;

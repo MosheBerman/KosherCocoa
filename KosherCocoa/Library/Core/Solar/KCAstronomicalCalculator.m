@@ -1,4 +1,5 @@
-/** AstronomicalCalculator.m
+/** 
+ *  AstronomicalCalculator.h
  *  KosherCocoa 2
  *
  *  Created by Moshe Berman on 7/22/11.
@@ -9,16 +10,11 @@
 
 #import "KCAstronomicalCalculator.h"
 
-/** An abstract class whose subclasses calculate sunrise and sunset.
- *
+/** 
+ *  An abstract class whose subclasses calculate sunrise and sunset.
  */
 
 @implementation KCAstronomicalCalculator
-
-/**-----
- * @name Calculating Sunrise
- * -----
- */
 
 - (double) UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation{
     [super doesNotRecognizeSelector:_cmd];

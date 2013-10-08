@@ -1,10 +1,12 @@
-//
-//  AstronomicalCalendar.m
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 7/22/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+/**
+ *  AstronomicalCalendar.m
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 7/22/11.
+ *  Modified by Moshe Berman on 10/8/13
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import "KCAstronomicalCalendar.h"
 #import "MBCalendarCategories.h"
