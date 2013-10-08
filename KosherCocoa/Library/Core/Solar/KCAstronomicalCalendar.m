@@ -161,10 +161,6 @@
 
 #pragma mark - Temporal Hour (Shaa Zmanis)
 
-//
-//  This method returns the number of seconds in a temporal hour
-//
-
 - (double) temporalHourFromSunrise:(NSDate *)sunrise toSunset:(NSDate*)sunset{
     
     if (sunrise == nil || sunset == nil) {
@@ -182,12 +178,6 @@
 
 
 #pragma mark - NSDate Utility Methods
-
-//
-//  A method that returns the calculated time
-//  as an NSDate object based on the user's time zone
-//  and today's date.
-//  
 
 - (NSDate *)dateFromTime:(double)time{
     
@@ -290,10 +280,6 @@
     
     return returnDate; 
 }
-
-//
-//  This method returns a formatted string
-//
 
 - (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)tz withSeconds:(BOOL)shouldShowSeconds{
     
