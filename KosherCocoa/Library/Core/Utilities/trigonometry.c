@@ -1,4 +1,5 @@
-/** MathAdditions.c
+/** 
+ *  MathAdditions.c
  *  KosherCocoa 2
  *
  *  Created by Moshe Berman on 3/24/11.
