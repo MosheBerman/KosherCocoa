@@ -11,14 +11,14 @@
 #import "trigonometry.h"
 #import "KCGeoLocation.h"
 #import "KCConstants.h"
-#import "AstronomicalCalculator.h"
+#import "KCAstronomicalCalculator.h"
 
 /**
  *
  *  The class interface
  */
 
-@interface KCSunriseAndSunsetCalculator : AstronomicalCalculator
+@interface KCSunriseAndSunsetCalculator : KCAstronomicalCalculator
 
 /**
  
