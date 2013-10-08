@@ -44,14 +44,14 @@
 		466A3B1A17CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */; };
 		466A3B1B17CAF3B900056F16 /* KCSefiraString.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE017CAF3B900056F16 /* KCSefiraString.m */; };
 		466A3B1C17CAF3B900056F16 /* KCSefiraString.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE017CAF3B900056F16 /* KCSefiraString.m */; };
-		466A3B1D17CAF3B900056F16 /* KCSefiratHaomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomer.m */; };
-		466A3B1E17CAF3B900056F16 /* KCSefiratHaomer.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomer.m */; };
+		466A3B1D17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */; };
+		466A3B1E17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */; };
 		466A3B1F17CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE517CAF3B900056F16 /* KCComplexZmanimCalendar.m */; };
 		466A3B2017CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE517CAF3B900056F16 /* KCComplexZmanimCalendar.m */; };
 		466A3B2117CAF3B900056F16 /* KCZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE717CAF3B900056F16 /* KCZmanimCalendar.m */; };
 		466A3B2217CAF3B900056F16 /* KCZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE717CAF3B900056F16 /* KCZmanimCalendar.m */; };
-		466A3B2317CAF3B900056F16 /* AstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEA17CAF3B900056F16 /* AstronomicalCalculator.m */; };
-		466A3B2417CAF3B900056F16 /* AstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEA17CAF3B900056F16 /* AstronomicalCalculator.m */; };
+		466A3B2317CAF3B900056F16 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEA17CAF3B900056F16 /* KCAstronomicalCalculator.m */; };
+		466A3B2417CAF3B900056F16 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEA17CAF3B900056F16 /* KCAstronomicalCalculator.m */; };
 		466A3B2517CAF3B900056F16 /* KCAstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEC17CAF3B900056F16 /* KCAstronomicalCalendar.m */; };
 		466A3B2617CAF3B900056F16 /* KCAstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEC17CAF3B900056F16 /* KCAstronomicalCalendar.m */; };
 		466A3B2717CAF3B900056F16 /* KCGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEE17CAF3B900056F16 /* KCGeoLocation.m */; };
@@ -148,14 +148,14 @@
 		466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParashatHashavuaCalculator.m; sourceTree = "<group>"; };
 		466A3ADF17CAF3B900056F16 /* KCSefiraString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiraString.h; sourceTree = "<group>"; };
 		466A3AE017CAF3B900056F16 /* KCSefiraString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraString.m; sourceTree = "<group>"; };
-		466A3AE117CAF3B900056F16 /* KCSefiratHaomer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiratHaomer.h; sourceTree = "<group>"; };
-		466A3AE217CAF3B900056F16 /* KCSefiratHaomer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiratHaomer.m; sourceTree = "<group>"; };
+		466A3AE117CAF3B900056F16 /* KCSefiratHaomerCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiratHaomerCalculator.h; sourceTree = "<group>"; };
+		466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiratHaomerCalculator.m; sourceTree = "<group>"; };
 		466A3AE417CAF3B900056F16 /* KCComplexZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCComplexZmanimCalendar.h; sourceTree = "<group>"; };
 		466A3AE517CAF3B900056F16 /* KCComplexZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCComplexZmanimCalendar.m; sourceTree = "<group>"; };
 		466A3AE617CAF3B900056F16 /* KCZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZmanimCalendar.h; sourceTree = "<group>"; };
 		466A3AE717CAF3B900056F16 /* KCZmanimCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZmanimCalendar.m; sourceTree = "<group>"; };
-		466A3AE917CAF3B900056F16 /* AstronomicalCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AstronomicalCalculator.h; sourceTree = "<group>"; };
-		466A3AEA17CAF3B900056F16 /* AstronomicalCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AstronomicalCalculator.m; sourceTree = "<group>"; };
+		466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalculator.h; sourceTree = "<group>"; };
+		466A3AEA17CAF3B900056F16 /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
 		466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCAstronomicalCalendar.h; sourceTree = "<group>"; };
 		466A3AEC17CAF3B900056F16 /* KCAstronomicalCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalendar.m; sourceTree = "<group>"; };
 		466A3AED17CAF3B900056F16 /* KCGeoLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCGeoLocation.h; sourceTree = "<group>"; };
@@ -449,8 +449,8 @@
 			children = (
 				466A3ADF17CAF3B900056F16 /* KCSefiraString.h */,
 				466A3AE017CAF3B900056F16 /* KCSefiraString.m */,
-				466A3AE117CAF3B900056F16 /* KCSefiratHaomer.h */,
-				466A3AE217CAF3B900056F16 /* KCSefiratHaomer.m */,
+				466A3AE117CAF3B900056F16 /* KCSefiratHaomerCalculator.h */,
+				466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */,
 			);
 			path = Sefira;
 			sourceTree = "<group>";
@@ -469,8 +469,8 @@
 		466A3AE817CAF3B900056F16 /* Solar */ = {
 			isa = PBXGroup;
 			children = (
-				466A3AE917CAF3B900056F16 /* AstronomicalCalculator.h */,
-				466A3AEA17CAF3B900056F16 /* AstronomicalCalculator.m */,
+				466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */,
+				466A3AEA17CAF3B900056F16 /* KCAstronomicalCalculator.m */,
 				466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */,
 				466A3AEC17CAF3B900056F16 /* KCAstronomicalCalendar.m */,
 				466A3AED17CAF3B900056F16 /* KCGeoLocation.h */,
@@ -635,10 +635,10 @@
 				466A3B1717CAF3B900056F16 /* KCParasha.m in Sources */,
 				466A3B1917CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
 				466A3B1B17CAF3B900056F16 /* KCSefiraString.m in Sources */,
-				466A3B1D17CAF3B900056F16 /* KCSefiratHaomer.m in Sources */,
+				466A3B1D17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */,
 				466A3B1F17CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
 				466A3B2117CAF3B900056F16 /* KCZmanimCalendar.m in Sources */,
-				466A3B2317CAF3B900056F16 /* AstronomicalCalculator.m in Sources */,
+				466A3B2317CAF3B900056F16 /* KCAstronomicalCalculator.m in Sources */,
 				466A3B2517CAF3B900056F16 /* KCAstronomicalCalendar.m in Sources */,
 				466A3B2717CAF3B900056F16 /* KCGeoLocation.m in Sources */,
 				466A3B2917CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m in Sources */,
@@ -667,10 +667,10 @@
 				466A3B1817CAF3B900056F16 /* KCParasha.m in Sources */,
 				466A3B1A17CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
 				466A3B1C17CAF3B900056F16 /* KCSefiraString.m in Sources */,
-				466A3B1E17CAF3B900056F16 /* KCSefiratHaomer.m in Sources */,
+				466A3B1E17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */,
 				466A3B2017CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
 				466A3B2217CAF3B900056F16 /* KCZmanimCalendar.m in Sources */,
-				466A3B2417CAF3B900056F16 /* AstronomicalCalculator.m in Sources */,
+				466A3B2417CAF3B900056F16 /* KCAstronomicalCalculator.m in Sources */,
 				466A3B2617CAF3B900056F16 /* KCAstronomicalCalendar.m in Sources */,
 				466A3B2817CAF3B900056F16 /* KCGeoLocation.m in Sources */,
 				466A3B2A17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m in Sources */,
