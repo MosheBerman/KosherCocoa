@@ -1,10 +1,12 @@
-//
-//  WeeklyParsha.m
-//  ParshaPort
-//
-//  Created by Moshe Berman on 1/17/11.
-//  Copyright 2011 MosheBerman.com. All rights reserved.
-//
+/**
+ *  KCParashatHashavuaCalculator.h
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 1/17/11.
+ *  Updated by Moshe Berman on 10/7/13.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import "KCParashatHashavuaCalculator.h"
 #import "KCConstants.h"
