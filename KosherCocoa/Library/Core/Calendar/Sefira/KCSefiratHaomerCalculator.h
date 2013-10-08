@@ -3,7 +3,7 @@
  *  KosherCocoa 2
  *
  *  Created by Moshe Berman on 3/1/11.
- *  Updated by Moshe Berman on 10/i/13.
+ *  Updated by Moshe Berman on 10/8/13.
  *
  *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */

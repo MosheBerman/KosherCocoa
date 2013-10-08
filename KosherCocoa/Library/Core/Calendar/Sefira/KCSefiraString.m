@@ -1,21 +1,28 @@
-//
-//  SefiraString.m
-//  UltimateOmer2
-//
-//  Created by Moshe Berman on 3/21/11.
-//  Copyright 2011 MosheBerman.com. All rights reserved.
-//
+/**
+ *  KCSefiraString.
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 3/21/11.
+ *  Updated by Moshe Berman on 10/7/13.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import "KCSefiraString.h"
 
 @implementation KCSefiraString
 
-- (id)initWithDay:(NSInteger)tempDay{
+- (id)initWithDay:(NSInteger)day{
     
     if (self == [super init]) {
 
-        self.day = tempDay;
-        
+        if (day < 0 || day > 49 )
+        {
+            self = nil;
+        }
+        else {
+            _day = day;
+        }
     }
     return self;
 }
