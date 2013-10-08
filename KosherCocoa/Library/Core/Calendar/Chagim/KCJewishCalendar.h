@@ -1,5 +1,5 @@
-/*
- *  KCJewishCalendar
+/**
+ *  KCJewishCalendar.h
  *  KosherCocoa 2
  *
  *  Created by Moshe Berman on 11/11/11.

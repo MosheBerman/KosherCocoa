@@ -1,9 +1,9 @@
 /**
- *  JewishCalendar.m
+ *  KCJewishCalendar.m
  *  KosherCocoa 2
  *
  *  Created by Moshe Berman on 11/11/11.
- *  Created by Moshe Berman on 8/26/13.
+ *  Updated by Moshe Berman on 8/26/13.
  *
  *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */
