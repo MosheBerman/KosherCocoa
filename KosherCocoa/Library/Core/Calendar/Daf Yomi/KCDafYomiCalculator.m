@@ -1,15 +1,26 @@
-//
-//  YomiCalculator.m
-//  KosherCocoaCommandLine
-//
-//  Created by Moshe Berman on 11/13/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
+/**
+ *  KCDafYomiCalculator.h
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 11/13/11.
+ *  Updated by Moshe Berman on 10/7/13.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import "KCDafYomiCalculator.h"
 
+@interface KCDafYomiCalculator ()
+
+//Calculate the Julian Day
+- (NSInteger) julianDayForDate:(NSDate *)date;
+
+//Convenience method for making a gregorian date
+- (NSDate *)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day;
+
+@end
+
 @implementation KCDafYomiCalculator
-@synthesize workingDate;
 
 #define kNumberOfMasechtos 40
  
@@ -24,7 +35,13 @@
     return self;
 }
 
-- (KCDaf *)dafYomiBavliForDate:(NSDate *)date{
+- (KCDaf *)dafYomiBavli
+{
+    return [self dafYomiBavliForDate:[NSDate date]];
+}
+
+- (KCDaf *)dafYomiBavliForDate:(NSDate *)date
+{
     
     //Start on September 11, 1923
     NSDate *dafYomiStartDate = [self gregorianDateForYear:1923 month:9 andDay:11];
