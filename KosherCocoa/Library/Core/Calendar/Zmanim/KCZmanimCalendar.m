@@ -1,10 +1,12 @@
-//
-//  ZmanimCalendar.m
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 7/19/11.
-//  Copyright 2011 MosheBerman.com. All rights reserved.
-//
+/**
+ *  KCZmanimCalendar.m
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 7/19/11.
+ *  Updated by Moshe Berman on 10/8/13.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 
 #import "KCZmanimCalendar.h"
 #import "MBCalendarCategories.h"

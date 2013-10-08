@@ -1,10 +1,11 @@
 /**
- *  ComplexZmanimCalendar.m
- *  KosherCocoa2
+ *  KCZComplexZmanimCalendar.m
+ *  KosherCocoa 2
  *
  *  Created by Moshe Berman on 7/24/11.
- *  Copyright 2011 Moshe Berman. All rights reserved.
+ *  Updated by Moshe Berman on 10/8/13.
  *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */
 
 #import "KCComplexZmanimCalendar.h"
