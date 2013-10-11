@@ -87,6 +87,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4610DD9018086BB40055A4F9 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = SOURCE_ROOT; };
+		4610DD911808999A0055A4F9 /* KCParashaReadings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashaReadings.h; sourceTree = "<group>"; };
 		4618BB851664216E00AD3CE5 /* libKosherCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKosherCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4618BB881664216E00AD3CE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4618BB8C1664216E00AD3CE5 /* KosherCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KosherCocoa-Prefix.pch"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */,
 				4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */,
 				4618BBA01664216F00AD3CE5 /* Supporting Files */,
+				4610DD9018086BB40055A4F9 /* TODO */,
 			);
 			path = KosherCocoaTests;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				468C006E17F1E3450070CDB5 /* KCTractates.h */,
 				466A3AFC17CAF3B900056F16 /* KCZenith.h */,
 				466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */,
+				4610DD911808999A0055A4F9 /* KCParashaReadings.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
