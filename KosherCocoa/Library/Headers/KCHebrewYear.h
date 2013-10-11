@@ -1,9 +1,13 @@
-/** KCHebrewYear.h
+/*
+ *  KCHebrewYear.h
+ *  KosherCocoa 2
  * 
- *  Created by Moshe Berman on Sunday, August 25, 2013.
+ *  Created by Moshe Berman on 8/25/13.
+ *  Updated by Moshe Berman on 10/11/13.
  *
- *  This file contains constants related to
- *  the Hebrew Calendar.
+ *  This file contains constants related to the Hebrew Calendar.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */
 
 #ifndef __KC_HEBREW_YEAR_H

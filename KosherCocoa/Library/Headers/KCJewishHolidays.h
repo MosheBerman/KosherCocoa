@@ -1,5 +1,10 @@
-/** KCJewishholidays.h
+/**
+ *  KCJewishHolidays.h
+ *  KosherCocoa 2
  *
+ *  Created by Moshe Berman on 8/25/13.
+ *  Updated by Moshe Berman on 10/11/13.
+ *  
  *  The Jewish holidays, called "Yomim Tovim", or "Chagim",
  *  are defined here.
  *
@@ -7,6 +12,7 @@
  *  and the modern holidays, instituted in relation to
  *  the establishment of the State of Israel, in 1948.
  *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */
 
 #ifndef __KC_JEWISH_HOLIDAYS_H
