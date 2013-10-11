@@ -56,24 +56,29 @@
 }
 
 
-//
-//  A method returning the sunrise in UTC as a double. If an error was
-//  encountered in the calculation (as expected in some locations, such
-//  as near the poles)NAN will be returned.
-//
-//  - Year: a 4 digit year
-//
-//  - Month: month of the year 1-12
-//
-//  - Day: day of the month, 1-31
-//
-//  - Longitude: in degrees, longitudes west of Meridian are negative
-//
-//  - Latitude: in degrees, longitudes south of Equator are negative
-//
-//  - Type:  type of calculation to carry out. kCalcTypeSunrise or kCalcTypeSunset
-//
-//
+
+/**
+ *  A method returning the sunrise  or sinsetin UTC as a double. If an error was
+ *  encountered in the calculation (as expected in some locations, such
+ *  as near the poles) NAN will be returned.
+ *
+ *  @param year A Gregorian year number as an integer.
+ *
+ *  @param month The month of the gregorian year. Valud values range from 1 to 12.
+ *
+ *  @param day The day of the gregorian month. Valid values range from 1 to 31.
+ *
+ *  @param longitude The longitude in degrees. (Longitude values west of Meridian are negative.)
+ *
+ *  @param latitude The latitude in degrees. longitudes south of Equator are negative
+ *
+ *  @param zenith Which zenith to use in the calculation.
+ *
+ *  @param type The type of calculation to carry out. Values are kCalcTypeSunrise or kCalcTypeSunset. (Alternatively, an integer 0 or 1)
+ *
+ *  @return The time that sunset occurs UTC as a double.
+ */
+
 
 - (double)sunriseOrSunsetForYear:(int)year andMonth:(int)month andDay:(int)day atLongitude:(double)longitude andLatitude:(double)latitude withZenith:(double)zenith andType:(int)type
 {

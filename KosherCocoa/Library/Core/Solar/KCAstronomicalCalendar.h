@@ -153,10 +153,9 @@
  * sunset}. Note that the degree offset is from the vertical, so for a calculation of 14&deg; after sunset, an
  * offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.
  *
- * @param offsetZenith
- *            the degrees after {@link #getSunset()} to use in the calculation. For time before sunset use negative
- *            numbers. Note that the degree offset is from the vertical, so for a calculation of 14&deg; after
- *            sunset, an offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.
+ * @param offsetZenith the degrees after {@link #getSunset()} to use in the calculation. 
+ *          For time before sunset use negative numbers. Note that the degree offset is from the vertical, so for a calculation of 14&deg; 
+ *          after sunset, an offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.
  * @return The {@link java.util.Date}of the offset after (or before) {@link #getSunset()}. If the calculation can't
  *         be computed such as in the Arctic Circle where there is at least one day a year where the sun does not
  *         rise, and one where it does not set, a null will be returned. See detailed explanation on top of the
