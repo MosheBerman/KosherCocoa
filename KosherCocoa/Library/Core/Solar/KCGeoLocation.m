@@ -11,13 +11,18 @@
 #import "KCGeoLocation.h"
 #import "trigonometry.h"
 
+@interface KCGeoLocation ()
+
+@end
+
 @implementation KCGeoLocation
 
+
  /*
- //
- // An initializer with parameters for all required fields,
- // except for elevation, which is set to zero.
- //
+  *
+  * An initializer with parameters for all required fields,
+  * except for elevation, which is set to zero.
+  *
  */
 
 - (id) initWithName:(NSString *)name andLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(NSTimeZone *)timeZone
@@ -26,9 +31,9 @@
 }
 
 /*
-//
-//  An initializer with parameters for all required fields.
-//
+ *
+ *  An initializer with parameters for all required fields.
+ *
 */
 
 - (id) initWithName:(NSString *)name andLatitude:(double)latitude andLongitude:(double)longitude andElevation:(double)elevation andTimeZone:(NSTimeZone *)timeZone
@@ -38,8 +43,8 @@
     if(self){
         
         _locationName = name;
-        _latitude = latitude;
         _longitude = longitude;
+        _latitude = latitude;
         _altitude = elevation;
         _timeZone = timeZone;
      }
@@ -48,11 +53,11 @@
 }
 
 /*
-//
-//  A default initializer which will set the location
-//  to the Prime Meridian at Greenwich, England.
-//
-//
+ *
+ *  A default initializer which will set the location
+ *  to the Prime Meridian at Greenwich, England.
+ *
+ *
 */
 
 - (id) init{
@@ -69,58 +74,13 @@
     return self;
 }
 
-/* ------------------------------ Getters/Setters -------------------------------*/
+
 
 /*
- //
- //  Method to return the elevation in meters.
- //
- //  Returns the elevation meters
- //  
- //
+ *
+ *  Method to set the latitude in degrees, minutes and seconds.
+ *
  */
-
-/*
-- (double) elevation{
-    return self.elevation;
-}
-*/
-
-/*
- //  Method to set elevation in meters above sealevel
- //  
- //  The elevation will be set in meters. An IllegalArgumentException
- //  will be thrown if the value is a negative.
- //
- //
- */
-/*
-- (void) setElevation:(double)_elevation{
-    if (_elevation < 0) {
-        @throw [NSException exceptionWithName:@"IllegalArgumentException" reason:@"Elevation cannot be negative." userInfo:nil];
-    }
-    self.elevation = _elevation;
-}
-*/
-/*
-//
-//  Method to set the latitude in degrees.
-//
-*/ 
-/*
-- (void) setLatitude:(double)_latitude{
-    
-    if (_latitude > 90 || _latitude < -90) {
-        @throw [NSException exceptionWithName:@"IllegalArgumentException" reason:@"Latitude must be between -90 and 90." userInfo:nil];
-    }
-    self.latitude = _latitude;
-}
-*/
-/*
-//
-//  Method to set the latitude in degrees, minutes and seconds.
-//
-*/
 
 - (void) setLatitudeWithDegrees:(int)_degrees andMinutes:(int)_minutes andSeconds:(double)_seconds inDirection:(NSString *)_direction{
     
@@ -139,36 +99,11 @@
     self.latitude = tempLat;
 }
 
- /*
- //
- // Returns the latitude
- //
+/*
+ *
+ *  Set the longitude in degrees, minutes and seconds.
+ *
  */
-/*
-- (double) latitude{
-    return latitude;
-}
-*/
-/*
-//
-//  The degrees of longitude set in a double
-//  format between -180 and 180 degrees.
-//
-*/
-/*
-- (void)setLongitude:(double)_longitude{
-    
-    if (_longitude > 180 || _longitude < -180) {
-        @throw [NSException exceptionWithName:@"IllegalArgumentException" reason:@"Longitude must be between -180 and 180." userInfo:nil];
-    }
-    self.longitude = _longitude;
-}
-*/
-/*
-//
-//  Set the longitude in degrees, minutes and seconds.
-//
-*/
 
 - (void) setLongitudeWithDegrees:(int)_degrees andMinutes:(int)_minutes andSeconds:(double)_seconds inDirection:(NSString *)_direction{
     
@@ -191,15 +126,15 @@
 /* -------------------------- Calculation Methods ------------------------------ */
 
 /*
-//
-//  A method that will return the location's local mean time offset in
-//  milliseconds from local standard time. The globe is split into 360&deg;,
-//  with 15&deg; per hour of the day. For a local that is at a longitude that
-//  is evenly divisible by 15 (longitude % 15 == 0), at solar noon.
-//
-//
-//
-//
+ *
+ *  A method that will return the location's local mean time offset in
+ *  milliseconds from local standard time. The globe is split into 360&deg;,
+ *  with 15&deg; per hour of the day. For a local that is at a longitude that
+ *  is evenly divisible by 15 (longitude % 15 == 0), at solar noon.
+ *
+ *
+ *
+ *
 */
 
 #define kMillisecondsInAMinute 60 * 1000
@@ -209,27 +144,30 @@
     return (long)[self longitude] * 4 * kMillisecondsInAMinute - ([[self timeZone] secondsFromGMT] * 1000);
 }	
 
-//
-//
-//
+/**
+ *
+ *  @param location An instance of KCGeoLocation.
+ *
+ *  @return The geodesic bearing for the location.
+ */
 
 - (double) getGeodesicInitialBearingForLocation:(KCGeoLocation *)location
 {
     return [self vincentyFormulaForLocation:location withBearing:kInitialBearing];
 }
 
-//
-//
-//
+/*
+ *
+ */
 
 - (double) getGeodesicFinalBearingForLocation:(KCGeoLocation *)location
 {
     return [self vincentyFormulaForLocation:location withBearing:kFinalBearing];
 }
 
-//
-//
-//
+/*
+ *
+ */
 
 - (double) getGeodesicDistanceForLocation:(KCGeoLocation *)location
 {
@@ -237,16 +175,14 @@
 }
 
 /*
-//
-//  
-//
-*/
+ *
+ */
 
 - (double) vincentyFormulaForLocation:(KCGeoLocation *)location withBearing:(int)formula
 {    
 		double a = 6378137;
 		double b = 6356752.3142;
-		double f = 1 / 298.257223563; // WGS-84 ellipsiod
+		double f = 1 / 298.257223563;  // WGS-84 ellipsiod
 		double L = toRadians(location.longitude -  [self longitude]);
 		double U1 = atan((1 - f) * tan(toRadians([self latitude])));
 		double U2 = atan((1 - f)
@@ -329,13 +265,9 @@
         }
 	}
 
-//
-//
-//
-//
-//
-//
-//
+/*
+ *
+ */
 
 - (double) getRhumbLineBearingForLocation:(KCGeoLocation *)location{
     double dLon = toRadians([location longitude] - [self longitude]);
@@ -349,14 +281,12 @@
 }
 
 /*
-//
-//  
-//
-*/
+ *
+ */
 
 - (double) getRhumbLineDistanceForLocation:(KCGeoLocation *)location{
 
-    double R = 6371; // earth's mean radius in km
+    double R = 6371;  // earth's mean radius in km
     double dLat = toRadians([location latitude] - _latitude);
     double dLon = toRadians(abs([location longitude ]
                                           - [self longitude]));
@@ -376,14 +306,5 @@
     
     return [NSString stringWithFormat:@"<GeoLocation:> ----\nName: %@ \nLatitude: %f, \nLongitude: %f \nAltitude: %f", self.locationName, self.latitude, self.longitude, self.altitude];
 }
-
-/* ------------------------------ Dealloc Method --------------------------------*/
-
-/*
-//
-//  Dealloc class
-//
-*/
-
 
 @end
