@@ -57,8 +57,10 @@
  *  typeOfHebrewYearContainingDate: as defined
  *  in NSDate+HebrewYearTypes category method.
  *
- *  @see NSDate+HebrewYearTypes.h
+ *  @param typeOfYear A kHebrewYearType value as defined in NSCalendar+hebrewYearTypes.h
+ *
  *  @see KCParasha.h
+ *
  *  @return An array of KCParasha objects.
  *
  */
@@ -73,7 +75,8 @@
  *  typeOfHebrewYearContainingDate: as defined
  *  in NSDate+HebrewYearTypes category method.
  *
- *  @see NSDate+HebrewYearTypes.h
+ *  @param typeOfYear A kHebrewYearType value as defined in NSCalendar+hebrewYearTypes.h
+ *
  *  @see KCParasha.h
  *  @return An array of KCParasha objects.
  *

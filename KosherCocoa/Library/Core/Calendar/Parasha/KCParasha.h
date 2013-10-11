@@ -9,101 +9,66 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "KCParashaReadings.h"
 
-/** The type for parasha enum values. */
-typedef NSInteger KCParashaIdentifier;
+/** A class that represents a weekly parasha */
+@interface KCParasha : NSObject
 
-/**
-
- This enum contains an identifier for each of the
- possible weekly readings. Double readings and holiday
- readings are treated seperately from single parasha readings.
- 
+/**-----
+ * @name Properties
+ * -----
  */
 
-enum {
-    KCParashaBereshit = 0,
-    KCParashaNoach,
-    KCParashaLechLecha,
-    KCParashaVayeira,
-    KCParashaChayeiSarah,
-    KCParashaToldot,
-    KCParashaVayeitsei,
-    KCParashaVayishlach,
-    KCParashaVayeishev,
-    KCParashaMiketz,
-    KCParashaVayigash,
-    KCParashaVayechi,
-    KCParashaShemot,
-    KCParashaVaera,
-    KCParashaBo,
-    KCParashaBeshalach,
-    KCParashaYitro,
-    KCParashaMishpatim,
-    KCParashaTerumah,
-    KCParashaTetzaveh,
-    KCParashaTerumahAndTetzaveh,    //  Terumah - Tetzaveh
-    KCParashaKiTissa,
-    KCParashaVayakhel,
-    KCParashaPekudei,
-    KCParashaVayakhelAndPekudei,    //  Vayakhel - Pekudei
-    KCParashaVayikra,
-    KCParashaTzav,
-    KCParashaShemini,
-    KCParashaTazria,
-    KCParashaMetzora,
-    KCParashaTazriaAndMetzora,
-    KCParashaAchareiMot,
-    KCParashaKedoshim,
-    KCParashaAchareiMotAndKedoshim, //  Acharei - Kedoshim
-    KCParashaEmor,
-    KCParashaBehar,
-    KCParashaBechukotai,
-    KCParashaBeharAndBechukotai,    //  Behar - Bechukotai
-    KCParashaBamidbar,
-    KCParashaNaso,
-    KCParashaBehaalotecha,
-    KCParashaShelach,
-    KCParashaKorach,
-    KCParashaChukat,
-    KCParashaBalak,
-    KCParashaChukatAndBalak,        //  Chukat - Balak
-    KCParashaPinchas,
-    KCParashaMatot,
-    KCParashaMasei,
-    KCParashaMatotAndMasei,         //  Matot - Masei
-    KCParashaDevarim,
-    KCParashaVaetchanan,
-    KCParashaEikev,
-    KCParashaReeh,
-    KCParashaShoftim,
-    KCParashaKiTeitzei,
-    KCParashaKiTavo,
-    KCParashaNitzavim,
-    KCParashaVayeilech,
-    KCParashaNitzavimAndVayeilech,  //  Nitzavim - Vayeilech
-    KCParashaHaazinu,
-    KCParashaVezotHaberacha,
-    KCParashaRoshHashana1,  //  Rosh Hashana falls on Shabbat
-    KCParashaYomKippur,     //  Yom Kippur falls on Shabbat
-    KCParashaSukkot1,       //  Sukkot falls on Shabbat
-    KCParashaSukkot3,       //  Chol Hamoed Sukkot falls on Shabbat
-    KCParashaSheminiAtzeret,//  Shemini Atzeret falls on Shabbat
-    KCParashaPesach1,       //  The first night of pesach falls on Shabbat
-    KCParashaPesach3,       //  Chol Hamoed Pesach contains a Shabbat
-    kCParashaPesach7,       //  The 7th day of Pesach falls on Shabbat
-    KCParashaPesach8,       //  In diaspora, the 8th day of Pesach falls on Shabbat
-    KCParashaShavuot2,      //  The second day of Shavuot falls on Shabbat
-};
-
-@interface KCParasha : NSObject
+/**
+ * The parasha identifier.
+ */
 
 @property (nonatomic, assign) KCParashaIdentifier identifier;
 
+/**-----
+ * @name Converting an identifier into a parasha.
+ * -----
+ */
+
+/**
+ *  This method returns a KCParasha instance.
+ *
+ *  @param identifier An identifier, defined in KCParashaReadings.
+ *  @return A KCParasha instance.
+ */
 - (id)initWithIdentifier:(KCParashaIdentifier)identifier;
+
+/**
+ *  This method returns a KCParasha instance.
+ *
+ *  This method simply calls [[KCParasha alloc] initWithIdentifier:identifier]. 
+ *  It exists for convenience.
+ *
+ *  @param identifier An identifier, defined in KCParashaReadings.
+ *  @return A KCParasha instance.
+ */
 + (id)parashaWithIdentifier:(KCParashaIdentifier)identifier;
 
+/**-----
+ * @name Human Readable Parasha Names
+ * -----
+ */
+
+/**
+ *  This method returns the name of the parasha, transliterated into English
+ *
+ *  @return A string composed of hebrew characters that 
+ *  corresponds to the instance's identifier.
+ */
 - (NSString *)name; //  The hebrew name of the parasha
+
+/**
+ *  This method returns the hebrew name of the parasha.
+ *
+ *  @return A string composed of english characters that
+ *  spells out the hebrew name that corresponds to the
+ *  instance's identifier.
+ */
 - (NSString *)nameTransliterated;   //  The name of the parasha, transliterated into English
 
 @end
