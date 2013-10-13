@@ -64,6 +64,8 @@
  *  If date does not fall out during the
  *  omer count, then 0 is returned.
  *
+ *  @param date The date to use.
+ *
  *  @return An integer representing the day of the omer count.
  */
 
