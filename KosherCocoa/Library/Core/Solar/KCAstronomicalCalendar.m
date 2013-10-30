@@ -10,17 +10,9 @@
 
 #import "KCAstronomicalCalendar.h"
 #import "MBCalendarCategories.h"
+#import "KCAstronomicalCalendar+DateManipulation.h"
 
 @implementation KCAstronomicalCalendar
-
-- (id)init
-{
-    self = [super initWithCalendarIdentifier:NSGregorianCalendar];
-    if (self) {
-        
-    }
-    return self;
-}
 
 - (id) initWithLocation:(KCGeoLocation *)AGeoLocation{
  

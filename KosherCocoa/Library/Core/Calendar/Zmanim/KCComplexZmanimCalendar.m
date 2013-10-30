@@ -10,8 +10,7 @@
 
 #import "KCComplexZmanimCalendar.h"
 #import "MBCalendarCategories.h"
-
-
+#import "KCAstronomicalCalendar+DateManipulation.h"
 
 @implementation KCComplexZmanimCalendar
 
@@ -604,6 +603,7 @@
     
     return [[self sunset] dateByAddingTimeInterval:[self temporalHourFromSunrise:sunrise toSunset:sunset] *6];
 }
+
 
 
 @end

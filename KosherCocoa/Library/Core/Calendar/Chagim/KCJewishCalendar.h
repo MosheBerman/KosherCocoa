@@ -170,8 +170,8 @@
  *  This method intentionally uses standard time and not daylight savings time.
  *  (Java will implicitly format the time to the default (or set)Timezone) -> is this relevant to Objective C?
  *
- *  This method expects 1 for Nissan and 13 for Adar II. 
- *  Use the constants to avoid any confusion.
+ *  @param month an integer representing the month. This method expects 1 for Nissan and 13 for Adar II. Use the constants to avoid any confusion.
+ *  @param year The Hebrew year to use in calculating.
  *
  *  @return NSDate equal to the molad in Standard Time in Yerushalayim as a Date.
  */
@@ -181,6 +181,9 @@
  *  Currently returns the time even if it is during the day. It should return
  *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
  *
+ *  @param month The Hebrew month to use in calculating.
+ *  @param year The Hebrew year to use in calculating.
+ *
  *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
 - (NSDate *)tchilasZmanKidushLevana3DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
@@ -188,6 +191,8 @@
 /**
  *  Currently returns the time even if it is during the day. It should return
  *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
+ *
+ *  @param date The date to calculate for.
  *
  *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
@@ -197,6 +202,9 @@
  *  Currently returns the time even if it is during the day. It should return
  *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
  *
+ *  @param month The Hebrew month to use in calculating.
+ *  @param year The Hebrew year to use in calculating.
+ *
  *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
 - (NSDate *)tchilasZmanKidushLevana7DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
@@ -204,6 +212,8 @@
 /**
  *  Currently returns the time even if it is during the day. It should return
  *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
+ *
+ *  @param date The date to calculate for.
  *
  *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
@@ -215,9 +225,10 @@
  *  This adds half the 29 days, 12 hours and 793 chalakim time between molad and
  *  molad (14 days, 18 hours, 22 minutes and 666 milliseconds)to the month's molad.
  *
- *  Currently returns the time even if it is during the day.
- *  It should return the 72 Minute Alos
- *  prior to the time if the zman is between Alos and Tzais.
+ *  @discussion Currently returns the time even if it is during the day. It should return the 72 Minute Alos prior to the time if the zman is between Alos and Tzais.
+ *
+ *  @param month The Hebrew month to use in calculating.
+ *  @param year The Hebrew year to use in calculating.
  *
  *  @return NSDate latest time of Kiddush Levana between Moldos
  */
@@ -229,9 +240,9 @@
  *  This adds half the 29 days, 12 hours and 793 chalakim time between molad and
  *  molad (14 days, 18 hours, 22 minutes and 666 milliseconds)to the month's molad.
  *
- *  Currently returns the time even if it is during the day.
- *  It should return the 72 Minute Alos
- *  prior to the time if the zman is between Alos and Tzais.
+ *  @discussion Currently returns the time even if it is during the day. It should return the 72 Minute Alos prior to the time if the zman is between Alos and Tzais.
+ *
+ *  @param date The date to calculate for.
  *
  *  @return NSDate latest time of Kiddush Levana between Moldos
  */
@@ -248,6 +259,9 @@
  *  Note: Currently returns the time even if it is during the day.
  *  It should return the  Alos prior to the time if the zman is between Alos and Tzais.
  *
+ *  @param month The Hebrew month to use in calculating.
+ *  @param year The Hebrew year to use in calculating.
+ *
  *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
 - (NSDate *)sofZmanKidushLevana15DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
@@ -259,8 +273,9 @@
  *  For additional details on the subject, See Rabbi Dovid Heber's very detailed writeup
  *  in Siman Daled (chapter 4)of Shaarei Zmanim http://www.worldcat.org/oclc/461326125.
  *
- *  Note: Currently returns the time even if it is during the day.
- *  It should return the  Alos prior to the time if the zman is between Alos and Tzais.
+ *  @discussion Currently returns the time even if it is during the day. It should return the  Alos prior to the time if the zman is between Alos and Tzais.
+ *
+ *  @param date The date to calculate for.
  *
  *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
@@ -306,6 +321,8 @@
 /**
  *  Determine if the parameter Hebrew year is a leap year
  *
+ *  @param year A hebrew year.
+ *
  *  @return bool YES if it is a leap year
  **/
 - (BOOL)isHebrewLeapYear:(NSInteger)year;
@@ -320,6 +337,8 @@
 /**
  *  Returns the length of the parameter Hebrew year
  *
+ *  @param year A hebrew year.
+ *
  *  @return NSInteger corresponding to the number of days of the year
  **/
 - (NSInteger)lengthOfHebrewYear:(NSInteger)year;
@@ -333,6 +352,8 @@
 
 /**
  *  Returns the friday following a given date
+ *
+ *  @param workingDate The date to calculate for.
  *
  *  @return NSDate
  **/

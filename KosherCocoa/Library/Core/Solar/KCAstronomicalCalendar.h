@@ -15,7 +15,7 @@
 
 /** A class that calculates various sunrise and sunset values. */
 
-@interface KCAstronomicalCalendar : NSCalendar
+@interface KCAstronomicalCalendar : NSObject
 
 /**-----
  * @name Configuring the Calendar
@@ -174,10 +174,8 @@
  * the polar region for dips as low as 3&deg; (Tested for Hooper Bay, Alaska). TODO: Since the occurrences are rare,
  * look for optimization to avoid relatively expensive calls to this method.
  *
- * @param sunset
- *            the sunset date to adjust if needed
- * @param sunrise
- *            the sunrise to compare to the sunset
+ * @param sunset the sunset date to adjust if needed
+ * @param sunrise the sunrise to compare to the sunset
  * @return the adjusted sunset date. If the calculation can't be computed such as in the Arctic Circle where there
  *         is at least one day a year where the sun does not rise, and one where it does not set, a null will be
  *         returned. See detailed explanation on top of the page.
@@ -195,7 +193,6 @@
  *
  * @return The <code>Date</code> of the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}. If
  *         the calculation can't be computed, null will be returned. See detailed explanation on top of the page.
- * @see #CIVIL_ZENITH
  */
 
 - (NSDate *)endCivilTwilight;
@@ -206,7 +203,6 @@
  * @return The <code>Date</code> of the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}
  *         . If the calculation can't be computed, null will be returned. See detailed explanation on top of the
  *         page.
- * @see #NAUTICAL_ZENITH
  */
 
 - (NSDate *)endNauticalTwilight;
@@ -217,7 +213,6 @@
  * @return the <code>Date</code> of the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH
  *         108&deg;}. If the calculation can't be computed, null will be returned. See detailed explanation on top
  *         of the page.
- * @see #ASTRONOMICAL_ZENITH
  */
 
 - (NSDate *)endAstronomicalTwilight;
@@ -226,8 +221,7 @@
  * A method that returns the sunrise in UTC time without correction for time zone offset from GMT and without using
  * daylight savings time.
  *
- * @param zenith
- *            the degrees below the horizon. For time after sunrise use negative numbers.
+ * @param zenith the degrees below the horizon. For time after sunrise use negative numbers.
  * @return The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can't be computed such as in the
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
@@ -241,12 +235,10 @@
  * light, something that is not affected by elevation. This method returns UTC sunrise calculated at sea level. This
  * forms the base for dawn calculations that are calculated as a dip below the horizon before sunrise.
  *
- * @param zenith
- *            the degrees below the horizon. For time after sunrise use negative numbers.
+ * @param zenith the degrees below the horizon. For time after sunrise use negative numbers.
  * @return The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can't be computed such as in the
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
- * @see AstronomicalCalendar#getUTCSunrise
  */
 
 - (double)UTCSeaLevelSunrise:(double)zenith;
@@ -255,12 +247,10 @@
  * A method that returns the sunset in UTC time without correction for time zone offset from GMT and without using
  * daylight savings time.
  *
- * @param zenith
- *            the degrees below the horizon. For time after sunset use negative numbers.
+ * @param zenith the degrees below the horizon. For time after sunset use negative numbers.
  * @return The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can't be computed such as in the
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
- * @see AstronomicalCalendar#getUTCSeaLevelSunset
  */
 
 - (double)UTCSunset:(double)zenith;
@@ -272,13 +262,10 @@
  * at sea level. This forms the base for dusk calculations that are calculated as a dip below the horizon after
  * sunset.
  *
- * @param zenith
- *            the degrees below the horizon. For time before sunset use negative numbers.
+ * @param zenith the degrees below the horizon. For time before sunset use negative numbers.
  * @return The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can't be computed such as in the
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.
- * @see KCAstronomicalCalendar#getUTCSunset
- * @see AstronomicalCalendar#getUTCSeaLevelSunrise
 */
 
 - (double)UTCSeaLevelSunset:(double)zenith;
@@ -289,15 +276,11 @@
  * non-elevation adjusted temporal hour by passing in getSeaLevelSunrise sea level sunrise} and
  * {@link #getSeaLevelSunset() sea level sunset} as parameters.
  *
- * @param startOfday
- *            The start of the day.
- * @param endOfDay
- *            The end of the day.
+ * @param sunrise The start of the day.
+ * @param sunset The end of the day.
  *
  * @return the long millisecond length of the temporal hour. If the calculation can't be computed a
  *         LONG_MIN will be returned. See detailed explanation on top of the page.
- *
- * @see #getTemporalHour()
  */
 
 - (double)temporalHourFromSunrise:(NSDate *)sunrise toSunset:(NSDate*)sunset;
@@ -312,8 +295,6 @@
  * @return the <code>Date</code> representing Sun's transit. If the calculation can't be computed such as in the
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, null will be returned. See detailed explanation on top of the page.
- * @see #getSunTransit(Date, Date)
- * @see #getTemporalHour()
  */
 
 - (NSDate *)sunTransit;
@@ -328,7 +309,7 @@
  *  as an NSDate object based on the user's time zone
  *  and today's date.
  *
- *  @param time 
+ *  @param time The time as a double.
  *
  *  @return The calculated time
  *  as an NSDate object based on the user's time zone

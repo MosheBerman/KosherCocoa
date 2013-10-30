@@ -12,6 +12,7 @@
 #import "KCDafYomiCalculator.h"
 #import "KCConstants.h"
 #import "MBCalendarCategories.h"
+#import "KCAstronomicalCalendar+DateManipulation.h"
 
 @implementation KCJewishCalendar
 
