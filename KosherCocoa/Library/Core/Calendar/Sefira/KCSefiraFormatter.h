@@ -19,7 +19,7 @@
 NS_ENUM(NSInteger, KCSefiraCustom) {
     KCSefiraCustomAshkenaz,     //  Uses the bet prefix
     KCSefiraCustomSefard = 1,   //  Uses the lamed prefix
-    KCSefiraCustomSephardic = 2,//  Uses the lamed prefix and sephardic formula
+    KCSefiraCustomSephardic = 2 //  Uses the lamed prefix and sephardic formula
 };
 
 /**
@@ -31,10 +31,20 @@ NS_ENUM(NSInteger, KCSefiraLanguage) {
     KCSefiraFormatterTransliteratedHebrew   //  The count, in Hebrew, spelled in English
 };
 
-//
-
 /** This class formats an integer into a sefira day*/
 @interface KCSefiraFormatter : NSObject
+
+/**
+ *  The language for the formatter to use.
+ */
+
+@property (nonatomic, assign) enum KCSefiraLanguage language;
+
+/**
+ *  The custom for the formatter to use.
+ */
+
+@property (nonatomic, assign) enum KCSefiraCustom custom;
 
 /** Converts an integer (between 1 and 49, inclusive)
  *  into a string representing the sefira count for
