@@ -12,22 +12,7 @@
 #import "MBCalendarCategories.h"
 #import "KCAstronomicalCalendar+DateManipulation.h"
 
-@interface KCZmanimCalendar ()
-
-@property (nonatomic, strong) NSCalendar *internalCalendar;
-
-@end
-
 @implementation KCZmanimCalendar
-
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        _internalCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    }
-    return self;
-}
 
 - (NSDate *) alosHashachar{
     return [self sunriseOffsetByDegrees:kZenithSixteenPointOne];
@@ -128,44 +113,5 @@
 - (NSDate *) tzais72{
     return [self dateByAddingMinutes:72 toDate:[self seaLevelSunset]];
 }
-
-#pragma mark - Message Forwarding
-
-- (id)forwardingTargetForSelector:(SEL)aSelector
-{
-    //forward -setObject:forKey: and -objectForKey to the cache instance directly.
-    SEL acceptableSelectors[] = {
-        @selector(dateByAddingSeconds:toDate:),
-        @selector(dateByAddingMinutes:toDate:),
-        @selector(dateByAddingHours:toDate:),
-        @selector(dateByAddingDays:toDate:),
-        @selector(dateByAddingWeeks:toDate:),
-        @selector(dateByAddingMonths:toDate:),
-        @selector(dateByAddingYears:toDate:),
-        @selector(dateBySubtractingSeconds:fromDate:),
-        @selector(dateBySubtractingMinutes:fromDate:),
-        @selector(dateBySubtractingHours:fromDate:),
-        @selector(dateBySubtractingDays:fromDate:),
-        @selector(dateBySubtractingWeeks:fromDate:),
-        @selector(dateBySubtractingMonths:fromDate:),
-        @selector(dateBySubtractingYears:fromDate:),
-    };
-    
-    BOOL isAcceptable = NO;
-    for(int i = 0; i < sizeof(acceptableSelectors) / sizeof(SEL); ++i) {
-        if(acceptableSelectors[i] == aSelector) {
-            isAcceptable = YES;
-            break;
-        }
-    }
-    
-    if(isAcceptable && [_internalCalendar respondsToSelector:aSelector]) {
-        return _internalCalendar;
-    }
-    
-    return [super forwardingTargetForSelector:aSelector];
-}
-
-
 
 @end
