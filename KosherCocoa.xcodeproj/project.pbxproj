@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		460699E5182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
+		460699E81821A64B008DA62C /* KosherCocoa.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 466A3AFE17CAF3B900056F16 /* KosherCocoa.h */; };
 		460AAF5018187BA00033AABF /* KCSefiraFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */; };
 		4618BB891664216E00AD3CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB881664216E00AD3CE5 /* Foundation.framework */; };
 		4618BB981664216F00AD3CE5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB971664216F00AD3CE5 /* SenTestingKit.framework */; };
@@ -83,6 +84,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				460699E81821A64B008DA62C /* KosherCocoa.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
