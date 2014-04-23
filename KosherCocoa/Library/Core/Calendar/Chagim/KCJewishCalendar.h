@@ -31,7 +31,7 @@
  *  Determines if we consider "modern" holidays,
  *  such as Yom Ha'atzmaut when returning values.
  */
-@property BOOL useModernHolidays;
+@property BOOL returnsModernHolidays;
 
 /**-----
  * @name Holidays

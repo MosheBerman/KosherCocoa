@@ -22,7 +22,7 @@
     
     if (self){
         _inIsrael = NO;
-        _useModernHolidays = NO;
+        _returnsModernHolidays = NO;
     }
     
     return self;
@@ -32,7 +32,7 @@
 - (NSInteger)yomTovIndex {
     
     BOOL inIsrael = [self inIsrael];
-    BOOL useModernHolidays = [self useModernHolidays];
+    BOOL useModernHolidays = [self returnsModernHolidays];
     
     switch ([self currentHebrewMonth]){
         case kNissan:
