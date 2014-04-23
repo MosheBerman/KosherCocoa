@@ -340,7 +340,6 @@
 		466A3AB617CAF3B900056F16 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				466A3AD017CAF3B900056F16 /* Calendar */,
 				466A3AB717CAF3B900056F16 /* Categories */,
 				466A3ACF17CAF3B900056F16 /* Core */,
 				466A3AF417CAF3B900056F16 /* Headers */,
@@ -413,6 +412,7 @@
 		466A3ACF17CAF3B900056F16 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				466A3AD017CAF3B900056F16 /* Calendar */,
 				466A3AE817CAF3B900056F16 /* Solar */,
 				466A3AF117CAF3B900056F16 /* Utilities */,
 			);
@@ -428,8 +428,7 @@
 				466A3ADE17CAF3B900056F16 /* Sefira */,
 				466A3AE317CAF3B900056F16 /* Zmanim */,
 			);
-			name = Calendar;
-			path = Core/Calendar;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		466A3AD117CAF3B900056F16 /* Chagim */ = {
