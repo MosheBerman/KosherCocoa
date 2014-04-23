@@ -12,7 +12,7 @@
 @implementation NSCalendar (HebrewYearTypes)
 
 //  Returns a weekday, 1-7
-+ (kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;
++ (enum kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;
 {
     NSCalendar *hebrewCalendar = [self hebrewCalendar];
     
@@ -25,7 +25,7 @@
 
 // Returns a year length, as per the comments in the kYearLength enum
 
-+ (kYearLength)lengthOfHebrewYearContainingDate:(NSDate *)date
++ (enum kYearLength)lengthOfHebrewYearContainingDate:(NSDate *)date
 {
     
     NSCalendar *hebrewCalendar = [self hebrewCalendar];
@@ -74,9 +74,9 @@
 //  Returns one of fourteen types. See the kHebrewYearType enum above.
 + (kHebrewYearType)typeOfHebrewYearContainingDate:(NSDate *)date
 {
-    kWeekday weekday = [self firstWeekdayOfHebrewYearContainingDate:date];
+    enum kWeekday weekday = [self firstWeekdayOfHebrewYearContainingDate:date];
 
-    kYearLength length = [self lengthOfHebrewYearContainingDate:date];
+    enum kYearLength length = [self lengthOfHebrewYearContainingDate:date];
     
     BOOL isLeapYear = [self isHebrewYearContainingDateALeapYear:date];
     

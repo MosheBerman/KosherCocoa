@@ -141,10 +141,10 @@
     NSInteger leapsCount = [[self leaps] count];
     NSInteger weekdaysCount = [[self weekdays] count];
     
-    XCTAssertEqual(14, yearsCount, @"There are %i years", yearsCount);
-    XCTAssertEqual(14, lengthsCount, @"There are %i lengths", lengthsCount);
-    XCTAssertEqual(14, leapsCount, @"There are %i leaps", leapsCount);
-    XCTAssertEqual(14, weekdaysCount, @"There are %i weekdays", weekdaysCount);
+    XCTAssertEqual(14, yearsCount, @"There are %li years", (long)yearsCount);
+    XCTAssertEqual(14, lengthsCount, @"There are %li lengths", (long)lengthsCount);
+    XCTAssertEqual(14, leapsCount, @"There are %li leaps", (long)leapsCount);
+    XCTAssertEqual(14, weekdaysCount, @"There are %li weekdays", (long)weekdaysCount);
 }
 
 /* Rosh Hashana Weekday */
@@ -154,13 +154,13 @@
     for (NSUInteger i = 0; i < 14; i++) {
         
         NSInteger hebrewYear = [[self yearsToTest][i] integerValue];
-        kYearLength assumedDay = [[self weekdays][i] integerValue];
+        enum kYearLength assumedDay = [[self weekdays][i] integerValue];
         
         NSDate *workingDate = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:[self hebrewCalendar]];
         
-        kYearLength actualDay = [NSCalendar firstWeekdayOfHebrewYearContainingDate:workingDate];
+        enum kYearLength actualDay = [NSCalendar firstWeekdayOfHebrewYearContainingDate:workingDate];
         
-        XCTAssertEqual(assumedDay, actualDay, @"[%i] Year: %i Actual Day: %i", i, hebrewYear, actualDay);
+        XCTAssertEqual(assumedDay, actualDay, @"[%lu] Year: %li Actual Day: %li", (unsigned long)i, (long)hebrewYear, (long)actualDay);
     }
 }
 
@@ -170,13 +170,13 @@
     for (NSUInteger i = 0; i < 14; i++) {
         
         NSInteger hebrewYear = [[self yearsToTest][i] integerValue];
-        kYearLength assumedLength = [[self lengths][i] integerValue];
+        enum kYearLength assumedLength = [[self lengths][i] integerValue];
         
         NSDate *workingDate = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:[self hebrewCalendar]];
         
-        kYearLength actualLength = [NSCalendar lengthOfHebrewYearContainingDate:workingDate];
+        enum kYearLength actualLength = [NSCalendar lengthOfHebrewYearContainingDate:workingDate];
         
-        XCTAssertEqual(assumedLength, actualLength, @"[%i] Year: %i Actual Length: %i", i, hebrewYear, actualLength);
+        XCTAssertEqual(assumedLength, actualLength, @"[%li] Year: %li Actual Length: %li", (long)i, (long)hebrewYear, (long)actualLength);
     }
 }
 
@@ -188,13 +188,13 @@
     for (NSUInteger i = 0; i < 14; i++) {
         
         NSInteger hebrewYear = [[self yearsToTest][i] integerValue];
-        kYearLength assumedLeap = [[self leaps][i] integerValue];
+        enum kYearLength assumedLeap = [[self leaps][i] integerValue];
         
         NSDate *workingDate = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:[self hebrewCalendar]];
         
-        kYearLength actualLeap = [NSCalendar isHebrewYearContainingDateALeapYear:workingDate];
+        enum kYearLength actualLeap = [NSCalendar isHebrewYearContainingDateALeapYear:workingDate];
         
-        XCTAssertEqual(assumedLeap, actualLeap, @"[%i] Year: %i Actual Leap: %i", i, hebrewYear, actualLeap);
+        XCTAssertEqual(assumedLeap, actualLeap, @"[%lu] Year: %lu Actual Leap: %lu", (long)i, (long)hebrewYear, (unsigned long)actualLeap);
     }
 }
 
@@ -209,9 +209,9 @@
         
         NSDate *workingDate = [NSDate dateWithDay:1 Month:2 Year:hebrewYear andCalendar:[self hebrewCalendar]];
         
-        kYearLength actualType = [NSCalendar typeOfHebrewYearContainingDate:workingDate];
+        enum kYearLength actualType = [NSCalendar typeOfHebrewYearContainingDate:workingDate];
         
-        XCTAssertEqual(assumedType, actualType, @"[%i] Year: %i Actual Type: %i", i, hebrewYear, actualType);
+        XCTAssertEqual(assumedType, actualType, @"[%lu] Year: %li Actual Type: %li", (unsigned long)i, hebrewYear, actualType);
     }
 }
 
@@ -315,7 +315,7 @@
         NSString *weekdayOfRoshHashana = [weekdayFormatter stringFromDate:roshHashana];
         NSString *weekdayOfPesach = [weekdayFormatter stringFromDate:pesach];
         
-        NSLog(@"\n\n\nYear %i has %i days and %@ a leap year. Rosh Hashana begins on %@. Pesach falls on %@. ", year, daysPerYear, leapYearString, weekdayOfRoshHashana, weekdayOfPesach);
+        NSLog(@"\n\n\nYear %lu has %li days and %@ a leap year. Rosh Hashana begins on %@. Pesach falls on %@. ", (unsigned long)year, (long)daysPerYear, leapYearString, weekdayOfRoshHashana, weekdayOfPesach);
         
         /* Log out some month stuff */
         
@@ -330,7 +330,7 @@
             NSInteger daysPerMonth = [[self hebrewCalendar] daysPerMonthUsingReferenceDate:workingDate];
             
             
-            NSLog(@"%@ has %i days and begins on a %@", nameOfMonth, daysPerMonth, weekDayOfMonth);
+            NSLog(@"%@ has %li days and begins on a %@", nameOfMonth, (long)daysPerMonth, weekDayOfMonth);
             
             
             workingDate = [[self hebrewCalendar] dateByAddingMonths:1 toDate:workingDate];
@@ -354,7 +354,7 @@
         KCParashatHashavuaCalculator *parasha = [KCParashatHashavuaCalculator new];
         NSArray *parshiot = [parasha parshiotInDiasporaDuringYearType:type];
         
-        NSLog(@"Parshiot for %i (Type: %i): %@", hebrewYear, i+1, parshiot);
+        NSLog(@"Parshiot for %li (Type: %li): %@", (long)hebrewYear, i+1, parshiot);
     }
     
 }

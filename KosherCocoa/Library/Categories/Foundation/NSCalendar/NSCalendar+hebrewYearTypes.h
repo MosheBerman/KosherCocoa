@@ -51,9 +51,7 @@ enum
  *  The related enum values are index-1, not index-0. (Sunday is 1, Monday is 2, etc.)
  */
 
-typedef NSInteger kWeekday;
-
-enum {
+NS_ENUM(NSInteger, kWeekday) {
     kWeekdaySunday = 1,
     kWeekdayMonday,
     kWeekdayTuesday,
@@ -76,9 +74,7 @@ enum {
  *
  */
 
-typedef NSInteger kYearLength;
-
-enum {
+NS_ENUM(NSInteger, kYearLength){
     kYearLengthShort = 0,    //  Years that are 353/383 days long
     kYearLengthRegular,      //  Years that are 354/384 days long
     kYearLengthLong          //  Years that are 355/385 days long
@@ -88,10 +84,10 @@ enum {
 @interface NSCalendar (HebrewYearTypes)
 
 //  Returns a weekday, 1-7
-+ (kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;
++ (enum kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;
 
 // Returns a year length, as per the comments in the kYearLength enum
-+ (kYearLength)lengthOfHebrewYearContainingDate:(NSDate *)date;
++ (enum kYearLength)lengthOfHebrewYearContainingDate:(NSDate *)date;
 
 //  YES if the given date is represented by a hebrew year containing 13 months, else NO
 + (BOOL)isHebrewYearContainingDateALeapYear:(NSDate *)date;
