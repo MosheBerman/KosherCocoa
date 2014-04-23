@@ -23,12 +23,14 @@
 @implementation KCDafYomiCalculator
 
 #define kNumberOfMasechtos 40
- 
-- (id) initWithDate:(NSDate *)date{
 
+- (id) initWithDate:(NSDate *)date
+{
+    
     self = [super init];
     
-    if (self) {
+    if (self)
+    {
         self.workingDate = date;
     }
     
@@ -58,7 +60,8 @@
     NSInteger cycleNo = 0;
     NSInteger dafNo = 0;
     
-    if ([date timeIntervalSinceDate:dafYomiStartDate] < 0) {
+    if ([date timeIntervalSinceDate:dafYomiStartDate] < 0)
+    {
         
         // Return nil, since the date passed in was before the beginning of the daf yomi cycle
         return nil;
@@ -67,7 +70,9 @@
     if ([date timeIntervalSinceDate:shekalimChangeDate] >= 0) {
         cycleNo = 8 + ((julianDay - shekalimJulianChangeDay) / 2711);
         dafNo = ((julianDay - shekalimJulianChangeDay) % 2711);
-    } else {
+    }
+    else
+    {
         cycleNo = 1 + ((julianDay - dafYomiJulianStartDay) / 2702);
         dafNo = ((julianDay - dafYomiJulianStartDay) % 2702);
     }
@@ -77,21 +82,29 @@
     NSInteger blatt = 0;
     
     /* Fix Shekalim for old cycles. */
-    if (cycleNo <= 7) {
+    if (cycleNo <= 7)
+    {
         blattPerMasechta[4] = 13;
     }
     /* Finally find the daf. */
-    for (int j = 0; j < kNumberOfMasechtos; j++) {
+    for (int j = 0; j < kNumberOfMasechtos; j++)
+    {
         masechta++;
         total = total + blattPerMasechta[j] - 1;
-        if (dafNo < total) {
+        if (dafNo < total)
+        {
             blatt = 1 + blattPerMasechta[j] - (total - dafNo);
             /* Fiddle with the weird ones near the end. */
-            if (masechta == 36) {
+            if (masechta == 36)
+            {
                 blatt += 21;
-            } else if (masechta == 37) {
+            }
+            else if (masechta == 37)
+            {
                 blatt += 24;
-            } else if (masechta == 38) {
+            }
+            else if (masechta == 38)
+            {
                 blatt += 33;
             }
             dafYomi = [[KCDaf alloc] initWithTractateIndex:masechta andPageNumber:blatt];
@@ -99,30 +112,35 @@
         }
     }
     
-    return dafYomi;    
+    return dafYomi;
 }
 
 #pragma mark - Date convenience methods
 
-- (NSInteger) julianDayForDate:(NSDate *)date{
+- (NSInteger) julianDayForDate:(NSDate *)date
+{
     
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     NSInteger year = [[gregorianCalendar components:NSYearCalendarUnit fromDate:date] year];
     NSInteger month = [[gregorianCalendar components:NSMonthCalendarUnit fromDate:date] month];
-    NSInteger day = [[gregorianCalendar components:NSDayCalendarUnit fromDate:date] day];    
+    NSInteger day = [[gregorianCalendar components:NSDayCalendarUnit fromDate:date] day];
     
     
-    if (month <= 2) {
+    if (month <= 2)
+    {
         year -= 1;
         month += 12;
     }
+    
     NSInteger a = year / 100;
     NSInteger b = 2 - a + a / 4;
+    
     return (NSInteger) (floor(365.25 * (year + 4716)) + floor(30.6001 * (month + 1)) + day + b - 1524.5);
 }
 
-- (NSDate *)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day{
+- (NSDate *)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day
+{
     
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
@@ -131,7 +149,6 @@
     [dateComponents setDay:day];
     
     NSDate *returnDate = [gregorianCalendar dateFromComponents:dateComponents];
-    
     
     return returnDate;
 }
