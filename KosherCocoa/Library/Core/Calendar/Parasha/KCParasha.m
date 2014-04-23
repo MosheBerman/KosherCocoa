@@ -13,7 +13,6 @@
 @interface KCParasha ()
 @property (nonatomic, strong) NSArray *names;
 @property (nonatomic, strong) NSArray *transliteratedNames;
-@property (nonatomic, assign) KCParashaIdentifier _identifier;
 @end
 
 @implementation KCParasha
