@@ -223,8 +223,15 @@
 
 - (NSDate *) plagHamincha;
 
+/**
+ *  TODO: Document.
+ */
 
 - (NSDate *)tzais;
+
+/**
+ *  TODO: Document.
+ */
 
 - (NSDate *) tzais72;
 
