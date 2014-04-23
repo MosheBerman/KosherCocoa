@@ -14,6 +14,7 @@
 #define KosherCocoa_Solar_h
 
 #import "KCGeoLocation.h"
-#import "KCAstronomicalCalculator.h"
+#import "KCAstronomicalCalculator.h"    //  Subclass this to implement custom sunrise and sunset algorithms.
+#import "KCSunriseAndSunsetCalculator.h"    //  This class implements the NOAA algorithm.
 
 #endif
