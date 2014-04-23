@@ -1,10 +1,3 @@
-/** KCSunCalculationTypes.h
- *
- *  Created by Moshe Berman on Sunday, August 25, 2013.
- *
- 
- */
-
 /**
  *  KCSunCalculationTypes.h
  *  KosherCocoa 2
@@ -20,7 +13,6 @@
  *
  *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
  */
-
 
 #ifndef __KC_SUN_CALCULATION_TYPES_H
 #define __KC_SUN_CALCULATION_TYPES_H
