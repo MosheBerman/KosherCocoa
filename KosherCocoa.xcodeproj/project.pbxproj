@@ -11,7 +11,6 @@
 		460699E81821A64B008DA62C /* KosherCocoa.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 466A3AFE17CAF3B900056F16 /* KosherCocoa.h */; };
 		460AAF5018187BA00033AABF /* KCSefiraFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */; };
 		4618BB891664216E00AD3CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB881664216E00AD3CE5 /* Foundation.framework */; };
-		4618BB981664216F00AD3CE5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB971664216F00AD3CE5 /* SenTestingKit.framework */; };
 		4618BB9A1664216F00AD3CE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB991664216F00AD3CE5 /* UIKit.framework */; };
 		4618BB9B1664216F00AD3CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB881664216E00AD3CE5 /* Foundation.framework */; };
 		4618BB9E1664216F00AD3CE5 /* libKosherCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB851664216E00AD3CE5 /* libKosherCocoa.a */; };
@@ -100,8 +99,7 @@
 		4618BB851664216E00AD3CE5 /* libKosherCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKosherCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4618BB881664216E00AD3CE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4618BB8C1664216E00AD3CE5 /* KosherCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KosherCocoa-Prefix.pch"; sourceTree = "<group>"; };
-		4618BB961664216F00AD3CE5 /* KosherCocoaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4618BB971664216F00AD3CE5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4618BB991664216F00AD3CE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4618BBA11664216F00AD3CE5 /* KosherCocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KosherCocoaTests-Info.plist"; sourceTree = "<group>"; };
 		4618BBA31664216F00AD3CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4618BB981664216F00AD3CE5 /* SenTestingKit.framework in Frameworks */,
 				4618BB9A1664216F00AD3CE5 /* UIKit.framework in Frameworks */,
 				4618BB9B1664216F00AD3CE5 /* Foundation.framework in Frameworks */,
 				4618BB9E1664216F00AD3CE5 /* libKosherCocoa.a in Frameworks */,
@@ -236,7 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				4618BB851664216E00AD3CE5 /* libKosherCocoa.a */,
-				4618BB961664216F00AD3CE5 /* KosherCocoaTests.octest */,
+				4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -245,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				4618BB881664216E00AD3CE5 /* Foundation.framework */,
-				4618BB971664216F00AD3CE5 /* SenTestingKit.framework */,
 				4618BB991664216F00AD3CE5 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -569,8 +565,8 @@
 			);
 			name = KosherCocoaTests;
 			productName = KosherCocoaTests;
-			productReference = 4618BB961664216F00AD3CE5 /* KosherCocoaTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -579,6 +575,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KC;
+				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Moshe Berman";
 			};
@@ -805,12 +802,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
 				INFOPLIST_FILE = "KosherCocoaTests/KosherCocoaTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -820,12 +817,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
 				INFOPLIST_FILE = "KosherCocoaTests/KosherCocoaTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};

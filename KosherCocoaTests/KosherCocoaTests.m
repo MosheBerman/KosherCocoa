@@ -141,10 +141,10 @@
     NSInteger leapsCount = [[self leaps] count];
     NSInteger weekdaysCount = [[self weekdays] count];
     
-    STAssertEquals(14, yearsCount, @"There are %i years", yearsCount);
-    STAssertEquals(14, lengthsCount, @"There are %i lengths", lengthsCount);
-    STAssertEquals(14, leapsCount, @"There are %i leaps", leapsCount);
-    STAssertEquals(14, weekdaysCount, @"There are %i weekdays", weekdaysCount);
+    XCTAssertEqual(14, yearsCount, @"There are %i years", yearsCount);
+    XCTAssertEqual(14, lengthsCount, @"There are %i lengths", lengthsCount);
+    XCTAssertEqual(14, leapsCount, @"There are %i leaps", leapsCount);
+    XCTAssertEqual(14, weekdaysCount, @"There are %i weekdays", weekdaysCount);
 }
 
 /* Rosh Hashana Weekday */
@@ -160,7 +160,7 @@
         
         kYearLength actualDay = [NSCalendar firstWeekdayOfHebrewYearContainingDate:workingDate];
         
-        STAssertEquals(assumedDay, actualDay, @"[%i] Year: %i Actual Day: %i", i, hebrewYear, actualDay);
+        XCTAssertEqual(assumedDay, actualDay, @"[%i] Year: %i Actual Day: %i", i, hebrewYear, actualDay);
     }
 }
 
@@ -176,7 +176,7 @@
         
         kYearLength actualLength = [NSCalendar lengthOfHebrewYearContainingDate:workingDate];
         
-        STAssertEquals(assumedLength, actualLength, @"[%i] Year: %i Actual Length: %i", i, hebrewYear, actualLength);
+        XCTAssertEqual(assumedLength, actualLength, @"[%i] Year: %i Actual Length: %i", i, hebrewYear, actualLength);
     }
 }
 
@@ -194,7 +194,7 @@
         
         kYearLength actualLeap = [NSCalendar isHebrewYearContainingDateALeapYear:workingDate];
         
-        STAssertEquals(assumedLeap, actualLeap, @"[%i] Year: %i Actual Leap: %i", i, hebrewYear, actualLeap);
+        XCTAssertEqual(assumedLeap, actualLeap, @"[%i] Year: %i Actual Leap: %i", i, hebrewYear, actualLeap);
     }
 }
 
@@ -211,7 +211,7 @@
         
         kYearLength actualType = [NSCalendar typeOfHebrewYearContainingDate:workingDate];
         
-        STAssertEquals(assumedType, actualType, @"[%i] Year: %i Actual Type: %i", i, hebrewYear, actualType);
+        XCTAssertEqual(assumedType, actualType, @"[%i] Year: %i Actual Type: %i", i, hebrewYear, actualType);
     }
 }
 

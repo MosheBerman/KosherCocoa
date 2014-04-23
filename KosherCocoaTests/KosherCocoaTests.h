@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Moshe Berman. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface KosherCocoaTests : SenTestCase
+@interface KosherCocoaTests : XCTestCase
 
 @end
