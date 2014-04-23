@@ -153,6 +153,7 @@
  *  kSunCalculationTypes.h, respectively.
  *
  */
+
 - (double)approxTimeDaysForDayOfYear:(int)dayOfYear withHoursFromMeridian:(double)hoursFromMeridian forCalculationType:(int)type;
 
 /**
@@ -209,6 +210,7 @@
  *
  *  @return The sunrise time as a double. (TODO: Check the units.)
  */
+
 -  (double)UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
 
 /**

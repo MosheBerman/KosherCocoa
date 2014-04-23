@@ -36,6 +36,7 @@
  *  @param identifier An identifier, defined in KCParashaReadings.
  *  @return A KCParasha instance.
  */
+
 - (id)initWithIdentifier:(KCParashaIdentifier)identifier;
 
 /**
@@ -47,6 +48,7 @@
  *  @param identifier An identifier, defined in KCParashaReadings.
  *  @return A KCParasha instance.
  */
+
 + (id)parashaWithIdentifier:(KCParashaIdentifier)identifier;
 
 /**-----
@@ -60,6 +62,7 @@
  *  @return A string composed of hebrew characters that 
  *  corresponds to the instance's identifier.
  */
+
 - (NSString *)name; //  The hebrew name of the parasha
 
 /**
@@ -69,6 +72,7 @@
  *  spells out the hebrew name that corresponds to the
  *  instance's identifier.
  */
+
 - (NSString *)nameTransliterated;   //  The name of the parasha, transliterated into English
 
 @end

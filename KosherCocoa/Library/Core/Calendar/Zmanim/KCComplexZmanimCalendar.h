@@ -60,6 +60,7 @@
  *  MIN_VALUE will be returned. See detailed explanation on top of 
  *  KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis19Point8Degrees;
 
 /**
@@ -83,6 +84,7 @@
  *  MIN_VALUE will be returned. See detailed explanation on top of
  *  KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis18Degrees;
 
 /**
@@ -106,6 +108,7 @@
  *  MIN_VALUE will be returned. See detailed explanation on top of
  *  KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis26Degrees;
 
 /**
@@ -129,6 +132,7 @@
  *  MIN_VALUE will be returned. See detailed explanation on top of
  *  KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis16Point1Degrees;
 
 /**
@@ -145,6 +149,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  *
  */
+
 - (long) shaahZmanis60Minutes;
 
 /**
@@ -161,6 +166,7 @@
  * and one where it does not set, a Long.MIN_VALUE will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis72Minutes;
 
 /**
@@ -179,6 +185,7 @@
  * a Long.MIN_VALUE will be returned. See detailed explanation on top of 
  * the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis72MinutesZmanis;
 
 /**
@@ -195,6 +202,7 @@
  * Long.MIN_VALUE will be returned. See detailed explanation on top of 
  * the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis90Minutes;
 
 /**
@@ -213,6 +221,7 @@
  * a Long.MIN_VALUE will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis90MinutesZmanis;
 
 /**
@@ -229,6 +238,7 @@
  * Long.MIN_VALUE will be returned. See detailed explanation on top of
  * the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis96Minutes;
 
 /**
@@ -245,6 +255,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a Long.MIN_VALUE
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis96MinutesZmanis;
 
 /**
@@ -264,6 +275,7 @@
  * not set, a Long.MIN_VALUE will be returned. See detailed explanation on top 
  * of the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanisAteretTorah;
 
 /**
@@ -279,6 +291,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a Long.MIN_VALUE 
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis120Minutes;
 
 /**
@@ -296,6 +309,7 @@
  * day a year where the sun does not rise, and one where it does not set, a Long.MIN_VALUE will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (long) shaahZmanis120MinutesZmanis;
 
 /**
@@ -309,6 +323,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha120Minutes;
 
 /**
@@ -323,6 +338,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha120MinutesZmanis;
 
 /**
@@ -339,6 +355,7 @@
  * least one day a year where the sun does not rise, and one where it does not set, a nil 
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos60;
 
 /**
@@ -356,6 +373,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos72Zmanis;
 
 /**
@@ -371,6 +389,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil will
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos90;
 
 /**
@@ -386,6 +405,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos90Zmanis;
 
 /**
@@ -401,6 +421,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos96;
 
 /**
@@ -416,6 +437,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos96Zmanis;
 
 /**
@@ -431,6 +453,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos120;
 
 /**
@@ -446,6 +469,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will 
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos120Zmanis;
 
 /**
@@ -462,6 +486,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos26Degrees;
 
 /**
@@ -475,6 +500,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos18Degrees;
 
 /**
@@ -491,6 +517,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos19Point8Degrees;
 
 /**
@@ -507,6 +534,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) alos16Point1Degrees;
 
 /**
@@ -522,6 +550,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) misheyakir11Point5Degrees;
 
 /**
@@ -537,6 +566,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) misheyakir11Degrees;
 
 /**
@@ -552,6 +582,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) misheyakir10Point2Degrees;
 
 /**
@@ -568,6 +599,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation on 
  * top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA19Point8Degrees;
 
 /**
@@ -584,6 +616,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA16Point1Degrees;
 
 /**
@@ -601,6 +634,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA72Minutes;
 
 /**
@@ -617,6 +651,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil 
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA72MinutesZmanis;
 
 /**
@@ -632,6 +667,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil 
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA90Minutes;
 
 /**
@@ -648,6 +684,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA90MinutesZmanis;
 
 /**
@@ -664,6 +701,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA96Minutes;
 
 /**
@@ -680,6 +718,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA96MinutesZmanis;
 
 /**
@@ -693,6 +732,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShma3HoursBeforeChatzos;
 
 /**
@@ -709,6 +749,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaMGA120Minutes;
 
 /**
@@ -726,6 +767,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaAlos16Point1ToSunset;
 
 /**
@@ -743,6 +785,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees;
 
 /**
@@ -758,6 +801,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaKolEliyahu;
 
 /**
@@ -774,6 +818,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA19Point8Degrees;
 
 /**
@@ -790,6 +835,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA16Point1Degrees;
 
 /**
@@ -807,6 +853,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA72Minutes;
 
 /**
@@ -823,6 +870,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA72MinutesZmanis;
 
 /**
@@ -839,6 +887,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA90Minutes;
 
 /**
@@ -855,6 +904,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA90MinutesZmanis;
 
 /**
@@ -870,6 +920,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA96Minutes;
 
 /**
@@ -886,6 +937,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA96MinutesZmanis;
 
 /**
@@ -902,6 +954,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaMGA120Minutes;
 
 /**
@@ -916,6 +969,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfila2HoursBeforeChatzos;
 
 /**
@@ -933,6 +987,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaGedola30Minutes; //after chatzos
 
 /**
@@ -948,6 +1003,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaGedola72Minutes;
 
 /**
@@ -964,6 +1020,7 @@
  * horizon for this calculation, a nil will be returned. See detailed explanation 
  * on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaGedola16Point1Degrees;
 
 /**
@@ -978,6 +1035,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaGedolaGreaterThan30;
 
 /**
@@ -994,6 +1052,7 @@
  * the horizon for this calculation, a nil will be returned. See detailed explanation on top of
  * the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaKetana16Point1Degrees;
 
 /**
@@ -1010,6 +1069,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaKetana72Minutes;
 
 /**
@@ -1024,6 +1084,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha60Minutes;
 
 /**
@@ -1038,6 +1099,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha72Minutes;
 
 /**
@@ -1052,6 +1114,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha90Minutes;
 
 /**
@@ -1066,6 +1129,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha96Minutes;
 
 /**
@@ -1078,6 +1142,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha96MinutesZmanis;
 
 /**
@@ -1090,6 +1155,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha90MinutesZmanis;
 
 /**
@@ -1102,6 +1168,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha72MinutesZmanis;
 
 /**
@@ -1116,6 +1183,7 @@
  * below the horizon for this calculation, a nil will be returned. See detailed explanation on 
  * top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha16Point1Degrees;
 
 /**
@@ -1130,6 +1198,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  *See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha19Point8Degrees;
 
 /**
@@ -1143,6 +1212,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha26Degrees;
 
 /**
@@ -1157,6 +1227,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHamincha18Degrees;
 
 /**
@@ -1174,6 +1245,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagAlosToSunset;
 
 /**
@@ -1190,6 +1262,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagAlos16Point1ToTzaisGeonim7Point083Degrees;
 
 /**
@@ -1214,6 +1287,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) bainHashmashosRT13Degrees;
 
 /**
@@ -1227,6 +1301,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) bainHashmashosRT58Point5Minutes;
 
 /**
@@ -1240,6 +1315,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) bainHashmashosRT13Point5MinutesBefore7Point083Degrees;
 
 /**
@@ -1255,6 +1331,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) bainHashmashosRT2Stars;
 
 /**
@@ -1268,6 +1345,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim5Point95Degrees;
 
 /**
@@ -1283,6 +1361,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim3Point65Degrees;
 
 /**
@@ -1298,6 +1377,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim4Point61Degrees;
 
 /**
@@ -1313,6 +1393,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim4Point37Degrees;
 
 /**
@@ -1330,6 +1411,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim5Point88Degrees;
 
 /**
@@ -1345,6 +1427,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim4Point8Degrees;
 
 /**
@@ -1360,6 +1443,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim7Point083Degrees;
 
 /**
@@ -1373,6 +1457,7 @@
  * below the horizon for this calculation, a nil will be returned.
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisGeonim8Point5Degrees;
 
 /**
@@ -1386,6 +1471,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned.
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais50;
 
 /**
@@ -1399,6 +1485,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais60;
 
 /**
@@ -1418,6 +1505,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzaisAteretTorah;
 
 /**
@@ -1436,6 +1524,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanShmaAteretTorah;
 
 /**
@@ -1454,6 +1543,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanTfilaAteretTorah;
 
 /**
@@ -1472,6 +1562,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaGedolaAteretTorah;
 
 /**
@@ -1490,6 +1581,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) minchaKetanaAteretTorah;
 
 /**
@@ -1506,6 +1598,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) plagHaminchaAteretTorah;
 
 /**
@@ -1518,6 +1611,7 @@
  *
  * @return NSDate the Date of misheyakir.
  */
+
 - (NSDate *) misheyakirAteretTorahWithMinutes:(double)minutes;
 
 /**
@@ -1530,6 +1624,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais72Zmanis;
 
 /**
@@ -1542,6 +1637,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais90Zmanis;
 
 /**
@@ -1554,6 +1650,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais96Zmanis;
 
 /**
@@ -1570,6 +1667,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais90;
 
 /**
@@ -1585,6 +1683,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais120;
 
 /**
@@ -1597,6 +1696,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais120Zmanis;
 
 /**
@@ -1609,6 +1709,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais16Point1Degrees;
 
 /** 
@@ -1621,6 +1722,7 @@
  * the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais26Degrees;
 
 /**
@@ -1633,6 +1735,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais18Degrees;
 
 /**
@@ -1645,6 +1748,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais19Point8Degrees;
 
 /**
@@ -1657,6 +1761,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) tzais96;
 
 /**
@@ -1671,6 +1776,7 @@
  *
  * @return NSDate the Date representing the local chatzos.
  */
+
 - (NSDate *) fixedLocalChatzos;
 
 /**
@@ -1679,6 +1785,7 @@
  *
  * @return NSDate the Date of the latest zman krias shema calculated as 3 hours before FixedLocalChatzos()
  */
+
 - (NSDate *) sofZmanShmaFixedLocal;
 
 /**
@@ -1687,6 +1794,7 @@
  *
  * @return NSDate the Date of the latest zman tfila.
  */
+
 - (NSDate *) sofZmanTfilaFixedLocal;
 
 /**
@@ -1702,6 +1810,7 @@
  * one day a year where the sun does not rise, and one where it does not set, a nil will be returned.
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanAchilasChametzGra;
 
 /**
@@ -1718,6 +1827,7 @@
  * day a year where the sun does not rise, and one where it does not set), a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanAchilasChametzMGA72Minutes;
 
 /**
@@ -1734,6 +1844,7 @@
  * below the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanAchilasChametzMGA16Point1Degrees;
 
 /**
@@ -1748,6 +1859,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanBiurChametzGra;
 
 /**
@@ -1763,6 +1875,7 @@
  * day a year where the sun does not rise, and one where it does not set), a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanBiurChametzMGA72Minutes;
 
 /**
@@ -1779,6 +1892,7 @@
  * the horizon for this calculation, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *) sofZmanBiurChametzMGA16Point1Degrees;
 
 /**
@@ -1792,6 +1906,7 @@
  * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
+
 - (NSDate *)solarMidnight;
 
 @end

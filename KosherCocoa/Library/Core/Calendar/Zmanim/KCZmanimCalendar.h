@@ -21,6 +21,7 @@
 /**
  *  Candle Lighting Offset from sunset (usually 18 minutes)
  */
+
 @property (nonatomic) NSInteger candleLightingOffset;
 
 /**-----
@@ -34,6 +35,7 @@
  *         locations even south of the Arctic Circle and north of the Antarctic Circle where the sun may not reach
  *         low enough below the horizon for this calculation, nil will be returned.
  */
+
 - (NSDate *) alosHashachar;
 
 /**
@@ -46,6 +48,7 @@
  *         Circle where there is at least one day a year where the sun does not rise, and one where it does not set,
  *         nil will be returned.
  */
+
 - (NSDate *) alos72;
 
 /**
@@ -56,6 +59,7 @@
  *         there is at least one day where the sun does not rise, and one where it does not set, a null will be
  *         returned.
  */
+
 - (NSDate *) chatzos;
 
 /**
@@ -67,6 +71,7 @@
  *         can't be computed such as in the Arctic Circle where there is at least one day a year where the sun does
  *         not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) sofZmanShmaGra;
 
 /**
@@ -79,6 +84,7 @@
  *         the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it
  *         does not set, nil will be returned.
  */
+
 - (NSDate *) sofZmanShmaMogenAvraham;
 
 /**
@@ -88,6 +94,7 @@
  * @return candle lighting time. If the calculation can't be computed such as in the Arctic Circle where there is at
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) candleLighting;
 
 /**
@@ -97,6 +104,7 @@
  * @return candle lighting time. If the calculation can't be computed such as in the Arctic Circle where there is at
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) candleLighting15;
 
 /**
@@ -106,6 +114,7 @@
  * @return candle lighting time. If the calculation can't be computed such as in the Arctic Circle where there is at
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) candleLighting18;
 
 /**
@@ -115,6 +124,7 @@
  * @return candle lighting time. If the calculation can't be computed such as in the Arctic Circle where there is at
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) candleLighting20;
 
 /**
@@ -124,6 +134,7 @@
  * @return candle lighting time. If the calculation can't be computed such as in the Arctic Circle where there is at
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) candleLighting22;
 
 /**
@@ -133,6 +144,7 @@
  * @return candle lighting time. If the calculation can't be computed such as in the Arctic Circle where there is at
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) candleLighting30;
 
 /**
@@ -142,6 +154,7 @@
  * @return candle lighting time. If the calculation can't be computed such as in the Arctic Circle where there is at
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
+
 - (NSDate *) candleLighting40;
 
 /**
@@ -153,6 +166,7 @@
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, nil will be returned.
  */
+
 - (NSDate *) sofZmanTfilaGra;
 
 /**
@@ -166,6 +180,7 @@
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set), nil will be returned.
  */
+
 - (NSDate *) sofZmanTfilaMogenAvraham;
 
 /**
@@ -180,6 +195,7 @@
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, nil will be returned.
  */
+
 - (NSDate *) minchaGedola;
 
 /**
@@ -192,6 +208,7 @@
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, nil will be returned.
  */
+
 - (NSDate *) minchaKetana;
 
 /**
@@ -203,6 +220,7 @@
  *         in the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it
  *         does not set, nil will be returned.
  */
+
 - (NSDate *) plagHamincha;
 
 
@@ -226,6 +244,7 @@
  *         calculation can't be computed such as in the Arctic Circle where there is at least one day a year where
  *         the sun does not rise, and one where it does not set, <code>LONG_MIN</code> will be returned.
  */
+
 - (double) shaahZmanisGra;
 
 /**
@@ -239,6 +258,7 @@
  *         such as in the Arctic Circle where there is at least one day a year where the sun does not rise, and one
  *         where it does not set, <code>LONG_MIN</code> will be returned.
  */
+
 - (double) shaahZmanisMogenAvraham;
 
 @end

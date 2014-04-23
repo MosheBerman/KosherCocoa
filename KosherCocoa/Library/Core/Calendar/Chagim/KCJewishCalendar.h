@@ -52,6 +52,7 @@
  *
  *  @return bool YES for holidays, NO for fast days and chanukah.
  */
+
 - (BOOL)isYomTov;
 
 /**
@@ -59,6 +60,7 @@
  *
  *  @return bool YES if the current day is Chol Hamoed of Pesach or Succos.
  */
+
 - (BOOL)isCholHamoed;
 
 /**
@@ -66,6 +68,7 @@
  *
  *  @return bool YES if the current day is Chol Hamoed of Succos.
  */
+
 - (BOOL)isCholHamoedSuccos;
 
 /**
@@ -73,6 +76,7 @@
  *
  *  @return bool YES if the current day is Chol Hamoed of Pesach.
  */
+
 - (BOOL)isCholHamoedPesach;
 
 /**
@@ -80,6 +84,7 @@
  *
  *  @return bool YES if the current day is Erev - Pesach, Shavuos, Rosh Hashana, Yom Kippur or Succos.
  */
+
 - (BOOL)isErevYomTov;
 
 /**
@@ -88,6 +93,7 @@
  *
  *  @return bool YES if the current day is Erev Rosh Chodesh. Returns NO for Erev Rosh Hashana
  */
+
 - (BOOL)isErevRoshChodesh;
 
 /**
@@ -96,6 +102,7 @@
  *  @return bool YES if the current day is 17 of Tammuz, Tisha B'Av, Yom Kippur, 
  *  Fast of Gedalyah, 10 of Teves or the Fast of Esther.
  */
+
 - (BOOL)isTaanis;
 
 /**
@@ -103,6 +110,7 @@
  *
  *  @return NSInteger equal to the number of the day of Chanukah, or -1 if it is not Chanukah
  */
+
 - (NSInteger)dayOfChanukah;
 
 /**
@@ -110,6 +118,7 @@
  *
  *  @return bool YES if it is Chanukah
  */
+
 - (BOOL)isChanukah; 
 
 /**
@@ -117,6 +126,7 @@
  *
  *  @return bool YES if the day is Purim
  */
+
 - (BOOL)isPurim;
 
 /**
@@ -125,6 +135,7 @@
  *
  *  @return bool YES if the current day is Rosh Chodesh. Returns NO for Rosh Hashana
  */
+
 - (BOOL)isRoshChodesh;
 
 /**
@@ -132,6 +143,7 @@
  *
  *  @return bool YES if it is Pesach
  */
+
 - (BOOL)isPesach;
 
 /**
@@ -139,6 +151,7 @@
  *
  *  @return bool YES if it is Shavuos
  */
+
 - (BOOL)isShavuos;
 
 /**
@@ -146,6 +159,7 @@
  *
  *  @return bool YES if it is Succos
  */
+
 - (BOOL)isSuccos;
 
 /**
@@ -153,6 +167,7 @@
  *
  *  @return bool YES if it is Simchat Torah
  */
+
 - (BOOL)isSimchasTorah;
 
 /**
@@ -160,6 +175,7 @@
  *
  *  @return bool YES if it is Shmini Atzeres
  */
+
 - (BOOL)isShminiAtzeres;
 
 /**
@@ -175,6 +191,7 @@
  *
  *  @return NSDate equal to the molad in Standard Time in Yerushalayim as a Date.
  */
+
 - (NSDate *)moladAsDateForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
@@ -186,6 +203,7 @@
  *
  *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
+
 - (NSDate *)tchilasZmanKidushLevana3DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
@@ -196,6 +214,7 @@
  *
  *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
+
 - (NSDate *)tchilasZmanKidushLevana3DaysForDate:(NSDate *)date;
 
 /**
@@ -207,6 +226,7 @@
  *
  *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
+
 - (NSDate *)tchilasZmanKidushLevana7DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
@@ -217,6 +237,7 @@
  *
  *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
+
 - (NSDate *)tchilasZmanKidushLevana7DaysForDate:(NSDate *)date;
 
 /**
@@ -232,6 +253,7 @@
  *
  *  @return NSDate latest time of Kiddush Levana between Moldos
  */
+
 - (NSDate *)sofZmanKidushLevanaBetweenMoldosForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
@@ -246,6 +268,7 @@
  *
  *  @return NSDate latest time of Kiddush Levana between Moldos
  */
+
 - (NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(NSDate *)date;
 
 /**
@@ -264,6 +287,7 @@
  *
  *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
+
 - (NSDate *)sofZmanKidushLevana15DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 /**
  *  This is the opinion brought down in the Shulchan Aruch (Orach Chaim 426).
@@ -279,6 +303,7 @@
  *
  *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
+
 - (NSDate *)sofZmanKidushLevana15DaysForDate:(NSDate *)date;
 
 /**
@@ -286,6 +311,7 @@
  *
  *  @return KCDaf object corresponding to the date
  */
+
 - (KCDaf *)dafYomiBavli;
 
 #pragma mark - Calendar Utility Methods
@@ -295,6 +321,7 @@
  *
  *  @return NSInteger corresponding to the current Hebrew month
  */
+
 - (NSInteger)currentHebrewMonth;
 
 /**
@@ -302,6 +329,7 @@
  *
  *  @return NSInteger corresponding to the day of the current Hebrew month
  */
+
 - (NSInteger)currentHebrewDayOfMonth;
 
 /**
@@ -309,6 +337,7 @@
  *
  *  @return NSInteger corresponding to the current day of the civil week
  */
+
 - (NSInteger)currentDayOfTheWeek;
 
 /**
@@ -316,6 +345,7 @@
  *
  *  @return bool YES if it is a leap year
  **/
+
 - (BOOL)isCurrentlyHebrewLeapYear;
 
 /**
@@ -325,6 +355,7 @@
  *
  *  @return bool YES if it is a leap year
  **/
+
 - (BOOL)isHebrewLeapYear:(NSInteger)year;
 
 /**
@@ -332,6 +363,7 @@
  *
  *  @return bool YES if Kislef is short
  **/
+
 - (BOOL)isKislevShort;
 
 /**
@@ -341,6 +373,7 @@
  *
  *  @return NSInteger corresponding to the number of days of the year
  **/
+
 - (NSInteger)lengthOfHebrewYear:(NSInteger)year;
 
 /**
@@ -348,6 +381,7 @@
  *
  *  @return NSInteger
  **/
+
 - (NSInteger)currentHebrewYear;
 
 /**
@@ -357,6 +391,7 @@
  *
  *  @return NSDate
  **/
+
 - (NSDate *)fridayFollowingDate:(NSDate *)workingDate;
 
 @end

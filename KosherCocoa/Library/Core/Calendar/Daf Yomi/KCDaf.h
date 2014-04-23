@@ -54,6 +54,7 @@
  *  @param number The page number.
  *  @return An instance of KCDaf.
  */
+
 - (id) initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number;
 
 /**-----
@@ -76,6 +77,7 @@
  *
  *  @return A string with transliterated name of the tractate that corresponds to the tractateIndex.
  */
+
 - (NSString *)displayNameTransliterated;
 
 
