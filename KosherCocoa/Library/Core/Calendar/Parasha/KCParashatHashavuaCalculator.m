@@ -1600,7 +1600,7 @@
     
     NSNumber *parashaIDNumber = parshiot[weeksSinceRoshHashana];
     
-    KCParashaIdentifier parashaID = [parashaIDNumber integerValue];
+    enum KCParashaIdentifier parashaID = [parashaIDNumber integerValue];
     
     KCParasha *parasha = [KCParasha parashaWithIdentifier:parashaID];
     

@@ -23,7 +23,7 @@
  * The parasha identifier.
  */
 
-@property (nonatomic, assign) KCParashaIdentifier identifier;
+@property (nonatomic, assign) enum KCParashaIdentifier identifier;
 
 /**-----
  * @name Converting an identifier into a parasha.
@@ -37,7 +37,7 @@
  *  @return A KCParasha instance.
  */
 
-- (id)initWithIdentifier:(KCParashaIdentifier)identifier;
+- (id)initWithIdentifier:(enum KCParashaIdentifier)identifier;
 
 /**
  *  This method returns a KCParasha instance.
@@ -49,7 +49,7 @@
  *  @return A KCParasha instance.
  */
 
-+ (id)parashaWithIdentifier:(KCParashaIdentifier)identifier;
++ (id)parashaWithIdentifier:(enum KCParashaIdentifier)identifier;
 
 /**-----
  * @name Human Readable Parasha Names

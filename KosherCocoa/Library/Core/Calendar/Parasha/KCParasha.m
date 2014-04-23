@@ -180,7 +180,7 @@
     return self;
 }
 
-- (id)initWithIdentifier:(KCParashaIdentifier)identifier
+- (id)initWithIdentifier:(enum KCParashaIdentifier)identifier
 {
     self = [self init];
     if (self) {
@@ -189,7 +189,7 @@
     return self;
 }
 
-+ (id)parashaWithIdentifier:(KCParashaIdentifier)identifier
++ (id)parashaWithIdentifier:(enum KCParashaIdentifier)identifier
 {
     return [[KCParasha alloc] initWithIdentifier:identifier];
 }

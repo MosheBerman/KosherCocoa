@@ -18,78 +18,79 @@
  */
 
 NS_ENUM(NSInteger, KCParashaIdentifier){
-    KCParashaIdentifierBereshit = 0,
-    KCParashaIdentifierNoach,
-    KCParashaIdentifierLechLecha,
-    KCParashaIdentifierVayeira,
-    KCParashaIdentifierChayeiSarah,
-    KCParashaIdentifierToldot,
-    KCParashaIdentifierVayeitsei,
-    KCParashaIdentifierVayishlach,
-    KCParashaIdentifierVayeishev,
-    KCParashaIdentifierMiketz,
-    KCParashaIdentifierVayigash,
-    KCParashaIdentifierVayechi,
-    KCParashaIdentifierShemot,
-    KCParashaIdentifierVaera,
-    KCParashaIdentifierBo,
-    KCParashaIdentifierBeshalach,
-    KCParashaIdentifierYitro,
-    KCParashaIdentifierMishpatim,
-    KCParashaIdentifierTerumah,
-    KCParashaIdentifierTetzaveh,
-    KCParashaIdentifierTerumahAndTetzaveh,    //  Terumah - Tetzaveh
-    KCParashaIdentifierKiTissa,
-    KCParashaIdentifierVayakhel,
-    KCParashaIdentifierPekudei,
-    KCParashaIdentifierVayakhelAndPekudei,    //  Vayakhel - Pekudei
-    KCParashaIdentifierVayikra,
-    KCParashaIdentifierTzav,
-    KCParashaIdentifierShemini,
-    KCParashaIdentifierTazria,
-    KCParashaIdentifierMetzora,
-    KCParashaIdentifierTazriaAndMetzora,
-    KCParashaIdentifierAchareiMot,
-    KCParashaIdentifierKedoshim,
-    KCParashaIdentifierAchareiMotAndKedoshim, //  Acharei - Kedoshim
-    KCParashaIdentifierEmor,
-    KCParashaIdentifierBehar,
-    KCParashaIdentifierBechukotai,
-    KCParashaIdentifierBeharAndBechukotai,    //  Behar - Bechukotai
-    KCParashaIdentifierBamidbar,
-    KCParashaIdentifierNaso,
-    KCParashaIdentifierBehaalotecha,
-    KCParashaIdentifierShelach,
-    KCParashaIdentifierKorach,
-    KCParashaIdentifierChukat,
-    KCParashaIdentifierBalak,
-    KCParashaIdentifierChukatAndBalak,        //  Chukat - Balak
-    KCParashaIdentifierPinchas,
-    KCParashaIdentifierMatot,
-    KCParashaIdentifierMasei,
-    KCParashaIdentifierMatotAndMasei,         //  Matot - Masei
-    KCParashaIdentifierDevarim,
-    KCParashaIdentifierVaetchanan,
-    KCParashaIdentifierEikev,
-    KCParashaIdentifierReeh,
-    KCParashaIdentifierShoftim,
-    KCParashaIdentifierKiTeitzei,
-    KCParashaIdentifierKiTavo,
-    KCParashaIdentifierNitzavim,
-    KCParashaIdentifierVayeilech,
-    KCParashaIdentifierNitzavimAndVayeilech,  //  Nitzavim - Vayeilech
-    KCParashaIdentifierHaazinu,
-    KCParashaIdentifierVezotHaberacha,
-    KCParashaIdentifierRoshHashana1,  //  Rosh Hashana falls on Shabbat
-    KCParashaIdentifierYomKippur,     //  Yom Kippur falls on Shabbat
-    KCParashaIdentifierSukkot1,       //  Sukkot falls on Shabbat
-    KCParashaIdentifierSukkot3,       //  Chol Hamoed Sukkot falls on Shabbat
-    KCParashaIdentifierSheminiAtzeret,//  Shemini Atzeret falls on Shabbat
-    KCParashaIdentifierPesach1,       //  The first night of pesach falls on Shabbat
-    KCParashaIdentifierPesach3,       //  Chol Hamoed Pesach contains a Shabbat
-    KCParashaIdentifierPesach7,       //  The 7th day of Pesach falls on Shabbat
-    KCParashaIdentifierPesach8,       //  In diaspora, the 8th day of Pesach falls on Shabbat
-    KCParashaIdentifierShavuot2,      //  The second day of Shavuot falls on Shabbat
+    KCParashaBereshit = 0,
+    KCParashaNoach,
+    KCParashaLechLecha,
+    KCParashaVayeira,
+    KCParashaChayeiSarah,
+    KCParashaToldot,
+    KCParashaVayeitsei,
+    KCParashaVayishlach,
+    KCParashaVayeishev,
+    KCParashaMiketz,
+    KCParashaVayigash,
+    KCParashaVayechi,
+    KCParashaShemot,
+    KCParashaVaera,
+    KCParashaBo,
+    KCParashaBeshalach,
+    KCParashaYitro,
+    KCParashaMishpatim,
+    KCParashaTerumah,
+    KCParashaTetzaveh,
+    KCParashaTerumahAndTetzaveh,    //  Terumah - Tetzaveh
+    KCParashaKiTissa,
+    KCParashaVayakhel,
+    KCParashaPekudei,
+    KCParashaVayakhelAndPekudei,    //  Vayakhel - Pekudei
+    KCParashaVayikra,
+    KCParashaTzav,
+    KCParashaShemini,
+    KCParashaTazria,
+    KCParashaMetzora,
+    KCParashaTazriaAndMetzora,
+    KCParashaAchareiMot,
+    KCParashaKedoshim,
+    KCParashaAchareiMotAndKedoshim, //  Acharei - Kedoshim
+    KCParashaEmor,
+    KCParashaBehar,
+    KCParashaBechukotai,
+    KCParashaBeharAndBechukotai,    //  Behar - Bechukotai
+    KCParashaBamidbar,
+    KCParashaNaso,
+    KCParashaBehaalotecha,
+    KCParashaShelach,
+    KCParashaKorach,
+    KCParashaChukat,
+    KCParashaBalak,
+    KCParashaChukatAndBalak,        //  Chukat - Balak
+    KCParashaPinchas,
+    KCParashaMatot,
+    KCParashaMasei,
+    KCParashaMatotAndMasei,         //  Matot - Masei
+    KCParashaDevarim,
+    KCParashaVaetchanan,
+    KCParashaEikev,
+    KCParashaReeh,
+    KCParashaShoftim,
+    KCParashaKiTeitzei,
+    KCParashaKiTavo,
+    KCParashaNitzavim,
+    KCParashaVayeilech,
+    KCParashaNitzavimAndVayeilech,  //  Nitzavim - Vayeilech
+    KCParashaHaazinu,
+    KCParashaVezotHaberacha,
+    KCParashaRoshHashana1,  //  Rosh Hashana falls on Shabbat
+    KCParashaYomKippur,     //  Yom Kippur falls on Shabbat
+    KCParashaSukkot1,       //  Sukkot falls on Shabbat
+    KCParashaSukkot3,       //  Chol Hamoed Sukkot falls on Shabbat
+    KCParashaSheminiAtzeret,//  Shemini Atzeret falls on Shabbat
+    KCParashaPesach1,       //  The first night of pesach falls on Shabbat
+    KCParashaPesach3,       //  Chol Hamoed Pesach contains a Shabbat
+    kCParashaPesach7,       //  The 7th day of Pesach falls on Shabbat
+    KCParashaPesach8,       //  In diaspora, the 8th day of Pesach falls on Shabbat
+    KCParashaShavuot2,      //  The second day of Shavuot falls on Shabbat
 };
+
 
 #endif
