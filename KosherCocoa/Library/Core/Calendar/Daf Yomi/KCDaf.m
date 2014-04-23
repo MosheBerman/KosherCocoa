@@ -12,10 +12,12 @@
 
 @implementation KCDaf
 
-- (id) initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number {
+- (id)initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number
+{
     self = [super init];
     
-    if (self) {
+    if (self)
+    {
         _tractateIndex = tractateIndex;
         _pageNumber = number;
     }
