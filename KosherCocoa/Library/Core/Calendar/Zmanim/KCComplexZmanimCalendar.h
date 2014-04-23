@@ -1514,7 +1514,7 @@
  * According to the KosherJava blog, this seems linked to minhagim within the Syrian community.
  * Please visit: http://www.kosherjava.com/tag/syrian-jews/ for more info
  * 
- * @param (double)minutes offset to Alot72Zmanis in minutes
+ * @param minutes offset to Alot72Zmanis in minutes
  *
  * @return NSDate the Date of misheyakir.
  */
