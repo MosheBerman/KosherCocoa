@@ -19,11 +19,17 @@
 @interface KCSunriseAndSunsetCalculator : KCAstronomicalCalculator
 
 /**
- 
+ *
  *
  *  A string representing the name of the calculator
  */
+
 @property (nonatomic, strong) NSString *calculatorName;
+
+/**
+ *  The location of the user.
+ */
+
 @property (nonatomic, strong) KCGeoLocation *geoLocation;
 
 /**
