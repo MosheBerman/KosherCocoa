@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
+// TODO: Convert this to an NS_ENUM declaration.
 /**
  
  A type representing a hebrew year configuration.
