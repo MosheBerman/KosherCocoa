@@ -38,7 +38,7 @@
  *  @return an instance of KCDafYomiCalculator
  */
 
-- (id) initWithDate:(NSDate *)date;
+- (id)initWithDate:(NSDate *)date;
 
 /**-----
  * @name Getting "the Daf"

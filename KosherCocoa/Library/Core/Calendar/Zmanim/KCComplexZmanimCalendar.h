@@ -61,7 +61,7 @@
  *  KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis19Point8Degrees;
+- (long)shaahZmanis19Point8Degrees;
 
 /**
  *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
@@ -85,7 +85,7 @@
  *  KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis18Degrees;
+- (long)shaahZmanis18Degrees;
 
 /**
  *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
@@ -109,7 +109,7 @@
  *  KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis26Degrees;
+- (long)shaahZmanis26Degrees;
 
 /**
  *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
@@ -133,7 +133,7 @@
  *  KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis16Point1Degrees;
+- (long)shaahZmanis16Point1Degrees;
 
 /**
  * Method to return a shaah zmanis (solar hour) according to the opinion of the Magen Avraham.
@@ -150,7 +150,7 @@
  *
  */
 
-- (long) shaahZmanis60Minutes;
+- (long)shaahZmanis60Minutes;
 
 /**
  * Method to return a shaah zmanis (solar hour) according to the opinion of the Magen Avraham. 
@@ -167,7 +167,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis72Minutes;
+- (long)shaahZmanis72Minutes;
 
 /**
  * Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham
@@ -186,7 +186,7 @@
  * the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis72MinutesZmanis;
+- (long)shaahZmanis72MinutesZmanis;
 
 /**
  * Method to return a shaah zmanis (temporal hour) calculated using a dip of 90 minutes. 
@@ -203,7 +203,7 @@
  * the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis90Minutes;
+- (long)shaahZmanis90Minutes;
 
 /**
  * Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham
@@ -222,7 +222,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis90MinutesZmanis;
+- (long)shaahZmanis90MinutesZmanis;
 
 /**
  * Method to return a shaah zmanis (temporal hour) calculated using a dip of 96 minutes.
@@ -239,7 +239,7 @@
  * the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis96Minutes;
+- (long)shaahZmanis96Minutes;
 
 /**
  * Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham
@@ -256,7 +256,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis96MinutesZmanis;
+- (long)shaahZmanis96MinutesZmanis;
 
 /**
  * Method to return a shaah zmanis (temporal hour) according to the opinion of 
@@ -276,7 +276,7 @@
  * of the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanisAteretTorah;
+- (long)shaahZmanisAteretTorah;
 
 /**
  * Method to return a shaah zmanis (temporal hour) calculated using a dip of 120 minutes. 
@@ -292,7 +292,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis120Minutes;
+- (long)shaahZmanis120Minutes;
 
 /**
  * Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham
@@ -310,7 +310,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (long) shaahZmanis120MinutesZmanis;
+- (long)shaahZmanis120MinutesZmanis;
 
 /**
  * This method returns the time of plag hamincha according to the Magen Avraham with the day 
@@ -324,7 +324,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha120Minutes;
+- (NSDate *)plagHamincha120Minutes;
 
 /**
  * This method returns the time of plag hamincha based on sunrise being 120 minutes zmaniyos
@@ -339,7 +339,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha120MinutesZmanis;
+- (NSDate *)plagHamincha120MinutesZmanis;
 
 /**
  * Method to return alos (dawn) calculated as 60 minutes before sea level sunrise. 
@@ -356,7 +356,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos60;
+- (NSDate *)alos60;
 
 /**
  * Method to return alos (dawn) calculated using 72 minutes zmaniyos (GRA and the Baal Hatanya) 
@@ -374,7 +374,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos72Zmanis;
+- (NSDate *)alos72Zmanis;
 
 /**
  * Method to return alos (dawn) calculated using 90 minutes before sea level sunrise based 
@@ -390,7 +390,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos90;
+- (NSDate *)alos90;
 
 /**
  * Method to return alos (dawn) calculated using 90 minutes zmaniyos (GRA and the Baal Hatanya) 
@@ -406,7 +406,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos90Zmanis;
+- (NSDate *)alos90Zmanis;
 
 /**
  * Method to return alos (dawn) calculated using 96 minutes before sea level sunrise based 
@@ -422,7 +422,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos96;
+- (NSDate *)alos96;
 
 /**
  * Method to return alos (dawn) calculated using 96 minutes zmaniyos (GRA and the Baal Hatanya) 
@@ -438,7 +438,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos96Zmanis;
+- (NSDate *)alos96Zmanis;
 
 /**
  * Method to return alos (dawn) calculated using 120 minutes before sea level sunrise 
@@ -454,7 +454,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos120;
+- (NSDate *)alos120;
 
 /**
  * Method to return alos (dawn) calculated using 120 minutes zmaniyos (GRA and the Baal Hatanya) 
@@ -470,7 +470,7 @@
  * be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos120Zmanis;
+- (NSDate *)alos120Zmanis;
 
 /**
  * A method to return alos (dawn) calculated when the sun is 26° below the eastern geometric 
@@ -487,7 +487,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos26Degrees;
+- (NSDate *)alos26Degrees;
 
 /**
  * A method to return alos (dawn) calculated when the sun is 18° below the eastern geometric 
@@ -501,7 +501,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos18Degrees;
+- (NSDate *)alos18Degrees;
 
 /**
  * Method to return alos (dawn) calculated when the sun is 19.8° below the eastern geometric 
@@ -518,7 +518,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos19Point8Degrees;
+- (NSDate *)alos19Point8Degrees;
 
 /**
  * Method to return alos (dawn) calculated when the sun is 16.1° below the eastern geometric 
@@ -535,7 +535,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) alos16Point1Degrees;
+- (NSDate *)alos16Point1Degrees;
 
 /**
  * This method returns misheyakir based on the position of the sun when it is 11.5° below 
@@ -551,7 +551,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) misheyakir11Point5Degrees;
+- (NSDate *)misheyakir11Point5Degrees;
 
 /**
  * This method returns misheyakir based on the position of the sun when it is 11° below 
@@ -567,7 +567,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) misheyakir11Degrees;
+- (NSDate *)misheyakir11Degrees;
 
 /**
  * This method returns misheyakir based on the position of the sun when it is 10.2° below 
@@ -583,7 +583,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) misheyakir10Point2Degrees;
+- (NSDate *)misheyakir10Point2Degrees;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according 
@@ -600,7 +600,7 @@
  * top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA19Point8Degrees;
+- (NSDate *)sofZmanShmaMGA19Point8Degrees;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according 
@@ -617,7 +617,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA16Point1Degrees;
+- (NSDate *)sofZmanShmaMGA16Point1Degrees;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according 
@@ -635,7 +635,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA72Minutes;
+- (NSDate *)sofZmanShmaMGA72Minutes;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according 
@@ -652,7 +652,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA72MinutesZmanis;
+- (NSDate *)sofZmanShmaMGA72MinutesZmanis;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) 
@@ -668,7 +668,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA90Minutes;
+- (NSDate *)sofZmanShmaMGA90Minutes;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according 
@@ -685,7 +685,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA90MinutesZmanis;
+- (NSDate *)sofZmanShmaMGA90MinutesZmanis;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according
@@ -702,7 +702,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA96Minutes;
+- (NSDate *)sofZmanShmaMGA96Minutes;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according
@@ -719,7 +719,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA96MinutesZmanis;
+- (NSDate *)sofZmanShmaMGA96MinutesZmanis;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) calculated
@@ -733,7 +733,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShma3HoursBeforeChatzos;
+- (NSDate *)sofZmanShma3HoursBeforeChatzos;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) according 
@@ -750,7 +750,7 @@
  * will be returned. See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaMGA120Minutes;
+- (NSDate *)sofZmanShmaMGA120Minutes;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) based
@@ -768,7 +768,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaAlos16Point1ToSunset;
+- (NSDate *)sofZmanShmaAlos16Point1ToSunset;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) based 
@@ -786,7 +786,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees;
+- (NSDate *)sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees;
 
 /**
  * Deprecated. Pending confirmation from Rabbi Harfenes, this method is deprecated and should 
@@ -802,7 +802,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaKolEliyahu;
+- (NSDate *)sofZmanShmaKolEliyahu;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) according to 
@@ -819,7 +819,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA19Point8Degrees;
+- (NSDate *)sofZmanTfilaMGA19Point8Degrees;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) according to 
@@ -836,7 +836,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA16Point1Degrees;
+- (NSDate *)sofZmanTfilaMGA16Point1Degrees;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) according to 
@@ -854,7 +854,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA72Minutes;
+- (NSDate *)sofZmanTfilaMGA72Minutes;
 
 /**
  * This method returns the latest zman tfila (time to the morning prayers) according to the opinion 
@@ -871,7 +871,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA72MinutesZmanis;
+- (NSDate *)sofZmanTfilaMGA72MinutesZmanis;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) according to 
@@ -888,7 +888,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA90Minutes;
+- (NSDate *)sofZmanTfilaMGA90Minutes;
 
 /**
  * This method returns the latest zman tfila (time to the morning prayers) according to the 
@@ -905,7 +905,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA90MinutesZmanis;
+- (NSDate *)sofZmanTfilaMGA90MinutesZmanis;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) according to the
@@ -921,7 +921,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA96Minutes;
+- (NSDate *)sofZmanTfilaMGA96Minutes;
 
 /**
  * This method returns the latest zman tfila (time to the morning prayers) according to the 
@@ -938,7 +938,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA96MinutesZmanis;
+- (NSDate *)sofZmanTfilaMGA96MinutesZmanis;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) according to the
@@ -955,7 +955,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaMGA120Minutes;
+- (NSDate *)sofZmanTfilaMGA120Minutes;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) calculated as 
@@ -970,7 +970,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfila2HoursBeforeChatzos;
+- (NSDate *)sofZmanTfila2HoursBeforeChatzos;
 
 /**
  * This method returns mincha gedola calculated as 30 minutes after chatzos and not 1/2 of 
@@ -988,7 +988,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaGedola30Minutes; //after chatzos
+- (NSDate *)minchaGedola30Minutes; //after chatzos
 
 /**
  * This method returns the time of mincha gedola according to the Magen Avraham with the day 
@@ -1004,7 +1004,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaGedola72Minutes;
+- (NSDate *)minchaGedola72Minutes;
 
 /**
  * This method returns the time of mincha gedola according to the Magen Avraham with the day 
@@ -1021,7 +1021,7 @@
  * on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaGedola16Point1Degrees;
+- (NSDate *)minchaGedola16Point1Degrees;
 
 /**
  * This is a conveniance methd that returns the later of KCZmanimCalendar.MinchaGedola() and
@@ -1036,7 +1036,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaGedolaGreaterThan30;
+- (NSDate *)minchaGedolaGreaterThan30;
 
 /**
  * This method returns the time of mincha ketana according to the Magen Avraham with the day 
@@ -1053,7 +1053,7 @@
  * the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaKetana16Point1Degrees;
+- (NSDate *)minchaKetana16Point1Degrees;
 
 /**
  * This method returns the time of mincha ketana according to the Magen Avraham with the day 
@@ -1070,7 +1070,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaKetana72Minutes;
+- (NSDate *)minchaKetana72Minutes;
 
 /**
  * This method returns the time of plag hamincha according to the Magen Avraham with the day 
@@ -1085,7 +1085,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha60Minutes;
+- (NSDate *)plagHamincha60Minutes;
 
 /**
  * This method returns the time of plag hamincha according to the Magen Avraham with the day 
@@ -1100,7 +1100,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha72Minutes;
+- (NSDate *)plagHamincha72Minutes;
 
 /**
  * This method returns the time of plag hamincha according to the Magen Avraham with the day 
@@ -1115,7 +1115,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha90Minutes;
+- (NSDate *)plagHamincha90Minutes;
 
 /**
  * This method returns the time of plag hamincha according to the Magen Avraham with the day 
@@ -1130,7 +1130,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha96Minutes;
+- (NSDate *)plagHamincha96Minutes;
 
 /**
  * This method returns the time of plag hamincha. This is calculated as 10.75 hours after dawn. 
@@ -1143,7 +1143,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha96MinutesZmanis;
+- (NSDate *)plagHamincha96MinutesZmanis;
 
 /**
  * This method returns the time of plag hamincha. This is calculated as 10.75 hours after dawn. 
@@ -1156,7 +1156,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha90MinutesZmanis;
+- (NSDate *)plagHamincha90MinutesZmanis;
 
 /**
  * This method returns the time of plag hamincha. This is calculated as 10.75 hours after dawn. 
@@ -1169,7 +1169,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha72MinutesZmanis;
+- (NSDate *)plagHamincha72MinutesZmanis;
 
 /**
  * This method returns the time of plag hamincha based on the opinion that the day starts at 
@@ -1184,7 +1184,7 @@
  * top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha16Point1Degrees;
+- (NSDate *)plagHamincha16Point1Degrees;
 
 /**
  * This method returns the time of plag hamincha based on the opinion that the day starts at 
@@ -1199,7 +1199,7 @@
  *See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha19Point8Degrees;
+- (NSDate *)plagHamincha19Point8Degrees;
 
 /**
  * This method returns the time of plag hamincha based on the opinion that the day starts at 
@@ -1213,7 +1213,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha26Degrees;
+- (NSDate *)plagHamincha26Degrees;
 
 /**
  * This method returns the time of plag hamincha based on the opinion that the day starts at 
@@ -1228,7 +1228,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHamincha18Degrees;
+- (NSDate *)plagHamincha18Degrees;
 
 /**
  * This method returns the time of plag hamincha based on the opinion that the day starts at 
@@ -1246,7 +1246,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagAlosToSunset;
+- (NSDate *)plagAlosToSunset;
 
 /**
  * This method returns the time of plag hamincha based on the opinion that the day starts at 
@@ -1263,7 +1263,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagAlos16Point1ToTzaisGeonim7Point083Degrees;
+- (NSDate *)plagAlos16Point1ToTzaisGeonim7Point083Degrees;
 
 /**
  * Method to return Bain Hashmasho of Rabainu Tam calculated when the sun is 13.24° below 
@@ -1288,7 +1288,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) bainHashmashosRT13Degrees;
+- (NSDate *)bainHashmashosRT13Degrees;
 
 /**
  * This method returns Bain Hashmashos of Rabainu Tam calculated as a 58.5 minute offset after sunset.
@@ -1302,7 +1302,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) bainHashmashosRT58Point5Minutes;
+- (NSDate *)bainHashmashosRT58Point5Minutes;
 
 /**
  * This method returns the time of bain hashmashos based on the calculation of 13.5 minutes 
@@ -1316,7 +1316,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) bainHashmashosRT13Point5MinutesBefore7Point083Degrees;
+- (NSDate *)bainHashmashosRT13Point5MinutesBefore7Point083Degrees;
 
 /**
  * This method returns bain hashmashos of Rabainu Tam calculated according to the opinion of 
@@ -1332,7 +1332,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) bainHashmashosRT2Stars;
+- (NSDate *)bainHashmashosRT2Stars;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated at 
@@ -1346,7 +1346,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim5Point95Degrees;
+- (NSDate *)tzaisGeonim5Point95Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated as 
@@ -1362,7 +1362,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim3Point65Degrees;
+- (NSDate *)tzaisGeonim3Point65Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated 
@@ -1378,7 +1378,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim4Point61Degrees;
+- (NSDate *)tzaisGeonim4Point61Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated 
@@ -1394,7 +1394,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim4Point37Degrees;
+- (NSDate *)tzaisGeonim4Point37Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated 
@@ -1412,7 +1412,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim5Point88Degrees;
+- (NSDate *)tzaisGeonim5Point88Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated 
@@ -1428,7 +1428,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim4Point8Degrees;
+- (NSDate *)tzaisGeonim4Point8Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated 
@@ -1444,7 +1444,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim7Point083Degrees;
+- (NSDate *)tzaisGeonim7Point083Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Geonim calculated 
@@ -1458,7 +1458,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisGeonim8Point5Degrees;
+- (NSDate *)tzaisGeonim8Point5Degrees;
 
 /**
  * This method returns the tzais (nightfall) based on R' Moshe Feinstein's opinion
@@ -1472,7 +1472,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais50;
+- (NSDate *)tzais50;
 
 /**
  * This method returns the tzais (nightfall) based on the opinion of the Chavas Yair and 
@@ -1486,7 +1486,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais60;
+- (NSDate *)tzais60;
 
 /**
  * This method returns tzais usually calculated as 40 minutes (configurable to any offset by
@@ -1506,7 +1506,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzaisAteretTorah;
+- (NSDate *)tzaisAteretTorah;
 
 /**
  * This method returns the latest zman krias shema (time to recite Shema in the morning) based on 
@@ -1525,7 +1525,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanShmaAteretTorah;
+- (NSDate *)sofZmanShmaAteretTorah;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) based on the
@@ -1544,7 +1544,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanTfilaAteretTorah;
+- (NSDate *)sofZmanTfilaAteretTorah;
 
 /**
  * This method returns the time of mincha gedola based on the calculation of Chacham Yosef 
@@ -1563,7 +1563,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaGedolaAteretTorah;
+- (NSDate *)minchaGedolaAteretTorah;
 
 /**
  * This method returns the time of mincha ketana based on the calculation of Chacham Yosef 
@@ -1582,7 +1582,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) minchaKetanaAteretTorah;
+- (NSDate *)minchaKetanaAteretTorah;
 
 /**
  * This method returns the time of plag hamincha based on the calculation of Chacham Yosef 
@@ -1599,7 +1599,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) plagHaminchaAteretTorah;
+- (NSDate *)plagHaminchaAteretTorah;
 
 /**
  * This method calculates the Misheyakir as an offset to Alot72Zmanis.
@@ -1612,7 +1612,7 @@
  * @return NSDate the Date of misheyakir.
  */
 
-- (NSDate *) misheyakirAteretTorahWithMinutes:(double)minutes;
+- (NSDate *)misheyakirAteretTorahWithMinutes:(double)minutes;
 
 /**
  * Method to return tzais (dusk) calculated as 72 minutes zmaniyos, 
@@ -1625,7 +1625,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais72Zmanis;
+- (NSDate *)tzais72Zmanis;
 
 /**
  * Method to return tzais (dusk) calculated using 90 minutes zmaniyos (GRA and the Baal Hatanya) 
@@ -1638,7 +1638,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais90Zmanis;
+- (NSDate *)tzais90Zmanis;
 
 /**
  * Method to return tzais (dusk) calculated using 96 minutes zmaniyos 
@@ -1651,7 +1651,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais96Zmanis;
+- (NSDate *)tzais96Zmanis;
 
 /**
  * Method to return tzais (dusk) calculated as 90 minutes after sea level sunset. 
@@ -1668,7 +1668,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais90;
+- (NSDate *)tzais90;
 
 /**
  * This method returns tzais (nightfall) based on the opinion of the Magen Avraham that the time 
@@ -1684,7 +1684,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais120;
+- (NSDate *)tzais120;
 
 /**
  * Method to return tzais (dusk) calculated using 120 minutes zmaniyos 
@@ -1697,7 +1697,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais120Zmanis;
+- (NSDate *)tzais120Zmanis;
 
 /**
  * For information on how this is calculated see the comments on Alos16Point1Degrees()
@@ -1710,7 +1710,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais16Point1Degrees;
+- (NSDate *)tzais16Point1Degrees;
 
 /** 
  * For information on how this is calculated see the comments on Alos26Degrees()
@@ -1723,7 +1723,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais26Degrees;
+- (NSDate *)tzais26Degrees;
 
 /**
  * For information on how this is calculated see the comments on Alos18Degrees()
@@ -1736,7 +1736,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais18Degrees;
+- (NSDate *)tzais18Degrees;
 
 /**
  * For information on how this is calculated see the comments on Alos19Point8Degrees()
@@ -1749,7 +1749,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais19Point8Degrees;
+- (NSDate *)tzais19Point8Degrees;
 
 /**
  * A method to return tzais (dusk) calculated as 96 minutes after sea level sunset. 
@@ -1762,7 +1762,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) tzais96;
+- (NSDate *)tzais96;
 
 /**
  * A method that returns the local time for fixed chatzos. 
@@ -1777,7 +1777,7 @@
  * @return NSDate the Date representing the local chatzos.
  */
 
-- (NSDate *) fixedLocalChatzos;
+- (NSDate *)fixedLocalChatzos;
 
 /**
  * A method that returns the latest zman krias shema (time to recite Shema in the morning) 
@@ -1786,7 +1786,7 @@
  * @return NSDate the Date of the latest zman krias shema calculated as 3 hours before FixedLocalChatzos()
  */
 
-- (NSDate *) sofZmanShmaFixedLocal;
+- (NSDate *)sofZmanShmaFixedLocal;
 
 /**
  * This method returns the latest zman tfila (time to recite the morning prayers) 
@@ -1795,7 +1795,7 @@
  * @return NSDate the Date of the latest zman tfila.
  */
 
-- (NSDate *) sofZmanTfilaFixedLocal;
+- (NSDate *)sofZmanTfilaFixedLocal;
 
 /**
  * This method returns the latest time one is allowed eating chametz on Erev Pesach according 
@@ -1811,7 +1811,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanAchilasChametzGra;
+- (NSDate *)sofZmanAchilasChametzGra;
 
 /**
  * This method returns the latest time one is allowed eating chametz on Erev Pesach according to 
@@ -1828,7 +1828,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanAchilasChametzMGA72Minutes;
+- (NSDate *)sofZmanAchilasChametzMGA72Minutes;
 
 /**
  * This method returns the latest time one is allowed eating chametz on Erev Pesach according to 
@@ -1845,7 +1845,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanAchilasChametzMGA16Point1Degrees;
+- (NSDate *)sofZmanAchilasChametzMGA16Point1Degrees;
 
 /**
  * This method returns the latest time for burning chametz on Erev Pesach according to the opinion 
@@ -1860,7 +1860,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanBiurChametzGra;
+- (NSDate *)sofZmanBiurChametzGra;
 
 /**
  * This method returns the latest time for burning chametz on Erev Pesach according to the opinion 
@@ -1876,7 +1876,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanBiurChametzMGA72Minutes;
+- (NSDate *)sofZmanBiurChametzMGA72Minutes;
 
 /**
  * This method returns the latest time for burning chametz on Erev Pesach according to the opinion 
@@ -1893,7 +1893,7 @@
  * See detailed explanation on top of the KCAstronomicalCalendar documentation.
  */
 
-- (NSDate *) sofZmanBiurChametzMGA16Point1Degrees;
+- (NSDate *)sofZmanBiurChametzMGA16Point1Degrees;
 
 /**
  * A method that returns "solar" midnight, or the time when the sun is at its nadir.

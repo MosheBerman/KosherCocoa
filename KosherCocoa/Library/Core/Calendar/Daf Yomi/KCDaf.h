@@ -55,7 +55,7 @@
  *  @return An instance of KCDaf.
  */
 
-- (id) initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number;
+- (id)initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number;
 
 /**-----
  *  @name Displaying a Tractate
