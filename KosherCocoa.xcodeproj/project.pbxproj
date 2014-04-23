@@ -184,6 +184,7 @@
 		466A3AFE17CAF3B900056F16 /* KosherCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KosherCocoa.h; sourceTree = "<group>"; };
 		466A3B2D17CB9CD900056F16 /* NSDate+ConvenientDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ConvenientDates.h"; sourceTree = "<group>"; };
 		466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
+		466BF887190870A9004F19A5 /* Solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solar.h; sourceTree = "<group>"; };
 		468C006E17F1E3450070CDB5 /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -489,6 +490,7 @@
 		466A3AE817CAF3B900056F16 /* Solar */ = {
 			isa = PBXGroup;
 			children = (
+				466BF887190870A9004F19A5 /* Solar.h */,
 				466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */,
 				466A3AEA17CAF3B900056F16 /* KCAstronomicalCalculator.m */,
 				466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */,
