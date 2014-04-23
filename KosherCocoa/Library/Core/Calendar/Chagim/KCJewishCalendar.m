@@ -636,7 +636,7 @@
 	
 	NSDateComponents *gregorianDateComponents = [gregorianCalendar components:NSWeekdayCalendarUnit fromDate:workingDate];
  	
-	int weekday = [gregorianDateComponents weekday];
+	NSInteger weekday = [gregorianDateComponents weekday];
     
     return [self dateByAddingDays:(6-weekday) toDate:workingDate];
 }
