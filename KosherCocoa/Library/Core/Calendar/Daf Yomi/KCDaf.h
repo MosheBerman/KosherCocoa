@@ -13,7 +13,7 @@
 #import "KCConstants.h"
 #import "KCTractates.h"
 
-/** A class that represents a *daf* (or page) in the Talmud. */
+/** A class that represents a page in the Talmud. */
 
 @interface KCDaf : NSObject
 
