@@ -14,6 +14,13 @@
  *  These method prototypes allow us to compile.
  *  We'll forward these to the internal calendar
  *  object that's equiped to handle the calls.
+ *
+ *  We do this because KCAstronomical calendar doesn't 
+ *  inherit from NSCalendar, and the actual methods are 
+ *  defined on an NSCalendar category.
+ *
+ *  Truth be told, this might be an structural issue 
+ *  that needs to be dealt with.
  */
 
 @interface KCAstronomicalCalendar (DateManipulation)
