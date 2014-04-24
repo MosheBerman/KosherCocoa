@@ -46,44 +46,59 @@
 //  but perhaps calculate sunset there in overridden methods...
 //
 
-- (NSDate *)candleLighting{
-    
+- (NSDate *)candleLighting
+{
     NSUInteger candleLightingOffset = [self candleLightingOffset];
-    return [self dateBySubtractingMinutes:candleLightingOffset fromDate:[self sunset]];
 
+    return [self candleLightingWithOffsetFromSunset:candleLightingOffset];
 }
 
-- (NSDate *)candleLighting15{
-    self.candleLightingOffset = 15;
-    return [self candleLighting];
+/**
+ *  A method to return the candle lighting time, calculated as offset
+ *  minutes before sunset.
+ *
+ *  @param offsetInMinutes The number of minutes before sunset.
+ *
+ *  @return An NSDate representing the candle lighting time.
+ */
+
+- (NSDate *)candleLightingWithOffsetFromSunset:(NSInteger)offsetInMinutes
+{
+    return [self dateBySubtractingMinutes:offsetInMinutes fromDate:[self sunset]];
 }
 
-- (NSDate *)candleLighting18{
-    self.candleLightingOffset = 18;
-    return [self candleLighting];
+- (NSDate *)candleLighting15
+{
+    return [self candleLightingWithOffsetFromSunset:15];
 }
 
-- (NSDate *)candleLighting20{
-    self.candleLightingOffset = 20;
-    return [self candleLighting];
+- (NSDate *)candleLighting18
+{
+    return [self candleLightingWithOffsetFromSunset:18];
 }
 
-- (NSDate *)candleLighting22{
-    self.candleLightingOffset = 22;
-    return [self candleLighting];
+- (NSDate *)candleLighting20
+{
+    return [self candleLightingWithOffsetFromSunset:20];
 }
 
-- (NSDate *)candleLighting30{
-    self.candleLightingOffset = 30;
-    return [self candleLighting];
+- (NSDate *)candleLighting22
+{
+    return [self candleLightingWithOffsetFromSunset:22];
 }
 
-- (NSDate *)candleLighting40{
-    self.candleLightingOffset = 40;
-    return [self candleLighting];
+- (NSDate *)candleLighting30
+{
+    return [self candleLightingWithOffsetFromSunset:30];
 }
 
-- (NSDate *)sofZmanTfilaGra{
+- (NSDate *)candleLighting40
+{
+    return [self candleLightingWithOffsetFromSunset:40];
+}
+
+- (NSDate *)sofZmanTfilaGra
+{
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*4];
 }
 

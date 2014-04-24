@@ -98,6 +98,18 @@
 - (NSDate *) candleLighting;
 
 /**
+ *  A method to return the candle lighting time, calculated as offset
+ *  minutes before sunset.
+ *
+ *  @param offsetInMinutes The number of minutes before sunset.
+ *
+ *  @return An NSDate representing the candle lighting time.
+ */
+
+- (NSDate *)candleLightingWithOffsetFromSunset:(NSInteger)offsetInMinutes;
+
+
+/**
  * A method to return candle lighting time. This is calculated as 15 minutes before
  * sea level sunset. This will return the time for any day of the week, since it can be
  * used to calculate candle lighting time for <em>yom tov</em> (mid-week holidays) as well.
