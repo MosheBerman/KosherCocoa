@@ -11,8 +11,7 @@
 #ifndef KosherCocoa_KosherCocoa_h
 #define KosherCocoa_KosherCocoa_h
 
-/*
- *  TODO: Import the core headers here. 
- */
+#import "Solar.h"
+#import "Calendar.h"
 
 #endif
