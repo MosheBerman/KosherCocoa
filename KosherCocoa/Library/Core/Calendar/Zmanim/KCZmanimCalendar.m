@@ -14,23 +14,28 @@
 
 @implementation KCZmanimCalendar
 
-- (NSDate *)alosHashachar{
+- (NSDate *)alosHashachar
+{
     return [self sunriseOffsetByDegrees:kZenithSixteenPointOne];
 }
 
-- (NSDate *)alos72{
+- (NSDate *)alos72
+{
     return [self dateBySubtractingMinutes:72 fromDate:[self seaLevelSunrise]];
 }
 
-- (NSDate *)chatzos{
+- (NSDate *)chatzos
+{
     return [self sunTransit];    
 }
 
-- (NSDate *)sofZmanShmaGra{
+- (NSDate *)sofZmanShmaGra
+{
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*3];
 }
 
-- (NSDate *)sofZmanShmaMogenAvraham{
+- (NSDate *)sofZmanShmaMogenAvraham
+{
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanisMogenAvraham]*3];
 }
 
@@ -82,35 +87,43 @@
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*4];
 }
 
-- (NSDate *)sofZmanTfilaMogenAvraham{
+- (NSDate *)sofZmanTfilaMogenAvraham
+{
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanisMogenAvraham]*4];
 }
 
-- (NSDate *)minchaGedola{
+- (NSDate *)minchaGedola
+{
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*6.5];
 }
 
-- (NSDate *)minchaKetana{
+- (NSDate *)minchaKetana
+{
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*9.5];    
 }
 
-- (NSDate *)plagHamincha{
+- (NSDate *)plagHamincha
+{
         return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*10.75];
 }
 
-- (double)shaahZmanisGra{
+- (double)shaahZmanisGra
+{
     return [self temporalHourFromSunrise:[self seaLevelSunrise] toSunset:[self seaLevelSunset]];
 }
 
-- (double)shaahZmanisMogenAvraham{
+- (double)shaahZmanisMogenAvraham
+{
     return [self temporalHourFromSunrise:[self alos72] toSunset:[self tzais72]];
 }
 
-- (NSDate *)tzais{
+- (NSDate *)tzais
+{
     return [self sunsetOffsetByDegrees:kZenithEightPointFive];
 }
 
-- (NSDate *)tzais72{
+- (NSDate *)tzais72
+{
     return [self dateByAddingMinutes:72 toDate:[self seaLevelSunset]];
 }
 
