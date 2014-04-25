@@ -36,7 +36,7 @@
  *         low enough below the horizon for this calculation, nil will be returned.
  */
 
-- (NSDate *) alosHashachar;
+- (NSDate *)alosHashachar;
 
 /**
  * Method to return <em>alos</em> (dawn) calculated using 72 minutes before sunrise at sea level (no adjustment for elevation) based on the time to walk the distance of 4 <em>Mil</em> at 18 minutes a
@@ -49,7 +49,7 @@
  *         nil will be returned.
  */
 
-- (NSDate *) alos72;
+- (NSDate *)alos72;
 
 /**
  * This method returns <em>chatzos</em> (midday) following the opinion of the GRA that the day for Jewish halachic
@@ -60,7 +60,7 @@
  *         returned.
  */
 
-- (NSDate *) chatzos;
+- (NSDate *)chatzos;
 
 /**
  * This method returns the latest <em>zman krias shema</em> (time to recite Shema in the morning). This time is 3 shaos zmaniyos</em> (solar hours) after sea level
@@ -72,7 +72,7 @@
  *         not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) sofZmanShmaGra;
+- (NSDate *)sofZmanShmaGra;
 
 /**
  * This method returns the latest <em>zman krias shema</em> (time to recite shema in the morning) in the opinion of
@@ -85,7 +85,7 @@
  *         does not set, nil will be returned.
  */
 
-- (NSDate *) sofZmanShmaMogenAvraham;
+- (NSDate *)sofZmanShmaMogenAvraham;
 
 /**
  * A method to return candle lighting time. This is calculated as <code>CandleLightingOffset</code> minutes before
@@ -95,7 +95,7 @@
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) candleLighting;
+- (NSDate *)candleLighting;
 
 /**
  *  A method to return the candle lighting time, calculated as offset
@@ -117,7 +117,7 @@
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) candleLighting15;
+- (NSDate *)candleLighting15;
 
 /**
  * A method to return candle lighting time. This is calculated as 18 minutes before
@@ -127,7 +127,7 @@
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) candleLighting18;
+- (NSDate *)candleLighting18;
 
 /**
  * A method to return candle lighting time. This is calculated as 20 minutes before
@@ -137,7 +137,7 @@
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) candleLighting20;
+- (NSDate *)candleLighting20;
 
 /**
  * A method to return candle lighting time. This is calculated as 22 minutes before
@@ -147,7 +147,7 @@
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) candleLighting22;
+- (NSDate *)candleLighting22;
 
 /**
  * A method to return candle lighting time. This is calculated as 30 minutes before
@@ -157,7 +157,7 @@
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) candleLighting30;
+- (NSDate *)candleLighting30;
 
 /**
  * A method to return candle lighting time. This is calculated as 40 minutes before
@@ -167,7 +167,7 @@
  *         least one day a year where the sun does not rise, and one where it does not set, nil will be returned.
  */
 
-- (NSDate *) candleLighting40;
+- (NSDate *)candleLighting40;
 
 /**
  * This method returns the latest <em>zman tefilah</em> (time to recite the morning prayers). This time is 4
@@ -179,7 +179,7 @@
  *         not set, nil will be returned.
  */
 
-- (NSDate *) sofZmanTfilaGra;
+- (NSDate *)sofZmanTfilaGra;
 
 /**
  * This method returns the latest <em>zman tfila</em> (time to recite the morning prayers) in the opinion of the
@@ -193,7 +193,7 @@
  *         not set), nil will be returned.
  */
 
-- (NSDate *) sofZmanTfilaMogenAvraham;
+- (NSDate *)sofZmanTfilaMogenAvraham;
 
 /**
  * This method returns the time of <em>mincha gedola</em>. <em>Mincha gedola</em> is the earliest time one can pray
@@ -208,7 +208,7 @@
  *         not set, nil will be returned.
  */
 
-- (NSDate *) minchaGedola;
+- (NSDate *)minchaGedola;
 
 /**
  * This method returns the time of <em>mincha ketana</em>. This is the preferred earliest time to pray
@@ -221,7 +221,7 @@
  *         not set, nil will be returned.
  */
 
-- (NSDate *) minchaKetana;
+- (NSDate *)minchaKetana;
 
 /**
  * This method returns the time of <em>plag hamincha</em>. This is calculated as 10.75 hours after sunrise. This
@@ -233,7 +233,7 @@
  *         does not set, nil will be returned.
  */
 
-- (NSDate *) plagHamincha;
+- (NSDate *)plagHamincha;
 
 /**
  *  TODO: Document.
@@ -245,7 +245,7 @@
  *  TODO: Document.
  */
 
-- (NSDate *) tzais72;
+- (NSDate *)tzais72;
 
 /**
  * A method that returns a <em>shaah zmanis</em> (temporal hour) according to
@@ -264,7 +264,7 @@
  *         the sun does not rise, and one where it does not set, <code>LONG_MIN</code> will be returned.
  */
 
-- (double) shaahZmanisGra;
+- (double)shaahZmanisGra;
 
 /**
  * A method that returns a <em>shaah zmanis</em> (temporal hour) according to the opinion of the Magen Avraham. This
@@ -278,6 +278,6 @@
  *         where it does not set, <code>LONG_MIN</code> will be returned.
  */
 
-- (double) shaahZmanisMogenAvraham;
+- (double)shaahZmanisMogenAvraham;
 
 @end
