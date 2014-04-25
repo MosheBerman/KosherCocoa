@@ -14,8 +14,6 @@ KosherCocoa offers six distinct features, each provided by a set of classes in t
 - Daf Yomi - The daily talmud study program followed by thousands of Jews worldwide.
 - Chagim - When Jewish holidays fall.
 
-See the [full documentation](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md) or poke around the file headers.
-
 Setting it up:
 ---
 Clone into, or download, the repository. Copy the folder called `Library` and import KosherCocoa.h. If you only want sunrise and sunset, you can copy the folder called `Solar` and ignore the rest.
@@ -27,6 +25,10 @@ Technical Requirements:
 The latest version of KosherCocoa has been developed with the iOS 7 SDK and uses ARC. You'll need Xcode 5 to make it work, because unit tests are built with XCTest.
 
 Even if your project doesn't use ARC, you'll want to compile KosherCocoa with ARC. Use the `-fobjc-arc` compiler flag for that.
+
+Using KosherCocoa:
+---
+See the [full documentation](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md) or poke around the file headers. Most things take just a few lines of code.
 
 License:
 ---
