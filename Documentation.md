@@ -57,9 +57,7 @@ Sunrise, sunset. That's how it's done.
 Zmanim are calculated by `KCZmanimCalendar` and its subclass `KCComplexZmanimCalendar`. Similar to sunrise, you can pass a location to a `KCZmanimCalendar` and then ask it for a zman.
 
     KCGeoLocation *location = [KCGeoLocation alloc] initWithLatitude:latitude andLongitude:longitude andTimeZone:timeZone];	
-    
     KCZmanimCalendar *calendar = [[KCZmanimCalendar alloc] initWithLocation:geoLocation];
-    
     NSDate *zofZmanShma = [calendar sofZmanShmaMogenAvraham];
     
 That's it. There are over 100 different zmanim API. Have a look at the applicable headers.
@@ -75,7 +73,12 @@ Now we have the parasha for the supplied date. Whoo!
 
 Parashat Hashavua follows one scheudule in Israel and different schedule everywhere else. This is because Jews in Israel don't celebrate the an extra day of sukkot or pesach. Depending on the year the parshiot diverge at different points in the calendar. To get the schedule in Israel, simply call `parashaInIsraelForDate:` instead of `parashaInDiasporaForDate:`.
 
+	KCParasha *parasha = [parashaCalculator parashaInIsraelForDate:[NSDate date]];
+
 Now that we have a `KCParasha`, we can use the `name` method to get the Hebrew name of parasha. We can also call `transliteratedName` to get the same Hebrew name spelled out in English.
+
+	NSString *hebrewName = [parasha name];
+	NSString *transliteratedName = [parasha nameTransliterated];
 
 5. Chagim
 ---
