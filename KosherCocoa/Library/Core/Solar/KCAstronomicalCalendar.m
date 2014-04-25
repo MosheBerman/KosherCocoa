@@ -29,7 +29,8 @@
     return self;
 }
 
-- (id) initWithLocation:(KCGeoLocation *)AGeoLocation{
+- (id) initWithLocation:(KCGeoLocation *)aGeoLocation
+{
  
     self = [self init];
     
@@ -39,7 +40,7 @@
         
         _astronomicalCalculator = tempCalc;
         
-        _geoLocation = AGeoLocation;
+        _geoLocation = aGeoLocation;
         
         _workingDate = [NSDate date];
         

@@ -171,8 +171,7 @@
  * the following date. An example of this is Marquette, Michigan that far west of the natural boundaries for EST.
  * When you add in DST this pushes it an additional hour off. Calculating the extreme 26&deg;twilight on March 6th
  * it start at 2:34:30 on the 6th and end at 1:01:46 on the following day March 7th. Occurrences are more common in
- * the polar region for dips as low as 3&deg; (Tested for Hooper Bay, Alaska). TODO: Since the occurrences are rare,
- * look for optimization to avoid relatively expensive calls to this method.
+ * the polar region for dips as low as 3&deg; (Tested for Hooper Bay, Alaska).
  *
  * @param sunset the sunset date to adjust if needed
  * @param sunrise the sunrise to compare to the sunset
