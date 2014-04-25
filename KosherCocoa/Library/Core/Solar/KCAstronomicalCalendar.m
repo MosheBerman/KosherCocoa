@@ -36,7 +36,7 @@
     
     if (self) {
         
-        KCSunriseAndSunsetCalculator *tempCalc = [[KCSunriseAndSunsetCalculator alloc] initWithGeoLocation:AGeoLocation];
+        KCSunriseAndSunsetCalculator *tempCalc = [[KCSunriseAndSunsetCalculator alloc] initWithGeoLocation:aGeoLocation];
         
         _astronomicalCalculator = tempCalc;
         
