@@ -342,7 +342,7 @@
  *  calendar.
  *
  *  @param date The date to display.
- *  @param tz The time zone to format against.
+ *  @param timezone The time zone to format against.
  *
  *  @return A string representation of the supplied date in the supplied time zone.
  */
