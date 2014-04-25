@@ -63,13 +63,13 @@
  */
 
 /**
- *  This method returns the dispolay name of a given tractate 
+ *  This method returns the display name of a given tractate 
  *  as a Hebrew string.
  *
  *  @return A string with hebrew name of the tractate that corresponds to the tractateIndex.
  */
 
-- (NSString *)displayName;
+- (NSString *)name;
 
 /**
  *  This method returns the dispolay name of a given tractate
@@ -78,7 +78,7 @@
  *  @return A string with transliterated name of the tractate that corresponds to the tractateIndex.
  */
 
-- (NSString *)displayNameTransliterated;
+- (NSString *)nameTransliterated;
 
 
 @end
