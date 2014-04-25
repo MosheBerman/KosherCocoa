@@ -8,6 +8,8 @@
 
 #import "KCSefiraFormatter.h"
 
+#warning This class isn't finished yet.
+
 @interface KCSefiraFormatter ()
 
 /**  An array of counts in english. */
@@ -44,7 +46,7 @@
 {
     self = [super init];
     if (self) {
-        _language = KCSefiraLanguageHebrew; //  Default language is Hebree
+        _language = KCSefiraLanguageHebrew; //  Default language is Hebrew
         _custom = KCSefiraCustomSefard;     //  Default custom is Sefard
     }
     return self;
