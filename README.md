@@ -1,13 +1,18 @@
 KosherCocoa
 ===========
 
-*Making an app? Now's as good a time as any.* 
-
 KosherCocoa is library that allows you to use sunrise, sunset, Jewish holidays, and other Hebrew calendar calculations in your app.
 
 Features:
 ---
-KosherCocoa can tell you when sunrise and sunset are. It can tell you if it's a Jewish holiday. It can even tell you what the [daf yomi cycle]() is up to or day of the [omer count]() it is.
+KosherCocoa offers six distinct features, each provided by a set of classes in the library. They are:
+
+- Sunrise/Sunset - When the sun rises and sets at a given latitude, longitude, and altitude.
+- Zmanim - Shema, Zman Tefila, Chatzos, and more.
+- Parashat Hashavua - Weekly torah portion, with schedules for *Israel* and *Chul*.
+- Sefira - The omer count between Passover and Shavuot.  
+- Daf Yomi - The daily talmud study program followed by thousands of Jews worldwide.
+- Chagim - When Jewish holidays fall.
 
 Setting it up:
 ---
@@ -18,7 +23,6 @@ CocoaPods is not yet an option, but it's in the works.
 Technical Requirements:
 ---
 The latest version of KosherCocoa has been developed with the iOS 7 SDK and uses ARC. You'll need Xcode 5 to make it work, because unit tests are built with XCTest.
-
 
 Even if your project doesn't use ARC, you'll want to compile KosherCocoa with ARC. Use the `-fobjc-arc` compiler flag for that.
 
