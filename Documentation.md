@@ -140,7 +140,7 @@ To get the name of the daf, call the `name` method or the `transliteratedName` m
 	
 8. Conclusion
 ---
-While there are couple of missing parts, this library is hopefully a matyre piece of code. I've used bits and pieces of it in various apps for several years with close to no problem. 
+While there are couple of missing parts, this library is a mature piece of code. I've used bits and pieces of it in various apps for several years with close to no problems. 
 
 Remember to provide your users with an adequate way to configuare a way for you to obtain their location. The primary cause of complaints in three years was nearly always a user who didn't know how to tell my apps where they were. 
 
