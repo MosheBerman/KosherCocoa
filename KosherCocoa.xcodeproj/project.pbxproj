@@ -10,9 +10,6 @@
 		460699E5182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
 		460699E81821A64B008DA62C /* KosherCocoa.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 466A3AFE17CAF3B900056F16 /* KosherCocoa.h */; };
 		460AAF5018187BA00033AABF /* KCSefiraFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */; };
-		4618BB891664216E00AD3CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB881664216E00AD3CE5 /* Foundation.framework */; };
-		4618BB9A1664216F00AD3CE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB991664216F00AD3CE5 /* UIKit.framework */; };
-		4618BB9B1664216F00AD3CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB881664216E00AD3CE5 /* Foundation.framework */; };
 		4618BB9E1664216F00AD3CE5 /* libKosherCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB851664216E00AD3CE5 /* libKosherCocoa.a */; };
 		4618BBA41664216F00AD3CE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4618BBA21664216F00AD3CE5 /* InfoPlist.strings */; };
 		4618BBA71664216F00AD3CE5 /* KosherCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */; };
@@ -44,8 +41,6 @@
 		466A3B1817CAF3B900056F16 /* KCParasha.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADB17CAF3B900056F16 /* KCParasha.m */; };
 		466A3B1917CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */; };
 		466A3B1A17CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */; };
-		466A3B1B17CAF3B900056F16 /* KCSefiraString.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE017CAF3B900056F16 /* KCSefiraString.m */; };
-		466A3B1C17CAF3B900056F16 /* KCSefiraString.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE017CAF3B900056F16 /* KCSefiraString.m */; };
 		466A3B1D17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */; };
 		466A3B1E17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */; };
 		466A3B1F17CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE517CAF3B900056F16 /* KCComplexZmanimCalendar.m */; };
@@ -97,10 +92,8 @@
 		4610DD9018086BB40055A4F9 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = SOURCE_ROOT; };
 		4610DD911808999A0055A4F9 /* KCParashaReadings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashaReadings.h; sourceTree = "<group>"; };
 		4618BB851664216E00AD3CE5 /* libKosherCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKosherCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4618BB881664216E00AD3CE5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4618BB8C1664216E00AD3CE5 /* KosherCocoa-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KosherCocoa-Prefix.pch"; sourceTree = "<group>"; };
 		4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4618BB991664216F00AD3CE5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4618BBA11664216F00AD3CE5 /* KosherCocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KosherCocoaTests-Info.plist"; sourceTree = "<group>"; };
 		4618BBA31664216F00AD3CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTests.h; sourceTree = "<group>"; };
@@ -154,8 +147,6 @@
 		466A3ADB17CAF3B900056F16 /* KCParasha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParasha.m; sourceTree = "<group>"; };
 		466A3ADC17CAF3B900056F16 /* KCParashatHashavuaCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashatHashavuaCalculator.h; sourceTree = "<group>"; };
 		466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCParashatHashavuaCalculator.m; sourceTree = "<group>"; };
-		466A3ADF17CAF3B900056F16 /* KCSefiraString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiraString.h; sourceTree = "<group>"; };
-		466A3AE017CAF3B900056F16 /* KCSefiraString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraString.m; sourceTree = "<group>"; };
 		466A3AE117CAF3B900056F16 /* KCSefiratHaomerCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiratHaomerCalculator.h; sourceTree = "<group>"; };
 		466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiratHaomerCalculator.m; sourceTree = "<group>"; };
 		466A3AE417CAF3B900056F16 /* KCComplexZmanimCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCComplexZmanimCalendar.h; sourceTree = "<group>"; };
@@ -194,7 +185,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4618BB891664216E00AD3CE5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,8 +192,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4618BB9A1664216F00AD3CE5 /* UIKit.framework in Frameworks */,
-				4618BB9B1664216F00AD3CE5 /* Foundation.framework in Frameworks */,
 				4618BB9E1664216F00AD3CE5 /* libKosherCocoa.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +214,6 @@
 			children = (
 				4618BB8A1664216E00AD3CE5 /* KosherCocoa */,
 				4618BB9F1664216F00AD3CE5 /* KosherCocoaTests */,
-				4618BB871664216E00AD3CE5 /* Frameworks */,
 				4618BB861664216E00AD3CE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -238,15 +225,6 @@
 				4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4618BB871664216E00AD3CE5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4618BB881664216E00AD3CE5 /* Foundation.framework */,
-				4618BB991664216F00AD3CE5 /* UIKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4618BB8A1664216E00AD3CE5 /* KosherCocoa */ = {
@@ -467,8 +445,6 @@
 		466A3ADE17CAF3B900056F16 /* Sefira */ = {
 			isa = PBXGroup;
 			children = (
-				466A3ADF17CAF3B900056F16 /* KCSefiraString.h */,
-				466A3AE017CAF3B900056F16 /* KCSefiraString.m */,
 				460AAF4E18187BA00033AABF /* KCSefiraFormatter.h */,
 				460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */,
 				466A3AE117CAF3B900056F16 /* KCSefiratHaomerCalculator.h */,
@@ -661,7 +637,6 @@
 				466A3B1717CAF3B900056F16 /* KCParasha.m in Sources */,
 				460AAF5018187BA00033AABF /* KCSefiraFormatter.m in Sources */,
 				466A3B1917CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
-				466A3B1B17CAF3B900056F16 /* KCSefiraString.m in Sources */,
 				466A3B1D17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */,
 				466A3B1F17CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
 				466A3B2117CAF3B900056F16 /* KCZmanimCalendar.m in Sources */,
@@ -693,7 +668,6 @@
 				466A3B1617CAF3B900056F16 /* KCDafYomiCalculator.m in Sources */,
 				466A3B1817CAF3B900056F16 /* KCParasha.m in Sources */,
 				466A3B1A17CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
-				466A3B1C17CAF3B900056F16 /* KCSefiraString.m in Sources */,
 				466A3B1E17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */,
 				466A3B2017CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
 				466A3B2217CAF3B900056F16 /* KCZmanimCalendar.m in Sources */,
