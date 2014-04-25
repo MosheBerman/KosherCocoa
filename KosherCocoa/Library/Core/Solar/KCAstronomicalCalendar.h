@@ -49,7 +49,7 @@
  */
 
 /**
- *  This method initializes a new instance of KCAstronomicalCalendars.
+ *  This method initializes a new instance of KCAstronomicalCalendar.
  *
  *  @param aGeoLocation A geolocation object representing the user.
  *  @see KCGeoLocation.h
