@@ -14,6 +14,8 @@ KosherCocoa offers six distinct features, each provided by a set of classes in t
 - Daf Yomi - The daily talmud study program followed by thousands of Jews worldwide.
 - Chagim - When Jewish holidays fall.
 
+See the [full documentation](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md) or poke around the file headers.
+
 Setting it up:
 ---
 Clone into, or download, the repository. Copy the folder called `Library` and import KosherCocoa.h. If you only want sunrise and sunset, you can copy the folder called `Solar` and ignore the rest.
@@ -28,4 +30,4 @@ Even if your project doesn't use ARC, you'll want to compile KosherCocoa with AR
 
 License:
 ---
-KosherCocoa is hereby released under the modified LGPL License, version 3. See LICENSE.md for the full text.
+KosherCocoa is hereby released under the modified LGPL License, version 3. See [LICENSE.md](https://github.com/MosheBerman/KosherCocoa/blob/master/LICENSE.md) for the full text.
