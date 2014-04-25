@@ -34,7 +34,7 @@
  *  @return The number of milliseconds since 
  */
 
-- (double) UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
+- (double)UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
 
 /**-----
  * @name Calculating Sunset
@@ -55,6 +55,6 @@
  *  the calculation (expected behavior for some locations such as near the poles, NaN will be returned.
  */
 
-- (double) UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
+- (double)UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
 
 @end

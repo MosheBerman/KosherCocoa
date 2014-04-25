@@ -348,7 +348,7 @@
  *  @return A string representation of the supplied date in the supplied time zone.
  */
 
-- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)tz;
+- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)timezone;
 
 /**
  *  Returns a formatted string representing the supplied

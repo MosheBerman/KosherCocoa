@@ -52,11 +52,12 @@
 //
 //
 
-- (NSDate *) sunrise{
-    
+- (NSDate *)sunrise
+{
     double sunrise = [self UTCSunrise:kZenithGeometric];
     
-    if (sunrise == NAN) {
+    if (sunrise == NAN)
+    {
         return nil;
     }
     
@@ -64,116 +65,133 @@
     
 }
 
-- (NSDate *) seaLevelSunrise{
-    
+- (NSDate *)seaLevelSunrise
+{
     double sunrise = [self UTCSeaLevelSunrise:kZenithGeometric];
     
-    if (sunrise == NAN) {
+    if (sunrise == NAN)
+    {
         return nil;
     }
     
     return [self dateFromTime:sunrise];    
 }
 
-- (NSDate *) beginCivilTwilight{
+- (NSDate *)beginCivilTwilight
+{
     return [self sunriseOffsetByDegrees:kZenithCivil];
 }
 
-- (NSDate *) beginNauticalTwilight{
+- (NSDate *)beginNauticalTwilight
+{
     return [self sunriseOffsetByDegrees:kZenithNautical];    
 }
 
-- (NSDate *) beginAstronomicalTwilight{
+- (NSDate *)beginAstronomicalTwilight
+{
     return [self sunriseOffsetByDegrees:kZenithAstronomical];    
 }
 
-- (NSDate *) sunset{
+- (NSDate *)sunset
+{
     double sunset = [self UTCSunset:kZenithGeometric];
     
-    if (sunset == NAN) {
+    if (sunset == NAN)
+    {
         return nil;
     }
     
     return [self adjustedSunsetDateWithSunset:[self dateFromTime:sunset] andSunrise:[self sunrise]];
 }
 
-- (NSDate *) seaLevelSunset{
+- (NSDate *)seaLevelSunset
+{
     double sunset = [self UTCSeaLevelSunset:kZenithGeometric];
     
-    if (sunset == NAN) {
+    if (sunset == NAN)
+    {
         return nil;
     }
     
     return [self adjustedSunsetDateWithSunset:[self dateFromTime:sunset] andSunrise:[self sunrise]];
 }
 
-- (NSDate *) adjustedSunsetDateWithSunset:(NSDate*)sunset andSunrise:(NSDate *)sunrise{
+- (NSDate *)adjustedSunsetDateWithSunset:(NSDate*)sunset andSunrise:(NSDate *)sunrise
+{
  
-    if (sunrise != nil && sunset != nil && ([sunrise timeIntervalSinceDate:sunset] > 0)) {
+    if (sunrise != nil && sunset != nil && ([sunrise timeIntervalSinceDate:sunset] > 0))
+    {
         sunset = [self dateByAddingDays:1 toDate:sunset];
     }
     
     return sunset;
-    
 }
 
-- (NSDate *) endCivilTwilight{
+- (NSDate *)endCivilTwilight
+{
     return [self sunsetOffsetByDegrees:kZenithCivil];
 }
 
-- (NSDate *) endNauticalTwilight{
+- (NSDate *)endNauticalTwilight{
     return [self sunsetOffsetByDegrees:kZenithNautical];
 }
 
-- (NSDate *) endAstronomicalTwilight{
+- (NSDate *)endAstronomicalTwilight{
     return [self sunsetOffsetByDegrees:kZenithAstronomical];    
 }
 
-- (NSDate *) sunriseOffsetByDegrees:(double)offsetZenith{
-    
+- (NSDate *)sunriseOffsetByDegrees:(double)offsetZenith
+{
     double dawn = [self UTCSunrise:offsetZenith];
    
-    if (dawn == NAN) {
+    if (dawn == NAN)
+    {
         return nil;
     }
     
     return  [self dateFromTime:dawn];
 }
 
-- (NSDate *) sunsetOffsetByDegrees:(double)offsetZenith{
-    
+- (NSDate *)sunsetOffsetByDegrees:(double)offsetZenith
+{
     double sunset = [self UTCSunset:offsetZenith];
     
-    if (sunset == NAN) {
+    if (sunset == NAN)
+    {
         return nil;
     }
     
     return [self adjustedSunsetDateWithSunset:[self dateFromTime:sunset] andSunrise:[self sunriseOffsetByDegrees:offsetZenith]];
 }
 
-- (double) UTCSunrise:(double)zenith{
+- (double)UTCSunrise:(double)zenith
+{
     return [self.astronomicalCalculator UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:YES];
 }
 
-- (double) UTCSeaLevelSunrise:(double)zenith{
+- (double)UTCSeaLevelSunrise:(double)zenith
+{
     double sunrise = [((KCSunriseAndSunsetCalculator *)self.astronomicalCalculator) UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:NO]; 
     
     return sunrise;
 }
 
-- (double) UTCSunset:(double)zenith{
+- (double)UTCSunset:(double)zenith
+{
     return [self.astronomicalCalculator UTCSunsetForDate:self.workingDate andZenith:zenith adjustForElevation:YES];    
 }
 
-- (double) UTCSeaLevelSunset:(double)zenith{
+- (double)UTCSeaLevelSunset:(double)zenith
+{
     return [self.astronomicalCalculator UTCSunsetForDate:self.workingDate andZenith:zenith adjustForElevation:NO];    
 }
 
 #pragma mark - Temporal Hour (Shaa Zmanis)
 
-- (double) temporalHourFromSunrise:(NSDate *)sunrise toSunset:(NSDate*)sunset{
-    
-    if (sunrise == nil || sunset == nil) {
+- (double)temporalHourFromSunrise:(NSDate *)sunrise toSunset:(NSDate*)sunset
+{
+    if (sunrise == nil || sunset == nil)
+    {
         return LONG_MIN;
     }
     
@@ -181,15 +199,16 @@
     
 }
 
-
-- (NSDate *) sunTransit{
+- (NSDate *)sunTransit
+{
     return [[self sunrise] dateByAddingTimeInterval:[self temporalHourFromSunrise:[self sunrise] toSunset:[self sunset]]*6];
 }
 
 
 #pragma mark - NSDate Utility Methods
 
-- (NSDate *)dateFromTime:(double)time{
+- (NSDate *)dateFromTime:(double)time
+{
     
     return [self dateFromTime:time inTimeZone:[NSTimeZone localTimeZone] onDate:self.workingDate];
 }
@@ -203,13 +222,15 @@
 //  Returns nil if the time passed in is NAN.
 //  
 
-- (NSDate *)dateFromTime:(double)time inTimeZone:(NSTimeZone *)tz onDate:(NSDate *)date{
+- (NSDate *)dateFromTime:(double)time inTimeZone:(NSTimeZone *)tz onDate:(NSDate *)date
+{
     
     //
     //  Return nil if the time is NAN
     //
     
-    if (time == NAN) {
+    if (time == NAN)
+    {
         NSLog(@"<Uh-Oh:> Received an invalid number. I can't do anything with that...");
         return nil;
     }
@@ -282,9 +303,12 @@
     //  then roll the date as necessary.
     //
     
-    if (time + offsetFromGMT > 24) {
+    if (time + offsetFromGMT > 24)
+    {
         returnDate = [self dateBySubtractingDays:1 fromDate:returnDate];
-    } else if(time + offsetFromGMT < 0){
+    }
+    else if(time + offsetFromGMT < 0)
+    {
         returnDate = [self dateByAddingDays:1 toDate:returnDate];
     }
     
@@ -295,21 +319,24 @@
     
     NSDateFormatter *form = [[NSDateFormatter alloc] init];
     
-    if (shouldShowSeconds) {
+    if (shouldShowSeconds)
+    {
         [form setTimeStyle:NSDateFormatterMediumStyle];        
-    }else{
+    }
+    else
+    {
         [form setTimeStyle:NSDateFormatterShortStyle];
     }
 
     [form setTimeZone:tz];
     
     return [form stringFromDate:date];
-    
 }
 
-- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)tz{
+- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)timezone
+{
     
-    return [self stringFromDate:date forTimeZone:tz withSeconds:YES];
+    return [self stringFromDate:date forTimeZone:timezone withSeconds:YES];
     
 }
 
@@ -318,7 +345,8 @@
 - (id)forwardingTargetForSelector:(SEL)aSelector
 {
     //forward -setObject:forKey: and -objectForKey to the cache instance directly.
-    SEL acceptableSelectors[] = {
+    SEL acceptableSelectors[] =
+    {
         @selector(dateByAddingSeconds:toDate:),
         @selector(dateByAddingMinutes:toDate:),
         @selector(dateByAddingHours:toDate:),
@@ -336,19 +364,21 @@
     };
     
     BOOL isAcceptable = NO;
-    for(int i = 0; i < sizeof(acceptableSelectors) / sizeof(SEL); ++i) {
-        if(acceptableSelectors[i] == aSelector) {
+    for(int i = 0; i < sizeof(acceptableSelectors) / sizeof(SEL); ++i)
+    {
+        if(acceptableSelectors[i] == aSelector)
+        {
             isAcceptable = YES;
             break;
         }
     }
     
-    if(isAcceptable && [_internalCalendar respondsToSelector:aSelector]) {
+    if(isAcceptable && [_internalCalendar respondsToSelector:aSelector])
+    {
         return _internalCalendar;
     }
     
     return [super forwardingTargetForSelector:aSelector];
 }
-
 
 @end

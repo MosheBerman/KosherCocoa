@@ -16,7 +16,8 @@
 
 @implementation KCAstronomicalCalculator
 
-- (double) UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation{
+- (double)UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation
+{
     [super doesNotRecognizeSelector:_cmd];
     return 0;
 }
@@ -27,7 +28,8 @@
  */
 
 
-- (double) UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation{
+- (double)UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation
+{
     [super doesNotRecognizeSelector:_cmd];
     return 0;
 }
