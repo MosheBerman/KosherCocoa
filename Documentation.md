@@ -4,14 +4,16 @@ KosherCocoa Documentation:
 Table of Contents
 ---
 
-1. Introduction
-2. Sunrise, Sunset: Calculating Sunrise
-3. Zmanim
-4. Parashat Hashavua
-5. Chagim
-6. Sefira
-7. Daf Yomi
-8. Conclusion
+1. [Introduction](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#1-introduction)
+2. [Sunrise, Sunset: Calculating Sunrise](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#2-sunrise-sunset-calculating-sunrise)
+3. [Zmanim](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#3-zmanim)
+4. [Parashat Hashavua](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#4-parashat-hashavua)
+5. [Chagim](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#5-chagim)
+6. [Sefira](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#6-sefira)
+7. [Daf Yomi](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#7-daf-yomi)
+8. [Conclusion](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#8-conclusion)
+
+Here you go:
 
 1. Introduction
 ---
@@ -107,7 +109,7 @@ The public methods of this class all have two flavors: ones that accept a date a
 Both of these methods will return 0 if it's not during the sefira count, otherwise, will return an NSInteger representing tonights count.
 
 ---
-**It's important to note that this class does not adjust for the Jewish day beginning at sundown the night before. Test your code before deployment. ** 
+It's important to note that this class does not adjust for the Jewish day beginning at sundown the night before. Test your code before deployment.
 
 ---
 
