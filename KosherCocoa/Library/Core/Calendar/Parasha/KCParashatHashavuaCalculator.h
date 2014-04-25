@@ -25,8 +25,6 @@
 
 @interface KCParashatHashavuaCalculator : NSObject
 
-@property (nonatomic, assign) BOOL useHebrewNames;
-
 /**
  *  This method returns a KCParasha object representing the *parasha* 
  *  in the diaspora for the week during which the supplied date falls.
