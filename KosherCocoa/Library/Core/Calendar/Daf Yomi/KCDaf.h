@@ -28,8 +28,8 @@
  *  The index can be translated into a string 
  *  by calling displayName or displayNameTransliterated.
  *
- *  @see displayName
- *  @see displayNameTransliterated
+ *  @see name
+ *  @see nameTransliterated
  */
 
 @property NSInteger tractateIndex;
