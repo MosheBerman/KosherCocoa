@@ -618,16 +618,15 @@
 //Returns the current hebrew month
 - (NSInteger)currentHebrewMonth
 {
-    NSDate *now = [NSDate date];
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
     
-    return [[hebrewCalendar components:NSMonthCalendarUnit fromDate:now] month];
+    return [[hebrewCalendar components:NSMonthCalendarUnit fromDate:self.workingDate] month];
 }
 
 //Returns the day of the current hebrew month
 - (NSInteger)currentHebrewDayOfMonth
 {
-    NSDate *now = [NSDate date];
+    NSDate *now = self.workingDate;
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
 
     return [[hebrewCalendar components:NSDayCalendarUnit fromDate:now] day];
@@ -636,7 +635,7 @@
 //Returns the current day of the week
 - (NSInteger)currentDayOfTheWeek
 {
-    NSDate *now = [NSDate date];
+    NSDate *now = self.workingDate;
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 
     return [[gregorianCalendar components:NSWeekdayCalendarUnit fromDate:now] weekday];
@@ -645,7 +644,7 @@
 //Determine if the current year is a hebrew leap year
 - (BOOL)isCurrentlyHebrewLeapYear
 {
-    NSDate *now = [NSDate date];
+    NSDate *now = self.workingDate;
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
     NSInteger year = [[hebrewCalendar components:NSYearCalendarUnit fromDate:now] year];
 
@@ -667,7 +666,7 @@
 //Get the current hebrew year
 - (NSInteger)currentHebrewYear
 {
-    NSDate *now = [NSDate date];
+    NSDate *now = self.workingDate;
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
 
     return [[hebrewCalendar components:NSYearCalendarUnit fromDate:now] year];
