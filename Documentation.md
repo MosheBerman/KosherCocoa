@@ -13,7 +13,7 @@ Table of Contents
 7. [Daf Yomi](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#7-daf-yomi)
 8. [Conclusion](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#8-conclusion)
 
-Here you go:
+--- 
 
 1. Introduction
 ---
