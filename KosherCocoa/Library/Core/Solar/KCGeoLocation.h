@@ -34,6 +34,19 @@
 /**
  *  This method insantiates a new KCGeoLocation.
  *
+ *  @param latitude The latitude that the location represents.
+ *  @param longitude The longitude that the location represents.
+ *  @param timezone The time zone that the location represents.
+ *
+ *  @return A configured KCGeoLocation instance.
+ */
+
+- (id)initWithLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(NSTimeZone *)timezone;
+
+
+/**
+ *  This method insantiates a new KCGeoLocation.
+ *
  *  @param name A name for the location. This isn't required.
  *  @param latitude The latitude that the location represents.
  *  @param longitude The longitude that the location represents.

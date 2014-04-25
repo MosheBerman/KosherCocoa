@@ -25,6 +25,18 @@
  *
  */
 
+- (id)initWithLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(NSTimeZone *)timeZone
+{
+    return [self initWithName:@"Unspecified Location" andLatitude:latitude andLongitude:longitude andElevation:0 andTimeZone:timeZone];
+}
+
+/*
+ *
+ * An initializer with parameters for all required fields,
+ * except for elevation, which is set to zero.
+ *
+ */
+
 - (id)initWithName:(NSString *)name andLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(NSTimeZone *)timeZone
 {
     return [self initWithName:name andLatitude:latitude andLongitude:longitude andElevation:0 andTimeZone:timeZone];
