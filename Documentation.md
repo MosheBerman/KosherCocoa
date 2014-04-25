@@ -30,8 +30,10 @@ Sunrise and sunset are defined by where you are on Earth. For example, sunrise i
  
     KCGeoLocation *location = [KCGeoLocation alloc] initWithLatitude:latitude andLongitude:longitude andTimeZone:timeZone];
     
-Note: When an initializer that doesn't expose altitude is called, the default altitude is 0.
+---
+**Note: When an initializer that doesn't expose altitude is called, the default altitude is 0.**
 
+---
 Now that we have a `KCGeoLocation` instance, we can pass it to the `KCAstronomicalCalendar` class to get sunrise and sunset times. 
 
     KCAstronomicalCalendar *calendar = [[KCAstronomicalCalendar alloc] initWithLocation:location];
@@ -112,7 +114,7 @@ The public methods of this class all have two flavors: ones that accept a date a
 Both of these methods will return 0 if it's not during the sefira count, otherwise, will return an NSInteger representing tonights count.
 
 ---
-It's important to note that this class does not adjust for the Jewish day beginning at sundown the night before. Test your code before deployment.
+**It's important to note that this class does not adjust for the Jewish day beginning at sundown the night before. Test your code before deployment.**
 
 ---
 
