@@ -752,6 +752,7 @@
 		4618BBAB1664216F00AD3CE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/KosherCocoa.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
@@ -764,6 +765,7 @@
 		4618BBAC1664216F00AD3CE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DSTROOT = /tmp/KosherCocoa.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
