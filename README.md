@@ -32,4 +32,4 @@ See the [full documentation](https://github.com/MosheBerman/KosherCocoa/blob/mas
 
 License:
 ---
-KosherCocoa is hereby released under the modified LGPL License, version 3. See [LICENSE.md](https://github.com/MosheBerman/KosherCocoa/blob/master/LICENSE.md) for the full text.
+KosherCocoa is hereby released under the modified LGPL License, version 2.1. See [the full text of the license](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) on the GNU website.
