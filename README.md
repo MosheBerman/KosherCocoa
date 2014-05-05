@@ -18,7 +18,7 @@ Setting it up:
 ---
 Clone into, or download, the repository. Copy the folder called `Library` and import KosherCocoa.h. If you only want sunrise and sunset, you can copy the folder called `Solar` and ignore the rest.
 
-CocoaPods is not yet an option, but it's in the works.
+You can also use CocoaPods as of KosherCocoa 2.0.2.
 
 Technical Requirements:
 ---
