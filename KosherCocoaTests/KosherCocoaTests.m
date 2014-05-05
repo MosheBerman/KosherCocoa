@@ -12,11 +12,13 @@
 #import "NSDate+Components.h"
 
 #import "KCParashatHashavuaCalculator.h"
+#import "KosherCocoa.h"
 
 
 @interface KosherCocoaTests ()
 
 @property (nonatomic, strong) NSCalendar *hebrewCalendar;
+@property (nonatomic, strong) NSCalendar *gregorianCalendar;
 
 @property (nonatomic, strong) NSArray *yearsToTest;
 @property (nonatomic, strong) NSArray *weekdays;
@@ -34,6 +36,7 @@
     // Set-up code here.
     
     _hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    _gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
     
     [self generateTestCases];
     
@@ -356,7 +359,21 @@
         
         NSLog(@"Parshiot for %li (Type: %li): %@", (long)hebrewYear, i+1, parshiot);
     }
+}
+
+/* Test that sunrise isn't nil in New York. */
+- (void)testSunrise
+{
+    NSTimeZone *timeZone = [[NSTimeZone alloc] initWithName:@"America/New_York"];
     
+    KCGeoLocation *location = [[KCGeoLocation alloc] initWithLatitude:40.67 andLongitude:-73.94 andTimeZone:timeZone];
+    KCAstronomicalCalendar *calendar = [[KCAstronomicalCalendar alloc] initWithLocation:location];
+    
+    NSDate *sunrise = [calendar sunrise];
+    NSDate *sunset = [calendar sunset];
+    
+    XCTAssertNotNil(sunrise, @"Sunrise must not be nil.");
+    XCTAssertNotNil(sunset, @"Sunset must not be nil.");
 }
 
 
