@@ -11,7 +11,6 @@
 #import "MBCalendarCategories.h"
 #import "NSDate+Components.h"
 
-#import "KCParashatHashavuaCalculator.h"
 #import "KosherCocoa.h"
 
 
