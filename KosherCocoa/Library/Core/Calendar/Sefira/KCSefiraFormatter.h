@@ -1,12 +1,29 @@
 /**
- *  KCSefiraFormatter,h
+ *  KCSefiraFormatter.h
  *  KosherCocoa 2
  *
- *  Created by Moshe Berman on 10/23/13.
+ *  Created by Moshe Berman on 10/23/13 based on KosherJava by Eliyahu Hershfeld.
  *  Updated by Moshe Berman on 10/23/13.
  *
  *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ *
+ *  ---
+ *
+ * Zmanim Java API
+ * Copyright (C) 2004-2012 Eliyahu Hershfeld
+ *
+ * This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General
+ * Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option)
+ * any later version.
+ *
+ * This library is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; without even the implied
+ * warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+ * details.
+ * You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to
+ * the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA,
+ * or connect to: http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
  */
+
 
 #import <Foundation/Foundation.h>
 
