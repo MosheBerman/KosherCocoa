@@ -23,7 +23,7 @@
 
 /* Sefira */
 #import "KCSefiraFormatter.h"
-#import "KCSef  iratHaomerCalculator.h"
+#import "KCSefiratHaomerCalculator.h"
 
 /* Daf Yomi */
 #import "KCDafYomiCalculator.h"
