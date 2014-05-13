@@ -26,6 +26,12 @@ The latest version of KosherCocoa has been developed with the iOS 7 SDK and uses
 
 Even if your project doesn't use ARC, you'll want to compile KosherCocoa with ARC. Use the `-fobjc-arc` compiler flag for that.
 
+Appledoc:
+---
+As of 2.0.3, you can build your own documentation using [appledoc](https://github.com/tomaz/appledoc), if you have it.
+
+**Note:** kosIn previous versions, the build script would fail if you didn't have appledoc installed. Now, you the default target will not run the appledoc script. You need to build one of the the other targets to get appledoc.
+
 Using KosherCocoa:
 ---
 See the [full documentation](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md) or poke around the file headers. Most things take just a few lines of code.
