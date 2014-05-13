@@ -13,6 +13,32 @@
 		4618BB9E1664216F00AD3CE5 /* libKosherCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB851664216E00AD3CE5 /* libKosherCocoa.a */; };
 		4618BBA41664216F00AD3CE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4618BBA21664216F00AD3CE5 /* InfoPlist.strings */; };
 		4618BBA71664216F00AD3CE5 /* KosherCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */; };
+		464EF3011922E5CE005396A9 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABC17CAF3B900056F16 /* NSCalendar+Components.m */; };
+		464EF3021922E5CE005396A9 /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABE17CAF3B900056F16 /* NSCalendar+DateComparison.m */; };
+		464EF3031922E5CE005396A9 /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
+		464EF3041922E5CE005396A9 /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC017CAF3B900056F16 /* NSCalendar+DateManipulation.m */; };
+		464EF3051922E5CE005396A9 /* NSCalendar+hebrewYearTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC217CAF3B900056F16 /* NSCalendar+hebrewYearTypes.m */; };
+		464EF3061922E5CE005396A9 /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC417CAF3B900056F16 /* NSCalendar+Juncture.m */; };
+		464EF3071922E5CE005396A9 /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC617CAF3B900056F16 /* NSCalendar+Ranges.m */; };
+		464EF3081922E5CE005396A9 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC917CAF3B900056F16 /* NSDate+Components.m */; };
+		464EF3091922E5CE005396A9 /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACB17CAF3B900056F16 /* NSDate+Description.m */; };
+		464EF30A1922E5CE005396A9 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACE17CAF3B900056F16 /* NSDateComponents+AllComponents.m */; };
+		464EF30B1922E5CE005396A9 /* KCJewishCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD317CAF3B900056F16 /* KCJewishCalendar.m */; };
+		464EF30C1922E5CE005396A9 /* KCDaf.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD617CAF3B900056F16 /* KCDaf.m */; };
+		464EF30D1922E5CE005396A9 /* KCDafYomiCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD817CAF3B900056F16 /* KCDafYomiCalculator.m */; };
+		464EF30E1922E5CE005396A9 /* KCParasha.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADB17CAF3B900056F16 /* KCParasha.m */; };
+		464EF30F1922E5CE005396A9 /* KCSefiraFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */; };
+		464EF3101922E5CE005396A9 /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */; };
+		464EF3111922E5CE005396A9 /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */; };
+		464EF3121922E5CE005396A9 /* KCComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE517CAF3B900056F16 /* KCComplexZmanimCalendar.m */; };
+		464EF3131922E5CE005396A9 /* KCZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE717CAF3B900056F16 /* KCZmanimCalendar.m */; };
+		464EF3141922E5CE005396A9 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEA17CAF3B900056F16 /* KCAstronomicalCalculator.m */; };
+		464EF3151922E5CE005396A9 /* KCAstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEC17CAF3B900056F16 /* KCAstronomicalCalendar.m */; };
+		464EF3161922E5CE005396A9 /* KCGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEE17CAF3B900056F16 /* KCGeoLocation.m */; };
+		464EF3171922E5CE005396A9 /* KCSunriseAndSunsetCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF017CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m */; };
+		464EF3181922E5CE005396A9 /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF217CAF3B900056F16 /* trigonometry.c */; };
+		464EF3191922E5CE005396A9 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
+		464EF31C1922E5CE005396A9 /* KosherCocoa.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 466A3AFE17CAF3B900056F16 /* KosherCocoa.h */; };
 		466A3AFF17CAF3B900056F16 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABC17CAF3B900056F16 /* NSCalendar+Components.m */; };
 		466A3B0017CAF3B900056F16 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABC17CAF3B900056F16 /* NSCalendar+Components.m */; };
 		466A3B0117CAF3B900056F16 /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABE17CAF3B900056F16 /* NSCalendar+DateComparison.m */; };
@@ -82,6 +108,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		464EF31B1922E5CE005396A9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				464EF31C1922E5CE005396A9 /* KosherCocoa.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +134,7 @@
 		4618BBA31664216F00AD3CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTests.h; sourceTree = "<group>"; };
 		4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KosherCocoaTests.m; sourceTree = "<group>"; };
+		464EF3211922E5CE005396A9 /* libKosherCocoa copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKosherCocoa copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4668A4FD17DCFC5C00EB4169 /* AstronomicalCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AstronomicalCalendar.java; sourceTree = "<group>"; };
 		4668A4FE17DCFC5C00EB4169 /* ComplexZmanimCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ComplexZmanimCalendar.java; sourceTree = "<group>"; };
 		4668A50017DCFC5C00EB4169 /* Daf.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Daf.java; sourceTree = "<group>"; };
@@ -196,6 +233,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		464EF31A1922E5CE005396A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -223,6 +267,7 @@
 			children = (
 				4618BB851664216E00AD3CE5 /* libKosherCocoa.a */,
 				4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */,
+				464EF3211922E5CE005396A9 /* libKosherCocoa copy.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -517,7 +562,6 @@
 				4618BB811664216E00AD3CE5 /* Sources */,
 				4618BB821664216E00AD3CE5 /* Frameworks */,
 				4618BB831664216E00AD3CE5 /* CopyFiles */,
-				4686780517DD013B0072AA03 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -547,6 +591,24 @@
 			productReference = 4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		464EF2FF1922E5CE005396A9 /* KosherCocoaWithDocs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464EF31E1922E5CE005396A9 /* Build configuration list for PBXNativeTarget "KosherCocoaWithDocs" */;
+			buildPhases = (
+				464EF3001922E5CE005396A9 /* Sources */,
+				464EF31A1922E5CE005396A9 /* Frameworks */,
+				464EF31B1922E5CE005396A9 /* CopyFiles */,
+				464EF31D1922E5CE005396A9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KosherCocoaWithDocs;
+			productName = KosherCocoa;
+			productReference = 464EF3211922E5CE005396A9 /* libKosherCocoa copy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -571,6 +633,7 @@
 			projectRoot = "";
 			targets = (
 				4618BB841664216E00AD3CE5 /* KosherCocoa */,
+				464EF2FF1922E5CE005396A9 /* KosherCocoaWithDocs */,
 				4618BB951664216F00AD3CE5 /* KosherCocoaTests */,
 			);
 		};
@@ -601,7 +664,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-		4686780517DD013B0072AA03 /* ShellScript */ = {
+		464EF31D1922E5CE005396A9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -677,6 +740,38 @@
 				466A3B2A17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m in Sources */,
 				466A3B2C17CAF3B900056F16 /* trigonometry.c in Sources */,
 				466A3B3017CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		464EF3001922E5CE005396A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464EF3011922E5CE005396A9 /* NSCalendar+Components.m in Sources */,
+				464EF3021922E5CE005396A9 /* NSCalendar+DateComparison.m in Sources */,
+				464EF3031922E5CE005396A9 /* KCAstronomicalCalendar+DateManipulation.m in Sources */,
+				464EF3041922E5CE005396A9 /* NSCalendar+DateManipulation.m in Sources */,
+				464EF3051922E5CE005396A9 /* NSCalendar+hebrewYearTypes.m in Sources */,
+				464EF3061922E5CE005396A9 /* NSCalendar+Juncture.m in Sources */,
+				464EF3071922E5CE005396A9 /* NSCalendar+Ranges.m in Sources */,
+				464EF3081922E5CE005396A9 /* NSDate+Components.m in Sources */,
+				464EF3091922E5CE005396A9 /* NSDate+Description.m in Sources */,
+				464EF30A1922E5CE005396A9 /* NSDateComponents+AllComponents.m in Sources */,
+				464EF30B1922E5CE005396A9 /* KCJewishCalendar.m in Sources */,
+				464EF30C1922E5CE005396A9 /* KCDaf.m in Sources */,
+				464EF30D1922E5CE005396A9 /* KCDafYomiCalculator.m in Sources */,
+				464EF30E1922E5CE005396A9 /* KCParasha.m in Sources */,
+				464EF30F1922E5CE005396A9 /* KCSefiraFormatter.m in Sources */,
+				464EF3101922E5CE005396A9 /* KCParashatHashavuaCalculator.m in Sources */,
+				464EF3111922E5CE005396A9 /* KCSefiratHaomerCalculator.m in Sources */,
+				464EF3121922E5CE005396A9 /* KCComplexZmanimCalendar.m in Sources */,
+				464EF3131922E5CE005396A9 /* KCZmanimCalendar.m in Sources */,
+				464EF3141922E5CE005396A9 /* KCAstronomicalCalculator.m in Sources */,
+				464EF3151922E5CE005396A9 /* KCAstronomicalCalendar.m in Sources */,
+				464EF3161922E5CE005396A9 /* KCGeoLocation.m in Sources */,
+				464EF3171922E5CE005396A9 /* KCSunriseAndSunsetCalculator.m in Sources */,
+				464EF3181922E5CE005396A9 /* trigonometry.c in Sources */,
+				464EF3191922E5CE005396A9 /* NSDate+ConvenientDates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +900,32 @@
 			};
 			name = Release;
 		};
+		464EF31F1922E5CE005396A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/KosherCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "KosherCocoa copy";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		464EF3201922E5CE005396A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/KosherCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "KosherCocoa copy";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -831,6 +952,15 @@
 			buildConfigurations = (
 				4618BBAE1664216F00AD3CE5 /* Debug */,
 				4618BBAF1664216F00AD3CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		464EF31E1922E5CE005396A9 /* Build configuration list for PBXNativeTarget "KosherCocoaWithDocs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464EF31F1922E5CE005396A9 /* Debug */,
+				464EF3201922E5CE005396A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
