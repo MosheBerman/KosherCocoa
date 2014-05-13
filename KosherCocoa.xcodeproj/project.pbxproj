@@ -135,6 +135,7 @@
 		4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTests.h; sourceTree = "<group>"; };
 		4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KosherCocoaTests.m; sourceTree = "<group>"; };
 		464EF3211922E5CE005396A9 /* libKosherCocoa copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKosherCocoa copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		464EF3441922E6FD005396A9 /* libKosherCocoaWithDocs copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKosherCocoaWithDocs copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4668A4FD17DCFC5C00EB4169 /* AstronomicalCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AstronomicalCalendar.java; sourceTree = "<group>"; };
 		4668A4FE17DCFC5C00EB4169 /* ComplexZmanimCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = ComplexZmanimCalendar.java; sourceTree = "<group>"; };
 		4668A50017DCFC5C00EB4169 /* Daf.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = Daf.java; sourceTree = "<group>"; };
@@ -268,6 +269,7 @@
 				4618BB851664216E00AD3CE5 /* libKosherCocoa.a */,
 				4618BB961664216F00AD3CE5 /* KosherCocoaTests.xctest */,
 				464EF3211922E5CE005396A9 /* libKosherCocoa copy.a */,
+				464EF3441922E6FD005396A9 /* libKosherCocoaWithDocs copy.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -609,6 +611,21 @@
 			productReference = 464EF3211922E5CE005396A9 /* libKosherCocoa copy.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		464EF3221922E6FD005396A9 /* AppleDoc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 464EF3411922E6FD005396A9 /* Build configuration list for PBXNativeTarget "AppleDoc" */;
+			buildPhases = (
+				464EF3401922E6FD005396A9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleDoc;
+			productName = KosherCocoa;
+			productReference = 464EF3441922E6FD005396A9 /* libKosherCocoaWithDocs copy.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -634,6 +651,7 @@
 			targets = (
 				4618BB841664216E00AD3CE5 /* KosherCocoa */,
 				464EF2FF1922E5CE005396A9 /* KosherCocoaWithDocs */,
+				464EF3221922E6FD005396A9 /* AppleDoc */,
 				4618BB951664216F00AD3CE5 /* KosherCocoaTests */,
 			);
 		};
@@ -665,6 +683,19 @@
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
 		464EF31D1922E5CE005396A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#appledoc Xcode script\n# Start constants\ncompany=\"KosherCocoa\";\ncompanyID=\"com.mosheberman\";\ncompanyURL=\"http://mosheberman.com\";\ntarget=\"iphoneos\";\n#target=\"macosx\";\noutputPath=\"~/help\";\n# End constants\n/usr/local/bin/appledoc \\\n--project-name \"${PROJECT_NAME}\" \\\n--project-company \"${company}\" \\\n--company-id \"${companyID}\" \\\n--docset-atom-filename \"${company}.atom\" \\\n--docset-feed-url \"${companyURL}/${company}/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"${companyURL}/${company}/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"${companyURL}/${company}\" \\\n--output \"${outputPath}\" \\\n--publish-docset \\\n--docset-platform-family \"${target}\" \\\n--logformat xcode \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
+		464EF3401922E6FD005396A9 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -926,6 +957,32 @@
 			};
 			name = Release;
 		};
+		464EF3421922E6FD005396A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/KosherCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "KosherCocoaWithDocs copy";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		464EF3431922E6FD005396A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DSTROOT = /tmp/KosherCocoa.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KosherCocoa/KosherCocoa-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "KosherCocoaWithDocs copy";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -961,6 +1018,15 @@
 			buildConfigurations = (
 				464EF31F1922E5CE005396A9 /* Debug */,
 				464EF3201922E5CE005396A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		464EF3411922E6FD005396A9 /* Build configuration list for PBXNativeTarget "AppleDoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				464EF3421922E6FD005396A9 /* Debug */,
+				464EF3431922E6FD005396A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
