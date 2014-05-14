@@ -28,9 +28,9 @@ Even if your project doesn't use ARC, you'll want to compile KosherCocoa with AR
 
 Appledoc:
 ---
-As of 2.0.3, you can build your own documentation using [appledoc](https://github.com/tomaz/appledoc), if you have it.
+You can build your own documentation using [appledoc](https://github.com/tomaz/appledoc), if you have it.
 
-**Note:** kosIn previous versions, the build script would fail if you didn't have appledoc installed. Now, you the default target will not run the appledoc script. You need to build one of the the other targets to get appledoc.
+**Note:** As of 2.0.4, the default target will not run the appledoc script. In previous versions, the build script was part of the default build target, and would fail if you didn't have appledoc installed.
 
 Using KosherCocoa:
 ---
