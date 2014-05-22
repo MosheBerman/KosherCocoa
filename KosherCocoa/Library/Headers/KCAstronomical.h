@@ -16,7 +16,7 @@
  *  This is defined as 360.0 / 24.0. There are 24 hours in a day and 360 degrees per day.
  */
 
-#define kDegreesPerHour 360.0f / 24.0f
+#define kDegreesPerHour (360.0f / 24.0f)
 
 /** kSolarRadius
  *
@@ -24,7 +24,7 @@
  *
  */
 
-#define kSolarRadius 16.0f / 60.0f
+#define kSolarRadius (16.0f / 60.0f)
 
 /** kRefraction
  *
@@ -33,7 +33,7 @@
  *  Calendrical Calculations lists a more accurate global average of 34.478885263888294.
  */
 
-#define kRefraction 34.0f / 60.0
+#define kRefraction (34.0f / 60.0f)
 
 
 /** kEarthRadiusInKilometers
