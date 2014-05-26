@@ -30,6 +30,22 @@
     return [self initWithName:@"Unspecified Location" andLatitude:latitude andLongitude:longitude andElevation:0 andTimeZone:timeZone];
 }
 
+/**
+ *  This method insantiates a new KCGeoLocation.
+ *
+ *  @param latitude The latitude that the location represents.
+ *  @param longitude The longitude that the location represents.
+ *  @param elevation The altitude that the location represents.
+ *  @param timezone The time zone that the location represents.
+ *
+ *  @return A configured KCGeoLocation instance.
+ */
+
+- (id)initWithLatitude:(double)latitude andLongitude:(double)longitude elevation:(double)elevation  andTimeZone:(NSTimeZone *)timezone
+{
+    return [self initWithName:@"Unspecified Location" andLatitude:latitude andLongitude:longitude andElevation:elevation andTimeZone:timezone];
+}
+
 /*
  *
  * An initializer with parameters for all required fields,
