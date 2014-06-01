@@ -47,7 +47,7 @@ const NSInteger lengthOfSefira = 49;
     
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
     
-    NSInteger day = [hebrewCalendar daysFromDate:firstDayOfTheOmer toDate:date];
+    NSInteger day = [hebrewCalendar daysFromDate:firstDayOfTheOmer toDate:date] + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
     
     if (day < 0 || day > 49)
     {
