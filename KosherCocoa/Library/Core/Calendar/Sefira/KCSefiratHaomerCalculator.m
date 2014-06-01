@@ -47,7 +47,14 @@ const NSInteger lengthOfSefira = 49;
     
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
     
-    return MAX(MIN([hebrewCalendar daysFromDate:firstDayOfTheOmer toDate:date], lengthOfSefira), 0);
+    NSInteger day = [hebrewCalendar daysFromDate:firstDayOfTheOmer toDate:date];
+    
+    if (day < 0 || day > 49)
+    {
+        day = 0;
+    }
+    
+    return day;
 }
 
 #pragma mark - Utility Method
