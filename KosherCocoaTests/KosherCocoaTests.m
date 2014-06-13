@@ -19,6 +19,9 @@
 @property (nonatomic, strong) NSCalendar *hebrewCalendar;
 @property (nonatomic, strong) NSCalendar *gregorianCalendar;
 
+@property (nonatomic, strong) NSDateFormatter *hebrewFormatter;
+@property (nonatomic, strong) NSDateFormatter *gregorianFormatter;
+
 @property (nonatomic, strong) NSArray *yearsToTest;
 @property (nonatomic, strong) NSArray *weekdays;
 @property (nonatomic, strong) NSArray *lengths;
@@ -36,6 +39,12 @@
     
     _hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
     _gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    _hebrewFormatter = [[NSDateFormatter alloc] init];
+    [_hebrewFormatter setCalendar:_hebrewCalendar];
+    
+    _gregorianFormatter = [[NSDateFormatter alloc] init];
+    [_gregorianFormatter setCalendar:_gregorianCalendar];
     
     [self generateTestCases];
     
@@ -373,6 +382,39 @@
     
     XCTAssertNotNil(sunrise, @"Sunrise must not be nil.");
     XCTAssertNotNil(sunset, @"Sunset must not be nil.");
+}
+
+- (void)testSefiraLoop
+{
+    NSDate *date = [NSDate dateWithHebrewMonth:8 andDay:0 andYear:5774];
+
+    [[self hebrewFormatter] setTimeStyle:NSDateFormatterNoStyle];
+    [[self hebrewFormatter] setDateStyle:NSDateFormatterMediumStyle];
+    
+    for (NSInteger i = 0; i < 70; i++) {
+        date = [[self hebrewCalendar] dateByAddingDays:1 toDate:date];
+        
+        NSInteger day = [KCSefiratHaomerCalculator dayOfSefiraForDate:date];
+        
+        NSString *dayString = [[self hebrewFormatter] stringFromDate:date];
+
+        NSLog(@"%@ : %li", dayString, day);
+    }
+}
+
+- (void)testSefiraToday
+{
+    NSDate *date = [NSDate date];
+    
+    [[self hebrewFormatter] setTimeStyle:NSDateFormatterLongStyle];
+    [[self hebrewFormatter] setDateStyle:NSDateFormatterMediumStyle];
+    
+    NSInteger day = [KCSefiratHaomerCalculator dayOfSefiraForDate:date];
+    
+    NSString *dayString = [[self hebrewFormatter] stringFromDate:date];
+    
+    NSLog(@"%@ : %li", dayString, day);
+    
 }
 
 

@@ -13,6 +13,8 @@
 		4618BB9E1664216F00AD3CE5 /* libKosherCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618BB851664216E00AD3CE5 /* libKosherCocoa.a */; };
 		4618BBA41664216F00AD3CE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4618BBA21664216F00AD3CE5 /* InfoPlist.strings */; };
 		4618BBA71664216F00AD3CE5 /* KosherCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */; };
+		461E6DFE194474C300C497A8 /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E6DFD194474C300C497A8 /* KCJewishHoliday.m */; };
+		461E6DFF194474C300C497A8 /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E6DFD194474C300C497A8 /* KCJewishHoliday.m */; };
 		464EF3011922E5CE005396A9 /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABC17CAF3B900056F16 /* NSCalendar+Components.m */; };
 		464EF3021922E5CE005396A9 /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABE17CAF3B900056F16 /* NSCalendar+DateComparison.m */; };
 		464EF3031922E5CE005396A9 /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
@@ -136,6 +138,8 @@
 		4618BBA31664216F00AD3CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTests.h; sourceTree = "<group>"; };
 		4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KosherCocoaTests.m; sourceTree = "<group>"; };
+		461E6DFC194474C300C497A8 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
+		461E6DFD194474C300C497A8 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
 		464EF3211922E5CE005396A9 /* libKosherCocoa copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKosherCocoa copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		464EF3441922E6FD005396A9 /* libKosherCocoaWithDocs copy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKosherCocoaWithDocs copy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4668A4FD17DCFC5C00EB4169 /* AstronomicalCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AstronomicalCalendar.java; sourceTree = "<group>"; };
@@ -467,8 +471,8 @@
 			children = (
 				466A3AD217CAF3B900056F16 /* KCJewishCalendar.h */,
 				466A3AD317CAF3B900056F16 /* KCJewishCalendar.m */,
-				466E74AB1949125F00ACB421 /* KCJewishHoliday.h */,
-				466E74AC1949126000ACB421 /* KCJewishHoliday.m */,
+				461E6DFC194474C300C497A8 /* KCJewishHoliday.h */,
+				461E6DFD194474C300C497A8 /* KCJewishHoliday.m */,
 			);
 			path = Chagim;
 			sourceTree = "<group>";
@@ -739,7 +743,7 @@
 				466A3B1917CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
 				466A3B1D17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */,
 				466A3B1F17CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
-				466E74AD1949126000ACB421 /* KCJewishHoliday.m in Sources */,
+				461E6DFE194474C300C497A8 /* KCJewishHoliday.m in Sources */,
 				466A3B2117CAF3B900056F16 /* KCZmanimCalendar.m in Sources */,
 				466A3B2317CAF3B900056F16 /* KCAstronomicalCalculator.m in Sources */,
 				466A3B2517CAF3B900056F16 /* KCAstronomicalCalendar.m in Sources */,
@@ -803,7 +807,7 @@
 				464EF3101922E5CE005396A9 /* KCParashatHashavuaCalculator.m in Sources */,
 				464EF3111922E5CE005396A9 /* KCSefiratHaomerCalculator.m in Sources */,
 				464EF3121922E5CE005396A9 /* KCComplexZmanimCalendar.m in Sources */,
-				466E74AE1949126000ACB421 /* KCJewishHoliday.m in Sources */,
+				461E6DFF194474C300C497A8 /* KCJewishHoliday.m in Sources */,
 				464EF3131922E5CE005396A9 /* KCZmanimCalendar.m in Sources */,
 				464EF3141922E5CE005396A9 /* KCAstronomicalCalculator.m in Sources */,
 				464EF3151922E5CE005396A9 /* KCAstronomicalCalendar.m in Sources */,
