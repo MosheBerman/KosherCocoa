@@ -85,6 +85,8 @@
 		466A3B2C17CAF3B900056F16 /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF217CAF3B900056F16 /* trigonometry.c */; };
 		466A3B2F17CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
 		466A3B3017CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
+		466E74AD1949126000ACB421 /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E74AC1949126000ACB421 /* KCJewishHoliday.m */; };
+		466E74AE1949126000ACB421 /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E74AC1949126000ACB421 /* KCJewishHoliday.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +217,8 @@
 		466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
 		466BF887190870A9004F19A5 /* Solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solar.h; sourceTree = "<group>"; };
 		466BF8881908723E004F19A5 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
+		466E74AB1949125F00ACB421 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
+		466E74AC1949126000ACB421 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
 		468C006E17F1E3450070CDB5 /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -463,6 +467,8 @@
 			children = (
 				466A3AD217CAF3B900056F16 /* KCJewishCalendar.h */,
 				466A3AD317CAF3B900056F16 /* KCJewishCalendar.m */,
+				466E74AB1949125F00ACB421 /* KCJewishHoliday.h */,
+				466E74AC1949126000ACB421 /* KCJewishHoliday.m */,
 			);
 			path = Chagim;
 			sourceTree = "<group>";
@@ -733,6 +739,7 @@
 				466A3B1917CAF3B900056F16 /* KCParashatHashavuaCalculator.m in Sources */,
 				466A3B1D17CAF3B900056F16 /* KCSefiratHaomerCalculator.m in Sources */,
 				466A3B1F17CAF3B900056F16 /* KCComplexZmanimCalendar.m in Sources */,
+				466E74AD1949126000ACB421 /* KCJewishHoliday.m in Sources */,
 				466A3B2117CAF3B900056F16 /* KCZmanimCalendar.m in Sources */,
 				466A3B2317CAF3B900056F16 /* KCAstronomicalCalculator.m in Sources */,
 				466A3B2517CAF3B900056F16 /* KCAstronomicalCalendar.m in Sources */,
@@ -796,6 +803,7 @@
 				464EF3101922E5CE005396A9 /* KCParashatHashavuaCalculator.m in Sources */,
 				464EF3111922E5CE005396A9 /* KCSefiratHaomerCalculator.m in Sources */,
 				464EF3121922E5CE005396A9 /* KCComplexZmanimCalendar.m in Sources */,
+				466E74AE1949126000ACB421 /* KCJewishHoliday.m in Sources */,
 				464EF3131922E5CE005396A9 /* KCZmanimCalendar.m in Sources */,
 				464EF3141922E5CE005396A9 /* KCAstronomicalCalculator.m in Sources */,
 				464EF3151922E5CE005396A9 /* KCAstronomicalCalendar.m in Sources */,
