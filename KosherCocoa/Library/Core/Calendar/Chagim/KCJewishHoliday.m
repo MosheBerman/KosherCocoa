@@ -2,21 +2,27 @@
 //  KCJewishHoliday.m
 //  KosherCocoa
 //
-<<<<<<< HEAD
-//  Created by Moshe on 6/11/14.
-=======
 //  Created by Moshe Berman on 6/8/14.
->>>>>>> 2fa4ad31c7dee490a1ac2606a1ed7ed977acf81c
 //  Copyright (c) 2014 Moshe Berman. All rights reserved.
 //
 
 #import "KCJewishHoliday.h"
-<<<<<<< HEAD
 #import "KCJewishHolidays.h"
 
 @implementation KCJewishHoliday
 
+/**
+ *  A convenience accessor to get a holiday from an index.
+ */
 
++ (id)holidayWithIndex:(NSInteger)index
+{
+    KCJewishHoliday *holiday = [[KCJewishHoliday alloc] init];
+    
+    [holiday setHolidayIndex:index];
+    
+    return holiday;
+}
 
 /**
  *  @return the hebrew name of the holiday.
@@ -77,9 +83,4 @@
     
 }
 
-=======
-
-@implementation KCJewishHoliday
-
->>>>>>> 2fa4ad31c7dee490a1ac2606a1ed7ed977acf81c
 @end
