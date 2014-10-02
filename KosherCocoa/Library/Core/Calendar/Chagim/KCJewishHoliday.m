@@ -44,6 +44,7 @@
                        @"ראש השנה",
                        @"צום גדלי-ה",
                        @"ערב יום כיפור",
+                       @"יום כיפור",
                        @"ערב סוכות",
                        @"סוכות",
                        @"חול המועד סוכות",
@@ -75,8 +76,8 @@
 {
     NSArray *names = @[@"Erev Pesach", @"Pesach", @"Chol Hamoed Pesach", @"Pesach Sheni", @"Erev Shavuos", @"Shavuos",
                        @"Fast of Seventeenth Of Tammuz", @"Fast of Ninth of Av", @"Tu Be'Av", @"Erev Rosh Hashana", @"Rosh Hashana",
-                       @"Fast of Gedalya", @"Erev Yom Kippur", @"Erev Succos", @"Succos", @"Chol Hamoed Succos", @"Hoshana Rabba",
-                       @"Shemini Atzeres", @"Simchat Torah", @"Erev Chanukah", @"Chanuka", @"Fast of Tenth of Teves", @"Tu Be'Shvat",
+                       @"Fast of Gedalya", @"Erev Yom Kippur", @"Yom Kippur", @"Erev Sukkot", @"Sukkot", @"Chol Hamoed Sukkot", @"Hoshana Rabba",
+                       @"Simchat Torah", @"Shemini Atzeres", @"Simchat Torah", @"Erev Chanukah", @"Chanuka", @"Fast of Tenth of Teves", @"Tu Be'Shvat",
                        @"Fast of Esther", @"Purim", @"Shushan Purim", @"Purim Katan", @"Rosh Chodesh", @"Yom Hashoah", @"Yom Hazikaron",
                        @"Yom Ha'atzma'ut", @"Yom Yerushalayim"];
     return names[self.holidayIndex];
