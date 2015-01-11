@@ -14,7 +14,7 @@ KosherCocoa.h needs to import only necessary headers, with documentation and all
 
 Unit Tests - these classes need to be tested.
 -----------
-Sinrise/sunset methods in KCSunriseSuncetCalculator
+Sunrise/sunset methods in KCSunriseSuncetCalculator
 KCComplexZmanimCalendar
 KCZmanimCalendar
 Holiday methods in KCJewishCalendar.

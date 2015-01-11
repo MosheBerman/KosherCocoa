@@ -30,5 +30,6 @@
 
 /* Chagim */
 #import "KCJewishCalendar.h"
+#import "KCJewishHoliday.h"
 
 #endif
