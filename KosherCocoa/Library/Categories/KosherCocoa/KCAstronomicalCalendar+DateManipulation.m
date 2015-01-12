@@ -1,11 +1,12 @@
-//
-//  KCZmanimCalendar+DateManipulation.m
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 10/30/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
-
+/**
+ *  KCZmanimCalendar+DateManipulation.m
+ *  KosherCocoa 2
+ *
+ *  Created by Moshe Berman on 10/30/13.
+ *  Updated by Moshe Berman on 1/12/15.
+ *
+ *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ */
 #import "KCAstronomicalCalendar+DateManipulation.h"
 #import "NSCalendar+DateManipulation.h"
 
