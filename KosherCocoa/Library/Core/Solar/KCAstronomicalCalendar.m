@@ -382,4 +382,23 @@
     return [super forwardingTargetForSelector:aSelector];
 }
 
+#pragma mark - Internal Calendar
+
+/** ---
+ *  @name Internal Calendar
+ *  ---
+ */
+
+
+/**
+ *  Expose the internal calendar so the main class can
+ *  appropriately forward methods.
+ *
+ */
+
+- (NSCalendar *)internalCalendar
+{
+    return _internalCalendar;
+}
+
 @end

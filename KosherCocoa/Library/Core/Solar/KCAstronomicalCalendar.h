@@ -368,6 +368,12 @@
 
 - (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)tz withSeconds:(BOOL)shouldShowSeconds;
 
+/**
+ *  Expose the internal calendar so the main class can
+ *  appropriately forward methods.
+ *
+ */
 
+- (NSCalendar *)internalCalendar;
 
 @end
