@@ -15,7 +15,7 @@
  *  We'll forward these to the internal calendar
  *  object that's equiped to handle the calls.
  *
- *  We do this because KCAstronomical calendar doesn't 
+ *  We do this because KCAstronomicalCalendar doesn't 
  *  inherit from NSCalendar, and the actual methods are 
  *  defined on an NSCalendar category.
  *
