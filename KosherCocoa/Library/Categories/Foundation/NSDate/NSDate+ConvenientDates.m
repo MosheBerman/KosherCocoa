@@ -25,7 +25,7 @@
 
 + (NSDate *)dateWithHebrewMonth:(NSInteger)month andDay:(NSInteger)day {
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
     NSUInteger year = [hebrewCalendar yearsInDate:[NSDate date]];
     
@@ -47,7 +47,7 @@
     
     NSDateComponents *comps = [[NSDateComponents alloc] init];
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
     [comps setCalendar:hebrewCalendar];
     

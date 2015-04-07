@@ -45,7 +45,7 @@ const NSInteger lengthOfSefira = 49;
 {
 	NSDate *firstDayOfTheOmer = [KCSefiratHaomerCalculator _dateOfSixteenNissanForYearOfDate:date];
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
     NSInteger day = [hebrewCalendar daysFromDate:firstDayOfTheOmer toDate:date] + 1;     //  Add one because the sixteenth is the first night, but is zero days since sixteen.
     
@@ -61,7 +61,7 @@ const NSInteger lengthOfSefira = 49;
 
 + (NSDate *)_dateOfSixteenNissanForYearOfDate:(NSDate *)date
 {
-	NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+	NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
 	
     NSInteger hebrewYearInDate = [hebrewCalendar yearsInDate:date];
 	

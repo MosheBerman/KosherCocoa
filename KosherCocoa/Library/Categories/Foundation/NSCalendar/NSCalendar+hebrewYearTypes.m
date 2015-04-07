@@ -196,10 +196,10 @@
     return -1;
 }
 
-//  Returns an NSCalendar initialized with the NSHebrewCalendar identifier.
+//  Returns an NSCalendar initialized with the NSCalendarIdentifierHebrew identifier.
 + (NSCalendar *)hebrewCalendar
 {
-    return [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    return [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
 }
 
 @end

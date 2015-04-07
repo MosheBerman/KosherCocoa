@@ -120,11 +120,11 @@
 - (NSInteger) julianDayForDate:(NSDate *)date
 {
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
-    NSInteger year = [[gregorianCalendar components:NSYearCalendarUnit fromDate:date] year];
-    NSInteger month = [[gregorianCalendar components:NSMonthCalendarUnit fromDate:date] month];
-    NSInteger day = [[gregorianCalendar components:NSDayCalendarUnit fromDate:date] day];
+    NSInteger year = [[gregorianCalendar components:NSCalendarUnitYear fromDate:date] year];
+    NSInteger month = [[gregorianCalendar components:NSCalendarUnitMonth fromDate:date] month];
+    NSInteger day = [[gregorianCalendar components:NSCalendarUnitDay fromDate:date] day];
     
     
     if (month <= 2)
@@ -142,7 +142,7 @@
 - (NSDate *)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day
 {
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
     [dateComponents setYear:year];
     [dateComponents setMonth:month];

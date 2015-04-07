@@ -384,7 +384,7 @@
 
 - (NSDate *)moladTohuAsDate
 {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSDateComponents *tohuComponents = [[NSDateComponents alloc] init];
     [tohuComponents setCalendar:gregorianCalendar];
@@ -410,9 +410,9 @@
     //  For each month, add 1 day 12 hours 793 chalakim
     //
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
-    NSUInteger componentTypes = (NSYearCalendarUnit | NSMonthCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit);
+    NSUInteger componentTypes = (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
     
     NSDateComponents *components = [gregorianCalendar components:componentTypes fromDate:tohu];
     
@@ -434,9 +434,9 @@
     
     NSDate *tohu = [self moladTohuAsDate];
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
-    NSDateComponents *comps = [hebrewCalendar components:NSMonthCalendarUnit fromDate:tohu toDate:date options:0];
+    NSDateComponents *comps = [hebrewCalendar components:NSCalendarUnitMonth fromDate:tohu toDate:date options:0];
     
     return [comps month];
 }
@@ -478,7 +478,7 @@
 {
     NSDate *molad = [self moladForDate:date];
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     [hebrewCalendar dateByAddingDays:3 toDate:molad];
     
     return [self moladForDate:molad];
@@ -500,7 +500,7 @@
 {
     NSDate *molad = [self moladForDate:date];
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     [hebrewCalendar dateByAddingDays:7 toDate:molad];
     
     return [self moladForDate:molad];
@@ -536,7 +536,7 @@
     //  Get an NSDate for one month later
     //
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc]initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
     NSDateComponents *comps = [[NSDateComponents alloc] init];
     [comps setMonth:1];
@@ -548,7 +548,7 @@
     NSDate *nextMolad = [self moladForDate:nextMonth];
     
     //  Pull out the number of seconds in between the two moladot
-    NSDateComponents *secondsComps = [hebrewCalendar components:NSSecondCalendarUnit fromDate:molad toDate:nextMolad options:0];
+    NSDateComponents *secondsComps = [hebrewCalendar components:NSCalendarUnitSecond fromDate:molad toDate:nextMolad options:0];
 
     molad = [molad dateByAddingTimeInterval:[secondsComps second]];
     
@@ -587,7 +587,7 @@
     
     NSDate *molad = [self moladForDate:date];
     
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     return [hebrewCalendar dateByAddingDays:15 toDate:molad];
 }
 
@@ -618,35 +618,35 @@
 //Returns the current hebrew month
 - (NSInteger)currentHebrewMonth
 {
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
-    return [[hebrewCalendar components:NSMonthCalendarUnit fromDate:self.workingDate] month];
+    return [[hebrewCalendar components:NSCalendarUnitMonth fromDate:self.workingDate] month];
 }
 
 //Returns the day of the current hebrew month
 - (NSInteger)currentHebrewDayOfMonth
 {
     NSDate *now = self.workingDate;
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
 
-    return [[hebrewCalendar components:NSDayCalendarUnit fromDate:now] day];
+    return [[hebrewCalendar components:NSCalendarUnitDay fromDate:now] day];
 }
 
 //Returns the current day of the week
 - (NSInteger)currentDayOfTheWeek
 {
     NSDate *now = self.workingDate;
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 
-    return [[gregorianCalendar components:NSWeekdayCalendarUnit fromDate:now] weekday];
+    return [[gregorianCalendar components:NSCalendarUnitWeekday fromDate:now] weekday];
 }
 
 //Determine if the current year is a hebrew leap year
 - (BOOL)isCurrentlyHebrewLeapYear
 {
     NSDate *now = self.workingDate;
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
-    NSInteger year = [[hebrewCalendar components:NSYearCalendarUnit fromDate:now] year];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
+    NSInteger year = [[hebrewCalendar components:NSCalendarUnitYear fromDate:now] year];
 
     return [self isHebrewLeapYear:year];
 }
@@ -667,9 +667,9 @@
 - (NSInteger)currentHebrewYear
 {
     NSDate *now = self.workingDate;
-    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
 
-    return [[hebrewCalendar components:NSYearCalendarUnit fromDate:now] year];
+    return [[hebrewCalendar components:NSCalendarUnitYear fromDate:now] year];
 }
 
 #pragma mark - Year Length
@@ -677,7 +677,7 @@
 - (NSInteger)lengthOfHebrewYear:(NSInteger)year
 {
     //  Create a Hebrew calendar object.
-	NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSHebrewCalendar];
+	NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
 	
     NSDate *thisRoshHashana = [NSDate dateWithDay:1 Month:1 Year:year andCalendar:hebrewCalendar];
 	NSDate *nextRoshHashana = [NSDate dateWithDay:1 Month:1 Year:year+1 andCalendar:hebrewCalendar];
@@ -746,9 +746,9 @@
 - (NSDate *)fridayFollowingDate:(NSDate *)workingDate
 {
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 	
-	NSDateComponents *gregorianDateComponents = [gregorianCalendar components:NSWeekdayCalendarUnit fromDate:workingDate];
+	NSDateComponents *gregorianDateComponents = [gregorianCalendar components:NSCalendarUnitWeekday fromDate:workingDate];
  	
 	NSInteger weekday = [gregorianDateComponents weekday];
     

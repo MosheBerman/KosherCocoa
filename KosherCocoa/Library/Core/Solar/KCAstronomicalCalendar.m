@@ -24,7 +24,7 @@
 {
     self = [super init];
     if (self) {
-        _internalCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        _internalCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     }
     return self;
 }
@@ -250,14 +250,14 @@
     //  the Gregorian calendar.
     //
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     //
     //  Convert the current time
     //  into an NSDateComponents.
     //
     
-    NSDateComponents *components = [gregorianCalendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSWeekCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSEraCalendarUnit  fromDate:date];
+    NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfYear | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitEra  fromDate:date];
     
     //
     //  Set the componenets time 
