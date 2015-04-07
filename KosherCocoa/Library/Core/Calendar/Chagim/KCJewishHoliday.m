@@ -57,8 +57,8 @@
     names = @[
               @{@"en_US" : @"Erev Pesach", @"he_IL" :  @"ערב פסח"},
               @{@"en_US" : @"Pesach", @"he_IL" :  @"פסח"},
-              @{@"en_US" : @"Pesach Sheni", @"he_IL" :  @"פסח שני"},
               @{@"en_US" : @"Chol Hamoed Pesach", @"he_IL" :  @"חול המועד פסח"},
+              @{@"en_US" : @"Pesach Sheni", @"he_IL" :  @"פסח שני"},
               @{@"en_US" : @"Erev Shavuos", @"he_IL" :  @"ערב שבועות"},
               @{@"en_US" : @"Shavuos", @"he_IL" :  @"שבועות"},
               @{@"en_US" : @"Fast of Seventeenth Of Tammuz", @"he_IL" :  @"שבעה עשר בתמוז"},
