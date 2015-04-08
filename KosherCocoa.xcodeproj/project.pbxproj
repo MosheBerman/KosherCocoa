@@ -87,8 +87,9 @@
 		466A3B2C17CAF3B900056F16 /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF217CAF3B900056F16 /* trigonometry.c */; };
 		466A3B2F17CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
 		466A3B3017CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
-		466E74AD1949126000ACB421 /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E74AC1949126000ACB421 /* KCJewishHoliday.m */; };
-		466E74AE1949126000ACB421 /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 466E74AC1949126000ACB421 /* KCJewishHoliday.m */; };
+		46BAA9F61AD592B300A0FE4B /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BAA9F51AD592B300A0FE4B /* KCZman.m */; };
+		46BAA9F71AD592B800A0FE4B /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BAA9F51AD592B300A0FE4B /* KCZman.m */; };
+		46BAA9F81AD592BB00A0FE4B /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BAA9F51AD592B300A0FE4B /* KCZman.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,9 +222,9 @@
 		466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
 		466BF887190870A9004F19A5 /* Solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Solar.h; sourceTree = "<group>"; };
 		466BF8881908723E004F19A5 /* Calendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calendar.h; sourceTree = "<group>"; };
-		466E74AB1949125F00ACB421 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
-		466E74AC1949126000ACB421 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
 		468C006E17F1E3450070CDB5 /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
+		46BAA9F41AD592B300A0FE4B /* KCZman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZman.h; sourceTree = "<group>"; };
+		46BAA9F51AD592B300A0FE4B /* KCZman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZman.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -517,6 +518,8 @@
 				466A3AE517CAF3B900056F16 /* KCComplexZmanimCalendar.m */,
 				466A3AE617CAF3B900056F16 /* KCZmanimCalendar.h */,
 				466A3AE717CAF3B900056F16 /* KCZmanimCalendar.m */,
+				46BAA9F41AD592B300A0FE4B /* KCZman.h */,
+				46BAA9F51AD592B300A0FE4B /* KCZman.m */,
 			);
 			path = Zmanim;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				466A3B2117CAF3B900056F16 /* KCZmanimCalendar.m in Sources */,
 				466A3B2317CAF3B900056F16 /* KCAstronomicalCalculator.m in Sources */,
 				466A3B2517CAF3B900056F16 /* KCAstronomicalCalendar.m in Sources */,
+				46BAA9F61AD592B300A0FE4B /* KCZman.m in Sources */,
 				466A3B2717CAF3B900056F16 /* KCGeoLocation.m in Sources */,
 				466A3B2917CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m in Sources */,
 				466A3B2B17CAF3B900056F16 /* trigonometry.c in Sources */,
@@ -781,6 +785,7 @@
 				466A3B2817CAF3B900056F16 /* KCGeoLocation.m in Sources */,
 				466A3B2A17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m in Sources */,
 				466A3B2C17CAF3B900056F16 /* trigonometry.c in Sources */,
+				46BAA9F81AD592BB00A0FE4B /* KCZman.m in Sources */,
 				466A3B3017CB9CD900056F16 /* NSDate+ConvenientDates.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -811,6 +816,7 @@
 				464EF3131922E5CE005396A9 /* KCZmanimCalendar.m in Sources */,
 				464EF3141922E5CE005396A9 /* KCAstronomicalCalculator.m in Sources */,
 				464EF3151922E5CE005396A9 /* KCAstronomicalCalendar.m in Sources */,
+				46BAA9F71AD592B800A0FE4B /* KCZman.m in Sources */,
 				464EF3161922E5CE005396A9 /* KCGeoLocation.m in Sources */,
 				464EF3171922E5CE005396A9 /* KCSunriseAndSunsetCalculator.m in Sources */,
 				464EF3181922E5CE005396A9 /* trigonometry.c in Sources */,

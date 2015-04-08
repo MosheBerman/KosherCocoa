@@ -993,7 +993,7 @@
 /**
  * This method returns the time of mincha gedola according to the Magen Avraham with the day 
  * starting 72 minutes before sunrise and ending 72 minutes after sunset. This is the earliest 
- * time to pray mincha. For more information on this see the documentation on mincha gedola.
+ * time to pray mincha. For more information on this see the documentation on mincha gedola.x
  * This is calculated as 6.5 solar hours after alos. 
  * The calculation used is 6.5 * ShaahZmanis72Minutes() after alos.
  *
