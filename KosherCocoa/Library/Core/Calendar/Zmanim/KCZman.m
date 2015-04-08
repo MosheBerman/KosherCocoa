@@ -422,88 +422,88 @@
                                        @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using an 18 degree dip. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 18 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 18 degrees below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis19Point8Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (19.8 מעלות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (19.8 Maalos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (19.8 Maalot)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (19.8 Degrees)",
+                                       @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using a 19.8 degree dip. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 19.8 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 19.8 degrees below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis"
                                        },
                                NSStringFromSelector(@selector(shaahZmanis26Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (26 מעלות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (26 Maalos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (26 Maalot)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (26 Degrees)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a 26 degree dip. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 26&deg; below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 26 degree below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis60Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (60 דקות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (60 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (60 Dakot)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (60 Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (solar hour) according to the opinion of the Magen Avraham. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 60 minutes before sunrise and dusk is 60 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis72Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (72 דקות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (72 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (72 Dakot)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (72 Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (solar hour) according to the opinion of the Magen Avraham. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis72MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (72 דקות זמנית)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (72 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (72 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (72 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham based on alos being 72 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 72 minutes zmaniyos before sunrise and dusk is 72 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/10th of the day from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis90Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (90 דקות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (90 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (90 Dakot)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (90 Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a dip of 90 minutes. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 90 minutes before sunrise and dusk is 90 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis90MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (90 דקות זמנית)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (90 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (90 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (90 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham based on alos being 90 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 90 minutes zmaniyos before sunrise and dusk is 90 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/8th of the day from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis96Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (96 דקות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (96 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (96 Dakot)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (96 Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a dip of 96 minutes. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 96 minutes before sunrise and dusk is 96 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis96MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (96 דקות זמנית)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (96 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (96 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (96 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham based on alos being 96 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 96 minutes zmaniyos before sunrise and dusk is 96 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/7.5th of the day from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(shaahZmanisAteretTorah)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (עטרת תורה)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (Ateret Torah)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (Ateret Torah)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (Ateret Torah)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Chacham Yosef Harari-Raful of Yeshivat Ateret Torah calculated with alos being 1/10th of sunrise to sunset day, or 72 minutes zmaniyos of such a day before sunrise, and tzais is usually calculated as 40 minutes (configurable to any offset by modifying AteretTorahSunsetOffset) after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. Note that with this system, chatzos (mid-day) will not be the point that the sun is halfway across the sky."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis120Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (120 דקות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (120 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (120 Dakot)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (120 Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a dip of 120 minutes. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 120 minutes before sunrise and dusk is 120 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis120MinutesZmanis))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"שעה זמנית (120 דקות זמנית)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (120 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (120 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Temporal Hour (120 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha based on sunrise being 120 minutes zmaniyos (GRA and the Baal Hatanya) or 1/6th of the day before sea level sunrise. This is calculated as 10.75 hours after dawn. The formula used is: 10.75 * ShaahZmanis120MinutesZmanis after dawn."
                                        },
                                
                                /**
