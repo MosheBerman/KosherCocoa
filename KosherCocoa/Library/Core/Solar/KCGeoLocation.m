@@ -236,7 +236,7 @@
     double cosSqAlpha = 0;
     double cos2SigmaM = 0;
     double C;
-    while (abs(lambda - lambdaP) > 1e-12 && --iterLimit > 0)
+    while (fabs(lambda - lambdaP) > 1e-12 && --iterLimit > 0)
     {
         sinLambda = sin(lambda);
         cosLambda = cos(lambda);
@@ -319,7 +319,7 @@
     double dPhi = log(tan(toRadians([location latitude])
                           / 2 + M_PI / 4)
                       / tan(toRadians([self latitude]) / 2 + M_PI / 4));
-    if (abs(dLon) > M_PI){
+    if (fabs(dLon) > M_PI){
         dLon = dLon > 0 ? -(2 * M_PI - dLon) : (2 * M_PI + dLon);
     }
     return toDegrees(atan2(dLon, dPhi));
@@ -334,12 +334,12 @@
     
     double R = 6371;  // earth's mean radius in km
     double dLat = toRadians([location latitude] - _latitude);
-    double dLon = toRadians(abs([location longitude ]
+    double dLon = toRadians(fabs([location longitude ]
                                 - [self longitude]));
     double dPhi = log(tan(toRadians([location longitude])
                           / 2 + M_PI / 4)
                       / tan(toRadians([self latitude]) / 2 + M_PI / 4));
-    double q = (abs(dLat) > 1e-10) ? dLat / dPhi : cos(toRadians(_latitude));
+    double q = (fabs(dLat) > 1e-10) ? dLat / dPhi : cos(toRadians(_latitude));
     // if dLon over 180∞ take shorter rhumb across 180∞ meridian:
     if (dLon > M_PI)
     {
