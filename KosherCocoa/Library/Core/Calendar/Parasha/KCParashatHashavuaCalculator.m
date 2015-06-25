@@ -272,7 +272,8 @@
                      @(KCParashaTazriaAndMetzora),
                      @(KCParashaAchareiMotAndKedoshim),
                      @(KCParashaEmor),
-                     @(KCParashaBeharAndBechukotai),
+                     @(KCParashaBehar),
+                     @(KCParashaBechukotai),
 
                      @(KCParashaBamidbar),
                      @(KCParashaNaso),
