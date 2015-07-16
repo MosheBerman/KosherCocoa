@@ -226,7 +226,53 @@
     }
 }
 
+
 /* Test Parashat Hashavua */
+
+- (void)testParshiotOccurInSequenceAcrossYears
+{
+    [self iterateParshiotInDiaspora:YES];
+    [self iterateParshiotInDiaspora:NO];
+}
+
+- (void)iterateParshiotInDiaspora:(BOOL)inDiaspora
+{
+    NSInteger hebrewYear = 5775;
+    KCParashatHashavuaCalculator *calc = [[KCParashatHashavuaCalculator alloc] init];
+    
+    NSDateFormatter *formatter = self.gregorianFormatter;
+    
+    formatter.timeStyle = NSDateFormatterNoStyle;
+    formatter.dateStyle = NSDateFormatterMediumStyle;
+    
+    for (NSInteger yearOffset = 0; yearOffset < 100; yearOffset++)
+    {
+        NSDate *workingDate = [NSDate dateWithDay:1 Month:1 Year:hebrewYear andCalendar:[self hebrewCalendar]];
+        
+        for (NSInteger weekOffset = 0; weekOffset < 52; weekOffset++)
+        {
+            workingDate = [[self gregorianCalendar] dateByAddingWeeks:1 toDate:workingDate];
+            
+            KCParasha *parasha = nil;
+            NSString *place = nil;
+            
+            if (inDiaspora)
+            {
+                parasha = [calc parashaInDiasporaForDate:workingDate];
+                place = @"Diaspora";
+            }
+            else
+            {
+                parasha = [calc parashaInIsraelForDate:workingDate];
+                place = @"Israel";
+            }
+            
+            NSLog(@"Parasha in %@ for %@ is %@.", place, [formatter stringFromDate:workingDate], parasha);
+            
+        }
+    }
+}
+
 /*
 - (void)testParasha
 {
@@ -416,6 +462,5 @@
     NSLog(@"%@ : %li", dayString, day);
     
 }
-
 
 @end
