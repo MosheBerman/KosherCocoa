@@ -1041,7 +1041,8 @@
                      @(KCParashaBehaalotecha),
                      @(KCParashaShelach),
                      @(KCParashaKorach),
-                     @(KCParashaChukatAndBalak),
+                     @(KCParashaChukat),
+                     @(KCParashaBalak),
                      @(KCParashaPinchas),
                      @(KCParashaMatotAndMasei),
                      
