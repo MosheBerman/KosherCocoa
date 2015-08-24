@@ -533,81 +533,81 @@
                                        @"koshercocoa.explanation" : @"Dawn calculated as 60 minutes before sea level sunrise. This is the time to walk the distance of 4 \"mil\" at 15 minutes a \"mil\" (the opinion of the Chavas Yair. See the Divrei Malkiel). Time based offset calculations for alos are based on the opinion of most Rishonim who stated that the time of the \"neshef\" (time between dawn and sunrise) does not vary by the time of year or location but purely depends on the time it takes to walk the distance of 4 \"mil.\""
                                        },
                                NSStringFromSelector(@selector(alos72Zmanis))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (72 דקות זמנית",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (72 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (72 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Dawn (72 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated using 72 minutes zmaniyos (GRA and the Baal Hatanya) or 1/10th of the day before sea level sunrise. This is based on an 18 minute \"mil\" so the time for 4 \"mil\" is 72 minutes which is 1/10th of a day (12 * 60 = 720) based on the day starting at sea level sunrise and ending at sea level sunset. This calculation is used in the calendars published by Hisachdus Harabanim D'Artzos Habris Ve'Canada."
                                        },
                                NSStringFromSelector(@selector(alos90)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (90 דקות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (90 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (90 Dakot)",
+                                       @"koshercocoa.name.english" : @"Dawn (90 Minutes)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated as 90 minutes before sea level sunrise based on the time to walk the distance of 4 \"mil\" at 22.5 minutes per \"mil.\" Time based offset calculations for alos are based on the opinion of most Rishonim who stated that the time of the \"neshef\" (time between dawn and sunrise) does not vary by the time of year or location but purely depends on the time it takes to walk the distance of 4 \"mil.\""
                                        },
                                NSStringFromSelector(@selector(alos90Zmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (90 דקות זמנית",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (90 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (90 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Dawn (90 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated using 90 minutes zmaniyos (GRA and the Baal Hatanya) or 1/10th of the day before sea level sunrise. This is based on an 22.5 minute \"mil\" so the time for 4 \"mil\" is 90 minutes which is 1/8th of a day (12 * 60) / 8 = 90 based on the day starting at sea level sunrise and ending at sea level sunset. This calculation is used in the calendars published by Hisachdus Harabanim D'Artzos Habris Ve'Canada."
                                        },
                                NSStringFromSelector(@selector(alos96))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (96 דקות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (96 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (96 Dakot)",
+                                       @"koshercocoa.name.english" : @"Dawn (96 Minutes)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated using 96 minutes before sea level sunrise based on the time to walk the distance of 4 \"mil\" at 24 minutes a \"mil.\" Time based offset calculations for alos are based on the opinion of most Rishonim who stated that the time of the \"neshef\" (time between dawn and sunrise) does not vary by the time of year or location but purely depends on the time it takes to walk the distance of 4 \"mil.\""
                                        },
                                NSStringFromSelector(@selector(alos96Zmanis))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (96 דקות זמנית",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (96 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (96 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Dawn (96 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return alos (dawn) calculated using 120 minutes before sea level sunrise (no adjustment for elevation is made) based on the time to walk the distance of 5 \"mil\" (Ula) at 24 minutes a \"mil.\" Time based offset calculations for alos are based on the opinion of most Rishonim who stated that the time of the \"neshef\" (time between dawn and sunrise) does not vary by the time of year or location but purely depends on the time it takes to walk the distance of 5 \"mil\" (Ula)."
                                        },
                                NSStringFromSelector(@selector(alos120))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (120 דקות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (120 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (120 Dakot)",
+                                       @"koshercocoa.name.english" : @"Dawn (120 Minutes)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated using 120 minutes before sea level sunrise (no adjustment for elevation is made) based on the time to walk the distance of 5 \"Mil\" (Ula) at 24 minutes a \"mil.\" Time based offset calculations for alos are based on the opinion of most Rishonim who stated that the time of the Neshef (time between dawn and sunrise) does not vary by the time of year or location but purely depends on the time it takes to walk the distance of 5 \"mil\"(Ula)."
                                        },
                                NSStringFromSelector(@selector(alos120Zmanis))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (120 דקות זמנית",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (120 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (120 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Dawn (120 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Method to return alos (dawn) calculated using 120 minutes zmaniyos (GRA and the Baal Hatanya) or 1/6th of the day before sea level sunrise. This is based on a 24 minute \"mil\" so the time for 5 \"mil\" is 120 minutes which is 1/6th of a day (12 * 60) / 6 = 120 based on the day starting at sunrise and ending at sunset."
                                        },
                                NSStringFromSelector(@selector(alos26Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (26 מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (26 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (26 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Dawn (26 Degrees)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated when the sun is 26° below the eastern geometric horizon before sunrise. This calculation is based on the same calculation of 120 minutes but uses a degree based calculation instead of 120 exact minutes. This calculation is based on the position of the sun 120 minutes before sunrise in Jerusalem during the equinox which calculates to 26° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(alos18Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (18 מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (18 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (18 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Dawn (18 Degrees)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated when the sun is 18° below the eastern geometric horizon before sunrise."
                                        },
                                NSStringFromSelector(@selector(alos19Point8Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (19.8 מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (19.8 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (19.8 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Dawn (19.8 Degrees)",
+                                       @"koshercocoa.explanation" : @"Dawn calculated when the sun is 19.8° below the eastern geometric horizon before sunrise.  This calculation is based on the same calculation of 90 minutes but uses a degree based calculation instead of 90 exact minutes. This calculation is based on the position of the sun 90 minutes before sunrise in Jerusalem during the equinox which calculates to 19.8° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(alos16Point1Degrees))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(עלות השחר (16.1 מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (16.1 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (16.1 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Dawn (16.1 Degrees)",
+                                       @"koshercocoa.explanation" : @"(dawn) calculated when the sun is 16.1° below the eastern geometric horizon before sunrise. This calculation is based on the same calculation of 72 minutes but uses a degree based calculation instead of 72 exact minutes. This calculation is based on the position of the sun 72 minutes before sunrise in Jerusalem during the equinox which calculates to 16.1° below geometric zenith."
                                        },
                                
                                /**
