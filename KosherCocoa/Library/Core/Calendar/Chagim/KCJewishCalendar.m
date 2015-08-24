@@ -745,7 +745,6 @@
 
 - (NSDate *)fridayFollowingDate:(NSDate *)workingDate
 {
-    
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 	
 	NSDateComponents *gregorianDateComponents = [gregorianCalendar components:NSCalendarUnitWeekday fromDate:workingDate];
@@ -753,6 +752,23 @@
 	NSInteger weekday = [gregorianDateComponents weekday];
     
     return [self dateByAddingDays:(6-weekday) toDate:workingDate];
+}
+
+#pragma mark - Working Date
+
+- (NSDate *)workingDate
+{
+    NSDate *returnDate = [super workingDate];
+    
+    BOOL isAfterSunset = [[self sunset] timeIntervalSinceNow] < 0;
+    
+    if (isAfterSunset)
+    {
+        NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        returnDate = [gregorianCalendar dateByAddingDays:1 toDate:returnDate];
+    }
+    
+    return returnDate;
 }
 
 @end
