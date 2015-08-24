@@ -389,7 +389,6 @@
  *  ---
  */
 
-
 /**
  *  Expose the internal calendar so the main class can
  *  appropriately forward methods.
