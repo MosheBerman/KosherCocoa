@@ -12,7 +12,7 @@
 		4618ECFE1BF44AD500C33159 /* KCAstronomicalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFF1BF44AD500C33159 /* KCGeoLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AED17CAF3B900056F16 /* KCGeoLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED001BF44AD500C33159 /* KCSunriseAndSunsetCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEF17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; };
 		4618ED021BF44AFB00C33159 /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
 		4618ED031BF44AFF00C33159 /* KCJewishCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AD217CAF3B900056F16 /* KCJewishCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED041BF44B0500C33159 /* KCJewishCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD317CAF3B900056F16 /* KCJewishCalendar.m */; };
