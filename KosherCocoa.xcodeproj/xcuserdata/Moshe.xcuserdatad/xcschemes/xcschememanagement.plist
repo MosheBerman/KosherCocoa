@@ -22,7 +22,7 @@
 		<key>KosherCocoaTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<key>KosherCocoaWithDocs.xcscheme</key>
 		<dict>
@@ -32,6 +32,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>46130DB81BF52DF6001D19FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4618BB841664216E00AD3CE5</key>
 		<dict>
 			<key>primary</key>

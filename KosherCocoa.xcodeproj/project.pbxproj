@@ -7,6 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46130DBA1BF52DF6001D19FC /* KCSefiratHaomerCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE217CAF3B900056F16 /* KCSefiratHaomerCalculator.m */; };
+		46130DBB1BF52DF6001D19FC /* trigonometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF217CAF3B900056F16 /* trigonometry.c */; };
+		46130DBC1BF52DF6001D19FC /* KCJewishHoliday.m in Sources */ = {isa = PBXBuildFile; fileRef = 461E6DFD194474C300C497A8 /* KCJewishHoliday.m */; };
+		46130DBD1BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
+		46130DBE1BF52DF6001D19FC /* NSCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC017CAF3B900056F16 /* NSCalendar+DateManipulation.m */; };
+		46130DBF1BF52DF6001D19FC /* NSCalendar+Ranges.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC617CAF3B900056F16 /* NSCalendar+Ranges.m */; };
+		46130DC01BF52DF6001D19FC /* NSCalendar+DateComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABE17CAF3B900056F16 /* NSCalendar+DateComparison.m */; };
+		46130DC11BF52DF6001D19FC /* KCJewishCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD317CAF3B900056F16 /* KCJewishCalendar.m */; };
+		46130DC21BF52DF6001D19FC /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACE17CAF3B900056F16 /* NSDateComponents+AllComponents.m */; };
+		46130DC31BF52DF6001D19FC /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACB17CAF3B900056F16 /* NSDate+Description.m */; };
+		46130DC41BF52DF6001D19FC /* KCParasha.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADB17CAF3B900056F16 /* KCParasha.m */; };
+		46130DC51BF52DF6001D19FC /* KCSunriseAndSunsetCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AF017CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m */; };
+		46130DC61BF52DF6001D19FC /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC917CAF3B900056F16 /* NSDate+Components.m */; };
+		46130DC71BF52DF6001D19FC /* NSCalendar+hebrewYearTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC217CAF3B900056F16 /* NSCalendar+hebrewYearTypes.m */; };
+		46130DC81BF52DF6001D19FC /* KCGeoLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEE17CAF3B900056F16 /* KCGeoLocation.m */; };
+		46130DC91BF52DF6001D19FC /* NSCalendar+Juncture.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC417CAF3B900056F16 /* NSCalendar+Juncture.m */; };
+		46130DCA1BF52DF6001D19FC /* KCAstronomicalCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AEC17CAF3B900056F16 /* KCAstronomicalCalendar.m */; };
+		46130DCB1BF52DF6001D19FC /* KCComplexZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE517CAF3B900056F16 /* KCComplexZmanimCalendar.m */; };
+		46130DCC1BF52DF6001D19FC /* KCParashatHashavuaCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ADD17CAF3B900056F16 /* KCParashatHashavuaCalculator.m */; };
+		46130DCD1BF52DF6001D19FC /* NSCalendar+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ABC17CAF3B900056F16 /* NSCalendar+Components.m */; };
+		46130DCE1BF52DF6001D19FC /* KCZman.m in Sources */ = {isa = PBXBuildFile; fileRef = 46BAA9F51AD592B300A0FE4B /* KCZman.m */; };
+		46130DCF1BF52DF6001D19FC /* KCDafYomiCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD817CAF3B900056F16 /* KCDafYomiCalculator.m */; };
+		46130DD01BF52DF6001D19FC /* KCSefiraFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */; };
+		46130DD11BF52DF6001D19FC /* KCDaf.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD617CAF3B900056F16 /* KCDaf.m */; };
+		46130DD21BF52DF6001D19FC /* KCZmanimCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AE717CAF3B900056F16 /* KCZmanimCalendar.m */; };
+		46130DD31BF52DF6001D19FC /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
+		46130DD61BF52DF6001D19FC /* KCJewishHoliday.h in Headers */ = {isa = PBXBuildFile; fileRef = 461E6DFC194474C300C497A8 /* KCJewishHoliday.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DD71BF52DF6001D19FC /* KCAstronomicalCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DD81BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; };
+		46130DD91BF52DF6001D19FC /* trigonometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AF317CAF3B900056F16 /* trigonometry.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		46130DDA1BF52DF6001D19FC /* KCJewishCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AD217CAF3B900056F16 /* KCJewishCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DDB1BF52DF6001D19FC /* KCZenith.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFC17CAF3B900056F16 /* KCZenith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DDC1BF52DF6001D19FC /* KCSefiratHaomerCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE117CAF3B900056F16 /* KCSefiratHaomerCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DDD1BF52DF6001D19FC /* KCMolad.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFA17CAF3B900056F16 /* KCMolad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DDE1BF52DF6001D19FC /* KCZman.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BAA9F41AD592B300A0FE4B /* KCZman.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DDF1BF52DF6001D19FC /* KCSunriseAndSunsetCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEF17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE01BF52DF6001D19FC /* KCParashatHashavuaCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ADC17CAF3B900056F16 /* KCParashatHashavuaCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE11BF52DF6001D19FC /* KCZenithExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE21BF52DF6001D19FC /* KCGeoLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AED17CAF3B900056F16 /* KCGeoLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE31BF52DF6001D19FC /* KCParasha.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ADA17CAF3B900056F16 /* KCParasha.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE41BF52DF6001D19FC /* KCJewishHolidays.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AF917CAF3B900056F16 /* KCJewishHolidays.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE51BF52DF6001D19FC /* KCSunCalculationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFB17CAF3B900056F16 /* KCSunCalculationTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE61BF52DF6001D19FC /* KCAstronomicalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE71BF52DF6001D19FC /* KCComplexZmanimCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE417CAF3B900056F16 /* KCComplexZmanimCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE81BF52DF6001D19FC /* KCParashaReadings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610DD911808999A0055A4F9 /* KCParashaReadings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DE91BF52DF6001D19FC /* MBCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DEA1BF52DF6001D19FC /* KCBearing.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AF617CAF3B900056F16 /* KCBearing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DEB1BF52DF6001D19FC /* NSDate+ConvenientDates.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3B2D17CB9CD900056F16 /* NSDate+ConvenientDates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DEC1BF52DF6001D19FC /* NSDate+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC817CAF3B900056F16 /* NSDate+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DED1BF52DF6001D19FC /* NSDateComponents+AllComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ACD17CAF3B900056F16 /* NSDateComponents+AllComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DEE1BF52DF6001D19FC /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABF17CAF3B900056F16 /* NSCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DEF1BF52DF6001D19FC /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC317CAF3B900056F16 /* NSCalendar+Juncture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF01BF52DF6001D19FC /* NSCalendar+DateComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABD17CAF3B900056F16 /* NSCalendar+DateComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF11BF52DF6001D19FC /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABB17CAF3B900056F16 /* NSCalendar+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF21BF52DF6001D19FC /* NSCalendar+hebrewYearTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC117CAF3B900056F16 /* NSCalendar+hebrewYearTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF31BF52DF6001D19FC /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC517CAF3B900056F16 /* NSCalendar+Ranges.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF41BF52DF6001D19FC /* NSDate+Description.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ACA17CAF3B900056F16 /* NSDate+Description.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF51BF52DF6001D19FC /* KCHebrewYear.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AF817CAF3B900056F16 /* KCHebrewYear.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF61BF52DF6001D19FC /* KCAstronomical.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AF517CAF3B900056F16 /* KCAstronomical.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF71BF52DF6001D19FC /* KCConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AF717CAF3B900056F16 /* KCConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF81BF52DF6001D19FC /* KCDaf.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AD517CAF3B900056F16 /* KCDaf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DF91BF52DF6001D19FC /* KCSefiraFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 460AAF4E18187BA00033AABF /* KCSefiraFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DFA1BF52DF6001D19FC /* KCTractates.h in Headers */ = {isa = PBXBuildFile; fileRef = 468C006E17F1E3450070CDB5 /* KCTractates.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DFB1BF52DF6001D19FC /* KCDafYomiCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AD717CAF3B900056F16 /* KCDafYomiCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DFC1BF52DF6001D19FC /* KosherCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4618ECE71BF449EF00C33159 /* KosherCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DFD1BF52DF6001D19FC /* KCZmanimCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE617CAF3B900056F16 /* KCZmanimCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECE81BF449EF00C33159 /* KosherCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4618ECE71BF449EF00C33159 /* KosherCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFD1BF44AD500C33159 /* KCAstronomicalCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFE1BF44AD500C33159 /* KCAstronomicalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -82,6 +148,8 @@
 		460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraFormatter.m; sourceTree = "<group>"; };
 		4610DD9018086BB40055A4F9 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = SOURCE_ROOT; };
 		4610DD911808999A0055A4F9 /* KCParashaReadings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashaReadings.h; sourceTree = "<group>"; };
+		46130E021BF52DF6001D19FC /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46130E031BF52DF7001D19FC /* KosherCocoa copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KosherCocoa copy-Info.plist"; path = "/Users/Moshe/code/ios/KosherCocoa/KosherCocoa copy-Info.plist"; sourceTree = "<absolute>"; };
 		4618ECE51BF449EF00C33159 /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4618ECE71BF449EF00C33159 /* KosherCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KosherCocoa.h; path = ../KosherCocoa.h; sourceTree = "<group>"; };
 		4618ECE91BF449EF00C33159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KosherCocoa/Info.plist; sourceTree = "<group>"; };
@@ -148,6 +216,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		46130DD41BF52DF6001D19FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4618ECE11BF449EF00C33159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -174,6 +249,7 @@
 				4618BB8A1664216E00AD3CE5 /* KosherCocoa */,
 				4610DD9018086BB40055A4F9 /* TODO */,
 				4618BB861664216E00AD3CE5 /* Products */,
+				46130E031BF52DF7001D19FC /* KosherCocoa copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				4618ECE51BF449EF00C33159 /* KosherCocoa.framework */,
+				46130E021BF52DF6001D19FC /* KosherCocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -398,6 +475,53 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		46130DD51BF52DF6001D19FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46130DD61BF52DF6001D19FC /* KCJewishHoliday.h in Headers */,
+				46130DD71BF52DF6001D19FC /* KCAstronomicalCalculator.h in Headers */,
+				46130DD81BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
+				46130DD91BF52DF6001D19FC /* trigonometry.h in Headers */,
+				46130DDA1BF52DF6001D19FC /* KCJewishCalendar.h in Headers */,
+				46130DDB1BF52DF6001D19FC /* KCZenith.h in Headers */,
+				46130DDC1BF52DF6001D19FC /* KCSefiratHaomerCalculator.h in Headers */,
+				46130DDD1BF52DF6001D19FC /* KCMolad.h in Headers */,
+				46130DDE1BF52DF6001D19FC /* KCZman.h in Headers */,
+				46130DDF1BF52DF6001D19FC /* KCSunriseAndSunsetCalculator.h in Headers */,
+				46130DE01BF52DF6001D19FC /* KCParashatHashavuaCalculator.h in Headers */,
+				46130DE11BF52DF6001D19FC /* KCZenithExtended.h in Headers */,
+				46130DE21BF52DF6001D19FC /* KCGeoLocation.h in Headers */,
+				46130DE31BF52DF6001D19FC /* KCParasha.h in Headers */,
+				46130DE41BF52DF6001D19FC /* KCJewishHolidays.h in Headers */,
+				46130DE51BF52DF6001D19FC /* KCSunCalculationTypes.h in Headers */,
+				46130DE61BF52DF6001D19FC /* KCAstronomicalCalendar.h in Headers */,
+				46130DE71BF52DF6001D19FC /* KCComplexZmanimCalendar.h in Headers */,
+				46130DE81BF52DF6001D19FC /* KCParashaReadings.h in Headers */,
+				46130DE91BF52DF6001D19FC /* MBCalendarCategories.h in Headers */,
+				46130DEA1BF52DF6001D19FC /* KCBearing.h in Headers */,
+				46130DEB1BF52DF6001D19FC /* NSDate+ConvenientDates.h in Headers */,
+				46130DEC1BF52DF6001D19FC /* NSDate+Components.h in Headers */,
+				46130DED1BF52DF6001D19FC /* NSDateComponents+AllComponents.h in Headers */,
+				46130DEE1BF52DF6001D19FC /* NSCalendar+DateManipulation.h in Headers */,
+				46130DEF1BF52DF6001D19FC /* NSCalendar+Juncture.h in Headers */,
+				46130DF01BF52DF6001D19FC /* NSCalendar+DateComparison.h in Headers */,
+				46130DF11BF52DF6001D19FC /* NSCalendar+Components.h in Headers */,
+				46130DF21BF52DF6001D19FC /* NSCalendar+hebrewYearTypes.h in Headers */,
+				46130DF31BF52DF6001D19FC /* NSCalendar+Ranges.h in Headers */,
+				46130DF41BF52DF6001D19FC /* NSDate+Description.h in Headers */,
+				46130DF51BF52DF6001D19FC /* KCHebrewYear.h in Headers */,
+				46130DF61BF52DF6001D19FC /* KCAstronomical.h in Headers */,
+				46130DF71BF52DF6001D19FC /* KCConstants.h in Headers */,
+				46130DF81BF52DF6001D19FC /* KCDaf.h in Headers */,
+				46130DF91BF52DF6001D19FC /* KCSefiraFormatter.h in Headers */,
+				46130DFA1BF52DF6001D19FC /* KCTractates.h in Headers */,
+				46130DFB1BF52DF6001D19FC /* KCDafYomiCalculator.h in Headers */,
+				46130DFC1BF52DF6001D19FC /* KosherCocoa.h in Headers */,
+				46130DFD1BF52DF6001D19FC /* KCZmanimCalendar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4618ECE21BF449EF00C33159 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -448,6 +572,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		46130DB81BF52DF6001D19FC /* KosherCocoaWatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46130DFF1BF52DF6001D19FC /* Build configuration list for PBXNativeTarget "KosherCocoaWatchOS" */;
+			buildPhases = (
+				46130DB91BF52DF6001D19FC /* Sources */,
+				46130DD41BF52DF6001D19FC /* Frameworks */,
+				46130DD51BF52DF6001D19FC /* Headers */,
+				46130DFE1BF52DF6001D19FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KosherCocoaWatchOS;
+			productName = KosherCocoa;
+			productReference = 46130E021BF52DF6001D19FC /* KosherCocoa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4618ECE41BF449EF00C33159 /* KosherCocoa */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4618ECF61BF449EF00C33159 /* Build configuration list for PBXNativeTarget "KosherCocoa" */;
@@ -495,11 +637,19 @@
 			projectRoot = "";
 			targets = (
 				4618ECE41BF449EF00C33159 /* KosherCocoa */,
+				46130DB81BF52DF6001D19FC /* KosherCocoaWatchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		46130DFE1BF52DF6001D19FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4618ECE31BF449EF00C33159 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +660,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		46130DB91BF52DF6001D19FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46130DBA1BF52DF6001D19FC /* KCSefiratHaomerCalculator.m in Sources */,
+				46130DBB1BF52DF6001D19FC /* trigonometry.c in Sources */,
+				46130DBC1BF52DF6001D19FC /* KCJewishHoliday.m in Sources */,
+				46130DBD1BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.m in Sources */,
+				46130DBE1BF52DF6001D19FC /* NSCalendar+DateManipulation.m in Sources */,
+				46130DBF1BF52DF6001D19FC /* NSCalendar+Ranges.m in Sources */,
+				46130DC01BF52DF6001D19FC /* NSCalendar+DateComparison.m in Sources */,
+				46130DC11BF52DF6001D19FC /* KCJewishCalendar.m in Sources */,
+				46130DC21BF52DF6001D19FC /* NSDateComponents+AllComponents.m in Sources */,
+				46130DC31BF52DF6001D19FC /* NSDate+Description.m in Sources */,
+				46130DC41BF52DF6001D19FC /* KCParasha.m in Sources */,
+				46130DC51BF52DF6001D19FC /* KCSunriseAndSunsetCalculator.m in Sources */,
+				46130DC61BF52DF6001D19FC /* NSDate+Components.m in Sources */,
+				46130DC71BF52DF6001D19FC /* NSCalendar+hebrewYearTypes.m in Sources */,
+				46130DC81BF52DF6001D19FC /* KCGeoLocation.m in Sources */,
+				46130DC91BF52DF6001D19FC /* NSCalendar+Juncture.m in Sources */,
+				46130DCA1BF52DF6001D19FC /* KCAstronomicalCalendar.m in Sources */,
+				46130DCB1BF52DF6001D19FC /* KCComplexZmanimCalendar.m in Sources */,
+				46130DCC1BF52DF6001D19FC /* KCParashatHashavuaCalculator.m in Sources */,
+				46130DCD1BF52DF6001D19FC /* NSCalendar+Components.m in Sources */,
+				46130DCE1BF52DF6001D19FC /* KCZman.m in Sources */,
+				46130DCF1BF52DF6001D19FC /* KCDafYomiCalculator.m in Sources */,
+				46130DD01BF52DF6001D19FC /* KCSefiraFormatter.m in Sources */,
+				46130DD11BF52DF6001D19FC /* KCDaf.m in Sources */,
+				46130DD21BF52DF6001D19FC /* KCZmanimCalendar.m in Sources */,
+				46130DD31BF52DF6001D19FC /* NSDate+ConvenientDates.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4618ECE01BF449EF00C33159 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,6 +729,92 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		46130E001BF52DF6001D19FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "KosherCocoa copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
+				PRODUCT_NAME = KosherCocoa;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46130E011BF52DF6001D19FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "KosherCocoa copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
+				PRODUCT_NAME = KosherCocoa;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		4618BBA81664216F00AD3CE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -628,6 +897,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -670,6 +940,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -679,6 +950,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		46130DFF1BF52DF6001D19FC /* Build configuration list for PBXNativeTarget "KosherCocoaWatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46130E001BF52DF6001D19FC /* Debug */,
+				46130E011BF52DF6001D19FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4618BB7F1664216E00AD3CE5 /* Build configuration list for PBXProject "KosherCocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
