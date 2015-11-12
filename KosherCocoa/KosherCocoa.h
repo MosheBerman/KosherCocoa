@@ -8,8 +8,6 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <UIKit/UIKit.h>
-
 #import <KosherCocoa/KCAstronomicalCalculator.h>
 #import <KosherCocoa/KCComplexZmanimCalendar.h>
 #import <KosherCocoa/KCDafYomiCalculator.h>
