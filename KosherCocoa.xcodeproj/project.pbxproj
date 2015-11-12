@@ -65,7 +65,7 @@
 		4618ED331BF4516900C33159 /* KCZenith.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFC17CAF3B900056F16 /* KCZenith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED341BF4516900C33159 /* KCZenithExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED351BF4516900C33159 /* KCParashaReadings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610DD911808999A0055A4F9 /* KCParashaReadings.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4618EE141BF4F9CC00C33159 /* MBCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4618EE141BF4F9CC00C33159 /* MBCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618EE151BF4F9DE00C33159 /* NSDate+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC817CAF3B900056F16 /* NSDate+Components.h */; };
 		4618EE161BF4F9E300C33159 /* NSDate+Components.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AC917CAF3B900056F16 /* NSDate+Components.m */; };
 		4618EE171BF4F9E600C33159 /* NSDate+ConvenientDates.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3B2D17CB9CD900056F16 /* NSDate+ConvenientDates.h */; };
