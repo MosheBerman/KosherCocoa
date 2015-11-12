@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4618ECE81BF449EF00C33159 /* KosherCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4618ECE71BF449EF00C33159 /* KosherCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4618ECEF1BF449EF00C33159 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
 		4618ECFD1BF44AD500C33159 /* KCAstronomicalCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFE1BF44AD500C33159 /* KCAstronomicalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFF1BF44AD500C33159 /* KCGeoLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AED17CAF3B900056F16 /* KCGeoLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,16 +75,6 @@
 		4618EE1C1BF4F9F900C33159 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACE17CAF3B900056F16 /* NSDateComponents+AllComponents.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4618ECF01BF449EF00C33159 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4618BB7C1664216E00AD3CE5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4618ECE41BF449EF00C33159;
-			remoteInfo = KosherCocoa;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KCAstronomicalCalendar+DateManipulation.h"; path = "KosherCocoa/Library/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.h"; sourceTree = "<group>"; };
 		460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KCAstronomicalCalendar+DateManipulation.m"; path = "KosherCocoa/Library/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.m"; sourceTree = "<group>"; };
@@ -93,14 +82,9 @@
 		460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraFormatter.m; sourceTree = "<group>"; };
 		4610DD9018086BB40055A4F9 /* TODO */ = {isa = PBXFileReference; lastKnownFileType = text; path = TODO; sourceTree = SOURCE_ROOT; };
 		4610DD911808999A0055A4F9 /* KCParashaReadings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashaReadings.h; sourceTree = "<group>"; };
-		4618BBA11664216F00AD3CE5 /* KosherCocoaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KosherCocoaTests-Info.plist"; sourceTree = "<group>"; };
-		4618BBA31664216F00AD3CE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTests.h; sourceTree = "<group>"; };
-		4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KosherCocoaTests.m; sourceTree = "<group>"; };
 		4618ECE51BF449EF00C33159 /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4618ECE71BF449EF00C33159 /* KosherCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KosherCocoa.h; path = ../KosherCocoa.h; sourceTree = "<group>"; };
 		4618ECE91BF449EF00C33159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KosherCocoa/Info.plist; sourceTree = "<group>"; };
-		4618ECEE1BF449EF00C33159 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		461E6DFC194474C300C497A8 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
 		461E6DFD194474C300C497A8 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
 		4668A4FD17DCFC5C00EB4169 /* AstronomicalCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AstronomicalCalendar.java; sourceTree = "<group>"; };
@@ -191,14 +175,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4618ECEB1BF449EF00C33159 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4618ECEF1BF449EF00C33159 /* KosherCocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -216,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				4618BB8A1664216E00AD3CE5 /* KosherCocoa */,
-				4618BB9F1664216F00AD3CE5 /* KosherCocoaTests */,
+				4610DD9018086BB40055A4F9 /* TODO */,
 				4618BB861664216E00AD3CE5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -225,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				4618ECE51BF449EF00C33159 /* KosherCocoa.framework */,
-				4618ECEE1BF449EF00C33159 /* KosherCocoaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -238,26 +213,6 @@
 				4618ED361BF4D85000C33159 /* Supporting Files */,
 			);
 			path = KosherCocoa;
-			sourceTree = "<group>";
-		};
-		4618BB9F1664216F00AD3CE5 /* KosherCocoaTests */ = {
-			isa = PBXGroup;
-			children = (
-				4618BBA51664216F00AD3CE5 /* KosherCocoaTests.h */,
-				4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */,
-				4618BBA01664216F00AD3CE5 /* Supporting Files */,
-				4610DD9018086BB40055A4F9 /* TODO */,
-			);
-			path = KosherCocoaTests;
-			sourceTree = "<group>";
-		};
-		4618BBA01664216F00AD3CE5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4618BBA11664216F00AD3CE5 /* KosherCocoaTests-Info.plist */,
-				4618BBA21664216F00AD3CE5 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4618ED361BF4D85000C33159 /* Supporting Files */ = {
@@ -583,24 +538,6 @@
 			productReference = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		4618ECED1BF449EF00C33159 /* KosherCocoaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4618ECF91BF449EF00C33159 /* Build configuration list for PBXNativeTarget "KosherCocoaTests" */;
-			buildPhases = (
-				4618ECEA1BF449EF00C33159 /* Sources */,
-				4618ECEB1BF449EF00C33159 /* Frameworks */,
-				4618ECEC1BF449EF00C33159 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4618ECF11BF449EF00C33159 /* PBXTargetDependency */,
-			);
-			name = KosherCocoaTests;
-			productName = KosherCocoaTests;
-			productReference = 4618ECEE1BF449EF00C33159 /* KosherCocoaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -613,9 +550,6 @@
 				ORGANIZATIONNAME = "Moshe Berman";
 				TargetAttributes = {
 					4618ECE41BF449EF00C33159 = {
-						CreatedOnToolsVersion = 7.1;
-					};
-					4618ECED1BF449EF00C33159 = {
 						CreatedOnToolsVersion = 7.1;
 					};
 				};
@@ -633,20 +567,12 @@
 			projectRoot = "";
 			targets = (
 				4618ECE41BF449EF00C33159 /* KosherCocoa */,
-				4618ECED1BF449EF00C33159 /* KosherCocoaTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4618ECE31BF449EF00C33159 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4618ECEC1BF449EF00C33159 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -689,33 +615,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4618ECEA1BF449EF00C33159 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4618ECF11BF449EF00C33159 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4618ECE41BF449EF00C33159 /* KosherCocoa */;
-			targetProxy = 4618ECF01BF449EF00C33159 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4618BBA21664216F00AD3CE5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4618BBA31664216F00AD3CE5 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4618BBA81664216F00AD3CE5 /* Debug */ = {
@@ -848,66 +748,6 @@
 			};
 			name = Release;
 		};
-		4618ECFA1BF449EF00C33159 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = KosherCocoaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		4618ECFB1BF449EF00C33159 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = KosherCocoaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -925,14 +765,6 @@
 			buildConfigurations = (
 				4618ECF71BF449EF00C33159 /* Debug */,
 				4618ECF81BF449EF00C33159 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		4618ECF91BF449EF00C33159 /* Build configuration list for PBXNativeTarget "KosherCocoaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4618ECFA1BF449EF00C33159 /* Debug */,
-				4618ECFB1BF449EF00C33159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

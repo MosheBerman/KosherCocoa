@@ -16,21 +16,15 @@ KosherCocoa offers six distinct features, each provided by a set of classes in t
 
 Setting it up:
 ---
-Clone into, or download, the repository. Copy the folder called `Library` and import KosherCocoa.h. If you only want sunrise and sunset, you can copy the folder called `Solar` and ignore the rest.
+Clone into, or download, the repository. Copy the folder called `Library` and `#import KosherCocoa.h`. If you only want sunrise and sunset, you can copy the folder called `Solar` and ignore the rest.
 
-You can also use CocoaPods as of KosherCocoa 2.0.2.
+You can also use CocoaPods for KosherCocoa 2.0.2 - 2.1.9.
 
 Technical Requirements:
 ---
 The latest version of KosherCocoa has been developed with the iOS 7 SDK and uses ARC. You'll need Xcode 5 to make it work, because unit tests are built with XCTest.
 
 Even if your project doesn't use ARC, you'll want to compile KosherCocoa with ARC. Use the `-fobjc-arc` compiler flag for that.
-
-Appledoc:
----
-You can build your own documentation using [appledoc](https://github.com/tomaz/appledoc), if you have it.
-
-**Note:** As of 2.0.4, the default target will not run the appledoc script. In previous versions, the build script was part of the default build target, and would fail if you didn't have appledoc installed.
 
 Using KosherCocoa:
 ---
