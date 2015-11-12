@@ -9,6 +9,7 @@
  */
 
 #import "KCSunriseAndSunsetCalculator.h"
+#import "trigonometry.h"
 
 @implementation KCSunriseAndSunsetCalculator
 
