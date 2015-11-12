@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "MBCalendarCategories.h"
 #import "KCParasha.h"
+#import "NSCalendar+hebrewYearTypes.h"
 
 /**
  *  The KCParashatHashavuaCalculator class calculates which 
@@ -63,7 +64,7 @@
  *
  */
 
-- (NSArray *)parshiotInDiasporaDuringYearType:(kHebrewYearType)typeOfYear;
+- (NSArray *)parshiotInDiasporaDuringYearType:(enum kHebrewYearType)typeOfYear;
 
 /**
  *  Returns a listing of all parshiot in Israel 
@@ -80,6 +81,6 @@
  *
  */
 
-- (NSArray *)parshiotInIsraelDuringYearType:(kHebrewYearType)typeOfYear;
+- (NSArray *)parshiotInIsraelDuringYearType:(enum kHebrewYearType)typeOfYear;
 
 @end

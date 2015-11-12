@@ -48,7 +48,7 @@
 
 #pragma mark - Arrays of Parshiot
 
-- (NSArray *)parshiotInDiasporaDuringYearType:(kHebrewYearType)typeOfYear
+- (NSArray *)parshiotInDiasporaDuringYearType:(enum kHebrewYearType)typeOfYear
 {    
 
     NSArray *parshiot;
@@ -810,7 +810,7 @@
     return parshiot;
 }
 
-- (NSArray *)parshiotInIsraelDuringYearType:(kHebrewYearType)typeOfYear
+- (NSArray *)parshiotInIsraelDuringYearType:(enum kHebrewYearType)typeOfYear
 {
     NSArray *parshiot;
     
@@ -1588,7 +1588,7 @@
 
     NSInteger weeksSinceRoshHashana = [[self hebrewCalendar] weeksFromDate:roshHashana toDate:date];
     
-    kHebrewYearType type = [NSCalendar typeOfHebrewYearContainingDate:date];
+    enum kHebrewYearType type = [NSCalendar typeOfHebrewYearContainingDate:date];
     
 	//
 	//	Query the parshios
@@ -1611,7 +1611,7 @@
 
 #pragma mark - Parshiot For Year Type
 
-- (NSArray *)_parshiotForYearType:(kHebrewYearType)type inDiaspora:(BOOL)diaspora;
+- (NSArray *)_parshiotForYearType:(enum kHebrewYearType)type inDiaspora:(BOOL)diaspora;
 {
     return  diaspora ? [self parshiotInDiasporaDuringYearType:type] : [self parshiotInIsraelDuringYearType:type];
 }

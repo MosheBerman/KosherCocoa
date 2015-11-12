@@ -12,7 +12,7 @@
 #define KosherCocoa_KCTractates_h
 
 /**  An enumerated type representing the volume of the Babylonian Talmud. */
-NS_ENUM(NSInteger, KCTractate){
+typedef NS_ENUM(NSInteger, KCTractate){
     KCTractateBerachos = 0,
     KCTractateShabbos,
     KCTractateEruvin,

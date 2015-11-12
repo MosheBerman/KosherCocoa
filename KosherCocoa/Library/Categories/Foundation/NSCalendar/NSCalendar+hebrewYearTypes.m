@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Moshe Berman. All rights reserved.
 //
 
-#import "NSCalendar+HebrewYearTypes.h"
 #import "MBCalendarCategories.h"
 
 @implementation NSCalendar (HebrewYearTypes)
@@ -72,7 +71,7 @@
 }
 
 //  Returns one of fourteen types. See the kHebrewYearType enum above.
-+ (kHebrewYearType)typeOfHebrewYearContainingDate:(NSDate *)date
++ (enum kHebrewYearType)typeOfHebrewYearContainingDate:(NSDate *)date
 {
     enum kWeekday weekday = [self firstWeekdayOfHebrewYearContainingDate:date];
 

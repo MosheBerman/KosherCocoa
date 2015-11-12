@@ -17,7 +17,7 @@
  
  */
 
-NS_ENUM(NSInteger, KCParashaIdentifier){
+typedef NS_ENUM(NSInteger, KCParashaIdentifier){
     KCParashaBereshit = 0,
     KCParashaNoach,
     KCParashaLechLecha,
