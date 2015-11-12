@@ -33,7 +33,8 @@
  *  string.
  */
 
-NS_ENUM(NSInteger, KCSefiraCustom) {
+typedef NS_ENUM(NSInteger, KCSefiraCustom)
+{
     KCSefiraCustomAshkenaz,     //  Uses the bet prefix
     KCSefiraCustomSefard = 1,   //  Uses the lamed prefix
     KCSefiraCustomSephardic = 2 //  Uses the lamed prefix and sephardic formula
@@ -42,7 +43,7 @@ NS_ENUM(NSInteger, KCSefiraCustom) {
 /**
  *  This
  */
-NS_ENUM(NSInteger, KCSefiraLanguage) {
+typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
     KCSefiraLanguageHebrew = 0,             //  The count, in Hebrew
     KCSefiraLanguageEnglish,                //  The count, in English
     KCSefiraFormatterTransliteratedHebrew   //  The count, in Hebrew, spelled in English
