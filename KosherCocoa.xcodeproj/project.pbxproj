@@ -65,6 +65,7 @@
 		4618ED331BF4516900C33159 /* KCZenith.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFC17CAF3B900056F16 /* KCZenith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED341BF4516900C33159 /* KCZenithExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED351BF4516900C33159 /* KCParashaReadings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610DD911808999A0055A4F9 /* KCParashaReadings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4618ED381BF4D87C00C33159 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4618ED371BF4D87C00C33159 /* KosherCocoa.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,8 +91,9 @@
 		4618BBA61664216F00AD3CE5 /* KosherCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KosherCocoaTests.m; sourceTree = "<group>"; };
 		4618ECE51BF449EF00C33159 /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4618ECE71BF449EF00C33159 /* KosherCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KosherCocoa.h; path = ../KosherCocoa.h; sourceTree = "<group>"; };
-		4618ECE91BF449EF00C33159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4618ECE91BF449EF00C33159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KosherCocoa/Info.plist; sourceTree = "<group>"; };
 		4618ECEE1BF449EF00C33159 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4618ED371BF4D87C00C33159 /* KosherCocoa.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KosherCocoa.podspec; sourceTree = "<group>"; };
 		461E6DFC194474C300C497A8 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
 		461E6DFD194474C300C497A8 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
 		4668A4FD17DCFC5C00EB4169 /* AstronomicalCalendar.java */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.java; path = AstronomicalCalendar.java; sourceTree = "<group>"; };
@@ -208,8 +210,8 @@
 			children = (
 				4618BB8A1664216E00AD3CE5 /* KosherCocoa */,
 				4618BB9F1664216F00AD3CE5 /* KosherCocoaTests */,
-				4618ECE61BF449EF00C33159 /* KosherCocoa */,
 				4618BB861664216E00AD3CE5 /* Products */,
+				4618ED371BF4D87C00C33159 /* KosherCocoa.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,16 +229,9 @@
 			children = (
 				4668A4FB17DCFC5C00EB4169 /* java */,
 				466A3AB617CAF3B900056F16 /* Library */,
-				4618BB8B1664216E00AD3CE5 /* Supporting Files */,
+				4618ED361BF4D85000C33159 /* Supporting Files */,
 			);
 			path = KosherCocoa;
-			sourceTree = "<group>";
-		};
-		4618BB8B1664216E00AD3CE5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		4618BB9F1664216F00AD3CE5 /* KosherCocoaTests */ = {
@@ -259,12 +254,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4618ECE61BF449EF00C33159 /* KosherCocoa */ = {
+		4618ED361BF4D85000C33159 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				4618ECE91BF449EF00C33159 /* Info.plist */,
 			);
-			path = KosherCocoa;
+			name = "Supporting Files";
+			path = ..;
 			sourceTree = "<group>";
 		};
 		4668A4FB17DCFC5C00EB4169 /* java */ = {
@@ -636,6 +632,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4618ED381BF4D87C00C33159 /* KosherCocoa.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
