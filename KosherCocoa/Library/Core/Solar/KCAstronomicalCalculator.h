@@ -11,10 +11,11 @@
 #import <Foundation/Foundation.h>
 
 
-/** An abstract class whos subclasses return sunrise and sunset times.
+/**
+ *  A protocol defining methods to return sunrise and sunset times.
  */
 
-@interface KCAstronomicalCalculator : NSObject
+@protocol KCAstronomicalCalculator  <NSObject>
 
 /**-----
  * @name Calculating Sunrise
