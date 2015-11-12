@@ -1,11 +1,12 @@
-//
-//  NSCalendar+hebrewYearTypes.m
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 5/9/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
-
+/**
+ *  NSCalendar+hebrewYearTypes.m
+ *  KosherCocoa 3
+ *
+ *  Created by Moshe Berman on 5/9/13.
+ *  Updated by Moshe Berman on 11/12/15.
+ *
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ */
 #import "MBCalendarCategories.h"
 
 @implementation NSCalendar (HebrewYearTypes)

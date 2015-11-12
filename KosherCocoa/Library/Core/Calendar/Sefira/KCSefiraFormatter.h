@@ -1,11 +1,11 @@
 /**
  *  KCSefiraFormatter.h
- *  KosherCocoa 2
+ *  KosherCocoa 3
  *
  *  Created by Moshe Berman on 10/23/13 based on KosherJava by Eliyahu Hershfeld.
  *  Updated by Moshe Berman on 10/23/13.
  *
- *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  *
  *  ---
  *

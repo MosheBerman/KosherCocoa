@@ -22,7 +22,7 @@
 		<key>KosherCocoaTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<key>KosherCocoaWithDocs.xcscheme</key>
 		<dict>
@@ -42,6 +42,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4618ECE41BF449EF00C33159</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4618ECED1BF449EF00C33159</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>464EF2FF1922E5CE005396A9</key>
 		<dict>
 			<key>primary</key>
@@ -53,6 +63,11 @@
 			<true/>
 		</dict>
 		<key>4671CBA61B576BC000A956E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>467F6A8C1BE40B5500570ECC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,10 +1,12 @@
-//
-//  NSCalendar+DateComparison.m
-//  MBCalendarKit
-//
-//  Created by Moshe Berman on 4/13/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
+/**
+ *  NSCalendar+DateComparison.m
+ *  KosherCocoa 3
+ *
+ *  Created by Moshe Berman on 4/13/13.
+ *  Updated by Moshe Berman on 11/12/15.
+ *
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ */
 
 #import "NSCalendar+DateComparison.h"
 #import "NSCalendar+Components.h"

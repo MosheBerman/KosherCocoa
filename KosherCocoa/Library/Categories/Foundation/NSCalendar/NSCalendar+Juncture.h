@@ -1,10 +1,13 @@
-//
-//  NSCalendar+Juncture.h
-//  MBCalendarKit
-//
-//  Created by Moshe Berman on 4/10/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
+/**
+ *  NSCalendar+Juncture.h
+ *  KosherCocoa 3
+ *
+ *  Created by Moshe Berman on 4/10/13.
+ *  Updated by Moshe Berman on 9/24/13.
+ *
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ */
+
 
 #import <Foundation/Foundation.h>
 

@@ -1,11 +1,11 @@
 /**
  *  NSDate+ConvenientDates.h
- *  KosherCocoa 2
+ *  KosherCocoa 3
  *
  *  Created by Moshe Berman on 8/26/13.
- *  Updated by Moshe Berman on 8/26/13.
+ *  Updated by Moshe Berman on 11/12/15.
  *
- *  Use of KosherCocoa 2 is governed by the LGPL 2.1 License.
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
 #import <Foundation/Foundation.h>

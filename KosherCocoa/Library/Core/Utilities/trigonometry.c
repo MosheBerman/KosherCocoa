@@ -1,6 +1,6 @@
 /** 
  *  MathAdditions.c
- *  KosherCocoa 2
+ *  KosherCocoa 3
  *
  *  Created by Moshe Berman on 3/24/11.
  *  Modified by Moshe Berman on 8/25/13.

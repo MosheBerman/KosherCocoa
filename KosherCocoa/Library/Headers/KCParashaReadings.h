@@ -1,10 +1,12 @@
-//
-//  KCParashaReadings.h
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 10/11/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
+/**
+ *  KCParashaReadings.h
+ *  KosherCocoa 3
+ *
+ *  Created by Moshe Berman on 10/11/13.
+ *  Updated by Moshe Berman on 11/12/15.
+ *
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ */
 
 #ifndef KosherCocoa_KCParashaReadings_h
 #define KosherCocoa_KCParashaReadings_h

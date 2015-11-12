@@ -1,10 +1,12 @@
-//
-//  KosherCocoa.h
-//  KosherCocoa
-//
-//  Created by Moshe Berman on 11/11/15.
-//  Copyright © 2015 Moshe Berman. All rights reserved.
-//
+/**
+ *  KosherCocoa.h
+ *  KosherCocoa 3
+ *
+ *  Created by Moshe Berman on 5/10/13.
+ *  Updated by Moshe Berman on 9/24/13.
+ *
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ */
 
 #import <UIKit/UIKit.h>
 

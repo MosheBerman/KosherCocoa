@@ -1,10 +1,12 @@
-//
-//  NSDate+Description.m
-//  MBCalendarKit
-//
-//  Created by Moshe Berman on 4/14/13.
-//  Copyright (c) 2013 Moshe Berman. All rights reserved.
-//
+/**
+ *  NSDate+Description.m
+ *  KosherCocoa 3
+ *
+ *  Created by Moshe Berman on 4/14/13.
+ *  Updated by Moshe Berman on 11/12/15.
+ *
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ */
 
 #import "NSDate+Description.h"
 
