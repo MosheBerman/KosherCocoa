@@ -22,4 +22,6 @@
 #import "NSDate+ConvenientDates.h"
 #import "NSDate+Description.h"
 
+#import "NSDateComponents+AllComponents.h"
+
 #endif
