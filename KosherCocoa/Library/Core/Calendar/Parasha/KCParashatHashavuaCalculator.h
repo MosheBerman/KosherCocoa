@@ -11,7 +11,6 @@
 #import <Foundation/Foundation.h>
 #import "MBCalendarCategories.h"
 #import "KCParasha.h"
-#import "NSCalendar+hebrewYearTypes.h"
 
 /**
  *  The KCParashatHashavuaCalculator class calculates which 
