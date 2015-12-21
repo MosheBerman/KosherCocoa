@@ -615,32 +615,32 @@
                                 */
                                
                                NSStringFromSelector(@selector(misheyakir10Point2Degrees))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"משיכיר (10.20 מעלות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (10.20 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (10.20 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"First Sunlight (10.20 Degrees)",
+                                       @"koshercocoa.explanation" : @"Misheyakir based on the position of the sun when it is 10.2° below the geometric zenith (90°). This calculation is used for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 45 minutes before sunrise in Jerusalem during the equinox which calculates to 10.2° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(misheyakir11Degrees))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"משיכיר (11 מעלות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (11 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (11 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"First Sunlight (11 Degrees)",
+                                       @"koshercocoa.explanation" : @"based on the position of the sun when it is 11° below for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 48 minutes beforesunrise in Jerusalem during the equinox which calculates to 11° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(misheyakir11Point5Degrees))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"משיכיר (11.5 מעלות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (11.5 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (11.5 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"First Sunlight (11.5 Degrees)",
+                                       @"koshercocoa.explanation" : @"based on the position of the sun when it is 11.5° below for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 52 minutes beforesunrise in Jerusalem during the equinox which calculates to 11.5.° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(misheyakirAteretTorahWithMinutes:))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"משיכיר (עטרת תורה)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (Ateret Torah)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (Ateret Torah)",
+                                       @"koshercocoa.name.english" : @"First Sunlight (Ateret Torah)",
+                                       @"koshercocoa.explanation" : @"This method calculates the misheyakir as an offset the Alos 72 minutes, zmanis calculation.."
                                        },
                                
                                /**
@@ -648,25 +648,25 @@
                                 */
                                
                                NSStringFromSelector(@selector(sofZmanShmaGra))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (גר״א)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Gr\"a)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (Gr\"a)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (Gr'a)",
+                                       @"koshercocoa.explanation" : @"This time is 3 solar hours after sea level sunrise based on the opinion of the Vilna Gaon and the Baal Hatanya that the day is calculated from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMogenAvraham)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (מ״א)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (M\"A)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (M\"A)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (M\"A)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite shema in the morning in the opinion of the Mogen Avraham based on alos being 72 minutes before sunrise. This time is 3 solar hours after dawn based on the opinion of the Mogen Avraham that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaFixedLocal)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (קבוע)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Fixed Local)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (Fixed Local)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (Fixed Local)",
+                                       @"koshercocoa.explanation" : @"The latest time  to recite Shema in the morning calculated as 3 hours before fixed local chatzos."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
