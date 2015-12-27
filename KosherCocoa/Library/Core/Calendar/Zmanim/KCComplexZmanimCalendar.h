@@ -789,22 +789,6 @@
 - (NSDate *)sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees;
 
 /**
- * Deprecated. Pending confirmation from Rabbi Harfenes, this method is deprecated and should 
- * not be used. From the GRA in Kol Eliyahu on Berachos #173 that states that zman krias shema 
- * is calculated as half the time from sea level sunrise to fixed local chatzos. 
- * The GRA himself seems to contradict this when he stated that zman krias shema is 1/4 of the 
- * day from sunrise to sunset. See Sarah Lamoed #25 in Yisroel Vehazmanim Vol III page 1016.
- *
- * @return NSDate the Date of the latest zman krias shema based on this calculation. 
- *
- * If the calculation can't be computed such as in the Arctic Circle where there is at least one 
- * day a year where the sun does not rise, and one where it does not set, a nil will be returned. 
- * See detailed explanation on top of the KCAstronomicalCalendar documentation.
- */
-
-- (NSDate *)sofZmanShmaKolEliyahu;
-
-/**
  * This method returns the latest zman tfila (time to recite the morning prayers) according to 
  * the opinion of the Magen Avraham based on alos being 19.8° before sunrise. 
  * This time is 4 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham
