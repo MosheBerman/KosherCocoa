@@ -734,32 +734,32 @@
                                        @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the Magen Avraham based on alos being 120 minutes or 1/6th of the day before sunrise. This time is 3 solar hours after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 120 minutes before sunrise to nightfall of 120 minutes after sunset. "
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
-                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
-                                       @"koshercocoa.explanation" : @"<#explanation#>"
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (120 דקות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (120 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (120 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (120 Minutes)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the Magen Avraham based on alos being 120 minutes or 1/6th of the day before sunrise. This time is 3 solar hours after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 120 minutes before sunrise to nightfall of 120 minutes after sunset. "
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)) : @{
-                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
-                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
-                                       @"koshercocoa.explanation" : @"<#explanation#>"
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (;16.1 מעלות עד שקיעה)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (16.1 Maalos Ad Shkia)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (16.1 Ma'alot Ad Shkia)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (16.1 Degrees to Sunset)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning based on the opinion that the day starts at alos 16.1° and ends at sea level sunset. 3 solart hours are calculated based on this day and added to alos to reach this time. This time is 3 solar hours after dawn based on the opinion that the day is calculated from a alos 16.1° to sea level sunset. Note: Based on this calculation chatzos will not be at midday."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
-                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
-                                       @"koshercocoa.explanation" : @"<#explanation#>"
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (צאת גאונים)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Tzais Geonim)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (Tzait Ge'onim)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (Tzais Geonim)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning based on the opinion that the day starts at alos 16.1° and ends at tzais 7.083°. 3 solar hours are calculated based on this day and added to alos to reach this time. This time is 3 shaos zmaniyos (temporal hours) after alos 16.1° based on the opinion that the day is calculated from a alos 16.1° to tzais 7.083°. Note: Based on this calculation chatzos will not be at midday."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaKolEliyahu)) : @{
-                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
-                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
-                                       @"koshercocoa.explanation" : @"<#explanation#>"
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (קול אליהו)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Kol Eliyahu)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (Kol Eliyahu)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (Kol Eliyahu)",
+                                       @"koshercocoa.explanation" : @" Deprecated. Pending confirmation from Rabbi Harfenes, this method is deprecated and should not be used. From the GRA in Kol Eliyahu on Berachos #173 that states that zman krias shema is calculated as half the time from sea level sunrise to fixed local chatzos. The GRA himself seems to contradict this when he stated that zman krias shema is 1/4 of the  day from sunrise to sunset. See Sarah Lamoed #25 in Yisroel Vehazmanim Vol III page 1016."
                                        },
                                
                                /**
