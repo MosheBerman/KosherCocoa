@@ -396,7 +396,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (M'A)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (M'A)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (M'A)",
-                                       @"koshercocoa.explanation" : @" A shaah zmanis (temporal hour) according to the opinion of the Magen Avraham. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk (for sof zman krias shema and tfila). Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after sunset. This day is split into 12 equal parts with each part being a temporal hour."
+                                       @"koshercocoa.explanation" : @" A shaah zmanis (temporal hour) according to the opinion of the Mogen Avraham. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk (for sof zman krias shema and tfila). Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after sunset. This day is split into 12 equal parts with each part being a temporal hour."
                                        },
                                
                                NSStringFromSelector(@selector(shaahZmanisGra)) : @{
@@ -419,70 +419,70 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (18 Maalos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (18 Maalos)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (18 Degrees)",
-                                       @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using an 18 degree dip. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 18 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 18 degrees below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
+                                       @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using an 18 degree dip. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 18 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 18 degrees below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (19.8 מעלות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (19.8 Maalos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (19.8 Maalot)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (19.8 Degrees)",
-                                       @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using a 19.8 degree dip. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 19.8 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 19.8 degrees below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis"
+                                       @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using a 19.8 degree dip. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 19.8 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 19.8 degrees below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis"
                                        },
                                NSStringFromSelector(@selector(shaahZmanis26Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (26 מעלות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (26 Maalos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (26 Maalot)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (26 Degrees)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a 26 degree dip. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 26 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 26 degree below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a 26 degree dip. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is  when the sun is 26 degrees below the eastern geometric horizon before sunrise. Dusk for this is when the sun is 26 degree below the western geometric horizon after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis60Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (60 דקות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (60 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (60 Dakot)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (60 Minutes)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (solar hour) according to the opinion of the Magen Avraham. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 60 minutes before sunrise and dusk is 60 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (solar hour) according to the opinion of the Mogen Avraham. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 60 minutes before sunrise and dusk is 60 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (72 דקות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (72 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (72 Dakot)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (72 Minutes)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (solar hour) according to the opinion of the Magen Avraham. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (solar hour) according to the opinion of the Mogen Avraham. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis72MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (72 דקות זמנית)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (72 Dakos Zmanis)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (72 Dakot Zmanit)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (72 Temporal Minutes)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham based on alos being 72 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 72 minutes zmaniyos before sunrise and dusk is 72 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/10th of the day from sunrise to sunset."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Mogen Avraham based on alos being 72 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 72 minutes zmaniyos before sunrise and dusk is 72 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/10th of the day from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis90Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (90 דקות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (90 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (90 Dakot)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (90 Minutes)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a dip of 90 minutes. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 90 minutes before sunrise and dusk is 90 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a dip of 90 minutes. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 90 minutes before sunrise and dusk is 90 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis90MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (90 דקות זמנית)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (90 Dakos Zmanis)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (90 Dakot Zmanit)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (90 Temporal Minutes)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham based on alos being 90 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 90 minutes zmaniyos before sunrise and dusk is 90 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/8th of the day from sunrise to sunset."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Mogen Avraham based on alos being 90 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 90 minutes zmaniyos before sunrise and dusk is 90 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/8th of the day from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis96Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (96 דקות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (96 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (96 Dakot)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (96 Minutes)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a dip of 96 minutes. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 96 minutes before sunrise and dusk is 96 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) calculated using a dip of 96 minutes. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 96 minutes before sunrise and dusk is 96 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis96MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (96 דקות זמנית)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (96 Dakos Zmanis)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (96 Dakot Zmanit)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (96 Temporal Minutes)",
-                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Magen Avraham based on alos being 96 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 96 minutes zmaniyos before sunrise and dusk is 96 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/7.5th of the day from sunrise to sunset."
+                                       @"koshercocoa.explanation" : @"Method to return a shaah zmanis (temporal hour) according to the opinion of the Mogen Avraham based on alos being 96 minutes zmaniyos before sunrise. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 96 minutes zmaniyos before sunrise and dusk is 96 minutes zmaniyos after sunset. This day is split into 12 equal parts with each part being a shaah zmanis. This is identical to 1/7.5th of the day from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(shaahZmanisAteretTorah)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (עטרת תורה)",
@@ -496,7 +496,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (120 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (120 Dakot)",
                                        @"koshercocoa.name.english" : @"Temporal Hour (120 Minutes)",
-                                       @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using a dip of 120 minutes. This calculation divides the day based on the opinion of the Magen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 120 minutes before sunrise and dusk is 120 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
+                                       @"koshercocoa.explanation" : @"A shaah zmanis (temporal hour) calculated using a dip of 120 minutes. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk. Dawn for this calculation is 120 minutes before sunrise and dusk is 120 minutes after sunset. This day is split into 12 equal parts with each part being a shaah zmanis."
                                        },
                                NSStringFromSelector(@selector(shaahZmanis120MinutesZmanis))  : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (120 דקות זמנית)",
@@ -640,7 +640,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (Ateret Torah)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (Ateret Torah)",
                                        @"koshercocoa.name.english" : @"First Sunlight (Ateret Torah)",
-                                       @"koshercocoa.explanation" : @"This method calculates the misheyakir as an offset the Alos 72 minutes, zmanis calculation.."
+                                       @"koshercocoa.explanation" : @"This method calculates the misheyakir as an offset the Alos 72 minutes, zmanis calculation."
                                        },
                                
                                /**
@@ -663,101 +663,103 @@
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaFixedLocal)) : @{
                                        @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (קבוע)",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Fixed Local)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Kavua)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (Fixed Local)",
-                                       @"koshercocoa.name.english" : @"Latest Shema (Fixed Local)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (Kavuah)",
                                        @"koshercocoa.explanation" : @"The latest time  to recite Shema in the morning calculated as 3 hours before fixed local chatzos."
                                        },
+                               
+                               /* (19.8 מעלות) */
                                NSStringFromSelector(@selector(sofZmanShmaMGA19Point8Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (19.8 מעלות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (19.8 Maalos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (19.8 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (19.8 Degrees)",
+                                       @"koshercocoa.explanation" : @"The latest zman krias shema (time to recite Shema in the morning) according to the opinion of the Mogen Avraham based on alos being 19.8° before sunrise. This time is 3 solar hours after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall with both being 19.8° below sunrise or sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA16Point1Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(16.1 מעלות) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (16.1 Maalos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (16.1 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (16.1 Degrees)",
+                                       @"koshercocoa.explanation" : @"the latest time to recite Shema in the morning according to the opinion of the Mogen Avraham  based on alos being 16.1° before sunrise. This time is 3 solar hours after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall with both being 16.1° below sunrise or sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA72Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(72 דקות) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (72 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (72 Minutes)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the Mogen Avraham based on alos being 72 minutes before sunrise. This time is 3 shaos solar hours after dawn based on the opinion of the Mogen Avraham that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA72MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(72 דקות זמנית) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (72 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (72 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (72 Temporal Minutes)",
+                                       @"koshercocoa.explanation" : @"Latest time to recite Shema in the morning) according to the opinion of the Mogen Avraham based on dawn being 72 temporal minutes, or 1/10th of the day before sunrise. This time is 3 shaos solar hours after dawn based on the opinion of the Mogen Avraham that the day is calculated from a dawn of 72 minutes zmaniyos, or 1/10th of the day before sea level sunrise to nightfall of 72 minutes zmaniyos after sea level sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA90Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(90 דקות) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (90 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (90 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (90 Minutes)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the Mogen Avraham based on alos being 90 minutes before sunrise. This time is 3 solar hours after dawn based on the opinion of the Mogen Avraham that the day is calculated from a dawn of 90 minutes before sunrise to nightfall of 90 minutes after sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA90MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (90 דקות זמנית)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (90 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (90 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (90 Minutes)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the MGA based on alos being 90 minutes zmaniyos before sunrise. This time is 3 solar hours after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 90 minutes zmaniyos before sunrise to nightfall of 90 minutes zmaniyos after sunset. "
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA96Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(96 דקות) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (96 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (96 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (96 Minutes)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the MGA based on alos being 96 minutes before sunrise. This time is 3 shaos zmaniyos solar hours after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 96 minutes before sunrise to nightfall of 96 minutes after sunset. "
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA96MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (96 דקות זמנית)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (96 Dakos Zmanis)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (96 Dakot Zmanit)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (96 Solar Minutes)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the MGA based on alos being 96 minutes zmaniyos before sunrise. This time is 3 solar hours after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 96 minutes zmaniyos before sunrise to nightfall of 96 minutes zmaniyos after sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanShma3HoursBeforeChatzos)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (3 שעות לפני חצות)",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (3 Shaos L'fnei Chatzos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (3 Sha'ot L'fnei Chatzot)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (3 Hours Before Chatzos)",
+                                       @"koshercocoa.explanation" : @"The latest time to recite Shema in the morning according to the opinion of the Magen Avraham based on alos being 120 minutes or 1/6th of the day before sunrise. This time is 3 solar hours after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 120 minutes before sunrise to nightfall of 120 minutes after sunset. "
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaKolEliyahu)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(<#Modifier#>) סוף זמן קריאת שמע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (<#modifier#>)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kri'at Shema (<#modifier#>)",
+                                       @"koshercocoa.name.english" : @"Latest Shema (<#modifier#>)",
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                /**
@@ -769,91 +771,91 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaGra)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaFixedLocal)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA72MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA90Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA90MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA96Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA96MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA120Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfila2HoursBeforeChatzos))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                /**
@@ -865,56 +867,56 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaGedola30Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaGedola72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaGedola16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaGedola30Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaGedolaGreaterThan30)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaGedola16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaGedolaAteretTorah))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                /**
@@ -926,28 +928,28 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaKetana16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaKetana72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(minchaKetanaAteretTorah))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                /**
@@ -959,98 +961,98 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha60Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha72Minutes))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha72MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha90Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha90MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha96Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha96MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha18Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagHamincha26Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagAlosToSunset)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(plagAlos16Point1ToTzaisGeonim7Point083Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                /**
@@ -1062,28 +1064,28 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(bainHashmashosRT58Point5Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(bainHashmashosRT13Point5MinutesBefore7Point083Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(bainHashmashosRT2Stars)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                /**
@@ -1095,168 +1097,168 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim5Point95Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim5Point88Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim3Point65Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim4Point37Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim4Point61Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim4Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim7Point083Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim8Point5Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais50)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais60)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzaisAteretTorah)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais72)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais72Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais90)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais90Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais96)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais96Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais120)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais120Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais26Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais18Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(tzais19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                
@@ -1269,21 +1271,21 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanAchilasChametzMGA16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                
                                /**
@@ -1295,21 +1297,21 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"<#explanation#>"
                                        }
                                };
         
