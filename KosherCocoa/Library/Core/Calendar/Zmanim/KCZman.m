@@ -230,7 +230,6 @@
                           NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)),
                           NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)),
                           NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees)),
-                          NSStringFromSelector(@selector(sofZmanShmaKolEliyahu)),
                           ],
                       
                       /**
