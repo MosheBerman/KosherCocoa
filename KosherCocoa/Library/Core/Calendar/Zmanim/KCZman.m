@@ -205,6 +205,14 @@
                           ],
                       
                       /**
+                       *
+                       */
+                      
+                      @[
+                          NSStringFromSelector(@selector(sunrise))
+                          ],
+                      
+                      /**
                        *    Sof Zman Shma
                        */
                       
@@ -652,6 +660,17 @@
                                        @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (Ateret Torah)",
                                        @"koshercocoa.name.english" : @"First Sunlight (Ateret Torah)",
                                        @"koshercocoa.explanation.english" : @"This method calculates the misheyakir as an offset the Alos 72 minutes, zmanis calculation."
+                                       },
+                               /**
+                                *   Sunrise
+                                */
+                               
+                               NSStringFromSelector(@selector(sunrise))  : @{
+                                       @"koshercocoa.name.hebrew" : @"נץ החמה",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Naitz HAchama",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Netz Hachama",
+                                       @"koshercocoa.name.english" : @"Sunrise",
+                                       @"koshercocoa.explanation.english" : @"Sunrise at the current location. The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation. This is adjusted to add approximately 50/60 of a degree to account for 34 archminutes of refraction and 16 archminutes for the sun's radius for a total of 90.83333 degrees."
                                        },
                                
                                /**
