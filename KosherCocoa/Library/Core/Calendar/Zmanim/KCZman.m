@@ -11,12 +11,6 @@
 
 @interface KCZman ()
 
-/**
- *  The selector used to calculate the zman.
- */
-
-@property SEL selector;
-
 @end
 
 @implementation KCZman
@@ -385,11 +379,12 @@
 - (NSDictionary *)_metadataForCurrentZman
 {
     
-    static NSDictionary * metadata = nil;
+    NSDictionary * metadata = nil;
+    static  NSDictionary *data = nil;
     
-    if (metadata == nil)
+    if (data == nil)
     {
-        NSDictionary *data = @{
+         data = @{
                                NSStringFromSelector(@selector(shaahZmanisMogenAvraham)) : @{
                                        @"koshercocoa.name.hebrew" : @"שעה זמנית (מ״א)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (M'A)",
@@ -1306,9 +1301,9 @@
                                        @"koshercocoa.explanation.english" : @"<#explanation#>"
                                        }
                                };
-        
-        metadata = data[NSStringFromSelector(self.selector)];
     }
+    
+    metadata = data[NSStringFromSelector(self.selector)];
     
     return metadata;
 }

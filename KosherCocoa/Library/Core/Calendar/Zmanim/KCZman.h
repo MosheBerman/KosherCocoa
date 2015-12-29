@@ -12,6 +12,12 @@
 
 @interface KCZman : NSObject
 
+/**
+ *  The selector used to calculate the zman.
+ */
+
+@property (readonly) SEL selector;
+
 #pragma mark - Instantiating a Zman
 
 /** ---
