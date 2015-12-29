@@ -247,6 +247,15 @@
                           ],
                       
                       /**
+                       *    Chatzos
+                       */
+                      
+                      @[
+                          NSStringFromSelector(@selector(chatzos)),
+                          NSStringFromSelector(@selector(fixedLocalChatzos))
+                          ],
+                      
+                      /**
                        *    Mincha Gedola
                        */
                       
@@ -291,6 +300,14 @@
                           NSStringFromSelector(@selector(plagHamincha26Degrees)),
                           NSStringFromSelector(@selector(plagAlosToSunset)),
                           NSStringFromSelector(@selector(plagAlos16Point1ToTzaisGeonim7Point083Degrees))
+                          ],
+                      
+                      /**
+                       *    Sunset
+                       */
+                      
+                      @[
+                          NSStringFromSelector(@selector(sunset))
                           ],
                       
                       /**
@@ -754,16 +771,16 @@
                                 */
                                
                                NSStringFromSelector(@selector(sofZmanTfilaMogenAvraham))  : @{
-                                       @"koshercocoa.name.hebrew" : @"סוף זמן תפילה (<##>)",
+                                       @"koshercocoa.name.hebrew" : @"סוף זמן תפילה (מגן אברהם))",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"<##>",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman T'fila (Mogen Avraham)",
                                        @"koshercocoa.name.english" : @"",
                                        @"koshercocoa.explanation.english" : @"<#explanation#>"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaGra)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman T'fila (Gr'a)",
                                        @"koshercocoa.name.english" : @"",
                                        @"koshercocoa.explanation.english" : @"<#explanation#>"
                                        },
@@ -846,6 +863,27 @@
                                        },
                                
                                /**
+                                *   Chatzos
+                                */
+                               
+                               NSStringFromSelector(@selector(chatzos))  : @{
+                                       @"koshercocoa.name.hebrew" : @"חצות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Chatzos",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Chatzot",
+                                       @"koshercocoa.name.english" : @"Midday",
+                                       @"koshercocoa.explanation.english" : @"Midday following the opinion of the GRA that the day for Jewish halachic times start at sea level sunrise and ends at sea level sunset."
+                                       },
+                               
+                               NSStringFromSelector(@selector(fixedLocalChatzos))  : @{
+                                       @"koshercocoa.name.hebrew" : @"חצות קבוע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Chatzos Kavua",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Chatzot Kavu'a",
+                                       @"koshercocoa.name.english" : @"Fixed Local Midday",
+                                       @"koshercocoa.explanation.english" : @"This time is noon and midnight adjusted from standard time to account for the local latitude. The 360° of the globe divided by 24 calculates to 15° per hour with 4 minutes per degree, so at a longitude of 0 , 15, 30 etc... Chatzos in 12:00 noon. Lakewood, N.J., whose longitude is -74.2094, is 0.7906 away from the closest multiple of 15 at -75°. This is multiplied by 4 to yield 3 minutes and 10 seconds for a chatzos of 11:56:50.  This method is not tied to the theoretical 15° timezones, but will adjust to the actual timezone and Daylight saving time."
+                                       },
+                               
+                               
+                               /**
                                 *    Mincha Gedola
                                 */
                                
@@ -873,9 +911,9 @@
                                NSStringFromSelector(@selector(minchaGedola16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola (16.1 Ma'alot)",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"<#explanation#>"
+                                       @"koshercocoa.explanation.english" : @"The time of mincha gedola according to the Magen Avraham with the day starting and ending 16.1° below the horizon. This is the earliest time to pray mincha."
                                        },
                                NSStringFromSelector(@selector(minchaGedola30Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -920,9 +958,9 @@
                                NSStringFromSelector(@selector(minchaKetana16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana (16.1 Ma'alot)",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"<#explanation#>"
+                                       @"koshercocoa.explanation.english" : @"The time of mincha gedola according to the Magen Avraham with the day starting and ending 16.1° below the horizon. This is the earliest time to pray mincha."
                                        },
                                NSStringFromSelector(@selector(minchaKetana72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -946,9 +984,9 @@
                                NSStringFromSelector(@selector(plagHamincha)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"<#explanation#>"
+                                       @"koshercocoa.explanation.english" : @"This is calculated as 10.75 hours after sunrise. This calculation is based on the opinion of the G'ra' and the Baal Hatanya that the day is calculated from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(plagHamincha60Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1041,6 +1079,17 @@
                                        @"koshercocoa.name.english" : @"",
                                        @"koshercocoa.explanation.english" : @"<#explanation#>"
                                        },
+                               /**
+                                *
+                                */
+                               
+                               NSStringFromSelector(@selector(sunset)) : @{
+                                       @"koshercocoa.name.hebrew" : @"<##>",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Shkias Hachama",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Shki'at Hachama",
+                                       @"koshercocoa.name.english" : @"Sunset",
+                                       @"koshercocoa.explanation.english" : @"The time of sunset, taking elevation into account."
+                                       },
                                
                                /**
                                 *  Bain Hashmashos
@@ -1082,9 +1131,9 @@
                                NSStringFromSelector(@selector(tzais))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"<#explanation#>"
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim",
+                                       @"koshercocoa.name.english" : @"First Starlight",
+                                       @"koshercocoa.explanation.english" : @"This calculation is based on the position of the sun 36 minutes after sunset in Jerusalem on March 16, about 4 days before the equinox, the day that a solar hour is 60 minutes, which is 8.5degrees below geometric zenith. The Ohr Meir considers this the time that 3 small stars are visible, which is later than the required 3 medium stars."
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim5Point95Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1165,10 +1214,10 @@
                                        },
                                NSStringFromSelector(@selector(tzais72)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"<#explanation#>"
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (72 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (72 Dakot)",
+                                       @"koshercocoa.name.english" : @"First Starlight (72 Minutes)",
+                                       @"koshercocoa.explanation.english" : @"Calculated as 72 minutes after sunset, not taking elevation into account."
                                        },
                                NSStringFromSelector(@selector(tzais72Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
