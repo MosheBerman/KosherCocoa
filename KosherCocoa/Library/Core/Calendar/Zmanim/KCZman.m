@@ -1149,8 +1149,8 @@
                                
                                NSStringFromSelector(@selector(tzais))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (8.5 Maalos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (8.5 Ma'alot)",
                                        @"koshercocoa.name.english" : @"First Starlight",
                                        @"koshercocoa.explanation.english" : @"This calculation is based on the position of the sun 36 minutes after sunset in Jerusalem on March 16, about 4 days before the equinox, the day that a solar hour is 60 minutes, which is 8.5degrees below geometric zenith. The Ohr Meir considers this the time that 3 small stars are visible, which is later than the required 3 medium stars."
                                        },
