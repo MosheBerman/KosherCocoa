@@ -626,7 +626,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (16.1 Ma'alos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (16.1 Ma'alot)",
                                        @"koshercocoa.name.english" : @"Dawn (16.1 Degrees)",
-                                       @"koshercocoa.explanation.english" : @"(dawn) calculated when the sun is 16.1° below the eastern geometric horizon before sunrise. This calculation is based on the same calculation of 72 minutes but uses a degree based calculation instead of 72 exact minutes. This calculation is based on the position of the sun 72 minutes before sunrise in Jerusalem during the equinox which calculates to 16.1° below geometric zenith."
+                                       @"koshercocoa.explanation.english" : @"Dawn calculated when the sun is 16.1° below the eastern geometric horizon before sunrise. This calculation is based on the same calculation of 72 minutes but uses a degree based calculation instead of 72 exact minutes. This calculation is based on the position of the sun 72 minutes before sunrise in Jerusalem during the equinox which calculates to 16.1° below geometric zenith."
                                        },
                                
                                /**
@@ -638,21 +638,21 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (10.20 Ma'alos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (10.20 Ma'alot)",
                                        @"koshercocoa.name.english" : @"First Sunlight (10.20 Degrees)",
-                                       @"koshercocoa.explanation.english" : @"Misheyakir based on the position of the sun when it is 10.2° below the geometric zenith (90°). This calculation is used for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 45 minutes before sunrise in Jerusalem during the equinox which calculates to 10.2° below geometric zenith."
+                                       @"koshercocoa.explanation.english" : @"Based on the position of the sun when it is 10.2° below the geometric zenith (90°). This calculation is used for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 45 minutes before sunrise in Jerusalem during the equinox which calculates to 10.2° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(misheyakir11Degrees))  : @{
                                        @"koshercocoa.name.hebrew" : @"משיכיר (11 מעלות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (11 Ma'alos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (11 Ma'alot)",
                                        @"koshercocoa.name.english" : @"First Sunlight (11 Degrees)",
-                                       @"koshercocoa.explanation.english" : @"based on the position of the sun when it is 11° below for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 48 minutes beforesunrise in Jerusalem during the equinox which calculates to 11° below geometric zenith."
+                                       @"koshercocoa.explanation.english" : @"Based on the position of the sun when it is 11° below for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 48 minutes beforesunrise in Jerusalem during the equinox which calculates to 11° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(misheyakir11Point5Degrees))  : @{
                                        @"koshercocoa.name.hebrew" : @"משיכיר (11.5 מעלות)",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (11.5 Ma'alos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (11.5 Ma'alot)",
                                        @"koshercocoa.name.english" : @"First Sunlight (11.5 Degrees)",
-                                       @"koshercocoa.explanation.english" : @"based on the position of the sun when it is 11.5° below for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 52 minutes beforesunrise in Jerusalem during the equinox which calculates to 11.5.° below geometric zenith."
+                                       @"koshercocoa.explanation.english" : @"Based on the position of the sun when it is 11.5° below for calculating misheyakir according to some opinions. This calculation is based on the position of the sun 52 minutes before sunrise in Jerusalem during the equinox which calculates to 11.5.° below geometric zenith."
                                        },
                                NSStringFromSelector(@selector(misheyakirAteretTorahWithMinutes:))  : @{
                                        @"koshercocoa.name.hebrew" : @"משיכיר (עטרת תורה)",
@@ -794,14 +794,14 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman T'fila (Mogen Avraham)",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"<#explanation#>"
+                                       @"koshercocoa.explanation.english" : @"The latest time to recite the morning prayers in the opinion of the Mogen Avraham based on alos being 72 minutes before sunrise. This time is 4 solar hours after dawn based on the opinion of the <em>MGA</em> that the day is calculated from a dawn of 72 minutes before sunrise to nightfall} of 72 minutes after sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaGra)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman T'fila (Gr'a)",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"<#explanation#>"
+                                       @"koshercocoa.explanation.english" : @"The latest time to recite the morning prayers in the opinion of the Mogen Avraham based on alos being 72 minutes before sunrise. This time is 4 solar hours after dawn based on the opinion of the Mogen Avraham that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset."
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaFixedLocal)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -894,10 +894,10 @@
                                        },
                                
                                NSStringFromSelector(@selector(fixedLocalChatzos))  : @{
-                                       @"koshercocoa.name.hebrew" : @"חצות קבוע",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Chatzos Kavua",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"Chatzot Kavu'a",
-                                       @"koshercocoa.name.english" : @"Fixed Local Midday",
+                                       @"koshercocoa.name.hebrew" : @"(חצות (קבוע",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Chatzos (Kavua)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Chatzot (Kavu'a)",
+                                       @"koshercocoa.name.english" : @"Midday (Fixed Local)",
                                        @"koshercocoa.explanation.english" : @"This time is noon and midnight adjusted from standard time to account for the local latitude. The 360° of the globe divided by 24 calculates to 15° per hour with 4 minutes per degree, so at a longitude of 0 , 15, 30 etc... Chatzos in 12:00 noon. Lakewood, N.J., whose longitude is -74.2094, is 0.7906 away from the closest multiple of 15 at -75°. This is multiplied by 4 to yield 3 minutes and 10 seconds for a chatzos of 11:56:50.  This method is not tied to the theoretical 15° timezones, but will adjust to the actual timezone and Daylight saving time."
                                        },
                                
@@ -932,7 +932,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola (16.1 Ma'alot)",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"The time of mincha gedola according to the Magen Avraham with the day starting and ending 16.1° below the horizon. This is the earliest time to pray mincha."
+                                       @"koshercocoa.explanation.english" : @"The the earliest time to pray mincha according to the Mogen Avraham with the day starting and ending 16.1° below the horizon."
                                        },
                                NSStringFromSelector(@selector(minchaGedola30Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -979,7 +979,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana (16.1 Ma'alot)",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"The time of mincha gedola according to the Magen Avraham with the day starting and ending 16.1° below the horizon. This is the earliest time to pray mincha."
+                                       @"koshercocoa.explanation.english" : @"The time of mincha ketana according to the Magen Avraham with the day starting and ending 16.1° below the horizon. This is the perfered earliest time to pray mincha according to the opinion of the Rambam and others. This is calculated as 9.5 solar hours after alos. "
                                        },
                                NSStringFromSelector(@selector(minchaKetana72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1005,7 +1005,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation.english" : @"This is calculated as 10.75 hours after sunrise. This calculation is based on the opinion of the G'ra' and the Baal Hatanya that the day is calculated from sunrise to sunset."
+                                       @"koshercocoa.explanation.english" : @"This is calculated as 10.75 hours after sunrise. This calculation is based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset."
                                        },
                                NSStringFromSelector(@selector(plagHamincha60Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1103,7 +1103,7 @@
                                 */
                                
                                NSStringFromSelector(@selector(sunset)) : @{
-                                       @"koshercocoa.name.hebrew" : @"<##>",
+                                       @"koshercocoa.name.hebrew" : @"שקיעת החמה",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Shkias Hachama",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Shki'at Hachama",
                                        @"koshercocoa.name.english" : @"Sunset",
