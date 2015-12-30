@@ -236,13 +236,16 @@
 - (NSDate *)plagHamincha;
 
 /**
- *  TODO: Document.
+ *  This calculation is based on the position of the sun 36 minutes after sunset in Jerusalem on March 16,
+ *  about 4 days before the equinox, the day that a solar hour is 60 minutes, which is 8.5degrees below geometric
+ *  zenith. The Ohr Meir considers this the time that 3 small stars are visible, which is later than the required
+ *  3 medium stars.
  */
 
 - (NSDate *)tzais;
 
 /**
- *  TODO: Document.
+ *  Calculated as 72 minutes after sunset, not taking elevation into account.
  */
 
 - (NSDate *)tzais72;
