@@ -1376,4 +1376,24 @@
     return metadata;
 }
 
+/**
+ *  Comparisons
+ */
+
+- (BOOL)isEqual:(id)object
+{
+    BOOL isOtherAlsoZman = [object isKindOfClass:[KCZman class]];
+    BOOL equal = [super isEqual:object] && isOtherAlsoZman && [self isEqualToZman:(KCZman *)object];
+    
+    return equal;
+}
+
+- (BOOL)isEqualToZman:(KCZman *)anotherZman
+{
+    NSString *mySelector = NSStringFromSelector(self.selector);
+    NSString *otherZmanSelector = NSStringFromSelector(anotherZman.selector);
+    
+    return [mySelector isEqualToString:otherZmanSelector];
+}
+
 @end

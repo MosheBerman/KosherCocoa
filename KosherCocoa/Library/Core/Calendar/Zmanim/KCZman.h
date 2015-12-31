@@ -115,5 +115,12 @@
  */
 
 - (NSArray *)relatedZmanim;
+
+/**
+ *  Comparisons
+ */
+
+- (BOOL)isEqual:(id)object;
+- (BOOL)isEqualToZman:(KCZman *)anotherZman;
  
 @end
