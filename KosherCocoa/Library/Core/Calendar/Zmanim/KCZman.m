@@ -628,24 +628,24 @@
                                 */
                                
                                NSStringFromSelector(@selector(misheyakir10Point2Degrees))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(משיכיר (10.2 מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (10.2 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (10.2 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Misheyakir (10.2 Degrees)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(misheyakir11Degrees))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(משיכיר (11 מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (11 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (11 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Misheyakir (11 Degrees)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(misheyakir11Point5Degrees))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(משיכיר (11.5 מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (11.5 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (11.5 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Misheyakir (11.5 Degrees)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(misheyakirAteretTorahWithMinutes:))  : @{
@@ -661,17 +661,17 @@
                                 */
                                
                                NSStringFromSelector(@selector(sofZmanShmaGra))  : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (גר"א ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (Gr'a)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (Gr'a",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (Gr'a)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMogenAvraham)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaFixedLocal)) : @{
@@ -682,59 +682,59 @@
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA19Point8Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 19.8  מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 19.8 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 19.8 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 19.8 Degrees)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA16Point1Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 16.1  מעלות",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 16.1 Ma'alos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 16.1 Ma'alot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 16.1 Degrees)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA72Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 72 דקות ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 72 Minutes)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA72MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 72 דקות ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakos Zmaniyos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakot  Zmaniyot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 72 Temporal Minutes)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA90Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 90 דקות ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 90 Minutes)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA90MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 90 דקות ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakos Zmaniyos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakot  Zmaniyot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 90 Temporal Minutes)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA96Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 96 דקות ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 96 Minutes)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA96MinutesZmanis)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 96 דקות ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakos Zmaniyos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakot  Zmaniyot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 96 Temporal Minutes)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShma3HoursBeforeChatzos)) : @{
@@ -745,10 +745,10 @@
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 9120 דקות ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 120 Dakos)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 120 Dakot)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 120 Minutes)",
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)) : @{
