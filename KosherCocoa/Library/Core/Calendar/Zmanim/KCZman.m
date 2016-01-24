@@ -665,14 +665,16 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (Gr'a)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (Gr'a",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (Gr'a)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning). This time is 3 shaos zmaniyos (solar hours) after sea level sunrise based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMogenAvraham)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite shema in the morning) in the opinion of the MGA based on alos being 72 minutes before sunrise. This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of the MGA that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaFixedLocal)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -682,95 +684,108 @@
                                        @"koshercocoa.explanation" : @""
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA19Point8Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 19.8  מעלות",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 19.8 מעלות",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 19.8 Ma'alos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 19.8 Ma'alot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 19.8 Degrees)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This method returns the latest zman krias shema (time to recite Shema in the morning) according  to the opinion of the MGA based on alos being 19.8° before sunrise. This time is 3 shaos  zmaniyos (solar hours) after dawn based on the opinion of the MGA that the day is calculated  from dawn to nightfall with both being 19.8° below sunrise or sunset.  This returns the time of 3 * ShaahZmanis19Point8Degrees() after dawn.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA16Point1Degrees)) : @{
-                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 16.1  מעלות",
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 16.1 מעלות",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 16.1 Ma'alos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 16.1 Ma'alot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 16.1 Degrees)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) according  to the opinion of the MGA based on alos being 16.1° before sunrise. This time is 3 shaos  zmaniyos (solar hours) after dawn based on the opinion of the MGA that the day is calculated  from dawn to nightfall with both being 16.1° below sunrise or sunset.  This returns the time of 3 * ShaahZmanis16Point1Degrees() after dawn.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 72 דקות ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 72 Minutes)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) according  to the opinion of the MGA based on alos being 72 minutes before sunrise.  This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes  after sunset. This returns the time of 3 * ShaahZmanis72Minutes() after dawn. This class returns an identical time to KCZmanimCalendar.SofZmanShmaMGA() and is repeated here for clarity.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA72MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 72 דקות ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakos Zmaniyos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 72 Dakot  Zmaniyot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 72 Temporal Minutes)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) according  to the opinion of the MGA based on alos being 72 minutes zmaniyos , or 1/10th of the day  before sunrise. This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion  of the Magen Avraham that the day is calculated from a dawn of 72 minutes zmaniyos,  or 1/10th of the day before sea level sunrise to nightfall of 72 minutes zmaniyos after sea  level sunset. This returns the time of 3 * getShaahZmanis72MinutesZmanis() after dawn.
+ "
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA90Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 90 דקות ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 90 Minutes)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning)  according to the opinion of the Magen Avraham based on alos being 90 minutes before sunrise.  This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 90 minutes before sunrise to nightfall of 90 minutes  after sunset. This returns the time of 3 * ShaahZmanis90Minutes() after dawn.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA90MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 90 דקות ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakos Zmaniyos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 90 Dakot  Zmaniyot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 90 Temporal Minutes)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) according  to the opinion of the MGA based on alos being 90 minutes zmaniyos before sunrise.  This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 90 minutes zmaniyos before sunrise to  nightfall of 90 minutes zmaniyos after sunset.  This returns the time of 3 * ShaahZmanis90MinutesZmanis() after dawn.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA96Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 96 דקות ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 96 Minutes)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) according to the opinion of the MGA based on alos being 96 minutes before sunrise.  This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 96 minutes before sunrise to  nightfall of 96 minutes after sunset.  This returns the time of 3 * ShaahZmanis96Minutes() after dawn.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA96MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 96 דקות ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakos Zmaniyos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 96 Dakot  Zmaniyot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 96 Temporal Minutes)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) according to the opinion of the MGA based on alos being 96 minutes zmaniyos before sunrise.  This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 96 minutes zmaniyos before sunrise to  nightfall of 96 minutes zmaniyos after sunset.  This returns the time of 3 * ShaahZmanis96MinutesZmanis() after dawn.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShma3HoursBeforeChatzos)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) calculated as 3 hours (regular and not zmaniyos) before KCZmanimCalendar.Chatzos().  This is the opinion of the Shach in the Nekudas Hakesef (Yora Deah 184), Shevus Yaakov,  Chasam Sofer and others. This returns the time of 3 hours before KCZmanimCalendar.Chatzos().
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 9120 דקות ",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (M'A 120 Dakos)",
                                        @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (M'A 120 Dakot)",
                                        @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (M'A 120 Minutes)",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) according  to the opinion of the Magen Avraham based on alos being 120 minutes or 1/6th of the day before sunrise. This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion of  the Magen Avraham that the day is calculated from a dawn of 120 minutes before sunrise to  nightfall of 120 minutes after sunset.  This returns the time of 3 * ShaahZmanis120Minutes() after dawn.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) based on the opinion that the day starts at alos 16.1° and ends at sea level sunset.  3 shaos zmaniyos are calculated based on this day and added to alosto reach this time.  This time is 3 shaos zmaniyos (solar hours) after dawn based on the opinion that the day  is calculated from a alos 16.1° to sea level sunset. Note: Based on this calculation chatzos will not be at midday.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest zman krias shema (time to recite Shema in the morning) based  on the opinion that the day starts at alos 16.1° and ends at tzais 7.083°. 3 shaos zmaniyos  are calculated based on this day and added to alos to reach this time. This time is 3 shaos  zmaniyos (temporal hours) after alos 16.1° based on the opinion that the day is calculated  from a alos 16.1° to tzais 7.083°. Note: Based on this calculation chatzos will not be at midday.
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaKolEliyahu)) : @{
-                                       @"koshercocoa.name.hebrew" : @"",
-                                       @"koshercocoa.name.transliterated.ashkenaz" : @"",
-                                       @"koshercocoa.name.transliterated.sepharad" : @"",
-                                       @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (קול אליהו ",
+                                       @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kriyas Sh'ma (KolEliyahu)",
+                                       @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriyas Sh'ma (KolEliyahu)",
+                                       @"koshercocoa.name.english" : @"Latest Kriyas Sh'ma (KolEliyahu)",
+                                       @"koshercocoa.explanation" : @"Deprecated. Pending confirmation from Rabbi Harfenes, this method is deprecated and should  not be used. From the GRA in Kol Eliyahu on Berachos #173 that states that zman krias shema  is calculated as half the time from sea level sunrise to fixed local chatzos.  The GRA himself seems to contradict this when he stated that zman krias shema is 1/4 of the  day from sunrise to sunset. See Sarah Lamoed #25 in Yisroel Vehazmanim Vol III page 1016.
+"
                                        },
                                
                                /**
