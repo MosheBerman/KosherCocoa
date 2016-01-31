@@ -394,11 +394,11 @@
     double earthRadius = kEarthRadiusInKilometers;
     
     //double elevationAdjustment = 0.0347 * sqrt(elevation);
-    double elevationAdjustment = toDegrees(acos(earthRadius/(earthRadius + (elevation / 1000))));
+    double elevationAdjustment = toDegrees(acos(earthRadius/(earthRadius + (fabs(elevation / 1000)))));
     
     ////NSLog(@"Elevation Adjustment: %.15f", elevationAdjustment);
     
-    return elevationAdjustment;
+    return (elevation >= 0) ? elevationAdjustment : -(elevationAdjustment);
 }
 
 //
