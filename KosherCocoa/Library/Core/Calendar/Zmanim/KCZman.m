@@ -681,7 +681,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" A method that returns the latest zman krias shema (time to recite Shema in the morning)  calculated as 3 hours before FixedLocalChatzos()."
                                        },
                                NSStringFromSelector(@selector(sofZmanShmaMGA19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע  (מ"א 19.8 מעלות",
@@ -813,7 +813,8 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This method returns the latest zman tfila (time to recite the morning prayers)  calculated as 2 hours before FixedLocalChatzos().
+"
                                        },
                                NSStringFromSelector(@selector(sofZmanTfilaMGA19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"(סוף זמן תפילה  (מ"א 19.8 מעלות",
@@ -1102,7 +1103,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"Method to return Bain Hashmasho of Rabainu Tam calculated when the sun is 13.24° below  the western geometric horizon (90°) after sunset. This calculation is based on the same  calculation of Bain Hasmashos Rabainu Tam 58.5 minutes but uses a degree based calculation  instead of 58.5 exact minutes. This calculation is based on the position of the sun  58.5 minutes after sunset in Jerusalem during the equinox which calculates to 13.24° below  geometric zenith."
                                        },
                                NSStringFromSelector(@selector(bainHashmashosRT58Point5Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1142,77 +1143,77 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Geonim calculated at  the sun's position at 5.95° below the western horizon."
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim5Point88Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Geonim calculated  as 3/4 of a 24 minute Mil, (Baal Hatanya) based on a Mil being 24 minutes, and is calculated as 18 + 2 + 4 for a total of 24 minutes  (FIXME: additional documentation details needed).  It is the sun's position at 5.88° below the western horizon.  This is a very early zman and should not be relied on without Rabbinical guidance."
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim3Point65Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Geonim calculated as  3/4 of a Mil based on an 18 minute Mil, or 13.5 minutes.  It is the sun's position at 3.65° below the western horizon.  This is a very early zman and should not be relied on without Rabbinical guidance."
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim4Point37Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This method returns the tzais (nightfall) based on the opinion of the Geonim calculated  as 3/4 of a Mil, based on a 22.5 minute Mil, or 16 7/8 minutes. It is the sun's position  at 4.37° below the western horizon.  This is a very early zman and should not be relied on without Rabbinical guidance."
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim4Point61Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Geonim calculated  as 3/4 of a Mil based on an 24 minute Mil, or 18 minutes. It is the sun's position at 4.61° below the western horizon. This is a very early zman and should not be relied on without Rabbinical guidance."
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim4Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Geonim calculated  as 3/4 of a Mil based on the sun's position at 4.8° below the western horizon.  This is based on Rabbi Leo Levi's calculations. FIXME: additional documentation needed.  This is the This is a very early zman and should not be relied on without Rabbinical guidance."
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim7Point083Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Geonim calculated  as 30 minutes after sunset during the equinox in Yerushalayim. The sun's position at this  time computes to 7.083° (or 7° 5? below the western horizon. Note that this is a common  and rounded number. Computation shows the accurate number is 7.2°"
                                        },
                                NSStringFromSelector(@selector(tzaisGeonim8Point5Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Geonim calculated  at the sun's position at 8.5° below the western horizon."
                                        },
                                NSStringFromSelector(@selector(tzais50)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on R' Moshe Feinstein's opinion that the time to walk the distance of a Mil is 12.5 minutes for a total of 50 minutes for 4 Mil after sea level sunset."
                                        },
                                NSStringFromSelector(@selector(tzais60)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the tzais (nightfall) based on the opinion of the Chavas Yair and  Divray Malkiel that the time to walk the distance of a Mil is 15 minutes for a total  of 60 minutes for 4 Mil after sea level sunset."
                                        },
                                NSStringFromSelector(@selector(tzaisAteretTorah)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns tzais usually calculated as 40 minutes (configurable to any offset by modifying AteretTorahSunsetOffset) after sunset. Please note that Chacham Yosef Harari-Raful of Yeshivat Ateret Torah who uses this time,  does so only for calculating various other zmanai hayom such as Sof Zman Krias Shema  and Plag Hamincha. His calendars do not publish a zman for Tzais.  It should also be noted that Chacham Harari-Raful provided a 25 minute zman for Israel.  This API uses 40 minutes year round in any place on the globe by default.  This offset can be changed by modifying AteretTorahSunsetOffset."
                                        },
                                NSStringFromSelector(@selector(tzais72)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1226,77 +1227,77 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"Method to return tzais (dusk) calculated as 72 minutes zmaniyos,  or 1/10th of the day after sea level sunset."
                                        },
                                NSStringFromSelector(@selector(tzais90)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"Method to return tzais (dusk) calculated as 90 minutes after sea level sunset.  This method returns tzais (nightfall) based on the opinion of the Magen Avraham that the time  to walk the distance of a Mil according to the Rambam's opinion is 18 minutes  for a total of 90 minutes based on the opinion of Ula who calculated tzais as 5 Mil after sea  level shkiah (sunset).  A similar calculation Tzais19Point8Degrees()uses solar position calculations based on this time."
                                        },
                                NSStringFromSelector(@selector(tzais90Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"Method to return tzais (dusk) calculated using 90 minutes zmaniyos (GRA and the Baal Hatanya)  after sea level sunset."
                                        },
                                NSStringFromSelector(@selector(tzais96)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"A method to return tzais (dusk) calculated as 96 minutes after sea level sunset.  For information on how this is calculated see the comments on Alos96()."
                                        },
                                NSStringFromSelector(@selector(tzais96Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"Method to return tzais (dusk) calculated using 96 minutes zmaniyos  (GRA and the Baal Hatanya) after sea level sunset."
                                        },
                                NSStringFromSelector(@selector(tzais120)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns tzais (nightfall) based on the opinion of the Magen Avraham that the time  to walk the distance of a Mil according to the Rambam's opinion is 2/5 of an hour (24 minutes)  for a total of 120 minutes based on the opinion of Ula who calculated tzais as 5 Mil after  sea level shkiah (sunset).  A similar calculation Tzais26Degrees() uses temporal calculations based on this time."
                                        },
                                NSStringFromSelector(@selector(tzais120Zmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"Method to return tzais (dusk) calculated using 120 minutes zmaniyos  (GRA and the Baal Hatanya) after sea level sunset."
                                        },
                                NSStringFromSelector(@selector(tzais16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"For information on how this is calculated see the comments on Alos16Point1Degrees()"
                                        },
                                NSStringFromSelector(@selector(tzais26Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"For information on how this is calculated see the comments on Alos26Degrees()"
                                        },
                                NSStringFromSelector(@selector(tzais18Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"For information on how this is calculated see the comments on Alos18Degrees()"
                                        },
                                NSStringFromSelector(@selector(tzais19Point8Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"For information on how this is calculated see the comments on Alos19Point8Degrees()"
                                        },
                                
                                
