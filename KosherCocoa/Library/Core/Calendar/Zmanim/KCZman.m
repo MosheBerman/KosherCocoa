@@ -912,21 +912,21 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns mincha gedola calculated as 30 minutes after chatzos and not 1/2 of  a shaah zmanis after chatzos as calculated by KCZmanimCalendar.MinchaGedola(). Some use this time to delay the start of mincha in the winter when 1/2 of a shaah zmanis is  less than 30 minutes. See MinchaGedolaGreaterThan30()for a convenience method that returns  the later of the 2 calculations. One should not use this time to start mincha before the standard mincha gedola. See Shulchan Aruch Orach Chayim Siman Raish Lamed Gimel seif alef and the  Shaar Hatziyon seif katan ches."
                                        },
                                NSStringFromSelector(@selector(minchaGedola72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This method returns the time of mincha gedola according to the Magen Avraham with the day  starting 72 minutes before sunrise and ending 72 minutes after sunset. This is the earliest  time to pray mincha. For more information on this see the documentation on mincha gedola.x This is calculated as 6.5 solar hours after alos.  The calculation used is 6.5 * ShaahZmanis72Minutes() after alos."
                                        },
                                NSStringFromSelector(@selector(minchaGedola16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This method returns the time of mincha gedola according to the Magen Avraham with the day  starting and ending 16.1° below the horizon. This is the earliest time to pray mincha.  For more information on this see the documentation on mincha gedola.  This is calculated as 6.5 solar hours after alos.  The calculation used is 6.5 * ShaahZmanis16Point1Degrees() after alos."
                                        },
                                NSStringFromSelector(@selector(minchaGedola30Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -940,7 +940,7 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This is a conveniance methd that returns the later of KCZmanimCalendar.MinchaGedola() and KCMinchaGedola30Minutes(). In the winter when a shaah zmanis is less than 30 minutes MinchaGedola30Minutes() will be returned, otherwise KCZmanimCalendar.MinchaGedola() will be returned."
                                        },
                                NSStringFromSelector(@selector(minchaGedola16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -973,14 +973,14 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of mincha ketana according to the Magen Avraham with the day  starting and ending 16.1° below the horizon. This is the perfered earliest time to pray mincha according to the opinion of the Rambam and others. For more information on this see the documentation on mincha gedola. This is calculated as 9.5 solar hours after alos.  The calculation used is 9.5 * ShaahZmanis16Point1Degrees() after alos."
                                        },
                                NSStringFromSelector(@selector(minchaKetana72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of mincha ketana according to the Magen Avraham with the day  starting 72 minutes before sunrise and ending 72 minutes after sunset. This is the perfered  earliest time to pray mincha according to the opinion of the Rambam and others.  For more information on this see the documentation on mincha gedola.  This is calculated as 9.5 ShaahZmanis72Minutes() after alos.  The calculation used is 9.5 * getShaahZmanis72Minutes() after alos."
                                        },
                                NSStringFromSelector(@selector(minchaKetanaAteretTorah))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1006,56 +1006,56 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This method returns the time of plag hamincha according to the Magen Avraham with the day  starting 60 minutes before sunrise and ending 60 minutes after sunset. This is calculated  as 10.75 hours after dawn.  The formula used is: 10.75 ShaahZmanis60Minutes() after Alos60()."
                                        },
                                NSStringFromSelector(@selector(plagHamincha72Minutes))  : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @" This method returns the time of plag hamincha according to the Magen Avraham with the day  starting 72 minutes before sunrise and ending 72 minutes after sunset. This is calculated  as 10.75 hours after dawn.  The formula used is: 10.75 ShaahZmanis72Minutes() after KCZmanimCalendar.Alos72()."
                                        },
                                NSStringFromSelector(@selector(plagHamincha72MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @ This method returns the time of plag hamincha. This is calculated as 10.75 hours after dawn.  The formula used is: 10.75 * ShaahZmanis72MinutesZmanis() after dawn."
                                        },
                                NSStringFromSelector(@selector(plagHamincha90Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha according to the Magen Avraham with the day  starting 90 minutes before sunrise and ending 90 minutes after sunset. This is calculated  as 10.75 hours after dawn.  The formula used is: 10.75 ShaahZmanis90Minutes() after Alos90()."
                                        },
                                NSStringFromSelector(@selector(plagHamincha90MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha. This is calculated as 10.75 hours after dawn.  The formula used is: 10.75 * ShaahZmanis90MinutesZmanis() after dawn."
                                        },
                                NSStringFromSelector(@selector(plagHamincha96Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha according to the Magen Avraham with the day  starting 96 minutes before sunrise and ending 96 minutes after sunset. This is calculated  as 10.75 hours after dawn.  The formula used is: 10.75 ShaahZmanis96Minutes() after Alos96()."
                                        },
                                NSStringFromSelector(@selector(plagHamincha96MinutesZmanis)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha. This is calculated as 10.75 hours after dawn.  The formula used is: 10.75 * ShaahZmanis96MinutesZmanis() after dawn."
                                        },
                                NSStringFromSelector(@selector(plagHamincha16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha based on the opinion that the day starts at  alos 16.1° and ends at tzais 16.1°. This is calculated as 10.75 hours zmaniyos after dawn.  The formula is 10.75 * ShaahZmanis16Point1Degrees() after Alos16Point1Degrees()."
                                        },
                                NSStringFromSelector(@selector(plagHamincha18Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
@@ -1069,28 +1069,28 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha based on the opinion that the day starts at  alos 19.8° and ends at tzais 19.8°. This is calculated as 10.75 hours zmaniyos after dawn.  The formula is 10.75 * ShaahZmanis19Point8Degrees() after Alos19Point8Degrees()."
                                        },
                                NSStringFromSelector(@selector(plagHamincha26Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha based on the opinion that the day starts at  alos 26° and ends at tzais 26° . This is calculated as 10.75 hours zmaniyos after dawn.  The formula is 10.75 * ShaahZmanis26Degrees() after Alos26Degrees()."
                                        },
                                NSStringFromSelector(@selector(plagAlosToSunset)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha based on the opinion that the day starts at  alos 16.1° and ends at sunset. 10.75 shaos zmaniyos are calculated based on this day and  added to alos to reach this time. This time is 10.75 shaos zmaniyos (temporal hours) after  dawn based on the opinion that the day is calculated from a dawn of 16.1 degrees before  sunrise to sea level sunset.  This returns the time of 10.75 * the calculated shaah zmanis after dawn."
                                        },
                                NSStringFromSelector(@selector(plagAlos16Point1ToTzaisGeonim7Point083Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the time of plag hamincha based on the opinion that the day starts at  alos 16.1° and ends at tzais. 10.75 shaos zmaniyos are calculated based on this day and  added to alos to reach this time. This time is 10.75 shaos zmaniyos (temporal hours) after  dawn based on the opinion that the day is calculated from a dawn of 16.1 degrees before  sunrise to tzais . This returns the time of 10.75 * the calculated shaah zmanis after dawn."
                                        },
                                
                                /**
@@ -1309,21 +1309,21 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest time one is allowed eating chametz on Erev Pesach according  to the opinion of the GRA and the Baal Hatanya. This time is identical to the Sof zman tefilah GRA. This time is 4 hours into the day based on the opinion of the GRA and the Baal Hatanya  that the day is calculated from sunrise to sunset.  This returns the time 4 * KCZmanimCalendar.ShaahZmanisGra() after sea level sunrise."
                                        },
                                NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest time one is allowed eating chametz on Erev Pesach according to  the opinion of the MGA based on alos being 72 minutes before sunrise. This time is identical to  the Sof zman tefilah MGA 72 minutes. This time is 4 shaos zmaniyos (temporal hours) after dawn  based on the opinion of the MGA that the day is calculated from a dawn of 72 minutes before  sunrise to nightfall of 72 minutes after sunset.  This returns the time of 4 * KCZmanimCalendar.ShaahZmanisMGA() after dawn."
                                        },
                                NSStringFromSelector(@selector(sofZmanAchilasChametzMGA16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest time one is allowed eating chametz on Erev Pesach according to  the opinion of the MGA based on alos being 16.1° before sunrise. This time is 4 shaos zmaniyos  (solar hours) after dawn based on the opinion of the MGA that the day is calculated from dawn  to nightfall with both being 16.1° below sunrise or sunset.  This returns the time of 4 ShaahZmanis16Point1Degrees() after dawn."
                                        },
                                
                                /**
@@ -1335,21 +1335,21 @@
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest time for burning chametz on Erev Pesach according to the opinion  of the GRA and the Baal Hatanya. This time is 5 hours into the day based on the opinion  of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.  This returns the time 5 * KCZmanimCalendar.ShaahZmanisGra() after sea level sunrise."
                                        },
                                NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest time for burning chametz on Erev Pesach according to the opinion  of the Magen Avraham based on alos being 72 minutes before sunrise.  This time is 5 shaos zmaniyos (temporal hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes  after sunset. This returns the time of 5 * KCZmanimCalendar.ShaahZmanisMGA() after dawn."
                                        },
                                NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees)) : @{
                                        @"koshercocoa.name.hebrew" : @"",
                                        @"koshercocoa.name.transliterated.ashkenaz" : @"",
                                        @"koshercocoa.name.transliterated.sepharad" : @"",
                                        @"koshercocoa.name.english" : @"",
-                                       @"koshercocoa.explanation" : @""
+                                       @"koshercocoa.explanation" : @"This method returns the latest time for burning chametz on Erev Pesach according to the opinion  of the MGA based on alos being 16.1° before sunrise. This time is 5 shaos zmaniyos (solar hours)  after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall  with both being 16.1° below sunrise or sunset.  This returns the time of 5 ShaahZmanis16Point1Degrees() after dawn."
                                        }
                                };
         
