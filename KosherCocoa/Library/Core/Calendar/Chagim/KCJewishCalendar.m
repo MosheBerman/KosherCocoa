@@ -267,7 +267,7 @@
 //Returns true if the current day is Chol Hamoed of Succos.
 - (BOOL)isCholHamoedSuccos
 {
-    return ([self currentHebrewMonth] == kTishrei && ([self currentHebrewDayOfMonth] >= 17 && [self currentHebrewDayOfMonth] <= 20))|| ([self currentHebrewDayOfMonth] == 16 && _inIsrael);
+    return ([self currentHebrewMonth] == kTishrei) && (([self currentHebrewDayOfMonth] >= 17 && [self currentHebrewDayOfMonth] <= 20) || ([self currentHebrewDayOfMonth] == 16 && _inIsrael));
 }
 
 //Returns true if the current day is Chol Hamoed of Pesach.
