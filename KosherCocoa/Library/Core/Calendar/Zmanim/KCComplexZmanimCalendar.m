@@ -245,19 +245,6 @@
                         
 }
 
-- (NSDate *) sofZmanShmaKolEliyahu{
-    NSDate *chatzos = [self fixedLocalChatzos];
-    
-    if (chatzos == nil || [self sunrise] == nil) {
-        return nil;
-    }
-    
-    long diff = ([chatzos timeIntervalSince1970] - [[self seaLevelSunset] timeIntervalSince1970])/2;
-    
-    return [chatzos dateByAddingTimeInterval:-diff];
-}
-
-
 - (NSDate *) sofZmanTfilaMGA19Point8Degrees{
     return [[self alos19Point8Degrees] dateByAddingTimeInterval:[self shaahZmanis19Point8Degrees]*4];
 }
