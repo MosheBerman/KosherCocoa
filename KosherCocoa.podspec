@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KosherCocoa"
-  s.version      = "3.0.3"
+  s.version      = "3.0.5"
   s.summary      = "KosherCocoa is a Zmanim and Chagim Library for iOS."
   s.description  = <<-DESC
   KosherCocoa is a Zmanim and Chagim library for iOS.
