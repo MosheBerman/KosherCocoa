@@ -84,17 +84,49 @@ typedef NS_ENUM(NSInteger, KCSefiraPrayerAdditions) {
 
 @property (nonatomic, assign) enum KCSefiraCustom custom;
 
-/** Converts an integer (between 1 and 49, inclusive)
+#pragma mark - Getting the Count
+
+/**
+ *  Converts an integer (between 1 and 49, inclusive)
  *  into a string representing the sefira count for
  *  that day.
  *
  *  @param integer An integer representing the day of sefira.
- *  @param prayers The prayers to prepend and append to the count text.
  *
  *  @return A string representing the day of the omer.
  *
  */
 
-- (NSString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAdditions)prayers;
+- (nullable NSString *)countStringFromInteger:(NSInteger)integer;
+
+
+/** 
+ *  Converts an integer (between 1 and 49, inclusive)
+ *  into a string representing the sefira count for
+ *  that day.
+ *
+ *  We return an attributed string because parts of the prayer are 
+ *  typeset precisely in modern prayerbooks for kabbalistic reasons.
+ *
+ *  @param integer An integer representing the day of sefira.
+ *  @param prayers The prayers to prepend and append to the count text.
+ *
+ *  @return An attributed string representing the day of the omer.
+ *
+ */
+
+- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAdditions)prayers;
+
+#pragma mark - Getting the Kabbalistic Trait of the Day
+
+/**
+ *  Converts an integer (between 1 and 49, inclusive) 
+ *  into a kabbalistic trait traditionally assigned
+ *  to a given day of the omer.
+ *
+ *  @return A string containing the attribure of that day.
+ */
+
+- (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer;
 
 @end

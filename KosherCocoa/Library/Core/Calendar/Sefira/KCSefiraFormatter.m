@@ -9,31 +9,27 @@
  */
 
 #import "KCSefiraFormatter.h"
+#import <UIKit/UIKit.h>
 
 #pragma mark - This class isn't finished yet.
 
 @interface KCSefiraFormatter ()
 
-/**  An array of counts in english. */
-@property (nonatomic, strong) NSArray *englishStrings;
+// English and Hebrew Omer Strings
+@property (nonatomic, strong) NSArray <NSString *> *englishStrings;
+@property (nonatomic, strong) NSArray <NSString *> *ashkenazHebrewStrings;
+@property (nonatomic, strong) NSArray <NSString *> *sefardHebrewStrings;
+@property (nonatomic, strong) NSArray <NSString *> *sephardicHebrewStrings;
 
-/** An array of Ashkenaz Hebrew counts. */
-@property (nonatomic, strong) NSArray *ashkenazHebrewStrings;
+// Transliterated Omer Strings
+@property (nonatomic, strong) NSArray <NSString *> *ashkenazTransliteratedStrings;
+@property (nonatomic, strong) NSArray <NSString *> *sefardTransliteratedStrings;
+@property (nonatomic, strong) NSArray <NSString *> *sephardicTransliteratedStrings;
 
-/** An array of Sefard Hebrew counts. */
-@property (nonatomic, strong) NSArray *sefardHebrewStrings;
-
-/** An array of Sephardic Hebrew counts. */
-@property (nonatomic, strong) NSArray *sephardicHebrewStrings;
-
-/**  An array of Ashkenaz transliterated counts. */
-@property (nonatomic, strong) NSArray *ashkenazTransliteratedStrings;
-
-/**  An array of Sefard Transliterated counts. */
-@property (nonatomic, strong) NSArray *sefardTransliteratedStrings;
-
-/**  An array of Sephardic transliterated counts. */
-@property (nonatomic, strong) NSArray *sephardicTransliteratedStrings;
+// Kabbalistic Trait Strings
+@property (nonatomic, strong) NSArray <NSString *> *englishKabbalisticStrings;
+@property (nonatomic, strong) NSArray <NSString *> *hebrewKabbalisticStrings;
+@property (nonatomic, strong) NSArray <NSString *> *transliteratedHebrewKabbalisticStrings;
 
 @end
 
@@ -43,12 +39,65 @@
  *  The designated initializer.
  */
 
-- (id)init
+- (nonnull id)init
 {
     self = [super init];
-    if (self) {
+    if (self)
+    {
         _language = KCSefiraLanguageHebrew; //  Default language is Hebrew
         _custom = KCSefiraCustomSefard;     //  Default custom is Sefard
+        
+        _englishStrings = @[
+                            @"Today is the first day in the counting of the omer.",
+                            @"Today is the second day in the counting of the omer.",
+                            @"Today is the third day in the counting of the omer.",
+                            @"Today is the fourth day in the counting of the omer.",
+                            @"Today is the fifth day in the counting of the omer.",
+                            @"Today is the sixth day in the counting of the omer.",
+                            @"Today is the seventh day in the counting of the omer, which is one week.",
+                            @"Today is the eighth day in the counting of the omer, which is one week and one day.",
+                            @"Today is the ninth day in the counting of the omer, which is one week and two days.",
+                            @"Today is the tenth day in the counting of the omer, which is one week and three days.",
+                            @"Today is the eleventh day in the counting of the omer, which is one week and four days.",
+                            @"Today is the twelfth day in the counting of the omer, which is one week and five days.",
+                            @"Today is the thirteenth day in the counting of the omer, which is one week and six days.",
+                            @"Today is the fourteenth day in the counting of the omer, which is two weeks.",
+                            @"Today is the fifteenth day in the counting of the omer, which is two weeks and one day.",
+                            @"Today is the sixteenth day in the counting of the omer, which is two weeks and two days.",
+                            @"Today is the seventeenth day in the counting of the omer, which is two weeks and three days.",
+                            @"Today is the eighteenth day in the counting of the omer, which is two weeks and four days.",
+                            @"Today is the nineteenth day in the counting of the omer, which is two weeks and five days.",
+                            @"Today is the twentieth day in the counting of the omer, which is two weeks and six days.",
+                            @"Today is the twenty first day in the counting of the omer, which is three weeks.",
+                            @"Today is the twenty second day in the counting of the omer, which is three weeks and one day.",
+                            @"Today is the twenty third day in the counting of the omer, which is three weeks and two days.",
+                            @"Today is the twenty fourth day in the counting of the omer, which is three weeks and three days.",
+                            @"Today is the twenty fifth day in the counting of the omer, which is three weeks and four days.",
+                            @"Today is the twenty sixth day in the counting of the omer, which is three weeks and five days.",
+                            @"Today is the twenty seventh day in the counting of the omer, which is three weeks and six days.",
+                            @"Today is the twenty eighth day in the counting of the omer, which is four weeks.",
+                            @"Today is the twenty ninth day in the counting of the omer, which is four weeks and one day.",
+                            @"Today is the thirtieth day in the counting of the omer, which is four weeks and two days.",
+                            @"Today is the thirtieth first day in the counting of the omer, which is four weeks and three days.",
+                            @"Today is the thirtieth second day in the counting of the omer, which is four weeks and four days.",
+                            @"Today is the thirtieth third day in the counting of the omer, which is four weeks and five days.",
+                            @"Today is the thirtieth fourth day in the counting of the omer, which is four weeks and six days.",
+                            @"Today is the thirtieth fifth day in the counting of the omer, which is five weeks.",
+                            @"Today is the thirtieth sixth day in the counting of the omer, which is five weeks and one day.",
+                            @"Today is the thirtieth seventh day in the counting of the omer, which is five weeks and two days.",
+                            @"Today is the thirtieth eighth day in the counting of the omer, which is five weeks and three days.",
+                            @"Today is the thirtieth ninth day in the counting of the omer, which is five weeks and four days.",
+                            @"Today is the fourtieth day in the counting of the omer, which is five weeks and five days.",
+                            @"Today is the forty first day in the counting of the omer, which is five weeks and six days.",
+                            @"Today is the forty second day in the counting of the omer, which is six weeks.",
+                            @"Today is the forty third day in the counting of the omer, which is six weeks and one day.",
+                            @"Today is the forty fourth day in the counting of the omer, which is six weeks and two days.",
+                            @"Today is the forty fifth day in the counting of the omer, which is six weeks and three days.",
+                            @"Today is the forty sixth day in the counting of the omer, which is six weeks and four days.",
+                            @"Today is the forty seventh day in the counting of the omer, which is six weeks and five days.",
+                            @"Today is the forty eighth day in the counting of the omer, which is six weeks and six days.",
+                            @"Today is the forty ninth day in the counting of the omer, which is seven weeks.",
+                            ];
         
         _ashkenazHebrewStrings = @[
                                    @"הַיוֹם יוֹם אֶחָד בָּעוֹמֶר",
@@ -206,106 +255,87 @@
                                     @"הַיוֹם תִּשְׁעָה וְאַרְבָּעִים יוֹם לָעוֹמֶר שֶׁהֵם שִׁבְעָה שָׁבוּעוֹת",
                                     ];
         
-        _englishStrings = @[
-                            @"Today is the first day in the counting of the omer.",
-                            @"Today is the second day in the counting of the omer.",
-                            @"Today is the third day in the counting of the omer.",
-                            @"Today is the fourth day in the counting of the omer.",
-                            @"Today is the fifth day in the counting of the omer.",
-                            @"Today is the sixth day in the counting of the omer.",
-                            @"Today is the seventh day in the counting of the omer, which is one week.",
-                            @"Today is the eighth day in the counting of the omer, which is one week and one day.",
-                            @"Today is the ninth day in the counting of the omer, which is one week and two days.",
-                            @"Today is the tenth day in the counting of the omer, which is one week and three days.",
-                            @"Today is the eleventh day in the counting of the omer, which is one week and four days.",
-                            @"Today is the twelfth day in the counting of the omer, which is one week and five days.",
-                            @"Today is the thirteenth day in the counting of the omer, which is one week and six days.",
-                            @"Today is the fourteenth day in the counting of the omer, which is two weeks.",
-                            @"Today is the fifteenth day in the counting of the omer, which is two weeks and one day.",
-                            @"Today is the sixteenth day in the counting of the omer, which is two weeks and two days.",
-                            @"Today is the seventeenth day in the counting of the omer, which is two weeks and three days.",
-                            @"Today is the eighteenth day in the counting of the omer, which is two weeks and four days.",
-                            @"Today is the nineteenth day in the counting of the omer, which is two weeks and five days.",
-                            @"Today is the twentieth day in the counting of the omer, which is two weeks and six days.",
-                            @"Today is the twenty first day in the counting of the omer, which is three weeks.",
-                            @"Today is the twenty second day in the counting of the omer, which is three weeks and one day.",
-                            @"Today is the twenty third day in the counting of the omer, which is three weeks and two days.",
-                            @"Today is the twenty fourth day in the counting of the omer, which is three weeks and three days.",
-                            @"Today is the twenty fifth day in the counting of the omer, which is three weeks and four days.",
-                            @"Today is the twenty sixth day in the counting of the omer, which is three weeks and five days.",
-                            @"Today is the twenty seventh day in the counting of the omer, which is three weeks and six days.",
-                            @"Today is the twenty eighth day in the counting of the omer, which is four weeks.",
-                            @"Today is the twenty ninth day in the counting of the omer, which is four weeks and one day.",
-                            @"Today is the thirtieth day in the counting of the omer, which is four weeks and two days.",
-                            @"Today is the thirtieth first day in the counting of the omer, which is four weeks and three days.",
-                            @"Today is the thirtieth second day in the counting of the omer, which is four weeks and four days.",
-                            @"Today is the thirtieth third day in the counting of the omer, which is four weeks and five days.",
-                            @"Today is the thirtieth fourth day in the counting of the omer, which is four weeks and six days.",
-                            @"Today is the thirtieth fifth day in the counting of the omer, which is five weeks.",
-                            @"Today is the thirtieth sixth day in the counting of the omer, which is five weeks and one day.",
-                            @"Today is the thirtieth seventh day in the counting of the omer, which is five weeks and two days.",
-                            @"Today is the thirtieth eighth day in the counting of the omer, which is five weeks and three days.",
-                            @"Today is the thirtieth ninth day in the counting of the omer, which is five weeks and four days.",
-                            @"Today is the fourtieth day in the counting of the omer, which is five weeks and five days.",
-                            @"Today is the forty first day in the counting of the omer, which is five weeks and six days.",
-                            @"Today is the forty second day in the counting of the omer, which is six weeks.",
-                            @"Today is the forty third day in the counting of the omer, which is six weeks and one day.",
-                            @"Today is the forty fourth day in the counting of the omer, which is six weeks and two days.",
-                            @"Today is the forty fifth day in the counting of the omer, which is six weeks and three days.",
-                            @"Today is the forty sixth day in the counting of the omer, which is six weeks and four days.",
-                            @"Today is the forty seventh day in the counting of the omer, which is six weeks and five days.",
-                            @"Today is the forty eighth day in the counting of the omer, which is six weeks and six days.",
-                            @"Today is the forty ninth day in the counting of the omer, which is seven weeks.",
-                            ];
+        _ashkenazTransliteratedStrings = @[];
+        _sefardTransliteratedStrings = @[];
+        _sephardicTransliteratedStrings = @[];
         
-        _ashkenazTransliteratedStrings = @[
-                                           
-                                           ];
-        _sefardTransliteratedStrings = @[
-                                         
-                                         ];
-        
-        _sephardicTransliteratedStrings = @[
-                                            
-                                            ];
+        _hebrewKabbalisticStrings = @[
+                                      @"חֶסֶד שֶבְּחֶסֶד",
+                                      @"גְבוּרָה שֶבְּחֶסֶד",
+                                      @"תִּפֶארֶת שֶבְּחֶסֶד",
+                                      @"נֶצַח שֶבְּחֶסֶד",
+                                      @"הוֹד שֶבְּחֶסֶד",
+                                      @"יְסֹוד שֶבְּחֶסֶד",
+                                      @"מַלְכוּת שֶבְּחֶסֶד",
+                                      @"חֶסֶד שֶבְּגְבוּרָה",
+                                      @"גְבוּרָה שֶבְּגְבוּרָה",
+                                      @"תִּפֶארֶת שֶבְּגְבוּרָה",
+                                      @"נֶצַח שֶבְּגְבוּרָה",
+                                      @"הוֹד שֶבְּגְבוּרָה",
+                                      @"יְסֹוד שֶבְּגְבוּרָה",
+                                      @"מַלְכוּת שֶבְּגְבוּרָה",
+                                      @"חֶסֶד שֶבְּתִּפֶארֶת",
+                                      @"גְבוּרָה שֶבְּתִּפֶארֶת",
+                                      @"תִּפֶארֶת שֶבְּתִּפֶארֶת",
+                                      @"נֶצַח שֶבְּתִּפֶארֶת",
+                                      @"הוֹד שֶבְּתִּפֶארֶת",
+                                      @"יְסֹוד שֶבְּתִּפֶארֶת",
+                                      @"מַלְכוּת שֶבְּתִּפֶארֶת",
+                                      @"חֶסֶד שֶבְּנֶצַח",
+                                      @"גְבוּרָה שֶבְּנֶצַח",
+                                      @"תִּפֶארֶת שֶבְּנֶצַח",
+                                      @"נֶצַח שֶבְּנֶצַח",
+                                      @"הוֹד שֶבְּנֶצַח",
+                                      @"יְסֹוד שֶבְּנֶצַח",
+                                      @"מַלְכוּת שֶבְּנֶצַח"
+                                      , @"חֶסֶד שֶבְּהוֹד",
+                                      @"גְבוּרָה שֶבְּהוֹד",
+                                      @"תִּפֶארֶת שֶבְּהוֹד",
+                                      @"נֶצַח שֶבְּהוֹד",
+                                      @"הוֹד שֶבְּהוֹד",
+                                      @"יְסֹוד שֶבְּהוֹד",
+                                      @"מַלְכוּת שֶבְּהוֹד",
+                                      @"חֶסֶד שֶבְּיְסֹוד",
+                                      @"גְבוּרָה שֶבְּיְסֹוד",
+                                      @"תִּפֶארֶת שֶבְּיְסֹוד",
+                                      @"נֶצַח שֶבְּיְסֹוד",
+                                      @"הוֹד שֶבְּיְסֹוד",
+                                      @"יְסֹוד שֶבְּיְסֹוד",
+                                      @"מַלְכוּת שֶבְּיְסֹוד",
+                                      @"חֶסֶד שֶבְּמַלְכוּת",
+                                      @"גְבוּרָה שֶבְּמַלְכוּת",
+                                      @"תִּפֶארֶת שֶבְּמַלְכוּת",
+                                      @"נֶצַח שֶבְּמַלְכוּת",
+                                      @"הוֹד שֶבְּמַלְכוּת",
+                                      @"יְסֹוד שֶבְּמַלְכוּת",
+                                      @"מַלְכוּת שֶבְּמַלְכוּת"
+                                      ];
+        _englishKabbalisticStrings = @[];
+        _transliteratedHebrewKabbalisticStrings = @[];
     }
     return self;
 }
 
-- (NSString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAdditions)prayers
+#pragma mark - Getting the Count
+
+- (NSString *)countStringFromInteger:(NSInteger)integer
 {
-    NSMutableString *output = [NSMutableString stringWithFormat:@""];
     
     if (integer < 0 || integer > 49) {
         return nil;
     }
     
-    NSArray *composite = @[
-                           /** Hebrew */
-                           @[
-                               _ashkenazHebrewStrings,
-                               _sefardHebrewStrings,
-                               _sephardicHebrewStrings,
-                               ],
-                           /** English */
-                           @[
-                               @[_englishStrings]
-                               ],
-                           /** Transliterated. */
-                           @[_ashkenazTransliteratedStrings,
-                             _sefardTransliteratedStrings,
-                             _sephardicTransliteratedStrings]
-                           ];
+    NSString *countText = nil;
+    
+    NSArray *composite = [self _omerCountStringMap];
     
     NSInteger language = self.language;
     NSInteger custom = self.custom;
     
-    /** Ensure we don't out-of-bounds on English. */
-    if (language == KCSefiraLanguageEnglish) {
-        custom = 0; //  There's only one version of English.
+    if (language == KCSefiraLanguageEnglish) //  There's only one version of English.
+    {
+        custom = 0;
     }
-    
-    NSString *countText = nil;
     
     if (language < composite.count)
     {
@@ -334,10 +364,245 @@
         NSLog(@"Language is out of range. (Value: %li)", (long)language);
     }
     
+    return countText;
+}
+
+- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAdditions)prayers
+{
+    NSMutableAttributedString *output = [[NSMutableAttributedString alloc] initWithString:@""];
+    
+    BOOL showLeshaim = [self _isFlagEnabled: KCSefiraPrayerAdditionLeshaimYichud inFlags:prayers];
+    BOOL showBeracha = [self _isFlagEnabled: KCSefiraPrayerAdditionBeracha inFlags:prayers];
+    BOOL showHarachaman = [self _isFlagEnabled: KCSefiraPrayerAdditionHarachaman inFlags:prayers];
+    BOOL showLamenatzaiach = [self _isFlagEnabled: KCSefiraPrayerAdditionLamenatzaiach inFlags:prayers];
+    BOOL showAna = [self _isFlagEnabled: KCSefiraPrayerAdditionAna inFlags:prayers];
+    BOOL showRibono = [self _isFlagEnabled: KCSefiraPrayerAdditionRibono inFlags:prayers];
+    BOOL showAleinu = [self _isFlagEnabled: KCSefiraPrayerAdditionAleinu inFlags:prayers];
+    
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.alignment = NSTextAlignmentRight;
+    
+    UIFont *font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
+    
+    NSDictionary<NSString *, id> *attributes = @{
+                                                 NSWritingDirectionAttributeName : @(NSWritingDirectionRightToLeft | NSTextWritingDirectionOverride),
+                                                 NSTextEffectAttributeName : NSTextEffectLetterpressStyle,
+                                                 NSParagraphStyleAttributeName : paragraphStyle,
+                                                 NSFontAttributeName : font
+                                                 };
+    
+    NSMutableAttributedString *leshaim = nil;
+    NSMutableAttributedString *beracha = nil;
+    NSMutableAttributedString *harachaman = nil;
+    NSMutableAttributedString *lamenatzaiach = nil;
+    NSMutableAttributedString *ana = nil;
+    NSMutableAttributedString *ribono = nil;
+    NSMutableAttributedString *aleinu = nil;
+    
+    if (showLeshaim)
+    {
+        if (self.custom == KCSefiraCustomSephardic)
+        {
+            leshaim = [[NSMutableAttributedString alloc] initWithString:@"לְשֵׁם יִחוּד קוּדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּיהּ בִּדְחִילוּ וּרְחִימוּ. לְיַחֵדָא שֵׁם יוֹד קֵי בְּוָאו קֵי בְּיִחוּדָא שְׁלִים בְּשֵׁם כָּל יִשְׂרָאֵל הִנֵּה אֲנַחְנוּ בָּאִים לְקַיֵּם מִצְוַת עֲשֵׂה שֶׁל סְפִירַת הָעֹמֶר. כְּדִכְתִיב: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיוֹם הֲבִיאֲכֶם אֶת עֹמֶר הַתְּנוּפָה. שֶׁבַע שַׁבָּתוֹת תְּמִימוֹת תִּהְיֶינָה. עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִית תִּסְפְּרוּ חֲמִשִּׁים יוֹם. וְהִקְרַבְתֶּם מִנְחָה חֲדָשָׁה לַיהוָה: לְתַקֵּן אֶת שָׁרְשָׁה בְּמָקוֹם עֶלְיוֹן. לַעֲשֹוֹת נַחַת רוּח לְיוֹצְרֵנוּ וְלַעֲשֹוֹת רְצוֹן בּוֹרְאֵנוּ. וִיהִי נוֹעַם אֲדנָי אֱלהֵינוּ עָלֵינוּ. וּמַעֲשֵׂה יָדֵינוּ כּוֹנְנָה עָלֵינוּ. וּמַעֲשֵׂה יָדֵינוּ כּוֹנְנֵהוּ: יְהוָה, יִגְמֹר בַּעֲדִי. יְהוָה, חַסְדְּךָ לְעוֹלָם; מַעֲשֵׂי יָדֶיךָ אַל-תֶּרֶף: אֶקְרָא, לֵאלֹהִים עֶלְיוֹן; לָאֵל, גֹּמֵר עָלָי: וָאֶעֱבֹר עָלַיִךְ וָאֶרְאֵךְ, מִתְבּוֹסֶסֶת בְּדָמָיִךְ, וָאֹמַר לָךְ בְּדָמַיִךְ חֲיִי, וָאֹמַר לָךְ בְּדָמַיִךְ חֲיִי: בָּרְכִי נַפְשִׁי, אֶת-יְהוָה: יְהוָה אֱלֹהַי, גָּדַלְתָּ מְּאֹד; הוֹד .וְהָדָר לָבָשְׁתָּ. עֹטֶה-אוֹר, כַּשַּׂלְמָה, נוֹטֶה שָׁמַיִם, כַּיְרִיעָה"
+                                                             attributes:attributes];
+        }
+        else
+        {
+            leshaim = [[NSMutableAttributedString alloc] initWithString:@"לְשֵׁם יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ, בִּדְחִילוּ וּרְחִימוּ, לְיַחֵד שֵׁם י\"ה בְּו\"ה בְּיִחוּדָא שְׁלִים, בְֹּשֵם כָּל יִשְׂרָאֵל. הִנְנִי מוּכָן וּמְזֻמָּן לְקַיֵּם מִצְוַת עֲשֵׂה שֶׁל סְפִירַת הָעֹֽמֶר, כְּמוֹ שֶׁכָּתוּב בַּתּוֹרָה: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיּוֹם הֲבִיאֲכֶם אֶת עֹֽמֶר הַתְּנוּפָה, שֶֽׁבַע שַׁבָּתוֹת תְּמִימֹת תִּהְיֶֽינָה. עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִת תִּסְפְּרוּ חֲמִשִּׁים יוֹם, וְהִקְרַבְתֶּם מִנְחָה חֲדָשָׁה לַייָ. וִיהִי נֹֽעַם אֲדֹנָי אֱלֹהֵֽינוּ עָלֵֽינוּ, וּמַעֲשֵׂה יָדֵֽינוּ כּוֹנְנָה עָלֵֽינוּ, וּמַעֲשֵׂה יָדֵֽינוּ כּוֹנְנֵֽהוּ."
+                                                             attributes: attributes];
+        }
+        
+        [output appendAttributedString:leshaim];
+    }
+    
+    if (showBeracha)
+    {
+        beracha = [[NSMutableAttributedString alloc] initWithString:@"בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָֽׁנוּ בְּמִצְוֹתָיו, וְצִוָּֽנוּ עַל סְפִירַת הָעֹֽמֶר" attributes:attributes];
+        
+        [output appendAttributedString:beracha];
+    }
+    
+    NSMutableParagraphStyle *centeredStyle = [[NSMutableParagraphStyle alloc] init];
+    centeredStyle.alignment = NSTextAlignmentCenter;
+    
+    NSDictionary *countAttributes = @{
+                                      NSParagraphStyleAttributeName : centeredStyle,
+                                      NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2]
+                                      };
+    
+    NSAttributedString *countString = [[NSAttributedString alloc] initWithString:[self countStringFromInteger:integer] attributes:countAttributes];
+    [output appendAttributedString:countString];
+    
+    if (showHarachaman)
+    {
+        
+        if (self.custom == KCSefiraCustomSephardic)
+        {
+            harachaman = [[NSMutableAttributedString alloc] initWithString:@"הָרַחֲמָן הוּא יִבְנֶה בֵּית הַמִקְדָשׁ, ְויַחֲזֵיר הָעֲבוֹדָה לִמְקוֹמָה בִּמְהֵרָה בְיָמֵינוּ. אָמֵן" attributes: attributes];
+        }
+        else
+        {
+            harachaman = [[NSMutableAttributedString alloc] initWithString:@"הָרַחֲמָן הוּא יַחֲזִיר לָֽנוּ עֲבוֹדַת בֵּית הַמִּקְדָּשׁ לִמְקוֹמָהּ, בִּמְהֵרָה בְיָמֵֽינוּ אָמֵן סֶֽלָה." attributes: attributes];
+        }
+        
+        [output appendAttributedString:harachaman];
+    }
+    
+    if (showLamenatzaiach)
+    {
+        lamenatzaiach = [[NSMutableAttributedString alloc] initWithString: @"לַמְנַצֵּֽחַ בִּנְגִינוֹת מִזְמוֹר שִׁיר. אֱלֹהִים יְחָנֵּֽנוּ וִיבָרְכֵֽנוּ, יָאֵר פָּנָיו אִתָּֽנוּ סֶֽלָה. לָדַֽעַת בָּאָֽרֶץ דַּרְכֶּֽךָ, בְּכָל גּוֹיִם יְשׁוּעָתֶֽךָ. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. יִשְׂמְחוּ וִירַנְּנוּ לְאֻמִּים, כִּי תִשְׁפּוֹט עַמִּים מִישׁוֹר, וּלְאֻמִּים בָּאָֽרֶץ תַּנְחֵם סֶֽלָה. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. אֶֽרֶץ נָתְנָה יְבוּלָהּ, יְבָרְכֵֽנוּ אֱלֹהִים אֱלֹהֵֽינוּ. יְבָרְכֵֽנוּ אֱלֹהִים, וְיִירְאוּ אוֹתוֹ כָּל אַפְסֵי אָֽרֶץ." attributes: attributes];
+        
+        [output appendAttributedString:lamenatzaiach];
+    }
+    
+    if (showAna)
+    {
+        ana = [[NSMutableAttributedString alloc] initWithString:@"אָנָּא בְּכֹֽחַ גְּדֻלַּת יְמִינְךָ, תַּתִּיר צְרוּרָה. אב\"ג ית\"ץ\nקַבֵּל רִנַּת עַמְּךָ, שַׂגְּבֵֽנוּ, טַהֲרֵֽנוּ, נוֹרָא. קר\"ע שט\"ן\nנָא גִבּוֹר, דּוֹרְשֵׁי יִחוּדְךָ, כְּבָבַת שָׁמְרֵם.נג\"ד יכ\"ש\nבָּרְכֵם, טַהֲרֵם, רַחֲמֵם, צִדְקָתְךָ תָּמִיד גָּמְלֵם. בט\"ר צת\"ג \nחֲסִין קָדוֹשׁ, בְּרוֹב טוּבְךָ, נַהֵל עֲדָתֶֽךָ. חק\"ב טנ\"ע \nיָחִיד גֵּאֶה, לְעַמְּךָ פְּנֵה, זוֹכְרֵי קְדֻשָּׁתֶֽךָ.יג\"ל פז\"ק \nשַׁוְעָתֵֽנוּ קַבֵּל, וּשְׁמַע צַעֲקָתֵֽנוּ, יוֹדֵֽעַ תַּעֲלֻמוֹת. שק\"ו צי\"ת\n\nבָּרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד." attributes:attributes];
+        
+        NSArray <NSString *> *kabbalisticAbbreviations = @[@"אב\"ג ית\"ץ", @"קר\"ע שט\"ן", @"נג\"ד יכ\"ש",@"בט\"ר צת\"ג", @"חק\"ב טנ\"ע", @"יג\"ל פז\"ק", @"שק\"ו צי\"ת"];
+        
+        for (NSString *substring in kabbalisticAbbreviations)
+        {
+            NSRange rangeOfString = [ana.string rangeOfString:substring];
+            
+            if (rangeOfString.location != NSNotFound)
+            {
+                
+                NSMutableParagraphStyle *leftParagraph = [[NSMutableParagraphStyle alloc] init];
+                leftParagraph.alignment = NSTextAlignmentLeft;
+                
+                UIFont *smallerFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+                
+                NSDictionary *subAttributes = @{
+                                                NSParagraphStyleAttributeName : leftParagraph,
+                                                NSFontAttributeName : smallerFont
+                                                };
+                
+                [ana addAttributes:subAttributes range:rangeOfString];
+            }
+        }
+        
+        [output appendAttributedString:ana];
+    }
+    
+    if (showRibono)
+    {
+        
+        NSString *trait = [self kabbalisticTraitFromInteger:integer];
+        
+        NSString *ribonoText = [NSString stringWithFormat:@"רִבּוֹנוֹ  שֶׁל עוֹלָם, אַתָּה צִוִּיתָֽנוּ עַל יְדֵי מֹשֶׁה עַבְדֶּֽךָ לִסְפּוֹר סְפִירַת הָעֹֽמֶר, כְּדֵי לְטַהֲרֵֽנוּ מִקְּלִפּוֹתֵֽינוּ וּמִטֻּמְאוֹתֵֽינוּ, כְּמוֹ שֶׁכָּתַֽבְתָּ בְּתוֹרָתֶֽךָ: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיּוֹם הֲבִיאֲכֶם אֶת עֹֽמֶר הַתְּנוּפָה, שֶֽׁבַע שַׁבָּתוֹת תְּמִימֹת תִּהְיֶֽינָה, עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִת תִּסְפְּרוּ חֲמִשִּׁים יוֹם, כְּדֵי שֶׁיִּטָּהֲרוּ נַפְשׁוֹת עַמְּךָ יִשְׂרָאֵל מִזֻּהֲמָתָם. וּבְכֵן יְהִי רָצוֹן מִלְּפָנֶֽיךָ יְיָ אֱלֹהֵֽינוּ וֵאלֹהֵי אֲבוֹתֵֽינוּ, שֶׁבִּזְכוּת סְפִירַת הָעֹֽמֶר שֶׁסָּפַֽרְתִּי הַיּוֹם, יְתֻקַּן מַה שֶּׁפָּגַֽמְתִּי בִּסְפִירָה %@ וְאֶטָּהֵר וְאֶתְקַדֵּשׁ בִּקְדֻשָּׁה שֶׁל מַֽעְלָה, וְעַל יְדֵי זֶה יֻשְׁפַּע שֶֽׁפַע רַב בְּכָל הָעוֹלָמוֹת, וּלְתַקֵּן אֶת נַפְשׁוֹתֵֽינוּ וְרוּחוֹתֵֽינוּ וְנִשְׁמוֹתֵֽינוּ מִכָּל סִיג וּפְגַם, וּלְטַהֲרֵֽנוּ וּלְקַדְּשֵֽׁנוּ בִּקְדֻשָּׁתְךָ הָעֶלְיוֹנָה, אָמֵן סֶֽלָה.", trait];
+        
+        ribono = [[NSMutableAttributedString alloc] initWithString:ribonoText attributes:attributes];
+        
+        NSRange range = [ribonoText rangeOfString:trait];
+        
+        if (range.location != NSNotFound)
+        {
+            
+            NSDictionary *subAttributes = @{
+                                            NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]
+                                            };
+            
+            [ribono addAttributes:subAttributes range:range];
+        }
+        
+        
+        [output appendAttributedString:ribono];
+        
+    }
+    
+    if (showAleinu)
+    {
+        aleinu = [[NSMutableAttributedString alloc] initWithString:@"עָלֵינוּ לְשַׁבֵּחַ לַאֲדוֹן הַכֹּל. לָתֵת גְּדֻלָּה לְיוֹצֵר בְּרֵאשִׁית. שֶׁלֹּא עָשָׂנוּ כְּגוֹיֵי הָאֲרָצוֹת. וְלֹא שָׂמָנוּ כְּמִשְׁפְּחוֹת הָאֲדָמָה. שֶׁלֹּא שָׂם חֶלְקֵנוּ כָּהֶם וְגוֹרָלֵנוּ כְּכָל הֲמוֹנָם. שֶׁהֵם מִשְׁתַּחֲוִים לְהֶבֶל וָרִיק וּמִתְפַּלְלִים אֶל אֵל לֹא יושִׁיעַ וַאֲנַחְנוּ כּוֹרְעִים וּמִשְׁתַּחֲוִים וּמוֹדִים לִפְנֵי מֶלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדושׁ בָּרוּךְ הוּא. שֶׁהוּא נוֹטֶה שָׁמַיִם וְיוֹסֵד אָרֶץ. וּמושַׁב יְקָרוֹ בַּשָּׁמַיִם מִמַּעַל. וּשְׁכִינַת עֻזּו בְּגָבְהֵי מְרוֹמִים. הוּא אֱלהֵינוּ אֵין עוֹד. אֱמֶת מַלְכֵּנוּ. אֶפֶס זוּלָתוֹ. כַּכָּתוּב בְּתוֹרָתוֹ. וְיָדַעְתָּ הַיּום וַהֲשֵׁבֹתָ אֶל לְבָבֶךָ. כִּי ה' הוּא הָאֱלֹהִים בַּשָּׁמַיִם מִמַּעַל וְעַל הָאָרֶץ מִתָּחַת. אֵין עוֹד:\n\nוְעַל כֵּן נְקַוֶּה לְּךָ ה' אֱלהֵינוּ לִרְאוֹת מְהֵרָה בְּתִפְאֶרֶת עֻזֶּךָ. לְהַעֲבִיר גִּלּוּלִים מִן הָאָרֶץ. וְהָאֱלִילִים כָּרוֹת יִכָּרֵתוּן. לְתַקֵּן עוֹלָם בְּמַלְכוּת שַׁדַּי. וְכָל בְּנֵי בָשָׂר יִקְרְאוּ בִשְׁמֶךָ לְהַפְנוֹת אֵלֶיךָ כָּל רִשְׁעֵי אָרֶץ. יַכִּירוּ וְיֵדְעוּ כָּל יושְׁבֵי תֵבֵל. כִּי לְךָ תִּכְרַע כָּל בֶּרֶךְ. תִּשָּׁבַע כָּל לָשׁוֹן. לְפָנֶיךָ ה' אֱלֹהֵינוּ יִכְרְעוּ וְיִפֹּלוּ. וְלִכְבוֹד שִׁמְךָ יְקָר יִתֵּנוּ. וִיקַבְּלוּ כֻלָּם אֶת עֹל מַלְכוּתֶךָ. וְתִמְלךְ עֲלֵיהֶם מְהֵרָה לְעוֹלָם וָעֶד. כִּי הַמַּלְכוּת שֶׁלְּךָ הִיא וּלְעוֹלְמֵי עַד תִּמְלךְ בְּכָבוֹד. כַּכָּתוּב בְּתוֹרָתֶךָ. ה' יִמְלךְ לְעוֹלָם וָעֶד: וְנֶאֱמַר. וְהָיָה ה' לְמֶלֶךְ עַל כָּל הָאָרֶץ. בַּיּום הַהוּא יִהְיֶה ה' אֶחָד וּשְׁמוֹ אֶחָד."
+                                                        attributes:attributes];
+        
+        [output appendAttributedString:aleinu];
+    }
+    
     return output;
 }
 
+#pragma mark - Getting the Kabbalistic Trait of the Day
+
+/**
+ *  Converts an integer (between 1 and 49, inclusive)
+ *  into a kabbalistic trait traditionally assigned
+ *  to a given day of the omer.
+ *
+ *  @return A string containing the attribure of that day.
+ */
+
+- (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer
+{
+    NSString *trait = nil;
+    
+    if (integer < self.hebrewKabbalisticStrings.count)
+    {
+        trait = self.hebrewKabbalisticStrings[integer];
+    }
+    
+    return trait;
+}
+
 #pragma mark - Helpers
+
+/**
+ *  Generates a statically allocated map of all of the omer count strings.
+ *
+ *  @return A multidimensional array of all of the sets of output strings.
+ */
+
+- (nonnull NSArray <NSArray <NSString *> *> *)_omerCountStringMap
+{
+    static NSArray <NSArray <NSString *> *> * omerMap = nil;
+    
+    if (omerMap == nil)
+    {
+        omerMap = @[
+                    /** Hebrew */
+                    @[
+                        _ashkenazHebrewStrings,
+                        _sefardHebrewStrings,
+                        _sephardicHebrewStrings,
+                        ],
+                    /** English */
+                    @[
+                        @[_englishStrings]
+                        ],
+                    /** Transliterated. */
+                    @[_ashkenazTransliteratedStrings,
+                      _sefardTransliteratedStrings,
+                      _sephardicTransliteratedStrings]
+                    ];
+    }
+    
+    return omerMap;
+}
+
+
+/**
+ *  Generates a statically allocated map of all of the omer count strings.
+ *
+ *  @return A multidimensional array of all of the sets of output strings.
+ */
+
+- (nonnull NSArray <NSArray <NSString *> *> *)_kabbalisticTraitStringMap
+{
+    static NSArray <NSArray <NSString *> *> * kabbalisticMap = nil;
+    
+    if (kabbalisticMap == nil)
+    {
+        kabbalisticMap = @[
+                           _englishKabbalisticStrings,
+                           _hebrewKabbalisticStrings,
+                           _transliteratedHebrewKabbalisticStrings
+                           ];
+    }
+    
+    return kabbalisticMap;
+}
+
 
 /**
  *  Check if the given option is enabled.
