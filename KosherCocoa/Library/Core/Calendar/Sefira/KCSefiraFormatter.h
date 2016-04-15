@@ -58,7 +58,7 @@ typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
  *  or KCSefiraCustom is not KCSefiraCustomAshkenaz, these flags are ignored.
  */
 
-typedef NS_ENUM(NSInteger, KCSefiraPrayerAddition) {
+typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
     KCSefiraPrayerAdditionLeshaimYichud = 1 << 0,
     KCSefiraPrayerAdditionBeracha = 1 << 1,
     KCSefiraPrayerAdditionHarachaman = 1 << 2,
