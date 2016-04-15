@@ -428,11 +428,17 @@
     
     NSDictionary *countAttributes = @{
                                       NSParagraphStyleAttributeName : centeredStyle,
-                                      NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2]
+                                      NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2],
+                                      NSTextEffectAttributeName : NSTextEffectLetterpressStyle
                                       };
     
-    NSAttributedString *countString = [[NSAttributedString alloc] initWithString:[self countStringFromInteger:integer] attributes:countAttributes];
-    [output appendAttributedString:countString];
+    NSString *plainTextCountString = [self countStringFromInteger:integer];
+    
+    if (plainTextCountString != nil)
+    {
+        NSAttributedString *countString = [[NSAttributedString alloc] initWithString:plainTextCountString attributes:countAttributes];
+        [output appendAttributedString:countString];
+    }
     
     if (showHarachaman)
     {
