@@ -367,7 +367,7 @@
     return countText;
 }
 
-- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAdditions)prayers
+- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(enum KCSefiraPrayerAddition)prayers
 {
     NSMutableAttributedString *output = [[NSMutableAttributedString alloc] initWithString:@""];
     
@@ -610,7 +610,7 @@
  *  @returns YES if the options enum contains the supplied option, else false.
  */
 
-- (BOOL)_isFlagEnabled:(KCSefiraPrayerAdditions)flag inFlags:(KCSefiraPrayerAdditions)flags {
+- (BOOL)_isFlagEnabled:(KCSefiraPrayerAddition)flag inFlags:(KCSefiraPrayerAddition)flags {
     return (flags & flag) == flag;
 }
 

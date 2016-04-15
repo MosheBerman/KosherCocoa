@@ -58,15 +58,14 @@ typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
  *  or KCSefiraCustom is not KCSefiraCustomAshkenaz, these flags are ignored.
  */
 
-typedef NS_ENUM(NSInteger, KCSefiraPrayerAdditions) {
-    KCSefiraPrayerAdditionsNone = 0,
-    KCSefiraPrayerAdditionLeshaimYichud = 1 << 1,
-    KCSefiraPrayerAdditionBeracha = 1 << 2,
-    KCSefiraPrayerAdditionHarachaman = 1 << 3,
-    KCSefiraPrayerAdditionLamenatzaiach= 1 << 4,
-    KCSefiraPrayerAdditionAna = 1 << 5,
-    KCSefiraPrayerAdditionRibono = 1 << 6,
-    KCSefiraPrayerAdditionAleinu = 1 << 7
+typedef NS_ENUM(NSInteger, KCSefiraPrayerAddition) {
+    KCSefiraPrayerAdditionLeshaimYichud = 1 << 0,
+    KCSefiraPrayerAdditionBeracha = 1 << 1,
+    KCSefiraPrayerAdditionHarachaman = 1 << 2,
+    KCSefiraPrayerAdditionLamenatzaiach= 1 << 3,
+    KCSefiraPrayerAdditionAna = 1 << 4,
+    KCSefiraPrayerAdditionRibono = 1 << 5,
+    KCSefiraPrayerAdditionAleinu = 1 << 6
 };
 
 /** This class formats an integer into a sefira day*/
@@ -115,7 +114,7 @@ typedef NS_ENUM(NSInteger, KCSefiraPrayerAdditions) {
  *
  */
 
-- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAdditions)prayers;
+- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAddition)prayers;
 
 #pragma mark - Getting the Kabbalistic Trait of the Day
 
