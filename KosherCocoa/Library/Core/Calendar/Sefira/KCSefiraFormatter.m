@@ -321,9 +321,11 @@
 - (NSString *)countStringFromInteger:(NSInteger)integer
 {
     
-    if (integer < 0 || integer > 49) {
+    if (integer < 1 || integer > 49) {
         return nil;
     }
+    
+    integer = integer - 1;
     
     NSString *countText = nil;
     
