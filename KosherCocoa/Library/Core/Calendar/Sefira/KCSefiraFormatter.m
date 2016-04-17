@@ -371,6 +371,10 @@
 
 - (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(enum KCSefiraPrayerAddition)prayers
 {
+    if (integer < 1 || integer > 49) {
+        return nil;
+    }
+    
     NSMutableAttributedString *output = [[NSMutableAttributedString alloc] initWithString:@""];
     
     BOOL showLeshaim = [self _isFlagEnabled: KCSefiraPrayerAdditionLeshaimYichud inFlags:prayers];
