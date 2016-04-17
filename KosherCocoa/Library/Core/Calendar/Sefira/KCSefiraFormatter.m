@@ -405,7 +405,6 @@
     if(!attributes)
     {
         attributes = @{
-                       NSTextEffectAttributeName : NSTextEffectLetterpressStyle,
                        NSParagraphStyleAttributeName : paragraphStyle,
                        NSFontAttributeName : font
                        };
@@ -446,11 +445,21 @@
     NSMutableParagraphStyle *centeredStyle = [[NSMutableParagraphStyle alloc] init];
     centeredStyle.alignment = NSTextAlignmentCenter;
     
-    NSDictionary *countAttributes = @{
-                                      NSParagraphStyleAttributeName : centeredStyle,
-                                      NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2],
-                                      NSTextEffectAttributeName : NSTextEffectLetterpressStyle
-                                      };
+    static NSDictionary *countAttributes = nil;
+    static UIFont* countFont = nil;
+    
+    if(!countFont)
+    {
+        countFont = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2];
+    }
+    
+    if(!countAttributes)
+    {
+        countAttributes = @{
+                            NSParagraphStyleAttributeName : centeredStyle,
+                            NSFontAttributeName : countFont
+                            };
+    }
     
     NSString *plainTextCountString = [self countStringFromInteger:integer];
     
