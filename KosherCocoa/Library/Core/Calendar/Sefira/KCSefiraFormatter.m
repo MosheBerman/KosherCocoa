@@ -386,17 +386,30 @@
     BOOL showAleinu = [self _isFlagEnabled: KCSefiraPrayerAdditionAleinu inFlags:prayers];
     
     
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-    paragraphStyle.alignment = NSTextAlignmentRight;
-    paragraphStyle.baseWritingDirection = NSWritingDirectionRightToLeft;
+    static NSMutableParagraphStyle *paragraphStyle = nil;
+    static UIFont *font = nil;
+    static NSDictionary<NSString *, id> *attributes = nil;
     
-    UIFont *font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
+    if(!paragraphStyle)
+    {
+        paragraphStyle =[[NSMutableParagraphStyle alloc] init];
+        paragraphStyle.alignment = NSTextAlignmentRight;
+        paragraphStyle.baseWritingDirection = NSWritingDirectionRightToLeft;
+    }
     
-    NSDictionary<NSString *, id> *attributes = @{
-                                                 NSTextEffectAttributeName : NSTextEffectLetterpressStyle,
-                                                 NSParagraphStyleAttributeName : paragraphStyle,
-                                                 NSFontAttributeName : font
-                                                 };
+    if(!font)
+    {
+        font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
+    }
+    
+    if(!attributes)
+    {
+        attributes = @{
+                       NSTextEffectAttributeName : NSTextEffectLetterpressStyle,
+                       NSParagraphStyleAttributeName : paragraphStyle,
+                       NSFontAttributeName : font
+                       };
+    }
     
     NSMutableAttributedString *leshaim = nil;
     NSMutableAttributedString *beracha = nil;
@@ -419,7 +432,6 @@
                                                              attributes: attributes];
         }
         
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:leshaim];
     }
     
