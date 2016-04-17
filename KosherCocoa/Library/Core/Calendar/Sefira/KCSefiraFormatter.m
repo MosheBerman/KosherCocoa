@@ -419,6 +419,7 @@
                                                              attributes: attributes];
         }
         
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:leshaim];
     }
     
@@ -426,6 +427,7 @@
     {
         beracha = [[NSMutableAttributedString alloc] initWithString:@"בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָֽׁנוּ בְּמִצְוֹתָיו, וְצִוָּֽנוּ עַל סְפִירַת הָעֹֽמֶר" attributes:attributes];
         
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:beracha];
     }
     
@@ -458,6 +460,7 @@
             harachaman = [[NSMutableAttributedString alloc] initWithString:@"הָרַחֲמָן הוּא יַחֲזִיר לָֽנוּ עֲבוֹדַת בֵּית הַמִּקְדָּשׁ לִמְקוֹמָהּ, בִּמְהֵרָה בְיָמֵֽינוּ אָמֵן סֶֽלָה." attributes: attributes];
         }
         
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:harachaman];
     }
     
@@ -465,6 +468,7 @@
     {
         lamenatzaiach = [[NSMutableAttributedString alloc] initWithString: @"לַמְנַצֵּֽחַ בִּנְגִינוֹת מִזְמוֹר שִׁיר. אֱלֹהִים יְחָנֵּֽנוּ וִיבָרְכֵֽנוּ, יָאֵר פָּנָיו אִתָּֽנוּ סֶֽלָה. לָדַֽעַת בָּאָֽרֶץ דַּרְכֶּֽךָ, בְּכָל גּוֹיִם יְשׁוּעָתֶֽךָ. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. יִשְׂמְחוּ וִירַנְּנוּ לְאֻמִּים, כִּי תִשְׁפּוֹט עַמִּים מִישׁוֹר, וּלְאֻמִּים בָּאָֽרֶץ תַּנְחֵם סֶֽלָה. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. אֶֽרֶץ נָתְנָה יְבוּלָהּ, יְבָרְכֵֽנוּ אֱלֹהִים אֱלֹהֵֽינוּ. יְבָרְכֵֽנוּ אֱלֹהִים, וְיִירְאוּ אוֹתוֹ כָּל אַפְסֵי אָֽרֶץ." attributes: attributes];
         
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:lamenatzaiach];
     }
     
@@ -495,6 +499,7 @@
             }
         }
         
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:ana];
     }
     
@@ -519,7 +524,7 @@
             [ribono addAttributes:subAttributes range:range];
         }
         
-        
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:ribono];
         
     }
@@ -529,6 +534,7 @@
         aleinu = [[NSMutableAttributedString alloc] initWithString:@"עָלֵינוּ לְשַׁבֵּחַ לַאֲדוֹן הַכֹּל. לָתֵת גְּדֻלָּה לְיוֹצֵר בְּרֵאשִׁית. שֶׁלֹּא עָשָׂנוּ כְּגוֹיֵי הָאֲרָצוֹת. וְלֹא שָׂמָנוּ כְּמִשְׁפְּחוֹת הָאֲדָמָה. שֶׁלֹּא שָׂם חֶלְקֵנוּ כָּהֶם וְגוֹרָלֵנוּ כְּכָל הֲמוֹנָם. שֶׁהֵם מִשְׁתַּחֲוִים לְהֶבֶל וָרִיק וּמִתְפַּלְלִים אֶל אֵל לֹא יושִׁיעַ וַאֲנַחְנוּ כּוֹרְעִים וּמִשְׁתַּחֲוִים וּמוֹדִים לִפְנֵי מֶלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדושׁ בָּרוּךְ הוּא. שֶׁהוּא נוֹטֶה שָׁמַיִם וְיוֹסֵד אָרֶץ. וּמושַׁב יְקָרוֹ בַּשָּׁמַיִם מִמַּעַל. וּשְׁכִינַת עֻזּו בְּגָבְהֵי מְרוֹמִים. הוּא אֱלהֵינוּ אֵין עוֹד. אֱמֶת מַלְכֵּנוּ. אֶפֶס זוּלָתוֹ. כַּכָּתוּב בְּתוֹרָתוֹ. וְיָדַעְתָּ הַיּום וַהֲשֵׁבֹתָ אֶל לְבָבֶךָ. כִּי ה' הוּא הָאֱלֹהִים בַּשָּׁמַיִם מִמַּעַל וְעַל הָאָרֶץ מִתָּחַת. אֵין עוֹד:\n\nוְעַל כֵּן נְקַוֶּה לְּךָ ה' אֱלהֵינוּ לִרְאוֹת מְהֵרָה בְּתִפְאֶרֶת עֻזֶּךָ. לְהַעֲבִיר גִּלּוּלִים מִן הָאָרֶץ. וְהָאֱלִילִים כָּרוֹת יִכָּרֵתוּן. לְתַקֵּן עוֹלָם בְּמַלְכוּת שַׁדַּי. וְכָל בְּנֵי בָשָׂר יִקְרְאוּ בִשְׁמֶךָ לְהַפְנוֹת אֵלֶיךָ כָּל רִשְׁעֵי אָרֶץ. יַכִּירוּ וְיֵדְעוּ כָּל יושְׁבֵי תֵבֵל. כִּי לְךָ תִּכְרַע כָּל בֶּרֶךְ. תִּשָּׁבַע כָּל לָשׁוֹן. לְפָנֶיךָ ה' אֱלֹהֵינוּ יִכְרְעוּ וְיִפֹּלוּ. וְלִכְבוֹד שִׁמְךָ יְקָר יִתֵּנוּ. וִיקַבְּלוּ כֻלָּם אֶת עֹל מַלְכוּתֶךָ. וְתִמְלךְ עֲלֵיהֶם מְהֵרָה לְעוֹלָם וָעֶד. כִּי הַמַּלְכוּת שֶׁלְּךָ הִיא וּלְעוֹלְמֵי עַד תִּמְלךְ בְּכָבוֹד. כַּכָּתוּב בְּתוֹרָתֶךָ. ה' יִמְלךְ לְעוֹלָם וָעֶד: וְנֶאֱמַר. וְהָיָה ה' לְמֶלֶךְ עַל כָּל הָאָרֶץ. בַּיּום הַהוּא יִהְיֶה ה' אֶחָד וּשְׁמוֹ אֶחָד."
                                                         attributes:attributes];
         
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:aleinu];
     }
     
