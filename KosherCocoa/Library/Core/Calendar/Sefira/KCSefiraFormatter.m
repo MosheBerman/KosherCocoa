@@ -537,16 +537,19 @@
         
         ribono = [[NSMutableAttributedString alloc] initWithString:ribonoText attributes:attributes];
         
-        NSRange range = [ribonoText rangeOfString:trait];
-        
-        if (range.location != NSNotFound)
+        if (trait != nil)
         {
+            NSRange range = [ribonoText rangeOfString:trait];
             
-            NSDictionary *subAttributes = @{
-                                            NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]
-                                            };
-            
-            [ribono addAttributes:subAttributes range:range];
+            if (range.location != NSNotFound)
+            {
+                
+                NSDictionary *subAttributes = @{
+                                                NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]
+                                                };
+                
+                [ribono addAttributes:subAttributes range:range];
+            }
         }
         
         [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
@@ -579,6 +582,8 @@
 - (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer
 {
     NSString *trait = nil;
+    
+    integer = integer - 1;
     
     if (integer < self.hebrewKabbalisticStrings.count)
     {
