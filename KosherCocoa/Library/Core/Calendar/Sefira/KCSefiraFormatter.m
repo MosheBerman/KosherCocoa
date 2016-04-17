@@ -466,7 +466,10 @@
     if (plainTextCountString != nil)
     {
         NSAttributedString *countString = [[NSAttributedString alloc] initWithString:plainTextCountString attributes:countAttributes];
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
+        if(output.length > 0)
+        {
+            [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
+        }
         [output appendAttributedString:countString];
     }
     
