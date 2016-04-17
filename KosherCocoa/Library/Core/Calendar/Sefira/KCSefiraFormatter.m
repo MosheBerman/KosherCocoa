@@ -388,11 +388,11 @@
     
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.alignment = NSTextAlignmentRight;
+    paragraphStyle.baseWritingDirection = NSWritingDirectionRightToLeft;
     
     UIFont *font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
     
     NSDictionary<NSString *, id> *attributes = @{
-                                                 NSWritingDirectionAttributeName : @(NSWritingDirectionRightToLeft | NSTextWritingDirectionOverride),
                                                  NSTextEffectAttributeName : NSTextEffectLetterpressStyle,
                                                  NSParagraphStyleAttributeName : paragraphStyle,
                                                  NSFontAttributeName : font
