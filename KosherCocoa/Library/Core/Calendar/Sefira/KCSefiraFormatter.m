@@ -445,6 +445,7 @@
     if (plainTextCountString != nil)
     {
         NSAttributedString *countString = [[NSAttributedString alloc] initWithString:plainTextCountString attributes:countAttributes];
+        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
         [output appendAttributedString:countString];
     }
     
@@ -486,7 +487,7 @@
             {
                 
                 NSMutableParagraphStyle *leftParagraph = [[NSMutableParagraphStyle alloc] init];
-                leftParagraph.alignment = NSTextAlignmentLeft;
+                leftParagraph.alignment = NSTextAlignmentJustified;
                 
                 UIFont *smallerFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
                 
