@@ -387,19 +387,18 @@
     
     
     static NSMutableParagraphStyle *paragraphStyle = nil;
-    static UIFont *font = nil;
     static NSDictionary<NSString *, id> *attributes = nil;
+    
+    UIFont *countFont = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2];
+    UIFont *smallerFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
+    UIFont *font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
+    UIFont *subheadFont = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
     
     if(!paragraphStyle)
     {
         paragraphStyle =[[NSMutableParagraphStyle alloc] init];
         paragraphStyle.alignment = NSTextAlignmentRight;
         paragraphStyle.baseWritingDirection = NSWritingDirectionRightToLeft;
-    }
-    
-    if(!font)
-    {
-        font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
     }
     
     if(!attributes)
@@ -446,12 +445,6 @@
     centeredStyle.alignment = NSTextAlignmentCenter;
     
     static NSDictionary *countAttributes = nil;
-    static UIFont* countFont = nil;
-    
-    if(!countFont)
-    {
-        countFont = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2];
-    }
     
     if(!countAttributes)
     {
@@ -513,8 +506,6 @@
                 NSMutableParagraphStyle *leftParagraph = [[NSMutableParagraphStyle alloc] init];
                 leftParagraph.alignment = NSTextAlignmentJustified;
                 
-                UIFont *smallerFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
-                
                 NSDictionary *subAttributes = @{
                                                 NSParagraphStyleAttributeName : leftParagraph,
                                                 NSFontAttributeName : smallerFont
@@ -545,7 +536,7 @@
             {
                 
                 NSDictionary *subAttributes = @{
-                                                NSFontAttributeName : [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline]
+                                                NSFontAttributeName : subheadFont
                                                 };
                 
                 [ribono addAttributes:subAttributes range:range];
