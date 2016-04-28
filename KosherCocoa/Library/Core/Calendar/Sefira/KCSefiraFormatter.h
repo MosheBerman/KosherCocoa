@@ -98,7 +98,6 @@ typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
 
 - (nullable NSString *)countStringFromInteger:(NSInteger)integer;
 
-
 /** 
  *  Converts an integer (between 1 and 49, inclusive)
  *  into a string representing the sefira count for
@@ -114,7 +113,7 @@ typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
  *
  */
 
-- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAddition)prayers;
+- (nullable NSString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAddition)prayers;
 
 #pragma mark - Getting the Kabbalistic Trait of the Day
 

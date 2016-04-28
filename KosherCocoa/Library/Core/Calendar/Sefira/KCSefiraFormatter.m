@@ -369,13 +369,13 @@
     return countText;
 }
 
-- (nullable NSAttributedString *)countStringFromInteger:(NSInteger)integer withPrayers:(enum KCSefiraPrayerAddition)prayers
+- (nullable NSString *)countStringFromInteger:(NSInteger)integer withPrayers:(enum KCSefiraPrayerAddition)prayers
 {
     if (integer < 1 || integer > 49) {
         return nil;
     }
     
-    NSMutableAttributedString *output = [[NSMutableAttributedString alloc] initWithString:@""];
+    NSMutableString *output = [[NSMutableString alloc] initWithString:@""];
     
     BOOL showLeshaim = [self _isFlagEnabled: KCSefiraPrayerAdditionLeshaimYichud inFlags:prayers];
     BOOL showBeracha = [self _isFlagEnabled: KCSefiraPrayerAdditionBeracha inFlags:prayers];
@@ -385,138 +385,76 @@
     BOOL showRibono = [self _isFlagEnabled: KCSefiraPrayerAdditionRibono inFlags:prayers];
     BOOL showAleinu = [self _isFlagEnabled: KCSefiraPrayerAdditionAleinu inFlags:prayers];
     
-    
-    static NSMutableParagraphStyle *paragraphStyle = nil;
-    static NSDictionary<NSString *, id> *attributes = nil;
-    
-    UIFont *countFont = [UIFont preferredFontForTextStyle:UIFontTextStyleTitle2];
-    UIFont *smallerFont = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption1];
-    UIFont *font = [UIFont preferredFontForTextStyle: UIFontTextStyleBody];
-    UIFont *subheadFont = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
-    
-    if(!paragraphStyle)
-    {
-        paragraphStyle =[[NSMutableParagraphStyle alloc] init];
-        paragraphStyle.alignment = NSTextAlignmentRight;
-        paragraphStyle.baseWritingDirection = NSWritingDirectionRightToLeft;
-    }
-    
-    if(!attributes)
-    {
-        attributes = @{
-                       NSParagraphStyleAttributeName : paragraphStyle,
-                       NSFontAttributeName : font
-                       };
-    }
-    
-    NSMutableAttributedString *leshaim = nil;
-    NSMutableAttributedString *beracha = nil;
-    NSMutableAttributedString *harachaman = nil;
-    NSMutableAttributedString *lamenatzaiach = nil;
-    NSMutableAttributedString *ana = nil;
-    NSMutableAttributedString *ribono = nil;
-    NSMutableAttributedString *aleinu = nil;
+    NSString *leshaim = nil;
+    NSString *beracha = nil;
+    NSString *harachaman = nil;
+    NSString *lamenatzaiach = nil;
+    NSString *ana = nil;
+    NSString *ribono = nil;
+    NSString *aleinu = nil;
     
     if (showLeshaim)
     {
         if (self.custom == KCSefiraCustomSephardic)
         {
-            leshaim = [[NSMutableAttributedString alloc] initWithString:@"לְשֵׁם יִחוּד קוּדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּיהּ בִּדְחִילוּ וּרְחִימוּ. לְיַחֵדָא שֵׁם יוֹד קֵי בְּוָאו קֵי בְּיִחוּדָא שְׁלִים בְּשֵׁם כָּל יִשְׂרָאֵל הִנֵּה אֲנַחְנוּ בָּאִים לְקַיֵּם מִצְוַת עֲשֵׂה שֶׁל סְפִירַת הָעֹמֶר. כְּדִכְתִיב: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיוֹם הֲבִיאֲכֶם אֶת עֹמֶר הַתְּנוּפָה. שֶׁבַע שַׁבָּתוֹת תְּמִימוֹת תִּהְיֶינָה. עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִית תִּסְפְּרוּ חֲמִשִּׁים יוֹם. וְהִקְרַבְתֶּם מִנְחָה חֲדָשָׁה לַיהוָה: לְתַקֵּן אֶת שָׁרְשָׁה בְּמָקוֹם עֶלְיוֹן. לַעֲשֹוֹת נַחַת רוּח לְיוֹצְרֵנוּ וְלַעֲשֹוֹת רְצוֹן בּוֹרְאֵנוּ. וִיהִי נוֹעַם אֲדנָי אֱלהֵינוּ עָלֵינוּ. וּמַעֲשֵׂה יָדֵינוּ כּוֹנְנָה עָלֵינוּ. וּמַעֲשֵׂה יָדֵינוּ כּוֹנְנֵהוּ: יְהוָה, יִגְמֹר בַּעֲדִי. יְהוָה, חַסְדְּךָ לְעוֹלָם; מַעֲשֵׂי יָדֶיךָ אַל-תֶּרֶף: אֶקְרָא, לֵאלֹהִים עֶלְיוֹן; לָאֵל, גֹּמֵר עָלָי: וָאֶעֱבֹר עָלַיִךְ וָאֶרְאֵךְ, מִתְבּוֹסֶסֶת בְּדָמָיִךְ, וָאֹמַר לָךְ בְּדָמַיִךְ חֲיִי, וָאֹמַר לָךְ בְּדָמַיִךְ חֲיִי: בָּרְכִי נַפְשִׁי, אֶת-יְהוָה: יְהוָה אֱלֹהַי, גָּדַלְתָּ מְּאֹד; הוֹד .וְהָדָר לָבָשְׁתָּ. עֹטֶה-אוֹר, כַּשַּׂלְמָה, נוֹטֶה שָׁמַיִם, כַּיְרִיעָה"
-                                                             attributes:attributes];
+            leshaim = @"לְשֵׁם יִחוּד קוּדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּיהּ בִּדְחִילוּ וּרְחִימוּ. לְיַחֵדָא שֵׁם יוֹד קֵי בְּוָאו קֵי בְּיִחוּדָא שְׁלִים בְּשֵׁם כָּל יִשְׂרָאֵל הִנֵּה אֲנַחְנוּ בָּאִים לְקַיֵּם מִצְוַת עֲשֵׂה שֶׁל סְפִירַת הָעֹמֶר. כְּדִכְתִיב: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיוֹם הֲבִיאֲכֶם אֶת עֹמֶר הַתְּנוּפָה. שֶׁבַע שַׁבָּתוֹת תְּמִימוֹת תִּהְיֶינָה. עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִית תִּסְפְּרוּ חֲמִשִּׁים יוֹם. וְהִקְרַבְתֶּם מִנְחָה חֲדָשָׁה לַיהוָה: לְתַקֵּן אֶת שָׁרְשָׁה בְּמָקוֹם עֶלְיוֹן. לַעֲשֹוֹת נַחַת רוּח לְיוֹצְרֵנוּ וְלַעֲשֹוֹת רְצוֹן בּוֹרְאֵנוּ. וִיהִי נוֹעַם אֲדנָי אֱלהֵינוּ עָלֵינוּ. וּמַעֲשֵׂה יָדֵינוּ כּוֹנְנָה עָלֵינוּ. וּמַעֲשֵׂה יָדֵינוּ כּוֹנְנֵהוּ: יְהוָה, יִגְמֹר בַּעֲדִי. יְהוָה, חַסְדְּךָ לְעוֹלָם; מַעֲשֵׂי יָדֶיךָ אַל-תֶּרֶף: אֶקְרָא, לֵאלֹהִים עֶלְיוֹן; לָאֵל, גֹּמֵר עָלָי: וָאֶעֱבֹר עָלַיִךְ וָאֶרְאֵךְ, מִתְבּוֹסֶסֶת בְּדָמָיִךְ, וָאֹמַר לָךְ בְּדָמַיִךְ חֲיִי, וָאֹמַר לָךְ בְּדָמַיִךְ חֲיִי: בָּרְכִי נַפְשִׁי, אֶת-יְהוָה: יְהוָה אֱלֹהַי, גָּדַלְתָּ מְּאֹד; הוֹד .וְהָדָר לָבָשְׁתָּ. עֹטֶה-אוֹר, כַּשַּׂלְמָה, נוֹטֶה שָׁמַיִם, כַּיְרִיעָה";
         }
         else
         {
-            leshaim = [[NSMutableAttributedString alloc] initWithString:@"לְשֵׁם יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ, בִּדְחִילוּ וּרְחִימוּ, לְיַחֵד שֵׁם י\"ה בְּו\"ה בְּיִחוּדָא שְׁלִים, בְֹּשֵם כָּל יִשְׂרָאֵל. הִנְנִי מוּכָן וּמְזֻמָּן לְקַיֵּם מִצְוַת עֲשֵׂה שֶׁל סְפִירַת הָעֹֽמֶר, כְּמוֹ שֶׁכָּתוּב בַּתּוֹרָה: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיּוֹם הֲבִיאֲכֶם אֶת עֹֽמֶר הַתְּנוּפָה, שֶֽׁבַע שַׁבָּתוֹת תְּמִימֹת תִּהְיֶֽינָה. עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִת תִּסְפְּרוּ חֲמִשִּׁים יוֹם, וְהִקְרַבְתֶּם מִנְחָה חֲדָשָׁה לַייָ. וִיהִי נֹֽעַם אֲדֹנָי אֱלֹהֵֽינוּ עָלֵֽינוּ, וּמַעֲשֵׂה יָדֵֽינוּ כּוֹנְנָה עָלֵֽינוּ, וּמַעֲשֵׂה יָדֵֽינוּ כּוֹנְנֵֽהוּ."
-                                                             attributes: attributes];
+            leshaim = @"לְשֵׁם יִחוּד קֻדְשָׁא בְּרִיךְ הוּא וּשְׁכִינְתֵּהּ, בִּדְחִילוּ וּרְחִימוּ, לְיַחֵד שֵׁם י\"ה בְּו\"ה בְּיִחוּדָא שְׁלִים, בְֹּשֵם כָּל יִשְׂרָאֵל. הִנְנִי מוּכָן וּמְזֻמָּן לְקַיֵּם מִצְוַת עֲשֵׂה שֶׁל סְפִירַת הָעֹֽמֶר, כְּמוֹ שֶׁכָּתוּב בַּתּוֹרָה: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיּוֹם הֲבִיאֲכֶם אֶת עֹֽמֶר הַתְּנוּפָה, שֶֽׁבַע שַׁבָּתוֹת תְּמִימֹת תִּהְיֶֽינָה. עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִת תִּסְפְּרוּ חֲמִשִּׁים יוֹם, וְהִקְרַבְתֶּם מִנְחָה חֲדָשָׁה לַייָ. וִיהִי נֹֽעַם אֲדֹנָי אֱלֹהֵֽינוּ עָלֵֽינוּ, וּמַעֲשֵׂה יָדֵֽינוּ כּוֹנְנָה עָלֵֽינוּ, וּמַעֲשֵׂה יָדֵֽינוּ כּוֹנְנֵֽהוּ.";
         }
         
-        [output appendAttributedString:leshaim];
+        [output appendString:leshaim];
     }
     
     if (showBeracha)
     {
-        beracha = [[NSMutableAttributedString alloc] initWithString:@"בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָֽׁנוּ בְּמִצְוֹתָיו, וְצִוָּֽנוּ עַל סְפִירַת הָעֹֽמֶר" attributes:attributes];
+        beracha = [self blessing];
         
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-        [output appendAttributedString:beracha];
+        [output appendString:@"\n\n"];
+        [output appendString:beracha];
     }
     
-    NSMutableParagraphStyle *centeredStyle = [[NSMutableParagraphStyle alloc] init];
-    centeredStyle.alignment = NSTextAlignmentCenter;
+    NSString *countString = [self countStringFromInteger:integer];
     
-    static NSDictionary *countAttributes = nil;
-    
-    if(!countAttributes)
+    if(output.length > 0)
     {
-        countAttributes = @{
-                            NSParagraphStyleAttributeName : centeredStyle,
-                            NSFontAttributeName : countFont
-                            };
+        [output appendString:@"\n\n"];
     }
     
-    NSString *plainTextCountString = [self countStringFromInteger:integer];
+    [output appendString:countString];
     
-    if (plainTextCountString != nil)
-    {
-        NSAttributedString *countString = [[NSAttributedString alloc] initWithString:plainTextCountString attributes:countAttributes];
-        if(output.length > 0)
-        {
-            [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-        }
-        [output appendAttributedString:countString];
-    }
     
     if (showHarachaman)
     {
         
         if (self.custom == KCSefiraCustomSephardic)
         {
-            harachaman = [[NSMutableAttributedString alloc] initWithString:@"הָרַחֲמָן הוּא יִבְנֶה בֵּית הַמִקְדָשׁ, ְויַחֲזֵיר הָעֲבוֹדָה לִמְקוֹמָה בִּמְהֵרָה בְיָמֵינוּ. אָמֵן" attributes: attributes];
+            harachaman = @"הָרַחֲמָן הוּא יִבְנֶה בֵּית הַמִקְדָשׁ, ְויַחֲזֵיר הָעֲבוֹדָה לִמְקוֹמָה בִּמְהֵרָה בְיָמֵינוּ. אָמֵן";
         }
         else
         {
-            harachaman = [[NSMutableAttributedString alloc] initWithString:@"הָרַחֲמָן הוּא יַחֲזִיר לָֽנוּ עֲבוֹדַת בֵּית הַמִּקְדָּשׁ לִמְקוֹמָהּ, בִּמְהֵרָה בְיָמֵֽינוּ אָמֵן סֶֽלָה." attributes: attributes];
+            harachaman = @"הָרַחֲמָן הוּא יַחֲזִיר לָֽנוּ עֲבוֹדַת בֵּית הַמִּקְדָּשׁ לִמְקוֹמָהּ, בִּמְהֵרָה בְיָמֵֽינוּ אָמֵן סֶֽלָה.";
         }
         
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-        [output appendAttributedString:harachaman];
+        [output appendString:@"\n\n"];
+        [output appendString:harachaman];
     }
     
     if (showLamenatzaiach)
     {
-        lamenatzaiach = [[NSMutableAttributedString alloc] initWithString: @"לַמְנַצֵּֽחַ בִּנְגִינוֹת מִזְמוֹר שִׁיר. אֱלֹהִים יְחָנֵּֽנוּ וִיבָרְכֵֽנוּ, יָאֵר פָּנָיו אִתָּֽנוּ סֶֽלָה. לָדַֽעַת בָּאָֽרֶץ דַּרְכֶּֽךָ, בְּכָל גּוֹיִם יְשׁוּעָתֶֽךָ. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. יִשְׂמְחוּ וִירַנְּנוּ לְאֻמִּים, כִּי תִשְׁפּוֹט עַמִּים מִישׁוֹר, וּלְאֻמִּים בָּאָֽרֶץ תַּנְחֵם סֶֽלָה. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. אֶֽרֶץ נָתְנָה יְבוּלָהּ, יְבָרְכֵֽנוּ אֱלֹהִים אֱלֹהֵֽינוּ. יְבָרְכֵֽנוּ אֱלֹהִים, וְיִירְאוּ אוֹתוֹ כָּל אַפְסֵי אָֽרֶץ." attributes: attributes];
+        lamenatzaiach = @"לַמְנַצֵּֽחַ בִּנְגִינוֹת מִזְמוֹר שִׁיר. אֱלֹהִים יְחָנֵּֽנוּ וִיבָרְכֵֽנוּ, יָאֵר פָּנָיו אִתָּֽנוּ סֶֽלָה. לָדַֽעַת בָּאָֽרֶץ דַּרְכֶּֽךָ, בְּכָל גּוֹיִם יְשׁוּעָתֶֽךָ. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. יִשְׂמְחוּ וִירַנְּנוּ לְאֻמִּים, כִּי תִשְׁפּוֹט עַמִּים מִישׁוֹר, וּלְאֻמִּים בָּאָֽרֶץ תַּנְחֵם סֶֽלָה. יוֹדֽוּךָ עַמִּים, אֱלֹהִים, יוֹדֽוּךָ עַמִּים כֻּלָּם. אֶֽרֶץ נָתְנָה יְבוּלָהּ, יְבָרְכֵֽנוּ אֱלֹהִים אֱלֹהֵֽינוּ. יְבָרְכֵֽנוּ אֱלֹהִים, וְיִירְאוּ אוֹתוֹ כָּל אַפְסֵי אָֽרֶץ.";
         
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-        [output appendAttributedString:lamenatzaiach];
+        [output appendString:@"\n\n"];
+        [output appendString:lamenatzaiach];
     }
     
     if (showAna)
     {
-        ana = [[NSMutableAttributedString alloc] initWithString:@"אָנָּא בְּכֹֽחַ גְּדֻלַּת יְמִינְךָ, תַּתִּיר צְרוּרָה. אב\"ג ית\"ץ\nקַבֵּל רִנַּת עַמְּךָ, שַׂגְּבֵֽנוּ, טַהֲרֵֽנוּ, נוֹרָא. קר\"ע שט\"ן\nנָא גִבּוֹר, דּוֹרְשֵׁי יִחוּדְךָ, כְּבָבַת שָׁמְרֵם.נג\"ד יכ\"ש\nבָּרְכֵם, טַהֲרֵם, רַחֲמֵם, צִדְקָתְךָ תָּמִיד גָּמְלֵם. בט\"ר צת\"ג \nחֲסִין קָדוֹשׁ, בְּרוֹב טוּבְךָ, נַהֵל עֲדָתֶֽךָ. חק\"ב טנ\"ע \nיָחִיד גֵּאֶה, לְעַמְּךָ פְּנֵה, זוֹכְרֵי קְדֻשָּׁתֶֽךָ.יג\"ל פז\"ק \nשַׁוְעָתֵֽנוּ קַבֵּל, וּשְׁמַע צַעֲקָתֵֽנוּ, יוֹדֵֽעַ תַּעֲלֻמוֹת. שק\"ו צי\"ת\n\nבָּרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד." attributes:attributes];
+        ana = @"אָנָּא בְּכֹֽחַ גְּדֻלַּת יְמִינְךָ, תַּתִּיר צְרוּרָה. אב\"ג ית\"ץ\nקַבֵּל רִנַּת עַמְּךָ, שַׂגְּבֵֽנוּ, טַהֲרֵֽנוּ, נוֹרָא. קר\"ע שט\"ן\nנָא גִבּוֹר, דּוֹרְשֵׁי יִחוּדְךָ, כְּבָבַת שָׁמְרֵם.נג\"ד יכ\"ש\nבָּרְכֵם, טַהֲרֵם, רַחֲמֵם, צִדְקָתְךָ תָּמִיד גָּמְלֵם. בט\"ר צת\"ג \nחֲסִין קָדוֹשׁ, בְּרוֹב טוּבְךָ, נַהֵל עֲדָתֶֽךָ. חק\"ב טנ\"ע \nיָחִיד גֵּאֶה, לְעַמְּךָ פְּנֵה, זוֹכְרֵי קְדֻשָּׁתֶֽךָ.יג\"ל פז\"ק \nשַׁוְעָתֵֽנוּ קַבֵּל, וּשְׁמַע צַעֲקָתֵֽנוּ, יוֹדֵֽעַ תַּעֲלֻמוֹת. שק\"ו צי\"ת\n\nבָּרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד.";
         
-        NSArray <NSString *> *kabbalisticAbbreviations = @[@"אב\"ג ית\"ץ", @"קר\"ע שט\"ן", @"נג\"ד יכ\"ש",@"בט\"ר צת\"ג", @"חק\"ב טנ\"ע", @"יג\"ל פז\"ק", @"שק\"ו צי\"ת"];
-        
-        for (NSString *substring in kabbalisticAbbreviations)
-        {
-            NSRange rangeOfString = [ana.string rangeOfString:substring];
-            
-            if (rangeOfString.location != NSNotFound)
-            {
-                
-                NSMutableParagraphStyle *leftParagraph = [[NSMutableParagraphStyle alloc] init];
-                leftParagraph.alignment = NSTextAlignmentJustified;
-                
-                NSDictionary *subAttributes = @{
-                                                NSParagraphStyleAttributeName : leftParagraph,
-                                                NSFontAttributeName : smallerFont
-                                                };
-                
-                [ana addAttributes:subAttributes range:rangeOfString];
-            }
-        }
-        
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-        [output appendAttributedString:ana];
+        [output appendString:@"\n\n" ];
+        [output appendString:ana];
     }
     
     if (showRibono)
@@ -524,37 +462,20 @@
         
         NSString *trait = [self kabbalisticTraitFromInteger:integer];
         
-        NSString *ribonoText = [NSString stringWithFormat:@"רִבּוֹנוֹ  שֶׁל עוֹלָם, אַתָּה צִוִּיתָֽנוּ עַל יְדֵי מֹשֶׁה עַבְדֶּֽךָ לִסְפּוֹר סְפִירַת הָעֹֽמֶר, כְּדֵי לְטַהֲרֵֽנוּ מִקְּלִפּוֹתֵֽינוּ וּמִטֻּמְאוֹתֵֽינוּ, כְּמוֹ שֶׁכָּתַֽבְתָּ בְּתוֹרָתֶֽךָ: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיּוֹם הֲבִיאֲכֶם אֶת עֹֽמֶר הַתְּנוּפָה, שֶֽׁבַע שַׁבָּתוֹת תְּמִימֹת תִּהְיֶֽינָה, עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִת תִּסְפְּרוּ חֲמִשִּׁים יוֹם, כְּדֵי שֶׁיִּטָּהֲרוּ נַפְשׁוֹת עַמְּךָ יִשְׂרָאֵל מִזֻּהֲמָתָם. וּבְכֵן יְהִי רָצוֹן מִלְּפָנֶֽיךָ יְיָ אֱלֹהֵֽינוּ וֵאלֹהֵי אֲבוֹתֵֽינוּ, שֶׁבִּזְכוּת סְפִירַת הָעֹֽמֶר שֶׁסָּפַֽרְתִּי הַיּוֹם, יְתֻקַּן מַה שֶּׁפָּגַֽמְתִּי בִּסְפִירָה %@ וְאֶטָּהֵר וְאֶתְקַדֵּשׁ בִּקְדֻשָּׁה שֶׁל מַֽעְלָה, וְעַל יְדֵי זֶה יֻשְׁפַּע שֶֽׁפַע רַב בְּכָל הָעוֹלָמוֹת, וּלְתַקֵּן אֶת נַפְשׁוֹתֵֽינוּ וְרוּחוֹתֵֽינוּ וְנִשְׁמוֹתֵֽינוּ מִכָּל סִיג וּפְגַם, וּלְטַהֲרֵֽנוּ וּלְקַדְּשֵֽׁנוּ בִּקְדֻשָּׁתְךָ הָעֶלְיוֹנָה, אָמֵן סֶֽלָה.", trait];
+        ribono = [NSString stringWithFormat:@"רִבּוֹנוֹ שֶׁל עוֹלָם, אַתָּה צִוִּיתָֽנוּ עַל יְדֵי מֹשֶׁה עַבְדֶּֽךָ לִסְפּוֹר סְפִירַת הָעֹֽמֶר, כְּדֵי לְטַהֲרֵֽנוּ מִקְּלִפּוֹתֵֽינוּ וּמִטֻּמְאוֹתֵֽינוּ, כְּמוֹ שֶׁכָּתַֽבְתָּ בְּתוֹרָתֶֽךָ: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיּוֹם הֲבִיאֲכֶם אֶת עֹֽמֶר הַתְּנוּפָה, שֶֽׁבַע שַׁבָּתוֹת תְּמִימֹת תִּהְיֶֽינָה, עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִת תִּסְפְּרוּ חֲמִשִּׁים יוֹם, כְּדֵי שֶׁיִּטָּהֲרוּ נַפְשׁוֹת עַמְּךָ יִשְׂרָאֵל מִזֻּהֲמָתָם. וּבְכֵן יְהִי רָצוֹן מִלְּפָנֶֽיךָ יְיָ אֱלֹהֵֽינוּ וֵאלֹהֵי אֲבוֹתֵֽינוּ, שֶׁבִּזְכוּת סְפִירַת הָעֹֽמֶר שֶׁסָּפַֽרְתִּי הַיּוֹם, יְתֻקַּן מַה שֶּׁפָּגַֽמְתִּי בִּסְפִירָה %@ וְאֶטָּהֵר וְאֶתְקַדֵּשׁ בִּקְדֻשָּׁה שֶׁל מַֽעְלָה, וְעַל יְדֵי זֶה יֻשְׁפַּע שֶֽׁפַע רַב בְּכָל הָעוֹלָמוֹת, וּלְתַקֵּן אֶת נַפְשׁוֹתֵֽינוּ וְרוּחוֹתֵֽינוּ וְנִשְׁמוֹתֵֽינוּ מִכָּל סִיג וּפְגַם, וּלְטַהֲרֵֽנוּ וּלְקַדְּשֵֽׁנוּ בִּקְדֻשָּׁתְךָ הָעֶלְיוֹנָה, אָמֵן סֶֽלָה.", trait];
         
-        ribono = [[NSMutableAttributedString alloc] initWithString:ribonoText attributes:attributes];
         
-        if (trait != nil)
-        {
-            NSRange range = [ribonoText rangeOfString:trait];
-            
-            if (range.location != NSNotFound)
-            {
-                
-                NSDictionary *subAttributes = @{
-                                                NSFontAttributeName : subheadFont
-                                                };
-                
-                [ribono addAttributes:subAttributes range:range];
-            }
-        }
-        
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-        [output appendAttributedString:ribono];
+        [output appendString:@"\n\n"];
+        [output appendString:ribono];
         
     }
     
     if (showAleinu)
     {
-        aleinu = [[NSMutableAttributedString alloc] initWithString:@"עָלֵינוּ לְשַׁבֵּחַ לַאֲדוֹן הַכֹּל. לָתֵת גְּדֻלָּה לְיוֹצֵר בְּרֵאשִׁית. שֶׁלֹּא עָשָׂנוּ כְּגוֹיֵי הָאֲרָצוֹת. וְלֹא שָׂמָנוּ כְּמִשְׁפְּחוֹת הָאֲדָמָה. שֶׁלֹּא שָׂם חֶלְקֵנוּ כָּהֶם וְגוֹרָלֵנוּ כְּכָל הֲמוֹנָם. שֶׁהֵם מִשְׁתַּחֲוִים לְהֶבֶל וָרִיק וּמִתְפַּלְלִים אֶל אֵל לֹא יושִׁיעַ וַאֲנַחְנוּ כּוֹרְעִים וּמִשְׁתַּחֲוִים וּמוֹדִים לִפְנֵי מֶלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדושׁ בָּרוּךְ הוּא. שֶׁהוּא נוֹטֶה שָׁמַיִם וְיוֹסֵד אָרֶץ. וּמושַׁב יְקָרוֹ בַּשָּׁמַיִם מִמַּעַל. וּשְׁכִינַת עֻזּו בְּגָבְהֵי מְרוֹמִים. הוּא אֱלהֵינוּ אֵין עוֹד. אֱמֶת מַלְכֵּנוּ. אֶפֶס זוּלָתוֹ. כַּכָּתוּב בְּתוֹרָתוֹ. וְיָדַעְתָּ הַיּום וַהֲשֵׁבֹתָ אֶל לְבָבֶךָ. כִּי ה' הוּא הָאֱלֹהִים בַּשָּׁמַיִם מִמַּעַל וְעַל הָאָרֶץ מִתָּחַת. אֵין עוֹד:\n\nוְעַל כֵּן נְקַוֶּה לְּךָ ה' אֱלהֵינוּ לִרְאוֹת מְהֵרָה בְּתִפְאֶרֶת עֻזֶּךָ. לְהַעֲבִיר גִּלּוּלִים מִן הָאָרֶץ. וְהָאֱלִילִים כָּרוֹת יִכָּרֵתוּן. לְתַקֵּן עוֹלָם בְּמַלְכוּת שַׁדַּי. וְכָל בְּנֵי בָשָׂר יִקְרְאוּ בִשְׁמֶךָ לְהַפְנוֹת אֵלֶיךָ כָּל רִשְׁעֵי אָרֶץ. יַכִּירוּ וְיֵדְעוּ כָּל יושְׁבֵי תֵבֵל. כִּי לְךָ תִּכְרַע כָּל בֶּרֶךְ. תִּשָּׁבַע כָּל לָשׁוֹן. לְפָנֶיךָ ה' אֱלֹהֵינוּ יִכְרְעוּ וְיִפֹּלוּ. וְלִכְבוֹד שִׁמְךָ יְקָר יִתֵּנוּ. וִיקַבְּלוּ כֻלָּם אֶת עֹל מַלְכוּתֶךָ. וְתִמְלךְ עֲלֵיהֶם מְהֵרָה לְעוֹלָם וָעֶד. כִּי הַמַּלְכוּת שֶׁלְּךָ הִיא וּלְעוֹלְמֵי עַד תִּמְלךְ בְּכָבוֹד. כַּכָּתוּב בְּתוֹרָתֶךָ. ה' יִמְלךְ לְעוֹלָם וָעֶד: וְנֶאֱמַר. וְהָיָה ה' לְמֶלֶךְ עַל כָּל הָאָרֶץ. בַּיּום הַהוּא יִהְיֶה ה' אֶחָד וּשְׁמוֹ אֶחָד."
-                                                        attributes:attributes];
+        aleinu = @"עָלֵינוּ לְשַׁבֵּחַ לַאֲדוֹן הַכֹּל. לָתֵת גְּדֻלָּה לְיוֹצֵר בְּרֵאשִׁית. שֶׁלֹּא עָשָׂנוּ כְּגוֹיֵי הָאֲרָצוֹת. וְלֹא שָׂמָנוּ כְּמִשְׁפְּחוֹת הָאֲדָמָה. שֶׁלֹּא שָׂם חֶלְקֵנוּ כָּהֶם וְגוֹרָלֵנוּ כְּכָל הֲמוֹנָם. שֶׁהֵם מִשְׁתַּחֲוִים לְהֶבֶל וָרִיק וּמִתְפַּלְלִים אֶל אֵל לֹא יושִׁיעַ וַאֲנַחְנוּ כּוֹרְעִים וּמִשְׁתַּחֲוִים וּמוֹדִים לִפְנֵי מֶלֶךְ מַלְכֵי הַמְּלָכִים הַקָּדושׁ בָּרוּךְ הוּא. שֶׁהוּא נוֹטֶה שָׁמַיִם וְיוֹסֵד אָרֶץ. וּמושַׁב יְקָרוֹ בַּשָּׁמַיִם מִמַּעַל. וּשְׁכִינַת עֻזּו בְּגָבְהֵי מְרוֹמִים. הוּא אֱלהֵינוּ אֵין עוֹד. אֱמֶת מַלְכֵּנוּ. אֶפֶס זוּלָתוֹ. כַּכָּתוּב בְּתוֹרָתוֹ. וְיָדַעְתָּ הַיּום וַהֲשֵׁבֹתָ אֶל לְבָבֶךָ. כִּי ה' הוּא הָאֱלֹהִים בַּשָּׁמַיִם מִמַּעַל וְעַל הָאָרֶץ מִתָּחַת. אֵין עוֹד:\n\nוְעַל כֵּן נְקַוֶּה לְּךָ ה' אֱלהֵינוּ לִרְאוֹת מְהֵרָה בְּתִפְאֶרֶת עֻזֶּךָ. לְהַעֲבִיר גִּלּוּלִים מִן הָאָרֶץ. וְהָאֱלִילִים כָּרוֹת יִכָּרֵתוּן. לְתַקֵּן עוֹלָם בְּמַלְכוּת שַׁדַּי. וְכָל בְּנֵי בָשָׂר יִקְרְאוּ בִשְׁמֶךָ לְהַפְנוֹת אֵלֶיךָ כָּל רִשְׁעֵי אָרֶץ. יַכִּירוּ וְיֵדְעוּ כָּל יושְׁבֵי תֵבֵל. כִּי לְךָ תִּכְרַע כָּל בֶּרֶךְ. תִּשָּׁבַע כָּל לָשׁוֹן. לְפָנֶיךָ ה' אֱלֹהֵינוּ יִכְרְעוּ וְיִפֹּלוּ. וְלִכְבוֹד שִׁמְךָ יְקָר יִתֵּנוּ. וִיקַבְּלוּ כֻלָּם אֶת עֹל מַלְכוּתֶךָ. וְתִמְלךְ עֲלֵיהֶם מְהֵרָה לְעוֹלָם וָעֶד. כִּי הַמַּלְכוּת שֶׁלְּךָ הִיא וּלְעוֹלְמֵי עַד תִּמְלךְ בְּכָבוֹד. כַּכָּתוּב בְּתוֹרָתֶךָ. ה' יִמְלךְ לְעוֹלָם וָעֶד: וְנֶאֱמַר. וְהָיָה ה' לְמֶלֶךְ עַל כָּל הָאָרֶץ. בַּיּום הַהוּא יִהְיֶה ה' אֶחָד וּשְׁמוֹ אֶחָד.";
         
-        [output appendAttributedString:[[NSAttributedString alloc] initWithString:@"\n\n"]];
-        [output appendAttributedString:aleinu];
+        [output appendString:@"\n\n"];
+        [output appendString:aleinu];
     }
     
     return output;
@@ -642,6 +563,16 @@
     return kabbalisticMap;
 }
 
+/** 
+ *  Get the blessing text for counting the omer.
+ *
+ *  @return The blessing said on counting the omer.
+ */
+
+- (NSString *)blessing
+{
+    return  @"בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָֽׁנוּ בְּמִצְוֹתָיו, וְצִוָּֽנוּ עַל סְפִירַת הָעֹֽמֶר";
+}
 
 /**
  *  Check if the given option is enabled.
