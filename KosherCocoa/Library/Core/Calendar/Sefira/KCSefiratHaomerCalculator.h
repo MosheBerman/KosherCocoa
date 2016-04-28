@@ -71,4 +71,17 @@
 
 + (NSInteger)dayOfSefiraForDate:(NSDate *)date;
 
+/**
+ *  Constructs an NSDate representing the first day of
+ *  counting - 16 Nissan, during the year supplied by
+ *  the date parameter.
+ *
+ *  @param date An NSDate to use to get the year of the return date.
+ *
+ *  @return A date representing the 16th of Nissan during the year
+ *          of the supplied date.
+ */
+
++ (NSDate *)dateOfSixteenNissanForYearOfDate:(NSDate *)date;
+
 @end

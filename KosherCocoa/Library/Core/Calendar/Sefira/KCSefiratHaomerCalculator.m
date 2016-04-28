@@ -43,7 +43,7 @@ const NSInteger lengthOfSefira = 49;
 // Returns 1-49, or 0 for all other days
 + (NSInteger)dayOfSefiraForDate:(NSDate *)date
 {
-	NSDate *firstDayOfTheOmer = [KCSefiratHaomerCalculator _dateOfSixteenNissanForYearOfDate:date];
+	NSDate *firstDayOfTheOmer = [KCSefiratHaomerCalculator dateOfSixteenNissanForYearOfDate:date];
     
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
@@ -59,7 +59,18 @@ const NSInteger lengthOfSefira = 49;
 
 #pragma mark - Utility Method
 
-+ (NSDate *)_dateOfSixteenNissanForYearOfDate:(NSDate *)date
+/**
+ *  Constructs an NSDate representing the first day of
+ *  counting - 16 Nissan, during the year supplied by
+ *  the date parameter.
+ *
+ *  @param date An NSDate to use to get the year of the return date.
+ *
+ *  @return A date representing the 16th of Nissan during the year
+ *          of the supplied date.
+ */
+
++ (NSDate *)dateOfSixteenNissanForYearOfDate:(NSDate *)date
 {
 	NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
 	
