@@ -8,6 +8,9 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
+FOUNDATION_EXPORT double KosherCocoaVersionNumber;
+FOUNDATION_EXPORT const unsigned char KosherCocoaVersionString[];
+
 #import <KosherCocoa/KCAstronomicalCalculator.h>
 #import <KosherCocoa/KCComplexZmanimCalendar.h>
 #import <KosherCocoa/KCDafYomiCalculator.h>
@@ -21,6 +24,3 @@
 #import <KosherCocoa/KCSunriseAndSunsetCalculator.h>
 #import <KosherCocoa/KCZmanimCalendar.h>
 #import <KosherCocoa/KCZman.h>
-
-FOUNDATION_EXPORT double KosherCocoaVersionNumber;
-FOUNDATION_EXPORT const unsigned char KosherCocoaVersionString[];

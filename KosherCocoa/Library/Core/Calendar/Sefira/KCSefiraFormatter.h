@@ -127,4 +127,12 @@ typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
 
 - (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer;
 
+/**
+ *  Get the blessing text for counting the omer.
+ *
+ *  @return The blessing said on counting the omer.
+ */
+
+- (nonnull NSString *)blessing;
+
 @end
