@@ -9,7 +9,7 @@
  */
 
 #import "KCSefiraFormatter.h"
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 #pragma mark - This class isn't finished yet.
 
@@ -569,7 +569,7 @@
  *  @return The blessing said on counting the omer.
  */
 
-- (NSString *)blessing
+- (nonnull NSString *)blessing
 {
     return  @"בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָֽׁנוּ בְּמִצְוֹתָיו, וְצִוָּֽנוּ עַל סְפִירַת הָעֹֽמֶר";
 }
