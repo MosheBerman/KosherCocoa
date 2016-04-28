@@ -35,7 +35,7 @@
 		46130DD31BF52DF6001D19FC /* NSDate+ConvenientDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */; };
 		46130DD61BF52DF6001D19FC /* KCJewishHoliday.h in Headers */ = {isa = PBXBuildFile; fileRef = 461E6DFC194474C300C497A8 /* KCJewishHoliday.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46130DD71BF52DF6001D19FC /* KCAstronomicalCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46130DD81BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46130DD81BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; };
 		46130DD91BF52DF6001D19FC /* trigonometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AF317CAF3B900056F16 /* trigonometry.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		46130DDA1BF52DF6001D19FC /* KCJewishCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AD217CAF3B900056F16 /* KCJewishCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46130DDB1BF52DF6001D19FC /* KCZenith.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFC17CAF3B900056F16 /* KCZenith.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -78,7 +78,7 @@
 		4618ECFE1BF44AD500C33159 /* KCAstronomicalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFF1BF44AD500C33159 /* KCGeoLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AED17CAF3B900056F16 /* KCGeoLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED001BF44AD500C33159 /* KCSunriseAndSunsetCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEF17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; };
 		4618ED021BF44AFB00C33159 /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
 		4618ED031BF44AFF00C33159 /* KCJewishCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AD217CAF3B900056F16 /* KCJewishCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED041BF44B0500C33159 /* KCJewishCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD317CAF3B900056F16 /* KCJewishCalendar.m */; };
@@ -170,7 +170,7 @@
 		466FA74A1CD2860500668CD1 /* MBCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA74B1CD2860500668CD1 /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABB17CAF3B900056F16 /* NSCalendar+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA74C1CD2860500668CD1 /* NSCalendar+DateComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABD17CAF3B900056F16 /* NSCalendar+DateComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		466FA74D1CD2860500668CD1 /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABF17CAF3B900056F16 /* NSCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		466FA74D1CD2860500668CD1 /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABF17CAF3B900056F16 /* NSCalendar+DateManipulation.h */; };
 		466FA74E1CD2860500668CD1 /* NSCalendar+hebrewYearTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC117CAF3B900056F16 /* NSCalendar+hebrewYearTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA74F1CD2860500668CD1 /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC317CAF3B900056F16 /* NSCalendar+Juncture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA7501CD2860500668CD1 /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC517CAF3B900056F16 /* NSCalendar+Ranges.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -238,7 +238,7 @@
 		466FA7DE1CD2871A00668CD1 /* MBCalendarCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA7DF1CD2871A00668CD1 /* NSCalendar+Components.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABB17CAF3B900056F16 /* NSCalendar+Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA7E01CD2871A00668CD1 /* NSCalendar+DateComparison.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABD17CAF3B900056F16 /* NSCalendar+DateComparison.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		466FA7E11CD2871A00668CD1 /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABF17CAF3B900056F16 /* NSCalendar+DateManipulation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		466FA7E11CD2871A00668CD1 /* NSCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ABF17CAF3B900056F16 /* NSCalendar+DateManipulation.h */; };
 		466FA7E21CD2871A00668CD1 /* NSCalendar+hebrewYearTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC117CAF3B900056F16 /* NSCalendar+hebrewYearTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA7E31CD2871A00668CD1 /* NSCalendar+Juncture.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC317CAF3B900056F16 /* NSCalendar+Juncture.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA7E41CD2871A00668CD1 /* NSCalendar+Ranges.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AC517CAF3B900056F16 /* NSCalendar+Ranges.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -692,8 +692,8 @@
 				46130DFA1BF52DF6001D19FC /* KCTractates.h in Headers */,
 				46130DFB1BF52DF6001D19FC /* KCDafYomiCalculator.h in Headers */,
 				46130DFC1BF52DF6001D19FC /* KosherCocoa.h in Headers */,
-				46130DD81BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
 				46130DFD1BF52DF6001D19FC /* KCZmanimCalendar.h in Headers */,
+				46130DD81BF52DF6001D19FC /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -737,10 +737,10 @@
 				4618ED071BF44B1400C33159 /* KCDaf.h in Headers */,
 				4618ED0E1BF44B4200C33159 /* KCSefiraFormatter.h in Headers */,
 				4618ED321BF4516900C33159 /* KCTractates.h in Headers */,
-				4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
 				4618ED091BF44B1B00C33159 /* KCDafYomiCalculator.h in Headers */,
 				4618ECE81BF449EF00C33159 /* KosherCocoa.h in Headers */,
 				4618ED141BF44B7100C33159 /* KCZmanimCalendar.h in Headers */,
+				4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,7 +753,6 @@
 				466FA74A1CD2860500668CD1 /* MBCalendarCategories.h in Headers */,
 				466FA74B1CD2860500668CD1 /* NSCalendar+Components.h in Headers */,
 				466FA74C1CD2860500668CD1 /* NSCalendar+DateComparison.h in Headers */,
-				466FA74D1CD2860500668CD1 /* NSCalendar+DateManipulation.h in Headers */,
 				466FA74E1CD2860500668CD1 /* NSCalendar+hebrewYearTypes.h in Headers */,
 				466FA74F1CD2860500668CD1 /* NSCalendar+Juncture.h in Headers */,
 				466FA7501CD2860500668CD1 /* NSCalendar+Ranges.h in Headers */,
@@ -788,6 +787,7 @@
 				466FA76E1CD2860500668CD1 /* KCZenithExtended.h in Headers */,
 				466FA76F1CD2860500668CD1 /* KCParashaReadings.h in Headers */,
 				466FA7641CD2860500668CD1 /* trigonometry.h in Headers */,
+				466FA74D1CD2860500668CD1 /* NSCalendar+DateManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,7 +801,6 @@
 				466FA7DE1CD2871A00668CD1 /* MBCalendarCategories.h in Headers */,
 				466FA7DF1CD2871A00668CD1 /* NSCalendar+Components.h in Headers */,
 				466FA7E01CD2871A00668CD1 /* NSCalendar+DateComparison.h in Headers */,
-				466FA7E11CD2871A00668CD1 /* NSCalendar+DateManipulation.h in Headers */,
 				466FA7E21CD2871A00668CD1 /* NSCalendar+hebrewYearTypes.h in Headers */,
 				466FA7E31CD2871A00668CD1 /* NSCalendar+Juncture.h in Headers */,
 				466FA7E41CD2871A00668CD1 /* NSCalendar+Ranges.h in Headers */,
@@ -836,6 +835,7 @@
 				466FA8011CD2871A00668CD1 /* KCZenithExtended.h in Headers */,
 				466FA8021CD2871A00668CD1 /* KCParashaReadings.h in Headers */,
 				466FA7DB1CD2870C00668CD1 /* trigonometry.h in Headers */,
+				466FA7E11CD2871A00668CD1 /* NSCalendar+DateManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1552,6 +1552,7 @@
 				466FA71F1CD2855900668CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		466FA7BD1CD286E200668CD1 /* Build configuration list for PBXNativeTarget "KosherCocoaTVOS" */ = {
 			isa = XCConfigurationList;
@@ -1560,6 +1561,7 @@
 				466FA7BF1CD286E200668CD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

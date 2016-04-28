@@ -8,6 +8,8 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
+#import <Foundation/Foundation.h>
+
 FOUNDATION_EXPORT double KosherCocoaVersionNumber;
 FOUNDATION_EXPORT const unsigned char KosherCocoaVersionString[];
 
