@@ -52,10 +52,11 @@ typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
 };
 
 /**
- *  The options for the formatter.
+ *  The prayers for the formatter to show with the count text.
  *
  *  If the KCSefiraLanguage is not set to KCSefiraLanguageHebrew
- *  or KCSefiraCustom is not KCSefiraCustomAshkenaz, these flags are ignored.
+ *  or KCSefiraCustom is KCSefiraCustomSephardic, the results from 
+ *  passing these flags is undefined.
  */
 
 typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
