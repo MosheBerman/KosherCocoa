@@ -288,7 +288,7 @@
 		4618ECE91BF449EF00C33159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KosherCocoa/Info.plist; sourceTree = "<group>"; };
 		461E6DFC194474C300C497A8 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
 		461E6DFD194474C300C497A8 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
-		465456D91D7C845600C729E8 /* KosherCocoa.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = KosherCocoa.modulemap; sourceTree = "<group>"; };
+		465456DA1D7C855300C729E8 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = KosherCocoa/module.modulemap; sourceTree = "<group>"; };
 		466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCalendarCategories.h; sourceTree = "<group>"; };
 		466A3ABB17CAF3B900056F16 /* NSCalendar+Components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+Components.h"; sourceTree = "<group>"; };
 		466A3ABC17CAF3B900056F16 /* NSCalendar+Components.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+Components.m"; sourceTree = "<group>"; };
@@ -399,7 +399,7 @@
 		4618BB7A1664216E00AD3CE5 = {
 			isa = PBXGroup;
 			children = (
-				465456D91D7C845600C729E8 /* KosherCocoa.modulemap */,
+				465456DA1D7C855300C729E8 /* module.modulemap */,
 				4618BB8A1664216E00AD3CE5 /* KosherCocoa */,
 				4610DD9018086BB40055A4F9 /* TODO */,
 				466FA71A1CD2855900668CD1 /* OS X Support */,
@@ -1291,7 +1291,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = KosherCocoa.modulemap;
+				MODULEMAP_FILE = KosherCocoa/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1335,7 +1335,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = KosherCocoa.modulemap;
+				MODULEMAP_FILE = KosherCocoa/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
