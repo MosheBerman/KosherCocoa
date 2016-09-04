@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char KosherCocoaVersionString[];
 #import <KosherCocoa/Library/Core/Calendar/Chagim/KCJewishCalendar.h>
 #import <KosherCocoa/Library/Core/Calendar/Chagim/KCJewishHoliday.h>
 
-#import <KosherCocoa/Library/Core/Calendar/Daf\ Yomi/KCDafYomiCalculator.h>
+#import <KosherCocoa/Library/Core/Calendar/Daf Yomi/KCDafYomiCalculator.h>
 
 #import <KosherCocoa/Library/Core/Calendar/Parasha/KCParashatHashavuaCalculator.h>
 #import <KosherCocoa/Library/Core/Calendar/Parasha/KCParasha.h>
