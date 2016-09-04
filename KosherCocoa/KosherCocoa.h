@@ -13,21 +13,21 @@
 FOUNDATION_EXPORT double KosherCocoaVersionNumber;
 FOUNDATION_EXPORT const unsigned char KosherCocoaVersionString[];
 
-#import <KosherCocoa/Library/Core/Calendar/Chagim/KCJewishCalendar.h>
-#import <KosherCocoa/Library/Core/Calendar/Chagim/KCJewishHoliday.h>
+#import <KosherCocoa/KCJewishCalendar.h>
+#import <KosherCocoa/KCJewishHoliday.h>
 
-#import <KosherCocoa/Library/Core/Calendar/Daf Yomi/KCDafYomiCalculator.h>
+#import <KosherCocoa/KCDafYomiCalculator.h>
 
-#import <KosherCocoa/Library/Core/Calendar/Parasha/KCParashatHashavuaCalculator.h>
-#import <KosherCocoa/Library/Core/Calendar/Parasha/KCParasha.h>
+#import <KosherCocoa/KCParashatHashavuaCalculator.h>
+#import <KosherCocoa/KCParasha.h>
 
-#import <KosherCocoa/Library/Core/Calendar/Sefira/KCSefiraFormatter.h>
-#import <KosherCocoa/Library/Core/Calendar/Sefira/KCSefiratHaomerCalculator.h>
+#import <KosherCocoa/KCSefiraFormatter.h>
+#import <KosherCocoa/KCSefiratHaomerCalculator.h>
 
-#import <KosherCocoa/Library/Core/Solar/KCAstronomicalCalculator.h>
-#import <KosherCocoa/Library/Core/Solar/KCGeoLocation.h>
-#import <KosherCocoa/Library/Core/Solar/KCSunriseAndSunsetCalculator.h>
+#import <KosherCocoa/KCAstronomicalCalculator.h>
+#import <KosherCocoa/KCGeoLocation.h>
+#import <KosherCocoa/KCSunriseAndSunsetCalculator.h>
 
-#import <KosherCocoa/Library/Core/Calendar/Zmanim/KCComplexZmanimCalendar.h>
-#import <KosherCocoa/Library/Core/Calendar/Zmanim/KCZmanimCalendar.h>
-#import <KosherCocoa/Library/Core/Calendar/Zmanim/KCZman.h>
+#import <KosherCocoa/KCComplexZmanimCalendar.h>
+#import <KosherCocoa/KCZmanimCalendar.h>
+#import <KosherCocoa/KCZman.h>
