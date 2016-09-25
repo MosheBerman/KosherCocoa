@@ -1,4 +1,0 @@
-module KosherCocoa {
-    header "KosherCocoa.h"
-    export *
-}
