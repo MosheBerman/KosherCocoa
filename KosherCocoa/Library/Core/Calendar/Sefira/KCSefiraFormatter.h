@@ -28,8 +28,8 @@
 #import <Foundation/Foundation.h>
 
 /**
- *  The sefira custom flag determines which
- *  custom to use when returning a formatted
+ *  This flag determines which custom
+ *  to use when returning a formatted
  *  string.
  */
 
@@ -37,16 +37,35 @@ typedef NS_ENUM(NSInteger, KCSefiraCustom)
 {
     KCSefiraCustomAshkenaz,     //  Uses the bet prefix
     KCSefiraCustomSefard = 1,   //  Uses the lamed prefix
-    KCSefiraCustomSephardic = 2 //  Uses the lamed prefix and sephardic formula
+    KCSefiraCustomSephardic = 2,//  Uses the lamed prefix and sephardic formula
+    KCSefiraCustomAri = 3       // Chabad - not sure what's different here yet.
 };
 
 /**
- *  This
+ *  This flag determines which language to use to display the text.
  */
+
 typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
     KCSefiraLanguageHebrew = 0,             //  The count, in Hebrew
     KCSefiraLanguageEnglish,                //  The count, in English
     KCSefiraFormatterTransliteratedHebrew   //  The count, in Hebrew, spelled in English
+};
+
+/**
+ *  The options for the formatter.
+ *
+ *  If the KCSefiraLanguage is not set to KCSefiraLanguageHebrew
+ *  or KCSefiraCustom is not KCSefiraCustomAshkenaz, these flags are ignored.
+ */
+
+typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
+    KCSefiraPrayerAdditionLeshaimYichud = 1 << 0,
+    KCSefiraPrayerAdditionBeracha = 1 << 1,
+    KCSefiraPrayerAdditionHarachaman = 1 << 2,
+    KCSefiraPrayerAdditionLamenatzaiach= 1 << 3,
+    KCSefiraPrayerAdditionAna = 1 << 4,
+    KCSefiraPrayerAdditionRibono = 1 << 5,
+    KCSefiraPrayerAdditionAleinu = 1 << 6
 };
 
 /** This class formats an integer into a sefira day*/
@@ -64,7 +83,10 @@ typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
 
 @property (nonatomic, assign) enum KCSefiraCustom custom;
 
-/** Converts an integer (between 1 and 49, inclusive)
+#pragma mark - Getting the Count
+
+/**
+ *  Converts an integer (between 1 and 49, inclusive)
  *  into a string representing the sefira count for
  *  that day.
  *
@@ -74,6 +96,43 @@ typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
  *
  */
 
-- (NSString *)stringFromInteger:(NSInteger)integer;
+- (nullable NSString *)countStringFromInteger:(NSInteger)integer;
+
+/** 
+ *  Converts an integer (between 1 and 49, inclusive)
+ *  into a string representing the sefira count for
+ *  that day.
+ *
+ *  We return an attributed string because parts of the prayer are 
+ *  typeset precisely in modern prayerbooks for kabbalistic reasons.
+ *
+ *  @param integer An integer representing the day of sefira.
+ *  @param prayers The prayers to prepend and append to the count text.
+ *
+ *  @return An attributed string representing the day of the omer.
+ *
+ */
+
+- (nullable NSString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAddition)prayers;
+
+#pragma mark - Getting the Kabbalistic Trait of the Day
+
+/**
+ *  Converts an integer (between 1 and 49, inclusive) 
+ *  into a kabbalistic trait traditionally assigned
+ *  to a given day of the omer.
+ *
+ *  @return A string containing the attribure of that day.
+ */
+
+- (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer;
+
+/**
+ *  Get the blessing text for counting the omer.
+ *
+ *  @return The blessing said on counting the omer.
+ */
+
+- (nonnull NSString *)blessing;
 
 @end

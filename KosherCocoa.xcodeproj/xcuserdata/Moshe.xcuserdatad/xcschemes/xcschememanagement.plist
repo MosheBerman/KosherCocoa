@@ -17,23 +17,33 @@
 		<key>KosherCocoa.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>1</integer>
+		</dict>
+		<key>KosherCocoaOSX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>KosherCocoaTVOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>KosherCocoaTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>KosherCocoaWatchOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>2</integer>
 		</dict>
 		<key>KosherCocoaWithDocs.xcscheme</key>
 		<dict>
@@ -78,6 +88,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>466FA7181CD2855900668CD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>466FA73F1CD285EC00668CD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>466FA7B71CD286E200668CD1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4671CBA61B576BC000A956E0</key>
 		<dict>
 			<key>primary</key>
@@ -89,6 +114,16 @@
 			<true/>
 		</dict>
 		<key>46A8273B1922E5720041635F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46DB49571D9837D100F3A576</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>46DB49631D9839F100F3A576</key>
 		<dict>
 			<key>primary</key>
 			<true/>

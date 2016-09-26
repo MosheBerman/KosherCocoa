@@ -123,13 +123,46 @@ There is also a pair of methods that will tell you if a date falls during the om
 	BOOL todayIsSefira = [KCSefiratHaomerCalculator fallsToday];
 	BOOL someDayIsSefira = [KCSefiratHaomerCalculator fallsOnDate:someDate];
 	
-There is a `KCSefiraFormatter` class which is intended to convert days of the omer into strings, but as of this writing there are no strings in it, so it is pretty much useless.
+To get a string from the count, you use `KCSefiraFormatter`. First, get the day with `KCSefiratHaomerCalculator`, as we did above:
+
+    NSInteger dayOfSefira = [KCSefiratHaomerCalculator dayOfSefira];
+    
+Then, you initialize the sefira formatter, and configure it with a custom and a language:
+    
+    KCSefiraFormatter *sefiraFormatter = [[KCSefiraFormatter alloc] init];
+    sefiraFormatter.custom = KCSefiraCustomAshkenaz;
+    sefiraFormatter.language = KCSefiraLanguageHebrew;
+    
+    
+The `custom` property supports Ashkenaz, Sefard, and Sephardic customs as defined in the `KCSefiraCustom` enumerated type in `KCSefiraFormatter.h`. 
+
+The `language` property supports Hebrew, English, and Transliterated Hebrew, as defined in the `KCSefiraLanguage` enumerated type in `KCSefiraFormatter.h`.
+
+Now that we have a formatter set up, we have two options for getting the count. We can get just the count itself, like so:
+
+    NSString *string = [sefiraFormatter countStringFromInteger:dayOfSefira];
+    
+Or, we can get a block of text which contains the count as well as medidations and prayers said before and after it, like so:
+
+    KCSefiraPrayerAddition prayers = KCSefiraPrayerAdditionBeracha | KCSefiraPrayerAdditionHarachaman;
+    NSString *string = [sefiraFormatter countStringFromInteger:dayOfSefira withPrayers:prayers];
+    
+This will return a string containing the blessing before the count, the count itself, and the harachaman right after it. Like the other related types, `KCSefiraPrayerAddition` is defined in `KCSefiraFormatter.h`
+
+---
+**As of this writing, there are a few limitations to the `KCSefiraFormatter` class. Transliterated Hebrew isn't implemented at all, and blessings are not supported when the language is set to English. In that case, you'll get just the count itself: "Today is the first day which is...".**
+
+---
+
+
+
+
 
 7. Daf Yomi
 ---
 The Daf Yomi calculation classes work similarly to the Parasha calculation classes. You create a `KCDafYomiCalculator`, optionally assign a `workingDate`, and then ask it for a `KCDaf` for a given date. 
 	
-	KCDafYomiCalculator *calculator = [[]KCDafYomiCalculator alloc] init];
+	KCDafYomiCalculator *calculator = [[KCDafYomiCalculator alloc] init];
 	
 	KCDaf *daf = [calculator dafYomiBavli];
 	//	or, if we want to get a specific date
