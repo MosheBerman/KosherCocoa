@@ -9,6 +9,8 @@
 
 #import "KCZman.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface KCZman ()
 
 @end
@@ -39,7 +41,7 @@
  *  @return A zman with with the supplied selector.
  */
 
-- (instancetype)initWithSelector:(SEL)selector
+- (nonnull instancetype)initWithSelector:(nonnull SEL)selector
 {
     self = [super init];
     
@@ -141,246 +143,10 @@
 
 - (NSArray *)relatedZmanim
 {
-    
     NSString *selectorAsString = NSStringFromSelector(self.selector);
     NSArray *related = @[selectorAsString]; //  By default, return the array of just this selector.
     
-    /**
-     *  All of the related sets
-     */
-    NSArray *sets = @[
-                      /**
-                       *    Sha'ah Zmanis
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(shaahZmanisMogenAvraham)),
-                          NSStringFromSelector(@selector(shaahZmanisGra)),
-                          NSStringFromSelector(@selector(shaahZmanis16Point1Degrees)),
-                          NSStringFromSelector(@selector(shaahZmanis18Degrees)),
-                          NSStringFromSelector(@selector(shaahZmanis19Point8Degrees)),
-                          NSStringFromSelector(@selector(shaahZmanis26Degrees)),
-                          NSStringFromSelector(@selector(shaahZmanis60Minutes)),
-                          NSStringFromSelector(@selector(shaahZmanis72Minutes)),
-                          NSStringFromSelector(@selector(shaahZmanis72MinutesZmanis)),
-                          NSStringFromSelector(@selector(shaahZmanis90Minutes)),
-                          NSStringFromSelector(@selector(shaahZmanis90MinutesZmanis)),
-                          NSStringFromSelector(@selector(shaahZmanis96Minutes)),
-                          NSStringFromSelector(@selector(shaahZmanis96MinutesZmanis)),
-                          NSStringFromSelector(@selector(shaahZmanisAteretTorah)),
-                          NSStringFromSelector(@selector(shaahZmanis120Minutes)),
-                          NSStringFromSelector(@selector(shaahZmanis120MinutesZmanis))
-                          ],
-                      
-                      /**
-                       *    Alos
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(alosHashachar)),
-                          NSStringFromSelector(@selector(alos72)),
-                          NSStringFromSelector(@selector(alos60)),
-                          NSStringFromSelector(@selector(alos72Zmanis)),
-                          NSStringFromSelector(@selector(alos90)),
-                          NSStringFromSelector(@selector(alos90Zmanis)),
-                          NSStringFromSelector(@selector(alos96)),
-                          NSStringFromSelector(@selector(alos96Zmanis)),
-                          NSStringFromSelector(@selector(alos120)),
-                          NSStringFromSelector(@selector(alos120Zmanis)),
-                          NSStringFromSelector(@selector(alos26Degrees)),
-                          NSStringFromSelector(@selector(alos18Degrees)),
-                          NSStringFromSelector(@selector(alos19Point8Degrees)),
-                          NSStringFromSelector(@selector(alos16Point1Degrees))
-                          ],
-                      
-                      /**
-                       *    Misheyakir
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(misheyakir10Point2Degrees)),
-                          NSStringFromSelector(@selector(misheyakir11Degrees)),
-                          NSStringFromSelector(@selector(misheyakir11Point5Degrees)),
-                          NSStringFromSelector(@selector(misheyakirAteretTorahWithMinutes:))
-                          ],
-                      
-                      /**
-                       *    Sunrise
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(sunrise))
-                          ],
-                      
-                      /**
-                       *    Sof Zman Shma
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(sofZmanShmaGra)),
-                          NSStringFromSelector(@selector(sofZmanShmaMogenAvraham)),
-                          NSStringFromSelector(@selector(sofZmanShmaFixedLocal)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA19Point8Degrees)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA16Point1Degrees)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA72Minutes)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA72MinutesZmanis)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA90Minutes)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA90MinutesZmanis)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA96Minutes)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA96MinutesZmanis)),
-                          NSStringFromSelector(@selector(sofZmanShma3HoursBeforeChatzos)),
-                          NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)),
-                          NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)),
-                          NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees)),
-                          ],
-                      
-                      /**
-                       *    Sof Zman Tfila
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(sofZmanTfilaMogenAvraham)),
-                          NSStringFromSelector(@selector(sofZmanTfilaGra)),
-                          NSStringFromSelector(@selector(sofZmanTfilaFixedLocal)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA19Point8Degrees)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA16Point1Degrees)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA72Minutes)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA72MinutesZmanis)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA90Minutes)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA90MinutesZmanis)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA96Minutes)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA96MinutesZmanis)),
-                          NSStringFromSelector(@selector(sofZmanTfilaMGA120Minutes)),
-                          NSStringFromSelector(@selector(sofZmanTfila2HoursBeforeChatzos))
-                          ],
-                      
-                      /**
-                       *    Chatzos
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(chatzos)),
-                          NSStringFromSelector(@selector(fixedLocalChatzos))
-                          ],
-                      
-                      /**
-                       *    Mincha Gedola
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(minchaGedola)),
-                          NSStringFromSelector(@selector(minchaGedola30Minutes)),
-                          NSStringFromSelector(@selector(minchaGedola72Minutes)),
-                          NSStringFromSelector(@selector(minchaGedola30Minutes)),
-                          NSStringFromSelector(@selector(minchaGedola16Point1Degrees)),
-                          NSStringFromSelector(@selector(minchaGedolaGreaterThan30)),
-                          NSStringFromSelector(@selector(minchaGedolaAteretTorah))
-                          ],
-                      
-                      /**
-                       *    Mincha Ketana
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(minchaKetana)),
-                          NSStringFromSelector(@selector(minchaKetana16Point1Degrees)),
-                          NSStringFromSelector(@selector(minchaKetana72Minutes)),
-                          NSStringFromSelector(@selector(minchaKetanaAteretTorah))
-                          ],
-                      
-                      /**
-                       *    Plag Hamincha
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(plagHamincha)),
-                          NSStringFromSelector(@selector(plagHamincha60Minutes)),
-                          NSStringFromSelector(@selector(plagHamincha72Minutes)),
-                          NSStringFromSelector(@selector(plagHamincha72MinutesZmanis)),
-                          NSStringFromSelector(@selector(plagHamincha90Minutes)),
-                          NSStringFromSelector(@selector(plagHamincha90MinutesZmanis)),
-                          NSStringFromSelector(@selector(plagHamincha96Minutes)),
-                          NSStringFromSelector(@selector(plagHamincha96MinutesZmanis)),
-                          NSStringFromSelector(@selector(plagHamincha16Point1Degrees)),
-                          NSStringFromSelector(@selector(plagHamincha18Degrees)),
-                          NSStringFromSelector(@selector(plagHamincha19Point8Degrees)),
-                          NSStringFromSelector(@selector(plagHamincha26Degrees)),
-                          NSStringFromSelector(@selector(plagAlosToSunset)),
-                          NSStringFromSelector(@selector(plagAlos16Point1ToTzaisGeonim7Point083Degrees))
-                          ],
-                      
-                      /**
-                       *    Sunset
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(sunset))
-                          ],
-                      
-                      /**
-                       *  Bain Hashmashos
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(bainHashmashosRT13Degrees)),
-                          NSStringFromSelector(@selector(bainHashmashosRT58Point5Minutes)),
-                          NSStringFromSelector(@selector(bainHashmashosRT13Point5MinutesBefore7Point083Degrees)),
-                          NSStringFromSelector(@selector(bainHashmashosRT2Stars))
-                          ],
-                      
-                      /**
-                       *    Tzais
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(tzais)),
-                          NSStringFromSelector(@selector(tzaisGeonim5Point95Degrees)),
-                          NSStringFromSelector(@selector(tzaisGeonim5Point88Degrees)),
-                          NSStringFromSelector(@selector(tzaisGeonim3Point65Degrees)),
-                          NSStringFromSelector(@selector(tzaisGeonim4Point37Degrees)),
-                          NSStringFromSelector(@selector(tzaisGeonim4Point61Degrees)),
-                          NSStringFromSelector(@selector(tzaisGeonim4Point8Degrees)),
-                          NSStringFromSelector(@selector(tzaisGeonim7Point083Degrees)),
-                          NSStringFromSelector(@selector(tzaisGeonim8Point5Degrees)),
-                          NSStringFromSelector(@selector(tzais50)),
-                          NSStringFromSelector(@selector(tzais60)),
-                          NSStringFromSelector(@selector(tzaisAteretTorah)),
-                          NSStringFromSelector(@selector(tzais72)),
-                          NSStringFromSelector(@selector(tzais72Zmanis)),
-                          NSStringFromSelector(@selector(tzais90)),
-                          NSStringFromSelector(@selector(tzais90Zmanis)),
-                          NSStringFromSelector(@selector(tzais96)),
-                          NSStringFromSelector(@selector(tzais96Zmanis)),
-                          NSStringFromSelector(@selector(tzais120)),
-                          NSStringFromSelector(@selector(tzais120Zmanis)),
-                          NSStringFromSelector(@selector(tzais16Point1Degrees)),
-                          NSStringFromSelector(@selector(tzais26Degrees)),
-                          NSStringFromSelector(@selector(tzais18Degrees)),
-                          NSStringFromSelector(@selector(tzais19Point8Degrees)),
-                          ],
-                      
-                      /**
-                       *    Achilas Chametz
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(sofZmanAchilasChametzGra)),
-                          NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72Minutes)),
-                          NSStringFromSelector(@selector(sofZmanAchilasChametzMGA16Point1Degrees))
-                          ],
-                      
-                      /**
-                       *    Biur Chametz
-                       */
-                      
-                      @[
-                          NSStringFromSelector(@selector(sofZmanBiurChametzGra)),
-                          NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)),
-                          NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees))
-                          ]
-                      ];
-    
-    
+    NSArray* sets = [KCZman relatedZmanimMapping];
     
     for (NSArray *array in sets)
     {
@@ -395,12 +161,265 @@
 }
 
 /**
- *  The list of zmanim metadata.
+ * A mapping of related calculations.
  *
- *  @param An NSDictionary containing data for all of the zmanim.
+ *  @return A nested array of zmanim selectors, each group containing related selectors.
  */
 
-- (NSDictionary *)_metadata
++ (NSArray<NSArray<NSString* >* >*)relatedZmanimMapping
+{
+    /**
+     *  All of the related sets
+     */
+    
+    static NSArray* sets = nil;
+    
+    if (sets == nil)
+    {
+        
+        sets = @[
+                 /**
+                  *    Sha'ah Zmanis
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(shaahZmanisMogenAvraham)),
+                     NSStringFromSelector(@selector(shaahZmanisGra)),
+                     NSStringFromSelector(@selector(shaahZmanis16Point1Degrees)),
+                     NSStringFromSelector(@selector(shaahZmanis18Degrees)),
+                     NSStringFromSelector(@selector(shaahZmanis19Point8Degrees)),
+                     NSStringFromSelector(@selector(shaahZmanis26Degrees)),
+                     NSStringFromSelector(@selector(shaahZmanis60Minutes)),
+                     NSStringFromSelector(@selector(shaahZmanis72Minutes)),
+                     NSStringFromSelector(@selector(shaahZmanis72MinutesZmanis)),
+                     NSStringFromSelector(@selector(shaahZmanis90Minutes)),
+                     NSStringFromSelector(@selector(shaahZmanis90MinutesZmanis)),
+                     NSStringFromSelector(@selector(shaahZmanis96Minutes)),
+                     NSStringFromSelector(@selector(shaahZmanis96MinutesZmanis)),
+                     NSStringFromSelector(@selector(shaahZmanisAteretTorah)),
+                     NSStringFromSelector(@selector(shaahZmanis120Minutes)),
+                     NSStringFromSelector(@selector(shaahZmanis120MinutesZmanis))
+                     ],
+                 
+                 /**
+                  *    Alos
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(alosHashachar)),
+                     NSStringFromSelector(@selector(alos72)),
+                     NSStringFromSelector(@selector(alos60)),
+                     NSStringFromSelector(@selector(alos72Zmanis)),
+                     NSStringFromSelector(@selector(alos90)),
+                     NSStringFromSelector(@selector(alos90Zmanis)),
+                     NSStringFromSelector(@selector(alos96)),
+                     NSStringFromSelector(@selector(alos96Zmanis)),
+                     NSStringFromSelector(@selector(alos120)),
+                     NSStringFromSelector(@selector(alos120Zmanis)),
+                     NSStringFromSelector(@selector(alos26Degrees)),
+                     NSStringFromSelector(@selector(alos18Degrees)),
+                     NSStringFromSelector(@selector(alos19Point8Degrees)),
+                     NSStringFromSelector(@selector(alos16Point1Degrees))
+                     ],
+                 
+                 /**
+                  *    Misheyakir
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(misheyakir10Point2Degrees)),
+                     NSStringFromSelector(@selector(misheyakir11Degrees)),
+                     NSStringFromSelector(@selector(misheyakir11Point5Degrees)),
+                     NSStringFromSelector(@selector(misheyakirAteretTorahWithMinutes:))
+                     ],
+                 
+                 /**
+                  *    Sunrise
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(sunrise))
+                     ],
+                 
+                 /**
+                  *    Sof Zman Shma
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(sofZmanShmaGra)),
+                     NSStringFromSelector(@selector(sofZmanShmaMogenAvraham)),
+                     NSStringFromSelector(@selector(sofZmanShmaFixedLocal)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA19Point8Degrees)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA16Point1Degrees)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA72Minutes)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA72MinutesZmanis)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA90Minutes)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA90MinutesZmanis)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA96Minutes)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA96MinutesZmanis)),
+                     NSStringFromSelector(@selector(sofZmanShma3HoursBeforeChatzos)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)),
+                     NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)),
+                     NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees)),
+                     ],
+                 
+                 /**
+                  *    Sof Zman Tfila
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(sofZmanTfilaMogenAvraham)),
+                     NSStringFromSelector(@selector(sofZmanTfilaGra)),
+                     NSStringFromSelector(@selector(sofZmanTfilaFixedLocal)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA19Point8Degrees)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA16Point1Degrees)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA72Minutes)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA72MinutesZmanis)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA90Minutes)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA90MinutesZmanis)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA96Minutes)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA96MinutesZmanis)),
+                     NSStringFromSelector(@selector(sofZmanTfilaMGA120Minutes)),
+                     NSStringFromSelector(@selector(sofZmanTfila2HoursBeforeChatzos))
+                     ],
+                 
+                 /**
+                  *    Chatzos
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(chatzos)),
+                     NSStringFromSelector(@selector(fixedLocalChatzos))
+                     ],
+                 
+                 /**
+                  *    Mincha Gedola
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(minchaGedola)),
+                     NSStringFromSelector(@selector(minchaGedola30Minutes)),
+                     NSStringFromSelector(@selector(minchaGedola72Minutes)),
+                     NSStringFromSelector(@selector(minchaGedola30Minutes)),
+                     NSStringFromSelector(@selector(minchaGedola16Point1Degrees)),
+                     NSStringFromSelector(@selector(minchaGedolaGreaterThan30)),
+                     NSStringFromSelector(@selector(minchaGedolaAteretTorah))
+                     ],
+                 
+                 /**
+                  *    Mincha Ketana
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(minchaKetana)),
+                     NSStringFromSelector(@selector(minchaKetana16Point1Degrees)),
+                     NSStringFromSelector(@selector(minchaKetana72Minutes)),
+                     NSStringFromSelector(@selector(minchaKetanaAteretTorah))
+                     ],
+                 
+                 /**
+                  *    Plag Hamincha
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(plagHamincha)),
+                     NSStringFromSelector(@selector(plagHamincha60Minutes)),
+                     NSStringFromSelector(@selector(plagHamincha72Minutes)),
+                     NSStringFromSelector(@selector(plagHamincha72MinutesZmanis)),
+                     NSStringFromSelector(@selector(plagHamincha90Minutes)),
+                     NSStringFromSelector(@selector(plagHamincha90MinutesZmanis)),
+                     NSStringFromSelector(@selector(plagHamincha96Minutes)),
+                     NSStringFromSelector(@selector(plagHamincha96MinutesZmanis)),
+                     NSStringFromSelector(@selector(plagHamincha16Point1Degrees)),
+                     NSStringFromSelector(@selector(plagHamincha18Degrees)),
+                     NSStringFromSelector(@selector(plagHamincha19Point8Degrees)),
+                     NSStringFromSelector(@selector(plagHamincha26Degrees)),
+                     NSStringFromSelector(@selector(plagAlosToSunset)),
+                     NSStringFromSelector(@selector(plagAlos16Point1ToTzaisGeonim7Point083Degrees))
+                     ],
+                 
+                 /**
+                  *    Sunset
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(sunset))
+                     ],
+                 
+                 /**
+                  *  Bain Hashmashos
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(bainHashmashosRT13Degrees)),
+                     NSStringFromSelector(@selector(bainHashmashosRT58Point5Minutes)),
+                     NSStringFromSelector(@selector(bainHashmashosRT13Point5MinutesBefore7Point083Degrees)),
+                     NSStringFromSelector(@selector(bainHashmashosRT2Stars))
+                     ],
+                 
+                 /**
+                  *    Tzais
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(tzais)),
+                     NSStringFromSelector(@selector(tzaisGeonim5Point95Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim5Point88Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim3Point65Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim4Point37Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim4Point61Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim4Point8Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim7Point083Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim8Point5Degrees)),
+                     NSStringFromSelector(@selector(tzais50)),
+                     NSStringFromSelector(@selector(tzais60)),
+                     NSStringFromSelector(@selector(tzaisAteretTorah)),
+                     NSStringFromSelector(@selector(tzais72)),
+                     NSStringFromSelector(@selector(tzais72Zmanis)),
+                     NSStringFromSelector(@selector(tzais90)),
+                     NSStringFromSelector(@selector(tzais90Zmanis)),
+                     NSStringFromSelector(@selector(tzais96)),
+                     NSStringFromSelector(@selector(tzais96Zmanis)),
+                     NSStringFromSelector(@selector(tzais120)),
+                     NSStringFromSelector(@selector(tzais120Zmanis)),
+                     NSStringFromSelector(@selector(tzais16Point1Degrees)),
+                     NSStringFromSelector(@selector(tzais26Degrees)),
+                     NSStringFromSelector(@selector(tzais18Degrees)),
+                     NSStringFromSelector(@selector(tzais19Point8Degrees)),
+                     ],
+                 
+                 /**
+                  *    Achilas Chametz
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(sofZmanAchilasChametzGra)),
+                     NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72Minutes)),
+                     NSStringFromSelector(@selector(sofZmanAchilasChametzMGA16Point1Degrees))
+                     ],
+                 
+                 /**
+                  *    Biur Chametz
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(sofZmanBiurChametzGra)),
+                     NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)),
+                     NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees))
+                     ]
+                 ];
+    }
+    
+    return  sets;
+}
+
+/**
+ *  The list of zmanim metadata.
+ *
+ *  @return An NSDictionary containing data for all of the zmanim.
+ */
+
++ (NSDictionary<NSString*,NSDictionary<NSString*, NSString*>*>*)metadata
 {
     
     static NSDictionary *data = nil;
@@ -521,7 +540,6 @@
                          @"koshercocoa.name.english" : @"Temporal Hour (120 Temporal Minutes)",
                          @"koshercocoa.explanation.english" : @"The time of plag hamincha based on sunrise being 120 minutes zmaniyos (GRA and the Baal Hatanya) or 1/6th of the day before sea level sunrise. This is calculated as 10.75 hours after dawn."
                          },
-                 
                  /**
                   *    Alos
                   */
@@ -1092,7 +1110,6 @@
                          @"koshercocoa.explanation" : @"Sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith."
                          },
                  
-                 
                  /**
                   *  Bain Hashmashos
                   */
@@ -1299,7 +1316,6 @@
                          @"koshercocoa.explanation" : @" For information on how this is calculated see the comments on Alos19Point8Degrees()"
                          },
                  
-                 
                  /**
                   *    Achilas Chametz
                   */
@@ -1362,7 +1378,7 @@
 
 - (NSDictionary *)_metadataForCurrentZman
 {
-    NSDictionary * metadata = self._metadata[NSStringFromSelector(self.selector)];
+    NSDictionary * metadata = KCZman.metadata[NSStringFromSelector(self.selector)];
     
     return metadata;
 }
@@ -1388,3 +1404,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END

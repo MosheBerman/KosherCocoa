@@ -16,7 +16,7 @@
  *  The selector used to calculate the zman.
  */
 
-@property (readonly) SEL selector;
+@property (nonnull, readonly) SEL selector;
 
 #pragma mark - Instantiating a Zman
 
@@ -31,7 +31,7 @@
  *  @return A zman object for the supplied selector.
  */
 
-+ (KCZman *)zmanForSelector:(SEL)selector;
++ (nonnull KCZman *)zmanForSelector:(nonnull SEL)selector;
 
 /**
  *  Instantiates a zman for the supplied selector.
@@ -39,7 +39,7 @@
  *  @return A zman with with the supplied selector.
  */
 
-- (instancetype)initWithSelector:(SEL)selector;
+- (nonnull instancetype)initWithSelector:(nonnull SEL)selector;
 
 #pragma mark - Display Name
 
@@ -54,7 +54,7 @@
  *  @return The name of the zman, in Hebrew.
  */
 
-- (NSString *)hebrewName;
+- (nonnull NSString *)hebrewName;
 
 /**
  *  The transliterated name of the zman, using the ashkenazic pronunciation.
@@ -64,7 +64,7 @@
  *  @return The name of the zman.
  */
 
-- (NSString *)transliteratedNameAshkenazic;
+- (nonnull NSString *)transliteratedNameAshkenazic;
 
 /**
  *  The transliterated name of the zman, using the sephardic pronunciation.
@@ -74,7 +74,7 @@
  *  @return The name of the zman.
  */
 
-- (NSString *)transliteratedNameSephardic;
+- (nonnull NSString *)transliteratedNameSephardic;
 
 /**
  *  The name of the zman in English.
@@ -82,7 +82,7 @@
  *  @return The name of the zman.
  */
 
-- (NSString *)englishName;
+- (nonnull NSString *)englishName;
 
 #pragma mark - Explanation
 
@@ -97,7 +97,7 @@
  *  @return An explanation of the halachic background behind the zman.
  */
 
-- (NSString *)explanation;
+- (nonnull NSString *)explanation;
 
 #pragma mark - Related Zmanim
 
@@ -114,13 +114,30 @@
  *  @return An NSArray of KCZman objects that are related to this zman.
  */
 
-- (NSArray *)relatedZmanim;
+- (nonnull NSArray *)relatedZmanim;
 
 /**
  *  Comparisons
  */
 
-- (BOOL)isEqual:(id)object;
-- (BOOL)isEqualToZman:(KCZman *)anotherZman;
+- (BOOL)isEqual:(nonnull id)object;
+- (BOOL)isEqualToZman:(nonnull KCZman *)anotherZman;
+
+#pragma mark - Metadata mappings 
+
+/**
+ * A mapping of related calculations.
+ *
+ *  @return A nested array of zmanim selectors, each group containing related selectors.
+ */
+
++ (nonnull NSArray<NSArray<NSString* >* >*)relatedZmanimMapping;
+/**
+ *  The list of zmanim metadata.
+ *
+ *  @return An NSDictionary containing data for all of the zmanim.
+ */
+
++ (nonnull NSDictionary<NSString*,NSDictionary<NSString*, NSString*>*>*)metadata;
  
 @end
