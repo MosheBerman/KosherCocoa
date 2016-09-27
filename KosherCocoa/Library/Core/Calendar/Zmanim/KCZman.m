@@ -298,7 +298,6 @@ NS_ASSUME_NONNULL_BEGIN
                  
                  @[
                      NSStringFromSelector(@selector(minchaGedola)),
-                     NSStringFromSelector(@selector(minchaGedola30Minutes)),
                      NSStringFromSelector(@selector(minchaGedola72Minutes)),
                      NSStringFromSelector(@selector(minchaGedola30Minutes)),
                      NSStringFromSelector(@selector(minchaGedola16Point1Degrees)),
