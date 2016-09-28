@@ -23,12 +23,11 @@ class KosherCocoaTests: XCTestCase {
     
     // MARK: - KCZMan Tests
     
+    /** Iterate and check all fields for zero length strings */
     func testForMetadataWithMissingEntries()
     {
-        // Iterate and check all fields for zero length strings
-        
         let metadata = KCZman.metadata()
-        var missingEntries : [(String, String)] = []
+        var missingEntries : Set<String> = []
         
         for (selectorString, calculationMetadata) in metadata
         {
@@ -38,13 +37,12 @@ class KosherCocoaTests: XCTestCase {
                 
                 if nonEmptyMetadataField == false
                 {
-                    let pair = (selectorString, key)
-                    missingEntries.append(pair)
+                    missingEntries.insert(selectorString)
                 }
             }
         }
         
-        XCTAssert(missingEntries.count == 0, "There are some entries missing a total of \(missingEntries.count) values: \(missingEntries)")
+        XCTAssert(missingEntries.count == 0, "There are \(missingEntries.count) entries missing values: \(missingEntries)")
     }
     
     /** Iterate and check for strings containing the word "method" or a pair of parenthesis'()' */
@@ -75,29 +73,92 @@ class KosherCocoaTests: XCTestCase {
     {
         let originalMappings = KCZman.relatedZmanimMapping()
         
-        var mapping : [String: Int] = [:]
+        var count : [String: Int] = [:]
         
         // We could use reduce here...
         for group in originalMappings
         {
             for zman in group
             {
-                if let count = mapping[zman]
+                if let countForZman = count[zman]
                 {
-                    mapping[zman] = count + 1
+                    count[zman] = countForZman + 1
                 }
                 else
                 {
-                    mapping[zman] = 1
+                    count[zman] = 1
                 }
             }
         }
         
-        for tuple in mapping
+        for tuple in count
         {
             XCTAssert(tuple.value == 1, "\(tuple.key) was \(tuple.value). Expected 1.")
         }
         
+    }
+    
+    /** Iterate metadata keys and check for selector names that appear more than once. */
+    func testForDuplicateDescriptionNamesInMetadata()
+    {
+        let metadata = KCZman.metadata()
+        
+        var count : [String: Int] = [:]
+        
+        for selectorGroup in metadata
+        {
+            guard let selectorName = selectorGroup.value["koshercocoa.name.hebrew"] else
+            {
+                continue
+            }
+            
+            guard selectorName.characters.count > 0 else
+            {
+                continue
+            }
+            
+            if let countForSelector = count[selectorName]
+            {
+                count[selectorName] = countForSelector + 1
+            }
+            else
+            {
+                count[selectorName] = 1
+            }
+        }
+        
+        for tuple in count
+        {
+            XCTAssert(tuple.value == 1, "\(tuple.key) was \(tuple.value). Expected 1.")
+        }
+    }
+    
+    /** Detect double spaces in descriptions */
+    func testDuplicateSpaceCharactersInDescriptions()
+    {
+        let metadata = KCZman.metadata()
+        
+        let characters = "abcdefghijklmnopqrstuvwxyz.,)+*1234567890"
+        
+        for entry in metadata
+        {
+            for field in entry.value
+            {
+                if field.value.characters.count == 0
+                {
+                    continue
+                }
+                
+                for character in characters.characters
+                {
+                    let valueToTest = field.value
+                    let duplicateSpacing = "\(character)  "
+                    let containsDuplicateSpaces = valueToTest.contains(duplicateSpacing)
+                    
+                    XCTAssertFalse(containsDuplicateSpaces, "Extra spaces after a character: '\(character)' in \(entry).")
+                }
+            }
+        }
     }
     
     /** Iterate groups of methods and check for missing metadata entries. */
