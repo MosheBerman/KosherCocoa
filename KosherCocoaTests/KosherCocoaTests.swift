@@ -28,6 +28,7 @@ class KosherCocoaTests: XCTestCase {
         // Iterate and check all fields for zero length strings
         
         let metadata = KCZman.metadata()
+        var missingEntries : [(String, String)] = []
         
         for (selectorString, calculationMetadata) in metadata
         {
@@ -35,10 +36,15 @@ class KosherCocoaTests: XCTestCase {
             {
                 let nonEmptyMetadataField = metadataEntry.characters.count > 0
                 
-                XCTAssert(nonEmptyMetadataField, "\(selectorString) has a \(key) is empty.")
+                if nonEmptyMetadataField == false
+                {
+                    let pair = (selectorString, key)
+                    missingEntries.append(pair)
+                }
             }
-            
         }
+        
+        XCTAssert(missingEntries.count == 0, "There are some entries missing values: \(missingEntries)")
     }
     
     /** Iterate and check for strings containing the word "method" or a pair of parenthesis'()' */
