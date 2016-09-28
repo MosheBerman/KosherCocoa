@@ -21,28 +21,22 @@ class KosherCocoaTests: XCTestCase {
         super.tearDown()
     }
     
-    // MARK: - KCZMan Tests
+    // MARK: - Metadata Contents
     
     /** Iterate and check all fields for zero length strings */
     func testForMetadataWithMissingEntries()
     {
         let metadata = KCZman.metadata()
-        var missingEntries : Set<String> = []
         
         for (selectorString, calculationMetadata) in metadata
         {
             for (key, metadataEntry) in calculationMetadata
             {
-                let nonEmptyMetadataField = metadataEntry.characters.count > 0
+                let nonEmpty = metadataEntry.characters.count > 0
                 
-                if nonEmptyMetadataField == false
-                {
-                    missingEntries.insert(selectorString)
-                }
+                XCTAssert(nonEmpty, "\(selectorString) is missing \(key)")
             }
         }
-        
-        XCTAssert(missingEntries.count == 0, "There are \(missingEntries.count) entries missing values: \(missingEntries)")
     }
     
     /** Iterate and check for strings containing the word "method" or a pair of parenthesis'()' */
@@ -62,11 +56,39 @@ class KosherCocoaTests: XCTestCase {
                 {
                     let testableExplainer = explainer
                     
-                    XCTAssertFalse(testableExplainer.contains(offender), "Explanation for '\(selectorName)' contains a variant of '\(offender)'")
+                    XCTAssertFalse(testableExplainer.contains(offender), "Explanation for '\(selectorName)' contains '\(offender)'")
                 }
             }
         }
     }
+    
+    /** Test for placeholders */
+    func testForPlaceholders()
+    {
+        
+        let metadata = KCZman.metadata()
+        
+        let flaggableContent = ["<# #>", "<#explanation#>"]
+        
+        for offender in flaggableContent
+        {
+            print("Testing disallowed string: '\(offender)'")
+            
+            for (selectorName, value) in metadata
+            {
+                if let explainer = value["koshercocoa.explanation.english"]
+                {
+                    let testableExplainer = explainer
+                    
+                    XCTAssertFalse(testableExplainer.contains(offender), "Explanation for '\(selectorName)' contains '\(offender)'")
+                }
+            }
+        }
+        
+    }
+    
+    
+    // MARK: - Duplicates
     
     /** Iterate groups and check for strings that appear more than once */
     func testForDuplicateMethodNamesInGroupings()
@@ -160,6 +182,8 @@ class KosherCocoaTests: XCTestCase {
             }
         }
     }
+    
+    // MARK: - Count Mismatches Between Grouping and Metadata
     
     /** Iterate groups of methods and check for missing metadata entries. */
     func testForMissingMetadataEntry()
