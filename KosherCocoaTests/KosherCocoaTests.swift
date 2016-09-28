@@ -28,21 +28,38 @@ class KosherCocoaTests: XCTestCase {
         // Iterate and check all fields for zero length strings
     }
     
+    /** Iterate and check for strings containing the word "method" or a pair of parenthesis'()' */
     func testForMethodNames()
     {
-        // Iterate and check for stringcs containing the word "method" or a pair of parenthesis'()'
+        let metadata = KCZman.metadata()
+        
+        let flaggableContent = ["()", "method"]
+        
+        for value in metadata.values
+        {
+            let name = value["koshercocoa.name.english"]
+            
+            if let explainer = value["koshercocoa.explanation.english"]
+            {
+                let testableExplainer = explainer.lowercased()
+                
+                for offender in flaggableContent
+                {
+                    XCTAssertFalse(testableExplainer.contains(offender), "Explanation for '\(name)' contains a variant of '\(offender)'")
+                }
+            }
+        }
     }
     
+    /** Iterate groups and check for strings that appear more than once */
     func testForDuplicates()
     {
-        // Iterate groups and check for strings that appear more than once
-        
-        let originalMetadata = KCZman.relatedZmanimMapping()
+        let originalMappings = KCZman.relatedZmanimMapping()
         
         var mapping : [String: Int] = [:]
         
         // We could use reduce here...
-        for group in originalMetadata
+        for group in originalMappings
         {
             for zman in group
             {
