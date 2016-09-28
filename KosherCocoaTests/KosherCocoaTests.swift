@@ -52,26 +52,26 @@ class KosherCocoaTests: XCTestCase {
     {
         let metadata = KCZman.metadata()
         
-        let flaggableContent = ["()", "method"]
+        let flaggableContent = ["()", "method", "Method"]
         
-        for value in metadata.values
+        for offender in flaggableContent
         {
-            let name = value["koshercocoa.name.english"]
+            print("Testing disallowed string: '\(offender)'")
             
-            if let explainer = value["koshercocoa.explanation.english"]
+            for (selectorName, value) in metadata
             {
-                let testableExplainer = explainer.lowercased()
-                
-                for offender in flaggableContent
+                if let explainer = value["koshercocoa.explanation.english"]
                 {
-                    XCTAssertFalse(testableExplainer.contains(offender), "Explanation for '\(name)' contains a variant of '\(offender)'")
+                    let testableExplainer = explainer
+                    
+                    XCTAssertFalse(testableExplainer.contains(offender), "Explanation for '\(selectorName)' contains a variant of '\(offender)'")
                 }
             }
         }
     }
     
     /** Iterate groups and check for strings that appear more than once */
-    func testForDuplicates()
+    func testForDuplicateMethodNamesInGroupings()
     {
         let originalMappings = KCZman.relatedZmanimMapping()
         
