@@ -44,7 +44,7 @@ class KosherCocoaTests: XCTestCase {
             }
         }
         
-        XCTAssert(missingEntries.count == 0, "There are some entries missing values: \(missingEntries)")
+        XCTAssert(missingEntries.count == 0, "There are some entries missing a total of \(missingEntries.count) values: \(missingEntries)")
     }
     
     /** Iterate and check for strings containing the word "method" or a pair of parenthesis'()' */
