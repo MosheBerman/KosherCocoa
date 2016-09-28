@@ -26,6 +26,19 @@ class KosherCocoaTests: XCTestCase {
     func testForMetadataWithMissingEntries()
     {
         // Iterate and check all fields for zero length strings
+        
+        let metadata = KCZman.metadata()
+        
+        for (selectorString, calculationMetadata) in metadata
+        {
+            for (key, metadataEntry) in calculationMetadata
+            {
+                let nonEmptyMetadataField = metadataEntry.characters.count > 0
+                
+                XCTAssert(nonEmptyMetadataField, "\(selectorString) has a \(key) is empty.")
+            }
+            
+        }
     }
     
     /** Iterate and check for strings containing the word "method" or a pair of parenthesis'()' */
@@ -74,7 +87,6 @@ class KosherCocoaTests: XCTestCase {
             }
         }
         
-        
         for tuple in mapping
         {
             XCTAssert(tuple.value == 1, "\(tuple.key) was \(tuple.value). Expected 1.")
@@ -82,14 +94,29 @@ class KosherCocoaTests: XCTestCase {
         
     }
     
+    /** Iterate groups of methods and check for missing metadata entries. */
     func testForMissingMetadataEntry()
     {
-        // Iterate groups of methods and check for missing metadata entries
+        let flattenedMethodGroups = KCZman.relatedZmanimMapping().flatMap { $0 }
+        let metadataKeys = KCZman.metadata().keys
+        
+        for selectorName in flattenedMethodGroups
+        {
+            XCTAssert(metadataKeys.contains(selectorName), "\(selectorName) is missing metadata.")
+        }
+        
     }
     
+    /** Iterate metadata and check for groups that aren't represented in the selectors grouping. */
     func testForExtraMetadata()
     {
-        // Iterate metadata and check for groups that aren't represented in the selectors grouping.
+        let flattenedMethodGroups = KCZman.relatedZmanimMapping().flatMap { $0 }
+        let metadataKeys = KCZman.metadata().keys
+        
+        for metadataGroup in metadataKeys
+        {
+            XCTAssert(flattenedMethodGroups.contains(metadataGroup), "\(metadataGroup) isn't listed in the grouping array.")
+        }
     }
 }
 
