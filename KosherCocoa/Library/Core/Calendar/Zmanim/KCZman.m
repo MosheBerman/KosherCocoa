@@ -1156,10 +1156,10 @@ NS_ASSUME_NONNULL_BEGIN
                   */
                  
                  NSStringFromSelector(@selector(tzais)) : @{
-                         @"koshercocoa.name.hebrew" : @"(8.5 מעלות) צאת הכוכבים",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (8.5 Maalos)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (8.5 Ma'alot)",
-                         @"koshercocoa.name.english" : @"Starlight (8.5 Degrees)",
+                         @"koshercocoa.name.hebrew" : @"(3 כוכבים) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (3 Kochavim)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (3 Kochavim)",
+                         @"koshercocoa.name.english" : @"Starlight (3 Stars)",
                          @"koshercocoa.explanation.english" : @"This calculation is based on the position of the sun 36 minutes after sunset in Jerusalem on March 16, about 4 days before the equinox, the day that a solar hour is 60 minutes, which is 8.5 degrees below geometric zenith. The Ohr Meir considers this the time that 3 small stars are visible, which is later than the required 3 medium stars."
                          },
                  NSStringFromSelector(@selector(tzaisGeonim5Point95Degrees)) : @{
