@@ -120,7 +120,7 @@
  *  Comparisons
  */
 
-- (BOOL)isEqual:(nonnull id)object;
+- (BOOL)isEqual:(nullable id)object;
 - (BOOL)isEqualToZman:(nonnull KCZman *)anotherZman;
 
 #pragma mark - Metadata mappings 
