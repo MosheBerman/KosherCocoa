@@ -72,6 +72,40 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 /**
+ *  The shortened hebrew name.
+ *
+ *  @return The short hebrew name of the zman, such as שמע.
+ */
+
+- (nonnull NSString *)shortHebrewName
+{
+    NSInteger index = 0;
+    NSString *selector = NSStringFromSelector(self.selector);
+    NSArray <NSArray <NSString*>*>* mappings = KCZman.relatedZmanimMapping;
+    NSArray <NSString *>* names =  KCZman.shortHebrewNames;
+    
+    for (NSArray <NSString*> *group in mappings)
+    {
+        if ([group containsObject:selector])
+        {
+            index = [mappings indexOfObject:group];
+            break;
+        }
+    }
+    
+    
+    
+    NSString *name = @"";
+    
+    if (names.count > index)
+    {
+        name = names[index];
+    }
+    
+    return name;
+}
+
+/**
  *  The transliterated name of the zman, using the ashkenazic pronunciation.
  *
  *  @discussion Transliterations use the Ashkenazic pronunciation. (For example: "Alos" for sunrise.)
@@ -411,6 +445,31 @@ NS_ASSUME_NONNULL_BEGIN
     }
     
     return sets;
+}
+
+/**
+ *
+ */
+
++ (NSArray <NSString *> *)shortHebrewNames
+{
+    return @[
+             @"ש״ז",
+             @"עלות",
+             @"משיכיר",
+             @"נץ",
+             @"סז״ש",
+             @"סז״ת",
+             @"חצות",
+             @"מ״ג",
+             @"מ״ק",
+             @"פלג",
+             @"שקיעה",
+             @"ב״ה",
+             @"צאת",
+             @"סזא״ח",
+             @"סזב״ח",
+             ];
 }
 
 /**

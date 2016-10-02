@@ -57,6 +57,14 @@
 - (nonnull NSString *)hebrewName;
 
 /**
+ *  The shortened hebrew name.
+ *
+ *  @return The short hebrew name of the zman, such as שמע.
+ */
+
+- (nonnull NSString *)shortHebrewName;
+
+/**
  *  The transliterated name of the zman, using the ashkenazic pronunciation.
  *
  *  @discussion Transliterations use the Ashkenazic pronunciation. (For example: "Alos" for sunrise.)
