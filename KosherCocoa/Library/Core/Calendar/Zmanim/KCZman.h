@@ -92,6 +92,14 @@
 
 - (nonnull NSString *)englishName;
 
+/**
+ *  The shortened english name.
+ *
+ *  @return The short English name of the zman, such as Shma.
+ */
+
+- (nonnull NSString *)shortEnglishName;
+
 #pragma mark - Explanation
 
 /** ---

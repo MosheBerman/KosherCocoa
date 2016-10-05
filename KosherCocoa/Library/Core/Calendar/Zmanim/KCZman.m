@@ -142,6 +142,40 @@ NS_ASSUME_NONNULL_BEGIN
     return [self _metadataForCurrentZman][@"koshercocoa.name.english"];
 }
 
+/**
+ *
+ */
+
+- (NSString *)shortEnglishName
+{
+    NSInteger index = 0;
+    NSString *selector = NSStringFromSelector(self.selector);
+    NSArray <NSArray <NSString*>*>* mappings = KCZman.relatedZmanimMapping;
+    NSArray <NSString *>* names =  KCZman.shortEnglishNames;
+    
+    for (NSArray <NSString*> *group in mappings)
+    {
+        if ([group containsObject:selector])
+        {
+            index = [mappings indexOfObject:group];
+            break;
+        }
+    }
+    
+    
+    
+    NSString *name = @"";
+    
+    if (names.count > index)
+    {
+        name = names[index];
+    }
+    
+    return name;
+}
+
+
+
 #pragma mark - Explanation
 
 /** ---
@@ -448,7 +482,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 /**
- *
+ *  Short Hebrew Names
  */
 
 + (NSArray <NSString *> *)shortHebrewNames
@@ -469,6 +503,31 @@ NS_ASSUME_NONNULL_BEGIN
              @"צאת",
              @"סזא״ח",
              @"סזב״ח",
+             ];
+}
+
+/**
+ *  Short English Names
+ */
+
++ (NSArray <NSString *> *)shortEnglishNames
+{
+    return @[
+             @"Hour",
+             @"Alot",
+             @"Dawn",
+             @"Netz",
+             @"Shma",
+             @"Tfila",
+             @"Chtzot",
+             @"M'G",
+             @"M'K",
+             @"Plag",
+             @"Skia",
+             @"Twilight",
+             @"Tzais",
+             @"Eat",
+             @"Burn"
              ];
 }
 
