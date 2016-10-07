@@ -547,7 +547,7 @@ NS_ASSUME_NONNULL_BEGIN
     
     if (range.location != NSNotFound)
     {
-        name = [name substringToIndex:range.location];
+        name = [[name substringToIndex:range.location] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     }
     
     return name;
