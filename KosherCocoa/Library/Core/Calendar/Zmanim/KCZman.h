@@ -100,6 +100,26 @@
 
 - (nonnull NSString *)shortEnglishName;
 
+/**
+ *  Grabs the main zman name, discarding rabbinic opinion.
+ *
+ *  @param displayName The full display name containing the calculation and rabbinic opinion.
+ *
+ *  @return The calculation name, stripped of any rabbinic opinion.
+ */
+
+- (nonnull NSString *)nameFromDisplayName:(nonnull NSString *)displayName;
+
+/**
+ *  Grabs the rabbinic opinion from display name.
+ *
+ *  @param displayName The full display name containing the calculation and rabbinic opinion.
+ *
+ *  @return The calculation name, without the calculation name.
+ */
+
+- (nullable NSString *)rabbinicOpinionFromDisplayName:(nonnull NSString *)displayName;
+
 #pragma mark - Explanation
 
 /** ---
