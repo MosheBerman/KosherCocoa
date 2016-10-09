@@ -582,7 +582,7 @@ NS_ASSUME_NONNULL_BEGIN
     
     if (rangeOfOpen.location != NSNotFound)
     {
-        opinion = [[displayName substringFromIndex:rangeOfOpen.location] stringByReplacingOccurrencesOfString:@")" withString:@""];
+        opinion = [[displayName substringFromIndex:rangeOfOpen.location+1] stringByReplacingOccurrencesOfString:@")" withString:@""];
     }
     return opinion;
 }
