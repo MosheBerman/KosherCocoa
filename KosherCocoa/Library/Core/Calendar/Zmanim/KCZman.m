@@ -519,13 +519,13 @@ NS_ASSUME_NONNULL_BEGIN
              @"Netz",
              @"Shema",
              @"Tfila",
-             @"Chtzot",
+             @"Hatzot",
              @"M'G",
              @"M'K",
              @"Plag",
              @"Shkia",
              @"Twilight",
-             @"Tzais",
+             @"Tzait",
              @"Eat",
              @"Burn"
              ];
