@@ -93,8 +93,6 @@ NS_ASSUME_NONNULL_BEGIN
         }
     }
     
-    
-    
     NSString *name = @"";
     
     if (names.count > index)
@@ -517,7 +515,7 @@ NS_ASSUME_NONNULL_BEGIN
              @"Alot",
              @"Dawn",
              @"Netz",
-             @"Shema",
+             @"Shma",
              @"Tfila",
              @"Hatzot",
              @"M'G",
@@ -860,7 +858,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.hebrew" : @"נץ החמה",
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Naitz Hachama",
                          @"koshercocoa.name.transliterated.sepharad" : @"Netz Hachama",
-                         @"koshercocoa.name.english" : @"Sunrise",
+                         @"koshercocoa.name.english" : @"Sunrise (90 Degree Zenith)",
                          @"koshercocoa.explanation.english" : @"Sunrise at the current location. The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation. This is adjusted to add approximately 50/60 of a degree to account for 34 archminutes of refraction and 16 archminutes for the sun's radius for a total of 90.83333 degrees."
                          },
                  
@@ -1182,10 +1180,10 @@ NS_ASSUME_NONNULL_BEGIN
                   */
                  
                  NSStringFromSelector(@selector(plagHamincha)) : @{
-                         @"koshercocoa.name.hebrew" : @"פלג המנחה",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha",
-                         @"koshercocoa.name.english" : @"Latest Mincha",
+                         @"koshercocoa.name.hebrew" : @"(גר״א) פלג המנחה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha (Gra/Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha (Gra/Baal Hatanya)",
+                         @"koshercocoa.name.english" : @"Latest Mincha (Gra/Baal Hatanya)",
                          @"koshercocoa.explanation.english" : @"This is calculated as 10.75 hours after sunrise. This calculation is based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset."
                          },
                  NSStringFromSelector(@selector(plagHamincha60Minutes)) : @{
@@ -1288,7 +1286,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.hebrew" : @"שקיעת החמה",
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Shkiyas Hachamah",
                          @"koshercocoa.name.transliterated.sepharad" : @"Shki'at Hachama",
-                         @"koshercocoa.name.english" : @"Sunset",
+                         @"koshercocoa.name.english" : @"Sunset (90 Degree Zenith)",
                          @"koshercocoa.explanation.english" : @"Sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith."
                          },
                  
