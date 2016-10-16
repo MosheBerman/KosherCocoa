@@ -1570,7 +1570,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isEqual:(nullable id)object
 {
     BOOL isOtherAlsoZman = [object isKindOfClass:[KCZman class]];
-    BOOL equal = [super isEqual:object] && isOtherAlsoZman && [self isEqualToZman:(KCZman *)object];
+    BOOL equal = [super isEqual:object] || (isOtherAlsoZman && [self isEqualToZman:(KCZman *)object]);
     
     return equal;
 }
@@ -1581,6 +1581,11 @@ NS_ASSUME_NONNULL_BEGIN
     NSString *otherZmanSelector = NSStringFromSelector(anotherZman.selector);
     
     return [mySelector isEqualToString:otherZmanSelector];
+}
+
+- (NSUInteger)hash
+{
+    return NSStringFromSelector(self.selector).hash;
 }
 
 @end
