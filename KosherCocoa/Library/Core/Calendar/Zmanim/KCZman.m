@@ -540,14 +540,51 @@ NS_ASSUME_NONNULL_BEGIN
 - (nonnull NSString *)nameFromDisplayName:(NSString *)displayName
 {
     NSString *name = displayName;
+
+    /* 
+     For english-language strings, this should be able to split the strings into two parts.
+     */
     
-    NSRange range = [displayName rangeOfString:@"("];
+    NSArray *components = [displayName componentsSeparatedByString:@"("];
     
-    if (range.location != NSNotFound)
+    /**
+     For Hebrew text, it's more complicated... 
+     
+     Some strings are typed in the incorrect order, even if they display as "Time (Opinion)"
+     This means that:
+     
+     1. rangeOfString: (or localized variants) won't give consistent results
+     2. Splitting by @"(" is sometimes correct, but other times, we want @")"
+     3. Even when that does work, we sometimes get an empty component as the first element of that array
+     4. Sometimes the opinion and the Time name are flipped.
+     5. Sometimes the opinion and time are grouped, because they were flipped.
+     
+     */
+    
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+        NSString *string = evaluatedObject;
+        
+        return string.length > 0;
+    }];
+    
+    /** Handle empty components entry. (case 3) */
+    components = [components filteredArrayUsingPredicate:predicate];
+    
+    /** Handle grouped time and opinion (case 5) */
+    if (components.count != 2)
     {
-        name = [[name substringToIndex:range.location] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        /** Handle flipped time & opinion. (case 4) */
+        components = [[[displayName componentsSeparatedByString:@")"] reverseObjectEnumerator] allObjects];
+        
+        /** Handle empty components entry. (case 3) */
+        components = [components filteredArrayUsingPredicate:predicate];
     }
     
+    
+    
+    name = components[0];
+    
+
     return name;
 }
 
