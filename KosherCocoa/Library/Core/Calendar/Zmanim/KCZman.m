@@ -603,15 +603,63 @@ NS_ASSUME_NONNULL_BEGIN
     
     /** 
      Because of the complexities outlined in `nameFromDisplayName:`,
-     we get the rabbinic opinion by replacing the name with an empty string,
-     then trimming parenthesis and whitespace.
+     we need to do some manual labor here...
+     
+     We can't get the rabbinic opinion by replacing the name with an empty string,
+     then trimming parenthesis and whitespace because the hebrew word for degrees "מעלות" 
+     contains the word for dawn: עלות.
      */
-    NSString *name = [self nameFromDisplayName:displayName];
-    NSString *remainingString = [displayName stringByReplacingOccurrencesOfString:name withString:@""];
-    remainingString = [remainingString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    remainingString = [remainingString stringByTrimmingCharactersInSet:parenthesis];
+
+    NSString *name = displayName;
     
-    opinion = remainingString;
+    /*
+     For english-language strings, this should be able to split the strings into two parts.
+     */
+    
+    NSArray *components = [displayName componentsSeparatedByString:@"("];
+    
+    /**
+     For Hebrew text, it's more complicated...
+     
+     Some strings are typed in the incorrect order, even if they display as "Time (Opinion)"
+     This means that:
+     
+     1. rangeOfString: (or localized variants) won't give consistent results
+     2. Splitting by @"(" is sometimes correct, but other times, we want @")"
+     3. Even when that does work, we sometimes get an empty component as the first element of that array
+     4. Sometimes the opinion and the Time name are flipped.
+     5. Sometimes the opinion and time are grouped, because they were flipped.
+     
+     */
+    
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+        NSString *string = evaluatedObject;
+        
+        return string.length > 0;
+    }];
+    
+    /** Handle empty components entry. (case 3) */
+    components = [components filteredArrayUsingPredicate:predicate];
+    
+    /** Handle grouped time and opinion (case 5) */
+    if (components.count != 2)
+    {
+        /** Handle flipped time & opinion. (case 4) */
+        components = [[[displayName componentsSeparatedByString:@")"] reverseObjectEnumerator] allObjects];
+        
+        /** Handle empty components entry. (case 3) */
+        components = [components filteredArrayUsingPredicate:predicate];
+    }
+    
+    name = components.lastObject;
+    
+    /** Some strings will have an extra parenthesis at this point.*/
+    name = [name stringByTrimmingCharactersInSet:parenthesis];
+    
+    /** In all cases trim whitespace. */
+    name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    
+    opinion = name;
     
     return opinion;
 }
