@@ -580,10 +580,10 @@ NS_ASSUME_NONNULL_BEGIN
         components = [components filteredArrayUsingPredicate:predicate];
     }
     
-    
-    
     name = components[0];
     
+    /** In all cases trim whitespace. */
+    name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 
     return name;
 }
@@ -599,26 +599,20 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable NSString *)rabbinicOpinionFromDisplayName:(NSString *)displayName
 {
     NSString *opinion = nil;
+    NSCharacterSet *parenthesis = [NSCharacterSet characterSetWithCharactersInString:@"()"];
     
-    NSRange rangeOfOpen = [displayName rangeOfString:@"("];
+    /** 
+     Because of the complexities outlined in `nameFromDisplayName:`,
+     we get the rabbinic opinion by replacing the name with an empty string,
+     then trimming parenthesis and whitespace.
+     */
+    NSString *name = [self nameFromDisplayName:displayName];
+    NSString *remainingString = [displayName stringByReplacingOccurrencesOfString:name withString:@""];
+    remainingString = [remainingString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    remainingString = [remainingString stringByTrimmingCharactersInSet:parenthesis];
     
-    // Better implementation, needs testing.
-//    NSRange rangeOfClose = [displayName rangeOfString:@")"];
-//    
-//    NSInteger startIndex = rangeOfOpen.location + rangeOfOpen.length;
-//    NSInteger length = rangeOfClose.location - startIndex;
-//    
-//    NSRange opinionRange = NSMakeRange(startIndex, length);
-//    
-//    if (rangeOfOpen.location != NSNotFound)
-//    {
-//        opinion = [displayName substringWithRange:opinionRange];
-//    }
+    opinion = remainingString;
     
-    if (rangeOfOpen.location != NSNotFound)
-    {
-        opinion = [[displayName substringFromIndex:rangeOfOpen.location+1] stringByReplacingOccurrencesOfString:@")" withString:@""];
-    }
     return opinion;
 }
 
