@@ -583,7 +583,7 @@ NS_ASSUME_NONNULL_BEGIN
     name = components[0];
     
     /** In all cases trim whitespace. */
-    name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 
     return name;
 }
