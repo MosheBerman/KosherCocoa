@@ -540,15 +540,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (nonnull NSString *)nameFromDisplayName:(NSString *)displayName
 {
     NSString *name = displayName;
-
-    /* 
+    
+    /*
      For english-language strings, this should be able to split the strings into two parts.
      */
     
     NSArray *components = [displayName componentsSeparatedByString:@"("];
     
     /**
-     For Hebrew text, it's more complicated... 
+     For Hebrew text, it's more complicated...
      
      Some strings are typed in the incorrect order, even if they display as "Time (Opinion)"
      This means that:
@@ -584,7 +584,7 @@ NS_ASSUME_NONNULL_BEGIN
     
     /** In all cases trim whitespace. */
     name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-
+    
     return name;
 }
 
@@ -598,18 +598,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable NSString *)rabbinicOpinionFromDisplayName:(NSString *)displayName
 {
-    NSString *opinion = nil;
+    NSString *opinion = @"";
     NSCharacterSet *parenthesis = [NSCharacterSet characterSetWithCharactersInString:@"()"];
     
-    /** 
+    /**
      Because of the complexities outlined in `nameFromDisplayName:`,
      we need to do some manual labor here...
      
      We can't get the rabbinic opinion by replacing the name with an empty string,
-     then trimming parenthesis and whitespace because the hebrew word for degrees "מעלות" 
+     then trimming parenthesis and whitespace because the hebrew word for degrees "מעלות"
      contains the word for dawn: עלות.
      */
-
+    
     NSString *name = displayName;
     
     /*
@@ -651,16 +651,22 @@ NS_ASSUME_NONNULL_BEGIN
         components = [components filteredArrayUsingPredicate:predicate];
     }
     
-    name = components.lastObject;
-    
-    /** Some strings will have an extra parenthesis at this point.*/
-    name = [name stringByTrimmingCharactersInSet:parenthesis];
-    
-    /** In all cases trim whitespace. */
-    name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    
-    opinion = name;
-    
+    /** 
+     If there's no opinion, there will be only one component
+     at this point. We'll want to skip in this case.
+     */
+    if (components.count > 1)
+    {
+        name = components.lastObject;
+        
+        /** Some strings will have an extra parenthesis at this point.*/
+        name = [name stringByTrimmingCharactersInSet:parenthesis];
+        
+        /** In all cases trim whitespace. */
+        name = [name stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        
+        opinion = name;
+    }
     return opinion;
 }
 
@@ -1147,7 +1153,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.explanation.english" : @"The latest zman tfila (time to recite the morning prayers) calculated as 2 hours before chatzos. This is based on the opinions that calculate sof zman krias shema as 3 hours before chatzos."
                          },
                  
-                 /** 
+                 /**
                   * Chatzos
                   */
                  NSStringFromSelector(@selector(chatzos)) : @{
@@ -1172,10 +1178,10 @@ NS_ASSUME_NONNULL_BEGIN
                   */
                  
                  NSStringFromSelector(@selector(minchaGedola)) : @{
-                         @"koshercocoa.name.hebrew" : @"מנחה גדולה",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Gedola",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola",
-                         @"koshercocoa.name.english" : @"Earliest Mincha",
+                         @"koshercocoa.name.hebrew" : @"(גר״א) מנחה גדולה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Gedola (Gra/Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola (Gra/Baal Hatanya)",
+                         @"koshercocoa.name.english" : @"Earliest Mincha (Gra/Baal Hatanya)",
                          @"koshercocoa.explanation.english" : @"This is the preferred earliest time to pray mincha in the opinion of the Rambam and others. This is calculated as 9.5 sea level solar hours after sea level sunrise. This calculation is calculated based on the opinion of the Vilna Ga'on and the Baal Hatanya that the day is calculated from sunrise to sunset."
                          },
                  NSStringFromSelector(@selector(minchaGedola30Minutes)) : @{
@@ -1226,10 +1232,10 @@ NS_ASSUME_NONNULL_BEGIN
                   */
                  
                  NSStringFromSelector(@selector(minchaKetana)) : @{
-                         @"koshercocoa.name.hebrew" : @"מנחה קטנה",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Ketanah",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana",
-                         @"koshercocoa.name.english" : @"Optimal Mincha",
+                         @"koshercocoa.name.hebrew" : @"(גר״א) מנחה קטנה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Ketanah (Gra/Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana (Gra/Baal Hatanya)",
+                         @"koshercocoa.name.english" : @"Optimal Mincha (Gra/Baal Hatanya)",
                          @"koshercocoa.explanation.english" : @"Plag hamincha. This is calculated as 10.75 hours after sunrise. This calculation is based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset."
                          },
                  NSStringFromSelector(@selector(minchaKetana16Point1Degrees)) : @{
@@ -1237,7 +1243,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Ketanah (16.1 Maalos)",
                          @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana (16.1 Ma'alot)",
                          @"koshercocoa.name.english" : @"Optimal Mincha (16.1 Degrees)",
-                         @"koshercocoa.explanation.english" : @"mincha ketana according to the Magen Avraham with the day starting and ending 16.1° below the horizon. This is the perfered earliest time to pray mincha according to the opinion of the Rambam and others. For more information on this see the documentation on mincha gedola. This is calculated as 9.5 solar hours after alos."
+                         @"koshercocoa.explanation.english" : @"Mincha ketana according to the Magen Avraham with the day starting and ending 16.1° below the horizon. This is the perfered earliest time to pray mincha according to the opinion of the Rambam and others. For more information on this see the documentation on mincha gedola. This is calculated as 9.5 solar hours after alos."
                          },
                  NSStringFromSelector(@selector(minchaKetana72Minutes)) : @{
                          @"koshercocoa.name.hebrew" : @"מנחה קטנה (72 דקות)",
