@@ -362,7 +362,7 @@
  * Method to return alos (dawn) calculated using 72 minutes zmaniyos (GRA and the Baal Hatanya) 
  * or 1/10th of the day before sea level sunrise. This is based on an 18 minute Mil so the time 
  * for 4 Mil is 72 minutes which is 1/10th of a day (12 * 60 = 720) based on the day starting 
- * at sea level sunrise and ending at sea level sunset. The actual alculation is 
+ * at sea level sunrise and ending at sea level sunset. The actual calulation is 
  * KCAstronomicalCalendar.SeaLevelSunrise()- (KCZmanimCalendar.ShaahZmanisGra() * 1.2).
  * This calculation is used in the calendars published by Hisachdus Harabanim 
  * D'Artzos Habris Ve'Canada.
