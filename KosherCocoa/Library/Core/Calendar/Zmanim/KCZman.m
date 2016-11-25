@@ -272,7 +272,6 @@ NS_ASSUME_NONNULL_BEGIN
                   */
                  
                  @[
-                     NSStringFromSelector(@selector(alosHashachar)),
                      NSStringFromSelector(@selector(alos72)),
                      NSStringFromSelector(@selector(alos60)),
                      NSStringFromSelector(@selector(alos72Zmanis)),
