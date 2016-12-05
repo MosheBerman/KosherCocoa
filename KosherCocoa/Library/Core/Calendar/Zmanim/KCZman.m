@@ -818,7 +818,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.hebrew" : @"(עלות (72 דקות זמניות",
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (72 Dakos Zmaniyos)",
                          @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (72 Dakot Zmaniyot)",
-                         @"koshercocoa.name.english" : @"Dawn (72 Minutes)",
+                         @"koshercocoa.name.english" : @"Dawn (72 Temporal Minutes)",
                          @"koshercocoa.explanation.english" : @"Dawn calculated using 72 minutes zmaniyos (GRA and the Baal Hatanya) or 1/10th of the day before sea level sunrise. This is based on an 18 minute Mil so the time for 4 Mil is 72 minutes which is 1/10th of a day (12 * 60 = 720) based on the day starting at sea level sunrise and ending at sea level sunset. This calculation is used in the calendars published by Hisachdus Harabanim D'Artzos Habris Ve'Canada."
                          },
                  NSStringFromSelector(@selector(alos90)) : @{
@@ -933,7 +933,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.hebrew" : @"נץ החמה",
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Naitz Hachama",
                          @"koshercocoa.name.transliterated.sepharad" : @"Netz Hachama",
-                         @"koshercocoa.name.english" : @"Sunrise (90 Degree Zenith)",
+                         @"koshercocoa.name.english" : @"Sunrise",
                          @"koshercocoa.explanation.english" : @"Sunrise at the current location. The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation. This is adjusted to add approximately 50/60 of a degree to account for 34 archminutes of refraction and 16 archminutes for the sun's radius for a total of 90.83333 degrees."
                          },
                  
@@ -1361,7 +1361,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.hebrew" : @"שקיעת החמה",
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Shkiyas Hachamah",
                          @"koshercocoa.name.transliterated.sepharad" : @"Shki'at Hachama",
-                         @"koshercocoa.name.english" : @"Sunset (90 Degree Zenith)",
+                         @"koshercocoa.name.english" : @"Sunset",
                          @"koshercocoa.explanation.english" : @"Sea level sunset according to the National Oceanic and Atmospheric Association, using a 90º zenith."
                          },
                  
