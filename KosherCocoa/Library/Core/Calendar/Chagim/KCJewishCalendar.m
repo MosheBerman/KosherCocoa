@@ -163,22 +163,18 @@
                 return kSimchasTorah;
             }
             break;
-        case kKislev: //no yomtov in CHESHVAN
-            if ([self currentHebrewDayOfMonth] == 24)
+        case kCheshvan:
+            //no yomtov in CHESHVAN
+            break;
+        case kKislev:
+            if (self.dayOfChanukah > 0)
             {
-                return kErevChanukah;
+                return kChanukah;
             }
-            else
-            {
-                if ([self currentHebrewDayOfMonth] >= 25)
-                {
-                    return kChanukah;
-                }
-            }
+            
             break;
         case kTeves:
-            if ([self currentHebrewDayOfMonth] == 1 || [self currentHebrewDayOfMonth] == 2
-                || ([self currentHebrewDayOfMonth] == 3 && [self isKislevShort]))
+            if (self.dayOfChanukah > 0)
             {
                 return kChanukah;
             }
@@ -307,21 +303,29 @@
 //Returns the day of Chanukah or -1 if it is not Chanukah.
 - (NSInteger)dayOfChanukah
 {
-    if ([self isChanukah])
+    NSInteger day = -1;
+    
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
+    
+    NSDate *date = [self workingDateAdjustedForSunset];
+    
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    [components setYear:[hebrewCalendar component:NSCalendarUnitYear fromDate:date]];
+    [components setMonth:kKislev];
+    [components setDay:23]; // We use the 23rd, because we account for nightfall.
+    [components setHour:23]; // 11 P.M. should be well after nightfall in most places.
+    
+    NSDate *firstNightOfChanuka = [hebrewCalendar dateFromComponents:components];
+    
+    NSInteger calculatedDay = [self daysWithinEraFromDate:firstNightOfChanuka toDate:date usingCalendar:hebrewCalendar] + 1;
+    
+    if (calculatedDay > 0 && calculatedDay <= 8)
     {
-        if ([self currentHebrewMonth] == kKislev)
-        {
-            return [self currentHebrewDayOfMonth] - 24;
-        }
-        else     // teves
-        {
-            return [self isKislevShort] ? [self currentHebrewDayOfMonth] + 5 : [self currentHebrewDayOfMonth] + 6;
-        }
+        day = calculatedDay;
     }
-    else
-    {
-        return -1;
-    }
+   
+    return day;
+   
 }
 
 //Returns if a given day is chanukah
@@ -712,6 +716,16 @@
 	}
     
     return totalDaysInTheYear;
+}
+
+#pragma mark - Days Between Units
+
+-(NSInteger)daysWithinEraFromDate:(NSDate *) startDate toDate:(NSDate *) endDate usingCalendar:(NSCalendar *)calendar
+{
+    NSInteger startDay = [calendar ordinalityOfUnit:NSCalendarUnitDay inUnit: NSCalendarUnitEra forDate:startDate];
+    NSInteger endDay = [calendar ordinalityOfUnit:NSCalendarUnitDay inUnit: NSCalendarUnitEra forDate:endDate];
+    
+    return endDay - startDay;
 }
 
 #pragma mark - Molad Methods
