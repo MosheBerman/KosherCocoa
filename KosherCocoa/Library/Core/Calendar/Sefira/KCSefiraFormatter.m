@@ -334,7 +334,7 @@
     NSInteger language = self.language;
     NSInteger custom = self.custom;
     
-    if (language == KCSefiraLanguageEnglish) //  There's only one version of English.
+    if (language == KCSefiraLanguageLocalizedOrEnglish) //  There's only one version of English.
     {
         custom = 0;
     }
@@ -571,7 +571,13 @@
 
 - (nonnull NSString *)blessing
 {
-    return  @"בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָֽׁנוּ בְּמִצְוֹתָיו, וְצִוָּֽנוּ עַל סְפִירַת הָעֹֽמֶר";
+    if (self.language == KCSefiraLanguageLocalizedOrEnglish)
+    {
+        return NSLocalizedString(@"Blessed are you Ha-Shem, our G-d, king of the universe who has made us holy with his commandments, and who commanded us regading counting the omer.", @"The blessing for counting the sefirat ha-omer count.");
+    }
+    
+    // Otherwise use Hebrew.
+    return  @".בָּרוּךְ אַתָּה יְיָ אֱלֹהֵֽינוּ מֶֽלֶךְ הָעוֹלָם, אֲשֶׁר קִדְּשָֽׁנוּ בְּמִצְוֹתָיו, וְצִוָּֽנוּ עַל סְפִירַת הָעֹֽמֶר";
 }
 
 /**
