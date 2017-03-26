@@ -571,7 +571,7 @@
 {
     if (self.language == KCSefiraLanguageLocalizedOrEnglish)
     {
-        return NSLocalizedString(@"Blessed are you Ha-Shem, our G-d, king of the universe who has made us holy with his commandments, and who commanded us regading counting the omer.", @"The blessing for counting the sefirat ha-omer count.");
+        return NSLocalizedString(@"You are the source of blessing, Ha-Shem, our G-d, king of the universe, who has seperated us with his commandments, and who commanded us regading counting the omer.", @"The blessing for counting the sefirat ha-omer count.");
     }
     
     // Otherwise use Hebrew.
