@@ -334,7 +334,7 @@
     NSInteger language = self.language;
     NSInteger custom = self.custom;
     
-    if (language == KCSefiraLanguageLocalizedOrEnglish) //  There's only one version of English.
+    if (language == KCSefiraLanguageLocalizedOrEnglish) //  There's only one custom for English.
     {
         custom = 0;
     }
@@ -526,10 +526,8 @@
                         _sefardHebrewStrings,
                         _sephardicHebrewStrings,
                         ],
-                    /** English */
-                    @[
-                        @[_localizedStrings]
-                        ],
+                    /** Localized */
+                    @[_localizedStrings],
                     /** Transliterated. */
                     @[_ashkenazTransliteratedStrings,
                       _sefardTransliteratedStrings,
