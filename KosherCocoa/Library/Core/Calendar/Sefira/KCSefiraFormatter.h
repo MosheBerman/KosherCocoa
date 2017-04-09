@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, KCSefiraCustom)
 
 typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
     KCSefiraLanguageHebrew = 0,             //  The count, in Hebrew
-    KCSefiraLanguageEnglish,                //  The count, in English
+    KCSefiraLanguageLocalizedOrEnglish,     //  The count, in the system language with English as a fallback
     KCSefiraFormatterTransliteratedHebrew   //  The count, in Hebrew, spelled in English
 };
 
