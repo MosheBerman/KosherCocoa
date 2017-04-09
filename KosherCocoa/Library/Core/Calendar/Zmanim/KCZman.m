@@ -1577,23 +1577,23 @@ NS_ASSUME_NONNULL_BEGIN
                  
                  NSStringFromSelector(@selector(sofZmanAchilasChametzGra)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן אכילת חמץ (גר״א)",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Achilas Chametz (G\"ra)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Achilat Chametz (G\"ra)",
-                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz Before (G\"ra)", @""),
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Achilas Chametz (G\"ra)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Achilat Chametz (G\"ra)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz By (G\"ra)", @""),
                          @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time one is allowed eating chametz on Erev Pesach according to the opinion of the GRA and the Baal Hatanya. This time is identical to the Sof zman tefilah GRA. This time is 4 solar hours into the day based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
                          },
                  NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72Minutes)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן אכילת חמץ (מ״א 72 דקות)",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Achilas Chametz (M\"A 72 Dakos)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Achilat Chametz (M\"A 72 Dakot)",
-                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz Before (M\"A 72 Minutes)", @""),
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Achilas Chametz (M\"A 72 Dakos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Achilat Chametz (M\"A 72 Dakot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz By (M\"A 72 Minutes)", @""),
                          @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time one is allowed eating chametz on Erev Pesach according to the opinion of the MGA based on alos being 72 minutes before sunrise. This time is identical to the Sof zman tefilah MGA 72 minutes. This time is 4 solar hours after dawn based on the opinion of the MGA that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset.", @"")
                          },
                  NSStringFromSelector(@selector(sofZmanAchilasChametzMGA16Point1Degrees)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן אכילת חמץ (מ״א 16.1 מעלות)",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Achilas Chametz (M\"A 16.1 Maalot)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Achilat Chametz (M\"A 16.1 Maalot)",
-                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz Before (M\"A 16.1 Degrees)", @""),
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Achilas Chametz (M\"A 16.1 Maalot)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Achilat Chametz (M\"A 16.1 Maalot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz By (M\"A 16.1 Degrees)", @""),
                          @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time one is allowed eating chametz on Erev Pesach according to the opinion of the MGA based on alos being 16.1° before sunrise. This time is 4 shaos zmaniyos (solar hours) after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall with both being 16.1° below sunrise or sunset.", @"")
                          },
                  
@@ -1603,22 +1603,22 @@ NS_ASSUME_NONNULL_BEGIN
                  
                  NSStringFromSelector(@selector(sofZmanBiurChametzGra)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן ביעור חמץ (גר״א)",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Biur Chametz (Gr\"a)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Biur Chametz (Gr\"a)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Biur Chametz (Gr\"a)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Biur Chametz (Gr\"a)",
                          @"koshercocoa.name.localized" : NSLocalizedString(@"Burn Chametz By (Gr\"a)", @""),
                          @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the GRA and the Baal Hatanya. This time is 5 sola hours into the day based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
                          },
                  NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן ביעור חמץ (מ״א 72 דקות)",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Biur Chametz (M\"A 72 Dakos)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Biur Chametz (M\"A 72 Dakot)",
-                         @"koshercocoa.name.english" : @"Burn Chametz By (72 Minutes)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Biur Chametz (M\"A 72 Dakos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Biur Chametz (M\"A 72 Dakot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Burn Chametz By (72 Minutes)", @""),
                          @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the Magen Avraham based on alos being 72 minutes before sunrise. This time is 5 shaos zmaniyos (temporal hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset.", @"")
                          },
                  NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן ביעור חמץ (מ״א 16.1 מעלות)",
-                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Biur Chametz (M\"A 16.1 Maalot)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Biur Chametz (M\"A 16.1 Maalot)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Biur Chametz (M\"A 16.1 Maalot)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Biur Chametz (M\"A 16.1 Maalot)",
                          @"koshercocoa.name.localized" : NSLocalizedString(@"Burn Chametz By (M\"A 16.1 Degrees)", @""),
                          @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the MGA based on alos being 16.1° before sunrise. This time is 5 shaos zmaniyos (solar hours) after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall with both being 16.1° below sunrise or sunset.", @"")
                          }
