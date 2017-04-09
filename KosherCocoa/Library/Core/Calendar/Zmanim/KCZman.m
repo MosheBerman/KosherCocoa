@@ -1611,8 +1611,8 @@ NS_ASSUME_NONNULL_BEGIN
                  NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן ביעור חמץ (מ״א 72 דקות)",
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Biur Chametz (M\"A 72 Dakos)",
-                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Biur Chametz (M\"A 72 Dakoא)",
-                         @"koshercocoa.name.english" : @"Burn Chametz By (72 ןמואקד)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Biur Chametz (M\"A 72 Dakot)",
+                         @"koshercocoa.name.english" : @"Burn Chametz By (72 Minutes)",
                          @"koshercocoa.explanation.english" : @"The latest time for burning chametz on Erev Pesach according to the opinion of the Magen Avraham based on alos being 72 minutes before sunrise. This time is 5 shaos zmaniyos (temporal hours) after dawn based on the opinion of the Magen Avraham that the day is calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset."
                          },
                  NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees)) : @{
