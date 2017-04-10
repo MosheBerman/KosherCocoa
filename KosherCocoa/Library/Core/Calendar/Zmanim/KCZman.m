@@ -1606,7 +1606,7 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.transliterated.ashkenaz" : @"Biur Chametz (Gr\"a)",
                          @"koshercocoa.name.transliterated.sepharad" : @"Biur Chametz (Gr\"a)",
                          @"koshercocoa.name.localized" : NSLocalizedString(@"Burn Chametz By (Gr\"a)", @""),
-                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the GRA and the Baal Hatanya. This time is 5 sola hours into the day based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the GRA and the Baal Hatanya. This time is 5 solar hours into the day based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
                          },
                  NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)) : @{
                          @"koshercocoa.name.hebrew" : @"סוף זמן ביעור חמץ (מ״א 72 דקות)",
