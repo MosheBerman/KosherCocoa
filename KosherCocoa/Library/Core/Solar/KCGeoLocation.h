@@ -85,12 +85,12 @@
 
 /**
  * Calculate <a
- * href="http://en.wikipedia.org/wiki/Great-circle_distance">geodesic
+ * href="http://en.wikipedia.org/wiki/Great-circle_distance"geodesic
  * distance</a> in Meters between this Object and a second Object passed to
  * this method using <a
- * href="http://en.wikipedia.org/wiki/Thaddeus_Vincenty">Thaddeus Vincenty's</a>
+ * href="http://en.wikipedia.org/wiki/Thaddeus_Vincenty"Thaddeus Vincenty's</a>
  * inverse formula See T Vincenty, "<a
- * href="http://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf">Direct and Inverse
+ * href="http://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf"Direct and Inverse
  * Solutions of Geodesics on the Ellipsoid with application of nested
  * equations</a>", Survey Review, vol XXII no 176, 1975.
  *
