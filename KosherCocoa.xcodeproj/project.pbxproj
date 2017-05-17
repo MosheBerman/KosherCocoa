@@ -274,6 +274,10 @@
 		466FA8021CD2871A00668CD1 /* KCParashaReadings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610DD911808999A0055A4F9 /* KCParashaReadings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46DB49671D9839F200F3A576 /* KosherCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB49661D9839F200F3A576 /* KosherCocoaTests.swift */; };
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
+		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
+		F52587441ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
+		F52587451ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
+		F52587461ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -296,7 +300,7 @@
 		46130E021BF52DF6001D19FC /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46130E031BF52DF7001D19FC /* KosherCocoa copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KosherCocoa copy-Info.plist"; path = "/Users/Moshe/code/ios/KosherCocoa/KosherCocoa copy-Info.plist"; sourceTree = "<absolute>"; };
 		4618ECE51BF449EF00C33159 /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4618ECE71BF449EF00C33159 /* KosherCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KosherCocoa.h; path = ../KosherCocoa.h; sourceTree = "<group>"; };
+		4618ECE71BF449EF00C33159 /* KosherCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KosherCocoa.h; path = ../KosherCocoa.h; sourceTree = "<group>"; };
 		4618ECE91BF449EF00C33159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KosherCocoa/Info.plist; sourceTree = "<group>"; };
 		461E6DFC194474C300C497A8 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
 		461E6DFD194474C300C497A8 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
@@ -368,6 +372,8 @@
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DB49661D9839F200F3A576 /* KosherCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaTests.swift; sourceTree = "<group>"; };
 		46DB49681D9839F200F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F52587471ECD01AB009E623C /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = Localizations/he.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -467,6 +473,7 @@
 		466A3AB617CAF3B900056F16 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				F52587411ECD019A009E623C /* Localizable.strings */,
 				4618ECE71BF449EF00C33159 /* KosherCocoa.h */,
 				466A3AB717CAF3B900056F16 /* Categories */,
 				466A3ACF17CAF3B900056F16 /* Core */,
@@ -1012,6 +1019,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				he,
 			);
 			mainGroup = 4618BB7A1664216E00AD3CE5;
 			productRefGroup = 4618BB861664216E00AD3CE5 /* Products */;
@@ -1032,6 +1040,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52587441ECD019A009E623C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1039,6 +1048,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52587431ECD019A009E623C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1046,6 +1056,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52587451ECD019A009E623C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,6 +1064,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52587461ECD019A009E623C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1215,6 +1227,18 @@
 			targetProxy = 46DB496A1D9839F200F3A576 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F52587411ECD019A009E623C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F52587421ECD019A009E623C /* en */,
+				F52587471ECD01AB009E623C /* he */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		46130E001BF52DF6001D19FC /* Debug */ = {
@@ -1749,6 +1773,7 @@
 				46DB496E1D9839F200F3A576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
