@@ -9,7 +9,7 @@ KosherCocoa offers seven distinct features, each provided by a set of classes in
 
 - Sunrise/Sunset - When the sun rises and sets at a given latitude, longitude, and altitude.
 - Zmanim - Shema, Zman Tefila, Chatzos, and more.
-- Zmanim Metadata - How each zman is calculated, related zmanim, and the calculation's name in Hebrew, English, and two flavors of transliterated English. 
+- Zmanim Metadata - How each zman is calculated, related zmanim, and the calculation's name in Hebrew, English, and two flavors of transliterated English. (Help [translate this into other spoken languages](https://github.com/MosheBerman/KosherCocoa/issues/127).)
 - Parashat Hashavua - Weekly torah portion, with schedules for *Israel* and *Chul*.
 - Sefira - The omer count between Passover and Shavuot.  
 - Daf Yomi - The daily talmud study program followed by thousands of Jews worldwide.
@@ -38,7 +38,7 @@ Read the [documentation](https://github.com/MosheBerman/KosherCocoa/blob/master/
 Contributing:
 ---
 
-If you'd like to help localize this framework so users of other languages can benefit from this, please [see this issue](https://github.com/MosheBerman/KosherCocoa/issues/127)
+If you'd like to help localize this framework so users of other languages can benefit from this, please [see this issue](https://github.com/MosheBerman/KosherCocoa/issues/127).
 
 License:
 ---
