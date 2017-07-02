@@ -5,10 +5,11 @@ KosherCocoa is library that allows you to use sunrise, sunset, Jewish holidays, 
 
 Features:
 ---
-KosherCocoa offers six distinct features, each provided by a set of classes in the library. They are:
+KosherCocoa offers seven distinct features, each provided by a set of classes in the library. They are:
 
 - Sunrise/Sunset - When the sun rises and sets at a given latitude, longitude, and altitude.
 - Zmanim - Shema, Zman Tefila, Chatzos, and more.
+- Zmanim Metadata - How each zman is calculated, related zmanim, and the calculation's name in Hebrew, English, and two flavors of transliterated English. 
 - Parashat Hashavua - Weekly torah portion, with schedules for *Israel* and *Chul*.
 - Sefira - The omer count between Passover and Shavuot.  
 - Daf Yomi - The daily talmud study program followed by thousands of Jews worldwide.

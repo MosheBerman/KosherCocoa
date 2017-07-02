@@ -7,11 +7,12 @@
 1. [Introduction](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#1-introduction)
 2. [Sunrise, Sunset: Calculating Sunrise](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#2-sunrise-sunset-calculating-sunrise)
 3. [Zmanim](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#3-zmanim)
-4. [Parashat Hashavua](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#4-parashat-hashavua)
-5. [Chagim](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#5-chagim)
-6. [Sefira](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#6-sefira)
-7. [Daf Yomi](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#7-daf-yomi)
-8. [Conclusion](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#8-conclusion)
+4. [Zmanim Metadata](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#4-zmanim-metadata)
+5. [Parashat Hashavua](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#5-parashat-hashavua)
+6. [Chagim](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#6-chagim)
+7. [Sefira](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#7-sefira)
+8. [Daf Yomi](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#8-daf-yomi)
+9. [Conclusion](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#9-conclusion)
 
 --- 
 
@@ -64,7 +65,28 @@ Zmanim are calculated by `KCZmanimCalendar` and its subclass `KCComplexZmanimCal
     
 That's it. There are over 100 different zmanim API. Have a look at the applicable headers.
 
-### 4. Parashat Hashavua
+### 4. Zmanim Metadata
+
+Zmanim Metadata is provided by the `KCZman` class. We instantiate a `KCZman` by passing it a selector for the zman we want information about:
+
+    SEL zmanSelector = @selector(sofZmanShmaGra);
+    KCZman *zmanMetadata = [KCZman zmanForSelector:zmanSelector];
+
+Now we can query the `zmanMetadata` object for information about the zman. For example, we can ask for the Hebrew name of the zman, like so:
+
+    NSString *hebrewName = [zmanMetadata hebrewName];
+    NSLog(@"%@", hebrewName);
+    // Prints: (סוף זמן קריאת שמע (גר״א
+
+We can also get information about how the zman is calculated by asking for the Zman's `explanation`.
+
+    NSString *explanation = [zmanMetadata explanation];
+    NSLog(@"%@", explanation);
+    // Prints out: The latest zman krias shema (time to recite Shema in the morning). This time is 3 shaos zmaniyos (solar hours) after sea level sunrise based on the opinion of the GRA and the Baal Hatanya that the day is calculated from sunrise to sunset.
+
+There are other methods on `KCZman` to get the English and transliterated names, as well as the string for just the rabbinic opinion. You can check out `KCZman.h` for the specifics.
+
+### 5. Parashat Hashavua
 
 There are two classes when working with Parshiot. `KCParashatHashavuaCalculator` returns a `KCParasha` object representing the parasha for a given date. For example:
 
@@ -82,7 +104,7 @@ Now that we have a `KCParasha`, we can use the `name` method to get the Hebrew n
 	NSString *hebrewName = [parasha name];
 	NSString *transliteratedName = [parasha nameTransliterated];
 
-### 5. Chagim
+### 6. Chagim
 
 To calculate the holidays, use `KCJewishCalendar`. Using the value of the `workingDate` property inherited from its superclass, `KCJewishCalendar` can determing if the supplied date is a holiday.  
 
@@ -101,7 +123,7 @@ You can also choose to respect or ignore the various holidays involving the mode
 
     [calendar setReturnsModernHolidays:YES] // default is NO, YES will enable the modern holidays
     
-### 6. Sefira
+### 7. Sefira
 
 Calculating Sefira is super easy with `KCSefiratHaomerCalculator`. It's a one liner:
 
@@ -150,15 +172,12 @@ Or, we can get a block of text which contains the count as well as medidations a
 This will return a string containing the blessing before the count, the count itself, and the harachaman right after it. Like the other related types, `KCSefiraPrayerAddition` is defined in `KCSefiraFormatter.h`
 
 ---
-**As of this writing, there are a few limitations to the `KCSefiraFormatter` class. Transliterated Hebrew isn't implemented at all, and blessings are not supported when the language is set to English. In that case, you'll get just the count itself: "Today is the first day which is...".**
+**As of this writing, there are a few limitations to the `KCSefiraFormatter` class. Transliterated Hebrew isn't implemented at all. Before version 3.5.0, blessings are not supported when the language is set to English. In that case, you'll get just the count itself: "Today is the first day which is...".**
 
 ---
 
 
-
-
-
-### Daf Yomi
+### 8. Daf Yomi
 
 The Daf Yomi calculation classes work similarly to the Parasha calculation classes. You create a `KCDafYomiCalculator`, optionally assign a `workingDate`, and then ask it for a `KCDaf` for a given date. 
 	
@@ -173,7 +192,7 @@ To get the name of the daf, call the `name` method or the `transliteratedName` m
 	NSString *hebrewName = [daf name];
 	NSString *transliteratedName = [daf nameTransliterated];
 	
-### 8. Conclusion
+### 9. Conclusion
 
 While there are couple of missing parts, this library is a mature piece of code. I've used bits and pieces of it in various apps for several years with close to no problems. 
 
