@@ -16,7 +16,7 @@
  
  There are fourteen year configurations, as per
  Arthur Spier, 'The Comprehensive Hebrew Calendar,
- 3rd ed' (Behrman House 1986, ISBN 087306-398-8.
+ 3rd ed' (Behrman House 1986, ISBN 087306-398-8.)
  
  Each configuration composites the weekday of 1 Tishri,
  the number of days in the year, and if the year
