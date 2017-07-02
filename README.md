@@ -35,6 +35,13 @@ Using KosherCocoa:
 ---
 Read the [documentation](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md) or poke around the file headers. 
 
+Contributing:
+---
+
+If you'd like to help localize this framework so users of other languages can benefit from this, please [see this issue](https://github.com/MosheBerman/KosherCocoa/issues/127)
+
 License:
 ---
 KosherCocoa is hereby released under the modified LGPL License, version 2.1. See [the full text of the license](http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) on the GNU website.
+
+Please let me know if you're using the KosherCocoa framework in your app! 
