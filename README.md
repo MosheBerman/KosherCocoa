@@ -18,10 +18,9 @@ Setting it up:
 ---
 Clone into the repository. 
 
-Drag the KosherCocoa Xcode project into your own and add KosherCocoa framework as a dependency. If you're targeting iOS 7, add KosherCocoa.h and the `Library` directory to your project.
+Drag the KosherCocoa Xcode project into your own and add KosherCocoa framework as a dependency.
 
-
-**CocoaPods:** KosherCocoa 3.0.2 supports CocoaPods. Add the following line to your podfile:
+**CocoaPods:** KosherCocoa supports CocoaPods as of version 3.0.2. Add the following line to your podfile:
 
 ```
 'KosherCocoa', '~> 3.5.1'
@@ -29,7 +28,7 @@ Drag the KosherCocoa Xcode project into your own and add KosherCocoa framework a
 
 Technical Requirements:
 ---
-The latest version of KosherCocoa has been developed with the iOS 9 SDK and Xcode 7. To use the Framework, you'll need to target iOS 8 or newer.
+The latest version of KosherCocoa has been developed with the iOS 9 SDK and Xcode 7. To use the Framework, you'll need to target iOS 8 or higher, macOS 10.11 or higher, tvOS 9.0 or higher, or watchOS 2.0 or higher.
 
 Using KosherCocoa:
 ---
