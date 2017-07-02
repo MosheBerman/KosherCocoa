@@ -1,8 +1,8 @@
-KosherCocoa Documentation:
-===
+# KosherCocoa Documentation:
 
-Table of Contents
----
+
+## Table of Contents
+
 
 1. [Introduction](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#1-introduction)
 2. [Sunrise, Sunset: Calculating Sunrise](https://github.com/MosheBerman/KosherCocoa/blob/master/Documentation.md#2-sunrise-sunset-calculating-sunrise)
@@ -15,8 +15,8 @@ Table of Contents
 
 --- 
 
-1. Introduction
----
+### 1. Introduction
+
 
 KosherCocoa is the product of over two years spent porting Eliyahu Hershfeld's wonderful KosherJava library to Objective-C. Much of this time has been spent maturing the library and making it feel like some of the Cocoa APIs. Eliyahu's own work has taken a significant amount of time and effort. 
 
@@ -24,8 +24,8 @@ This document attempts to be a complete reference for how to use Objective-C ver
 
 With that in mind, let's get started.
 
-2. Sunrise, Sunset: Calculating Sunrise
----
+### 2. Sunrise, Sunset: Calculating Sunrise
+
 Sunrise and sunset are defined by where you are on Earth. For example, sunrise in California is long after sunrise in New York. While we use time zones to handle this when discussing time, we need to pinpoint where our user is in order to show them times that they can relate to. To do so, we use the `KCGeoLocation` class. The simplest use case is presented here:
  
     KCGeoLocation *location = [KCGeoLocation alloc] initWithLatitude:latitude andLongitude:longitude andTimeZone:timeZone];
@@ -54,8 +54,8 @@ This is sunrise at whatever the altitude of the `geoLocation` object has at a 90
     
 Sunrise, sunset. That's how it's done.
 
-3. Zmanim
----
+### 3. Zmanim
+
 Zmanim are calculated by `KCZmanimCalendar` and its subclass `KCComplexZmanimCalendar`. Similar to sunrise, you can pass a location to a `KCZmanimCalendar` and then ask it for a zman.
 
     KCGeoLocation *location = [KCGeoLocation alloc] initWithLatitude:latitude andLongitude:longitude andTimeZone:timeZone];	
@@ -64,8 +64,8 @@ Zmanim are calculated by `KCZmanimCalendar` and its subclass `KCComplexZmanimCal
     
 That's it. There are over 100 different zmanim API. Have a look at the applicable headers.
 
-4. Parashat Hashavua
----
+### 4. Parashat Hashavua
+
 There are two classes when working with Parshiot. `KCParashatHashavuaCalculator` returns a `KCParasha` object representing the parasha for a given date. For example:
 
     KCParashatHashavuaCalculator *parashaCalculator = [[KCParashatHashavuaCalculator alloc] init];
@@ -82,8 +82,8 @@ Now that we have a `KCParasha`, we can use the `name` method to get the Hebrew n
 	NSString *hebrewName = [parasha name];
 	NSString *transliteratedName = [parasha nameTransliterated];
 
-5. Chagim
----
+### 5. Chagim
+
 To calculate the holidays, use `KCJewishCalendar`. Using the value of the `workingDate` property inherited from its superclass, `KCJewishCalendar` can determing if the supplied date is a holiday.  
 
 Here's an example using `KCJewishCalendar`:
@@ -101,8 +101,8 @@ You can also choose to respect or ignore the various holidays involving the mode
 
     [calendar setReturnsModernHolidays:YES] // default is NO, YES will enable the modern holidays
     
-6. Sefira
----
+### 6. Sefira
+
 Calculating Sefira is super easy with `KCSefiratHaomerCalculator`. It's a one liner:
 
     NSInteger dayOfSefira = [KCSefiratHaomerCalculator dayOfSefiraForDate:someDate];
@@ -158,8 +158,8 @@ This will return a string containing the blessing before the count, the count it
 
 
 
-7. Daf Yomi
----
+### Daf Yomi
+
 The Daf Yomi calculation classes work similarly to the Parasha calculation classes. You create a `KCDafYomiCalculator`, optionally assign a `workingDate`, and then ask it for a `KCDaf` for a given date. 
 	
 	KCDafYomiCalculator *calculator = [[KCDafYomiCalculator alloc] init];
@@ -173,8 +173,8 @@ To get the name of the daf, call the `name` method or the `transliteratedName` m
 	NSString *hebrewName = [daf name];
 	NSString *transliteratedName = [daf nameTransliterated];
 	
-8. Conclusion
----
+### 8. Conclusion
+
 While there are couple of missing parts, this library is a mature piece of code. I've used bits and pieces of it in various apps for several years with close to no problems. 
 
 Remember to provide your users with an adequate way to configuare a way for you to obtain their location. The primary cause of complaints in three years was nearly always a user who didn't know how to tell my apps where they were. 
