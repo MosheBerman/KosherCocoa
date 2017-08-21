@@ -24,12 +24,12 @@ Drag the KosherCocoa Xcode project into your own and add KosherCocoa framework a
 **CocoaPods:** KosherCocoa supports CocoaPods as of version 3.0.2. Add the following line to your podfile:
 
 ```
-'KosherCocoa', '~> 3.5.1'
+'KosherCocoa', '~> 3.6.0'
 ```
 
 Technical Requirements:
 ---
-The latest version of KosherCocoa has been developed with the iOS 9 SDK and Xcode 7. To use the Framework, you'll need to target iOS 8 or higher, macOS 10.11 or higher, tvOS 9.0 or higher, or watchOS 2.0 or higher.
+The latest version of KosherCocoa has been developed with the iOS 9 SDK and Xcode 8. To use the Framework, you'll need to target iOS 8 or higher, macOS 10.11 or higher, tvOS 9.0 or higher, or watchOS 2.0 or higher.
 
 Using KosherCocoa:
 ---
