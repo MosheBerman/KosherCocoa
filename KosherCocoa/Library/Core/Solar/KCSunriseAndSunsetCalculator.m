@@ -376,8 +376,7 @@
 //			/ (earthRadiusInMeters + elevationMeters)));
 //	</pre>
 //
-//	The source of this algorthitm is <a
-//	href="http://www.calendarists.com">Calendrical Calculations</a> by
+//	The source of this algorithm is http://www.calendarists.com" Calendrical Calculations by
 //	Edward M. Reingold and Nachum Dershowitz. An alternate algorithm that
 //	produces an almost identical (but not accurate)result found in Ma'aglay
 //	Tzedek by Moishe Kosower and other sources is:

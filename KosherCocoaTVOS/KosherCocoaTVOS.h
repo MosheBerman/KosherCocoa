@@ -6,7 +6,9 @@
 //  Copyright © 2016 Moshe Berman. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#if !TARGET_OSX
+@import UIKit;
+#endif 
 
 //! Project version number for KosherCocoaTVOS.
 FOUNDATION_EXPORT double KosherCocoaTVOSVersionNumber;

@@ -278,9 +278,9 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 - (double)temporalHourFromSunrise:(nonnull NSDate *)sunrise toSunset:(nonnull NSDate*)sunset;
 
 /**
- * A method that returns sundial or solar noon. It occurs when the Sun is <a href
- * ="http://en.wikipedia.org/wiki/Transit_%28astronomy%29">transitting</a> the <a
- * href="http://en.wikipedia.org/wiki/Meridian_%28astronomy%29">celestial meridian</a>. In this class it is
+ * A method that returns sundial or solar noon. It occurs when the Sun is 
+ * http://en.wikipedia.org/wiki/Transit_%28astronomy%29 transitting the
+ * http://en.wikipedia.org/wiki/Meridian_%28astronomy%29" celestial meridian. In this class it is
  * calculated as halfway between sea level sunrise and sea level sunset, which can be slightly off the real transit
  * time due to changes in declination (the lengthening or shortening day).
  *

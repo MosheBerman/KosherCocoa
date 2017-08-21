@@ -272,6 +272,7 @@
 		466FA8001CD2871A00668CD1 /* KCZenith.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFC17CAF3B900056F16 /* KCZenith.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA8011CD2871A00668CD1 /* KCZenithExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA8021CD2871A00668CD1 /* KCParashaReadings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610DD911808999A0055A4F9 /* KCParashaReadings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469066551F4A7090009E5D46 /* KosherCocoa.podspec */; };
 		46DB49671D9839F200F3A576 /* KosherCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB49661D9839F200F3A576 /* KosherCocoaTests.swift */; };
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
@@ -369,6 +370,7 @@
 		469066521F4A6728009E5D46 /* Documentation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Documentation.md; sourceTree = "<group>"; };
 		469066531F4A6728009E5D46 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		469066541F4A6728009E5D46 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		469066551F4A7090009E5D46 /* KosherCocoa.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KosherCocoa.podspec; sourceTree = "<group>"; };
 		46BAA9F41AD592B300A0FE4B /* KCZman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZman.h; sourceTree = "<group>"; };
 		46BAA9F51AD592B300A0FE4B /* KCZman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZman.m; sourceTree = "<group>"; };
 		46DB495A1D9837D100F3A576 /* KosherCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaTests.swift; sourceTree = "<group>"; };
@@ -376,7 +378,7 @@
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DB49661D9839F200F3A576 /* KosherCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaTests.swift; sourceTree = "<group>"; };
 		46DB49681D9839F200F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F52587471ECD01AB009E623C /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = Localizations/he.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -434,6 +436,7 @@
 			isa = PBXGroup;
 			children = (
 				469066511F4A6728009E5D46 /* CHANGELOG.md */,
+				469066551F4A7090009E5D46 /* KosherCocoa.podspec */,
 				469066521F4A6728009E5D46 /* Documentation.md */,
 				469066531F4A6728009E5D46 /* LICENSE */,
 				469066541F4A6728009E5D46 /* README.md */,
@@ -1056,6 +1059,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */,
 				F52587431ECD019A009E623C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1536,7 +1540,7 @@
 				INFOPLIST_FILE = KosherCocoaOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoaOSX;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
@@ -1582,7 +1586,7 @@
 				INFOPLIST_FILE = KosherCocoaOSX/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoaOSX;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";

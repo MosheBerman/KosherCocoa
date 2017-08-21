@@ -64,7 +64,7 @@ NS_SWIFT_NAME(ZmanimCalendar)
 - (nullable NSDate *)chatzos;
 
 /**
- * This method returns the latest <em>zman krias shema</em> (time to recite Shema in the morning). This time is 3 shaos zmaniyos</em> (solar hours) after sea level
+ * This method returns the latest <em>zman krias shema</em> (time to recite Shema in the morning). This time is 3 shaos zmaniyos (solar hours) after sea level
  * sunrise based on the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is calculated from
  * sunrise to sunset.
  *
@@ -185,7 +185,7 @@ NS_SWIFT_NAME(ZmanimCalendar)
 /**
  * This method returns the latest <em>zman tfila</em> (time to recite the morning prayers) in the opinion of the
  * <em>MGA</em> based on <em>alos</em> being 72 minutes before sunrise.
- * This time is 4 shaos zmaniyos</em> (temporal hours) after
+ * This time is 4 shaos zmaniyos (temporal hours) after
  * dawn based on the opinion of the <em>MGA</em> that the day is calculated from a dawn} of 72
  * minutes before sunrise to nightfall} of 72 minutes after sunset.
  *
@@ -214,7 +214,7 @@ NS_SWIFT_NAME(ZmanimCalendar)
 /**
  * This method returns the time of <em>mincha ketana</em>. This is the preferred earliest time to pray
  * <em>mincha</em> in the opinion of the Rambam and others. For more information on this see the documentation on
- * mincha gedola</em>. This is calculated as 9.5 sea
+ * mincha gedola. This is calculated as 9.5 sea
  * level solar hours after sea level sunrise. This calculation is calculated based on
  * the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is calculated from sunrise to sunset.
  * @return the <code>NSDate</code> of the time of mincha ketana. If the calculation can't be computed such as in the
@@ -258,8 +258,7 @@ NS_SWIFT_NAME(ZmanimCalendar)
  * sunrise to  sunset. The calculations are based on a day from
  * sea level sunrise to sea level sunset. The day is
  * split into 12 equal parts with each one being a <em>shaah zmanis</em>. An explanation and
- * detailed sources for not using elevation for anything besides sunrise and sunset can be found in <a
- * href="http://www.worldcat.org/oclc/659793988">Zmanim Kehilchasam (second edition published in 2007)</a> by Rabbi
+ * detailed sources for not using elevation for anything besides sunrise and sunset can be found in "http://www.worldcat.org/oclc/659793988" Zmanim Kehilchasam (second edition published in 2007) by Rabbi
  * Dovid Yehuda Bursztyn chapter 2 (pages 186-187).
  *
  * @return the <code>double</code> millisecond length of a <em>shaah zmanis</em> calculated from

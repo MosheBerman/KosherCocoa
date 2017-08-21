@@ -520,12 +520,12 @@
 }
 
 //Returns the latest time of Kiddush Levana according to the
-//<a href="http://en.wikipedia.org/wiki/Yaakov_ben_Moshe_Levi_Moelin">Maharil's</a> opinion
+//"http://en.wikipedia.org/wiki/Yaakov_ben_Moshe_Levi_Moelin" Maharil's opinion
 //that it is calculated as
 //halfway between molad and molad. This adds half the 29 days, 12 hours and 793 chalakim
 //time between molad and
 // molad (14 days, 18 hours, 22 minutes and 666 milliseconds)to the month's molad.
-//TODO:Currently returns the time even if it is during the day.
+// TODO:Currently returns the time even if it is during the day.
 //It should return the 72 Minute Alos
 // prior to the time if the zman is between Alos and Tzais.
 
@@ -575,13 +575,11 @@
 //Returns the latest time of Kiddush Levana calculated as 15 days after the molad.
 //  This is the opinion brought down
 // in the Shulchan Aruch (Orach Chaim 426). It should be noted that some opinions hold that the
-// <http://en.wikipedia.org/wiki/Moses_Isserles">Rema</a> who brings down the opinion of the <a
-// href="http://en.wikipedia.org/wiki/Yaakov_ben_Moshe_Levi_Moelin">Maharil's</a> of calculating
+// http://en.wikipedia.org/wiki/Moses_Isserles" Rema who brings down the opinion of the "http://en.wikipedia.org/wiki/Yaakov_ben_Moshe_Levi_Moelin" Maharil's of calculating
 // half way between molad and molad is of the opinion that the Mechaber agrees to his opinion.
 //  Also see the Aruch Hashulchan.
 //  For additional details on the subject, See Rabbi
-// Dovid Heber's very detailed writeup in Siman Daled (chapter 4)of <a
-// href="http://www.worldcat.org/oclc/461326125">Shaarei Zmanim</a>. TODO: Currently returns the time even if it is
+// Dovid Heber's very detailed writeup in Siman Daled (chapter 4)of "http://www.worldcat.org/oclc/461326125" Shaarei Zmanim. TODO: Currently returns the time even if it is
 // during the day. It should return the  Alos prior to the
 // time if the zman is between Alos and Tzais.
 

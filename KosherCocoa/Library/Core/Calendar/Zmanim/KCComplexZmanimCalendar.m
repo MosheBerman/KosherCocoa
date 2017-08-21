@@ -571,8 +571,7 @@
 }
 
 /**
- * A method that returns "solar" midnight, or the time when the sun is at its <a
- * href="http://en.wikipedia.org/wiki/Nadir">nadir</a>. <br/>
+ * A method that returns "solar" midnight, or the time when the sun is at its "http://en.wikipedia.org/wiki/Nadir"nadir.
  * <br/>
  * <b>Note:</b> this method is experimental and might be removed.
  * 
