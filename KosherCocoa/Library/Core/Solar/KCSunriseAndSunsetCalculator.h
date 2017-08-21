@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "KCGeoLocation.h"
 #import "KCConstants.h"
 #import "KCAstronomicalCalculator.h"
@@ -23,13 +23,13 @@
  *  A string representing the name of the calculator
  */
 
-@property (nonatomic, strong) NSString *calculatorName;
+@property (nonatomic, strong, nullable) NSString *calculatorName;
 
 /**
  *  The location of the user.
  */
 
-@property (nonatomic, strong) KCGeoLocation *geoLocation;
+@property (nonatomic, strong, nonnull) KCGeoLocation *geoLocation;
 
 /**
  *  This method instantiates a new KCSunriseAndSunsetCalculator 
@@ -39,7 +39,7 @@
  *  @return An instance of KCSunriseAndSunsetCalculator.
  */
 
-- (id)initWithGeoLocation:(KCGeoLocation *)geolocation;
+- (nonnull instancetype)initWithGeoLocation:(nonnull KCGeoLocation *)geolocation;
 
 /**-----
  * @name Calculations
@@ -201,7 +201,7 @@
  *  @return The sunset time as a double. (TODO: Check the units.)
  */
 
-- (double)UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
+- (double)UTCSunsetForDate:(nonnull NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
 
 /**
  *  Get sunrise as a double.
@@ -216,20 +216,7 @@
  *  @return The sunrise time as a double. (TODO: Check the units.)
  */
 
--  (double)UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
-
-/**
- *
- *  Break up a date object into day, month, year.
- *  
- *  @discussion This method works against the Gregorian calendar, so the return value uses Gregorian units.
- *
- *  @param date An NSDate to use extract information from.
- *
- *  @return An array containing three numbers. The first represents a year. The second represents the month. The third value is the day of the month.
- */
-
-- (NSArray *)yearMonthAndDayFromDate:(NSDate *)date;
+-  (double)UTCSunriseForDate:(nonnull NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
 
 /**
  *	Method to return the adjustment to the zenith required to account for the

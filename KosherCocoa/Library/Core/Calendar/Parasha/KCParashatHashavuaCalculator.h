@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "MBCalendarCategories.h"
 #import "KCParasha.h"
 
@@ -34,7 +34,7 @@
  *  @return A KCParasha object representing the relevant parasha or parshiot.
  */
 
-- (KCParasha *)parashaInDiasporaForDate:(NSDate *)date;
+- (nonnull KCParasha *)parashaInDiasporaForDate:(nonnull NSDate *)date;
 
 /**
  *  This method returns a KCParasha object representing the *parasha*
@@ -45,7 +45,7 @@
  *  @return A KCParasha object representing the relevant parasha or parshiot.
  */
 
-- (KCParasha *)parashaInIsraelForDate:(NSDate *)date;
+- (nonnull KCParasha *)parashaInIsraelForDate:(nonnull NSDate *)date;
 
 /**
  *  Returns a listing of all parshiot in the diaspora
@@ -59,11 +59,11 @@
  *
  *  @see KCParasha.h
  *
- *  @return An array of KCParasha objects.
+ *  @return An array of KCParashaIdentifiers wrapped in NSNumber objects.
  *
  */
 
-- (NSArray *)parshiotInDiasporaDuringYearType:(enum kHebrewYearType)typeOfYear;
+- (nonnull NSArray <NSNumber *>*)parshiotInDiasporaDuringYearType:(enum kHebrewYearType)typeOfYear;
 
 /**
  *  Returns a listing of all parshiot in Israel 
@@ -76,10 +76,10 @@
  *  @param typeOfYear A kHebrewYearType value as defined in NSCalendar+hebrewYearTypes.h
  *
  *  @see KCParasha.h
- *  @return An array of KCParasha objects.
+ *  @return An array of KCParashaIdentifiers wrapped in NSNumber objects.
  *
  */
 
-- (NSArray *)parshiotInIsraelDuringYearType:(enum kHebrewYearType)typeOfYear;
+- (nonnull NSArray <NSNumber *>*)parshiotInIsraelDuringYearType:(enum kHebrewYearType)typeOfYear;
 
 @end

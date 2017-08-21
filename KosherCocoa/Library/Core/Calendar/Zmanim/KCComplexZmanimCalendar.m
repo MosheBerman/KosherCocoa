@@ -85,20 +85,20 @@
     return [self temporalHourFromSunrise:[self alos120Zmanis] toSunset:[self tzais120Zmanis]];
 }
 
-- (NSDate *) plagHamincha120Minutes{
+- (nullable NSDate *) plagHamincha120Minutes{
     return [[self alos120Zmanis] dateByAddingTimeInterval:[self shaahZmanis120Minutes]*10.75];
 }
 
-- (NSDate *) plagHamincha120MinutesZmanis{
+- (nullable NSDate *) plagHamincha120MinutesZmanis{
     return [[self alos120Zmanis] dateByAddingTimeInterval:[self shaahZmanis120MinutesZmanis]*10.75];
 }
 
-- (NSDate *) alos60{
+- (nullable NSDate *) alos60{
     return [self dateBySubtractingHours:1 fromDate:[self seaLevelSunrise]];
 }
 
 
-- (NSDate *)alos72Zmanis {
+- (nullable NSDate *)alos72Zmanis {
     long shaahZmanis = [self shaahZmanisGra];
     
     if (shaahZmanis == LONG_MIN) {
@@ -108,13 +108,13 @@
     return [[self seaLevelSunrise] dateByAddingTimeInterval:shaahZmanis*-1.2];
 }
 
-- (NSDate *) alos90{
+- (nullable NSDate *) alos90{
     
     NSDate *baseDate = [self seaLevelSunrise];
     return [self dateBySubtractingMinutes:90 fromDate:baseDate];
 }
 
-- (NSDate *) alos90Zmanis{
+- (nullable NSDate *) alos90Zmanis{
     long shaahZmanis = [self shaahZmanisGra];
     
     if (shaahZmanis == LONG_MIN) {
@@ -124,12 +124,12 @@
     return [[self seaLevelSunrise] dateByAddingTimeInterval:(shaahZmanis * -1.5)];
 }
 
-- (NSDate *) alos96{
+- (nullable NSDate *) alos96{
     NSDate *baseDate = [self seaLevelSunrise];
     return [self dateBySubtractingMinutes:96 fromDate:baseDate];
 }
 
-- (NSDate *) alos96Zmanis{
+- (nullable NSDate *) alos96Zmanis{
 
     long shaahZmanis = [self shaahZmanisGra];
     
@@ -140,12 +140,12 @@
     return [[self seaLevelSunrise] dateByAddingTimeInterval:shaahZmanis * -1.6];
 }
 
-- (NSDate *) alos120{
+- (nullable NSDate *) alos120{
     NSDate *baseDate = [self seaLevelSunrise];
     return [self dateBySubtractingMinutes:120 fromDate:baseDate];
 }
 
-- (NSDate *) alos120Zmanis{
+- (nullable NSDate *) alos120Zmanis{
     long shaahZmanis = [self shaahZmanisGra];
     
     if (shaahZmanis == LONG_MIN) {
@@ -155,76 +155,76 @@
     return [[self seaLevelSunrise] dateByAddingTimeInterval:shaahZmanis * -2];
 }
 
-- (NSDate *) alos26Degrees{
+- (nullable NSDate *) alos26Degrees{
     return [self sunriseOffsetByDegrees:kZenithTwentySix];
 }
 
-- (NSDate *) alos18Degrees{
+- (nullable NSDate *) alos18Degrees{
     return [self sunriseOffsetByDegrees:kZenithAstronomical];
 }
 
-- (NSDate *) alos19Point8Degrees{
+- (nullable NSDate *) alos19Point8Degrees{
     return [self sunriseOffsetByDegrees:kZenithNineteenPointEight];
 }
 
-- (NSDate *) alos16Point1Degrees{
+- (nullable NSDate *) alos16Point1Degrees{
     return [self sunriseOffsetByDegrees:kZenithSixteenPointOne];
 }
 
-- (NSDate *) misheyakir11Point5Degrees{
+- (nullable NSDate *) misheyakir11Point5Degrees{
     return [self sunriseOffsetByDegrees:kZenithElevenPointFive];
 }
 
-- (NSDate *) misheyakir11Degrees{
+- (nullable NSDate *) misheyakir11Degrees{
     return [self sunriseOffsetByDegrees:kZenithElevenDegrees];
 }
 
-- (NSDate *) misheyakir10Point2Degrees{
+- (nullable NSDate *) misheyakir10Point2Degrees{
     return [self sunriseOffsetByDegrees:kZenithTenPointTwo];
 }
 
-- (NSDate *) sofZmanShmaMGA19Point8Degrees{
+- (nullable NSDate *) sofZmanShmaMGA19Point8Degrees{
     return [[self sunriseOffsetByDegrees:kZenithNineteenPointEight] dateByAddingTimeInterval:[self shaahZmanis19Point8Degrees]*3];
 }
 
-- (NSDate *) sofZmanShmaMGA16Point1Degrees{
+- (nullable NSDate *) sofZmanShmaMGA16Point1Degrees{
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees] *3];
 }
 
-- (NSDate *) sofZmanShmaMGA72Minutes{
+- (nullable NSDate *) sofZmanShmaMGA72Minutes{
     return [self sofZmanShmaMogenAvraham];
 }
 
-- (NSDate *) sofZmanShmaMGA72MinutesZmanis{
+- (nullable NSDate *) sofZmanShmaMGA72MinutesZmanis{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanis72MinutesZmanis]*3];
 }
 
-- (NSDate *) sofZmanShmaMGA90Minutes{
+- (nullable NSDate *) sofZmanShmaMGA90Minutes{
     return [[self alos90] dateByAddingTimeInterval:[self shaahZmanis90Minutes]*3];
 }
 
-- (NSDate *) sofZmanShmaMGA90MinutesZmanis{
+- (nullable NSDate *) sofZmanShmaMGA90MinutesZmanis{
     return [[self alos90Zmanis] dateByAddingTimeInterval:[self shaahZmanis90MinutesZmanis]*3];
 }
 
-- (NSDate *) sofZmanShmaMGA96Minutes{
+- (nullable NSDate *) sofZmanShmaMGA96Minutes{
     return [[self alos96] dateByAddingTimeInterval:[self shaahZmanis96Minutes]*3];
 }
 
-- (NSDate *) sofZmanShmaMGA96MinutesZmanis{
+- (nullable NSDate *) sofZmanShmaMGA96MinutesZmanis{
     return [[self alos96Zmanis] dateByAddingTimeInterval:[self shaahZmanis96MinutesZmanis] *3];
 }
 
-- (NSDate *) sofZmanShma3HoursBeforeChatzos{
+- (nullable NSDate *) sofZmanShma3HoursBeforeChatzos{
     NSDate *baseDate = [self chatzos];
     return [self dateBySubtractingHours:3 fromDate:baseDate];
 }
 
-- (NSDate *) sofZmanShmaMGA120Minutes{
+- (nullable NSDate *) sofZmanShmaMGA120Minutes{
     return [[self alos120] dateByAddingTimeInterval:[self shaahZmanis120Minutes]*3];
 }
 
-- (NSDate *) sofZmanShmaAlos16Point1ToSunset{
+- (nullable NSDate *) sofZmanShmaAlos16Point1ToSunset{
     long shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self seaLevelSunset]];
     
     if (shaahZmanis == LONG_MIN) {
@@ -234,7 +234,7 @@
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:shaahZmanis*3];
 }
 
-- (NSDate *) sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees{
+- (nullable NSDate *) sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees{
     long shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self tzaisGeonim7Point083Degrees]];
     
      if (shaahZmanis == LONG_MIN) {
@@ -245,62 +245,62 @@
                         
 }
 
-- (NSDate *) sofZmanTfilaMGA19Point8Degrees{
+- (nullable NSDate *) sofZmanTfilaMGA19Point8Degrees{
     return [[self alos19Point8Degrees] dateByAddingTimeInterval:[self shaahZmanis19Point8Degrees]*4];
 }
 
-- (NSDate *) sofZmanTfilaMGA16Point1Degrees{
+- (nullable NSDate *) sofZmanTfilaMGA16Point1Degrees{
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees]*4];
 }
 
-- (NSDate *) sofZmanTfilaMGA72Minutes{
+- (nullable NSDate *) sofZmanTfilaMGA72Minutes{
     return [self sofZmanTfilaMogenAvraham];
 }
 
-- (NSDate *) sofZmanTfilaMGA72MinutesZmanis{
+- (nullable NSDate *) sofZmanTfilaMGA72MinutesZmanis{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanis72MinutesZmanis] *4];
 }
 
-- (NSDate *) sofZmanTfilaMGA90Minutes{
+- (nullable NSDate *) sofZmanTfilaMGA90Minutes{
     return [[self alos90] dateByAddingTimeInterval:[self shaahZmanis90Minutes]*4];
 }
 
-- (NSDate *) sofZmanTfilaMGA90MinutesZmanis{
+- (nullable NSDate *) sofZmanTfilaMGA90MinutesZmanis{
     return [[self alos90Zmanis] dateByAddingTimeInterval:[self shaahZmanis90MinutesZmanis]*4];
 }
 
-- (NSDate *) sofZmanTfilaMGA96Minutes{
+- (nullable NSDate *) sofZmanTfilaMGA96Minutes{
     return [[self alos96] dateByAddingTimeInterval:[self shaahZmanis96Minutes] *4];
 }
 
-- (NSDate *) sofZmanTfilaMGA96MinutesZmanis{
+- (nullable NSDate *) sofZmanTfilaMGA96MinutesZmanis{
     return [[self alos96Zmanis] dateByAddingTimeInterval:[self shaahZmanis96MinutesZmanis] *4];
 }
 
-- (NSDate *) sofZmanTfilaMGA120Minutes{
+- (nullable NSDate *) sofZmanTfilaMGA120Minutes{
     return [[self alos120] dateByAddingTimeInterval:[self shaahZmanis120Minutes] *4];
 }
 
-- (NSDate *) sofZmanTfila2HoursBeforeChatzos{
+- (nullable NSDate *) sofZmanTfila2HoursBeforeChatzos{
         
     return [self dateBySubtractingHours:2 fromDate:[self chatzos]];
 }
 
-- (NSDate *) minchaGedola30Minutes{
+- (nullable NSDate *) minchaGedola30Minutes{
 
     return [self dateByAddingMinutes:30 toDate:[self chatzos]];
     
 } //30 minutes after chatzos
 
-- (NSDate *) minchaGedola72Minutes{
+- (nullable NSDate *) minchaGedola72Minutes{
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanis72Minutes]*6.5];
 }
 
-- (NSDate *) minchaGedola16Point1Degrees{
+- (nullable NSDate *) minchaGedola16Point1Degrees{
     return [[self alos16Point1Degrees]dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees]*6.5];
 }
 
-- (NSDate *) minchaGedolaGreaterThan30{
+- (nullable NSDate *) minchaGedolaGreaterThan30{
     if ([self minchaGedola30Minutes] == nil || [self minchaGedola] == nil) {
         return nil;
     }
@@ -313,83 +313,83 @@
     
 }
 
-- (NSDate *) minchaKetana16Point1Degrees{
+- (nullable NSDate *) minchaKetana16Point1Degrees{
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees] * 9.5];
 }
 
-- (NSDate *) minchaKetana72Minutes{
+- (nullable NSDate *) minchaKetana72Minutes{
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanis72MinutesZmanis]*9.5];
 }
 
-- (NSDate *) plagHamincha60Minutes{
+- (nullable NSDate *) plagHamincha60Minutes{
     return [[self alos60] dateByAddingTimeInterval:[self shaahZmanis60Minutes] * 10.75];
 }
 
-- (NSDate *) plagHamincha72Minutes{
+- (nullable NSDate *) plagHamincha72Minutes{
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanis72Minutes] * 10.75];
 }
 
-- (NSDate *) plagHamincha90Minutes{
+- (nullable NSDate *) plagHamincha90Minutes{
     return [[self alos90] dateByAddingTimeInterval:[self shaahZmanis90Minutes] * 10.75];
 }
 
-- (NSDate *) plagHamincha96Minutes{
+- (nullable NSDate *) plagHamincha96Minutes{
     return [[self alos96] dateByAddingTimeInterval:[self shaahZmanis96Minutes] * 10.75];
 }
 
-- (NSDate *) plagHamincha96MinutesZmanis{
+- (nullable NSDate *) plagHamincha96MinutesZmanis{
     return [[self alos96Zmanis] dateByAddingTimeInterval:[self shaahZmanis96MinutesZmanis] * 10.75];
 }
 
-- (NSDate *) plagHamincha90MinutesZmanis{
+- (nullable NSDate *) plagHamincha90MinutesZmanis{
     return [[self alos90Zmanis] dateByAddingTimeInterval:[self shaahZmanis90MinutesZmanis] * 10.75];
 }
 
-- (NSDate *) plagHamincha72MinutesZmanis{
+- (nullable NSDate *) plagHamincha72MinutesZmanis{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanis72MinutesZmanis] * 10.75];
 }
 
-- (NSDate *) plagHamincha16Point1Degrees{
+- (nullable NSDate *) plagHamincha16Point1Degrees{
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees] * 10.75];
 }
 
-- (NSDate *) plagHamincha19Point8Degrees{
+- (nullable NSDate *) plagHamincha19Point8Degrees{
     return [[self alos19Point8Degrees] dateByAddingTimeInterval:[self shaahZmanis19Point8Degrees] * 10.75];
 }
 
-- (NSDate *) plagHamincha26Degrees{
+- (nullable NSDate *) plagHamincha26Degrees{
     return [[self alos26Degrees] dateByAddingTimeInterval:[self shaahZmanis26Degrees] * 10.75];
 }
 
-- (NSDate *) plagHamincha18Degrees{
+- (nullable NSDate *) plagHamincha18Degrees{
     return [[self alos18Degrees] dateByAddingTimeInterval:[self shaahZmanis18Degrees] * 10.75];
 }
 
-- (NSDate *) plagAlosToSunset{
+- (nullable NSDate *) plagAlosToSunset{
     long shaaZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self seaLevelSunset]];
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:shaaZmanis*10.75];
 }
 
-- (NSDate *) plagAlos16Point1ToTzaisGeonim7Point083Degrees{
+- (nullable NSDate *) plagAlos16Point1ToTzaisGeonim7Point083Degrees{
     long shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self tzaisGeonim7Point083Degrees]];
     return [[self alos16Point1Degrees] dateByAddingTimeInterval:shaahZmanis * 10.75];
 }
 
-- (NSDate *) bainHashmashosRT13Degrees{
+- (nullable NSDate *) bainHashmashosRT13Degrees{
     return [self sunsetOffsetByDegrees:kZenithThirteenPointTwentyFourDegrees];
 }
 
-- (NSDate *) bainHashmashosRT58Point5Minutes{
+- (nullable NSDate *) bainHashmashosRT58Point5Minutes{
     NSDate *baseDate = [self seaLevelSunset];
     return [self dateByAddingMinutes:58.5 toDate:baseDate];
 }
 
-- (NSDate *) bainHashmashosRT13Point5MinutesBefore7Point083Degrees{
+- (nullable NSDate *) bainHashmashosRT13Point5MinutesBefore7Point083Degrees{
     NSDate *baseDate = [self sunsetOffsetByDegrees:kZenithSevenPointZeroEightThree];
     return [self dateBySubtractingMinutes:13.5 fromDate:baseDate];
 }
 
-- (NSDate *) bainHashmashosRT2Stars{
+- (nullable NSDate *) bainHashmashosRT2Stars{
     NSDate *alos19Point8 = [self alos19Point8Degrees];
     NSDate *sunrise = [self seaLevelSunrise];
     
@@ -400,75 +400,75 @@
     return [[self seaLevelSunrise] dateByAddingTimeInterval:([sunrise timeIntervalSinceReferenceDate]-[[self alos19Point8Degrees]timeIntervalSinceReferenceDate])*(5/18)];
 }
 
-- (NSDate *) tzaisGeonim5Point95Degrees{
+- (nullable NSDate *) tzaisGeonim5Point95Degrees{
     return [self sunsetOffsetByDegrees:kZenithFivePointNinetyFive];
 }
 
-- (NSDate *) tzaisGeonim3Point65Degrees{
+- (nullable NSDate *) tzaisGeonim3Point65Degrees{
     return [self sunsetOffsetByDegrees:kZenithThreePointSixtyFive];
 }
 
-- (NSDate *) tzaisGeonim4Point61Degrees{
+- (nullable NSDate *) tzaisGeonim4Point61Degrees{
     return [self sunsetOffsetByDegrees:kZenithFourPointSixtyOne];
 }
 
-- (NSDate *) tzaisGeonim4Point37Degrees{
+- (nullable NSDate *) tzaisGeonim4Point37Degrees{
     return [self sunsetOffsetByDegrees:kZenithFourPointThirtySeven];
 }
 
-- (NSDate *) tzaisGeonim5Point88Degrees{
+- (nullable NSDate *) tzaisGeonim5Point88Degrees{
     return [self sunsetOffsetByDegrees:kZenithFivePointEightyEight];
 }
 
-- (NSDate *) tzaisGeonim4Point8Degrees{
+- (nullable NSDate *) tzaisGeonim4Point8Degrees{
     return [self sunsetOffsetByDegrees:kZenithFourPointEight];
 }
 
-- (NSDate *) tzaisGeonim7Point083Degrees{
+- (nullable NSDate *) tzaisGeonim7Point083Degrees{
     return [self sunsetOffsetByDegrees:kZenithSevenPointZeroEightThree];
 }
 
-- (NSDate *) tzaisGeonim8Point5Degrees{
+- (nullable NSDate *) tzaisGeonim8Point5Degrees{
     return  [self sunsetOffsetByDegrees:kZenithEightPointFive];
 }
 
-- (NSDate *) tzais50{
+- (nullable NSDate *) tzais50{
     return [self dateByAddingMinutes:50 toDate:[self seaLevelSunset]];
 }
 
-- (NSDate *) tzais60{
+- (nullable NSDate *) tzais60{
     return [self dateByAddingMinutes:60 toDate:[self seaLevelSunset]];
 }
 
-- (NSDate *) tzaisAteretTorah{
+- (nullable NSDate *) tzaisAteretTorah{
     return [self dateByAddingMinutes:[self ateretTorahSunsetOffset] toDate:[self seaLevelSunset]];
 }
 
-- (NSDate *) sofZmanShmaAteretTorah{
+- (nullable NSDate *) sofZmanShmaAteretTorah{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanisAteretTorah]*3];
 }
 
-- (NSDate *) sofZmanTfilaAteretTorah{
+- (nullable NSDate *) sofZmanTfilaAteretTorah{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanisAteretTorah]*4];
 }
 
-- (NSDate *) minchaGedolaAteretTorah{
+- (nullable NSDate *) minchaGedolaAteretTorah{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanisAteretTorah]*6.5];
 }
 
-- (NSDate *) minchaKetanaAteretTorah{
+- (nullable NSDate *) minchaKetanaAteretTorah{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanisAteretTorah]*9.5];
 }
 
-- (NSDate *) plagHaminchaAteretTorah{
+- (nullable NSDate *) plagHaminchaAteretTorah{
     return [[self alos72Zmanis] dateByAddingTimeInterval:[self shaahZmanisAteretTorah]*10.75];
 }
 
-- (NSDate *) misheyakirAteretTorahWithMinutes:(double)minutes{
+- (nullable NSDate *) misheyakirAteretTorahWithMinutes:(double)minutes{
     return [self dateByAddingMinutes:minutes toDate:[self alos72Zmanis]];
 }
 
-- (NSDate *) tzais72Zmanis{
+- (nullable NSDate *) tzais72Zmanis{
     long shaahZmanis = [self shaahZmanisGra];
     
     if (shaahZmanis == LONG_MIN) {
@@ -478,7 +478,7 @@
     return [[self seaLevelSunset] dateByAddingTimeInterval:shaahZmanis*1.2];
 }
 
-- (NSDate *) tzais90Zmanis{
+- (nullable NSDate *) tzais90Zmanis{
     long shaahZmanis = [self shaahZmanisGra];
     
     if (shaahZmanis == LONG_MIN) {
@@ -488,7 +488,7 @@
     return [[self seaLevelSunset] dateByAddingTimeInterval:shaahZmanis*1.5];
 }
 
-- (NSDate *) tzais96Zmanis{
+- (nullable NSDate *) tzais96Zmanis{
     long shaahZmanis = [self shaahZmanisGra];
     
     if (shaahZmanis == LONG_MIN) {
@@ -498,15 +498,15 @@
     return [[self seaLevelSunset] dateByAddingTimeInterval:shaahZmanis*1.6];
 }
 
-- (NSDate *) tzais90{
+- (nullable NSDate *) tzais90{
     return [self dateByAddingMinutes:90 toDate:[self seaLevelSunset]];
 }
 
-- (NSDate *) tzais120{
+- (nullable NSDate *) tzais120{
     return [self dateByAddingMinutes:120 toDate:[self seaLevelSunset]];
 }
 
-- (NSDate *) tzais120Zmanis{
+- (nullable NSDate *) tzais120Zmanis{
     long shaahZmanis = [self shaahZmanisGra];
     if (shaahZmanis == LONG_MIN) {
         return nil;
@@ -514,59 +514,59 @@
     return [[self seaLevelSunset] dateByAddingTimeInterval:shaahZmanis*2.0];
 }
 
-- (NSDate *) tzais16Point1Degrees{
+- (nullable NSDate *) tzais16Point1Degrees{
     return [self sunsetOffsetByDegrees:kZenithSixteenPointOne];
 }
 
-- (NSDate *) tzais26Degrees{
+- (nullable NSDate *) tzais26Degrees{
     return [self sunsetOffsetByDegrees:kZenithTwentySix];
 }
 
-- (NSDate *) tzais18Degrees{
+- (nullable NSDate *) tzais18Degrees{
     return [self sunsetOffsetByDegrees:kZenithAstronomical];
 }
 
-- (NSDate *) tzais19Point8Degrees{
+- (nullable NSDate *) tzais19Point8Degrees{
     return [self sunsetOffsetByDegrees:kZenithNineteenPointEight];
 }
 
-- (NSDate *) tzais96{
+- (nullable NSDate *) tzais96{
     return [self dateByAddingMinutes:96 toDate:[self seaLevelSunset]];
 }
 
-- (NSDate *) fixedLocalChatzos{
+- (nullable NSDate *) fixedLocalChatzos{
     return [[self dateFromTime:(12.0-[self.geoLocation.timeZone secondsFromGMT])] dateByAddingTimeInterval:[self.geoLocation localMeanTimeOffset]];
 }
 
-- (NSDate *) sofZmanShmaFixedLocal{
+- (nullable NSDate *) sofZmanShmaFixedLocal{
     return [self dateBySubtractingMinutes:180 fromDate:[self fixedLocalChatzos]];
 }
 
-- (NSDate *) sofZmanTfilaFixedLocal{
+- (nullable NSDate *) sofZmanTfilaFixedLocal{
     return [self dateBySubtractingMinutes:120 fromDate:[self fixedLocalChatzos]];
 }
 
-- (NSDate *) sofZmanAchilasChametzGra{
+- (nullable NSDate *) sofZmanAchilasChametzGra{
     return [self sofZmanTfilaGra];
 }
 
-- (NSDate *) sofZmanAchilasChametzMGA72Minutes{
+- (nullable NSDate *) sofZmanAchilasChametzMGA72Minutes{
     return [self sofZmanTfilaMGA72Minutes];
 }
 
-- (NSDate *) sofZmanAchilasChametzMGA16Point1Degrees{
+- (nullable NSDate *) sofZmanAchilasChametzMGA16Point1Degrees{
     return [self sofZmanTfilaMGA16Point1Degrees];
 }
 
-- (NSDate *) sofZmanBiurChametzGra{
+- (nullable NSDate *) sofZmanBiurChametzGra{
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra] * 5];
 }
 
-- (NSDate *) sofZmanBiurChametzMGA72Minutes{
+- (nullable NSDate *) sofZmanBiurChametzMGA72Minutes{
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanisMogenAvraham] * 5];
 }
 
-- (NSDate *) sofZmanBiurChametzMGA16Point1Degrees{
+- (nullable NSDate *) sofZmanBiurChametzMGA16Point1Degrees{
     return [[self alos16Point1Degrees]dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees] * 5];
 }
 
@@ -582,7 +582,7 @@
  *         {@link AstronomicalCalendar} documentation.
  */
 
-- (NSDate *)solarMidnight {
+- (nullable NSDate *)solarMidnight {
     KCComplexZmanimCalendar *clonedCalendar = [self copy];
     [clonedCalendar setWorkingDate:[self dateByAddingDays:1 toDate:clonedCalendar.workingDate]];
     NSDate *sunset = [self sunset];

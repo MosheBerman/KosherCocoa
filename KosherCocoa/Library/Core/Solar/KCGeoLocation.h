@@ -20,8 +20,8 @@
  * -----
  */
 
-@property (nonatomic, strong) NSString *locationName;
-@property (nonatomic, strong) NSTimeZone *timeZone;
+@property (nonatomic, strong, nullable) NSString *locationName;
+@property (nonatomic, strong, nonnull) NSTimeZone *timeZone;
 @property (nonatomic, assign) double latitude;
 @property (nonatomic, assign) double longitude;
 @property (nonatomic, assign) double altitude;
@@ -41,7 +41,7 @@
  *  @return A configured KCGeoLocation instance.
  */
 
-- (id)initWithLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(NSTimeZone *)timezone;
+- (nonnull instancetype)initWithLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(nonnull NSTimeZone *)timezone;
 
 /**
  *  This method insantiates a new KCGeoLocation.
@@ -54,7 +54,7 @@
  *  @return A configured KCGeoLocation instance.
  */
 
-- (id)initWithLatitude:(double)latitude andLongitude:(double)longitude elevation:(double)elevation  andTimeZone:(NSTimeZone *)timezone;
+- (nonnull instancetype)initWithLatitude:(double)latitude andLongitude:(double)longitude elevation:(double)elevation  andTimeZone:(nonnull NSTimeZone *)timezone;
 
 /**
  *  This method insantiates a new KCGeoLocation.
@@ -67,7 +67,7 @@
  *  @return A configured KCGeoLocation instance.
  */
 
-- (id)initWithName:(NSString *)name andLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(NSTimeZone *)timezone;
+- (nonnull instancetype)initWithName:(nullable NSString *)name andLatitude:(double)latitude andLongitude:(double)longitude andTimeZone:(nonnull NSTimeZone *)timezone;
 
 /**
  *  This method insantiates a new KCGeoLocation.
@@ -81,7 +81,7 @@
  *  @return A configured KCGeoLocation instance.
  */
 
-- (id)initWithName:(NSString *)name andLatitude:(double)latitude andLongitude:(double)longitude andElevation:(double)elevation andTimeZone:(NSTimeZone *)timezone;
+- (nonnull instancetype)initWithName:(nullable NSString *)name andLatitude:(double)latitude andLongitude:(double)longitude andElevation:(double)elevation andTimeZone:(nonnull NSTimeZone *)timezone;
 
 /**
  * Calculate <a
@@ -100,7 +100,7 @@
  *  @return The value of the formula with the location.
  */
 
-- (double)vincentyFormulaForLocation:(KCGeoLocation *)location withBearing:(int)formula;
+- (double)vincentyFormulaForLocation:(nonnull KCGeoLocation *)location withBearing:(int)formula;
 
 /**
 * A method that will return the location's local mean time 

@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 /** A class that calculates Sefirat Haomer. */
 
@@ -38,7 +38,7 @@
  *  @return YES if date is during the sefira count, otherwise NO.
  */
 
-+ (BOOL)fallsOnDate:(NSDate *)date;
++ (BOOL)fallsOnDate:(nonnull NSDate *)date;
 
 /* -----
  *  @name Getting the day of sefira.
@@ -69,7 +69,7 @@
  *  @return An integer representing the day of the omer count.
  */
 
-+ (NSInteger)dayOfSefiraForDate:(NSDate *)date;
++ (NSInteger)dayOfSefiraForDate:(nonnull NSDate *)date;
 
 /**
  *  Constructs an NSDate representing the first day of
@@ -82,6 +82,6 @@
  *          of the supplied date.
  */
 
-+ (NSDate *)dateOfSixteenNissanForYearOfDate:(NSDate *)date;
++ (nullable NSDate *)dateOfSixteenNissanForYearOfDate:(nonnull NSDate *)date;
 
 @end

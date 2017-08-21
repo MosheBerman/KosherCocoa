@@ -312,11 +312,13 @@
         zenith = [self adjustZenith:zenith forElevation:0];
     }
     
-    int year = [[self yearMonthAndDayFromDate:date][0]intValue];
+    NSDateComponents *components = [self yearMonthAndDayFromDate:date];
     
-    int month = [[self yearMonthAndDayFromDate:date][1]intValue];
+    NSInteger year = components.year;
     
-    int day = [[self yearMonthAndDayFromDate:date][2]intValue];
+    NSInteger month = components.month;
+    
+    NSInteger day = components.day;
     
     doubleTime = [self sunriseOrSunsetForYear:year andMonth:month andDay:day atLongitude:self.geoLocation.longitude andLatitude:self.geoLocation.latitude withZenith:zenith andType:kTypeSunset];
     
@@ -341,13 +343,14 @@
         zenith = [self adjustZenith:zenith forElevation:0];
     }
     
-    int year = [[self yearMonthAndDayFromDate:date][0]intValue];
+    NSDateComponents *components = [self yearMonthAndDayFromDate:date];
     
-    int month = [[self yearMonthAndDayFromDate:date][1]intValue];
+    NSInteger year = components.year;
     
-    int day = [[self yearMonthAndDayFromDate:date][2]intValue];
+    NSInteger month = components.month;
     
-    
+    NSInteger day = components.day;
+
     doubleTime = [self sunriseOrSunsetForYear:year andMonth:month andDay:day atLongitude:self.geoLocation.longitude andLatitude:self.geoLocation.latitude withZenith:zenith andType:kTypeSunrise];
     
     return doubleTime;
@@ -438,13 +441,13 @@
     return zenith;
 }
 
-#pragma mark - Method to get day, month and year
+// Mark: - Method to get day, month, and year
 
 //
 //  Break up a date object into day, month, year
 //
 
-- (NSArray *)yearMonthAndDayFromDate:(NSDate *)date
+- (nullable NSDateComponents *)yearMonthAndDayFromDate:(nonnull NSDate *)date
 {
     
     //
@@ -459,26 +462,7 @@
     
     NSDateComponents *parts = [gregorianCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:date];
     
-    
-    //
-    //  Store the values in NSNumbers
-    //
-    
-    NSNumber *year = @((int)[parts year]);
-    NSNumber *month = @((int)[parts month]);
-    NSNumber *day = @((int)[parts day]);
-    
-    //
-    //  Create an array to hold the day, month and year
-    //
-    
-    NSMutableArray *tempArray = [NSMutableArray arrayWithObjects:year, month, day, nil];
-    
-    //
-    //  Return the array
-    //
-    
-    return tempArray;
+    return parts;
     
 }
 

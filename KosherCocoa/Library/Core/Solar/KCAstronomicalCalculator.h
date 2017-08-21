@@ -8,8 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
-
+@import Foundation;
 
 /**
  *  A protocol defining methods to return sunrise and sunset times.
@@ -17,11 +16,7 @@
 
 @protocol KCAstronomicalCalculator  <NSObject>
 
-/**-----
- * @name Calculating Sunrise
- * -----
- */
-
+// MARK: - Calculating Sunrise
 
 /**
  *  A method that calculates UTC sunrise as well as any time based on an angle above or below sunrise. This abstract
@@ -35,12 +30,9 @@
  *  @return The number of milliseconds since 
  */
 
-- (double)UTCSunriseForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
+- (double)UTCSunriseForDate:(nonnull NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
 
-/**-----
- * @name Calculating Sunset
- * -----
- */
+// MARK: - Calculating Sunset
 
 /**
  *  A method that calculates UTC sunrise as well as any time based on an angle above or below sunset. This abstract
@@ -56,6 +48,6 @@
  *  the calculation (expected behavior for some locations such as near the poles, NaN will be returned.
  */
 
-- (double)UTCSunsetForDate:(NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
+- (double)UTCSunsetForDate:(nonnull NSDate*)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation;
 
 @end

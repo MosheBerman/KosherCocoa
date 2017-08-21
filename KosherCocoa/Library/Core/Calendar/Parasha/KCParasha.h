@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "KCParashaReadings.h"
 
 /** A class that represents a weekly parasha */
@@ -37,7 +37,7 @@
  *  @return A KCParasha instance.
  */
 
-- (id)initWithIdentifier:(enum KCParashaIdentifier)identifier;
+- (nonnull instancetype)initWithIdentifier:(enum KCParashaIdentifier)identifier;
 
 /**
  *  This method returns a KCParasha instance.
@@ -49,7 +49,7 @@
  *  @return A KCParasha instance.
  */
 
-+ (id)parashaWithIdentifier:(enum KCParashaIdentifier)identifier;
++ (nonnull instancetype)parashaWithIdentifier:(enum KCParashaIdentifier)identifier;
 
 /**-----
  * @name Human Readable Parasha Names
@@ -63,7 +63,7 @@
  *  corresponds to the instance's identifier.
  */
 
-- (NSString *)name; //  The hebrew name of the parasha
+- (nonnull NSString *)name; //  The hebrew name of the parasha
 
 /**
  *  This method returns the hebrew name of the parasha.
@@ -73,6 +73,6 @@
  *  instance's identifier.
  */
 
-- (NSString *)nameTransliterated;   //  The name of the parasha, transliterated into English
+- (nonnull NSString *)nameTransliterated;   //  The name of the parasha, transliterated into English
 
 @end

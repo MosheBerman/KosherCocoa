@@ -15,7 +15,7 @@
  *  A convenience accessor to get a holiday from an index.
  */
 
-+ (id)holidayWithIndex:(NSInteger)index
++ (nonnull instancetype)holidayWithIndex:(NSInteger)index
 {
     KCJewishHoliday *holiday = [[KCJewishHoliday alloc] init];
     

@@ -24,7 +24,7 @@
 
 #pragma mark - Initializer
 
-- (id)init
+- (nonnull instancetype)init
 {
     self = [super init];
     if (self) {

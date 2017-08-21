@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "KCDaf.h"
 
 /** A class that calculates Daf Yomi pages. */
@@ -24,7 +24,7 @@
  *  The reference date used by the calculator.
  */
 
-@property (nonatomic, strong) NSDate *workingDate;
+@property (nonatomic, strong, nonnull) NSDate * workingDate;
 
 /**-----
  * @name Initializers
@@ -38,7 +38,7 @@
  *  @return an instance of KCDafYomiCalculator
  */
 
-- (id)initWithDate:(NSDate *)date;
+- (nonnull instancetype)initWithDate:(nonnull NSDate *)date;
 
 /**-----
  * @name Getting "the Daf"
@@ -52,7 +52,7 @@
  *  @return a KCDaf object.
  */
 
-- (KCDaf *)dafYomiBavli;
+- (nullable KCDaf *)dafYomiBavli;
 
 /**
  *  This method returns a KCDaf object representing
@@ -64,6 +64,6 @@
  *  @return a KCDaf object.
  */
 
-- (KCDaf *)dafYomiBavliForDate:(NSDate *)date;
+- (nonnull KCDaf *)dafYomiBavliForDate:(nonnull NSDate *)date;
 
 @end

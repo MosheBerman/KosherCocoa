@@ -13,14 +13,12 @@
 #import "KCGeoLocation.h"
 #import "KCSunriseAndSunsetCalculator.h"
 
-/** A class that calculates various sunrise and sunset values. */
-
+/** 
+ A class that calculates various sunrise and sunset values. 
+ */
 @interface KCAstronomicalCalendar : NSObject
 
-/**-----
- * @name Configuring the Calendar
- * -----
- */
+ // MARK: - Configuring the Calendar
 
 /**
  * The calculator to use. 
@@ -29,19 +27,19 @@
  *  original Java library offered several calculator options.
  */
 
-@property (nonatomic, strong) KCSunriseAndSunsetCalculator *astronomicalCalculator;
+@property (nonatomic, strong, nonnull) KCSunriseAndSunsetCalculator *astronomicalCalculator;
 
 /**
  *  The location of the user.
  */
 
-@property (nonatomic, strong) KCGeoLocation *geoLocation;
+@property (nonatomic, strong, nonnull) KCGeoLocation *geoLocation;
 
 /**
  * The date for which we want to perform the calculations.
  */
 
-@property (nonatomic, strong) NSDate *workingDate;
+@property (nonatomic, strong, nonnull) NSDate *workingDate;
 
 /**-----
  * @name Initializing the Calendar
@@ -56,7 +54,7 @@
  *  @return An instance of KCAstronomicalCalendar.
  */
 
-- (id)initWithLocation:(KCGeoLocation *)aGeoLocation;
+- (nonnull instancetype)initWithLocation:(nonnull KCGeoLocation *)aGeoLocation;
 
 /**-----
  * @name Calculating Sunrise
@@ -78,7 +76,7 @@
  *  nil will be returned.
  */
 
-- (NSDate *)sunrise;
+- (nullable NSDate *)sunrise;
 
 /**
  *  This method calculates sunrise at sea-level at 
@@ -93,7 +91,7 @@
  *  @return Sunrise at sea level as an NSDate.
  */
 
-- (NSDate *)seaLevelSunrise;
+- (nullable NSDate *)seaLevelSunrise;
 
 /**
  *  This method returns the beginning of civil twilight (dawn) using a zenith of {@link #CIVIL_ZENITH 96&deg;}.
@@ -104,27 +102,22 @@
  *         can't be computed, nill will be returned. See detailed explanation on top of the page.
  */
 
-- (NSDate *)sunriseOffsetByDegrees:(double)offsetZenith;
+- (nullable NSDate *)sunriseOffsetByDegrees:(double)offsetZenith;
 
-/**---------------------------------------------
- * @name Calculating the Beginning of Twilight
- * ---------------------------------------------
- */
+// MARK: - Calculating the Beginning of Twilight
 
 /**
  *  This method calculates the start of civil twilight.
  */
 
-- (NSDate *)beginCivilTwilight;
+- (nullable NSDate *)beginCivilTwilight;
 
-- (NSDate *)beginNauticalTwilight;
+- (nullable NSDate *)beginNauticalTwilight;
 
-- (NSDate *)beginAstronomicalTwilight;
+- (nullable NSDate *)beginAstronomicalTwilight;
 
-/**-----
- * @name Calculating Sunset
- * -----
- */
+
+// MARK: - Calculating Sunset
 
 /**
  *  This method returns an NSDate representing the time of sunset on 
@@ -135,7 +128,7 @@
  *  @return An NSDate representing sunset on workingDate.
  */
 
-- (NSDate *)sunset;
+- (nullable NSDate *)sunset;
 
 /**
  *  This method returns an NSDate representing the time of sunset on
@@ -146,7 +139,8 @@
  *  @return An NSDate representing sunset on workingDate.
  */
 
-- (NSDate *)seaLevelSunset;
+
+- (nullable NSDate *)seaLevelSunset;
 
 /**
  * A utility method that returns the time of an offset by degrees below or above the horizon of {@link #getSunset()
@@ -162,7 +156,7 @@
  *         page.
  */
 
-- (NSDate *)sunsetOffsetByDegrees:(double)offsetZenith;
+- (nullable NSDate *)sunsetOffsetByDegrees:(double)offsetZenith;
 
 /**
  * A method that will roll the sunset time forward a day if sunset occurs before sunrise. This is a rare occurrence
@@ -180,12 +174,10 @@
  *         returned. See detailed explanation on top of the page.
  */
 
-- (NSDate *)adjustedSunsetDateWithSunset:(NSDate*)sunset andSunrise:(NSDate *)sunrise;
+- (nullable NSDate *)adjustedSunsetDateWithSunset:(nonnull NSDate*)sunset andSunrise:(nonnull NSDate *)sunrise;
 
-/**-----
- * @name Calculating the End of Twilight
- * -----
- */
+
+// MARK: - Calculating the End of Twilight
 
 /**
  * A method that returns the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}.
@@ -194,7 +186,7 @@
  *         the calculation can't be computed, null will be returned. See detailed explanation on top of the page.
  */
 
-- (NSDate *)endCivilTwilight;
+- (nullable NSDate *)endCivilTwilight;
 
 /**
  * A method that returns the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}.
@@ -204,7 +196,7 @@
  *         page.
  */
 
-- (NSDate *)endNauticalTwilight;
+- (nullable NSDate *)endNauticalTwilight;
 
 /**
  * A method that returns the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH 108&deg;}.
@@ -214,7 +206,7 @@
  *         of the page.
  */
 
-- (NSDate *)endAstronomicalTwilight;
+- (nullable NSDate *)endAstronomicalTwilight;
 
 /**
  * A method that returns the sunrise in UTC time without correction for time zone offset from GMT and without using
@@ -282,7 +274,7 @@
  *         LONG_MIN will be returned. See detailed explanation on top of the page.
  */
 
-- (double)temporalHourFromSunrise:(NSDate *)sunrise toSunset:(NSDate*)sunset;
+- (double)temporalHourFromSunrise:(nonnull NSDate *)sunrise toSunset:(nonnull NSDate*)sunset;
 
 /**
  * A method that returns sundial or solar noon. It occurs when the Sun is <a href
@@ -296,13 +288,11 @@
  *         not set, null will be returned. See detailed explanation on top of the page.
  */
 
-- (NSDate *)sunTransit;
+- (nullable NSDate *)sunTransit;
 
-/**-----
- * @name Miscellaneous Methods
- * -----
- */
 
+// MARK: - Miscellaneous Methods
+ 
 /**
  *  This method returns the calculated time
  *  as an NSDate object based on the user's time zone
@@ -315,7 +305,7 @@
  *  and today's date.
  */
 
-- (NSDate *)dateFromTime:(double)time;
+- (nullable NSDate *)dateFromTime:(double)time;
 
 /**
  *  A method that returns the calculated time
@@ -331,7 +321,7 @@
  *  @return An NSDate containing the exact time represented by combining the date and time values.
  */
 
-- (NSDate *)dateFromTime:(double)time inTimeZone:(NSTimeZone *)tz onDate:(NSDate *)date;
+- (nullable NSDate *)dateFromTime:(double)time inTimeZone:(nonnull NSTimeZone *)tz onDate:(nonnull NSDate *)date;
 
 /**
  *  Returns a formatted string representing the supplied
@@ -347,7 +337,7 @@
  *  @return A string representation of the supplied date in the supplied time zone.
  */
 
-- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)timezone;
+- (nonnull NSString *)stringFromDate:(nonnull NSDate *)date forTimeZone:(nonnull NSTimeZone *)timezone;
 
 /**
  *  Returns a formatted string representing the supplied
@@ -366,7 +356,7 @@
  *  @see stringFromDate:forTimeZone:
  */
 
-- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)tz withSeconds:(BOOL)shouldShowSeconds;
+- (nonnull NSString *)stringFromDate:(nonnull NSDate *)date forTimeZone:(nonnull NSTimeZone *)tz withSeconds:(BOOL)shouldShowSeconds;
 
 /**
  *  Expose the internal calendar so the main class can
@@ -374,6 +364,6 @@
  *
  */
 
-- (NSCalendar *)internalCalendar;
+- (nonnull NSCalendar *)internalCalendar;
 
 @end
