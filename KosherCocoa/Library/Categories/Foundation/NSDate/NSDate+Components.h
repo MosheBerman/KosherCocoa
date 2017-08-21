@@ -8,14 +8,16 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface NSDate (Components)
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NSDate (KCComponents)
 
 #pragma mark Convenenience Intializers
 
-+ (NSDate *)dateWithDay:(NSUInteger)day month:(NSUInteger)month year:(NSUInteger)year;
-+ (NSDate *)dateWithDay:(NSUInteger)day Month:(NSUInteger)month Year:(NSUInteger)year andCalendar:(NSCalendar *)calendar;
++ (nullable NSDate *)dateWithDay:(NSUInteger)day month:(NSUInteger)month year:(NSUInteger)year;
++ (nullable NSDate *)dateWithDay:(NSUInteger)day Month:(NSUInteger)month Year:(NSUInteger)year andCalendar:(NSCalendar *)calendar;
 
 + (NSDate *)dateWithEra:(NSInteger)era year:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second week:(NSInteger)week weekday:(NSInteger)weekday weekdayOrdinal:(NSInteger)weekdayOrdinal andCalendar:(NSCalendar *)calendar;
 
@@ -46,5 +48,6 @@
 + (NSInteger)defaultWeekdayForCalendar:(NSCalendar *)calendar;
 + (NSInteger)defaultWeekdayOrdinalForCalendar:(NSCalendar *)calendar;
 
-
 @end
+
+NS_ASSUME_NONNULL_END

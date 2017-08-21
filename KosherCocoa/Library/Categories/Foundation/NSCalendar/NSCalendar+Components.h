@@ -8,7 +8,9 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NSCalendar (Components)
 
@@ -25,3 +27,5 @@
 - (NSInteger)weekOfYearInDate:(NSDate*)date;
 
 @end
+
+NS_ASSUME_NONNULL_END

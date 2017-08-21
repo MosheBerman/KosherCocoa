@@ -9,7 +9,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "KCComplexZmanimCalendar.h"
 #import "KCDaf.h"
 
@@ -192,7 +192,7 @@
  *  @return NSDate equal to the molad in Standard Time in Yerushalayim as a Date.
  */
 
-- (NSDate *)moladAsDateForMonth:(NSInteger)month ofYear:(NSInteger)year;
+- (nullable NSDate *)moladAsDateForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
  *  Currently returns the time even if it is during the day. It should return
@@ -204,7 +204,7 @@
  *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
 
-- (NSDate *)tchilasZmanKidushLevana3DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
+- (nullable NSDate *)tchilasZmanKidushLevana3DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
  *  Currently returns the time even if it is during the day. It should return
@@ -215,7 +215,7 @@
  *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
 
-- (NSDate *)tchilasZmanKidushLevana3DaysForDate:(NSDate *)date;
+- (nullable NSDate *)tchilasZmanKidushLevana3DaysForDate:(nonnull NSDate *)date;
 
 /**
  *  Currently returns the time even if it is during the day. It should return
@@ -227,7 +227,7 @@
  *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
 
-- (NSDate *)tchilasZmanKidushLevana7DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
+- (nullable NSDate *)tchilasZmanKidushLevana7DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
  *  Currently returns the time even if it is during the day. It should return
@@ -238,7 +238,7 @@
  *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
 
-- (NSDate *)tchilasZmanKidushLevana7DaysForDate:(NSDate *)date;
+- (nullable NSDate *)tchilasZmanKidushLevana7DaysForDate:(nonnull NSDate *)date;
 
 /**
  *  Calculates the latest time of Kiddush Levana according to the
@@ -254,7 +254,7 @@
  *  @return NSDate latest time of Kiddush Levana between Moldos
  */
 
-- (NSDate *)sofZmanKidushLevanaBetweenMoldosForMonth:(NSInteger)month ofYear:(NSInteger)year;
+- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
  *  Calculates the latest time of Kiddush Levana according to the
@@ -269,7 +269,7 @@
  *  @return NSDate latest time of Kiddush Levana between Moldos
  */
 
-- (NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(NSDate *)date;
+- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(nonnull NSDate *)date;
 
 /**
  *  This is the opinion brought down in the Shulchan Aruch (Orach Chaim 426).
@@ -288,7 +288,7 @@
  *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
 
-- (NSDate *)sofZmanKidushLevana15DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
+- (nullable NSDate *)sofZmanKidushLevana15DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 /**
  *  This is the opinion brought down in the Shulchan Aruch (Orach Chaim 426).
  *  It should be noted that some opinions hold that the Rema who brings down the opinion
@@ -304,7 +304,7 @@
  *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
 
-- (NSDate *)sofZmanKidushLevana15DaysForDate:(NSDate *)date;
+- (nullable NSDate *)sofZmanKidushLevana15DaysForDate:(nonnull NSDate *)date;
 
 /**
  *  Returns the Daf Yomi (Bavli) for the date the calendar is set to
@@ -312,7 +312,7 @@
  *  @return KCDaf object corresponding to the date
  */
 
-- (KCDaf *)dafYomiBavli;
+- (nonnull KCDaf *)dafYomiBavli;
 
 #pragma mark - Calendar Utility Methods
 
@@ -392,6 +392,6 @@
  *  @return NSDate
  **/
 
-- (NSDate *)fridayFollowingDate:(NSDate *)workingDate;
+- (nullable NSDate *)fridayFollowingDate:(nonnull NSDate *)workingDate;
 
 @end

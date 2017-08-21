@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,7 +16,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "46DB49571D9837D100F3A576"
+               BlueprintIdentifier = "46DB49631D9839F100F3A576"
                BuildableName = "KosherCocoaTests.xctest"
                BlueprintName = "KosherCocoaTests"
                ReferencedContainer = "container:KosherCocoa.xcodeproj">

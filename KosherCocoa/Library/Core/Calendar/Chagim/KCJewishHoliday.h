@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Moshe Berman. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 @interface KCJewishHoliday : NSObject
 
@@ -20,18 +20,18 @@
  *  A convenience accessor to get a holiday from an index.
  */
 
-+ (id)holidayWithIndex:(NSInteger)index;
++ (nonnull instancetype)holidayWithIndex:(NSInteger)index;
 
 /**
  *  @return the hebrew name of the holiday.
  */
 
-- (NSString *)name;
+- (nonnull NSString *)name;
 
 /**
- *  @return the transliterad hebrew name of the holiday.
+ *  @return the transliterated hebrew name of the holiday.
  */
 
-- (NSString *)nameTransliterated;
+- (nonnull NSString *)nameTransliterated;
 
 @end

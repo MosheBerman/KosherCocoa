@@ -8,36 +8,40 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface NSDate (Description)
+NS_ASSUME_NONNULL_BEGIN
 
-- (NSString *)description;
+@interface NSDate (KCDescription)
+
+- (nullable NSString *)description;
 
 // Returns a three letter abbreviation of weekday name
-- (NSString *)dayNameOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)dayNameOnCalendar:(NSCalendar *)calendar;
 
 //  Prints out "January", "February", etc for Gregorian dates.
-- (NSString *)monthNameOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)monthNameOnCalendar:(NSCalendar *)calendar;
 
 //  Prints out "January 2012", "February 2012", etc for Gregorian dates.
-- (NSString *)monthAndYearOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)monthAndYearOnCalendar:(NSCalendar *)calendar;
 
 //  Prints out "Jan 2012", "Feb 2012", etc for Gregorian dates.
-- (NSString *)monthAbbreviationAndYearOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)monthAbbreviationAndYearOnCalendar:(NSCalendar *)calendar;
 
 //  Prints out "January 3", "February 28", etc for Gregorian dates.
-- (NSString *)monthAndDayOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)monthAndDayOnCalendar:(NSCalendar *)calendar;
 
 //  Prints out "Jan", "Feb", etc for Gregorian dates.
-- (NSString *)monthAbbreviationOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)monthAbbreviationOnCalendar:(NSCalendar *)calendar;
 
 //  Prints out a number, representing the day of the month
-- (NSString *)dayOfMonthOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)dayOfMonthOnCalendar:(NSCalendar *)calendar;
 
 //  Prints out, for example, January 12, 2013
-- (NSString *)monthAndDayAndYearOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)monthAndDayAndYearOnCalendar:(NSCalendar *)calendar;
 
 // Prints out dates such as 12, 2013
-- (NSString *)dayOfMonthAndYearOnCalendar:(NSCalendar *)calendar;
+- (nullable NSString *)dayOfMonthAndYearOnCalendar:(NSCalendar *)calendar;
 @end
+
+NS_ASSUME_NONNULL_END

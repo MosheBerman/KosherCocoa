@@ -8,8 +8,8 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
+@import Foundation;
 #import "KCSefiraFormatter.h"
-#import <Foundation/Foundation.h>
 
 #pragma mark - This class isn't finished yet.
 

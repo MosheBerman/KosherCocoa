@@ -10,7 +10,7 @@
 
 #import "NSDate+Description.h"
 
-@implementation NSDate (Description)
+@implementation NSDate (KCDescription)
 
 - (NSString *)description
 {

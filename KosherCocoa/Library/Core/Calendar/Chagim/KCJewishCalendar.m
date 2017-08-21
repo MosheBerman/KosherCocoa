@@ -386,7 +386,7 @@
 
 #pragma mark - Kiddush Levana Code.
 
-- (NSDate *)moladTohuAsDate
+- (nullable NSDate *)moladTohuAsDate
 {
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
@@ -404,7 +404,7 @@
     return tohu;
 }
 
-- (NSDate *)moladByAddingMonthsToTohu:(NSInteger)numberOfMonths
+- (nullable NSDate *)moladByAddingMonthsToTohu:(NSInteger)numberOfMonths
 {
     
     NSDate *tohu = [self moladTohuAsDate];
@@ -433,7 +433,7 @@
     return newMolad;
 }
 
-- (NSInteger)numberOfMonthsBetweenMoladTohuAndDate:(NSDate *)date
+- (NSInteger)numberOfMonthsBetweenMoladTohuAndDate:(nonnull NSDate *)date
 {
     
     NSDate *tohu = [self moladTohuAsDate];
@@ -468,7 +468,7 @@
 //
 //
 
-- (NSDate *)moladAsDateForMonth:(NSInteger)month ofYear:(NSInteger)year
+- (nullable NSDate *)moladAsDateForMonth:(NSInteger)month ofYear:(NSInteger)year
 {
     NSDate *dateFromMonthAndYear = [NSDate dateWithHebrewMonth:month andDay:1 andYear:year];
     return [self moladForDate:dateFromMonthAndYear];
@@ -478,7 +478,7 @@
 //TODO: Currently returns the time even if it is during the day. It should return
 //the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
 
-- (NSDate *)tchilasZmanKidushLevana3DaysForDate:(NSDate *)date
+- (nullable NSDate *)tchilasZmanKidushLevana3DaysForDate:(NSDate *)date
 {
     NSDate *molad = [self moladForDate:date];
     
@@ -500,7 +500,7 @@
 //TODO: Currently returns the time even if it is during the day. It should return
 //the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
 
-- (NSDate *)tchilasZmanKidushLevana7DaysForDate:(NSDate *)date
+- (nullable NSDate *)tchilasZmanKidushLevana7DaysForDate:(NSDate *)date
 {
     NSDate *molad = [self moladForDate:date];
     
@@ -511,7 +511,7 @@
 }
 
 //  This method exists only for KosherJava compatibility
-- (NSDate *)tchilasZmanKidushLevana7DaysForMonth:(NSInteger)month ofYear:(NSInteger)year
+- (nullable NSDate *)tchilasZmanKidushLevana7DaysForMonth:(NSInteger)month ofYear:(NSInteger)year
 {
     
     NSDate *dateFromMonthAndYear = [NSDate dateWithHebrewMonth:month andDay:1 andYear:year];
@@ -529,7 +529,7 @@
 //It should return the 72 Minute Alos
 // prior to the time if the zman is between Alos and Tzais.
 
-- (NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(NSDate *)date
+- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(NSDate *)date
 {
     
     //  Get the molad
@@ -560,7 +560,7 @@
 }
 
 //  This method exists only for KosherJava compatibility
-- (NSDate *)sofZmanKidushLevanaBetweenMoldosForMonth:(NSInteger)month ofYear:(NSInteger)year
+- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForMonth:(NSInteger)month ofYear:(NSInteger)year
 {
     
     //
@@ -585,7 +585,7 @@
 // during the day. It should return the  Alos prior to the
 // time if the zman is between Alos and Tzais.
 
-- (NSDate *)sofZmanKidushLevana15DaysForDate:(NSDate *)date
+- (nullable NSDate *)sofZmanKidushLevana15DaysForDate:(NSDate *)date
 {
     //  Get the molad
     
@@ -596,7 +596,7 @@
 }
 
 //  This method exists only for KosherJava compatibility
-- (NSDate *)sofZmanKidushLevana15DaysForMonth:(NSInteger)month ofYear:(NSInteger)year
+- (nullable NSDate *)sofZmanKidushLevana15DaysForMonth:(NSInteger)month ofYear:(NSInteger)year
 {
     
     //
@@ -610,7 +610,7 @@
 }
 
 //Returns the Daf Yomi (Bavli)for the date that the calendar is set to.
-- (KCDaf *)dafYomiBavli
+- (nonnull KCDaf *)dafYomiBavli
 {
     KCDafYomiCalculator *calculator = [[KCDafYomiCalculator alloc] initWithDate:self.workingDate];
 
@@ -757,7 +757,7 @@
 //  Returns the friday following a given date
 //
 
-- (NSDate *)fridayFollowingDate:(NSDate *)workingDate
+- (nullable NSDate *)fridayFollowingDate:(NSDate *)workingDate
 {
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 	
@@ -770,7 +770,7 @@
 
 #pragma mark - Working Date
 
-- (NSDate *)workingDateAdjustedForSunset
+- (nullable NSDate *)workingDateAdjustedForSunset
 {
     NSDate *returnDate = [super workingDate];
     

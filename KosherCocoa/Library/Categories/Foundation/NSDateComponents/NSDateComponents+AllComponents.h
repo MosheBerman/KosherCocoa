@@ -8,9 +8,9 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface NSDateComponents (AllComponents)
+@interface NSDateComponents (KCAllComponents)
 
 + (NSUInteger)allComponents;
 

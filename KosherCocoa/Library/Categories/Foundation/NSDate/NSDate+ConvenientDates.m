@@ -11,7 +11,7 @@
 #import "NSDate+ConvenientDates.h"
 #import "NSCalendar+Components.h"
 
-@implementation NSDate (ConvenientDates)
+@implementation NSDate (KCConvenientDates)
 
 /**
  *  This method creates a date given a hebrew month and day.

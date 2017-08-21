@@ -9,24 +9,28 @@
  */
 
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NSCalendar (Juncture)
 
 #pragma mark - First/Last of Week
 
-- (NSDate *)firstDayOfTheWeek;
-- (NSDate *)firstDayOfTheWeekUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)firstDayOfTheWeek;
+- (nullable NSDate *)firstDayOfTheWeekUsingReferenceDate:(NSDate *)date;
 
-- (NSDate *)lastDayOfTheWeek;
-- (NSDate *)lastDayOfTheWeekUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)lastDayOfTheWeek;
+- (nullable NSDate *)lastDayOfTheWeekUsingReferenceDate:(NSDate *)date;
 
 #pragma mark - First/Last of Month
 
-- (NSDate *)firstDayOfTheMonth;
-- (NSDate *)firstDayOfTheMonthUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)firstDayOfTheMonth;
+- (nullable NSDate *)firstDayOfTheMonthUsingReferenceDate:(NSDate *)date;
 
-- (NSDate *)lastDayOfTheMonth;
-- (NSDate *)lastDayOfTheMonthUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)lastDayOfTheMonth;
+- (nullable NSDate *)lastDayOfTheMonthUsingReferenceDate:(NSDate *)date;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -8,14 +8,11 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-@interface NSDate (ConvenientDates)
+@interface NSDate (KCConvenientDates)
 
-/**-----
- * @name Creating Hebrew Dates
- * -----
- */
+// MARK: - Creating Hebrew Dates
 
 /** This method creates a date given a hebrew month and day.
  *
@@ -27,7 +24,7 @@
  *  @return An NSDate initialized with the supplied parameters.
  */
 
-+ (NSDate *)dateWithHebrewMonth:(NSInteger)month andDay:(NSInteger)day;
++ (nullable NSDate *)dateWithHebrewMonth:(NSInteger)month andDay:(NSInteger)day;
 
 /** This method creates a date given a hebrew month and day.
  *
@@ -39,6 +36,6 @@
  *  @return An NSDate initialized with the supplied parameters.
  */
 
-+ (NSDate *)dateWithHebrewMonth:(NSInteger)month andDay:(NSInteger)day andYear:(NSInteger)year;
++ (nullable NSDate *)dateWithHebrewMonth:(NSInteger)month andDay:(NSInteger)day andYear:(NSInteger)year;
 
 @end

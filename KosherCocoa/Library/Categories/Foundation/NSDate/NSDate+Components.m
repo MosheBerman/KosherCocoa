@@ -12,7 +12,7 @@
 #import "NSDateComponents+AllComponents.h"
 
 
-@implementation NSDate (Components)
+@implementation NSDate (KCComponents)
 
 #pragma mark - Convenience Intializers
 

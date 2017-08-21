@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 #import "KCConstants.h"
 #import "KCTractates.h"
@@ -55,7 +55,7 @@
  *  @return An instance of KCDaf.
  */
 
-- (id)initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number;
+- (nonnull instancetype)initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number;
 
 /**-----
  *  @name Displaying a Tractate
@@ -69,7 +69,7 @@
  *  @return A string with hebrew name of the tractate that corresponds to the tractateIndex.
  */
 
-- (NSString *)name;
+- (nonnull NSString *)name;
 
 /**
  *  This method returns the dispolay name of a given tractate
@@ -78,7 +78,7 @@
  *  @return A string with transliterated name of the tractate that corresponds to the tractateIndex.
  */
 
-- (NSString *)nameTransliterated;
+- (nonnull NSString *)nameTransliterated;
 
 
 @end
