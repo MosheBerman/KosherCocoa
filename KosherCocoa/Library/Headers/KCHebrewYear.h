@@ -82,6 +82,6 @@ typedef NS_ENUM(NSUInteger, KCHebrewYearType) {
 #define kKesidran KCYearTypeKesidran
 #define kShalaim KCYearTypeShalaim
 
-typedef KCYearType kYearType;
+typedef KCHebrewYearType kYearType;
 
 #endif // __KC_HEBREW_YEAR_H
