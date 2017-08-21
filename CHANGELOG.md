@@ -6,6 +6,9 @@ Notable changes documented here, per keepachangelog.com. Yes, we use [semantic v
 - Prefixed categories to avoid Objective-C namespacing collisions resulting in compiler warning.
 - Nullability audit, for better Swift interoperability.
 - Changed #import syntax to @import syntax, to take advantage of modules.
+- Redefined a few of the older enums to use proper `NS_ENUM` syntax.
+- Added `NS_SWIFT_NAME`s to classes and enums.
+
 
 ## [3.0.0] - 2015-11-12
 ### Changed
