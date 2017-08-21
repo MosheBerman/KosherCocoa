@@ -22,7 +22,7 @@
  *  accounts for these as well, and can return the appropriate value for
  *  both Israel and the diaspora.
  */
-
+NS_SWIFT_NAME(ParashatHashavuaCalculator)
 @interface KCParashatHashavuaCalculator : NSObject
 
 /**

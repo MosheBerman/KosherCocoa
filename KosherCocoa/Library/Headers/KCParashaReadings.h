@@ -12,13 +12,10 @@
 #define KosherCocoa_KCParashaReadings_h
 
 /**
- 
  This enum contains an identifier for each of the
  possible weekly readings. Double readings and holiday
  readings are treated seperately from single parasha readings.
- 
  */
-
 typedef NS_ENUM(NSInteger, KCParashaIdentifier){
     KCParashaBereshit = 0,
     KCParashaNoach,
@@ -92,7 +89,7 @@ typedef NS_ENUM(NSInteger, KCParashaIdentifier){
     kCParashaPesach7,       //  The 7th day of Pesach falls on Shabbat
     KCParashaPesach8,       //  In diaspora, the 8th day of Pesach falls on Shabbat
     KCParashaShavuot2,      //  The second day of Shavuot falls on Shabbat
-};
+} NS_SWIFT_NAME(ParashaIdentifier);
 
 
 #endif

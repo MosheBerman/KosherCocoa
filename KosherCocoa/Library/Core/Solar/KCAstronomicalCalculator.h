@@ -13,7 +13,7 @@
 /**
  *  A protocol defining methods to return sunrise and sunset times.
  */
-
+NS_SWIFT_NAME(AstronomicalCalculator)
 @protocol KCAstronomicalCalculator  <NSObject>
 
 // MARK: - Calculating Sunrise

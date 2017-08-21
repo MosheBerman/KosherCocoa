@@ -51,7 +51,6 @@
  */
 
 //  TODO: Make these into bitwise values so we can mask them. 
-
 enum kYomimTovim {
     kErevPesach = 0,
     kPesach,

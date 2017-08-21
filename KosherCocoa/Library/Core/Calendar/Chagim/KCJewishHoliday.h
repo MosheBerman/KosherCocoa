@@ -8,6 +8,10 @@
 
 @import Foundation;
 
+/**
+ This class represents a Jewish holiday, including major and minor fasts, as well as modern Israeli holidays.
+ */
+NS_SWIFT_NAME(JewishHoliday)
 @interface KCJewishHoliday : NSObject
 
 /**

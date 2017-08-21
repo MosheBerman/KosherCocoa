@@ -38,7 +38,7 @@
     
     switch ([self currentHebrewMonth])
     {
-        case kNissan:
+        case KCHebrewMonthNissan:
             if ([self currentHebrewDayOfMonth] == 14)
             {
                 return kErevPesach;
@@ -61,7 +61,7 @@
                 return kYomHashoah;
             }
             break;
-        case kIyar:
+        case KCHebrewMonthIyar:
             if (useModernHolidays
                 && (([self currentHebrewDayOfMonth] == 4 && [self currentDayOfTheWeek] == 3)
                     || (([self currentHebrewDayOfMonth] == 3 || [self currentHebrewDayOfMonth] == 2)&& [self currentDayOfTheWeek] == 4)|| ([self currentHebrewDayOfMonth] == 5 && [self currentDayOfTheWeek] == 2)))
@@ -85,7 +85,7 @@
                 return kYomHashoah;
             }
             break;
-        case kSivan:
+        case KCHebrewMonthSivan:
             if ([self currentHebrewDayOfMonth] == 5)
             {
                 return kErevShavuos;
@@ -95,7 +95,7 @@
                 return kShavuos;
             }
             break;
-        case kTammuz:
+        case KCHebrewMonthTammuz:
             // push off the fast day if it falls on Shabbos
             if (([self currentHebrewDayOfMonth] == 17 && [self currentDayOfTheWeek] != 7)
                 || ([self currentHebrewDayOfMonth] == 18 && [self currentDayOfTheWeek] == 1))
@@ -103,7 +103,7 @@
                 return kSeventeenthOfTammuz;
             }
             break;
-        case kAv:
+        case KCHebrewMonthAv:
             // if Tisha B'av falls on Shabbos, push off until Sunday
             if (([self currentDayOfTheWeek] == 1 && [self currentHebrewDayOfMonth] == 10)
                 || ([self currentDayOfTheWeek] != 7 && [self currentHebrewDayOfMonth] == 9))
@@ -113,13 +113,13 @@
                 return kTuBeav;
             }
             break;
-        case kElul:
+        case KCHebrewMonthElul:
             if ([self currentHebrewDayOfMonth] == 29)
             {
                 return kErevRoshHashana;
             }
             break;
-        case kTishrei:
+        case KCHebrewMonthTishrei:
             if ([self currentHebrewDayOfMonth] == 1 || [self currentHebrewDayOfMonth] == 2)
             {
                 return kRoshHashana;
@@ -163,17 +163,17 @@
                 return kSimchasTorah;
             }
             break;
-        case kCheshvan:
+        case KCHebrewMonthCheshvan:
             //no yomtov in CHESHVAN
             break;
-        case kKislev:
+        case KCHebrewMonthKislev:
             if (self.dayOfChanukah > 0)
             {
                 return kChanukah;
             }
             
             break;
-        case kTeves:
+        case KCHebrewMonthTeves:
             if (self.dayOfChanukah > 0)
             {
                 return kChanukah;
@@ -183,13 +183,13 @@
                 return kTenthOfTeves;
             }
             break;
-        case kShevat:
+        case KCHebrewMonthShevat:
             if ([self currentHebrewDayOfMonth] == 15)
             {
                 return kTuBeshvat;
             }
             break;
-        case kAdar:
+        case KCHebrewMonthAdar:
             if (![self isCurrentlyHebrewLeapYear])
             {
                 // if 13th Adar falls on Friday or Shabbos, push back to Thursday
@@ -216,7 +216,7 @@
                 }
             }
             break;
-        case kAdar_II:
+        case KCHebrewMonthAdar_II:
             // if 13th Adar falls on Friday or Shabbos, push back to Thursday
             if ((([self currentHebrewDayOfMonth] == 11 || [self currentHebrewDayOfMonth] == 12)&& [self currentDayOfTheWeek] == 5)
                 || ([self currentHebrewDayOfMonth] == 13 && !([self currentDayOfTheWeek] == 6 || [self currentDayOfTheWeek] == 7)))
@@ -263,13 +263,13 @@
 //Returns true if the current day is Chol Hamoed of Succos.
 - (BOOL)isCholHamoedSuccos
 {
-    return ([self currentHebrewMonth] == kTishrei) && (([self currentHebrewDayOfMonth] >= 17 && [self currentHebrewDayOfMonth] <= 20) || ([self currentHebrewDayOfMonth] == 16 && _inIsrael));
+    return ([self currentHebrewMonth] == KCHebrewMonthTishrei) && (([self currentHebrewDayOfMonth] >= 17 && [self currentHebrewDayOfMonth] <= 20) || ([self currentHebrewDayOfMonth] == 16 && _inIsrael));
 }
 
 //Returns true if the current day is Chol Hamoed of Pesach.
 - (BOOL)isCholHamoedPesach
 {
-    return [self currentHebrewMonth] == kNissan && [self isCholHamoed];
+    return [self currentHebrewMonth] == KCHebrewMonthNissan && [self isCholHamoed];
 }
 
 //Returns true if the current day is erev Yom Tov. The method returns true
@@ -286,7 +286,7 @@
 // Chodesh. Returns false for Erev Rosh Hashana
 - (BOOL)isErevRoshChodesh
 {
-    return ([self currentHebrewDayOfMonth] == 29 && [self currentHebrewMonth] != kElul);
+    return ([self currentHebrewDayOfMonth] == 29 && [self currentHebrewMonth] != KCHebrewMonthElul);
 }
 
 //Return true if the day is a Taanis (fast day). Return true for
@@ -311,7 +311,7 @@
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setYear:[hebrewCalendar component:NSCalendarUnitYear fromDate:date]];
-    [components setMonth:kKislev];
+    [components setMonth:KCHebrewMonthKislev];
     [components setDay:23]; // We use the 23rd, because we account for nightfall.
     [components setHour:23]; // 11 P.M. should be well after nightfall in most places.
     
@@ -343,7 +343,7 @@
 //Returns if the day is Rosh Chodesh. Rosh Hashana will return false
 - (BOOL)isRoshChodesh
 {
-    return ([self currentHebrewDayOfMonth] == 1 && [self currentHebrewMonth] != kTishrei)|| [self currentHebrewDayOfMonth] == 30;
+    return ([self currentHebrewDayOfMonth] == 1 && [self currentHebrewMonth] != KCHebrewMonthTishrei)|| [self currentHebrewDayOfMonth] == 30;
 }
 
 //returns if a given day is pesach
@@ -367,7 +367,7 @@
 //Returns if a given day is simchat torah
 - (BOOL)isSimchasTorah
 {
-    if ([self currentHebrewMonth] == kTishrei)
+    if ([self currentHebrewMonth] == KCHebrewMonthTishrei)
     {
         if(([self currentHebrewDayOfMonth] == 22 && !_inIsrael)|| [self currentHebrewDayOfMonth] == 21)
         {
@@ -381,7 +381,7 @@
 //Returns if a given day is Shmini Atzeres
 - (BOOL)isShminiAtzeres
 {
-    return ([self currentHebrewMonth] == kTishrei && [self currentHebrewDayOfMonth] == 22);
+    return ([self currentHebrewMonth] == KCHebrewMonthTishrei && [self currentHebrewDayOfMonth] == 22);
 }
 
 #pragma mark - Kiddush Levana Code.

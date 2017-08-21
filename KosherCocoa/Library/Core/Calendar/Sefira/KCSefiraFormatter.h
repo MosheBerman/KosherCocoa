@@ -25,7 +25,7 @@
  */
 
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 /**
  *  This flag determines which custom
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, KCSefiraCustom)
     KCSefiraCustomSefard = 1,   //  Uses the lamed prefix
     KCSefiraCustomSephardic = 2,//  Uses the lamed prefix and sephardic formula
     KCSefiraCustomAri = 3       // Chabad - not sure what's different here yet.
-};
+} NS_SWIFT_NAME(SefiraCustom);
 
 /**
  *  This flag determines which language to use to display the text.
@@ -49,7 +49,7 @@ typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
     KCSefiraLanguageHebrew = 0,             //  The count, in Hebrew
     KCSefiraLanguageLocalizedOrEnglish,     //  The count, in the system language with English as a fallback
     KCSefiraFormatterTransliteratedHebrew   //  The count, in Hebrew, spelled in English
-};
+} NS_SWIFT_NAME(SefiraLanguage);
 
 /**
  *  The prayers for the formatter to show with the count text.
@@ -67,9 +67,10 @@ typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
     KCSefiraPrayerAdditionAna = 1 << 4,
     KCSefiraPrayerAdditionRibono = 1 << 5,
     KCSefiraPrayerAdditionAleinu = 1 << 6
-};
+} NS_SWIFT_NAME(SefiraPrayerAddition);
 
 /** This class formats an integer into a sefira day*/
+NS_SWIFT_NAME(SefiraFormatter)
 @interface KCSefiraFormatter : NSObject
 
 /**

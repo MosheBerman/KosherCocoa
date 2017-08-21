@@ -11,24 +11,20 @@
 @import Foundation;
 #import "KCParashaReadings.h"
 
-/** A class that represents a weekly parasha */
+/**
+ A class that represents a weekly parasha 
+ */
+NS_SWIFT_NAME(Parasha)
 @interface KCParasha : NSObject
 
-/**-----
- * @name Properties
- * -----
- */
-
+// MARK: - Properties
 /**
  * The parasha identifier.
  */
 
 @property (nonatomic, assign) enum KCParashaIdentifier identifier;
 
-/**-----
- * @name Converting an identifier into a parasha.
- * -----
- */
+// MARK: - Converting an identifier into a parasha.
 
 /**
  *  This method returns a KCParasha instance.
@@ -51,10 +47,7 @@
 
 + (nonnull instancetype)parashaWithIdentifier:(enum KCParashaIdentifier)identifier;
 
-/**-----
- * @name Human Readable Parasha Names
- * -----
- */
+// MARK: - Human Readable Parasha Names
 
 /**
  *  This method returns the name of the parasha, transliterated into English

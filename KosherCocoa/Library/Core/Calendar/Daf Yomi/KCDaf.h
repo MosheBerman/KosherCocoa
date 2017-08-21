@@ -13,14 +13,13 @@
 #import "KCConstants.h"
 #import "KCTractates.h"
 
-/** A class that represents a page in the Talmud. */
-
+/**
+ This class represents a folio of the talmud.
+ */
+NS_SWIFT_NAME(Daf)
 @interface KCDaf : NSObject
 
-/**-----
- * @name Accessing a *Daf*
- * -----
- */
+// MARK: - Accessing a *Daf*
 
 /**
  *  The index of the tractate. 
@@ -40,10 +39,8 @@
 
 @property NSInteger pageNumber;
 
-/**-----
- *  @name Instantiating a Daf.
- * -----
- */
+
+// MARK: - Instantiating a Daf
 
 /**
  *  This method instantiates a Daf with an index and page number.
@@ -57,10 +54,7 @@
 
 - (nonnull instancetype)initWithTractateIndex:(NSInteger)tractateIndex andPageNumber:(NSInteger)number;
 
-/**-----
- *  @name Displaying a Tractate
- * -----
- */
+// MARK: - Displaying a Tractate
 
 /**
  *  This method returns the display name of a given tractate 

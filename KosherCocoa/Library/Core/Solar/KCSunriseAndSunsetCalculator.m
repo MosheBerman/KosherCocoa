@@ -81,10 +81,10 @@
  */
 
 
-- (double)sunriseOrSunsetForYear:(int)year andMonth:(int)month andDay:(int)day atLongitude:(double)longitude andLatitude:(double)latitude withZenith:(double)zenith andType:(int)type
+- (double)sunriseOrSunsetForYear:(NSInteger)year andMonth:(NSInteger)month andDay:(NSInteger)day atLongitude:(double)longitude andLatitude:(double)latitude withZenith:(double)zenith andType:(NSInteger)type
 {
     
-    int dayOfYear = [self dayOfYearForYear:year andMonth:month andDay:day];
+    NSInteger dayOfYear = [self dayOfYearForYear:year andMonth:month andDay:day];
     
     double sunMeanAnomaly = [self meanAnomalyForDayOfYear:dayOfYear atLongitude:longitude forCalculationType:type];
     
@@ -233,7 +233,7 @@
 //
 
 
-- (double)meanAnomalyForDayOfYear:(int)dayOfYear atLongitude:(double)longitude forCalculationType:(int)type
+- (double)meanAnomalyForDayOfYear:(NSInteger)dayOfYear atLongitude:(double)longitude forCalculationType:(NSInteger)type
 {
     
     double temp = (0.9856 * [self approxTimeDaysForDayOfYear:dayOfYear withHoursFromMeridian:[self hoursFromMeridianForLongitude:longitude] forCalculationType:type])- 3.289;
@@ -249,7 +249,7 @@
 // Sun's mean anomaly.
 //
 
-- (double)approxTimeDaysForDayOfYear:(int)dayOfYear withHoursFromMeridian:(double)hoursFromMeridian forCalculationType:(int)type
+- (double)approxTimeDaysForDayOfYear:(NSInteger)dayOfYear withHoursFromMeridian:(double)hoursFromMeridian forCalculationType:(NSInteger)type
 {
     
     if (type == kTypeSunrise)
@@ -283,12 +283,12 @@
 // method needs to know the year, because leap years have an impact here
 //
 
-- (int)dayOfYearForYear:(int)year andMonth:(int)month andDay:(int)day
+- (NSInteger)dayOfYearForYear:(NSInteger)year andMonth:(NSInteger)month andDay:(NSInteger)day
 {
-    int n1 = 275 * month / 9;
-    int n2 = (month + 9)/ 12;
-    int n3 = (1 + ((year - 4 * (year / 4)+ 2)/ 3));
-    int n = n1 - (n2 * n3)+ day - 30;
+    NSInteger n1 = 275 * month / 9;
+    NSInteger n2 = (month + 9)/ 12;
+    NSInteger n3 = (1 + ((year - 4 * (year / 4)+ 2)/ 3));
+    NSInteger n = n1 - (n2 * n3)+ day - 30;
     
     //NSLog(@"- (int)getDayOfYearForYear:(int)year andMonth:(int)month andDay:(int)day;  %i", n);
     return n;

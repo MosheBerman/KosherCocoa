@@ -15,6 +15,7 @@
 
 /** A class that uses the United States Naval Almanac Algorithm to calculate sunrise and sunset. */
 
+NS_SWIFT_NAME(KCSunriseAndSunsetCalculator)
 @interface KCSunriseAndSunsetCalculator : NSObject <KCAstronomicalCalculator>
 
 /**
@@ -68,7 +69,7 @@
  *  @return The time that sunset occurs UTC as a double.
  */
 
-- (double)sunriseOrSunsetForYear:(int)year andMonth:(int)month andDay:(int)day atLongitude:(double)longitude andLatitude:(double)latitude withZenith:(double)zenith andType:(int)type;
+- (double)sunriseOrSunsetForYear:(NSInteger)year andMonth:(NSInteger)month andDay:(NSInteger)day atLongitude:(double)longitude andLatitude:(double)latitude withZenith:(double)zenith andType:(NSInteger)type;
 
 /**
  *  Calculate the local mean time of rising or setting.
@@ -143,7 +144,7 @@
  *  @return The sun's mean anomaly in degrees.
  */
 
-- (double)meanAnomalyForDayOfYear:(int)dayOfYear atLongitude:(double)longitude forCalculationType:(int)type;
+- (double)meanAnomalyForDayOfYear:(NSInteger)dayOfYear atLongitude:(double)longitude forCalculationType:(NSInteger)type;
 
 /**
  *  Gets the approximate time of sunset or sunrise In DAYS since midnight
@@ -159,7 +160,7 @@
  *
  */
 
-- (double)approxTimeDaysForDayOfYear:(int)dayOfYear withHoursFromMeridian:(double)hoursFromMeridian forCalculationType:(int)type;
+- (double)approxTimeDaysForDayOfYear:(NSInteger)dayOfYear withHoursFromMeridian:(double)hoursFromMeridian forCalculationType:(NSInteger)type;
 
 /**
  *
@@ -186,7 +187,7 @@
  *  @return The days of the Gregorian year.
  */
 
-- (int)dayOfYearForYear:(int)year andMonth:(int)month andDay:(int)day;
+- (NSInteger)dayOfYearForYear:(NSInteger)year andMonth:(NSInteger)month andDay:(NSInteger)day;
 
 /**
  *  Get sunset as a double.

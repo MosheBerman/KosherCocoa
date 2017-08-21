@@ -30,6 +30,7 @@
  *  are of interest for calculation beyond zmanim calculations.
  */
 
+NS_SWIFT_NAME(ComplexZmanimCalendar)
 @interface KCComplexZmanimCalendar : KCZmanimCalendar
 
 /**

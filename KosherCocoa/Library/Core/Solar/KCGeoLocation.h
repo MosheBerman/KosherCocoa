@@ -13,12 +13,11 @@
 #import "KCConstants.h"
 
 /** A class that represents a location and a timezone. */
+NS_SWIFT_NAME(GeoLocation)
 @interface KCGeoLocation : NSObject 
 
-/**-----
- * @name Properties
- * -----
- */
+
+// MARK: - Properties
 
 @property (nonatomic, strong, nullable) NSString *locationName;
 @property (nonatomic, strong, nonnull) NSTimeZone *timeZone;
@@ -26,11 +25,8 @@
 @property (nonatomic, assign) double longitude;
 @property (nonatomic, assign) double altitude;
 
-/**-----
- * @name Initializers
- * -----
- */
-
+// MARK: -Initializers
+ 
 /**
  *  This method insantiates a new KCGeoLocation.
  *

@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 #import "KCGeoLocation.h"
 #import "KCSunriseAndSunsetCalculator.h"
@@ -16,6 +16,7 @@
 /** 
  A class that calculates various sunrise and sunset values. 
  */
+NS_SWIFT_NAME(AstronomicalCalendar)
 @interface KCAstronomicalCalendar : NSObject
 
  // MARK: - Configuring the Calendar

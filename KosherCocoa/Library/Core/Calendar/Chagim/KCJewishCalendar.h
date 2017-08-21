@@ -13,14 +13,15 @@
 #import "KCComplexZmanimCalendar.h"
 #import "KCDaf.h"
 
-/** A class that can be used to check when Jewish holidays are. */
-
+/**
+ A class that can be used to check when Jewish holidays are.
+ */
+NS_SWIFT_NAME(JewishCalendar)
 @interface KCJewishCalendar : KCComplexZmanimCalendar
 
-/**-----
- * @name Properties
- * -----
- */
+
+// MARK: - Properties
+ 
 
 /**
  *  Determines if we account for diaspora in our calculations.
@@ -33,10 +34,7 @@
  */
 @property BOOL returnsModernHolidays;
 
-/**-----
- * @name Holidays
- * -----
- */
+// MARK: - Holidays
 
 /**
  *  This method returns the index of any holidays that fall on 

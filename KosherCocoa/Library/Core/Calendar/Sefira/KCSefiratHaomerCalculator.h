@@ -10,14 +10,15 @@
 
 @import Foundation;
 
-/** A class that calculates Sefirat Haomer. */
+/** 
+ A class that calculates Sefirat Haomer.
+ */
 
+NS_SWIFT_NAME(SefiratHaomerCalculator)
 @interface KCSefiratHaomerCalculator : NSObject
 
-/* -----
- * @name Check if a date falls during sefira 
- * -----
- */
+
+// MARK: - Check if a date falls during sefira
 
 /**
  *  This method checks if [NSDate date] represents a day
@@ -40,10 +41,8 @@
 
 + (BOOL)fallsOnDate:(nonnull NSDate *)date;
 
-/* -----
- *  @name Getting the day of sefira.
- * -----
- */
+
+// MARK: - Getting the Day of Sefira
 
 /**
  *  This method returns an integer representing the

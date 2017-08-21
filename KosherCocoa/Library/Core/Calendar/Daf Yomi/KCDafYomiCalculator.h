@@ -11,25 +11,20 @@
 @import Foundation;
 #import "KCDaf.h"
 
-/** A class that calculates Daf Yomi pages. */
-
+/**
+ This class calculates the current Daf Yomi being studied.
+ */
+NS_SWIFT_NAME(DafYomiCalculator)
 @interface KCDafYomiCalculator : NSObject
 
-/**-----
- * @name Properties
- * -----
- */
-
+// MARK: - Properties
 /** 
  *  The reference date used by the calculator.
  */
 
 @property (nonatomic, strong, nonnull) NSDate * workingDate;
 
-/**-----
- * @name Initializers
- * -----
- */
+// MARK: - Initializers
 
 /**
  *  This method instantiates a new KCDafYomiCalculator.
@@ -40,10 +35,8 @@
 
 - (nonnull instancetype)initWithDate:(nonnull NSDate *)date;
 
-/**-----
- * @name Getting "the Daf"
- * -----
- */
+
+// MARK: - Getting "the Daf"
 
 /**
  *  This method returns a KCDaf object representing

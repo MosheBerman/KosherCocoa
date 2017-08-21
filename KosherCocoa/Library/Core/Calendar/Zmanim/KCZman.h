@@ -7,9 +7,10 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 #import "KCComplexZmanimCalendar.h"
 
+NS_SWIFT_NAME(Zman)
 @interface KCZman : NSObject
 
 /**
@@ -18,12 +19,7 @@
 
 @property (nonnull, readonly) SEL selector;
 
-#pragma mark - Instantiating a Zman
-
-/** ---
- *  @name Instantiating a Zman
- *  ---
- */
+// MARK: - Instantiating a Zman
 
 /**
  *  Takes a selector and converts it into a KCZman object.
@@ -41,12 +37,7 @@
 
 - (nonnull instancetype)initWithSelector:(nonnull SEL)selector;
 
-#pragma mark - Display Name
-
-/** ---
- *  @name Display Name
- *  ---
- */
+// MARK: - Display Name
 
 /**
  *  The hebrew name of the zman.
@@ -120,12 +111,8 @@
 
 - (nullable NSString *)rabbinicOpinionFromDisplayName:(nonnull NSString *)displayName;
 
-#pragma mark - Explanation
+// Mark: - Explanation
 
-/** ---
- *  @name Explanation
- *  ---
- */
 
 /**
  *  The explanation for the zman.
@@ -135,12 +122,7 @@
 
 - (nonnull NSString *)explanation;
 
-#pragma mark - Related Zmanim
-
-/** ---
- *  @name Related Zmanim
- *  ---
- */
+// Mark: - Related Zmanim
 
 /**
  *  Other zmanim that are related to this zman.
@@ -152,9 +134,7 @@
 
 - (nonnull NSArray *)relatedZmanim;
 
-/**
- *  Comparisons
- */
+// MARK: - Comparison
 
 - (BOOL)isEqual:(nullable id)object;
 - (BOOL)isEqualToZman:(nonnull KCZman *)anotherZman;
@@ -168,6 +148,7 @@
  */
 
 + (nonnull NSArray<NSArray<NSString* >* >*)relatedZmanimMapping;
+
 /**
  *  The list of zmanim metadata.
  *
