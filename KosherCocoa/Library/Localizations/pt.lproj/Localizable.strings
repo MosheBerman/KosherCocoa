@@ -1,8 +1,8 @@
 ﻿/* No comment provided by engineer. */
-" Dusk calculated using 96 minutes zmaniyos (GRA and the Baal Hatanya) after sea level sunset." = " Dusk calculated using 96 minutes zmaniyos (GRA and the Baal Hatanya) after sea level sunset.";
+" Dusk calculated using 96 minutes zmaniyos (GRA and the Baal Hatanya) after sea level sunset." = " Crepúsculo calculado usando 96 minutos de zmaniyos (GRA e Baal Hatanya) após o pôr do sol do nível do mar.";
 
 /* No comment provided by engineer. */
-"A temporal hour according to the opinion of the Gra and the Baal Hatanya. This calculation divides the day based on the opinion of the GRA and the Baal Hatanya that the day runs from sunrise to sunset. The calculations are based on a day from sea level sunrise to sea level sunset. The day is split into 12 equal parts with each one being a shaah zmanis. An explanation and detailed sources for not using elevation for anything besides sunrise and sunset can be found in Zmanim Kehilchasam (second edition published in 2007) by Rabbi Dovid Yehuda Bursztyn chapter 2. (pages 186-187)" = "A temporal hour according to the opinion of the Gra and the Baal Hatanya. This calculation divides the day based on the opinion of the GRA and the Baal Hatanya that the day runs from sunrise to sunset. The calculations are based on a day from sea level sunrise to sea level sunset. The day is split into 12 equal parts with each one being a shaah zmanis. An explanation and detailed sources for not using elevation for anything besides sunrise and sunset can be found in Zmanim Kehilchasam (second edition published in 2007) by Rabbi Dovid Yehuda Bursztyn chapter 2. (pages 186-187)";
+"A temporal hour according to the opinion of the Gra and the Baal Hatanya. This calculation divides the day based on the opinion of the GRA and the Baal Hatanya that the day runs from sunrise to sunset. The calculations are based on a day from sea level sunrise to sea level sunset. The day is split into 12 equal parts with each one being a shaah zmanis. An explanation and detailed sources for not using elevation for anything besides sunrise and sunset can be found in Zmanim Kehilchasam (second edition published in 2007) by Rabbi Dovid Yehuda Bursztyn chapter 2. (pages 186-187)" = "Uma hora temporal de acordo com a opinião do Gra e Baal Hatanya. Este cálculo divide o dia com base na opinião do GRA e do Baal Hatanya que o dia corre do nascer ao pôr-do-sol. Os cálculos são baseados em um dia desde o nascer sol ao pôr-do-sol no nível do mar. O dia é dividido em 12 partes iguais, cada um sendo um shaah zmanis. Uma explicação e fontes detalhadas para não usar elevação para qualquer coisa além do nascer e do pôr-do-sol podem ser encontradas em Zmanim Kehilchasam (segunda edição publicada em 2007) pelo Rabbi Dovid Yehuda Bursztyn capítulo 2. (páginas 186-187)";
 
 /* No comment provided by engineer. */
 "A temporal hour according to the opinion of the Mogen Avraham. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk (for Sof Zman Shema and Sof Zman Tefila). Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after sunset. This day is split into 12 equal parts with each part being a temporal hour." = "A temporal hour according to the opinion of the Mogen Avraham. This calculation divides the day based on the opinion of the Mogen Avraham that the day runs from dawn to dusk (for Sof Zman Shema and Sof Zman Tefila). Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after sunset. This day is split into 12 equal parts with each part being a temporal hour.";
@@ -41,49 +41,49 @@
 "Burn Chametz By (M\"A 16.1 Degrees)" = "Burn Chametz By (M\"A 16.1 Degrees)";
 
 /* No comment provided by engineer. */
-"Calculated as 72 minutes after sunset, not taking elevation into account." = "Calculated as 72 minutes after sunset, not taking elevation into account.";
+"Calculated as 72 minutes after sunset, not taking elevation into account." = "Calculado como 72 minutos após o pôr-do-sol, não levando elevação em conta";
 
 /* No comment provided by engineer. */
 "Calculates the later time between 30 minutes after midday and the standard mincha gedolah calculation. Whichever is later in the day is used." = "Calculates the later time between 30 minutes after midday and the standard mincha gedolah calculation. Whichever is later in the day is used.";
 
 /* No comment provided by engineer. */
-"Dawn (120 Minutes)" = "Dawn (120 Minutes)";
+"Dawn (120 Minutes)" = "Amanhecer (120 Minutos)";
 
 /* No comment provided by engineer. */
-"Dawn (120 Temporal Minutes)" = "Dawn (120 Temporal Minutes)";
+"Dawn (120 Temporal Minutes)" = "Amanhecer (120 Minutos Temporais)";
 
 /* No comment provided by engineer. */
-"Dawn (16.1 Degrees)" = "Dawn (16.1 Degrees)";
+"Dawn (16.1 Degrees)" = "Amanhecer (16.1 Graus)";
 
 /* No comment provided by engineer. */
-"Dawn (18 Degrees)" = "Dawn (18 Degrees)";
+"Dawn (18 Degrees)" = "Amanhecer (18 Graus)";
 
 /* No comment provided by engineer. */
-"Dawn (19.8 Degrees)" = "Dawn (19.8 Degrees)";
+"Dawn (19.8 Degrees)" = "Amanhecer (19.8 Graus)";
 
 /* No comment provided by engineer. */
-"Dawn (26 Degrees)" = "Dawn (26 Degrees)";
+"Dawn (26 Degrees)" = "Amanhecer (26 Graus)";
 
 /* No comment provided by engineer. */
-"Dawn (60 Minutes)" = "Dawn (60 Minutes)";
+"Dawn (60 Minutes)" = "Amanhecer (60 Minutos)";
 
 /* No comment provided by engineer. */
-"Dawn (72 minutes)" = "Dawn (72 minutes)";
+"Dawn (72 minutes)" = "Amanhecer (72 Minutos)";
 
 /* No comment provided by engineer. */
-"Dawn (72 Temporal Minutes)" = "Dawn (72 Temporal Minutes)";
+"Dawn (72 Temporal Minutes)" = "Amanhecer (72 Minutos Temporais)";
 
 /* No comment provided by engineer. */
-"Dawn (90 Minutes)" = "Dawn (90 Minutes)";
+"Dawn (90 Minutes)" = "Amanhecer (90 Minutos)";
 
 /* No comment provided by engineer. */
-"Dawn (90 Temporal Minutes)" = "Dawn (90 Temporal Minutes)";
+"Dawn (90 Temporal Minutes)" = "Amanhecer (90 Minutos Temporais)";
 
 /* No comment provided by engineer. */
-"Dawn (96 Minutes)" = "Dawn (96 Minutes)";
+"Dawn (96 Minutes)" = "Amanhecer (96 Minutos)";
 
 /* No comment provided by engineer. */
-"Dawn (96 Temporal Minutes)" = "Dawn (96 Temporal Minutes)";
+"Dawn (96 Temporal Minutes)" = "Amanhecer (96 Minutos Temporais)";
 
 /* No comment provided by engineer. */
 "Dawn calculated as 60 minutes before sea level sunrise. This is the time to walk the distance of 4 Mil at 15 minutes a Mil (the opinion of the Chavas Yair. See the Divray Malkiel). Time based offset calculations for alos are based on the opinion of most Rishonim who stated that the Neshef (time between dawn and sunrise) does not vary by year or location but purely depends on the time it takes to walk the distance of 4 Mil." = "Dawn calculated as 60 minutes before sea level sunrise. This is the time to walk the distance of 4 Mil at 15 minutes a Mil (the opinion of the Chavas Yair. See the Divray Malkiel). Time based offset calculations for alos are based on the opinion of most Rishonim who stated that the Neshef (time between dawn and sunrise) does not vary by year or location but purely depends on the time it takes to walk the distance of 4 Mil.";
