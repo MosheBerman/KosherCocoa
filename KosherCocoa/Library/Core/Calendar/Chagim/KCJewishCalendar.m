@@ -312,12 +312,11 @@
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setYear:[hebrewCalendar component:NSCalendarUnitYear fromDate:date]];
     [components setMonth:KCHebrewMonthKislev];
-    [components setDay:23]; // We use the 23rd, because we account for nightfall.
-    [components setHour:23]; // 11 P.M. should be well after nightfall in most places.
+    [components setDay:25];
     
     NSDate *firstNightOfChanuka = [hebrewCalendar dateFromComponents:components];
     
-    NSInteger calculatedDay = [self daysWithinEraFromDate:firstNightOfChanuka toDate:date usingCalendar:hebrewCalendar] + 1;
+    NSInteger calculatedDay = [hebrewCalendar components:NSCalendarUnitDay fromDate:firstNightOfChanuka toDate:date options:0].day + 1;
     
     if (calculatedDay > 0 && calculatedDay <= 8)
     {
@@ -716,16 +715,6 @@
     return totalDaysInTheYear;
 }
 
-#pragma mark - Days Between Units
-
--(NSInteger)daysWithinEraFromDate:(NSDate *) startDate toDate:(NSDate *) endDate usingCalendar:(NSCalendar *)calendar
-{
-    NSInteger startDay = [calendar ordinalityOfUnit:NSCalendarUnitDay inUnit: NSCalendarUnitEra forDate:startDate];
-    NSInteger endDay = [calendar ordinalityOfUnit:NSCalendarUnitDay inUnit: NSCalendarUnitEra forDate:endDate];
-    
-    return endDay - startDay;
-}
-
 #pragma mark - Molad Methods
 
 //Converts the the Nissan based constants used by
@@ -776,8 +765,8 @@
     
     if (isAfterSunset)
     {
-        NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-        returnDate = [gregorianCalendar dateByAddingDays:1 toDate:returnDate];
+        NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
+        returnDate = [hebrewCalendar dateByAddingDays:1 toDate:returnDate];
     }
     
     return returnDate;
