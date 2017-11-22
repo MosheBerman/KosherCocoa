@@ -273,12 +273,12 @@
 		466FA8011CD2871A00668CD1 /* KCZenithExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		466FA8021CD2871A00668CD1 /* KCParashaReadings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4610DD911808999A0055A4F9 /* KCParashaReadings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469066551F4A7090009E5D46 /* KosherCocoa.podspec */; };
-		46DB49671D9839F200F3A576 /* KosherCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB49661D9839F200F3A576 /* KosherCocoaTests.swift */; };
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F52587441ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F52587451ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F52587461ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
+		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -373,11 +373,9 @@
 		469066551F4A7090009E5D46 /* KosherCocoa.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KosherCocoa.podspec; sourceTree = "<group>"; };
 		46BAA9F41AD592B300A0FE4B /* KCZman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZman.h; sourceTree = "<group>"; };
 		46BAA9F51AD592B300A0FE4B /* KCZman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZman.m; sourceTree = "<group>"; };
-		46DB495A1D9837D100F3A576 /* KosherCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaTests.swift; sourceTree = "<group>"; };
+		46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaMetadataTests.swift; sourceTree = "<group>"; };
 		46DB495C1D9837D100F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		46DB49661D9839F200F3A576 /* KosherCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaTests.swift; sourceTree = "<group>"; };
-		46DB49681D9839F200F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F52587471ECD01AB009E623C /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = Localizations/he.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -445,7 +443,6 @@
 				466FA71A1CD2855900668CD1 /* OS X Support */,
 				466FA7B91CD286E200668CD1 /* tvOS Support */,
 				46DB49591D9837D100F3A576 /* KosherCocoaTests */,
-				46DB49651D9839F200F3A576 /* KosherCocoaTests */,
 				4618BB861664216E00AD3CE5 /* Products */,
 				46130E031BF52DF7001D19FC /* KosherCocoa copy-Info.plist */,
 			);
@@ -696,17 +693,8 @@
 		46DB49591D9837D100F3A576 /* KosherCocoaTests */ = {
 			isa = PBXGroup;
 			children = (
-				46DB495A1D9837D100F3A576 /* KosherCocoaTests.swift */,
+				46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */,
 				46DB495C1D9837D100F3A576 /* Info.plist */,
-			);
-			path = KosherCocoaTests;
-			sourceTree = "<group>";
-		};
-		46DB49651D9839F200F3A576 /* KosherCocoaTests */ = {
-			isa = PBXGroup;
-			children = (
-				46DB49661D9839F200F3A576 /* KosherCocoaTests.swift */,
-				46DB49681D9839F200F3A576 /* Info.plist */,
 			);
 			path = KosherCocoaTests;
 			sourceTree = "<group>";
@@ -1005,7 +993,7 @@
 				CLASSPREFIX = KC;
 				LastSwiftUpdateCheck = 0800;
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Moshe Berman";
 				TargetAttributes = {
 					4618ECE41BF449EF00C33159 = {
@@ -1020,6 +1008,7 @@
 					46DB49631D9839F100F3A576 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = HK64RUWW3P;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1226,7 +1215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46DB49671D9839F200F3A576 /* KosherCocoaTests.swift in Sources */,
+				F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1351,12 +1340,18 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1393,12 +1388,18 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1708,7 +1709,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1734,7 +1736,8 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
