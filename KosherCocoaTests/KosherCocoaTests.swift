@@ -26,7 +26,7 @@ class KosherCocoaTests: XCTestCase {
     /** Iterate and check all fields for zero length strings */
     func testForMetadataWithMissingEntries()
     {
-        let metadata = KCZman.metadata()
+        let metadata = Zman.metadata()
         
         for (selectorString, calculationMetadata) in metadata
         {
@@ -42,7 +42,7 @@ class KosherCocoaTests: XCTestCase {
     /** Iterate and check for strings containing the word "method" or a pair of parenthesis'()' */
     func testForMethodNames()
     {
-        let metadata = KCZman.metadata()
+        let metadata = Zman.metadata()
         
         let flaggableContent = ["()", "method", "Method"]
         
@@ -66,7 +66,7 @@ class KosherCocoaTests: XCTestCase {
     func testForPlaceholders()
     {
         
-        let metadata = KCZman.metadata()
+        let metadata = Zman.metadata()
         
         let flaggableContent = ["<# #>", "<#explanation#>"]
         
@@ -93,7 +93,7 @@ class KosherCocoaTests: XCTestCase {
     /** Iterate groups and check for strings that appear more than once */
     func testForDuplicateMethodNamesInGroupings()
     {
-        let originalMappings = KCZman.relatedZmanimMapping()
+        let originalMappings = Zman.relatedZmanimMapping()
         
         var count : [String: Int] = [:]
         
@@ -123,7 +123,7 @@ class KosherCocoaTests: XCTestCase {
     /** Iterate metadata keys and check for selector names that appear more than once. */
     func testForDuplicateDescriptionNamesInMetadata()
     {
-        let metadata = KCZman.metadata()
+        let metadata = Zman.metadata()
         
         var count : [String: Int] = [:]
         
@@ -158,7 +158,7 @@ class KosherCocoaTests: XCTestCase {
     /** Detect double spaces in descriptions */
     func testDuplicateSpaceCharactersInDescriptions()
     {
-        let metadata = KCZman.metadata()
+        let metadata = Zman.metadata()
         
         let characters = "abcdefghijklmnopqrstuvwxyz.,)+*1234567890"
         
@@ -188,8 +188,8 @@ class KosherCocoaTests: XCTestCase {
     /** Iterate groups of methods and check for missing metadata entries. */
     func testForMissingMetadataEntry()
     {
-        let flattenedMethodGroups = KCZman.relatedZmanimMapping().flatMap { $0 }
-        let metadataKeys = KCZman.metadata().keys
+        let flattenedMethodGroups = Zman.relatedZmanimMapping().flatMap { $0 }
+        let metadataKeys = Zman.metadata().keys
         
         for selectorName in flattenedMethodGroups
         {
@@ -201,8 +201,8 @@ class KosherCocoaTests: XCTestCase {
     /** Iterate metadata and check for groups that aren't represented in the selectors grouping. */
     func testForExtraMetadata()
     {
-        let flattenedMethodGroups = KCZman.relatedZmanimMapping().flatMap { $0 }
-        let metadataKeys = KCZman.metadata().keys
+        let flattenedMethodGroups = Zman.relatedZmanimMapping().flatMap { $0 }
+        let metadataKeys = Zman.metadata().keys
         
         for metadataGroup in metadataKeys
         {
