@@ -9,7 +9,7 @@
 import XCTest
 @testable import KosherCocoa
 
-class KosherCocoaTests: XCTestCase {
+class KosherCocoaMetadataTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -32,7 +32,7 @@ class KosherCocoaTests: XCTestCase {
         {
             for (key, metadataEntry) in calculationMetadata
             {
-                let nonEmpty = metadataEntry.characters.count > 0
+                let nonEmpty = metadataEntry.count > 0
                 
                 XCTAssert(nonEmpty, "\(selectorString) is missing \(key)")
             }
@@ -134,7 +134,7 @@ class KosherCocoaTests: XCTestCase {
                 continue
             }
             
-            guard selectorName.characters.count > 0 else
+            guard selectorName.count > 0 else
             {
                 continue
             }
@@ -166,12 +166,12 @@ class KosherCocoaTests: XCTestCase {
         {
             for field in entry.value
             {
-                if field.value.characters.count == 0
+                if field.value.count == 0
                 {
                     continue
                 }
                 
-                for character in characters.characters
+                for character in characters
                 {
                     let valueToTest = field.value
                     let duplicateSpacing = "\(character)  "
