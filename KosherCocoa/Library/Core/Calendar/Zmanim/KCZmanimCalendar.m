@@ -14,27 +14,27 @@
 
 @implementation KCZmanimCalendar
 
-- (NSDate *)alosHashachar
+- (NSDate * _Nullable)alosHashachar
 {
     return [self sunriseOffsetByDegrees:kZenithSixteenPointOne];
 }
 
-- (NSDate *)alos72
+- (NSDate * _Nullable)alos72
 {
     return [self dateBySubtractingMinutes:72 fromDate:[self seaLevelSunrise]];
 }
 
-- (NSDate *)chatzos
+- (NSDate * _Nullable)chatzos
 {
     return [self sunTransit];    
 }
 
-- (NSDate *)sofZmanShmaGra
+- (NSDate * _Nullable)sofZmanShmaGra
 {
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*3];
 }
 
-- (NSDate *)sofZmanShmaMogenAvraham
+- (NSDate * _Nullable)sofZmanShmaMogenAvraham
 {
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanisMogenAvraham]*3];
 }
@@ -46,7 +46,7 @@
 //  but perhaps calculate sunset there in overridden methods...
 //
 
-- (NSDate *)candleLighting
+- (NSDate * _Nullable)candleLighting
 {
     NSUInteger candleLightingOffset = [self candleLightingOffset];
 
@@ -62,62 +62,62 @@
  *  @return An NSDate representing the candle lighting time.
  */
 
-- (NSDate *)candleLightingWithOffsetFromSunset:(NSInteger)offsetInMinutes
+- (NSDate * _Nullable)candleLightingWithOffsetFromSunset:(NSInteger)offsetInMinutes
 {
     return [self dateBySubtractingMinutes:offsetInMinutes fromDate:[self sunset]];
 }
 
-- (NSDate *)candleLighting15
+- (NSDate * _Nullable)candleLighting15
 {
     return [self candleLightingWithOffsetFromSunset:15];
 }
 
-- (NSDate *)candleLighting18
+- (NSDate * _Nullable)candleLighting18
 {
     return [self candleLightingWithOffsetFromSunset:18];
 }
 
-- (NSDate *)candleLighting20
+- (NSDate * _Nullable)candleLighting20
 {
     return [self candleLightingWithOffsetFromSunset:20];
 }
 
-- (NSDate *)candleLighting22
+- (NSDate * _Nullable)candleLighting22
 {
     return [self candleLightingWithOffsetFromSunset:22];
 }
 
-- (NSDate *)candleLighting30
+- (NSDate * _Nullable)candleLighting30
 {
     return [self candleLightingWithOffsetFromSunset:30];
 }
 
-- (NSDate *)candleLighting40
+- (NSDate * _Nullable)candleLighting40
 {
     return [self candleLightingWithOffsetFromSunset:40];
 }
 
-- (NSDate *)sofZmanTfilaGra
+- (NSDate * _Nullable)sofZmanTfilaGra
 {
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*4];
 }
 
-- (NSDate *)sofZmanTfilaMogenAvraham
+- (NSDate * _Nullable)sofZmanTfilaMogenAvraham
 {
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanisMogenAvraham]*4];
 }
 
-- (NSDate *)minchaGedola
+- (NSDate * _Nullable)minchaGedola
 {
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*6.5];
 }
 
-- (NSDate *)minchaKetana
+- (NSDate * _Nullable)minchaKetana
 {
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*9.5];    
 }
 
-- (NSDate *)plagHamincha
+- (NSDate * _Nullable)plagHamincha
 {
         return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra]*10.75];
 }
@@ -132,12 +132,12 @@
     return [self temporalHourFromSunrise:[self alos72] toSunset:[self tzais72]];
 }
 
-- (NSDate *)tzais
+- (NSDate * _Nullable)tzais
 {
     return [self sunsetOffsetByDegrees:kZenithEightPointFive];
 }
 
-- (NSDate *)tzais72
+- (NSDate * _Nullable)tzais72
 {
     return [self dateByAddingMinutes:72 toDate:[self seaLevelSunset]];
 }

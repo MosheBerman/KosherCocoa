@@ -13,10 +13,10 @@
 @interface KCDafYomiCalculator ()
 
 //Calculate the Julian Day
-- (NSInteger) julianDayForDate:(NSDate *)date;
+- (NSInteger) julianDayForDate:(NSDate * _Nonnull)date;
 
 //Convenience method for making a gregorian date
-- (NSDate *)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day;
+- (NSDate * _Nullable)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day;
 
 @end
 
@@ -24,7 +24,7 @@
 
 #define kNumberOfMasechtos 40
 
-- (id) initWithDate:(NSDate *)date
+- (id) initWithDate:(NSDate * _Nonnull)date
 {
     
     self = [super init];
@@ -42,7 +42,7 @@
     return [self dafYomiBavliForDate:[NSDate date]];
 }
 
-- (KCDaf *)dafYomiBavliForDate:(NSDate *)date
+- (KCDaf *)dafYomiBavliForDate:(NSDate * _Nonnull)date
 {
     
     //Start on September 11, 1923
@@ -117,7 +117,7 @@
 
 #pragma mark - Date convenience methods
 
-- (NSInteger) julianDayForDate:(NSDate *)date
+- (NSInteger) julianDayForDate:(NSDate * _Nonnull)date
 {
     
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
@@ -139,7 +139,7 @@
     return (NSInteger) (floor(365.25 * (year + 4716)) + floor(30.6001 * (month + 1)) + day + b - 1524.5);
 }
 
-- (NSDate *)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day
+- (NSDate * _Nullable)gregorianDateForYear:(NSInteger)year month:(NSInteger)month andDay:(NSInteger)day
 {
     
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];

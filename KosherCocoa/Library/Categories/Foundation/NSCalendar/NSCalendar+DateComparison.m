@@ -13,7 +13,7 @@
 
 @implementation NSCalendar (DateComparison)
 
-- (BOOL)date:(NSDate *)firstDate isSameDayAs:(NSDate *)anotherDate
+- (BOOL)date:(NSDate * _Nonnull)firstDate isSameDayAs:(NSDate * _Nonnull)anotherDate
 {
     NSInteger firstDay = [self daysInDate:firstDate];
     NSInteger secondDay = [self daysInDate:anotherDate];
@@ -24,7 +24,7 @@
     return sameMonth && sameDay;
 }
 
-- (BOOL)date:(NSDate*)firstDate isSameWeekAs:(NSDate *)anotherDate
+- (BOOL)date:(NSDate*)firstDate isSameWeekAs:(NSDate * _Nonnull)anotherDate
 {
     NSInteger firstMonth = [self weekOfYearInDate:firstDate];
     NSInteger secondMonth = [self weekOfYearInDate:anotherDate];
@@ -36,7 +36,7 @@
 }
 
 
-- (BOOL)date:(NSDate*)firstDate isSameMonthAs:(NSDate *)anotherDate
+- (BOOL)date:(NSDate*)firstDate isSameMonthAs:(NSDate * _Nonnull)anotherDate
 {
     NSInteger firstMonth = [self monthsInDate:firstDate];
     NSInteger secondMonth = [self monthsInDate:anotherDate];
@@ -47,7 +47,7 @@
     return sameYear && sameMonth;
 }
 
-- (BOOL)date:(NSDate *)firstDate isSameYearAs:(NSDate *)anotherDate
+- (BOOL)date:(NSDate * _Nonnull)firstDate isSameYearAs:(NSDate * _Nonnull)anotherDate
 {
     NSInteger firstYear = [self yearsInDate:firstDate];
     NSInteger secondYear = [self yearsInDate:anotherDate];
@@ -58,7 +58,7 @@
     return sameEra && sameYear;
 }
 
-- (BOOL)date:(NSDate *)firstDate isSameEraAs:(NSDate *)anotherDate
+- (BOOL)date:(NSDate * _Nonnull)firstDate isSameEraAs:(NSDate * _Nonnull)anotherDate
 {
     NSInteger firstEra = [self eraInDate:firstDate];
     NSInteger secondEra = [self eraInDate:anotherDate];

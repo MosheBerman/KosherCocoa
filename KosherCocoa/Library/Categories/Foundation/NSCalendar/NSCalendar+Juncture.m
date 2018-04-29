@@ -17,23 +17,23 @@
 
 #pragma mark - First/Last of Week
 
-- (NSDate *)firstDayOfTheWeek
+- (NSDate * _Nullable)firstDayOfTheWeek
 {
     return [self firstDayOfTheWeekUsingReferenceDate:[NSDate date]];
 }
 
-- (NSDate *)firstDayOfTheWeekUsingReferenceDate:(NSDate *)date
+- (NSDate * _Nullable)firstDayOfTheWeekUsingReferenceDate:(NSDate * _Nonnull)date
 {    
     NSInteger weekday = [self weekdayInDate:date]-1;
     return [self dateBySubtractingDays:weekday fromDate:date];
 }
 
-- (NSDate *)lastDayOfTheWeek
+- (NSDate * _Nullable)lastDayOfTheWeek
 {
     return [self lastDayOfTheWeekUsingReferenceDate:[NSDate date]];
 }
 
-- (NSDate *)lastDayOfTheWeekUsingReferenceDate:(NSDate *)date
+- (NSDate * _Nullable)lastDayOfTheWeekUsingReferenceDate:(NSDate * _Nonnull)date
 {
     
     NSDate *d = [self firstDayOfTheWeekUsingReferenceDate:date];
@@ -44,12 +44,12 @@
 
 #pragma mark - First/Last of Month
 
-- (NSDate *)firstDayOfTheMonth
+- (NSDate * _Nullable)firstDayOfTheMonth
 {
     return [self firstDayOfTheMonthUsingReferenceDate:[NSDate date]];
 }
 
-- (NSDate *)firstDayOfTheMonthUsingReferenceDate:(NSDate *)date
+- (NSDate * _Nullable)firstDayOfTheMonthUsingReferenceDate:(NSDate * _Nonnull)date
 {
     NSDateComponents *c = [self components:NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
     
@@ -58,12 +58,12 @@
     return [self dateFromComponents:c];
 }
 
-- (NSDate *)lastDayOfTheMonth
+- (NSDate * _Nullable)lastDayOfTheMonth
 {
     return [self firstDayOfTheMonthUsingReferenceDate:[NSDate date]];
 }
 
-- (NSDate *)lastDayOfTheMonthUsingReferenceDate:(NSDate *)date
+- (NSDate * _Nullable)lastDayOfTheMonthUsingReferenceDate:(NSDate * _Nonnull)date
 {
     
     NSDateComponents *c = [self components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:date];

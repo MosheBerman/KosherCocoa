@@ -14,50 +14,71 @@
 
 #pragma mark - Add Units
 
-- (NSDate *)dateByAddingSeconds:(NSUInteger)seconds toDate:(NSDate *)date
+- (NSDate * _Nullable)dateByAddingSeconds:(NSUInteger)seconds toDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setSecond:seconds];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateByAddingMinutes:(NSUInteger)minutes toDate:(NSDate *)date
+- (NSDate * _Nullable)dateByAddingMinutes:(NSUInteger)minutes toDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setMinute:minutes];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateByAddingHours:(NSUInteger)hours toDate:(NSDate *)date
+- (NSDate * _Nullable)dateByAddingHours:(NSUInteger)hours toDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setHour:hours];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateByAddingDays:(NSUInteger)days toDate:(NSDate *)date
+- (NSDate * _Nullable)dateByAddingDays:(NSUInteger)days toDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setDay:days];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateByAddingWeeks:(NSUInteger)weeks toDate:(NSDate *)date
+- (NSDate * _Nullable)dateByAddingWeeks:(NSUInteger)weeks toDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setWeekOfYear:weeks];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateByAddingMonths:(NSUInteger)months toDate:(NSDate *)date
+- (NSDate * _Nullable)dateByAddingMonths:(NSUInteger)months toDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setMonth:months];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateByAddingYears:(NSUInteger)years toDate:(NSDate *)date
+- (NSDate * _Nullable)dateByAddingYears:(NSUInteger)years toDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setYear:years];
     return [self dateByAddingComponents:c toDate:date options:0];
@@ -65,51 +86,72 @@
 
 #pragma mark - Subtract Units
 
-- (NSDate *)dateBySubtractingSeconds:(NSUInteger)seconds fromDate:(NSDate *)date
+- (NSDate * _Nullable)dateBySubtractingSeconds:(NSUInteger)seconds fromDate:(NSDate * _Nonnull)date
 {
  
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setSecond:-seconds];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
-- (NSDate *)dateBySubtractingMinutes:(NSUInteger)minutes fromDate:(NSDate *)date;
+- (NSDate * _Nullable)dateBySubtractingMinutes:(NSUInteger)minutes fromDate:(NSDate * _Nonnull)date;
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setMinute:-minutes];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateBySubtractingHours:(NSUInteger)hours fromDate:(NSDate *)date
+- (NSDate * _Nullable)dateBySubtractingHours:(NSUInteger)hours fromDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setHour:-hours];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateBySubtractingDays:(NSUInteger)days fromDate:(NSDate *)date
+- (NSDate * _Nullable)dateBySubtractingDays:(NSUInteger)days fromDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setDay:-days];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateBySubtractingWeeks:(NSUInteger)weeks fromDate:(NSDate *)date
+- (NSDate * _Nullable)dateBySubtractingWeeks:(NSUInteger)weeks fromDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setWeekOfYear:-weeks];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
-- (NSDate *)dateBySubtractingMonths:(NSUInteger)months fromDate:(NSDate *)date
+- (NSDate * _Nullable)dateBySubtractingMonths:(NSUInteger)months fromDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setMonth:-months];
     return [self dateByAddingComponents:c toDate:date options:0];
 }
 
 
-- (NSDate *)dateBySubtractingYears:(NSUInteger)years fromDate:(NSDate *)date
+- (NSDate * _Nullable)dateBySubtractingYears:(NSUInteger)years fromDate:(NSDate * _Nonnull)date
 {
+    if (!date) {
+        return nil;
+    }
     NSDateComponents *c = [NSDateComponents new];
     [c setYear:-years];
     return [self dateByAddingComponents:c toDate:date options:0];
