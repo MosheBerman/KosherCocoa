@@ -117,17 +117,40 @@ NS_SWIFT_NAME(SefiraFormatter)
 
 - (nullable NSString *)countStringFromInteger:(NSInteger)integer withPrayers:(KCSefiraPrayerAddition)prayers;
 
+#pragma mark - Getting the Kabbalistic Trait of the Week
+
+/**
+ Converts an integer (between 1 and 7, inclusive)
+ into a kabbalistic trait traditionally assigned
+ to a given week of the omer.
+ 
+ @param week The week to get the trait for.
+ @return A string containing the attribure of that week.
+ */
+- (nullable NSString *)kabbalisticTraitForWeek:(NSInteger)week;
+
+
 #pragma mark - Getting the Kabbalistic Trait of the Day
 
 /**
- *  Converts an integer (between 1 and 49, inclusive) 
- *  into a kabbalistic trait traditionally assigned
- *  to a given day of the omer.
- *
- *  @return A string containing the attribure of that day.
- */
+ Converts an integer (between 1 and 49, inclusive)
+ into a kabbalistic trait traditionally assigned
+ to a given day of the omer.
 
-- (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer;
+ @param day The day to get the trait for.
+ @return A string containing the attribure of that day.
+ */
+- (nullable NSString *)kabbalisticTraitForDay:(NSInteger)day;
+
+/**
+ Converts an integer (between 1 and 49, inclusive)
+ into a kabbalistic trait traditionally assigned
+ to a given day of the omer.
+ 
+ @param integer The day to get the trait for.
+ @return A string containing the attribure of that day.
+ */
+- (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer DEPRECATED_MSG_ATTRIBUTE("Use kabbalisticTraitForDay: and kabbalisticTraitForWeek: instead.");
 
 /**
  *  Get the blessing text for counting the omer.

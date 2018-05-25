@@ -30,6 +30,7 @@
 @property (nonatomic, strong) NSArray <NSString *> *englishKabbalisticStrings;
 @property (nonatomic, strong) NSArray <NSString *> *hebrewKabbalisticStrings;
 @property (nonatomic, strong) NSArray <NSString *> *transliteratedHebrewKabbalisticStrings;
+@property (nonatomic, strong) NSArray <NSString *> *sefirahNamesByWeek;
 
 @end
 
@@ -259,57 +260,30 @@
         _sefardTransliteratedStrings = @[];
         _sephardicTransliteratedStrings = @[];
         
-        _hebrewKabbalisticStrings = @[
-                                      @"חֶסֶד שֶבְּחֶסֶד",
-                                      @"גְבוּרָה שֶבְּחֶסֶד",
-                                      @"תִּפֶארֶת שֶבְּחֶסֶד",
-                                      @"נֶצַח שֶבְּחֶסֶד",
-                                      @"הוֹד שֶבְּחֶסֶד",
-                                      @"יְסֹוד שֶבְּחֶסֶד",
-                                      @"מַלְכוּת שֶבְּחֶסֶד",
-                                      @"חֶסֶד שֶבְּגְבוּרָה",
-                                      @"גְבוּרָה שֶבְּגְבוּרָה",
-                                      @"תִּפֶארֶת שֶבְּגְבוּרָה",
-                                      @"נֶצַח שֶבְּגְבוּרָה",
-                                      @"הוֹד שֶבְּגְבוּרָה",
-                                      @"יְסֹוד שֶבְּגְבוּרָה",
-                                      @"מַלְכוּת שֶבְּגְבוּרָה",
-                                      @"חֶסֶד שֶבְּתִּפֶארֶת",
-                                      @"גְבוּרָה שֶבְּתִּפֶארֶת",
-                                      @"תִּפֶארֶת שֶבְּתִּפֶארֶת",
-                                      @"נֶצַח שֶבְּתִּפֶארֶת",
-                                      @"הוֹד שֶבְּתִּפֶארֶת",
-                                      @"יְסֹוד שֶבְּתִּפֶארֶת",
-                                      @"מַלְכוּת שֶבְּתִּפֶארֶת",
-                                      @"חֶסֶד שֶבְּנֶצַח",
-                                      @"גְבוּרָה שֶבְּנֶצַח",
-                                      @"תִּפֶארֶת שֶבְּנֶצַח",
-                                      @"נֶצַח שֶבְּנֶצַח",
-                                      @"הוֹד שֶבְּנֶצַח",
-                                      @"יְסֹוד שֶבְּנֶצַח",
-                                      @"מַלְכוּת שֶבְּנֶצַח"
-                                      , @"חֶסֶד שֶבְּהוֹד",
-                                      @"גְבוּרָה שֶבְּהוֹד",
-                                      @"תִּפֶארֶת שֶבְּהוֹד",
-                                      @"נֶצַח שֶבְּהוֹד",
-                                      @"הוֹד שֶבְּהוֹד",
-                                      @"יְסֹוד שֶבְּהוֹד",
-                                      @"מַלְכוּת שֶבְּהוֹד",
-                                      @"חֶסֶד שֶבְּיְסֹוד",
-                                      @"גְבוּרָה שֶבְּיְסֹוד",
-                                      @"תִּפֶארֶת שֶבְּיְסֹוד",
-                                      @"נֶצַח שֶבְּיְסֹוד",
-                                      @"הוֹד שֶבְּיְסֹוד",
-                                      @"יְסֹוד שֶבְּיְסֹוד",
-                                      @"מַלְכוּת שֶבְּיְסֹוד",
-                                      @"חֶסֶד שֶבְּמַלְכוּת",
-                                      @"גְבוּרָה שֶבְּמַלְכוּת",
-                                      @"תִּפֶארֶת שֶבְּמַלְכוּת",
-                                      @"נֶצַח שֶבְּמַלְכוּת",
-                                      @"הוֹד שֶבְּמַלְכוּת",
-                                      @"יְסֹוד שֶבְּמַלְכוּת",
-                                      @"מַלְכוּת שֶבְּמַלְכוּת"
-                                      ];
+        _sefirahNamesByWeek = @[
+                                @"חֶסֶד",
+                          @"גְבוּרָה",
+                                @"תִּפֶארֶת",
+                                @"נֶצַח",
+                                @"הוֹד",
+                                @"יְסֹוד",
+                                @"מַלְכוּת"
+                                ];
+        NSMutableArray <NSString *>* hebrewKabbalisticStrings = [@[] mutableCopy];
+        
+        for (NSInteger i = 0; i<_sefirahNamesByWeek.count; i++) {
+            for (NSInteger j = 0; j<_sefirahNamesByWeek.count; j++) {
+                NSString *part1 = _sefirahNamesByWeek[j];
+                NSString *part2 = @"שֶבְּ";
+                NSString *part3 = _sefirahNamesByWeek[i];
+                
+                NSString *trait = [NSString stringWithFormat:@"%@ %@%@", part1, part2, part3];
+                [hebrewKabbalisticStrings addObject:trait];
+            }
+        }
+        
+        _hebrewKabbalisticStrings = hebrewKabbalisticStrings;
+        
         _englishKabbalisticStrings = @[];
         _transliteratedHebrewKabbalisticStrings = @[];
     }
@@ -460,7 +434,7 @@
     if (showRibono)
     {
         
-        NSString *trait = [self kabbalisticTraitFromInteger:integer];
+        NSString *trait = [self kabbalisticTraitForDay:integer];
         
         ribono = [NSString stringWithFormat:@"רִבּוֹנוֹ שֶׁל עוֹלָם, אַתָּה צִוִּיתָֽנוּ עַל יְדֵי מֹשֶׁה עַבְדֶּֽךָ לִסְפּוֹר סְפִירַת הָעֹֽמֶר, כְּדֵי לְטַהֲרֵֽנוּ מִקְּלִפּוֹתֵֽינוּ וּמִטֻּמְאוֹתֵֽינוּ, כְּמוֹ שֶׁכָּתַֽבְתָּ בְּתוֹרָתֶֽךָ: וּסְפַרְתֶּם לָכֶם מִמָּחֳרַת הַשַּׁבָּת מִיּוֹם הֲבִיאֲכֶם אֶת עֹֽמֶר הַתְּנוּפָה, שֶֽׁבַע שַׁבָּתוֹת תְּמִימֹת תִּהְיֶֽינָה, עַד מִמָּחֳרַת הַשַּׁבָּת הַשְּׁבִיעִת תִּסְפְּרוּ חֲמִשִּׁים יוֹם, כְּדֵי שֶׁיִּטָּהֲרוּ נַפְשׁוֹת עַמְּךָ יִשְׂרָאֵל מִזֻּהֲמָתָם. וּבְכֵן יְהִי רָצוֹן מִלְּפָנֶֽיךָ יְיָ אֱלֹהֵֽינוּ וֵאלֹהֵי אֲבוֹתֵֽינוּ, שֶׁבִּזְכוּת סְפִירַת הָעֹֽמֶר שֶׁסָּפַֽרְתִּי הַיּוֹם, יְתֻקַּן מַה שֶּׁפָּגַֽמְתִּי בִּסְפִירָה %@ וְאֶטָּהֵר וְאֶתְקַדֵּשׁ בִּקְדֻשָּׁה שֶׁל מַֽעְלָה, וְעַל יְדֵי זֶה יֻשְׁפַּע שֶֽׁפַע רַב בְּכָל הָעוֹלָמוֹת, וּלְתַקֵּן אֶת נַפְשׁוֹתֵֽינוּ וְרוּחוֹתֵֽינוּ וְנִשְׁמוֹתֵֽינוּ מִכָּל סִיג וּפְגַם, וּלְטַהֲרֵֽנוּ וּלְקַדְּשֵֽׁנוּ בִּקְדֻשָּׁתְךָ הָעֶלְיוֹנָה, אָמֵן סֶֽלָה.", trait];
         
@@ -481,7 +455,47 @@
     return output;
 }
 
+#pragma mark - Getting the Kabbalistic Trait of the Week
+
+/**
+ Converts an integer (between 1 and 7, inclusive)
+ into a kabbalistic trait traditionally assigned
+ to a given week of the omer.
+ 
+ @param week The week to get the trait for.
+ @return A string containing the attribure of that week.
+ */
+- (nullable NSString *)kabbalisticTraitForWeek:(NSInteger)week;
+{
+    if (week > 7 || week < 1) {
+        return nil;
+    }
+    return self.sefirahNamesByWeek[week - 1];
+}
+
 #pragma mark - Getting the Kabbalistic Trait of the Day
+
+/**
+ Converts an integer (between 1 and 49, inclusive)
+ into a kabbalistic trait traditionally assigned
+ to a given day of the omer.
+ 
+ @param day The day to get the trait for.
+ @return A string containing the attribure of that day.
+ */
+- (nullable NSString *)kabbalisticTraitForDay:(NSInteger)day;
+{
+    NSString *trait = nil;
+    
+    day = day - 1;
+    
+    if (day < self.hebrewKabbalisticStrings.count)
+    {
+        trait = self.hebrewKabbalisticStrings[day];
+    }
+    
+    return trait;
+}
 
 /**
  *  Converts an integer (between 1 and 49, inclusive)
@@ -493,16 +507,7 @@
 
 - (nullable NSString *)kabbalisticTraitFromInteger:(NSInteger)integer
 {
-    NSString *trait = nil;
-    
-    integer = integer - 1;
-    
-    if (integer < self.hebrewKabbalisticStrings.count)
-    {
-        trait = self.hebrewKabbalisticStrings[integer];
-    }
-    
-    return trait;
+    return [self kabbalisticTraitForDay:integer];
 }
 
 #pragma mark - Helpers
