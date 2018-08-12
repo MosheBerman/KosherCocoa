@@ -1,6 +1,10 @@
 # Change Log
 Notable changes documented here, per keepachangelog.com. Yes, we use [semantic versioning](http://semver.org).
 
+## [4.0.0] 2018-12-08
+### Changed
+- Combined the various targets into one, for easier building and testing.
+
 ## [3.6.0] - 2017-08-20
 ### Changed 
 - Prefixed categories to avoid Objective-C namespacing collisions resulting in compiler warning.
