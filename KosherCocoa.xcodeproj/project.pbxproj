@@ -158,9 +158,6 @@
 		466A3AFD17CAF3B900056F16 /* KCZenithExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZenithExtended.h; sourceTree = "<group>"; };
 		466A3B2D17CB9CD900056F16 /* NSDate+ConvenientDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ConvenientDates.h"; sourceTree = "<group>"; };
 		466A3B2E17CB9CD900056F16 /* NSDate+ConvenientDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ConvenientDates.m"; sourceTree = "<group>"; };
-		466FA71D1CD2855900668CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		466FA7BA1CD286E200668CD1 /* KosherCocoaTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoaTVOS.h; sourceTree = "<group>"; };
-		466FA7BC1CD286E200668CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		468C006E17F1E3450070CDB5 /* KCTractates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTractates.h; sourceTree = "<group>"; };
 		469066511F4A6728009E5D46 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		469066521F4A6728009E5D46 /* Documentation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Documentation.md; sourceTree = "<group>"; };
@@ -215,8 +212,6 @@
 				469066541F4A6728009E5D46 /* README.md */,
 				4610DD9018086BB40055A4F9 /* TODO.md */,
 				4618BB8A1664216E00AD3CE5 /* KosherCocoa */,
-				466FA71A1CD2855900668CD1 /* OS X Support */,
-				466FA7B91CD286E200668CD1 /* tvOS Support */,
 				46DB49591D9837D100F3A576 /* KosherCocoaTests */,
 				4618BB861664216E00AD3CE5 /* Products */,
 				46130E031BF52DF7001D19FC /* KosherCocoa copy-Info.plist */,
@@ -441,25 +436,6 @@
 				4610DD911808999A0055A4F9 /* KCParashaReadings.h */,
 			);
 			path = Headers;
-			sourceTree = "<group>";
-		};
-		466FA71A1CD2855900668CD1 /* OS X Support */ = {
-			isa = PBXGroup;
-			children = (
-				466FA71D1CD2855900668CD1 /* Info.plist */,
-			);
-			name = "OS X Support";
-			path = KosherCocoaOSX;
-			sourceTree = "<group>";
-		};
-		466FA7B91CD286E200668CD1 /* tvOS Support */ = {
-			isa = PBXGroup;
-			children = (
-				466FA7BA1CD286E200668CD1 /* KosherCocoaTVOS.h */,
-				466FA7BC1CD286E200668CD1 /* Info.plist */,
-			);
-			name = "tvOS Support";
-			path = KosherCocoaTVOS;
 			sourceTree = "<group>";
 		};
 		46DB49591D9837D100F3A576 /* KosherCocoaTests */ = {
