@@ -1,10 +1,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "KosherCocoa"
-  s.version      = "3.6.0"
-  s.summary      = "KosherCocoa is a Hebrew Calendar, Jewish Prayer, and Jewish Holiday Library for iOS, tvOS, and watchOS."
+  s.version      = "4.0.0"
+  s.summary      = "KosherCocoa is a Hebrew Calendar, Jewish Prayer, and Jewish Holiday Library for iOS, tvOS, watchOS, and macOS."
   s.description  = <<-DESC
-  KosherCocoa is a Hebrew Calendar, Jewish Prayer, and Jewish Holiday Library for iOS, tvOS, and watchOS. The code works on macOS too, but not as a pod at this time.
+  KosherCocoa is a Hebrew Calendar, Jewish Prayer, and Jewish Holiday Library for iOS, tvOS, watchOS, and macOS. The code works on macOS too, but not as a pod at this time.
                    DESC
   s.homepage     = "http://github.com/MosheBerman/KosherCocoa"
   s.license      = "LGPL 2.1"
