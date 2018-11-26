@@ -1,11 +1,11 @@
 /**
  *  KCZComplexZmanimCalendar.h
- *  KosherCocoa 3
+ *  KosherCocoa 4
  *
  *  Created by Moshe Berman on 7/24/11.
  *  Updated by Moshe Berman on 9/8/13.
  *
- *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 #import "KCZmanimCalendar.h"

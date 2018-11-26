@@ -1,6 +1,6 @@
 /** 
  *  KCZenith.h
- *  KosherCocoa 3
+ *  KosherCocoa 4
  *
  *  Created by Moshe Berman on 8/25/13.
  *  Updared by Moshe Berman on 10/11/13.
@@ -8,7 +8,7 @@
  *  This file contains several zenith constants used for various calculations. 
  *  There are more in the KCZenithExtended header.
  *
- *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 #ifndef __KC_ZENITH_H

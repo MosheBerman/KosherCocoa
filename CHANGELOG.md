@@ -2,6 +2,9 @@
 Notable changes documented here, per keepachangelog.com. Yes, we use [semantic versioning](http://semver.org).
 
 ## [4.0.0] 2018-12-08
+### Added
+- Added some utility classes.
+
 ### Changed
 - Combined the various targets into one, for easier building and testing.
 

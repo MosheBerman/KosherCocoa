@@ -1,12 +1,12 @@
 /**
  *  KCJewishCalendar.h
- *  KosherCocoa 3
+ *  KosherCocoa 4
  *
  *  Created by Moshe Berman on 11/11/11.
  *  Updated by Moshe Berman on 8/26/13.
  *  Updated by Jeremy Bensoussan on 17/11/13.
  *
- *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 @import Foundation;

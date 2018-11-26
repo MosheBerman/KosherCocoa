@@ -1,11 +1,11 @@
 /**
  *  KCSefiraFormatter.m
- *  KosherCocoa 3
+ *  KosherCocoa 4
  *
  *  Created by Moshe Berman on 10/23/13.
  *  Updated by Moshe Berman on 11/12/15.
  *
- *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 @import Foundation;

@@ -1,6 +1,6 @@
 /**
  *  KCSunCalculationTypes.h
- *  KosherCocoa 3
+ *  KosherCocoa 4
  *
  *  Created by Moshe Berman on 8/25/13.
  *  Updated by Moshe Berman on 10/11/13.
@@ -11,7 +11,7 @@
  *  The core methods upon which this entire API is built
  *  use these two contstants as a sort of boolean flag.
  *
- *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 #ifndef __KC_SUN_CALCULATION_TYPES_H

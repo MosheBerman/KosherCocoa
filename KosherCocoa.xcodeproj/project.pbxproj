@@ -76,6 +76,8 @@
 		469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469066551F4A7090009E5D46 /* KosherCocoa.podspec */; };
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
+		F57786C121AB914E00208DFF /* KCLocationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786BF21AB914E00208DFF /* KCLocationController.h */; };
+		F57786C221AB914E00208DFF /* KCLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57786C021AB914E00208DFF /* KCLocationController.m */; };
 		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
 /* End PBXBuildFile section */
@@ -170,6 +172,8 @@
 		46DB495C1D9837D100F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F57786BF21AB914E00208DFF /* KCLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCLocationController.h; sourceTree = "<group>"; };
+		F57786C021AB914E00208DFF /* KCLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCLocationController.m; sourceTree = "<group>"; };
 		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,6 +254,7 @@
 			children = (
 				F52587411ECD019A009E623C /* Localizable.strings */,
 				4618ECE71BF449EF00C33159 /* KosherCocoa.h */,
+				F57786BD21AB906D00208DFF /* Utilities */,
 				466A3AB717CAF3B900056F16 /* Categories */,
 				466A3ACF17CAF3B900056F16 /* Core */,
 				466A3AF417CAF3B900056F16 /* Headers */,
@@ -448,6 +453,23 @@
 			path = KosherCocoaTests;
 			sourceTree = "<group>";
 		};
+		F57786BD21AB906D00208DFF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F57786BE21AB912600208DFF /* Location */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F57786BE21AB912600208DFF /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F57786BF21AB914E00208DFF /* KCLocationController.h */,
+				F57786C021AB914E00208DFF /* KCLocationController.m */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -479,6 +501,7 @@
 				4618EE151BF4F9DE00C33159 /* NSDate+Components.h in Headers */,
 				4618EE1B1BF4F9F400C33159 /* NSDateComponents+AllComponents.h in Headers */,
 				4618ED231BF44E5600C33159 /* NSCalendar+DateManipulation.h in Headers */,
+				F57786C121AB914E00208DFF /* KCLocationController.h in Headers */,
 				4618ED271BF44E5600C33159 /* NSCalendar+Juncture.h in Headers */,
 				4618ED211BF44E5600C33159 /* NSCalendar+DateComparison.h in Headers */,
 				4618ED1F1BF44E5600C33159 /* NSCalendar+Components.h in Headers */,
@@ -625,6 +648,7 @@
 				4618ED0C1BF44B3100C33159 /* KCParashatHashavuaCalculator.m in Sources */,
 				4618ED201BF44E5600C33159 /* NSCalendar+Components.m in Sources */,
 				4618ED171BF44B8200C33159 /* KCZman.m in Sources */,
+				F57786C221AB914E00208DFF /* KCLocationController.m in Sources */,
 				4618ED1E1BF44BCC00C33159 /* KCDafYomiCalculator.m in Sources */,
 				4618ED0F1BF44B5C00C33159 /* KCSefiraFormatter.m in Sources */,
 				4618ED081BF44B1700C33159 /* KCDaf.m in Sources */,
