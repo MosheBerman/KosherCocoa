@@ -78,6 +78,9 @@
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F57786C121AB914E00208DFF /* KCLocationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786BF21AB914E00208DFF /* KCLocationController.h */; };
 		F57786C221AB914E00208DFF /* KCLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57786C021AB914E00208DFF /* KCLocationController.m */; };
+		F57786C521AC410600208DFF /* KCLocationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786C421AC410600208DFF /* KCLocationTypes.h */; };
+		F57786C921AC44A100208DFF /* KCPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786C721AC44A100208DFF /* KCPersistence.h */; };
+		F57786CA21AC44A100208DFF /* KCPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = F57786C821AC44A100208DFF /* KCPersistence.m */; };
 		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
 /* End PBXBuildFile section */
@@ -174,6 +177,9 @@
 		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F57786BF21AB914E00208DFF /* KCLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCLocationController.h; sourceTree = "<group>"; };
 		F57786C021AB914E00208DFF /* KCLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCLocationController.m; sourceTree = "<group>"; };
+		F57786C421AC410600208DFF /* KCLocationTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCLocationTypes.h; sourceTree = "<group>"; };
+		F57786C721AC44A100208DFF /* KCPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCPersistence.h; sourceTree = "<group>"; };
+		F57786C821AC44A100208DFF /* KCPersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCPersistence.m; sourceTree = "<group>"; };
 		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -456,6 +462,7 @@
 		F57786BD21AB906D00208DFF /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F57786C621AC446800208DFF /* Persistence */,
 				F57786BE21AB912600208DFF /* Location */,
 			);
 			path = Utilities;
@@ -466,8 +473,18 @@
 			children = (
 				F57786BF21AB914E00208DFF /* KCLocationController.h */,
 				F57786C021AB914E00208DFF /* KCLocationController.m */,
+				F57786C421AC410600208DFF /* KCLocationTypes.h */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		F57786C621AC446800208DFF /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F57786C721AC44A100208DFF /* KCPersistence.h */,
+				F57786C821AC44A100208DFF /* KCPersistence.m */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -492,10 +509,12 @@
 				4618ED0A1BF44B2900C33159 /* KCParasha.h in Headers */,
 				4618ED2F1BF4516900C33159 /* KCJewishHolidays.h in Headers */,
 				4618ED311BF4516900C33159 /* KCSunCalculationTypes.h in Headers */,
+				F57786C921AC44A100208DFF /* KCPersistence.h in Headers */,
 				4618ECFE1BF44AD500C33159 /* KCAstronomicalCalendar.h in Headers */,
 				4618ED131BF44B6B00C33159 /* KCComplexZmanimCalendar.h in Headers */,
 				4618ED351BF4516900C33159 /* KCParashaReadings.h in Headers */,
 				4618EE141BF4F9CC00C33159 /* MBCalendarCategories.h in Headers */,
+				F57786C521AC410600208DFF /* KCLocationTypes.h in Headers */,
 				4618ED2C1BF4516900C33159 /* KCBearing.h in Headers */,
 				4618EE171BF4F9E600C33159 /* NSDate+ConvenientDates.h in Headers */,
 				4618EE151BF4F9DE00C33159 /* NSDate+Components.h in Headers */,
@@ -569,7 +588,7 @@
 				CLASSPREFIX = KC;
 				LastSwiftUpdateCheck = 0800;
 				LastTestingUpgradeCheck = 0510;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Moshe Berman";
 				TargetAttributes = {
 					4618ECE41BF449EF00C33159 = {
@@ -644,6 +663,7 @@
 				4618ED1A1BF44B9A00C33159 /* KCGeoLocation.m in Sources */,
 				4618ED281BF44E5600C33159 /* NSCalendar+Juncture.m in Sources */,
 				4618ED191BF44B9700C33159 /* KCAstronomicalCalendar.m in Sources */,
+				F57786CA21AC44A100208DFF /* KCPersistence.m in Sources */,
 				4618ED121BF44B6800C33159 /* KCComplexZmanimCalendar.m in Sources */,
 				4618ED0C1BF44B3100C33159 /* KCParashatHashavuaCalculator.m in Sources */,
 				4618ED201BF44E5600C33159 /* NSCalendar+Components.m in Sources */,
@@ -700,11 +720,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -749,11 +771,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
