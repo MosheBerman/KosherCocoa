@@ -81,6 +81,8 @@
 		F57786C521AC410600208DFF /* KCLocationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786C421AC410600208DFF /* KCLocationTypes.h */; };
 		F57786C921AC44A100208DFF /* KCPersistence.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786C721AC44A100208DFF /* KCPersistence.h */; };
 		F57786CA21AC44A100208DFF /* KCPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = F57786C821AC44A100208DFF /* KCPersistence.m */; };
+		F57786D121AC47AA00208DFF /* KCGeoLocation+NSCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786CF21AC47AA00208DFF /* KCGeoLocation+NSCoding.h */; };
+		F57786D221AC47AA00208DFF /* KCGeoLocation+NSCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F57786D021AC47AA00208DFF /* KCGeoLocation+NSCoding.m */; };
 		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
 /* End PBXBuildFile section */
@@ -180,6 +182,8 @@
 		F57786C421AC410600208DFF /* KCLocationTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCLocationTypes.h; sourceTree = "<group>"; };
 		F57786C721AC44A100208DFF /* KCPersistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCPersistence.h; sourceTree = "<group>"; };
 		F57786C821AC44A100208DFF /* KCPersistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCPersistence.m; sourceTree = "<group>"; };
+		F57786CF21AC47AA00208DFF /* KCGeoLocation+NSCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "KCGeoLocation+NSCoding.h"; path = "KosherCocoa/Library/Categories/KosherCocoa/KCGeoLocation+NSCoding.h"; sourceTree = "<group>"; };
+		F57786D021AC47AA00208DFF /* KCGeoLocation+NSCoding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "KCGeoLocation+NSCoding.m"; path = "KosherCocoa/Library/Categories/KosherCocoa/KCGeoLocation+NSCoding.m"; sourceTree = "<group>"; };
 		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,6 +211,8 @@
 			children = (
 				460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */,
 				460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */,
+				F57786CF21AC47AA00208DFF /* KCGeoLocation+NSCoding.h */,
+				F57786D021AC47AA00208DFF /* KCGeoLocation+NSCoding.m */,
 			);
 			name = KosherCocoa;
 			path = ../../..;
@@ -530,6 +536,7 @@
 				4618ED2E1BF4516900C33159 /* KCHebrewYear.h in Headers */,
 				4618ED2B1BF4516900C33159 /* KCAstronomical.h in Headers */,
 				4618ED2D1BF4516900C33159 /* KCConstants.h in Headers */,
+				F57786D121AC47AA00208DFF /* KCGeoLocation+NSCoding.h in Headers */,
 				4618ED071BF44B1400C33159 /* KCDaf.h in Headers */,
 				4618ED0E1BF44B4200C33159 /* KCSefiraFormatter.h in Headers */,
 				4618ED321BF4516900C33159 /* KCTractates.h in Headers */,
@@ -651,6 +658,7 @@
 				4618ED061BF44B0D00C33159 /* KCJewishHoliday.m in Sources */,
 				4618ED021BF44AFB00C33159 /* KCAstronomicalCalendar+DateManipulation.m in Sources */,
 				4618ED241BF44E5600C33159 /* NSCalendar+DateManipulation.m in Sources */,
+				F57786D221AC47AA00208DFF /* KCGeoLocation+NSCoding.m in Sources */,
 				4618ED2A1BF44E5600C33159 /* NSCalendar+Ranges.m in Sources */,
 				4618ED221BF44E5600C33159 /* NSCalendar+DateComparison.m in Sources */,
 				4618ED041BF44B0500C33159 /* KCJewishCalendar.m in Sources */,
