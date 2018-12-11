@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  - Write an object to a specified store.
  - Retrieve an object from a specified store.
+ - TODO: Basic iCloud (Key-Value) support.
  */
 @interface KCPersistence : NSObject
 
