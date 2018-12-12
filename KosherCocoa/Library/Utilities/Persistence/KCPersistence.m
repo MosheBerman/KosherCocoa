@@ -29,8 +29,7 @@
  @param key The key to look up the object by.
  @return The object stored with the specified key, if it exists. Otherwise, returns nil.
  */
-- (id<NSCoding> _Nullable)objectForKey:(NSString *)key;
-{
+- (id<NSCoding>)persistedObjectForKey:(NSString *)key; {
    return [NSUserDefaults.standardUserDefaults objectForKey:key];
 }
 @end
