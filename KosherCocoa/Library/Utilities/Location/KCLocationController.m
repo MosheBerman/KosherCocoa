@@ -64,7 +64,7 @@ NSString * persistedLocationsKey = @"com.zmanimkit.persisted-locations";
  */
 - (nonnull NSArray <KCGeoLocation *> *)persistedLocations;
 {
-    NSArray <KCGeoLocation *> * locations = (NSArray <KCGeoLocation *> *)[self.store objectForKey:persistedLocationsKey];
+    NSArray <KCGeoLocation *> * locations = (NSArray <KCGeoLocation *> *)[self.store persistedObjectForKey:persistedLocationsKey];
     if (!locations) {
         locations = @[];
     }
