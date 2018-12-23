@@ -4,6 +4,9 @@ Notable changes documented here, per keepachangelog.com. Yes, we use [semantic v
 ## [4.0.0] 2018-12-08
 ### Added
 - Added some utility classes.
+    - Location management
+    - Zmanim collections
+    - Persistence management
 
 ### Changed
 - Combined the various targets into one, for easier building and testing.
