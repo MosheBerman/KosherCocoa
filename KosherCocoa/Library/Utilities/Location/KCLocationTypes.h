@@ -17,6 +17,7 @@
  @param locations An array of KCGeoLocation objects, mapped from CLLocationManager's locations array.
  @param error If location detection fails, an error describing the failure. Otherwise, nil.
  */
+NS_SWIFT_NAME(LocationUpdateCompletionBlock)
 typedef void(^KCLocationUpdateCompletionBlock)(NSArray <KCGeoLocation *> *_Nullable locations, NSError * _Nullable error);
 
 #endif /* KCLocationBlockTypes_h */
