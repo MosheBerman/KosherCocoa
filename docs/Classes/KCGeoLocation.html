@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KCGeoLocation Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/KCGeoLocation" class="dashAnchor"></a>
+    <a title="KCGeoLocation Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (46% documented)</p>
+        <p class="header-right"><a href="https://github.com/MosheBerman/Koshercocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        KCGeoLocation Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(Components).html">NSCalendar(Components)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(DateComparison).html">NSCalendar(DateComparison)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(DateManipulation).html">NSCalendar(DateManipulation)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(HebrewYearTypes).html">NSCalendar(HebrewYearTypes)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(Juncture).html">NSCalendar(Juncture)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(Ranges).html">NSCalendar(Ranges)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(KCComponents).html">NSDate(KCComponents)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(KCConvenientDates).html">NSDate(KCConvenientDates)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(KCDescription).html">NSDate(KCDescription)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDateComponents(KCAllComponents).html">NSDateComponents(KCAllComponents)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/KCAstronomicalCalendar.html">KCAstronomicalCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCComplexZmanimCalendar.html">KCComplexZmanimCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCDaf.html">KCDaf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCDafYomiCalculator.html">KCDafYomiCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCGeoLocation.html">KCGeoLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCJewishCalendar.html">KCJewishCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCJewishHoliday.html">KCJewishHoliday</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCParasha.html">KCParasha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCParashatHashavuaCalculator.html">KCParashatHashavuaCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCSefiraFormatter.html">KCSefiraFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCSefiratHaomerCalculator.html">KCSefiratHaomerCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCSunriseAndSunsetCalculator.html">KCSunriseAndSunsetCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCZman.html">KCZman</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCZmanimCalendar.html">KCZmanimCalendar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@KosherCocoaVersionNumber">KosherCocoaVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@KosherCocoaVersionString">KosherCocoaVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCSefiraCustom.html">KCSefiraCustom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCSefiraLanguage.html">KCSefiraLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCSefiraPrayerAddition.html">KCSefiraPrayerAddition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCTractate.html">KCTractate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kHebrewYearType.html">kHebrewYearType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kWeekday.html">kWeekday</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kYearLength.html">kYearLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kYomimTovim.html">kYomimTovim</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/KCAstronomicalCalculator.html">KCAstronomicalCalculator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kHebrewMonth">kHebrewMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KCGeoLocation</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">KCGeoLocation</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class that represents a location and a timezone.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(py)locationName"></a>
+                    <a name="//apple_ref/objc/Property/locationName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(py)locationName">locationName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">locationName</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">locationName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(py)timeZone"></a>
+                    <a name="//apple_ref/objc/Property/timeZone" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(py)timeZone">timeZone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="n">timeZone</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">timeZone</span><span class="p">:</span> <span class="kt">TimeZone</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(py)latitude"></a>
+                    <a name="//apple_ref/objc/Property/latitude" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(py)latitude">latitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="kt">double</span> <span class="n">latitude</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(py)longitude"></a>
+                    <a name="//apple_ref/objc/Property/longitude" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(py)longitude">longitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="kt">double</span> <span class="n">longitude</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(py)altitude"></a>
+                    <a name="//apple_ref/objc/Property/altitude" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(py)altitude">altitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="kt">double</span> <span class="n">altitude</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">altitude</span><span class="p">:</span> <span class="kt">Double</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(im)initWithLatitude:andLongitude:andTimeZone:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithLatitude:andLongitude:andTimeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(im)initWithLatitude:andLongitude:andTimeZone:">-initWithLatitude:andLongitude:andTimeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method insantiates a new KCGeoLocation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithLatitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">latitude</span>
+                            <span class="nf">andLongitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">longitude</span>
+                             <span class="nf">andTimeZone</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="p">)</span><span class="nv">timezone</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andLongitude</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andTimeZone</span> <span class="nv">timezone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The latitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The longitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timezone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A configured KCGeoLocation instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(im)initWithLatitude:andLongitude:elevation:andTimeZone:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithLatitude:andLongitude:elevation:andTimeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(im)initWithLatitude:andLongitude:elevation:andTimeZone:">-initWithLatitude:andLongitude:elevation:andTimeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method insantiates a new KCGeoLocation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithLatitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">latitude</span>
+                            <span class="nf">andLongitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">longitude</span>
+                               <span class="nf">elevation</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">elevation</span>
+                             <span class="nf">andTimeZone</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="p">)</span><span class="nv">timezone</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andLongitude</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">elevation</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andTimeZone</span> <span class="nv">timezone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The latitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The longitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elevation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The altitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timezone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A configured KCGeoLocation instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(im)initWithName:andLatitude:andLongitude:andTimeZone:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithName:andLatitude:andLongitude:andTimeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(im)initWithName:andLatitude:andLongitude:andTimeZone:">-initWithName:andLatitude:andLongitude:andTimeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method insantiates a new KCGeoLocation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithName</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span>
+                         <span class="nf">andLatitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">latitude</span>
+                        <span class="nf">andLongitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">longitude</span>
+                         <span class="nf">andTimeZone</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="p">)</span><span class="nv">timezone</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">andLatitude</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andLongitude</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andTimeZone</span> <span class="nv">timezone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A name for the location. This isn&rsquo;t required.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The latitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The longitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timezone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A configured KCGeoLocation instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(im)initWithName:andLatitude:andLongitude:andElevation:andTimeZone:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithName:andLatitude:andLongitude:andElevation:andTimeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(im)initWithName:andLatitude:andLongitude:andElevation:andTimeZone:">-initWithName:andLatitude:andLongitude:andElevation:andTimeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method insantiates a new KCGeoLocation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithName</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">name</span>
+                         <span class="nf">andLatitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">latitude</span>
+                        <span class="nf">andLongitude</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">longitude</span>
+                        <span class="nf">andElevation</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">elevation</span>
+                         <span class="nf">andTimeZone</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="p">)</span><span class="nv">timezone</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">andLatitude</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andLongitude</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andElevation</span> <span class="nv">elevation</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">andTimeZone</span> <span class="nv">timezone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A name for the location. This isn&rsquo;t required.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The latitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The longitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>elevation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The altitude that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timezone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone that the location represents.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A configured KCGeoLocation instance.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(im)vincentyFormulaForLocation:withBearing:"></a>
+                    <a name="//apple_ref/objc/Method/-vincentyFormulaForLocation:withBearing:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(im)vincentyFormulaForLocation:withBearing:">-vincentyFormulaForLocation:withBearing:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calculate <q>http://en.wikipedia.org/wiki/Great-circle_distance</q>geodesic distance in Meters between this Object and a second Object passed to
+ this method using <q>http://en.wikipedia.org/wiki/Thaddeus_Vincenty</q>Thaddeus Vincenty&rsquo;s
+ inverse formula See T Vincenty, &ldquo;<q>http://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf</q>Direct and Inverse Solutions of Geodesics on the Ellipsoid with application of nested equations&rdquo;, Survey Review, vol XXII no 176, 1975.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">vincentyFormulaForLocation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">KCGeoLocation</span> <span class="o">*</span><span class="p">)</span><span class="nv">location</span>
+                         <span class="nf">withBearing</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">formula</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">vincentyFormula</span><span class="p">(</span><span class="k">for</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">,</span> <span class="n">withBearing</span> <span class="nv">formula</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>location</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the destination location</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>formula</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>This formula calculates initial bearing InitialBearing, final bearing ({@link #FINAL_BEARING}) and distance ({@link #DISTANCE}).</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value of the formula with the location.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCGeoLocation(im)localMeanTimeOffset"></a>
+                    <a name="//apple_ref/objc/Method/-localMeanTimeOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCGeoLocation(im)localMeanTimeOffset">-localMeanTimeOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that will return the location&rsquo;s local mean time 
+  offset in milliseconds from local
+  <q>http://en.wikipedia.org/wiki/Standard_time</q> standard time.
+  The globe is split into 360&deg;, with
+   15&deg; per hour of the day. For a local that is at a longitude that
+  is evenly divisible by 15 (longitude % 15 == 0), at solar noon (with 
+  adjustment for the
+  <q>http://en.wikipedia.org/wiki/Equation_of_time</q>equation of time) the sun
+  should be directly overhead, so a user who is 1&deg; west of this will have noon at 4
+  minutes after standard time noon, and conversely, a user
+  who is 1&deg; east of the 15&deg; longitude will have noon at 11:56 AM. Lakewood, N.J., 
+  whose longitude is -74.2094, is 0.7906 away from the closest multiple of 15 at -75&deg;. 
+  This is multiplied by 4 to yield 3 minutes and 10 seconds earlier than standard time. 
+  The offset returned does not account for the
+  <q>http://en.wikipedia.org/wiki/Daylight_saving_time</q>Daylight saving time
+  offset since this class is unaware of dates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">long</span><span class="p">)</span><span class="n">localMeanTimeOffset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">localMeanTimeOffset</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the offset in milliseconds not accounting for Daylight saving time. A positive 
+value will be returned East of the 15&deg; timezone line, and a negative value West of i</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-03-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

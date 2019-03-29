@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KCAstronomicalCalendar Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/KCAstronomicalCalendar" class="dashAnchor"></a>
+    <a title="KCAstronomicalCalendar Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (46% documented)</p>
+        <p class="header-right"><a href="https://github.com/MosheBerman/Koshercocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        KCAstronomicalCalendar Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Categories.html">Categories</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(Components).html">NSCalendar(Components)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(DateComparison).html">NSCalendar(DateComparison)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(DateManipulation).html">NSCalendar(DateManipulation)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(HebrewYearTypes).html">NSCalendar(HebrewYearTypes)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(Juncture).html">NSCalendar(Juncture)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSCalendar(Ranges).html">NSCalendar(Ranges)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(KCComponents).html">NSDate(KCComponents)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(KCConvenientDates).html">NSDate(KCConvenientDates)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDate(KCDescription).html">NSDate(KCDescription)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Categories/NSDateComponents(KCAllComponents).html">NSDateComponents(KCAllComponents)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/KCAstronomicalCalendar.html">KCAstronomicalCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCComplexZmanimCalendar.html">KCComplexZmanimCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCDaf.html">KCDaf</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCDafYomiCalculator.html">KCDafYomiCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCGeoLocation.html">KCGeoLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCJewishCalendar.html">KCJewishCalendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCJewishHoliday.html">KCJewishHoliday</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCParasha.html">KCParasha</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCParashatHashavuaCalculator.html">KCParashatHashavuaCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCSefiraFormatter.html">KCSefiraFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCSefiratHaomerCalculator.html">KCSefiratHaomerCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCSunriseAndSunsetCalculator.html">KCSunriseAndSunsetCalculator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCZman.html">KCZman</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KCZmanimCalendar.html">KCZmanimCalendar</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@KosherCocoaVersionNumber">KosherCocoaVersionNumber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@KosherCocoaVersionString">KosherCocoaVersionString</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCSefiraCustom.html">KCSefiraCustom</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCSefiraLanguage.html">KCSefiraLanguage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCSefiraPrayerAddition.html">KCSefiraPrayerAddition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/KCTractate.html">KCTractate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kHebrewYearType.html">kHebrewYearType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kWeekday.html">kWeekday</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kYearLength.html">kYearLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/kYomimTovim.html">kYomimTovim</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/KCAstronomicalCalculator.html">KCAstronomicalCalculator</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kHebrewMonth">kHebrewMonth</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KCAstronomicalCalendar</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code>
+<span class="k">@interface</span> <span class="nc">KCAstronomicalCalendar</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class that calculates various sunrise and sunset values.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(py)astronomicalCalculator"></a>
+                    <a name="//apple_ref/objc/Property/astronomicalCalculator" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(py)astronomicalCalculator">astronomicalCalculator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The calculator to use. </p>
+
+<p>In KosherCocoa, it&rsquo;s always a KCSunriseAndSunsetCalculator. The
+  original Java library offered several calculator options.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span>
+    <span class="n"><a href="../Classes/KCSunriseAndSunsetCalculator.html">KCSunriseAndSunsetCalculator</a></span> <span class="o">*</span><span class="n">astronomicalCalculator</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">astronomicalCalculator</span><span class="p">:</span> <span class="kt"><a href="../Classes/KCSunriseAndSunsetCalculator.html">KCSunriseAndSunsetCalculator</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(py)geoLocation"></a>
+                    <a name="//apple_ref/objc/Property/geoLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(py)geoLocation">geoLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The location of the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n"><a href="../Classes/KCGeoLocation.html">KCGeoLocation</a></span> <span class="o">*</span><span class="n">geoLocation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">geoLocation</span><span class="p">:</span> <span class="kt">GeoLocation</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(py)workingDate"></a>
+                    <a name="//apple_ref/objc/Property/workingDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(py)workingDate">workingDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The date for which we want to perform the calculations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">NSDate</span> <span class="o">*</span><span class="n">workingDate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">workingDate</span><span class="p">:</span> <span class="kt">Date</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializing%20the%20Calendar"></a>
+                <a name="//apple_ref/objc/Section/Initializing the Calendar" class="dashAnchor"></a>
+                <a href="#/Initializing%20the%20Calendar">
+                  <h3 class="section-name">Initializing the Calendar</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)initWithLocation:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithLocation:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)initWithLocation:">-initWithLocation:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method initializes a new instance of KCAstronomicalCalendar.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    KCGeoLocation.h
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithLocation</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/KCGeoLocation.html">KCGeoLocation</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">aGeoLocation</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">location</span> <span class="nv">aGeoLocation</span><span class="p">:</span> <span class="kt">GeoLocation</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>aGeoLocation</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A geolocation object representing the user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of KCAstronomicalCalendar.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Calculating%20Sunrise"></a>
+                <a name="//apple_ref/objc/Section/Calculating Sunrise" class="dashAnchor"></a>
+                <a href="#/Calculating%20Sunrise">
+                  <h3 class="section-name">Calculating Sunrise</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)sunrise"></a>
+                    <a name="//apple_ref/objc/Method/-sunrise" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)sunrise">-sunrise</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method calculates sunrise at the current geolocation. </p>
+
+<p>The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation. 
+  This is adjusted by the KCAstronomicalCalculator to add approximately 50/60 of a degree 
+  to account for 34 archminutes of refraction and 16 archminutes for the sun&rsquo;s radius for
+  a total of 90.83333 degrees.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    KCSunriseAndSunsetCalculator
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">sunrise</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sunrise</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Sunrise as an NSDate. 
+If the calculation cannot be computed, such as in the Arctic Circle, where there is 
+at least one day a year that the sun does not rise, and one where it does not set, 
+nil will be returned.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)seaLevelSunrise"></a>
+                    <a name="//apple_ref/objc/Method/-seaLevelSunrise" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)seaLevelSunrise">-seaLevelSunrise</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method calculates sunrise at sea-level at 
+  the latitude and longitude represented by the 
+  current geolocation.</p>
+
+<p>Non-sunrise and sunset calculations such as dawn and dusk, depend on the amount of
+  visible light, something that is not affected by elevation. This method returns 
+  sunrise calculated at sea level. This forms the base for dawn calculations that are
+  calculated as a dip below the horizon before sunrise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">seaLevelSunrise</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">seaLevelSunrise</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Sunrise at sea level as an NSDate.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)sunriseOffsetByDegrees:"></a>
+                    <a name="//apple_ref/objc/Method/-sunriseOffsetByDegrees:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)sunriseOffsetByDegrees:">-sunriseOffsetByDegrees:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method returns the beginning of civil twilight (dawn) using a zenith of {@link #CIVIL_ZENITH 96&deg;}.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">sunriseOffsetByDegrees</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">offsetZenith</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sunriseOffset</span><span class="p">(</span><span class="n">byDegrees</span> <span class="nv">offsetZenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The Date of the beginning of civil twilight using a zenith of 96 degrees. If the calculation
+ can&rsquo;t be computed, nill will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)beginCivilTwilight"></a>
+                    <a name="//apple_ref/objc/Method/-beginCivilTwilight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)beginCivilTwilight">-beginCivilTwilight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method calculates the start of civil twilight.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">beginCivilTwilight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">beginCivilTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)beginNauticalTwilight"></a>
+                    <a name="//apple_ref/objc/Method/-beginNauticalTwilight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)beginNauticalTwilight">-beginNauticalTwilight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">beginNauticalTwilight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">beginNauticalTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)beginAstronomicalTwilight"></a>
+                    <a name="//apple_ref/objc/Method/-beginAstronomicalTwilight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)beginAstronomicalTwilight">-beginAstronomicalTwilight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">beginAstronomicalTwilight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">beginAstronomicalTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)sunset"></a>
+                    <a name="//apple_ref/objc/Method/-sunset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)sunset">-sunset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method returns an NSDate representing the time of sunset on 
+  the KCAstronomicalCalendar instance&rsquo;s workingDate property.</p>
+
+<p>This method takes elevation into account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">sunset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sunset</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSDate representing sunset on workingDate.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)seaLevelSunset"></a>
+                    <a name="//apple_ref/objc/Method/-seaLevelSunset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)seaLevelSunset">-seaLevelSunset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method returns an NSDate representing the time of sunset on
+  the KCAstronomicalCalendar instance&rsquo;s workingDate property.</p>
+
+<p>This method does not take elevation into account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">seaLevelSunset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">seaLevelSunset</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSDate representing sunset on workingDate.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)sunsetOffsetByDegrees:"></a>
+                    <a name="//apple_ref/objc/Method/-sunsetOffsetByDegrees:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)sunsetOffsetByDegrees:">-sunsetOffsetByDegrees:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A utility method that returns the time of an offset by degrees below or above the horizon of {@link #getSunset()
+ sunset}. Note that the degree offset is from the vertical, so for a calculation of 14&deg; after sunset, an
+ offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">sunsetOffsetByDegrees</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">offsetZenith</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sunsetOffset</span><span class="p">(</span><span class="n">byDegrees</span> <span class="nv">offsetZenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The {@link java.util.Date}of the offset after (or before) {@link #getSunset()}. If the calculation can&rsquo;t
+     be computed such as in the Arctic Circle where there is at least one day a year where the sun does not
+     rise, and one where it does not set, a null will be returned. See detailed explanation on top of the
+     page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)adjustedSunsetDateWithSunset:andSunrise:"></a>
+                    <a name="//apple_ref/objc/Method/-adjustedSunsetDateWithSunset:andSunrise:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)adjustedSunsetDateWithSunset:andSunrise:">-adjustedSunsetDateWithSunset:andSunrise:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that will roll the sunset time forward a day if sunset occurs before sunrise. This is a rare occurrence
+ and will typically happen when calculating very early and late twilights in a location with a time zone far off
+ from its natural 15&deg; boundaries. This method will ensure that in this case, the sunset will be incremented to
+ the following date. An example of this is Marquette, Michigan that far west of the natural boundaries for EST.
+ When you add in DST this pushes it an additional hour off. Calculating the extreme 26&deg;twilight on March 6th
+ it start at 2:34:30 on the 6th and end at 1:01:46 on the following day March 7th. Occurrences are more common in
+ the polar region for dips as low as 3&deg; (Tested for Hooper Bay, Alaska).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">adjustedSunsetDateWithSunset</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">sunset</span>
+                                       <span class="nf">andSunrise</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">sunrise</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">adjustedSunsetDate</span><span class="p">(</span><span class="n">withSunset</span> <span class="nv">sunset</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="n">andSunrise</span> <span class="nv">sunrise</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sunset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the sunset date to adjust if needed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sunrise</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the sunrise to compare to the sunset</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the adjusted sunset date. If the calculation can&rsquo;t be computed such as in the Arctic Circle where there
+     is at least one day a year where the sun does not rise, and one where it does not set, a null will be
+     returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)endCivilTwilight"></a>
+                    <a name="//apple_ref/objc/Method/-endCivilTwilight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)endCivilTwilight">-endCivilTwilight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">endCivilTwilight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">endCivilTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Date</code> of the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}. If
+     the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)endNauticalTwilight"></a>
+                    <a name="//apple_ref/objc/Method/-endNauticalTwilight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)endNauticalTwilight">-endNauticalTwilight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">endNauticalTwilight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">endNauticalTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>Date</code> of the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}
+     . If the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top of the
+     page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)endAstronomicalTwilight"></a>
+                    <a name="//apple_ref/objc/Method/-endAstronomicalTwilight" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)endAstronomicalTwilight">-endAstronomicalTwilight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH 108&deg;}.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">endAstronomicalTwilight</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">endAstronomicalTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the <code>Date</code> of the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH
+     108&deg;}. If the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top
+     of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)UTCSunrise:"></a>
+                    <a name="//apple_ref/objc/Method/-UTCSunrise:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)UTCSunrise:">-UTCSunrise:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the sunrise in UTC time without correction for time zone offset from GMT and without using
+ daylight savings time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">UTCSunrise</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zenith</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">utcSunrise</span><span class="p">(</span><span class="n">_</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the degrees below the horizon. For time after sunrise use negative numbers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
+     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)UTCSeaLevelSunrise:"></a>
+                    <a name="//apple_ref/objc/Method/-UTCSeaLevelSunrise:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)UTCSeaLevelSunrise:">-UTCSeaLevelSunrise:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the sunrise in UTC time without correction for time zone offset from GMT and without using
+ daylight savings time. Non-sunrise and sunset calculations such as dawn and dusk, depend on the amount of visible
+ light, something that is not affected by elevation. This method returns UTC sunrise calculated at sea level. This
+ forms the base for dawn calculations that are calculated as a dip below the horizon before sunrise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">UTCSeaLevelSunrise</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zenith</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">utcSeaLevelSunrise</span><span class="p">(</span><span class="n">_</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the degrees below the horizon. For time after sunrise use negative numbers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
+     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)UTCSunset:"></a>
+                    <a name="//apple_ref/objc/Method/-UTCSunset:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)UTCSunset:">-UTCSunset:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the sunset in UTC time without correction for time zone offset from GMT and without using
+ daylight savings time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">UTCSunset</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zenith</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">utcSunset</span><span class="p">(</span><span class="n">_</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the degrees below the horizon. For time after sunset use negative numbers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
+     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)UTCSeaLevelSunset:"></a>
+                    <a name="//apple_ref/objc/Method/-UTCSeaLevelSunset:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)UTCSeaLevelSunset:">-UTCSeaLevelSunset:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the sunset in UTC time without correction for elevation, time zone offset from GMT and
+ without using daylight savings time. Non-sunrise and sunset calculations such as dawn and dusk, depend on the
+ amount of visible light, something that is not affected by elevation. This method returns UTC sunset calculated
+ at sea level. This forms the base for dusk calculations that are calculated as a dip below the horizon after
+ sunset.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">UTCSeaLevelSunset</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">zenith</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">utcSeaLevelSunset</span><span class="p">(</span><span class="n">_</span> <span class="nv">zenith</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>zenith</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the degrees below the horizon. For time before sunset use negative numbers.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
+     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)temporalHourFromSunrise:toSunset:"></a>
+                    <a name="//apple_ref/objc/Method/-temporalHourFromSunrise:toSunset:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)temporalHourFromSunrise:toSunset:">-temporalHourFromSunrise:toSunset:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A utility method that will allow the calculation of a temporal (solar) hour based on the sunrise and sunset
+ passed as parameters to this method. An example of the use of this method would be the calculation of a
+ non-elevation adjusted temporal hour by passing in getSeaLevelSunrise sea level sunrise} and
+ {@link #getSeaLevelSunset() sea level sunset} as parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span><span class="nf">temporalHourFromSunrise</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">sunrise</span>
+                         <span class="nf">toSunset</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">sunset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">temporalHour</span><span class="p">(</span><span class="n">fromSunrise</span> <span class="nv">sunrise</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="n">toSunset</span> <span class="nv">sunset</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the long millisecond length of the temporal hour. If the calculation can&rsquo;t be computed a
+     LONG_MIN will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)sunTransit"></a>
+                    <a name="//apple_ref/objc/Method/-sunTransit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)sunTransit">-sunTransit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns sundial or solar noon. It occurs when the Sun is 
+ <a href="http://en.wikipedia.org/wiki/Transit_%28astronomy%29">http://en.wikipedia.org/wiki/Transit_%28astronomy%29</a> transitting the
+ <a href="http://en.wikipedia.org/wiki/Meridian_%28astronomy%29">http://en.wikipedia.org/wiki/Meridian_%28astronomy%29</a>&ldquo; celestial meridian. In this class it is
+ calculated as halfway between sea level sunrise and sea level sunset, which can be slightly off the real transit
+ time due to changes in declination (the lengthening or shortening day).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="n">sunTransit</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">sunTransit</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the <code>Date</code> representing Sun&rsquo;s transit. If the calculation can&rsquo;t be computed such as in the
+     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+     not set, null will be returned. See detailed explanation on top of the page.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)dateFromTime:"></a>
+                    <a name="//apple_ref/objc/Method/-dateFromTime:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)dateFromTime:">-dateFromTime:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method returns the calculated time
+  as an NSDate object based on the user&rsquo;s time zone
+  and today&rsquo;s date.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">dateFromTime</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">time</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">date</span><span class="p">(</span><span class="n">fromTime</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time as a double.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The calculated time
+as an NSDate object based on the user&rsquo;s time zone
+and today&rsquo;s date.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)dateFromTime:inTimeZone:onDate:"></a>
+                    <a name="//apple_ref/objc/Method/-dateFromTime:inTimeZone:onDate:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)dateFromTime:inTimeZone:onDate:">-dateFromTime:inTimeZone:onDate:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A method that returns the calculated time
+  as an NSDate object based on a given time
+  zone and a given date.</p>
+
+<p>Returns nil if the the <q>time</q> parameter is NAN.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">dateFromTime</span><span class="p">:(</span><span class="kt">double</span><span class="p">)</span><span class="nv">time</span>
+                       <span class="nf">inTimeZone</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="p">)</span><span class="nv">tz</span>
+                           <span class="nf">onDate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">date</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">date</span><span class="p">(</span><span class="n">fromTime</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="k">in</span> <span class="nv">tz</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">,</span> <span class="n">on</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>time</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the time offset from the start of the day, representing hours, minutes, and seconds.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tz</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A timezone to use to calculate the date.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date representing the units larger than hours.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSDate containing the exact time represented by combining the date and time values.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)stringFromDate:forTimeZone:"></a>
+                    <a name="//apple_ref/objc/Method/-stringFromDate:forTimeZone:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)stringFromDate:forTimeZone:">-stringFromDate:forTimeZone:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a formatted string representing the supplied
+  date in the supplied time zone.</p>
+
+<p>This method does not toggle the timezone of the
+  NSDateFormatter that is used, so assume the default
+  calendar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">stringFromDate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">date</span>
+                         <span class="nf">forTimeZone</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="p">)</span><span class="nv">timezone</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="k">for</span> <span class="nv">timezone</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date to display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>timezone</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone to format against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string representation of the supplied date in the supplied time zone.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)stringFromDate:forTimeZone:withSeconds:"></a>
+                    <a name="//apple_ref/objc/Method/-stringFromDate:forTimeZone:withSeconds:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)stringFromDate:forTimeZone:withSeconds:">-stringFromDate:forTimeZone:withSeconds:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a formatted string representing the supplied
+  date in the supplied time zone.</p>
+
+<p>This method does not toggle the timezone of the
+  NSDateFormatter that is used, so assume the default
+  calendar.</p>
+<div class="aside aside-see">
+    <p class="aside-title">See</p>
+    <p>stringFromDate:forTimeZone:</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">stringFromDate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nv">date</span>
+                         <span class="nf">forTimeZone</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="p">)</span><span class="nv">tz</span>
+                         <span class="nf">withSeconds</span><span class="p">:(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">shouldShowSeconds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">string</span><span class="p">(</span><span class="n">from</span> <span class="nv">date</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="k">for</span> <span class="nv">tz</span><span class="p">:</span> <span class="kt">TimeZone</span><span class="p">,</span> <span class="n">withSeconds</span> <span class="nv">shouldShowSeconds</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>date</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The date to display.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tz</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The time zone to format against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shouldShowSeconds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A flag to disable seconds in our final string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string representation of the supplied date in the supplied time zone.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)KCAstronomicalCalendar(im)internalCalendar"></a>
+                    <a name="//apple_ref/objc/Method/-internalCalendar" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCAstronomicalCalendar(im)internalCalendar">-internalCalendar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Expose the internal calendar so the main class can
+  appropriately forward methods.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSCalendar</span> <span class="o">*</span><span class="p">)</span><span class="n">internalCalendar</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">internalCalendar</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Calendar</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-03-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
