@@ -183,7 +183,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 /**
  * A method that returns the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}.
  *
- * @return The <code>Date</code> of the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}. If
+ * @return The `Date` of the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}. If
  *         the calculation can't be computed, null will be returned. See detailed explanation on top of the page.
  */
 
@@ -192,7 +192,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 /**
  * A method that returns the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}.
  *
- * @return The <code>Date</code> of the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}
+ * @return The `Date` of the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}
  *         . If the calculation can't be computed, null will be returned. See detailed explanation on top of the
  *         page.
  */
@@ -202,7 +202,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 /**
  * A method that returns the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH 108&deg;}.
  *
- * @return the <code>Date</code> of the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH
+ * @return the `Date` of the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH
  *         108&deg;}. If the calculation can't be computed, null will be returned. See detailed explanation on top
  *         of the page.
  */
@@ -284,7 +284,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
  * calculated as halfway between sea level sunrise and sea level sunset, which can be slightly off the real transit
  * time due to changes in declination (the lengthening or shortening day).
  *
- * @return the <code>Date</code> representing Sun's transit. If the calculation can't be computed such as in the
+ * @return the `Date` representing Sun's transit. If the calculation can't be computed such as in the
  *         Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
  *         not set, null will be returned. See detailed explanation on top of the page.
  */

@@ -228,7 +228,7 @@ NS_SWIFT_NAME(KCSunriseAndSunsetCalculator)
  *  are based on the level of available light at the
  *	given dip below the horizon, something that is not affected by elevation,
  *	the adjustment should only made if the zenith == 90&deg;
- *	{@link #adjustZenith adjusted} for refraction and solar radius.<br />
+ *	{@link #adjustZenith adjusted} for refraction and solar radius.
  *	The algorithm used is:
  *
  *	<pre>

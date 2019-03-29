@@ -133,7 +133,7 @@
  *
  *  The zenith of 13.24 degrees below geometric zenith (90 degrees).
  *  This calculation is used for calculating *Rabainu Tam's bain hashmashos*
- *  according to some opinions. <br/>
+ *  according to some opinions.
  *
  *  NOTE: See comments on bainHashmashosRT13Point24Degrees for additional
  *  details about the degrees.

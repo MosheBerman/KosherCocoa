@@ -41,7 +41,7 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 @property int ateretTorahSunsetOffset;
 
 /**
- *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
+ *  Method to return a _shaah zmanis_ (temporal hour) calculated using a
  *  19.8&deg; dip.
  *  
  *  This calculation divides the day based on the opinion of the Magen Avraham that the day runs 
@@ -49,8 +49,8 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
  *  eastern geometric horizon before sunrise.
  *  
  *  Dusk for this is when the sun is 19.8&deg; below the western geometric horizon 
- *  after sunset. This day is split into 12 equal parts with each part being a <em>shaah 
- *  zmanis</em>.
+ *  after sunset. This day is split into 12 equal parts with each part being a _shaah 
+ *  zmanis_.
  *
  *  @return long The millisecond length of a shaah zmanis.
  *  
@@ -65,7 +65,7 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (long)shaahZmanis19Point8Degrees;
 
 /**
- *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
+ *  Method to return a _shaah zmanis_ (temporal hour) calculated using a
  *  18&deg; dip.
  *
  *  This calculation divides the day based on the opinion of the Magen Avraham that the day runs
@@ -73,8 +73,8 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
  *  eastern geometric horizon before sunrise.
  *
  *  Dusk for this is when the sun is 18&deg; below the western geometric horizon
- *  after sunset. This day is split into 12 equal parts with each part being a <em>shaah
- *  zmanis</em>.
+ *  after sunset. This day is split into 12 equal parts with each part being a _shaah
+ *  zmanis_.
  *
  *  @return long The millisecond length of a shaah zmanis.
  *
@@ -89,7 +89,7 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (long)shaahZmanis18Degrees;
 
 /**
- *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
+ *  Method to return a _shaah zmanis_ (temporal hour) calculated using a
  *  26&deg; dip.
  *
  *  This calculation divides the day based on the opinion of the Magen Avraham that the day runs
@@ -97,8 +97,8 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
  *  eastern geometric horizon before sunrise.
  *
  *  Dusk for this is when the sun is 26&deg; below the western geometric horizon
- *  after sunset. This day is split into 12 equal parts with each part being a <em>shaah
- *  zmanis</em>.
+ *  after sunset. This day is split into 12 equal parts with each part being a _shaah
+ *  zmanis_.
  *
  *  @return long The millisecond length of a shaah zmanis.
  *
@@ -113,7 +113,7 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (long)shaahZmanis26Degrees;
 
 /**
- *  Method to return a <em>shaah zmanis</em> (temporal hour) calculated using a
+ *  Method to return a _shaah zmanis_ (temporal hour) calculated using a
  *  16.1&deg; dip.
  *
  *  This calculation divides the day based on the opinion that the day runs
@@ -121,8 +121,8 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
  *  eastern geometric horizon before sunrise.
  *
  *  Dusk for this is when the sun is 16.1&deg; below the western geometric horizon
- *  after sunset. This day is split into 12 equal parts with each part being a <em>shaah
- *  zmanis</em>.
+ *  after sunset. This day is split into 12 equal parts with each part being a _shaah
+ *  zmanis_.
  *
  *  @return long The millisecond length of a shaah zmanis.
  *

@@ -572,10 +572,10 @@
 
 /**
  * A method that returns "solar" midnight, or the time when the sun is at its "http://en.wikipedia.org/wiki/Nadir"nadir.
- * <br/>
- * <b>Note:</b> this method is experimental and might be removed.
  * 
- * @return the <code>Date</code> of Solar Midnight (chatzos layla). If the calculation can't be computed such as in
+ * **Note:** this method is experimental and might be removed.
+ * 
+ * @return the `Date` of Solar Midnight (chatzos layla). If the calculation can't be computed such as in
  *         the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it
  *         does not set, a null will be returned. See detailed explanation on top of the
  *         {@link AstronomicalCalendar} documentation.
