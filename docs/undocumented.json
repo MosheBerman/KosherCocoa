@@ -51,128 +51,317 @@
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 28,
+      "line": 27,
       "symbol": "KCHebrewMonth.KCHebrewMonthTishrei",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 29,
+      "line": 28,
       "symbol": "KCHebrewMonth.KCHebrewMonthCheshvan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 30,
+      "line": 29,
       "symbol": "KCHebrewMonth.KCHebrewMonthKislev",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 31,
+      "line": 30,
       "symbol": "KCHebrewMonth.KCHebrewMonthTeves",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 32,
+      "line": 31,
       "symbol": "KCHebrewMonth.KCHebrewMonthShevat",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 33,
+      "line": 32,
       "symbol": "KCHebrewMonth.KCHebrewMonthAdar",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 34,
+      "line": 33,
       "symbol": "KCHebrewMonth.KCHebrewMonthAdar_II",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 35,
+      "line": 34,
       "symbol": "KCHebrewMonth.KCHebrewMonthNissan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 36,
+      "line": 35,
       "symbol": "KCHebrewMonth.KCHebrewMonthIyar",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 37,
+      "line": 36,
       "symbol": "KCHebrewMonth.KCHebrewMonthSivan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 38,
+      "line": 37,
       "symbol": "KCHebrewMonth.KCHebrewMonthTammuz",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 39,
+      "line": 38,
       "symbol": "KCHebrewMonth.KCHebrewMonthAv",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 40,
+      "line": 39,
       "symbol": "KCHebrewMonth.KCHebrewMonthElul",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 58,
-      "symbol": "kHebrewMonth",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 75,
+      "line": 86,
       "symbol": "KCHebrewYearType.KCHebrewYearTypeChaser",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 76,
+      "line": 87,
       "symbol": "KCHebrewYearType.KCHebrewYearTypeKesidran",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 77,
+      "line": 88,
       "symbol": "KCHebrewYearType.KCHebrewYearTypeShalaim",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 26,
+      "symbol": "KCJewishCalendar.inIsrael",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 29,
+      "symbol": "KCJewishCalendar.returnsModernHolidays",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 34,
+      "symbol": "KCJewishCalendar.yomTovIndex",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 37,
+      "symbol": "KCJewishCalendar.isYomTov",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 40,
+      "symbol": "KCJewishCalendar.isCholHamoed",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 43,
+      "symbol": "KCJewishCalendar.isCholHamoedSuccos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 46,
+      "symbol": "KCJewishCalendar.isCholHamoedPesach",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 49,
+      "symbol": "KCJewishCalendar.isErevYomTov",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 52,
+      "symbol": "KCJewishCalendar.isErevRoshChodesh",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 56,
+      "symbol": "KCJewishCalendar.isTaanis",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 60,
+      "symbol": "KCJewishCalendar.dayOfChanukah",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 64,
+      "symbol": "KCJewishCalendar.isChanukah",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 67,
+      "symbol": "KCJewishCalendar.isPurim",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 70,
+      "symbol": "KCJewishCalendar.isRoshChodesh",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 73,
+      "symbol": "KCJewishCalendar.isPesach",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 76,
+      "symbol": "KCJewishCalendar.isShavuos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 79,
+      "symbol": "KCJewishCalendar.isSuccos",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 82,
+      "symbol": "KCJewishCalendar.isSimchasTorah",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
       "line": 85,
-      "symbol": "kYearType",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "symbol": "KCJewishCalendar.isShminiAtzeres",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 111,
+      "symbol": "KCJewishCalendar.-tchilasZmanKidushLevana3DaysForMonth:ofYear:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 134,
+      "symbol": "KCJewishCalendar.-tchilasZmanKidushLevana7DaysForMonth:ofYear:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 231,
+      "symbol": "KCJewishCalendar.-currentHebrewDayOfMonth",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 235,
+      "symbol": "KCJewishCalendar.-currentDayOfTheWeek",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 238,
+      "symbol": "KCJewishCalendar.isCurrentlyHebrewLeapYear",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 247,
+      "symbol": "KCJewishCalendar.-isHebrewLeapYear:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 250,
+      "symbol": "KCJewishCalendar.isKislevShort",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 259,
+      "symbol": "KCJewishCalendar.-lengthOfHebrewYear:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 262,
+      "symbol": "KCJewishCalendar.-currentHebrewYear",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCJewishCalendar.h",
+      "line": 272,
+      "symbol": "KCJewishCalendar.-fridayFollowingDate:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {

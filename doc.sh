@@ -35,6 +35,6 @@ jazzy \
 echo ' >>> Cleaning up...'
 echo '    - Moving back up to parent directory.'
 cd ../; 
-echo '    - Removing tempprary directory.'
+echo '    - Removing temporary directory.'
 rm -rf ./temp;
 echo 'Done!'

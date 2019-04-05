@@ -21,293 +21,198 @@ NS_SWIFT_NAME(JewishCalendar)
 
 
 // MARK: - Properties
- 
 
-/**
- *  Determines if we account for diaspora in our calculations.
- */
+// Determines if we account for diaspora in our calculations.
 @property BOOL inIsrael;
 
-/**
- *  Determines if we consider "modern" holidays,
- *  such as Yom Ha'atzmaut when returning values.
- */
+// Determines if we consider "modern" holidays, such as Yom Ha'atzmaut when returning values.
 @property BOOL returnsModernHolidays;
 
 // MARK: - Holidays
 
-/**
- *  This method returns the index of any holidays that fall on 
- *  the date represented by `[NSDate date]`.
- *
- *  @return An NSInteger corresponding to a value 
- */
+// The index of any holidays that fall on `workingDate`.
+@property (nonatomic, readonly) NSInteger yomTovIndex;
 
-- (NSInteger)yomTovIndex;
+// Determines if the given date is a Jewish Holiday.
+@property (nonatomic, readonly) BOOL isYomTov;
 
-/**
- *  This method determines if the given date is a Jewish Holiday.
- *
- *  @return bool YES for holidays, NO for fast days and chanukah.
- */
+//Determines if the given date is Chol Hamoed of Pesach or Succos.
+@property (nonatomic, readonly) BOOL isCholHamoed;
 
-- (BOOL)isYomTov;
+// Determines if the given date is Chol Hamoed of Succos.
+@property (nonatomic, readonly) BOOL isCholHamoedSuccos;
 
-/**
- *  This method determines if the given date is Chol Hamoed of Pesach or Succos.
- *
- *  @return bool YES if the current day is Chol Hamoed of Pesach or Succos.
- */
+// Determines if the given date is Chol Hamoed of Pesach.
+@property (nonatomic, readonly) BOOL isCholHamoedPesach;
 
-- (BOOL)isCholHamoed;
+// Determines if the current day is erev Yom Tov.
+@property (nonatomic, readonly) BOOL isErevYomTov;
 
-/**
- *  This method determines if the given date is Chol Hamoed of Succos.
- *
- *  @return bool YES if the current day is Chol Hamoed of Succos.
- */
+// Determines if the current day is Erev Rosh.
+@property (nonatomic, readonly) BOOL isErevRoshChodesh;
 
-- (BOOL)isCholHamoedSuccos;
+// Determines if the day is a Taanis (fast day).
+// YES if `workingDate` is 17 of Tammuz, Tisha B'Av, Yom Kippur, Fast of Gedalyah, 10 of Teves or the Fast of Esther.
+@property (nonatomic, readonly) BOOL isTaanis;
 
-/**
- *  This method determines if the given date is Chol Hamoed of Pesach.
- *
- *  @return bool YES if the current day is Chol Hamoed of Pesach.
- */
+// Determines the day of Chanukah.
+// The day of Chanukah, or -1 if it is not Chanukah
+@property (nonatomic, readonly) NSInteger dayOfChanukah;
 
-- (BOOL)isCholHamoedPesach;
+// Determines if the date is Chanukah.
 
-/**
- *  This method determines if the current day is erev Yom Tov.
- *
- *  @return bool YES if the current day is Erev - Pesach, Shavuos, Rosh Hashana, Yom Kippur or Succos.
- */
+@property (nonatomic, readonly) BOOL isChanukah;
 
-- (BOOL)isErevYomTov;
+// Determines if the `workingDate` is Purim.
+@property (nonatomic, readonly) BOOL isPurim;
 
-/**
- *  This method determines if the current day is Erev Rosh
- *  Chodesh.
- *
- *  @return bool YES if the current day is Erev Rosh Chodesh. Returns NO for Erev Rosh Hashana
- */
+// Determines if the `workingDate` is Rosh Chodesh.
+@property (nonatomic, readonly) BOOL isRoshChodesh;
 
-- (BOOL)isErevRoshChodesh;
+// Determines if the `workingDate` is Pesach.
+@property (nonatomic, readonly) BOOL isPesach;
+
+// Determines if the `workingDate` is Shavuos.
+@property (nonatomic, readonly) BOOL isShavuos;
+
+// Determines if the `workingDate` is Succos.
+@property (nonatomic, readonly) BOOL isSuccos;
+
+// Determines if the `workingDate` is Simchas Torah
+@property (nonatomic, readonly) BOOL isSimchasTorah;
+
+// Determines if the `workingDate` is Shemini Atzeres.
+@property (nonatomic, readonly) BOOL isShminiAtzeres;
 
 /**
- *  This method determines if the day is a Taanis (fast day).
- *
- *  @return bool YES if the current day is 17 of Tammuz, Tisha B'Av, Yom Kippur, 
- *  Fast of Gedalyah, 10 of Teves or the Fast of Esther.
- */
-
-- (BOOL)isTaanis;
-
-/**
- *  This method determines the day of Chanukah.
- *
- *  @return NSInteger equal to the number of the day of Chanukah, or -1 if it is not Chanukah
- */
-
-- (NSInteger)dayOfChanukah;
-
-/**
- *  This method determines if the date is Chanukkah
- *
- *  @return bool YES if it is Chanukah
- */
-
-- (BOOL)isChanukah; 
-
-/**
- *  This method determines if Purim
- *
- *  @return bool YES if the day is Purim
- */
-
-- (BOOL)isPurim;
-
-/**
- *  This method determines if the current day is Rosh
- *  Chodesh.
- *
- *  @return bool YES if the current day is Rosh Chodesh. Returns NO for Rosh Hashana
- */
-
-- (BOOL)isRoshChodesh;
-
-/**
- *  This method determines if the date is Pesach
- *
- *  @return bool YES if it is Pesach
- */
-
-- (BOOL)isPesach;
-
-/**
- *  This method determines if the date is Shavuos
- *
- *  @return bool YES if it is Shavuos
- */
-
-- (BOOL)isShavuos;
-
-/**
- *  This method determines if the date is Succos
- *
- *  @return bool YES if it is Succos
- */
-
-- (BOOL)isSuccos;
-
-/**
- *  This method determines if the date is Simchat Torah
- *
- *  @return bool YES if it is Simchat Torah
- */
-
-- (BOOL)isSimchasTorah;
-
-/**
- *  This method determines if the date is Shmini Atzeres
- *
- *  @return bool YES if it is Shmini Atzeres
- */
-
-- (BOOL)isShminiAtzeres;
-
-/**
- *  The traditional calculation uses local time. This
- *  method subtracts 20.94 minutes (20 minutes and 56.496 seconds)
- *  from the local time (Har Habayis with a longitude
- *  of 35.2354&deg; is 5.2354&deg; away from the %15 timezone longitude)to get to standard time.
- *  This method intentionally uses standard time and not daylight savings time.
- *  (Java will implicitly format the time to the default (or set)Timezone) -> is this relevant to Objective C?
- *
- *  @param month an integer representing the month. This method expects 1 for Nissan and 13 for Adar II. Use the constants to avoid any confusion.
- *  @param year The Hebrew year to use in calculating.
- *
- *  @return NSDate equal to the molad in Standard Time in Yerushalayim as a Date.
+ The traditional calculation uses local time. This
+ method subtracts 20.94 minutes (20 minutes and 56.496 seconds)
+ from the local time (Har Habayis with a longitude
+ of 35.2354&deg; is 5.2354&deg; away from the %15 timezone longitude)to get to standard time.
+ This method intentionally uses standard time and not daylight savings time.
+ 
+ @param month an integer representing the month. This method expects 1 for Nissan and 13 for Adar II. Use the constants to avoid any confusion.
+ @param year The Hebrew year to use in calculating.
+ 
+ @return NSDate equal to the molad in Standard Time in Yerushalayim as a Date.
  */
 
 - (nullable NSDate *)moladAsDateForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
-/**
- *  Currently returns the time even if it is during the day. It should return
- *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
- *
- *  @param month The Hebrew month to use in calculating.
- *  @param year The Hebrew year to use in calculating.
- *
- *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
+/*
+ Currently returns the time even if it is during the day. It should return
+ the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
+ 
+ @param month The Hebrew month to use in calculating.
+ @param year The Hebrew year to use in calculating.
+ 
+ @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
-
 - (nullable NSDate *)tchilasZmanKidushLevana3DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
- *  Currently returns the time even if it is during the day. It should return
- *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
- *
- *  @param date The date to calculate for.
- *
- *  @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
+ Currently returns the time even if it is during the day. It should return
+ the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
+ 
+ @param date The date to calculate for.
+ 
+ @return NSDate earliest time of Kiddush Levana calculated as 3 days after the molad.
  */
 
 - (nullable NSDate *)tchilasZmanKidushLevana3DaysForDate:(nonnull NSDate *)date;
 
-/**
- *  Currently returns the time even if it is during the day. It should return
- *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
- *
- *  @param month The Hebrew month to use in calculating.
- *  @param year The Hebrew year to use in calculating.
- *
- *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
+/*
+ Currently returns the time even if it is during the day. It should return
+ the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
+ 
+ @param month The Hebrew month to use in calculating.
+ @param year The Hebrew year to use in calculating.
+ 
+ @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
 
 - (nullable NSDate *)tchilasZmanKidushLevana7DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
- *  Currently returns the time even if it is during the day. It should return
- *  the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
- *
- *  @param date The date to calculate for.
- *
- *  @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
+ Currently returns the time even if it is during the day. It should return
+ the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
+ 
+ @param date The date to calculate for.
+ 
+ @return NSDate earliest time of Kiddush Levana calculated as 7 days after the molad.
  */
 
 - (nullable NSDate *)tchilasZmanKidushLevana7DaysForDate:(nonnull NSDate *)date;
 
 /**
- *  Calculates the latest time of Kiddush Levana according to the
- *  Maharil's opinion that it is calculated as halfway between molad and molad.
- *  This adds half the 29 days, 12 hours and 793 chalakim time between molad and
- *  molad (14 days, 18 hours, 22 minutes and 666 milliseconds)to the month's molad.
- *
- *  @discussion Currently returns the time even if it is during the day. It should return the 72 Minute Alos prior to the time if the zman is between Alos and Tzais.
- *
- *  @param month The Hebrew month to use in calculating.
- *  @param year The Hebrew year to use in calculating.
- *
- *  @return NSDate latest time of Kiddush Levana between Moldos
+ Calculates the latest time of Kiddush Levana according to the
+ Maharil's opinion that it is calculated as halfway between molad and molad.
+ This adds half the 29 days, 12 hours and 793 chalakim time between molad and
+ molad (14 days, 18 hours, 22 minutes and 666 milliseconds)to the month's molad.
+ 
+ @discussion Currently returns the time even if it is during the day. It should return the 72 Minute Alos prior to the time if the zman is between Alos and Tzais.
+ 
+ @param month The Hebrew month to use in calculating.
+ @param year The Hebrew year to use in calculating.
+ 
+ @return NSDate latest time of Kiddush Levana between Moldos
  */
 
 - (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /**
- *  Calculates the latest time of Kiddush Levana according to the
- *  Maharil's opinion that it is calculated as halfway between molad and molad.
- *  This adds half the 29 days, 12 hours and 793 chalakim time between molad and
- *  molad (14 days, 18 hours, 22 minutes and 666 milliseconds)to the month's molad.
- *
- *  @discussion Currently returns the time even if it is during the day. It should return the 72 Minute Alos prior to the time if the zman is between Alos and Tzais.
- *
- *  @param date The date to calculate for.
- *
- *  @return NSDate latest time of Kiddush Levana between Moldos
+ Calculates the latest time of Kiddush Levana according to the
+ Maharil's opinion that it is calculated as halfway between molad and molad.
+ This adds half the 29 days, 12 hours and 793 chalakim time between molad and
+ molad (14 days, 18 hours, 22 minutes and 666 milliseconds)to the month's molad.
+ 
+ @discussion Currently returns the time even if it is during the day. It should return the 72 Minute Alos prior to the time if the zman is between Alos and Tzais.
+ 
+ @param date The date to calculate for.
+ 
+ @return NSDate latest time of Kiddush Levana between Moldos
  */
 
 - (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(nonnull NSDate *)date;
 
 /**
- *  This is the opinion brought down in the Shulchan Aruch (Orach Chaim 426).
- *  It should be noted that some opinions hold that the Rema who brings down the opinion
- *  of the Maharil's of calculating half way between molad and molad is of the opinion
- *  that the Mechaber agrees to his opinion. Also see the Aruch Hashulchan.
- *  For additional details on the subject, See Rabbi Dovid Heber's very detailed writeup
- *  in Siman Daled (chapter 4)of Shaarei Zmanim http://www.worldcat.org/oclc/461326125.
- *
- *  Note: Currently returns the time even if it is during the day.
- *  It should return the  Alos prior to the time if the zman is between Alos and Tzais.
- *
- *  @param month The Hebrew month to use in calculating.
- *  @param year The Hebrew year to use in calculating.
- *
- *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
+ This is the opinion brought down in the Shulchan Aruch (Orach Chaim 426).
+ It should be noted that some opinions hold that the Rema who brings down the opinion
+ of the Maharil's of calculating half way between molad and molad is of the opinion
+ that the Mechaber agrees to his opinion. Also see the Aruch Hashulchan.
+ For additional details on the subject, See Rabbi Dovid Heber's very detailed writeup
+ in Siman Daled (chapter 4)of Shaarei Zmanim http://www.worldcat.org/oclc/461326125.
+ 
+ Note: Currently returns the time even if it is during the day.
+ It should return the  Alos prior to the time if the zman is between Alos and Tzais.
+ 
+ @param month The Hebrew month to use in calculating.
+ @param year The Hebrew year to use in calculating.
+ 
+ @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
 
 - (nullable NSDate *)sofZmanKidushLevana15DaysForMonth:(NSInteger)month ofYear:(NSInteger)year;
 /**
- *  This is the opinion brought down in the Shulchan Aruch (Orach Chaim 426).
- *  It should be noted that some opinions hold that the Rema who brings down the opinion
- *  of the Maharil's of calculating half way between molad and molad is of the opinion
- *  that the Mechaber agrees to his opinion. Also see the Aruch Hashulchan.
- *  For additional details on the subject, See Rabbi Dovid Heber's very detailed writeup
- *  in Siman Daled (chapter 4)of Shaarei Zmanim http://www.worldcat.org/oclc/461326125.
- *
- *  @discussion Currently returns the time even if it is during the day. It should return the  Alos prior to the time if the zman is between Alos and Tzais.
- *
- *  @param date The date to calculate for.
- *
- *  @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
+ This is the opinion brought down in the Shulchan Aruch (Orach Chaim 426).
+ It should be noted that some opinions hold that the Rema who brings down the opinion
+ of the Maharil's of calculating half way between molad and molad is of the opinion
+ that the Mechaber agrees to his opinion. Also see the Aruch Hashulchan.
+ For additional details on the subject, See Rabbi Dovid Heber's very detailed writeup
+ in Siman Daled (chapter 4)of Shaarei Zmanim http://www.worldcat.org/oclc/461326125.
+ 
+ @discussion Currently returns the time even if it is during the day. It should return the  Alos prior to the time if the zman is between Alos and Tzais.
+ 
+ @param date The date to calculate for.
+ 
+ @return NSDate latest time of Kiddush Levana calculated as 15 days after the molad.
  */
-
 - (nullable NSDate *)sofZmanKidushLevana15DaysForDate:(nonnull NSDate *)date;
 
 /**
- *  Returns the Daf Yomi (Bavli) for the date the calendar is set to
- *
- *  @return KCDaf object corresponding to the date
+ Returns the Daf Yomi (Bavli) for the date the calendar is set to
+ 
+ @return KCDaf object corresponding to the date
  */
 
 - (nonnull KCDaf *)dafYomiBavli;
@@ -315,79 +220,53 @@ NS_SWIFT_NAME(JewishCalendar)
 #pragma mark - Calendar Utility Methods
 
 /**
- *  Returns the current hebrew month
- *
- *  @return NSInteger corresponding to the current Hebrew month
+ Returns the current hebrew month
+ 
+ @return NSInteger corresponding to the current Hebrew month
  */
 
 - (NSInteger)currentHebrewMonth;
 
-/**
- *  Returns the day of the current hebrew month
- *
- *  @return NSInteger corresponding to the day of the current Hebrew month
- */
-
+//  Determines the day of the hebrew month.
 - (NSInteger)currentHebrewDayOfMonth;
 
-/**
- *  Returns the current day of the civil week (i.e. days starting @ midnight)
- *
- *  @return NSInteger corresponding to the current day of the civil week
- */
 
+// Determines current day of the civil week (i.e. days starting @ midnight)
 - (NSInteger)currentDayOfTheWeek;
 
-/**
- *  Determine if the current Hebrew year is a leap year
- *
- *  @return bool YES if it is a leap year
+// Determine if the current Hebrew year is a leap year
+@property (nonatomic, readonly) BOOL isCurrentlyHebrewLeapYear;
+
+/*
+ Determine if the parameter Hebrew year is a leap year
+ 
+ @param year A hebrew year.
+ 
+ @return bool YES if it is a leap year
  **/
+- (BOOL) isHebrewLeapYear:(NSInteger)year;
 
-- (BOOL)isCurrentlyHebrewLeapYear;
+// Determine if the month of Kislev is short this year.
+@property (nonatomic, readonly) BOOL isKislevShort;
 
-/**
- *  Determine if the parameter Hebrew year is a leap year
- *
- *  @param year A hebrew year.
- *
- *  @return bool YES if it is a leap year
- **/
-
-- (BOOL)isHebrewLeapYear:(NSInteger)year;
-
-/**
- *  Determine if the month of Kislev is short this year.
- *
- *  @return bool YES if Kislef is short
- **/
-
-- (BOOL)isKislevShort;
-
-/**
- *  Returns the length of the parameter Hebrew year
- *
- *  @param year A hebrew year.
- *
- *  @return NSInteger corresponding to the number of days of the year
- **/
-
+/*
+ Returns the length of the parameter Hebrew year
+ 
+ @param year A hebrew year.
+ 
+ @return NSInteger corresponding to the number of days of the year
+ */
 - (NSInteger)lengthOfHebrewYear:(NSInteger)year;
 
-/**
- *  Returns the current Hebrew Year
- *
- *  @return NSInteger
- **/
-
+// The current Hebrew Year
 - (NSInteger)currentHebrewYear;
 
-/**
- *  Returns the friday following a given date
- *
- *  @param workingDate The date to calculate for.
- *
- *  @return NSDate
+/*
+ Returns the friday following a given date
+ 
+ @param workingDate The date to calculate for.
+ 
+ @return NSDate
  **/
 
 - (nullable NSDate *)fridayFollowingDate:(nonnull NSDate *)workingDate;
