@@ -14,6 +14,7 @@
 #import "KCAstronomical.h"
 #import "KCBearing.h"
 #import "KCHebrewYear.h"
+#import "KCHebrewMonth.h"
 #import "KCJewishHolidays.h"
 #import "KCMolad.h"
 #import "KCSunCalculationTypes.h"

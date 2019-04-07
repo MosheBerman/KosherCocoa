@@ -8,6 +8,8 @@
  *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 #import "MBCalendarCategories.h"
+#import "KCHebrewYear.h"
+#import "KCWeekday.h"
 
 @implementation NSCalendar (HebrewYearTypes)
 

@@ -13,87 +13,72 @@
 #ifndef __KC_HEBREW_YEAR_H
 #define __KC_HEBREW_YEAR_H
 
-/**
- The months of the Hebrew Calendar, as an enumerated type.
- 
- - Note: It's important to note that Adar II is always considered
- to be the the seventh month by the Foundation framework.
- 
- Other languages or environments may handle Hebrew leap
- years differently.
- */
-
-typedef NS_ENUM(NSUInteger, KCHebrewMonth) {
-    KCHebrewMonthTishrei = 1,
-    KCHebrewMonthCheshvan,
-    KCHebrewMonthKislev,
-    KCHebrewMonthTeves,
-    KCHebrewMonthShevat,
-    KCHebrewMonthAdar,
-    KCHebrewMonthAdar_II,
-    KCHebrewMonthNissan,
-    KCHebrewMonthIyar,
-    KCHebrewMonthSivan,
-    KCHebrewMonthTammuz,
-    KCHebrewMonthAv,
-    KCHebrewMonthElul
-} NS_SWIFT_NAME(HebrewMonth);
-
-/// @deprecated
-#define kTishrei KCHebrewMonthTishrei
-/// @deprecated
-#define kCheshvan KCHebrewMonthCheshvan
-/// @deprecated
-#define kKislev KCHebrewMonthKislev
-/// @deprecated
-#define kTeves KCHebrewMonthTeves
-/// @deprecated
-#define kShevat KCHebrewMonthShevat
-/// @deprecated
-#define kAdar KCHebrewMonthAdar
-/// @deprecated
-#define kAdar_II KCHebrewMonthAdar_II
-/// @deprecated
-#define kNissan KCHebrewMonthNissan
-/// @deprecated
-#define kIyar KCHebrewMonthIyar
-/// @deprecated
-#define kSivan KCHebrewMonthSivan
-/// @deprecated
-#define kTammuz KCHebrewMonthTammuz
-/// @deprecated
-#define kAv KCHebrewMonthAv
-/// @deprecated
-#define kElul KCHebrewMonthElul
-
-/// @deprecated
-typedef KCHebrewMonth kHebrewMonth;
-
 
 /**
- The three kinds of Hebrew years.
  
- @discussion:   Another way of thinking about this is a composite of
-                leap years (with 13 months instead of 12) and leap months. (Leap months contain 30 days instead
- of the 29 they would otherwise contain. Two months
- of the Hebrew calendar can be leap months.)
+ A type representing a hebrew year configuration.
  
- - KCYearTypeChaser: A "defective" year has either 353 days long, or in a leap year, 383 days.
- - KCYearTypeKesidran: A "common" year is 354 days long, or in a leap year, 384 days.
- - KCYearTypeShalaim: A "complete" year is 355 days long, or in a leap year, 383 days.
+ There are fourteen year configurations, as per
+ Arthur Spier, 'The Comprehensive Hebrew Calendar,
+ 3rd ed' (Behrman House 1986, ISBN 087306-398-8.)
+ 
+ Each configuration composites the weekday of 1 Tishri,
+ the number of days in the year, and if the year
+ contains Adar II.
+ 
  */
-typedef NS_ENUM(NSUInteger, KCHebrewYearType) {
-    KCHebrewYearTypeChaser,
-    KCHebrewYearTypeKesidran,
-    KCHebrewYearTypeShalaim,
-} NS_SWIFT_NAME(HebrewYearType);
 
-// Backwards Compatibility...
-#define kChaser KCYearTypeChaser
-#define kKesidran KCYearTypeKesidran
-#define kShalaim KCYearTypeShalaim
+typedef NS_ENUM(NSUInteger, kHebrewYearType)
+{
+    kHebrewYearTypeA = 0, //  Monday,     353, regular
+    kHebrewYearTypeB,     //  Shabbat,    353, regular
+    kHebrewYearTypeC,     //  Tuesday,    354, regular
+    kHebrewYearTypeD,     //  Thursday,   354, regular
+    kHebrewYearTypeE,     //  Monday,     355, regular
+    kHebrewYearTypeF,     //  Thursday,   355, regular
+    kHebrewYearTypeG,     //  Shabbat,    355, regular    -----
+    kHebrewYearTypeH,     //  Monday,     383, leap       -----
+    kHebrewYearTypeI,     //  Thursday,   383, leap
+    kHebrewYearTypeJ,     //  Shabbat,    383, leap
+    kHebrewYearTypeK,     //  Tuesday,    384, leap
+    kHebrewYearTypeL,     //  Monday,     385, leap
+    kHebrewYearTypeM,     //  Thursday,   385, leap
+    kHebrewYearTypeN,     //  Shabbat,    385, leap
+};
 
-/// @deprecated
-typedef KCHebrewYearType kYearType;
+/**
+ *  A type representing the length of a hebrew year.
+ *
+ *  There are 6 possible lengths (in days) that a Hebrew year can be.
+ *  They are: 353, 354, 355, 383, 384, and 385 days. A year that has
+ *  353 days is "short", a year with 354 is "regular", 355 is "long."
+ *
+ *  The 30 day discrepancy will occur in leap years because
+ *  of the extra month. The "length" of the year is the same as
+ *  if there was no extra month. (383 is the same as 353.)
+ *
+ */
+
+typedef NS_ENUM(NSInteger, kYearLength)
+{
+    kYearLengthShort = 0,    //  Years that are 353/383 days long "Chaseir"
+    kYearLengthRegular,      //  Years that are 354/384 days long "Kesidran"
+    kYearLengthLong          //  Years that are 355/385 days long "Shaleim"
+};
+
+///**
+// The three kinds of Hebrew years.
+//
+//
+// - KCHebrewYearTypeKesidran: A "common" year is 354 days long, or in a leap year, 384 days.
+// - KCHebrewYearTypeShalaim: A "complete" year is 355 days long, or in a leap year, 383 days.
+// */
+//typedef NS_ENUM(NSUInteger, KCHebrewYearType) {
+//
+//    /// A "defective" year has either 353 days long, or in a leap year, 383 days.
+//    KCHebrewYearTypeChaser,
+//    KCHebrewYearTypeKesidran,
+//    KCHebrewYearTypeShalaim,
+//} NS_SWIFT_NAME(HebrewYearType);
 
 #endif // __KC_HEBREW_YEAR_H

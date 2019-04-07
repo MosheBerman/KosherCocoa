@@ -30,7 +30,8 @@ jazzy \
   --framework-root ./ \
   --output ../docs \
   --readme ../README.md \
-  --github-url https://github.com/MosheBerman/Koshercocoa
+  --github_url https://github.com/mosheberman/KosherCocoa
+
 
 echo ' >>> Cleaning up...'
 echo '    - Moving back up to parent directory.'

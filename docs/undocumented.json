@@ -50,113 +50,120 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 27,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 31,
       "symbol": "KCHebrewMonth.KCHebrewMonthTishrei",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 28,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 32,
       "symbol": "KCHebrewMonth.KCHebrewMonthCheshvan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 29,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 33,
       "symbol": "KCHebrewMonth.KCHebrewMonthKislev",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 30,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 34,
       "symbol": "KCHebrewMonth.KCHebrewMonthTeves",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 31,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 35,
       "symbol": "KCHebrewMonth.KCHebrewMonthShevat",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 32,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 36,
       "symbol": "KCHebrewMonth.KCHebrewMonthAdar",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 33,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 37,
       "symbol": "KCHebrewMonth.KCHebrewMonthAdar_II",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 34,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 38,
       "symbol": "KCHebrewMonth.KCHebrewMonthNissan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 35,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 39,
       "symbol": "KCHebrewMonth.KCHebrewMonthIyar",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 36,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 40,
       "symbol": "KCHebrewMonth.KCHebrewMonthSivan",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 37,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 41,
       "symbol": "KCHebrewMonth.KCHebrewMonthTammuz",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 38,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 42,
       "symbol": "KCHebrewMonth.KCHebrewMonthAv",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 39,
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 43,
       "symbol": "KCHebrewMonth.KCHebrewMonthElul",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewMonth.h",
+      "line": 44,
+      "symbol": "KCHebrewMonth.KCHebrewMonthTishri",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 86,
+      "line": 25,
       "symbol": "KCHebrewYearType.KCHebrewYearTypeChaser",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 87,
+      "line": 26,
       "symbol": "KCHebrewYearType.KCHebrewYearTypeKesidran",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/mosheberman/code/ios/koshercocoa/temp/KosherCocoa/KCHebrewYear.h",
-      "line": 88,
+      "line": 27,
       "symbol": "KCHebrewYearType.KCHebrewYearTypeShalaim",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"

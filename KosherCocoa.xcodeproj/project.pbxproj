@@ -76,6 +76,7 @@
 		469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469066551F4A7090009E5D46 /* KosherCocoa.podspec */; };
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
+		F54BAF7E225A4191003F3BFE /* KCHebrewMonth.h in Headers */ = {isa = PBXBuildFile; fileRef = F54BAF7D225A4191003F3BFE /* KCHebrewMonth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F57786C121AB914E00208DFF /* KCLocationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786BF21AB914E00208DFF /* KCLocationController.h */; };
 		F57786C221AB914E00208DFF /* KCLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57786C021AB914E00208DFF /* KCLocationController.m */; };
 		F57786C521AC410600208DFF /* KCLocationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786C421AC410600208DFF /* KCLocationTypes.h */; };
@@ -177,6 +178,8 @@
 		46DB495C1D9837D100F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F54BAF7D225A4191003F3BFE /* KCHebrewMonth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCHebrewMonth.h; sourceTree = "<group>"; };
+		F54BAF96225A5266003F3BFE /* KCWeekday.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCWeekday.h; sourceTree = "<group>"; };
 		F57786BF21AB914E00208DFF /* KCLocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCLocationController.h; sourceTree = "<group>"; };
 		F57786C021AB914E00208DFF /* KCLocationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCLocationController.m; sourceTree = "<group>"; };
 		F57786C421AC410600208DFF /* KCLocationTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCLocationTypes.h; sourceTree = "<group>"; };
@@ -444,6 +447,8 @@
 				466A3AF617CAF3B900056F16 /* KCBearing.h */,
 				466A3AF717CAF3B900056F16 /* KCConstants.h */,
 				466A3AF817CAF3B900056F16 /* KCHebrewYear.h */,
+				F54BAF96225A5266003F3BFE /* KCWeekday.h */,
+				F54BAF7D225A4191003F3BFE /* KCHebrewMonth.h */,
 				466A3AF917CAF3B900056F16 /* KCJewishHolidays.h */,
 				466A3AFA17CAF3B900056F16 /* KCMolad.h */,
 				466A3AFB17CAF3B900056F16 /* KCSunCalculationTypes.h */,
@@ -508,6 +513,7 @@
 				4618ED101BF44B5F00C33159 /* KCSefiratHaomerCalculator.h in Headers */,
 				4618ED301BF4516900C33159 /* KCMolad.h in Headers */,
 				4618ED161BF44B7D00C33159 /* KCZman.h in Headers */,
+				F54BAF7E225A4191003F3BFE /* KCHebrewMonth.h in Headers */,
 				4618ED001BF44AD500C33159 /* KCSunriseAndSunsetCalculator.h in Headers */,
 				4618ED0D1BF44B3400C33159 /* KCParashatHashavuaCalculator.h in Headers */,
 				4618ED341BF4516900C33159 /* KCZenithExtended.h in Headers */,
