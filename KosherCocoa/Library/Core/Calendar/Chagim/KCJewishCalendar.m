@@ -307,7 +307,7 @@
     
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
     
-    NSDate *date = [self workingDateAdjustedForSunset];
+    NSDate *date = [self workingDate];
     
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setYear:[hebrewCalendar component:NSCalendarUnitYear fromDate:date]];
