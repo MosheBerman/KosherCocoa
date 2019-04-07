@@ -47,7 +47,7 @@ class KCJewishCalendarTests: XCTestCase {
         
         jewishCalendar.workingDate = firstNightOfChanuka
         
-        let nightOfChanuka = jewishCalendar.dayOfChanukah()
+        let nightOfChanuka = jewishCalendar.dayOfChanukah
         
         XCTAssertEqual(nightOfChanuka, 1)
     }
@@ -74,7 +74,7 @@ class KCJewishCalendarTests: XCTestCase {
             
             jewishCalendar.workingDate = firstNightOfChanuka
             
-            let nightOfChanuka = jewishCalendar.dayOfChanukah()
+            let nightOfChanuka = jewishCalendar.dayOfChanukah
             
             XCTAssertEqual(nightOfChanuka, 1)
         }
@@ -107,7 +107,7 @@ class KCJewishCalendarTests: XCTestCase {
             
             jewishCalendar.workingDate = nthNight
             
-            let nightOfChanuka = jewishCalendar.dayOfChanukah()
+            let nightOfChanuka = jewishCalendar.dayOfChanukah
             let expectedNight = offset + 1
             let dateString = dateFormatter.string(from: nthNight)
             
@@ -148,7 +148,7 @@ class KCJewishCalendarTests: XCTestCase {
                 
                 jewishCalendar.workingDate = nthNight
                 
-                let nightOfChanuka = jewishCalendar.dayOfChanukah()
+                let nightOfChanuka = jewishCalendar.dayOfChanukah
                 let expectedNight = offset + 1
                 let dateString = dateFormatter.string(from: nthNight)
                 
@@ -183,7 +183,7 @@ class KCJewishCalendarTests: XCTestCase {
         jewishCalendar.workingDate = gregorianDateBeforeChanuka
         
         // First test that before sunset (the initial 12/12/17 date object) is not Night 1-8
-        XCTAssertFalse(jewishCalendar.isChanukah())
+        XCTAssertFalse(jewishCalendar.isChanukah)
     }
     
     
@@ -229,7 +229,7 @@ class KCJewishCalendarTests: XCTestCase {
         let afterSunsetString = "After Sunset: \(dateFormatter.string(from: afterSunset))"
         
         // First test that before sunset (the initial 12/12/17 date object) is not Night 1-8
-        XCTAssertTrue(jewishCalendar.isChanukah(), "\(before) \(sunsetString) \(afterSunsetString)")
+        XCTAssertTrue(jewishCalendar.isChanukah, "\(before) \(sunsetString) \(afterSunsetString)")
     }
     
     
