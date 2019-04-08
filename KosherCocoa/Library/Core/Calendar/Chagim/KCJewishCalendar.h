@@ -20,68 +20,103 @@ NS_SWIFT_NAME(JewishCalendar)
 @interface KCJewishCalendar : KCComplexZmanimCalendar
 
 
-// MARK: - Properties
+// MARK: - Israel
 
-// Determines if we account for diaspora in our calculations.
-@property BOOL inIsrael;
+/**
+ Determines if we account for diaspora in our calculations.
+ */
+@property (nonatomic) BOOL inIsrael;
 
-// Determines if we consider "modern" holidays, such as Yom Ha'atzmaut when returning values.
-@property BOOL returnsModernHolidays;
+/**
+ Determines if we consider "modern" holidays, such as Yom Ha'atzmaut when returning values.
+ */
+@property (nonatomic) BOOL returnsModernHolidays;
 
 // MARK: - Holidays
 
-// The index of any holidays that fall on `workingDate`.
+/**
+ The index of any holidays that fall on `workingDate`.
+ */
 @property (nonatomic, readonly) NSInteger yomTovIndex;
 
-// Determines if the given date is a Jewish Holiday.
+/**
+ Determines if the given date is a Jewish Holiday.
+ */
 @property (nonatomic, readonly) BOOL isYomTov;
 
-//Determines if the given date is Chol Hamoed of Pesach or Succos.
+/**
+ Determines if the given date is Chol Hamoed of Pesach or Succos.
+ */
 @property (nonatomic, readonly) BOOL isCholHamoed;
 
-// Determines if the given date is Chol Hamoed of Succos.
+/**
+ Determines if the given date is Chol Hamoed of Succos.
+ */
 @property (nonatomic, readonly) BOOL isCholHamoedSuccos;
 
-// Determines if the given date is Chol Hamoed of Pesach.
+/**
+ Determines if the given date is Chol Hamoed of Pesach.
+ */
 @property (nonatomic, readonly) BOOL isCholHamoedPesach;
 
-// Determines if the current day is erev Yom Tov.
+/**
+ Determines if the current day is erev Yom Tov.
+ */
 @property (nonatomic, readonly) BOOL isErevYomTov;
 
-// Determines if the current day is Erev Rosh.
+/**
+ Determines if the current day is Erev Rosh.
+ */
 @property (nonatomic, readonly) BOOL isErevRoshChodesh;
 
-// Determines if the day is a Taanis (fast day).
-// YES if `workingDate` is 17 of Tammuz, Tisha B'Av, Yom Kippur, Fast of Gedalyah, 10 of Teves or the Fast of Esther.
+/**
+ Determines if the day is a Taanis (fast day).
+ `YES` if `workingDate` is 17 of Tammuz, Tisha B'Av, Yom Kippur, Fast of Gedalyah, 10 of Teves or the Fast of Esther.
+ */
 @property (nonatomic, readonly) BOOL isTaanis;
 
-// Determines the day of Chanukah.
-// The day of Chanukah, or -1 if it is not Chanukah
+/**
+ The day of Chanukah, or -1 if it is not Chanukah
+ */
 @property (nonatomic, readonly) NSInteger dayOfChanukah;
 
-// Determines if the date is Chanukah.
-
+/**
+ Determines if the date is Chanukah.
+ */
 @property (nonatomic, readonly) BOOL isChanukah;
 
-// Determines if the `workingDate` is Purim.
+/**
+ Determines if the `workingDate` is Purim.
+ */
 @property (nonatomic, readonly) BOOL isPurim;
 
-// Determines if the `workingDate` is Rosh Chodesh.
+/** Determines if the `workingDate` is Rosh Chodesh.
+ */
 @property (nonatomic, readonly) BOOL isRoshChodesh;
 
-// Determines if the `workingDate` is Pesach.
+/**
+ Determines if the `workingDate` is Pesach.
+ */
 @property (nonatomic, readonly) BOOL isPesach;
 
-// Determines if the `workingDate` is Shavuos.
+/**
+ Determines if the `workingDate` is Shavuos.
+ */
 @property (nonatomic, readonly) BOOL isShavuos;
 
-// Determines if the `workingDate` is Succos.
+/**
+ Determines if the `workingDate` is Succos.
+ */
 @property (nonatomic, readonly) BOOL isSuccos;
 
-// Determines if the `workingDate` is Simchas Torah
+/**
+ Determines if the `workingDate` is Simchas Torah
+ */
 @property (nonatomic, readonly) BOOL isSimchasTorah;
 
-// Determines if the `workingDate` is Shemini Atzeres.
+/**
+ Determines if the `workingDate` is Shemini Atzeres.
+ */
 @property (nonatomic, readonly) BOOL isShminiAtzeres;
 
 /**
@@ -96,7 +131,6 @@ NS_SWIFT_NAME(JewishCalendar)
  
  @return NSDate equal to the molad in Standard Time in Yerushalayim as a Date.
  */
-
 - (nullable NSDate *)moladAsDateForMonth:(NSInteger)month ofYear:(NSInteger)year;
 
 /*
@@ -227,48 +261,54 @@ NS_SWIFT_NAME(JewishCalendar)
 
 - (NSInteger)currentHebrewMonth;
 
-//  Determines the day of the hebrew month.
-- (NSInteger)currentHebrewDayOfMonth;
+/**
+ Determines the day of the hebrew month.
+ */
+@property (nonatomic) NSInteger currentHebrewDayOfMonth;
 
+/**
+ Determines current day of the civil week (i.e. days starting @ midnight)
+ */
+@property (nonatomic) NSInteger currentDayOfTheWeek;
 
-// Determines current day of the civil week (i.e. days starting @ midnight)
-- (NSInteger)currentDayOfTheWeek;
-
-// Determine if the current Hebrew year is a leap year
+/**
+ Determines if the current Hebrew year is a leap year.
+ */
 @property (nonatomic, readonly) BOOL isCurrentlyHebrewLeapYear;
 
-/*
- Determine if the parameter Hebrew year is a leap year
+/**
+ Determines if the parameter Hebrew year is a leap year.
  
  @param year A hebrew year.
- 
- @return bool YES if it is a leap year
- **/
+ @return `YES` if it is a leap year, otherwise `NO`.
+ */
 - (BOOL) isHebrewLeapYear:(NSInteger)year;
 
-// Determine if the month of Kislev is short this year.
+/**
+ Determine if the month of Kislev is short this year.
+ */
 @property (nonatomic, readonly) BOOL isKislevShort;
 
-/*
- Returns the length of the parameter Hebrew year
+/**
+ The current Hebrew year.
+ */
+@property (nonatomic) NSInteger currentHebrewYear;
+
+
+/**
+ Determines the length of the the Hebrew year, `year`.
  
  @param year A hebrew year.
- 
  @return NSInteger corresponding to the number of days of the year
  */
 - (NSInteger)lengthOfHebrewYear:(NSInteger)year;
 
-// The current Hebrew Year
-- (NSInteger)currentHebrewYear;
-
-/*
- Returns the friday following a given date
+/**
+ Determines the friday following a given date.
  
  @param workingDate The date to calculate for.
- 
- @return NSDate
+ @return A date representing friday on, or after `workdingDate`.
  **/
-
 - (nullable NSDate *)fridayFollowingDate:(nonnull NSDate *)workingDate;
 
 @end
