@@ -9,13 +9,15 @@
 #import "KCJewishHoliday.h"
 #import "KCJewishHolidays.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation KCJewishHoliday
 
 /**
  *  A convenience accessor to get a holiday from an index.
  */
 
-+ (nonnull instancetype)holidayWithIndex:(NSInteger)index
++ (nullable instancetype)holidayWithIndex:(NSInteger)index
 {
     KCJewishHoliday *holiday = [[KCJewishHoliday alloc] init];
     
@@ -25,9 +27,8 @@
 }
 
 /**
- *  @return the hebrew name of the holiday.
+ The hebrew name of the holiday.
  */
-
 - (NSString *)name
 {
     NSDictionary *names = [self names][self.holidayIndex];
@@ -36,9 +37,8 @@
 }
 
 /**
- *  @return the transliterad hebrew name of the holiday.
+ The transliterated hebrew name of the holiday.
  */
-
 - (NSString *)nameTransliterated
 {
     NSDictionary *names = [self names][self.holidayIndex];
@@ -94,3 +94,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
