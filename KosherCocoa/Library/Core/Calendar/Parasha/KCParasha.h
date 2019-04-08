@@ -11,6 +11,8 @@
 @import Foundation;
 #import "KCParashaReadings.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  A class that represents a weekly parasha 
  */
@@ -49,23 +51,17 @@ NS_SWIFT_NAME(Parasha)
 
 // MARK: - Human Readable Parasha Names
 
-/**
- *  This method returns the name of the parasha, transliterated into English
- *
- *  @return A string composed of hebrew characters that 
- *  corresponds to the instance's identifier.
- */
-
-- (nonnull NSString *)name; //  The hebrew name of the parasha
 
 /**
- *  This method returns the hebrew name of the parasha.
- *
- *  @return A string composed of english characters that
- *  spells out the hebrew name that corresponds to the
- *  instance's identifier.
+ A string with hebrew name of the parsha, spelled in Hebrew characters.
  */
+@property (nonatomic, readonly) NSString *name;
 
-- (nonnull NSString *)nameTransliterated;   //  The name of the parasha, transliterated into English
+/**
+ A string with hebrew name of the parsha, spelled in English characters.
+ */
+@property (nonatomic, readonly) NSString *nameTransliterated;
 
 @end
+
+NS_ASSUME_NONNULL_END
