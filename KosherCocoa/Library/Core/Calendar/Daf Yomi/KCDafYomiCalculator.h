@@ -8,8 +8,12 @@
  *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
+
+
 @import Foundation;
 #import "KCDaf.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  This class calculates the current Daf Yomi being studied.
@@ -17,46 +21,43 @@
 NS_SWIFT_NAME(DafYomiCalculator)
 @interface KCDafYomiCalculator : NSObject
 
-// MARK: - Properties
-/** 
- *  The reference date used by the calculator.
- */
-
-@property (nonatomic, strong, nonnull) NSDate * workingDate;
-
 // MARK: - Initializers
 
 /**
- *  This method instantiates a new KCDafYomiCalculator.
- *
- *  @param date The default reference date for the calculator to use.
- *  @return an instance of KCDafYomiCalculator
+ Creates a new KCDafYomiCalculator.
+
+ @param date The default reference date for the calculator to use.
+ @return An instance of KCDafYomiCalculator.
  */
+- (instancetype)initWithDate:(NSDate *)date;
 
-- (nonnull instancetype)initWithDate:(nonnull NSDate *)date;
 
-
-// MARK: - Getting "the Daf"
+// MARK: - Properties
 
 /**
- *  This method returns a KCDaf object representing
- *  the page of talmud bavli being studied today.
- *
- *  @return a KCDaf object.
+ The reference date used by the calculator.
  */
+@property (nonatomic, strong) NSDate * _Nonnull workingDate;
 
-- (nullable KCDaf *)dafYomiBavli;
+
+// MARK: - Getting the Daf
 
 /**
- *  This method returns a KCDaf object representing
- *  the page of talmud bavli being studied on the 
- *  supplied date.
- *
- *  @param date A reference date to calculate with.
- *
- *  @return a KCDaf object.
+ This method returns a KCDaf object representing the folio of talmud bavli being studied today.
  */
+@property (nonatomic, readonly)  KCDaf *dafYomiBavli;
 
-- (nonnull KCDaf *)dafYomiBavliForDate:(nonnull NSDate *)date;
+/**
+   This method returns a KCDaf object representing
+   the page of talmud bavli being studied on the
+   supplied date.
+ 
+
+ @param date A reference date to calculate with.
+ @return A KCDaf object.
+ */
+- (nonnull KCDaf *)dafYomiBavliForDate:(NSDate *)date;
 
 @end
+
+NS_ASSUME_NONNULL_END

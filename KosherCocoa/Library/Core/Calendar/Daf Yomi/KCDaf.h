@@ -13,6 +13,8 @@
 #import "KCConstants.h"
 #import "KCTractates.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  This class represents a folio of the talmud.
  
@@ -29,15 +31,15 @@ NS_SWIFT_NAME(Daf)
  @see displayName
  @see displayNameTransliterated
  */
-@property NSInteger tractateIndex;
+@property (nonatomic) NSInteger tractateIndex;
 
 /**
  The page number that the given Daf represents.
  */
-@property NSInteger pageNumber;
+@property (nonatomic) NSInteger pageNumber;
 
 
-// MARK: - Instantiating a Daf
+// MARK: - Initializers
 
 /**
  This method instantiates a Daf with an index and page number.
@@ -53,18 +55,15 @@ NS_SWIFT_NAME(Daf)
 // MARK: - Displaying a Daf
 
 /**
- This method returns the display name of a given tractate as a Hebrew string.
- 
- @return  A string with hebrew name of the tractate that corresponds to the tractateIndex.
+ A string with hebrew name of the volume, spelled in Hebrew characters.
  */
-- (nonnull NSString *)name;
+@property (nonatomic, readonly) NSString *name;
 
 /**
- This method returns the display name of a given tractate as a transliterated Hebrew string.
- 
- @return A string with transliterated name of the tractate that corresponds to the tractateIndex.
+A string with hebrew name of the volume, spelled in English characters.
  */
-- (nonnull NSString *)nameTransliterated;
-
+@property (nonatomic, readonly) NSString *nameTransliterated;
 
 @end
+
+NS_ASSUME_NONNULL_END
