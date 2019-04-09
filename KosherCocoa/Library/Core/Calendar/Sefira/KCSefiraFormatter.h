@@ -28,37 +28,46 @@
 @import Foundation;
 
 /**
- *  This flag determines which custom
- *  to use when returning a formatted
- *  string.
+ This flag determines which custom to use when returning a formatted string.
+ 
+ - KCSefiraCustomAshkenaz: Uses the bet prefix.
+ - KCSefiraCustomSefard: Uses the lamed prefix.
+ - KCSefiraCustomSephardic:  Uses the lamed prefix and sephardic formula.
+ - KCSefiraCustomAri: Chabad - not sure what's different here yet.
  */
-
-typedef NS_ENUM(NSInteger, KCSefiraCustom)
-{
-    KCSefiraCustomAshkenaz,     //  Uses the bet prefix
-    KCSefiraCustomSefard = 1,   //  Uses the lamed prefix
-    KCSefiraCustomSephardic = 2,//  Uses the lamed prefix and sephardic formula
-    KCSefiraCustomAri = 3       // Chabad - not sure what's different here yet.
+typedef NS_ENUM(NSInteger, KCSefiraCustom) {
+    KCSefiraCustomAshkenaz,
+    KCSefiraCustomSefard = 1,
+    KCSefiraCustomSephardic = 2,
+    KCSefiraCustomAri = 3
 } NS_SWIFT_NAME(SefiraCustom);
 
 /**
- *  This flag determines which language to use to display the text.
- */
+ This flag determines which language to use to display the text.
 
+ - KCSefiraLanguageHebrew: The count, in Hebrew
+ - KCSefiraLanguageLocalizedOrEnglish: The count, in the system language with English as a fallback
+ - KCSefiraFormatterTransliteratedHebrew: The count, in Hebrew, spelled in English
+ */
 typedef NS_ENUM(NSInteger, KCSefiraLanguage) {
-    KCSefiraLanguageHebrew = 0,             //  The count, in Hebrew
-    KCSefiraLanguageLocalizedOrEnglish,     //  The count, in the system language with English as a fallback
-    KCSefiraFormatterTransliteratedHebrew   //  The count, in Hebrew, spelled in English
+    KCSefiraLanguageHebrew = 0,
+    KCSefiraLanguageLocalizedOrEnglish,
+    KCSefiraFormatterTransliteratedHebrew
 } NS_SWIFT_NAME(SefiraLanguage);
 
 /**
- *  The prayers for the formatter to show with the count text.
- *
- *  If the KCSefiraLanguage is not set to KCSefiraLanguageHebrew
- *  or KCSefiraCustom is KCSefiraCustomSephardic, the results from 
- *  passing these flags is undefined.
- */
+ The prayers for the formatter to show with the count text.
+ 
+ If the KCSefiraLanguage is not set to `KCSefiraLanguageHebrew` or `KCSefiraCustom` is `KCSefiraCustomSephardic`, these flags will be ignored.
 
+ - KCSefiraPrayerAdditionLeshaimYichud: The "Lesheim Yichud" prayer.
+ - KCSefiraPrayerAdditionBeracha: <#KCSefiraPrayerAdditionBeracha description#>
+ - KCSefiraPrayerAdditionHarachaman: <#KCSefiraPrayerAdditionHarachaman description#>
+ - KCSefiraPrayerAdditionLamenatzaiach: <#KCSefiraPrayerAdditionLamenatzaiach description#>
+ - KCSefiraPrayerAdditionAna: <#KCSefiraPrayerAdditionAna description#>
+ - KCSefiraPrayerAdditionRibono: <#KCSefiraPrayerAdditionRibono description#>
+ - KCSefiraPrayerAdditionAleinu: <#KCSefiraPrayerAdditionAleinu description#>
+ */
 typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
     KCSefiraPrayerAdditionLeshaimYichud = 1 << 0,
     KCSefiraPrayerAdditionBeracha = 1 << 1,
@@ -69,20 +78,22 @@ typedef NS_OPTIONS(NSInteger, KCSefiraPrayerAddition) {
     KCSefiraPrayerAdditionAleinu = 1 << 6
 } NS_SWIFT_NAME(SefiraPrayerAddition);
 
-/** This class formats an integer into a sefira day*/
+
+
 NS_SWIFT_NAME(SefiraFormatter)
+/**
+ Formats an integer into a sefira day.
+ */
 @interface KCSefiraFormatter : NSObject
 
 /**
- *  The language for the formatter to use.
+ The language for the formatter to use.
  */
-
 @property (nonatomic, assign) enum KCSefiraLanguage language;
 
 /**
- *  The custom for the formatter to use.
+ The custom for the formatter to use.
  */
-
 @property (nonatomic, assign) enum KCSefiraCustom custom;
 
 #pragma mark - Getting the Count
@@ -97,7 +108,6 @@ NS_SWIFT_NAME(SefiraFormatter)
  *  @return A string representing the day of the omer.
  *
  */
-
 - (nullable NSString *)countStringFromInteger:(NSInteger)integer;
 
 /** 
