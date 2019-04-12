@@ -1,11 +1,11 @@
 /**
- *  NSCalendar+Juncture.h
- *  KosherCocoa 4
- *
- *  Created by Moshe Berman on 4/10/13.
- *  Updated by Moshe Berman on 9/24/13.
- *
- *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
+  NSCalendar+Juncture.h
+  KosherCocoa 4
+
+  Created by Moshe Berman on 4/10/13.
+  Updated by Moshe Berman on 9/24/13.
+
+  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 

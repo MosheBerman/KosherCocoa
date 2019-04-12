@@ -1,11 +1,11 @@
 /**
- *  KCDafYomiCalculator.h
- *  KosherCocoa 4
- *
- *  Created by Moshe Berman on 11/13/11.
- *  Updated by Moshe Berman on 10/7/13.
- *
- *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
+  KCDafYomiCalculator.h
+  KosherCocoa 4
+
+  Created by Moshe Berman on 11/13/11.
+  Updated by Moshe Berman on 10/7/13.
+
+  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 

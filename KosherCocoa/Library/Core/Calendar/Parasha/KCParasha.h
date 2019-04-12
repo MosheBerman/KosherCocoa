@@ -1,11 +1,11 @@
 /**
- *  KCParasha.h
- *  KosherCocoa 4
- *
- *  Created by Moshe Berman on 5/10/13.
- *  Updated by Moshe Berman on 9/24/13.
- *
- *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
+  KCParasha.h
+  KosherCocoa 4
+
+  Created by Moshe Berman on 5/10/13.
+  Updated by Moshe Berman on 9/24/13.
+
+  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 @import Foundation;
@@ -21,7 +21,7 @@ NS_SWIFT_NAME(Parasha)
 
 // MARK: - Properties
 /**
- * The parasha identifier.
+ The parasha identifier.
  */
 
 @property (nonatomic, assign) enum KCParashaIdentifier identifier;
@@ -29,22 +29,22 @@ NS_SWIFT_NAME(Parasha)
 // MARK: - Converting an identifier into a parasha.
 
 /**
- *  This method returns a KCParasha instance.
- *
- *  @param identifier An identifier, defined in KCParashaReadings.
- *  @return A KCParasha instance.
+  This method returns a KCParasha instance.
+
+  @param identifier An identifier, defined in KCParashaReadings.
+  @return A KCParasha instance.
  */
 
 - (nonnull instancetype)initWithIdentifier:(enum KCParashaIdentifier)identifier;
 
 /**
- *  This method returns a KCParasha instance.
- *
- *  This method simply calls [[KCParasha alloc] initWithIdentifier:identifier]. 
- *  It exists for convenience.
- *
- *  @param identifier An identifier, defined in KCParashaReadings.
- *  @return A KCParasha instance.
+  This method returns a KCParasha instance.
+
+  This method simply calls [[KCParasha alloc] initWithIdentifier:identifier]. 
+  It exists for convenience.
+
+  @param identifier An identifier, defined in KCParashaReadings.
+  @return A KCParasha instance.
  */
 
 + (nonnull instancetype)parashaWithIdentifier:(enum KCParashaIdentifier)identifier;

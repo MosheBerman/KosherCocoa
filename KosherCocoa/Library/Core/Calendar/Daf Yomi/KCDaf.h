@@ -1,11 +1,11 @@
 /**
- *  KCDaf.h
- *  KosherCocoa 4
- *
- *  Created by Moshe Berman on 11/13/11.
- *  Updated by Moshe Berman on 8/27/13.
- *
- *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
+  KCDaf.h
+  KosherCocoa 4
+
+  Created by Moshe Berman on 11/13/11.
+  Updated by Moshe Berman on 8/27/13.
+
+  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 @import Foundation;

@@ -11,7 +11,7 @@
 
 /**
  The months of the Hebrew Calendar, as an enumerated type.
- 
+
  - KCHebrewMonthTishrei: The first month on the Hebrew calendar.
  - KCHebrewMonthCheshvan: The second month on the Hebrew calendar.
  - KCHebrewMonthKislev: The third month on the Hebrew calendar.

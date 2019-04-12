@@ -1,11 +1,11 @@
 /**
- *  MBCalendarCategories.h
- *  KosherCocoa 4
- *
- *  Created by Moshe Berman on 4/14/13.
- *  Updated by Moshe Berman on 11/12/15.
- *
- *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
+  MBCalendarCategories.h
+  KosherCocoa 4
+
+  Created by Moshe Berman on 4/14/13.
+  Updated by Moshe Berman on 11/12/15.
+
+  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 #ifndef MBCalendarKit_NSCalendarCategories_h

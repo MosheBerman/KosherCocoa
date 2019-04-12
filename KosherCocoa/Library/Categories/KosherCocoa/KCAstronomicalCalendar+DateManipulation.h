@@ -1,26 +1,26 @@
 /**
- *  KCZmanimCalendar+DateManipulation.h
- *  KosherCocoa 4
- *
- *  Created by Moshe Berman on 10/30/13.
- *  Updated by Moshe Berman on 1/12/15.
- *
- *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
+  KCZmanimCalendar+DateManipulation.h
+  KosherCocoa 4
+
+  Created by Moshe Berman on 10/30/13.
+  Updated by Moshe Berman on 1/12/15.
+
+  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 #import "KCAstronomicalCalendar.h"
 
 /**
- *  These method prototypes allow us to compile.
- *  We'll forward these to the internal calendar
- *  object that's equiped to handle the calls.
- *
- *  We do this because KCAstronomicalCalendar doesn't 
- *  inherit from NSCalendar, and the actual methods are 
- *  defined on an NSCalendar category.
- *
- *  Truth be told, this might be an structural issue 
- *  that needs to be dealt with.
+  These method prototypes allow us to compile.
+  We'll forward these to the internal calendar
+  object that's equiped to handle the calls.
+
+  We do this because KCAstronomicalCalendar doesn't 
+  inherit from NSCalendar, and the actual methods are 
+  defined on an NSCalendar category.
+
+  Truth be told, this might be an structural issue 
+  that needs to be dealt with.
  */
 
 @interface KCAstronomicalCalendar (DateManipulation)

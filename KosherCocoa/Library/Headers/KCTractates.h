@@ -1,11 +1,11 @@
 /**
- *  KCTractates.h
- *  KosherCocoa 4
- *
- *  Created by Moshe Berman on 8/27/13.
- *  Updated by Moshe Berman on 10/11/13.
- *
- *  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
+  KCTractates.h
+  KosherCocoa 4
+
+  Created by Moshe Berman on 8/27/13.
+  Updated by Moshe Berman on 10/11/13.
+
+  Use of KosherCocoa 4 is governed by the LGPL 2.1 License.
  */
 
 #ifndef KosherCocoa_KCTractates_h
