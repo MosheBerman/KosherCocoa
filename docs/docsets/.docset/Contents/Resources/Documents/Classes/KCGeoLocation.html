@@ -14,7 +14,7 @@
     <a title="KCGeoLocation Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -167,14 +164,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -207,14 +196,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The name of the location.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">locationName</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">locationName</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -239,14 +228,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The time zone conventionally used at this location.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="n">timeZone</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">NSTimeZone</span> <span class="o">*</span><span class="n">timeZone</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -271,14 +260,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The latitude of this location.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="kt">double</span> <span class="n">latitude</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">latitude</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -303,14 +292,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The longitude at this location.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="kt">double</span> <span class="n">longitude</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">longitude</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -335,14 +324,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The altitude at this location.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">assign</span><span class="p">)</span> <span class="kt">double</span> <span class="n">altitude</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">double</span> <span class="n">altitude</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -744,8 +733,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Calculate <q>http://en.wikipedia.org/wiki/Great-circle_distance</q>geodesic distance in Meters between this Object and a second Object passed to
- this method using <q>http://en.wikipedia.org/wiki/Thaddeus_Vincenty</q>Thaddeus Vincenty&rsquo;s
- inverse formula See T Vincenty, &ldquo;<q>http://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf</q>Direct and Inverse Solutions of Geodesics on the Ellipsoid with application of nested equations&rdquo;, Survey Review, vol XXII no 176, 1975.</p>
+this method using <q>http://en.wikipedia.org/wiki/Thaddeus_Vincenty</q>Thaddeus Vincenty&rsquo;s
+inverse formula See T Vincenty, &ldquo;<q>http://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf</q>Direct and Inverse Solutions of Geodesics on the Ellipsoid with application of nested equations&rdquo;, Survey Review, vol XXII no 176, 1975.</p>
 
                       </div>
                       <div class="declaration">
@@ -814,21 +803,21 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that will return the location&rsquo;s local mean time 
-  offset in milliseconds from local
-  <q>http://en.wikipedia.org/wiki/Standard_time</q> standard time.
-  The globe is split into 360&deg;, with
-   15&deg; per hour of the day. For a local that is at a longitude that
-  is evenly divisible by 15 (longitude % 15 == 0), at solar noon (with 
-  adjustment for the
-  <q>http://en.wikipedia.org/wiki/Equation_of_time</q>equation of time) the sun
-  should be directly overhead, so a user who is 1&deg; west of this will have noon at 4
-  minutes after standard time noon, and conversely, a user
-  who is 1&deg; east of the 15&deg; longitude will have noon at 11:56 AM. Lakewood, N.J., 
-  whose longitude is -74.2094, is 0.7906 away from the closest multiple of 15 at -75&deg;. 
-  This is multiplied by 4 to yield 3 minutes and 10 seconds earlier than standard time. 
-  The offset returned does not account for the
-  <q>http://en.wikipedia.org/wiki/Daylight_saving_time</q>Daylight saving time
-  offset since this class is unaware of dates.</p>
+offset in milliseconds from local
+<q>http://en.wikipedia.org/wiki/Standard_time</q> standard time.
+The globe is split into 360&deg;, with
+ 15&deg; per hour of the day. For a local that is at a longitude that
+is evenly divisible by 15 (longitude % 15 == 0), at solar noon (with 
+adjustment for the
+<q>http://en.wikipedia.org/wiki/Equation_of_time</q>equation of time) the sun
+should be directly overhead, so a user who is 1&deg; west of this will have noon at 4
+minutes after standard time noon, and conversely, a user
+who is 1&deg; east of the 15&deg; longitude will have noon at 11:56 AM. Lakewood, N.J., 
+whose longitude is -74.2094, is 0.7906 away from the closest multiple of 15 at -75&deg;. 
+This is multiplied by 4 to yield 3 minutes and 10 seconds earlier than standard time. 
+The offset returned does not account for the
+<q>http://en.wikipedia.org/wiki/Daylight_saving_time</q>Daylight saving time
+offset since this class is unaware of dates.</p>
 
                       </div>
                       <div class="declaration">
@@ -857,7 +846,7 @@ value will be returned East of the 15&deg; timezone line, and a negative value W
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

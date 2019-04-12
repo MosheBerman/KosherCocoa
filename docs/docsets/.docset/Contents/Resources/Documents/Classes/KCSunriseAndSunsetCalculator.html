@@ -14,7 +14,7 @@
     <a title="KCSunriseAndSunsetCalculator Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -164,14 +161,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Protocols/KCAstronomicalCalculator.html">KCAstronomicalCalculator</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
               </li>
             </ul>
           </li>
@@ -272,7 +261,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method instantiates a new KCSunriseAndSunsetCalculator 
-  using the supplied KCGeolocation.</p>
+using the supplied KCGeolocation.</p>
 
                       </div>
                       <div class="declaration">
@@ -340,8 +329,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method returning the sunrise in UTC as a double. If an error was
-  encountered in the calculation (as expected in some locations, such
-  as near the poles) NAN will be returned.</p>
+encountered in the calculation (as expected in some locations, such
+as near the poles) NAN will be returned.</p>
 
                       </div>
                       <div class="declaration">
@@ -475,13 +464,13 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Calculate the local mean time of rising or setting.
-  By `local&rsquo; is meant the exact time at the location, 
-  assuming that there were no time zone. That is, the 
-  time difference between the location and the Meridian 
-  depended entirely on the longitude. We can&rsquo;t do anything
-  with this time directly; we must convert it to UTC and 
-  then to a local time. The result is expressed as a 
-  fractional number of hours since midnight.</p>
+By `local&rsquo; is meant the exact time at the location, 
+assuming that there were no time zone. That is, the 
+time difference between the location and the Meridian 
+depended entirely on the longitude. We can&rsquo;t do anything
+with this time directly; we must convert it to UTC and 
+then to a local time. The result is expressed as a 
+fractional number of hours since midnight.</p>
 
                       </div>
                       <div class="declaration">
@@ -640,8 +629,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Calculates the Sun&rsquo;s right ascension in hours, given the Sun&rsquo;s true
-  longitude in degrees. Input and output are angles greater than 0 and
-  less than 360.</p>
+longitude in degrees. Input and output are angles greater than 0 and
+less than 360.</p>
 
                       </div>
                       <div class="declaration">
@@ -697,8 +686,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Calculates the Sun&rsquo;s true longitude in degrees. The result is an angle
-  greater than 0 and less than 360. Requires the Sun&rsquo;s mean anomaly, also
-  in degrees.</p>
+greater than 0 and less than 360. Requires the Sun&rsquo;s mean anomaly, also
+in degrees.</p>
 
                       </div>
                       <div class="declaration">
@@ -754,7 +743,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Calculate the Sun&rsquo;s mean anomaly in degrees, at sunrise or sunset, given
-  the longitude in degrees.</p>
+the longitude in degrees.</p>
 
                       </div>
                       <div class="declaration">
@@ -837,8 +826,8 @@ kSunCalculationTypes.h, respectively.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Gets the approximate time of sunset or sunrise In DAYS since midnight
-  Jan 1st, assuming 6am and 6pm events. We need this figure to derive the
-  Sun&rsquo;s mean anomaly.</p>
+Jan 1st, assuming 6am and 6pm events. We need this figure to derive the
+Sun&rsquo;s mean anomaly.</p>
 
                       </div>
                       <div class="declaration">
@@ -917,7 +906,7 @@ kSunCalculationTypes.h, respectively.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Get time difference between location&rsquo;s longitude and the Meridian, in
-  hours. West of Meridian has a negative time difference.</p>
+hours. West of Meridian has a negative time difference.</p>
 
                       </div>
                       <div class="declaration">
@@ -973,7 +962,7 @@ kSunCalculationTypes.h, respectively.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Calculate the day of the year, where Jan 1st is day 1. Note that this
-  method needs to know the year, because leap years have an impact here</p>
+method needs to know the year, because leap years have an impact here</p>
 
                       </div>
                       <div class="declaration">
@@ -1218,36 +1207,31 @@ sea level.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <pre class="highlight objective_c"><code><span class="n">Method</span> <span class="n">to</span> <span class="k">return</span> <span class="n">the</span> <span class="n">adjustment</span> <span class="n">to</span> <span class="n">the</span> <span class="n">zenith</span> <span class="n">required</span> <span class="n">to</span> <span class="n">account</span> <span class="k">for</span> <span class="n">the</span>
-<span class="n">elevation</span><span class="p">.</span> <span class="n">Since</span> <span class="n">a</span> <span class="n">person</span> <span class="n">at</span> <span class="n">a</span> <span class="n">higher</span> <span class="n">elevation</span> <span class="n">can</span> <span class="n">see</span> <span class="n">farther</span> <span class="n">below</span> <span class="n">the</span>
-<span class="n">horizon</span><span class="p">,</span> <span class="n">the</span> <span class="n">calculation</span> <span class="k">for</span> <span class="n">sunrise</span> <span class="o">/</span> <span class="n">sunset</span> <span class="n">is</span> <span class="n">calculated</span> <span class="n">below</span> <span class="n">the</span>
-<span class="n">horizon</span> <span class="n">used</span> <span class="n">at</span> <span class="n">sea</span> <span class="n">level</span><span class="p">.</span> <span class="n">This</span> <span class="n">is</span> <span class="n">only</span> <span class="n">used</span> <span class="k">for</span> <span class="n">sunrise</span> <span class="n">and</span> <span class="n">sunset</span> <span class="n">and</span>
-<span class="n">not</span> <span class="n">times</span> <span class="n">above</span> <span class="n">or</span> <span class="n">below</span> <span class="n">it</span> <span class="n">such</span> <span class="n">as</span> <span class="n">nautical</span> <span class="n">twilight</span> <span class="n">since</span> <span class="n">those</span> <span class="n">calculations</span>
-</code></pre>
+                        <p>Method to return the adjustment to the zenith required to account for the
+elevation. Since a person at a higher elevation can see farther below the
+horizon, the calculation for sunrise / sunset is calculated below the
+horizon used at sea level. This is only used for sunrise and sunset and
+not times above or below it such as nautical twilight since those calculations
+ are based on the level of available light at the
+given dip below the horizon, something that is not affected by elevation,
+the adjustment should only made if the zenith == 90&deg;
+{@link #adjustZenith adjusted} for refraction and solar radius.
+The algorithm used is:</p>
 
-<p>are based on the level of available light at the
-    given dip below the horizon, something that is not affected by elevation,
-    the adjustment should only made if the zenith == 90&deg;
-    {@link #adjustZenith adjusted} for refraction and solar radius.
-    The algorithm used is:</p>
-<pre class="highlight objective_c"><code><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;</span>
-<span class="n">elevationAdjustment</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="n">toDegrees</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">acos</span><span class="p">(</span><span class="n">earthRadiusInMeters</span>
-        <span class="o">/</span> <span class="p">(</span><span class="n">earthRadiusInMeters</span> <span class="o">+</span> <span class="n">elevationMeters</span><span class="p">)));</span>
-<span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+<pre>
+elevationAdjustment = Math.toDegrees(Math.acos(earthRadiusInMeters
+        / (earthRadiusInMeters + elevationMeters)));
+</pre>
 
-<span class="n">The</span> <span class="n">source</span> <span class="n">of</span> <span class="n">this</span> <span class="n">algorthitm</span> <span class="n">is</span>
-<span class="s">"http: *www.calendarists.com"</span><span class="n">Calendrical</span> <span class="n">Calculations</span> <span class="n">by</span>
-<span class="n">Edward</span> <span class="n">M</span><span class="p">.</span> <span class="n">Reingold</span> <span class="n">and</span> <span class="n">Nachum</span> <span class="n">Dershowitz</span><span class="p">.</span> <span class="n">An</span> <span class="n">alternate</span> <span class="n">algorithm</span> <span class="n">that</span>
-<span class="n">produces</span> <span class="n">an</span> <span class="n">almost</span> <span class="n">identical</span> <span class="p">(</span><span class="n">but</span> <span class="n">not</span> <span class="n">accurate</span><span class="p">)</span> <span class="n">result</span> <span class="n">found</span> <span class="k">in</span> <span class="n">Ma</span><span class="err">'</span><span class="n">aglay</span>
-<span class="n">Tzedek</span> <span class="n">by</span> <span class="n">Moishe</span> <span class="n">Kosower</span> <span class="n">and</span> <span class="n">other</span> <span class="n">sources</span> <span class="n">is</span><span class="o">:</span>
+<p>The source of this algorthitm is
+<q>http: *www.calendarists.com</q>Calendrical Calculations by
+Edward M. Reingold and Nachum Dershowitz. An alternate algorithm that
+produces an almost identical (but not accurate) result found in Ma&#39;aglay
+Tzedek by Moishe Kosower and other sources is:</p>
 
-<span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;</span>
-<span class="n">elevationAdjustment</span> <span class="o">=</span> <span class="mi">0</span><span class="p">.</span><span class="mo">0347</span> <span class="o">*</span> <span class="n">Math</span><span class="p">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">elevationMeters</span><span class="p">);</span>
-<span class="o">&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
-
-<span class="o">-</span> <span class="n">parameter</span><span class="o">:</span> <span class="n">elevation</span> <span class="n">elevation</span> <span class="k">in</span> <span class="n">Meters</span><span class="p">.</span>
-<span class="o">-</span> <span class="n">returns</span><span class="o">:</span> <span class="n">the</span> <span class="n">adjusted</span> <span class="n">zenith</span>
-</code></pre>
+<pre>
+elevationAdjustment = 0.0347 * Math.sqrt(elevationMeters);
+</pre>
 
                       </div>
                       <div class="declaration">
@@ -1262,6 +1246,10 @@ sea level.</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">elevationAdjustment</span><span class="p">(</span><span class="n">forElevation</span> <span class="nv">elevation</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>the adjusted zenith</p>
                       </div>
                     </section>
                   </div>
@@ -1279,24 +1267,23 @@ sea level.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <pre class="highlight objective_c"><code><span class="n">Adjusts</span> <span class="n">the</span> <span class="n">zenith</span> <span class="n">to</span> <span class="n">account</span> <span class="k">for</span> <span class="n">solar</span> <span class="n">refraction</span><span class="p">,</span> <span class="n">solar</span> <span class="n">radius</span> <span class="n">and</span>
-<span class="n">elevation</span><span class="p">.</span> <span class="n">The</span> <span class="n">value</span> <span class="k">for</span> <span class="n">Sun</span><span class="err">'</span><span class="n">s</span> <span class="n">zenith</span> <span class="n">and</span> <span class="nb">true</span> <span class="n">rise</span><span class="o">/</span><span class="n">set</span> <span class="n">Zenith</span> <span class="p">(</span><span class="n">used</span> <span class="k">in</span>
-<span class="n">this</span> <span class="n">class</span> <span class="n">and</span> <span class="n">subclasses</span><span class="p">)</span> <span class="n">is</span> <span class="n">the</span> <span class="n">angle</span> <span class="n">that</span> <span class="n">the</span> <span class="n">center</span> <span class="n">of</span> <span class="n">the</span> <span class="n">Sun</span> <span class="n">makes</span>
-<span class="n">to</span> <span class="n">a</span> <span class="n">line</span> <span class="n">perpendicular</span> <span class="n">to</span> <span class="n">the</span> <span class="n">Earth</span><span class="err">'</span><span class="n">s</span> <span class="n">surface</span><span class="p">.</span> <span class="n">If</span> <span class="n">the</span> <span class="n">Sun</span> <span class="n">were</span> <span class="n">a</span> <span class="n">point</span>
-<span class="n">and</span> <span class="n">the</span> <span class="n">Earth</span> <span class="n">were</span> <span class="n">without</span> <span class="n">an</span> <span class="n">atmosphere</span><span class="p">,</span> <span class="nb">true</span> <span class="n">sunset</span> <span class="n">and</span> <span class="n">sunrise</span> <span class="n">would</span>
-<span class="n">correspond</span> <span class="n">to</span> <span class="n">a</span> <span class="mi">90</span><span class="o">&amp;</span><span class="n">deg</span><span class="p">;</span> <span class="n">zenith</span><span class="p">.</span> <span class="n">Because</span> <span class="n">the</span> <span class="n">Sun</span> <span class="n">is</span> <span class="n">not</span> <span class="n">a</span> <span class="n">point</span><span class="p">,</span> <span class="n">and</span>
-<span class="n">because</span> <span class="n">the</span> <span class="n">atmosphere</span> <span class="n">refracts</span> <span class="n">light</span><span class="p">,</span> <span class="n">this</span> <span class="mi">90</span><span class="o">&amp;</span><span class="n">deg</span><span class="p">;</span> <span class="n">zenith</span> <span class="n">does</span> <span class="n">not</span><span class="p">,</span> <span class="k">in</span>
-<span class="n">fact</span><span class="p">,</span> <span class="n">correspond</span> <span class="n">to</span> <span class="nb">true</span> <span class="n">sunset</span> <span class="n">or</span> <span class="n">sunrise</span><span class="p">,</span> <span class="n">instead</span> <span class="n">the</span> <span class="n">centre</span> <span class="n">of</span> <span class="n">the</span>
-<span class="n">Sun</span><span class="err">'</span><span class="n">s</span> <span class="n">disk</span> <span class="n">must</span> <span class="n">lie</span> <span class="n">just</span> <span class="n">below</span> <span class="n">the</span> <span class="n">horizon</span> <span class="k">for</span> <span class="n">the</span> <span class="n">upper</span> <span class="n">edge</span> <span class="n">to</span> <span class="n">be</span>
-<span class="n">obscured</span><span class="p">.</span> <span class="n">This</span> <span class="n">means</span> <span class="n">that</span> <span class="n">a</span> <span class="n">zenith</span> <span class="n">of</span> <span class="n">just</span> <span class="n">above</span> <span class="mi">90</span><span class="o">&amp;</span><span class="n">deg</span><span class="p">;</span> <span class="n">must</span> <span class="n">be</span> <span class="n">used</span><span class="p">.</span>
-<span class="n">The</span> <span class="n">Sun</span> <span class="n">subtends</span> <span class="n">an</span> <span class="n">angle</span> <span class="n">of</span> <span class="mi">16</span> <span class="n">minutes</span> <span class="n">of</span> <span class="n">arc</span> <span class="p">(</span><span class="n">this</span> <span class="n">can</span> <span class="n">be</span> <span class="n">changed</span> <span class="n">via</span>
-<span class="n">the</span> <span class="p">{</span><span class="err">@link</span> <span class="err">#</span><span class="n">setSolarRadius</span><span class="p">(</span><span class="kt">double</span><span class="p">)}</span> <span class="n">method</span> <span class="p">,</span> <span class="n">and</span> <span class="n">atmospheric</span> <span class="n">refraction</span>
-<span class="n">accounts</span> <span class="k">for</span> <span class="mi">34</span> <span class="n">minutes</span> <span class="n">or</span> <span class="n">so</span><span class="p">,</span> <span class="n">giving</span> <span class="n">a</span> <span class="n">total</span> <span class="n">of</span> <span class="mi">50</span> <span class="n">arcminutes</span><span class="p">.</span>
-<span class="n">The</span> <span class="n">total</span> <span class="n">value</span> <span class="k">for</span> <span class="n">ZENITH</span> <span class="n">is</span> <span class="mi">90</span><span class="o">+</span><span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">6</span><span class="p">)</span> <span class="n">or</span> <span class="mi">90</span><span class="p">.</span><span class="mi">8333333</span><span class="o">&amp;</span><span class="n">deg</span><span class="p">;</span> <span class="k">for</span> <span class="nb">true</span>
-<span class="n">sunrise</span><span class="o">/</span><span class="n">sunset</span><span class="p">.</span> <span class="n">Since</span> <span class="n">a</span> <span class="n">person</span> <span class="n">at</span> <span class="n">an</span> <span class="n">elevation</span> <span class="n">can</span> <span class="n">see</span> <span class="n">blow</span> <span class="n">the</span> <span class="n">horizon</span>
-<span class="n">of</span> <span class="n">a</span> <span class="n">person</span> <span class="n">at</span> <span class="n">sea</span> <span class="n">level</span><span class="p">,</span> <span class="n">this</span> <span class="n">will</span> <span class="n">also</span> <span class="n">adjust</span> <span class="n">the</span> <span class="n">zenith</span> <span class="n">to</span> <span class="n">account</span> <span class="k">for</span>
-<span class="n">elevation</span> <span class="k">if</span> <span class="n">available</span><span class="p">.</span> 
-</code></pre>
+                        <p>Adjusts the zenith to account for solar refraction, solar radius and
+elevation. The value for Sun&rsquo;s zenith and true rise/set Zenith (used in
+this class and subclasses) is the angle that the center of the Sun makes
+to a line perpendicular to the Earth&rsquo;s surface. If the Sun were a point
+and the Earth were without an atmosphere, true sunset and sunrise would
+correspond to a 90&deg; zenith. Because the Sun is not a point, and
+because the atmosphere refracts light, this 90&deg; zenith does not, in
+fact, correspond to true sunset or sunrise, instead the centre of the
+Sun&rsquo;s disk must lie just below the horizon for the upper edge to be
+obscured. This means that a zenith of just above 90&deg; must be used.
+The Sun subtends an angle of 16 minutes of arc (this can be changed via
+the {@link #setSolarRadius(double)} method , and atmospheric refraction
+accounts for 34 minutes or so, giving a total of 50 arcminutes.
+The total value for ZENITH is 90+(5/6) or 90.8333333&deg; for true
+sunrise/sunset. Since a person at an elevation can see blow the horizon
+of a person at sea level, this will also adjust the zenith to account for
+elevation if available. </p>
 
                       </div>
                       <div class="declaration">
@@ -1325,7 +1312,7 @@ elevation adjustment.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

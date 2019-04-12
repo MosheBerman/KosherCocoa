@@ -14,7 +14,7 @@
     <a title="kYearLength Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -167,14 +164,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -189,13 +178,20 @@
               </div>
             <p>A type representing the length of a hebrew year.</p>
 
-<p>There are 6 possible lengths (in days) that a Hebrew year can be.
-  They are: 353, 354, 355, 383, 384, and 385 days. A year that has
-  353 days is <q>short</q>, a year with 354 is <q>regular</q>, 355 is <q>long.</q></p>
-
-<p>The 30 day discrepancy will occur in leap years because
-  of the extra month. The <q>length</q> of the year is the same as
-  if there was no extra month. (383 is the same as 353.)</p>
+<ul>
+<li><p>@abstract: There are 6 possible lengths that a Hebrew year can be, in days.
+         They are: 353, 354, 355, 383, 384, and 385 days. A year that has
+         353 days is <q>short</q>, a year with 354 is <q>regular</q>, 355 is <q>long.</q></p>
+<pre class="highlight objective_c"><code>     <span class="n">The</span> <span class="mi">30</span> <span class="n">day</span> <span class="n">discrepancy</span> <span class="n">will</span> <span class="n">occur</span> <span class="k">in</span> <span class="n">leap</span> <span class="n">years</span> <span class="n">because</span> <span class="n">of</span> <span class="n">the</span> <span class="n">extra</span> <span class="n">month</span><span class="p">.</span>
+     <span class="n">The</span> <span class="s">"length"</span> <span class="n">of</span> <span class="n">the</span> <span class="n">year</span> <span class="n">is</span> <span class="n">the</span> <span class="n">same</span> <span class="n">as</span> <span class="k">if</span> <span class="n">there</span> <span class="n">was</span> <span class="n">no</span> <span class="n">extra</span> <span class="n">month</span><span class="p">.</span>
+</code></pre></li>
+<li><p>kYearLengthShort: Years that are 353/383 days long.</p></li>
+<li><p>kYearLengthRegular: Years that are 354/384 days long.</p></li>
+<li><p>kYearLengthLong: Years that are 355/385 days long.</p></li>
+<li><p>kYearLengthChaseir: The same as <code>kYearLengthShort</code>.</p></li>
+<li><p>kYearLengthKesidran: The same as <code>kYearLengthRegular</code>.</p></li>
+<li><p>kYearLengthShalaim: The same as <code>kYearLengthLong</code>.</p></li>
+</ul>
 
           </section>
           <section class="section task-group-section">
@@ -222,11 +218,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">kYearLengthShort</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">yearLengthShort</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
                       </div>
@@ -256,11 +247,6 @@
                           <pre class="highlight objective_c"><code><span class="n">kYearLengthRegular</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">yearLengthRegular</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -288,9 +274,85 @@
                           <pre class="highlight objective_c"><code><span class="n">kYearLengthLong</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@kYearLength@kYearLengthChaseir"></a>
+                    <a name="//apple_ref/objc/Case/kYearLengthChaseir" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@kYearLength@kYearLengthChaseir">kYearLengthChaseir</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
                         <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">yearLengthLong</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">kYearLengthChaseir</span> <span class="o">=</span> <span class="n"><a href="../Enums/kYearLength.html#/c:@E@kYearLength@kYearLengthShort">kYearLengthShort</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@kYearLength@kYearLengthKesidran"></a>
+                    <a name="//apple_ref/objc/Case/kYearLengthKesidran" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@kYearLength@kYearLengthKesidran">kYearLengthKesidran</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">kYearLengthKesidran</span> <span class="o">=</span> <span class="n"><a href="../Enums/kYearLength.html#/c:@E@kYearLength@kYearLengthRegular">kYearLengthRegular</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@kYearLength@kYearLengthShalaim"></a>
+                    <a name="//apple_ref/objc/Case/kYearLengthShalaim" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@kYearLength@kYearLengthShalaim">kYearLengthShalaim</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="n">kYearLengthShalaim</span> <span class="o">=</span> <span class="n"><a href="../Enums/kYearLength.html#/c:@E@kYearLength@kYearLengthLong">kYearLengthLong</a></span></code></pre>
 
                         </div>
                       </div>
@@ -302,7 +364,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -14,7 +14,7 @@
     <a title="kWeekday Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -167,14 +164,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -187,9 +176,17 @@
 
                 </div>
               </div>
-            <p>A type representing the days of the week.</p>
+            <p>A type representing the days of the week. 1-based. (i.e. Sunday is 1, Monday is 2, etc.)</p>
 
-<p>The related enum values are index-1, not index-0. (Sunday is 1, Monday is 2, etc.)</p>
+<ul>
+<li>kWeekdaySunday: The first day after shabbos.</li>
+<li>kWeekdayMonday: The second day after shabbos.</li>
+<li>kWeekdayTuesday: The third day after shabbos.</li>
+<li>kWeekdayWednesday: The fourth day after shabbos.</li>
+<li>kWeekdayThursday: The fifth day after shabbos.</li>
+<li>kWeekdayFriday: The sixth day after shabbos.</li>
+<li>kWeekdaySaturday: Shabbos.</li>
+</ul>
 
           </section>
           <section class="section task-group-section">
@@ -216,11 +213,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">kWeekdaySunday</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekdaySunday</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
                       </div>
@@ -250,11 +242,6 @@
                           <pre class="highlight objective_c"><code><span class="n">kWeekdayMonday</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekdayMonday</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -280,11 +267,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">kWeekdayTuesday</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekdayTuesday</span> <span class="o">=</span> <span class="mi">3</span></code></pre>
 
                         </div>
                       </div>
@@ -314,11 +296,6 @@
                           <pre class="highlight objective_c"><code><span class="n">kWeekdayWednesday</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekdayWednesday</span> <span class="o">=</span> <span class="mi">4</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -344,11 +321,6 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="n">kWeekdayThursday</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekdayThursday</span> <span class="o">=</span> <span class="mi">5</span></code></pre>
 
                         </div>
                       </div>
@@ -378,11 +350,6 @@
                           <pre class="highlight objective_c"><code><span class="n">kWeekdayFriday</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekdayFriday</span> <span class="o">=</span> <span class="mi">6</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -410,11 +377,6 @@
                           <pre class="highlight objective_c"><code><span class="n">kWeekdaySaturday</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">weekdaySaturday</span> <span class="o">=</span> <span class="mi">7</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -424,7 +386,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

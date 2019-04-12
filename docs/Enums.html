@@ -14,7 +14,7 @@
     <a title="Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (42% documented)</p>
+        <p><a href="index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -164,14 +161,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Protocols/KCAstronomicalCalculator.html">KCAstronomicalCalculator</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
               </li>
             </ul>
           </li>
@@ -239,9 +228,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@KCHebrewYearType"></a>
-                    <a name="//apple_ref/objc/Enum/KCHebrewYearType" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@KCHebrewYearType">KCHebrewYearType</a>
+                    <a name="/c:@E@kHebrewYearType"></a>
+                    <a name="//apple_ref/objc/Enum/kHebrewYearType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@kHebrewYearType">kHebrewYearType</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -249,21 +238,66 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The three kinds of Hebrew years.</p>
+                        <p>A type representing a hebrew year configuration.</p>
 
-<ul>
-<li>KCHebrewYearTypeChaser:  A <q>defective</q> year has either 353 days long, or in a leap year, 383 days.</li>
-<li>KCHebrewYearTypeKesidran: A <q>common</q> year is 354 days long, or in a leap year, 384 days.</li>
-<li>KCHebrewYearTypeShalaim: A <q>complete</q> year is 355 days long, or in a leap year, 383 days.</li>
-</ul>
+<p>There are fourteen year configurations, as per
+Arthur Spier, &lsquo;The Comprehensive Hebrew Calendar,
+3rd ed&rsquo; (Behrman House 1986, ISBN 087306-398-8.)</p>
 
-                        <a href="Enums/KCHebrewYearType.html" class="slightly-smaller">See more</a>
+<p>Each configuration composites the weekday of 1 Tishri,
+the number of days in the year, and if the year
+contains Adar II.</p>
+
+                        <a href="Enums/kHebrewYearType.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">KCHebrewYearType</span> <span class="p">{}</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">kHebrewYearType</span> <span class="p">{}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@E@kYearLength"></a>
+                    <a name="//apple_ref/objc/Enum/kYearLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@kYearLength">kYearLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A type representing the length of a hebrew year.</p>
+
+<ul>
+<li><p>@abstract: There are 6 possible lengths that a Hebrew year can be, in days.
+         They are: 353, 354, 355, 383, 384, and 385 days. A year that has
+         353 days is <q>short</q>, a year with 354 is <q>regular</q>, 355 is <q>long.</q></p>
+<pre class="highlight objective_c"><code>     <span class="n">The</span> <span class="mi">30</span> <span class="n">day</span> <span class="n">discrepancy</span> <span class="n">will</span> <span class="n">occur</span> <span class="k">in</span> <span class="n">leap</span> <span class="n">years</span> <span class="n">because</span> <span class="n">of</span> <span class="n">the</span> <span class="n">extra</span> <span class="n">month</span><span class="p">.</span>
+     <span class="n">The</span> <span class="s">"length"</span> <span class="n">of</span> <span class="n">the</span> <span class="n">year</span> <span class="n">is</span> <span class="n">the</span> <span class="n">same</span> <span class="n">as</span> <span class="k">if</span> <span class="n">there</span> <span class="n">was</span> <span class="n">no</span> <span class="n">extra</span> <span class="n">month</span><span class="p">.</span>
+</code></pre></li>
+<li><p>kYearLengthShort: Years that are 353/383 days long.</p></li>
+<li><p>kYearLengthRegular: Years that are 354/384 days long.</p></li>
+<li><p>kYearLengthLong: Years that are 355/385 days long.</p></li>
+<li><p>kYearLengthChaseir: The same as <code>kYearLengthShort</code>.</p></li>
+<li><p>kYearLengthKesidran: The same as <code>kYearLengthRegular</code>.</p></li>
+<li><p>kYearLengthShalaim: The same as <code>kYearLengthLong</code>.</p></li>
+</ul>
+
+                        <a href="Enums/kYearLength.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">kYearLength</span> <span class="p">{}</span></code></pre>
 
                         </div>
                       </div>
@@ -287,39 +321,47 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>kYomimTovim
- *</p>
+                        <p>kYomimTovim</p>
+
+<p>Jewish holidays (and their <q>eve</q>s), including:</p>
+
+<p>The three primary holidays: </p>
 
 <ul>
-<li>Jewish holidays (and their <q>eve</q>s), including:
-*</li>
-<li>The three primary holidays:</li>
-<li>- Pesach</li>
-<li>- Shavuot</li>
-<li>- Sukkot
-*</li>
-<li>Secondary or rabinically instituted holidays:
-*</li>
-<li>- Purim, Shushan Purim, and Purim Katan</li>
-<li>- Chanukah</li>
-<li>- Rosh Chodesh (The new moon)
-*</li>
-<li>Fast Days</li>
-<li>- Yom Kippur</li>
-<li>- Seventeenth of Tammuz</li>
-<li>- Ninth of Av</li>
-<li>- Fast of Gedalya</li>
-<li>- Tenth of Tevet</li>
-<li>- Fast of Esther
-*</li>
-<li>Zionist Holidays</li>
-<li>- Yom Hashoah (Holocaust Memorial Day)</li>
-<li>- Yom Hazikaron (Memorial Day)</li>
-<li>- Yom Haatzmaut (Independence Day)</li>
-<li>- Yom Yerushalayim (Jerusalem Day)
-*</li>
-<li>Take a look at the enum for the ones that aren&rsquo;t included.</li>
+<li>Pesach</li>
+<li>Shavuot</li>
+<li>Sukkot</li>
 </ul>
+
+<p>Secondary or rabinically instituted holidays:</p>
+
+<ul>
+<li>Purim, Shushan Purim, and Purim Katan</li>
+<li>Chanukah</li>
+<li>Rosh Chodesh (The new moon)</li>
+</ul>
+
+<p>Fast Days</p>
+
+<ul>
+<li>Yom Kippur</li>
+<li>Seventeenth of Tammuz</li>
+<li>Ninth of Av</li>
+<li>Fast of Gedalya</li>
+<li>Tenth of Tevet</li>
+<li>Fast of Esther</li>
+</ul>
+
+<p>Zionist Holidays</p>
+
+<ul>
+<li>Yom Hashoah (Holocaust Memorial Day)</li>
+<li>Yom Hazikaron (Memorial Day)</li>
+<li>Yom Haatzmaut (Independence Day)</li>
+<li>Yom Yerushalayim (Jerusalem Day)</li>
+</ul>
+
+<p>Take a look at the enum for the ones that aren&rsquo;t included.</p>
 
                         <a href="Enums/kYomimTovim.html" class="slightly-smaller">See more</a>
                       </div>
@@ -390,9 +432,14 @@ readings are treated seperately from single parasha readings.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This flag determines which custom
-to use when returning a formatted
-string.</p>
+                        <p>This flag determines which custom to use when returning a formatted string.</p>
+
+<ul>
+<li>KCSefiraCustomAshkenaz: Uses the bet prefix.</li>
+<li>KCSefiraCustomSefard: Uses the lamed prefix.</li>
+<li>KCSefiraCustomSephardic:  Uses the lamed prefix and sephardic formula.</li>
+<li>KCSefiraCustomAri: Chabad - not sure what&rsquo;s different here yet.</li>
+</ul>
 
                         <a href="Enums/KCSefiraCustom.html" class="slightly-smaller">See more</a>
                       </div>
@@ -427,6 +474,12 @@ string.</p>
                       <div class="abstract">
                         <p>This flag determines which language to use to display the text.</p>
 
+<ul>
+<li>KCSefiraLanguageHebrew: The count, in Hebrew</li>
+<li>KCSefiraLanguageLocalizedOrEnglish: The count, in the system language with English as a fallback</li>
+<li>KCSefiraFormatterTransliteratedHebrew: The count, in Hebrew, spelled in English</li>
+</ul>
+
                         <a href="Enums/KCSefiraLanguage.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
@@ -460,9 +513,17 @@ string.</p>
                       <div class="abstract">
                         <p>The prayers for the formatter to show with the count text.</p>
 
-<p>If the KCSefiraLanguage is not set to KCSefiraLanguageHebrew
-  or KCSefiraCustom is KCSefiraCustomSephardic, the results from 
-  passing these flags is undefined.</p>
+<p>If the KCSefiraLanguage is not set to <code>KCSefiraLanguageHebrew</code> or <code><a href="Enums/KCSefiraCustom.html">KCSefiraCustom</a></code> is <code>KCSefiraCustomSephardic</code>, these flags will be ignored.</p>
+
+<ul>
+<li>KCSefiraPrayerAdditionLeshaimYichud: The <q>Lesheim Yichud</q> prayer.</li>
+<li>KCSefiraPrayerAdditionBeracha: &lt;#KCSefiraPrayerAdditionBeracha description#&gt;</li>
+<li>KCSefiraPrayerAdditionHarachaman: &lt;#KCSefiraPrayerAdditionHarachaman description#&gt;</li>
+<li>KCSefiraPrayerAdditionLamenatzaiach: &lt;#KCSefiraPrayerAdditionLamenatzaiach description#&gt;</li>
+<li>KCSefiraPrayerAdditionAna: &lt;#KCSefiraPrayerAdditionAna description#&gt;</li>
+<li>KCSefiraPrayerAdditionRibono: &lt;#KCSefiraPrayerAdditionRibono description#&gt;</li>
+<li>KCSefiraPrayerAdditionAleinu: &lt;#KCSefiraPrayerAdditionAleinu description#&gt;</li>
+</ul>
 
                         <a href="Enums/KCSefiraPrayerAddition.html" class="slightly-smaller">See more</a>
                       </div>
@@ -521,47 +582,6 @@ string.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@E@kHebrewYearType"></a>
-                    <a name="//apple_ref/objc/Enum/kHebrewYearType" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@kHebrewYearType">kHebrewYearType</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A type representing a hebrew year configuration.</p>
-
-<p>There are fourteen year configurations, as per
-Arthur Spier, &lsquo;The Comprehensive Hebrew Calendar,
-3rd ed&rsquo; (Behrman House 1986, ISBN 087306-398-8.)</p>
-
-<p>Each configuration composites the weekday of 1 Tishri,
-the number of days in the year, and if the year
-contains Adar II.</p>
-
-                        <a href="Enums/kHebrewYearType.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">kHebrewYearType</span> <span class="p">{}</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="nv">kHebrewYearType</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/c:@E@kWeekday"></a>
                     <a name="//apple_ref/objc/Enum/kWeekday" class="dashAnchor"></a>
                     <a class="token" href="#/c:@E@kWeekday">kWeekday</a>
@@ -572,9 +592,17 @@ contains Adar II.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A type representing the days of the week.</p>
+                        <p>A type representing the days of the week. 1-based. (i.e. Sunday is 1, Monday is 2, etc.)</p>
 
-<p>The related enum values are index-1, not index-0. (Sunday is 1, Monday is 2, etc.)</p>
+<ul>
+<li>kWeekdaySunday: The first day after shabbos.</li>
+<li>kWeekdayMonday: The second day after shabbos.</li>
+<li>kWeekdayTuesday: The third day after shabbos.</li>
+<li>kWeekdayWednesday: The fourth day after shabbos.</li>
+<li>kWeekdayThursday: The fifth day after shabbos.</li>
+<li>kWeekdayFriday: The sixth day after shabbos.</li>
+<li>kWeekdaySaturday: Shabbos.</li>
+</ul>
 
                         <a href="Enums/kWeekday.html" class="slightly-smaller">See more</a>
                       </div>
@@ -583,52 +611,6 @@ contains Adar II.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">kWeekday</span> <span class="p">{}</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="nv">kWeekday</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@E@kYearLength"></a>
-                    <a name="//apple_ref/objc/Enum/kYearLength" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@E@kYearLength">kYearLength</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A type representing the length of a hebrew year.</p>
-
-<p>There are 6 possible lengths (in days) that a Hebrew year can be.
-  They are: 353, 354, 355, 383, 384, and 385 days. A year that has
-  353 days is <q>short</q>, a year with 354 is <q>regular</q>, 355 is <q>long.</q></p>
-
-<p>The 30 day discrepancy will occur in leap years because
-  of the extra month. The <q>length</q> of the year is the same as
-  if there was no extra month. (383 is the same as 353.)</p>
-
-                        <a href="Enums/kYearLength.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">kYearLength</span> <span class="p">{}</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="nv">kYearLength</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
 
                         </div>
                       </div>
@@ -640,7 +622,7 @@ contains Adar II.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

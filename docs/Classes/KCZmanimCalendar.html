@@ -14,7 +14,7 @@
     <a title="KCZmanimCalendar Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -164,14 +161,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Protocols/KCAstronomicalCalculator.html">KCAstronomicalCalculator</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
               </li>
             </ul>
           </li>
@@ -296,9 +285,9 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Method to return <em>alos</em> (dawn) calculated using 72 minutes before sunrise at sea level (no adjustment for elevation) based on the time to walk the distance of 4 <em>Mil</em> at 18 minutes a
- <em>Mil</em>. This is based on the opinion of most <em>Rishonim</em> who stated that the time of the
- <em>Neshef</em> (time between dawn and sunrise) does not vary by the time of year or location but purely depends
- on the time it takes to walk the distance of 4 <em>Mil</em>.</p>
+<em>Mil</em>. This is based on the opinion of most <em>Rishonim</em> who stated that the time of the
+<em>Neshef</em> (time between dawn and sunrise) does not vary by the time of year or location but purely depends
+on the time it takes to walk the distance of 4 <em>Mil</em>.</p>
 
                       </div>
                       <div class="declaration">
@@ -317,8 +306,8 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> representing the time. If the calculation can&rsquo;t be computed such as in the Arctic
-     Circle where there is at least one day a year where the sun does not rise, and one where it does not set,
-     nil will be returned.</p>
+    Circle where there is at least one day a year where the sun does not rise, and one where it does not set,
+    nil will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -337,7 +326,7 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns <em>chatzos</em> (midday) following the opinion of the GRA that the day for Jewish halachic
- times start at sea level sunrise and ends at sea level sunset.</p>
+times start at sea level sunrise and ends at sea level sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -356,8 +345,8 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> of chatzos. If the calculation can&rsquo;t be computed such as in the Arctic Circle where
-     there is at least one day where the sun does not rise, and one where it does not set, a null will be
-     returned.</p>
+    there is at least one day where the sun does not rise, and one where it does not set, a null will be
+    returned.</p>
                       </div>
                     </section>
                   </div>
@@ -376,8 +365,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns the latest <em>zman krias shema</em> (time to recite Shema in the morning). This time is 3 shaos zmaniyos (solar hours) after sea level
- sunrise based on the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is calculated from
- sunrise to sunset.</p>
+sunrise based on the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is calculated from
+sunrise to sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -396,8 +385,8 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> of the latest zman shema according to the GRA and Baal Hatanya. If the calculation
-     can&rsquo;t be computed such as in the Arctic Circle where there is at least one day a year where the sun does
-     not rise, and one where it does not set, nil will be returned.</p>
+    can&rsquo;t be computed such as in the Arctic Circle where there is at least one day a year where the sun does
+    not rise, and one where it does not set, nil will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -416,9 +405,9 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns the latest <em>zman krias shema</em> (time to recite shema in the morning) in the opinion of
- the <em>MGA</em> based on <em>alos</em> being 72 minutes before sunrise. This time is 3
- <em>shaos zmaniyos</em> (solar hours) after dawn based on the opinion of the <em>MGA</em> that the day is
- calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset.</p>
+the <em>MGA</em> based on <em>alos</em> being 72 minutes before sunrise. This time is 3
+<em>shaos zmaniyos</em> (solar hours) after dawn based on the opinion of the <em>MGA</em> that the day is
+calculated from a dawn of 72 minutes before sunrise to nightfall of 72 minutes after sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -437,8 +426,8 @@
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> of the latest <em>zman shema</em>. If the calculation can&rsquo;t be computed such as in
-     the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it
-     does not set, nil will be returned.</p>
+    the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it
+    does not set, nil will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -496,7 +485,7 @@ used to calculate candle lighting time for <em>yom tov</em> (mid-week holidays) 
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method to return the candle lighting time, calculated as offset
-  minutes before sunset.</p>
+minutes before sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -787,8 +776,8 @@ used to calculate candle lighting time for <em>yom tov</em> (mid-week holidays) 
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns the latest <em>zman tefilah</em> (time to recite the morning prayers). This time is 4
- hours into the day based on the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is
- calculated from sunrise to sunset.</p>
+hours into the day based on the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is
+calculated from sunrise to sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -807,8 +796,8 @@ used to calculate candle lighting time for <em>yom tov</em> (mid-week holidays) 
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> of the latest zman tefilah. If the calculation can&rsquo;t be computed such as in the
-     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
-     not set, nil will be returned.</p>
+    Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+    not set, nil will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -827,10 +816,10 @@ used to calculate candle lighting time for <em>yom tov</em> (mid-week holidays) 
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns the latest <em>zman tfila</em> (time to recite the morning prayers) in the opinion of the
- <em>MGA</em> based on <em>alos</em> being 72 minutes before sunrise.
- This time is 4 shaos zmaniyos (temporal hours) after
- dawn based on the opinion of the <em>MGA</em> that the day is calculated from a dawn} of 72
- minutes before sunrise to nightfall} of 72 minutes after sunset.</p>
+<em>MGA</em> based on <em>alos</em> being 72 minutes before sunrise.
+This time is 4 shaos zmaniyos (temporal hours) after
+dawn based on the opinion of the <em>MGA</em> that the day is calculated from a dawn} of 72
+minutes before sunrise to nightfall} of 72 minutes after sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -849,8 +838,8 @@ used to calculate candle lighting time for <em>yom tov</em> (mid-week holidays) 
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> of the latest zman tfila. If the calculation can&rsquo;t be computed such as in the
-     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
-     not set), nil will be returned.</p>
+    Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+    not set), nil will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -955,8 +944,8 @@ the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is ca
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns the time of <em>plag hamincha</em>. This is calculated as 10.75 hours after sunrise. This
- calculation is based on the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is calculated
- from sunrise to sunset.</p>
+calculation is based on the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is calculated
+from sunrise to sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -975,8 +964,8 @@ the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day is ca
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> of the time of <em>plag hamincha</em>. If the calculation can&rsquo;t be computed such as
-     in the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it
-     does not set, nil will be returned.</p>
+    in the Arctic Circle where there is at least one day a year where the sun does not rise, and one where it
+    does not set, nil will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -1062,13 +1051,13 @@ zenith. The Ohr Meir considers this the time that 3 small stars are visible, whi
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that returns a <em>shaah zmanis</em> (temporal hour) according to
- the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em>. This calculation divides the day based on the
- opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day runs from
- sunrise to  sunset. The calculations are based on a day from
- sea level sunrise to sea level sunset. The day is
- split into 12 equal parts with each one being a <em>shaah zmanis</em>. An explanation and
- detailed sources for not using elevation for anything besides sunrise and sunset can be found in <q>http://www.worldcat.org/oclc/659793988</q> Zmanim Kehilchasam (second edition published in 2007) by Rabbi
- Dovid Yehuda Bursztyn chapter 2 (pages 186-187).</p>
+the opinion of the <em>GRA</em> and the <em>Baal Hatanya</em>. This calculation divides the day based on the
+opinion of the <em>GRA</em> and the <em>Baal Hatanya</em> that the day runs from
+sunrise to  sunset. The calculations are based on a day from
+sea level sunrise to sea level sunset. The day is
+split into 12 equal parts with each one being a <em>shaah zmanis</em>. An explanation and
+detailed sources for not using elevation for anything besides sunrise and sunset can be found in <q>http://www.worldcat.org/oclc/659793988</q> Zmanim Kehilchasam (second edition published in 2007) by Rabbi
+Dovid Yehuda Bursztyn chapter 2 (pages 186-187).</p>
 
                       </div>
                       <div class="declaration">
@@ -1087,9 +1076,9 @@ zenith. The Ohr Meir considers this the time that 3 small stars are visible, whi
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>double</code> millisecond length of a <em>shaah zmanis</em> calculated from
-     sea level sunrise to sea level sunset. If the
-     calculation can&rsquo;t be computed such as in the Arctic Circle where there is at least one day a year where
-     the sun does not rise, and one where it does not set, <code>LONG_MIN</code> will be returned.</p>
+    sea level sunrise to sea level sunset. If the
+    calculation can&rsquo;t be computed such as in the Arctic Circle where there is at least one day a year where
+    the sun does not rise, and one where it does not set, <code>LONG_MIN</code> will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -1108,10 +1097,10 @@ zenith. The Ohr Meir considers this the time that 3 small stars are visible, whi
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that returns a <em>shaah zmanis</em> (temporal hour) according to the opinion of the Magen Avraham. This
- calculation divides the day based on the opinion of the <em>MGA</em> that the day runs from dawn to dusk (for sof
- zman krias shema and tfila). Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after
- sunset. This day is split into 12 equal parts with each part being a <em>shaah zmanis</em>. Alternate methods of
- calculating a <em>shaah zmanis</em> are available in the subclass <code>ComplexZmanimCalendar</code>.</p>
+calculation divides the day based on the opinion of the <em>MGA</em> that the day runs from dawn to dusk (for sof
+zman krias shema and tfila). Dawn for this calculation is 72 minutes before sunrise and dusk is 72 minutes after
+sunset. This day is split into 12 equal parts with each part being a <em>shaah zmanis</em>. Alternate methods of
+calculating a <em>shaah zmanis</em> are available in the subclass <code>ComplexZmanimCalendar</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -1130,8 +1119,8 @@ zenith. The Ohr Meir considers this the time that 3 small stars are visible, whi
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>NSDate</code> millisecond length of a <em>shaah zmanis</em>. If the calculation can&rsquo;t be computed
-     such as in the Arctic Circle where there is at least one day a year where the sun does not rise, and one
-     where it does not set, <code>LONG_MIN</code> will be returned.</p>
+    such as in the Arctic Circle where there is at least one day a year where the sun does not rise, and one
+    where it does not set, <code>LONG_MIN</code> will be returned.</p>
                       </div>
                     </section>
                   </div>
@@ -1141,7 +1130,7 @@ zenith. The Ohr Meir considers this the time that 3 small stars are visible, whi
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

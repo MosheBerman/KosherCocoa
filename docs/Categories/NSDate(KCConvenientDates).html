@@ -14,7 +14,7 @@
     <a title="NSDate(KCConvenientDates) Category Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -167,14 +164,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -188,25 +177,25 @@
 <span class="c1">// MARK: - Creating Hebrew Dates</span>
 
 <span class="cm">/** This method creates a date given a hebrew month and day.
- *
- *  The year is taken from the year component of `[NSDate date]` against 
- *  the Hebrew calendar.
- *
- *  @param month The month of the year. 1 is Tishrei, 2 Heshvan, etc.
- *  @param day The day of the month.
- *  @return An NSDate initialized with the supplied parameters.
+
+  The year is taken from the year component of `[NSDate date]` against 
+  the Hebrew calendar.
+
+  @param month The month of the year. 1 is Tishrei, 2 Heshvan, etc.
+  @param day The day of the month.
+  @return An NSDate initialized with the supplied parameters.
  */</span>
 
 <span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">dateWithHebrewMonth</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">month</span> <span class="nf">andDay</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">day</span><span class="p">;</span>
 
 <span class="cm">/** This method creates a date given a hebrew month and day.
- *
- *  The year is taken from the value of `[NSDate date]`.
- *
- *  @param month The month of the year. 1 is Tishrei, 2 Heshvan, etc.
- *  @param day The day of the month.
- *  @param year The hebrew year number.
- *  @return An NSDate initialized with the supplied parameters.
+
+  The year is taken from the value of `[NSDate date]`.
+
+  @param month The month of the year. 1 is Tishrei, 2 Heshvan, etc.
+  @param day The day of the month.
+  @param year The hebrew year number.
+  @return An NSDate initialized with the supplied parameters.
  */</span>
 
 <span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDate</span> <span class="o">*</span><span class="p">)</span><span class="nf">dateWithHebrewMonth</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">month</span> <span class="nf">andDay</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">day</span> <span class="nf">andYear</span><span class="p">:(</span><span class="n">NSInteger</span><span class="p">)</span><span class="nv">year</span><span class="p">;</span>
@@ -234,17 +223,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method creates a date given a hebrew month and day.
- *</p>
+                        <p>This method creates a date given a hebrew month and day.</p>
 
-<ul>
-<li>The year is taken from the year component of <code>[NSDate date]</code> against</li>
-<li>the Hebrew calendar.
-*</li>
-<li>- parameter: month The month of the year. 1 is Tishrei, 2 Heshvan, etc.</li>
-<li>- parameter: day The day of the month.</li>
-<li>- returns: An NSDate initialized with the supplied parameters.</li>
-</ul>
+<p>The year is taken from the year component of <code>[NSDate date]</code> against 
+  the Hebrew calendar.</p>
 
                       </div>
                       <div class="declaration">
@@ -259,6 +241,41 @@
                           <pre class="highlight swift"><code><span class="cm">/*not inherited*/</span> <span class="nf">init</span><span class="p">?(</span><span class="n">hebrewMonth</span> <span class="nv">month</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">andDay</span> <span class="nv">day</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>month</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The month of the year. 1 is Tishrei, 2 Heshvan, etc.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>day</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The day of the month.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSDate initialized with the supplied parameters.</p>
                       </div>
                     </section>
                   </div>
@@ -276,17 +293,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method creates a date given a hebrew month and day.
- *</p>
+                        <p>This method creates a date given a hebrew month and day.</p>
 
-<ul>
-<li>The year is taken from the value of <code>[NSDate date]</code>.
-*</li>
-<li>- parameter: month The month of the year. 1 is Tishrei, 2 Heshvan, etc.</li>
-<li>- parameter: day The day of the month.</li>
-<li>- parameter: year The hebrew year number.</li>
-<li>- returns: An NSDate initialized with the supplied parameters.</li>
-</ul>
+<p>The year is taken from the value of <code>[NSDate date]</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -304,6 +313,53 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>month</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The month of the year. 1 is Tishrei, 2 Heshvan, etc.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>day</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The day of the month.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>year</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The hebrew year number.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An NSDate initialized with the supplied parameters.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
@@ -312,7 +368,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -14,7 +14,7 @@
     <a title="KCDaf Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -167,14 +164,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -189,6 +178,8 @@
                 </div>
               </div>
             <p>This class represents a folio of the talmud.</p>
+
+<p>A folio is a two-sided page. (i.e. Pages 2a and 2b together make up a folio.)</p>
 
           </section>
           <section class="section task-group-section">
@@ -207,18 +198,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The index of the tractate. </p>
+                        <p>The index of the tractate.</p>
 
-<p>The index can be translated into a string 
-  by calling displayName or displayNameTransliterated.</p>
+<p>The index can be translated into a string by calling <code>displayName</code> or <code>displayNameTransliterated</code>.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
-    name
+    displayName
 
 </div>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
-    nameTransliterated
+    displayNameTransliterated
 
 </div>
 
@@ -227,7 +217,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">tractateIndex</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">tractateIndex</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -259,7 +249,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">pageNumber</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">pageNumber</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
@@ -344,9 +334,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)KCDaf(im)name"></a>
-                    <a name="//apple_ref/objc/Method/-name" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)KCDaf(im)name">-name</a>
+                    <a name="/c:objc(cs)KCDaf(py)name"></a>
+                    <a name="//apple_ref/objc/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCDaf(py)name">name</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -354,26 +344,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method returns the display name of a given tractate 
-  as a Hebrew string.</p>
+                        <p>A string with hebrew name of the volume, spelled in Hebrew characters.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">name</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">name</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">name</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A string with hebrew name of the tractate that corresponds to the tractateIndex.</p>
                       </div>
                     </section>
                   </div>
@@ -381,9 +366,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)KCDaf(im)nameTransliterated"></a>
-                    <a name="//apple_ref/objc/Method/-nameTransliterated" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)KCDaf(im)nameTransliterated">-nameTransliterated</a>
+                    <a name="/c:objc(cs)KCDaf(py)nameTransliterated"></a>
+                    <a name="//apple_ref/objc/Property/nameTransliterated" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)KCDaf(py)nameTransliterated">nameTransliterated</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -391,26 +376,21 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method returns the dispolay name of a given tractate
-  as a transliterated Hebrew string.</p>
+                        <p>A string with hebrew name of the volume, spelled in English characters.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">nameTransliterated</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">nameTransliterated</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">nameTransliterated</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">nameTransliterated</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A string with transliterated name of the tractate that corresponds to the tractateIndex.</p>
                       </div>
                     </section>
                   </div>
@@ -420,7 +400,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html"> Docs</a> (42% documented)</p>
+        <p><a href="index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -164,14 +161,6 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Protocols/KCAstronomicalCalculator.html">KCAstronomicalCalculator</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
               </li>
             </ul>
           </li>
@@ -239,22 +228,22 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This class extends ZmanimCalendar and provides many
-  more zmanim than available in the ZmanimCalendar.</p>
+more zmanim than available in the ZmanimCalendar.</p>
 
 <p>The basis for most zmanim in this class are from the sefer 
-  Yisroel Vehazmanim by Rabbi Yisroel Dovid Harfenes.
-  As an example of the number of different zmanim made available
-  by this class, there are methods to return 12 different
-  calculations for alos (dawn) available in this class. 
-  The real power of this API is the ease in calculating zmanim 
-  that are not part of the API.</p>
+Yisroel Vehazmanim by Rabbi Yisroel Dovid Harfenes.
+As an example of the number of different zmanim made available
+by this class, there are methods to return 12 different
+calculations for alos (dawn) available in this class. 
+The real power of this API is the ease in calculating zmanim 
+that are not part of the API.</p>
 
 <p>The methods for doing zmanim calculations not present in this class or its
-  superclass the KCZmanimCalendar are contained in KCAstronomicalCalendar,
-  the base class of the calendars in our API since they are generic methods
-  for calculating time based on degrees or time before or after sunrise and 
-  sunset and
-  are of interest for calculation beyond zmanim calculations.</p>
+superclass the KCZmanimCalendar are contained in KCAstronomicalCalendar,
+the base class of the calendars in our API since they are generic methods
+for calculating time based on degrees or time before or after sunrise and 
+sunset and
+are of interest for calculation beyond zmanim calculations.</p>
 
                         <a href="Classes/KCComplexZmanimCalendar.html" class="slightly-smaller">See more</a>
                       </div>
@@ -293,6 +282,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This class represents a folio of the talmud.</p>
+
+<p>A folio is a two-sided page. (i.e. Pages 2a and 2b together make up a folio.)</p>
 
                         <a href="Classes/KCDaf.html" class="slightly-smaller">See more</a>
                       </div>
@@ -520,14 +511,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The KCParashatHashavuaCalculator class calculates which 
-  parasha is read on the shabbat following a supplied date.
-  It can also return the listing for an entire year. </p>
+                        <p>@abstract</p>
+
+<p>Calculates which parasha is read on the shabbat following a supplied date.
+It can also return the listing for an entire year.</p>
 
 <p>In Israel, due to differences in holiday observance, the schedule
-  may vary from the diaspora in some years. KCParashatHashavuaCalculator
-  accounts for these as well, and can return the appropriate value for
-  both Israel and the diaspora.</p>
+may vary from the diaspora in some years. KCParashatHashavuaCalculator
+accounts for these as well, and can return the appropriate value for
+both Israel and the diaspora.</p>
 
                         <a href="Classes/KCParashatHashavuaCalculator.html" class="slightly-smaller">See more</a>
                       </div>
@@ -565,7 +557,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This class formats an integer into a sefira day</p>
+                        <p>Formats an integer into a sefira day.</p>
 
                         <a href="Classes/KCSefiraFormatter.html" class="slightly-smaller">See more</a>
                       </div>
@@ -690,7 +682,7 @@
                           <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">KCZman</span> <span class="p">:</span> <span class="nc">NSObject</span>
 
 <span class="cm">/**
- *  The selector used to calculate the zman.
+  The selector used to calculate the zman.
  */</span>
 
 <span class="k">@property</span> <span class="p">(</span><span class="n">nonnull</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">SEL</span> <span class="n">selector</span><span class="p">;</span>
@@ -698,17 +690,17 @@
 <span class="c1">// MARK: - Instantiating a Zman</span>
 
 <span class="cm">/**
- *  Takes a selector and converts it into a KCZman object.
- *
- *  @return A zman object for the supplied selector.
+  Takes a selector and converts it into a KCZman object.
+
+  @return A zman object for the supplied selector.
  */</span>
 
 <span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">KCZman</span> <span class="o">*</span><span class="p">)</span><span class="nf">zmanForSelector</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span><span class="p">;</span>
 
 <span class="cm">/**
- *  Instantiates a zman for the supplied selector.
- *
- *  @return A zman with with the supplied selector.
+  Instantiates a zman for the supplied selector.
+
+  @return A zman with with the supplied selector.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithSelector</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">SEL</span><span class="p">)</span><span class="nv">selector</span><span class="p">;</span>
@@ -716,73 +708,73 @@
 <span class="c1">// MARK: - Display Name</span>
 
 <span class="cm">/**
- *  The hebrew name of the zman.
- *
- *  @return The name of the zman, in Hebrew.
+  The hebrew name of the zman.
+
+  @return The name of the zman, in Hebrew.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">hebrewName</span><span class="p">;</span>
 
 <span class="cm">/**
- *  The shortened hebrew name.
- *
- *  @return The short hebrew name of the zman, such as שמע.
+  The shortened hebrew name.
+
+  @return The short hebrew name of the zman, such as שמע.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">shortHebrewName</span><span class="p">;</span>
 
 <span class="cm">/**
- *  The transliterated name of the zman, using the ashkenazic pronunciation.
- *
- *  @discussion Transliterations use the Ashkenazic pronunciation. (For example: "Alos" for sunrise.)
- *
- *  @return The name of the zman.
+  The transliterated name of the zman, using the ashkenazic pronunciation.
+
+  @discussion Transliterations use the Ashkenazic pronunciation. (For example: "Alos" for sunrise.)
+
+  @return The name of the zman.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">transliteratedNameAshkenazic</span><span class="p">;</span>
 
 <span class="cm">/**
- *  The transliterated name of the zman, using the sephardic pronunciation.
- *
- *  @discussion Transliterations use the sephardic pronunciation. (For example: "Alot" for sunrise.)
- *
- *  @return The name of the zman.
+  The transliterated name of the zman, using the sephardic pronunciation.
+
+  @discussion Transliterations use the sephardic pronunciation. (For example: "Alot" for sunrise.)
+
+  @return The name of the zman.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">transliteratedNameSephardic</span><span class="p">;</span>
 
 <span class="cm">/**
- *  The name of the zman in English.
- *
- *  @return The name of the zman.
+  The name of the zman in English.
+
+  @return The name of the zman.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">englishName</span><span class="p">;</span>
 
 <span class="cm">/**
- *  The shortened english name.
- *
- *  @return The short English name of the zman, such as Shma.
+  The shortened english name.
+
+  @return The short English name of the zman, such as Shma.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">shortEnglishName</span><span class="p">;</span>
 
 <span class="cm">/**
- *  Grabs the main zman name, discarding rabbinic opinion.
- *
- *  @param displayName The full display name containing the calculation and rabbinic opinion.
- *
- *  @return The calculation name, stripped of any rabbinic opinion.
+  Grabs the main zman name, discarding rabbinic opinion.
+
+  @param displayName The full display name containing the calculation and rabbinic opinion.
+
+  @return The calculation name, stripped of any rabbinic opinion.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">nameFromDisplayName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayName</span><span class="p">;</span>
 
 <span class="cm">/**
- *  Grabs the rabbinic opinion from display name.
- *
- *  @param displayName The full display name containing the calculation and rabbinic opinion.
- *
- *  @return The calculation name, without the calculation name.
+  Grabs the rabbinic opinion from display name.
+
+  @param displayName The full display name containing the calculation and rabbinic opinion.
+
+  @return The calculation name, without the calculation name.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">rabbinicOpinionFromDisplayName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">displayName</span><span class="p">;</span>
@@ -791,9 +783,9 @@
 
 
 <span class="cm">/**
- *  The explanation for the zman.
- *
- *  @return An explanation of the halachic background behind the zman.
+  The explanation for the zman.
+
+  @return An explanation of the halachic background behind the zman.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">explanation</span><span class="p">;</span>
@@ -801,11 +793,11 @@
 <span class="c1">// Mark: - Related Zmanim</span>
 
 <span class="cm">/**
- *  Other zmanim that are related to this zman.
- *
- *  @discussion Related zmanim are other versions of the same zman. Related zmanim always contains self.
- *
- *  @return An NSArray of KCZman objects that are related to this zman.
+  Other zmanim that are related to this zman.
+
+  @discussion Related zmanim are other versions of the same zman. Related zmanim always contains self.
+
+  @return An NSArray of KCZman objects that are related to this zman.
  */</span>
 
 <span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span> <span class="o">*</span><span class="p">)</span><span class="n">relatedZmanim</span><span class="p">;</span>
@@ -818,17 +810,17 @@
 <span class="cp">#pragma mark - Metadata mappings 
 </span>
 <span class="cm">/**
- * A mapping of related calculations.
- *
- *  @return A nested array of zmanim selectors, each group containing related selectors.
+ A mapping of related calculations.
+
+  @return A nested array of zmanim selectors, each group containing related selectors.
  */</span>
 
 <span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span><span class="o">*</span> <span class="o">&gt;*</span> <span class="o">&gt;*</span><span class="p">)</span><span class="n">relatedZmanimMapping</span><span class="p">;</span>
 
 <span class="cm">/**
- *  The list of zmanim metadata.
- *
- *  @return An NSDictionary containing data for all of the zmanim.
+  The list of zmanim metadata.
+
+  @return An NSDictionary containing data for all of the zmanim.
  */</span>
 
 <span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span><span class="o">*</span><span class="p">,</span><span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span><span class="o">*</span><span class="p">,</span> <span class="n">NSString</span><span class="o">*&gt;*&gt;*</span><span class="p">)</span><span class="n">metadata</span><span class="p">;</span>
@@ -888,7 +880,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

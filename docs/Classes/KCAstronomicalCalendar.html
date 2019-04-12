@@ -14,7 +14,7 @@
     <a title="KCAstronomicalCalendar Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (42% documented)</p>
+        <p><a href="../index.html"> Docs</a> (47% documented)</p>
         <p class="header-right"><a href="https://github.com/mosheberman/KosherCocoa"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -128,9 +128,6 @@
                 <a href="../Enums/KCHebrewMonth.html">KCHebrewMonth</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/KCHebrewYearType.html">KCHebrewYearType</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/KCParashaIdentifier.html">KCParashaIdentifier</a>
               </li>
               <li class="nav-group-task">
@@ -167,14 +164,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Type Definitions.html">Type Definitions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Type Definitions.html#/c:KCHebrewYear.h@T@kYearType">kYearType</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -207,10 +196,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The calculator to use. </p>
+                        <p>The calculator to use.</p>
 
 <p>In KosherCocoa, it&rsquo;s always a KCSunriseAndSunsetCalculator. The
-  original Java library offered several calculator options.</p>
+original Java library offered several calculator options.</p>
 
                       </div>
                       <div class="declaration">
@@ -294,17 +283,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Initializing%20the%20Calendar"></a>
-                <a name="//apple_ref/objc/Section/Initializing the Calendar" class="dashAnchor"></a>
-                <a href="#/Initializing%20the%20Calendar">
-                  <h3 class="section-name">Initializing the Calendar</h3>
-                </a>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -365,17 +343,6 @@
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Calculating%20Sunrise"></a>
-                <a name="//apple_ref/objc/Section/Calculating Sunrise" class="dashAnchor"></a>
-                <a href="#/Calculating%20Sunrise">
-                  <h3 class="section-name">Calculating Sunrise</h3>
-                </a>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -389,12 +356,16 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method calculates sunrise at the current geolocation. </p>
+                        <p>This method calculates sunrise at the current geolocation.</p>
 
-<p>The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation. 
-  This is adjusted by the KCAstronomicalCalculator to add approximately 50/60 of a degree 
-  to account for 34 archminutes of refraction and 16 archminutes for the sun&rsquo;s radius for
-  a total of 90.83333 degrees.</p>
+<p>The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation.
+This is adjusted by the KCAstronomicalCalculator to add approximately 50/60 of a degree
+to account for 34 archminutes of refraction and 16 archminutes for the sun&rsquo;s radius for
+a total of 90.83333 degrees.</p>
+
+<p>If the calculation cannot be computed, such as in the Arctic Circle, where there is
+at least one day a year that the sun does not rise, and one where it does not set,
+nil will be returned.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
     KCSunriseAndSunsetCalculator
@@ -417,10 +388,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>Sunrise as an NSDate. 
-If the calculation cannot be computed, such as in the Arctic Circle, where there is 
-at least one day a year that the sun does not rise, and one where it does not set, 
-nil will be returned.</p>
+                        <p>Sunrise as an NSDate.</p>
                       </div>
                     </section>
                   </div>
@@ -438,14 +406,14 @@ nil will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method calculates sunrise at sea-level at 
-  the latitude and longitude represented by the 
-  current geolocation.</p>
+                        <p>This method calculates sunrise at sea-level at
+the latitude and longitude represented by the
+current geolocation.</p>
 
 <p>Non-sunrise and sunset calculations such as dawn and dusk, depend on the amount of
-  visible light, something that is not affected by elevation. This method returns 
-  sunrise calculated at sea level. This forms the base for dawn calculations that are
-  calculated as a dip below the horizon before sunrise.</p>
+visible light, something that is not affected by elevation. This method returns
+sunrise calculated at sea level. This forms the base for dawn calculations that are
+calculated as a dip below the horizon before sunrise.</p>
 
                       </div>
                       <div class="declaration">
@@ -500,7 +468,7 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The Date of the beginning of civil twilight using a zenith of 96 degrees. If the calculation
- can&rsquo;t be computed, nill will be returned. See detailed explanation on top of the page.</p>
+can&rsquo;t be computed, nill will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -518,7 +486,7 @@ nil will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method calculates the start of civil twilight.</p>
+                        <p>Calcuates the beginning of civil twilight.</p>
 
                       </div>
                       <div class="declaration">
@@ -533,6 +501,10 @@ nil will be returned.</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">beginCivilTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSDate</code> marking the beginning of civil twilight on the date representing by <code><a href="../Classes/KCAstronomicalCalendar.html#/c:objc(cs)KCAstronomicalCalendar(py)workingDate">workingDate</a></code>.</p>
                       </div>
                     </section>
                   </div>
@@ -550,7 +522,7 @@ nil will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Calcuates the beginning of nautical twilight.</p>
 
                       </div>
                       <div class="declaration">
@@ -565,6 +537,10 @@ nil will be returned.</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">beginNauticalTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSDate</code> marking the beginning of nautical twilight on the date representing by <code><a href="../Classes/KCAstronomicalCalendar.html#/c:objc(cs)KCAstronomicalCalendar(py)workingDate">workingDate</a></code>.</p>
                       </div>
                     </section>
                   </div>
@@ -582,7 +558,7 @@ nil will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Calcuates the beginning of astronomical twilight.</p>
 
                       </div>
                       <div class="declaration">
@@ -597,6 +573,10 @@ nil will be returned.</p>
                           <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">beginAstronomicalTwilight</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>NSDate</code> marking the beginning of astronomical twilight on the date representing by <code><a href="../Classes/KCAstronomicalCalendar.html#/c:objc(cs)KCAstronomicalCalendar(py)workingDate">workingDate</a></code>.</p>
                       </div>
                     </section>
                   </div>
@@ -614,8 +594,8 @@ nil will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method returns an NSDate representing the time of sunset on 
-  the KCAstronomicalCalendar instance&rsquo;s workingDate property.</p>
+                        <p>This method returns an NSDate representing the time of sunset on
+the KCAstronomicalCalendar instance&rsquo;s workingDate property.</p>
 
 <p>This method takes elevation into account.</p>
 
@@ -654,7 +634,7 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns an NSDate representing the time of sunset on
-  the KCAstronomicalCalendar instance&rsquo;s workingDate property.</p>
+the KCAstronomicalCalendar instance&rsquo;s workingDate property.</p>
 
 <p>This method does not take elevation into account.</p>
 
@@ -693,8 +673,8 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A utility method that returns the time of an offset by degrees below or above the horizon of {@link #getSunset()
- sunset}. Note that the degree offset is from the vertical, so for a calculation of 14&deg; after sunset, an
- offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.</p>
+sunset}. Note that the degree offset is from the vertical, so for a calculation of 14&deg; after sunset, an
+offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.</p>
 
                       </div>
                       <div class="declaration">
@@ -712,10 +692,10 @@ nil will be returned.</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>The {@link java.util.Date}of the offset after (or before) {@link #getSunset()}. If the calculation can&rsquo;t
-     be computed such as in the Arctic Circle where there is at least one day a year where the sun does not
-     rise, and one where it does not set, a null will be returned. See detailed explanation on top of the
-     page.</p>
+                        <p>The date of the offset after (or before) sunset. If the calculation can&rsquo;t
+be computed such as in the Arctic Circle where there is at least one day a year where the sun does not
+rise, and one where it does not set, a null will be returned. See detailed explanation on top of the
+page.</p>
                       </div>
                     </section>
                   </div>
@@ -734,12 +714,12 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that will roll the sunset time forward a day if sunset occurs before sunrise. This is a rare occurrence
- and will typically happen when calculating very early and late twilights in a location with a time zone far off
- from its natural 15&deg; boundaries. This method will ensure that in this case, the sunset will be incremented to
- the following date. An example of this is Marquette, Michigan that far west of the natural boundaries for EST.
- When you add in DST this pushes it an additional hour off. Calculating the extreme 26&deg;twilight on March 6th
- it start at 2:34:30 on the 6th and end at 1:01:46 on the following day March 7th. Occurrences are more common in
- the polar region for dips as low as 3&deg; (Tested for Hooper Bay, Alaska).</p>
+and will typically happen when calculating very early and late twilights in a location with a time zone far off
+from its natural 15&deg; boundaries. This method will ensure that in this case, the sunset will be incremented to
+the following date. An example of this is Marquette, Michigan that far west of the natural boundaries for EST.
+When you add in DST this pushes it an additional hour off. Calculating the extreme 26&deg;twilight on March 6th
+it start at 2:34:30 on the 6th and end at 1:01:46 on the following day March 7th. Occurrences are more common in
+the polar region for dips as low as 3&deg; (Tested for Hooper Bay, Alaska).</p>
 
                       </div>
                       <div class="declaration">
@@ -790,8 +770,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>the adjusted sunset date. If the calculation can&rsquo;t be computed such as in the Arctic Circle where there
-     is at least one day a year where the sun does not rise, and one where it does not set, a null will be
-     returned. See detailed explanation on top of the page.</p>
+is at least one day a year where the sun does not rise, and one where it does not set, a null will be
+returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -828,7 +808,7 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The <code>Date</code> of the end of civil twilight using a zenith of {@link #CIVIL_ZENITH 96&deg;}. If
-     the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top of the page.</p>
+the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -865,8 +845,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The <code>Date</code> of the end of nautical twilight using a zenith of {@link #NAUTICAL_ZENITH 102&deg;}
-     . If the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top of the
-     page.</p>
+. If the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top of the
+page.</p>
                       </div>
                     </section>
                   </div>
@@ -903,8 +883,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>Date</code> of the end of astronomical twilight using a zenith of {@link #ASTRONOMICAL_ZENITH
-     108&deg;}. If the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top
-     of the page.</p>
+108&deg;}. If the calculation can&rsquo;t be computed, null will be returned. See detailed explanation on top
+of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -923,7 +903,7 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that returns the sunrise in UTC time without correction for time zone offset from GMT and without using
- daylight savings time.</p>
+daylight savings time.</p>
 
                       </div>
                       <div class="declaration">
@@ -961,8 +941,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
-     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
-     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -981,9 +961,9 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that returns the sunrise in UTC time without correction for time zone offset from GMT and without using
- daylight savings time. Non-sunrise and sunset calculations such as dawn and dusk, depend on the amount of visible
- light, something that is not affected by elevation. This method returns UTC sunrise calculated at sea level. This
- forms the base for dawn calculations that are calculated as a dip below the horizon before sunrise.</p>
+daylight savings time. Non-sunrise and sunset calculations such as dawn and dusk, depend on the amount of visible
+light, something that is not affected by elevation. This method returns UTC sunrise calculated at sea level. This
+forms the base for dawn calculations that are calculated as a dip below the horizon before sunrise.</p>
 
                       </div>
                       <div class="declaration">
@@ -1021,8 +1001,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
-     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
-     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -1041,7 +1021,7 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that returns the sunset in UTC time without correction for time zone offset from GMT and without using
- daylight savings time.</p>
+daylight savings time.</p>
 
                       </div>
                       <div class="declaration">
@@ -1079,8 +1059,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
-     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
-     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -1099,10 +1079,10 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that returns the sunset in UTC time without correction for elevation, time zone offset from GMT and
- without using daylight savings time. Non-sunrise and sunset calculations such as dawn and dusk, depend on the
- amount of visible light, something that is not affected by elevation. This method returns UTC sunset calculated
- at sea level. This forms the base for dusk calculations that are calculated as a dip below the horizon after
- sunset.</p>
+without using daylight savings time. Non-sunrise and sunset calculations such as dawn and dusk, depend on the
+amount of visible light, something that is not affected by elevation. This method returns UTC sunset calculated
+at sea level. This forms the base for dusk calculations that are calculated as a dip below the horizon after
+sunset.</p>
 
                       </div>
                       <div class="declaration">
@@ -1140,8 +1120,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>The time in the format: 18.75 for 18:45:00 UTC/GMT. If the calculation can&rsquo;t be computed such as in the
-     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
-     not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
+Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+not set, {@link Double#NaN} will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -1160,9 +1140,9 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A utility method that will allow the calculation of a temporal (solar) hour based on the sunrise and sunset
- passed as parameters to this method. An example of the use of this method would be the calculation of a
- non-elevation adjusted temporal hour by passing in getSeaLevelSunrise sea level sunrise} and
- {@link #getSeaLevelSunset() sea level sunset} as parameters.</p>
+passed as parameters to this method. An example of the use of this method would be the calculation of a
+non-elevation adjusted temporal hour by passing in getSeaLevelSunrise sea level sunrise} and
+{@link #getSeaLevelSunset() sea level sunset} as parameters.</p>
 
                       </div>
                       <div class="declaration">
@@ -1182,7 +1162,7 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>the long millisecond length of the temporal hour. If the calculation can&rsquo;t be computed a
-     LONG_MIN will be returned. See detailed explanation on top of the page.</p>
+LONG_MIN will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -1200,11 +1180,11 @@ nil will be returned.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A method that returns sundial or solar noon. It occurs when the Sun is 
- <a href="http://en.wikipedia.org/wiki/Transit_%28astronomy%29">http://en.wikipedia.org/wiki/Transit_%28astronomy%29</a> transitting the
- <a href="http://en.wikipedia.org/wiki/Meridian_%28astronomy%29">http://en.wikipedia.org/wiki/Meridian_%28astronomy%29</a>&ldquo; celestial meridian. In this class it is
- calculated as halfway between sea level sunrise and sea level sunset, which can be slightly off the real transit
- time due to changes in declination (the lengthening or shortening day).</p>
+                        <p>A method that returns sundial or solar noon. It occurs when the Sun is
+<a href="http://en.wikipedia.org/wiki/Transit_%28astronomy%29">http://en.wikipedia.org/wiki/Transit_%28astronomy%29</a> transitting the
+<a href="http://en.wikipedia.org/wiki/Meridian_%28astronomy%29">http://en.wikipedia.org/wiki/Meridian_%28astronomy%29</a>&ldquo; celestial meridian. In this class it is
+calculated as halfway between sea level sunrise and sea level sunset, which can be slightly off the real transit
+time due to changes in declination (the lengthening or shortening day).</p>
 
                       </div>
                       <div class="declaration">
@@ -1223,8 +1203,8 @@ nil will be returned.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>the <code>Date</code> representing Sun&rsquo;s transit. If the calculation can&rsquo;t be computed such as in the
-     Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
-     not set, null will be returned. See detailed explanation on top of the page.</p>
+Arctic Circle where there is at least one day a year where the sun does not rise, and one where it does
+not set, null will be returned. See detailed explanation on top of the page.</p>
                       </div>
                     </section>
                   </div>
@@ -1243,8 +1223,8 @@ nil will be returned.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>This method returns the calculated time
-  as an NSDate object based on the user&rsquo;s time zone
-  and today&rsquo;s date.</p>
+as an NSDate object based on the user&rsquo;s time zone
+and today&rsquo;s date.</p>
 
                       </div>
                       <div class="declaration">
@@ -1302,8 +1282,8 @@ and today&rsquo;s date.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A method that returns the calculated time
-  as an NSDate object based on a given time
-  zone and a given date.</p>
+as an NSDate object based on a given time
+zone and a given date.</p>
 
 <p>Returns nil if the the <q>time</q> parameter is NAN.</p>
 
@@ -1387,11 +1367,11 @@ and today&rsquo;s date.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns a formatted string representing the supplied
-  date in the supplied time zone.</p>
+date in the supplied time zone.</p>
 
 <p>This method does not toggle the timezone of the
-  NSDateFormatter that is used, so assume the default
-  calendar.</p>
+NSDateFormatter that is used, so assume the default
+calendar.</p>
 
                       </div>
                       <div class="declaration">
@@ -1460,11 +1440,11 @@ and today&rsquo;s date.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns a formatted string representing the supplied
-  date in the supplied time zone.</p>
+date in the supplied time zone.</p>
 
 <p>This method does not toggle the timezone of the
-  NSDateFormatter that is used, so assume the default
-  calendar.</p>
+NSDateFormatter that is used, so assume the default
+calendar.</p>
 <div class="aside aside-see">
     <p class="aside-title">See</p>
     <p>stringFromDate:forTimeZone:</p>
@@ -1551,7 +1531,7 @@ and today&rsquo;s date.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Expose the internal calendar so the main class can
-  appropriately forward methods.</p>
+appropriately forward methods.</p>
 
                       </div>
                       <div class="declaration">
@@ -1575,7 +1555,7 @@ and today&rsquo;s date.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-07)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external">Moshe Berman</a>. All rights reserved. (Last updated: 2019-04-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
