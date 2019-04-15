@@ -77,6 +77,7 @@
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F54BAF7E225A4191003F3BFE /* KCHebrewMonth.h in Headers */ = {isa = PBXBuildFile; fileRef = F54BAF7D225A4191003F3BFE /* KCHebrewMonth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F54BAF97225B995D003F3BFE /* KCWeekday.h in Headers */ = {isa = PBXBuildFile; fileRef = F54BAF96225A5266003F3BFE /* KCWeekday.h */; };
 		F57786C121AB914E00208DFF /* KCLocationController.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786BF21AB914E00208DFF /* KCLocationController.h */; };
 		F57786C221AB914E00208DFF /* KCLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F57786C021AB914E00208DFF /* KCLocationController.m */; };
 		F57786C521AC410600208DFF /* KCLocationTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F57786C421AC410600208DFF /* KCLocationTypes.h */; };
@@ -534,6 +535,7 @@
 				4618ED231BF44E5600C33159 /* NSCalendar+DateManipulation.h in Headers */,
 				F57786C121AB914E00208DFF /* KCLocationController.h in Headers */,
 				4618ED271BF44E5600C33159 /* NSCalendar+Juncture.h in Headers */,
+				F54BAF97225B995D003F3BFE /* KCWeekday.h in Headers */,
 				4618ED211BF44E5600C33159 /* NSCalendar+DateComparison.h in Headers */,
 				4618ED1F1BF44E5600C33159 /* NSCalendar+Components.h in Headers */,
 				4618ED251BF44E5600C33159 /* NSCalendar+hebrewYearTypes.h in Headers */,
