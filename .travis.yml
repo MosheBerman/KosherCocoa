@@ -1,7 +1,7 @@
 language: objective-c
 xcode_project: KosherCocoa.xcodeproj
 xcode_scheme: KosherCocoa
-xcode_destination: platform=iOS Simulator,OS=10.1,name=iPad Pro (9.7-inch)
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPad Pro (9.7-inch)
 env:
   global:
   - FRAMEWORK_NAME=KosherCocoa
