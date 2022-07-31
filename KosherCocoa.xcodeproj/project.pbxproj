@@ -1287,6 +1287,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -1333,6 +1334,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -1472,6 +1474,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Debug;
 		};
@@ -1517,6 +1520,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Release;
 		};
@@ -1561,6 +1565,7 @@
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Debug;
 		};
@@ -1607,6 +1612,7 @@
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Release;
 		};
@@ -1650,6 +1656,7 @@
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Debug;
 		};
@@ -1695,6 +1702,7 @@
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Release;
 		};
@@ -1722,6 +1730,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Debug;
 		};
@@ -1749,6 +1758,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
 			};
 			name = Release;
 		};
