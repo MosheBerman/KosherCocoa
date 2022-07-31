@@ -18,18 +18,18 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - First/Last of Week
 
 - (nullable NSDate *)firstDayOfTheWeek;
-- (nullable NSDate *)firstDayOfTheWeekUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)firstDayOfTheWeekUsingReferenceDate:(NSDate * _Nonnull)date;
 
 - (nullable NSDate *)lastDayOfTheWeek;
-- (nullable NSDate *)lastDayOfTheWeekUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)lastDayOfTheWeekUsingReferenceDate:(NSDate * _Nonnull)date;
 
 #pragma mark - First/Last of Month
 
 - (nullable NSDate *)firstDayOfTheMonth;
-- (nullable NSDate *)firstDayOfTheMonthUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)firstDayOfTheMonthUsingReferenceDate:(NSDate * _Nonnull)date;
 
 - (nullable NSDate *)lastDayOfTheMonth;
-- (nullable NSDate *)lastDayOfTheMonthUsingReferenceDate:(NSDate *)date;
+- (nullable NSDate *)lastDayOfTheMonthUsingReferenceDate:(NSDate * _Nonnull)date;
 
 @end
 

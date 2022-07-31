@@ -27,22 +27,22 @@
 
 #pragma mark - Add Units
 
-- (NSDate *)dateByAddingSeconds:(NSUInteger)seconds toDate:(NSDate *)date;
-- (NSDate *)dateByAddingMinutes:(NSUInteger)minutes toDate:(NSDate *)date;
-- (NSDate *)dateByAddingHours:(NSUInteger)hours toDate:(NSDate *)date;
-- (NSDate *)dateByAddingDays:(NSUInteger)days toDate:(NSDate *)date;
-- (NSDate *)dateByAddingWeeks:(NSUInteger)weeks toDate:(NSDate *)date;
-- (NSDate *)dateByAddingMonths:(NSUInteger)months toDate:(NSDate *)date;
-- (NSDate *)dateByAddingYears:(NSUInteger)years toDate:(NSDate *)date;
+- (NSDate * _Nullable)dateByAddingSeconds:(NSUInteger)seconds toDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateByAddingMinutes:(NSUInteger)minutes toDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateByAddingHours:(NSUInteger)hours toDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateByAddingDays:(NSUInteger)days toDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateByAddingWeeks:(NSUInteger)weeks toDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateByAddingMonths:(NSUInteger)months toDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateByAddingYears:(NSUInteger)years toDate:(NSDate * _Nonnull)date;
 
 #pragma mark - Subtract Units
 
-- (NSDate *)dateBySubtractingSeconds:(NSUInteger)seconds fromDate:(NSDate *)date;
-- (NSDate *)dateBySubtractingMinutes:(NSUInteger)minutes fromDate:(NSDate *)date;
-- (NSDate *)dateBySubtractingHours:(NSUInteger)hours fromDate:(NSDate *)date;
-- (NSDate *)dateBySubtractingDays:(NSUInteger)days fromDate:(NSDate *)date;
-- (NSDate *)dateBySubtractingWeeks:(NSUInteger)weeks fromDate:(NSDate *)date;
-- (NSDate *)dateBySubtractingMonths:(NSUInteger)months fromDate:(NSDate *)date;
-- (NSDate *)dateBySubtractingYears:(NSUInteger)years fromDate:(NSDate *)date;
+- (NSDate * _Nullable)dateBySubtractingSeconds:(NSUInteger)seconds fromDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateBySubtractingMinutes:(NSUInteger)minutes fromDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateBySubtractingHours:(NSUInteger)hours fromDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateBySubtractingDays:(NSUInteger)days fromDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateBySubtractingWeeks:(NSUInteger)weeks fromDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateBySubtractingMonths:(NSUInteger)months fromDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nullable)dateBySubtractingYears:(NSUInteger)years fromDate:(NSDate * _Nonnull)date;
 
 @end

@@ -1,0 +1,20 @@
+language: objective-c
+xcode_project: KosherCocoa.xcodeproj
+xcode_scheme: KosherCocoa
+xcode_destination: platform=iOS Simulator,OS=11.4,name=iPad Pro (9.7-inch)
+env:
+  global:
+  - FRAMEWORK_NAME=KosherCocoa
+before_install:
+- brew update
+- brew outdated carthage || brew upgrade carthage
+before_deploy:
+- carthage build --no-skip-current
+- carthage archive $FRAMEWORK_NAME
+deploy:
+  provider: releases
+  api_key:
+    secure: WEZe7oToP1gYWAHoky8OWuU2nF2X7zgf9Ji1faG5cz0hyPUIS9+dGXt7vgMVyf3GlXGaUD2R9aEL/oTziD85/d15QroQSGNhK0Pj7KANDX5hhqSAQ01P7hEGbTEBX2PhCRzVysIVd3xr3nqrulFrzOCd9c+9sPm/In825G0j5p2jvcs2C6INh6XPcmVnuatnwGL4ouHs3UnUi56issU8hGHiaDzo/clP5FtVTVnWVn6qcDr9hyjoXLE1i4qclCtJadRIBnJf0TELrxaWGAD13V4C4NsNdMqr2Hy2H1saB/V+VvJt+/xaYQB2SrxOGGMQrDFWRg76db/FS6IwGtfMGn1MbjKzNJEphVWOEmoz8N0qxfhXVLDlKsIQ9CrGwqHNxe6tgTpX5i+EC2RgzkvXqLoz3TUdMx+qsVoo89LqWiPveIo3BwpKLoMdM+jW9enQJZcqzpTWKgRHUgyviBzC9m81CC0pCDMLByT0zt1Ovrabe0CXrE5axhKDwJFz208SXLDjWXqa0h5FD3wnOs20PMM/9FgSh9R43JXEhFFqpKzX3IQGLeMLuifGxGr1eNCG93jdcqSeQ7GEBeSbdDgeSn19GT1uOyus2FKNg9fgzgBVmpNAoU30iDu8xf8GTE0HlG2s+64H9KKDwtX9ugcwvSlv5NJIt/Ny3iFCqIOCrg4=
+  file: '"$FRAMEWORK_NAME.framework.zip"'
+  on:
+    repo: MosheBerman/KosherCocoa

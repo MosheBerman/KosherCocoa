@@ -36,12 +36,12 @@
 
 #pragma mark - Getting the Parasha 
 
-- (KCParasha *)parashaInDiasporaForDate:(NSDate *)date
+- (KCParasha *)parashaInDiasporaForDate:(NSDate * _Nonnull)date
 {
     return [self _parashaForDate:date inDiaspora:YES];
 }
 
-- (KCParasha *)parashaInIsraelForDate:(NSDate *)date
+- (KCParasha *)parashaInIsraelForDate:(NSDate * _Nonnull)date
 {
     return [self _parashaForDate:date inDiaspora:NO];
 }
@@ -1577,7 +1577,7 @@
 //  Returns the correct parasha object
 //
 
-- (KCParasha *)_parashaForDate:(NSDate *)date inDiaspora:(BOOL)isInDiaspora
+- (KCParasha *)_parashaForDate:(NSDate * _Nonnull)date inDiaspora:(BOOL)isInDiaspora
 {
     
     date = [[self hebrewCalendar] lastDayOfTheWeekUsingReferenceDate:date];

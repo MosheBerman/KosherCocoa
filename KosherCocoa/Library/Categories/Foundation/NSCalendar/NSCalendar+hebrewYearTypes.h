@@ -82,15 +82,15 @@ typedef NS_ENUM(NSInteger, kYearLength)
 @interface NSCalendar (HebrewYearTypes)
 
 //  Returns a weekday, 1-7
-+ (enum kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate *)date;
++ (enum kWeekday)firstWeekdayOfHebrewYearContainingDate:(NSDate * _Nonnull)date;
 
 // Returns a year length, as per the comments in the kYearLength enum
-+ (enum kYearLength)lengthOfHebrewYearContainingDate:(NSDate *)date;
++ (enum kYearLength)lengthOfHebrewYearContainingDate:(NSDate * _Nonnull)date;
 
 //  YES if the given date is represented by a hebrew year containing 13 months, else NO
-+ (BOOL)isHebrewYearContainingDateALeapYear:(NSDate *)date;
++ (BOOL)isHebrewYearContainingDateALeapYear:(NSDate * _Nonnull)date;
 
 //  Returns one of fourteen types. See the kHebrewYearType enum above.
-+ (enum kHebrewYearType)typeOfHebrewYearContainingDate:(NSDate *)date;
++ (enum kHebrewYearType)typeOfHebrewYearContainingDate:(NSDate * _Nonnull)date;
 
 @end

@@ -26,7 +26,7 @@ const NSInteger lengthOfSefira = 49;
 }
 
 //  YES if date is during the omer, else NO
-+ (BOOL)fallsOnDate:(NSDate *)date
++ (BOOL)fallsOnDate:(NSDate * _Nonnull)date
 {
     return [KCSefiratHaomerCalculator dayOfSefiraForDate:date] != 0;
 }
@@ -41,7 +41,7 @@ const NSInteger lengthOfSefira = 49;
 }
 
 // Returns 1-49, or 0 for all other days
-+ (NSInteger)dayOfSefiraForDate:(NSDate *)date
++ (NSInteger)dayOfSefiraForDate:(NSDate * _Nonnull)date
 {
 	NSDate *firstDayOfTheOmer = [KCSefiratHaomerCalculator dateOfSixteenNissanForYearOfDate:date];
     
@@ -70,7 +70,7 @@ const NSInteger lengthOfSefira = 49;
  *          of the supplied date.
  */
 
-+ (NSDate *)dateOfSixteenNissanForYearOfDate:(NSDate *)date
++ (NSDate *)dateOfSixteenNissanForYearOfDate:(NSDate * _Nonnull)date
 {
 	NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
 	

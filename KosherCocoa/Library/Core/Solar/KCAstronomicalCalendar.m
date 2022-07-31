@@ -25,6 +25,7 @@
     self = [super init];
     if (self) {
         _internalCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        _workingDate = [NSDate date];
     }
     return self;
 }
@@ -53,7 +54,7 @@
 //
 //
 
-- (NSDate *)sunrise
+- (NSDate * _Nullable)sunrise
 {
     double sunrise = [self UTCSunrise:kZenithGeometric];
     
@@ -66,7 +67,7 @@
     
 }
 
-- (NSDate *)seaLevelSunrise
+- (NSDate * _Nullable)seaLevelSunrise
 {
     double sunrise = [self UTCSeaLevelSunrise:kZenithGeometric];
     
@@ -78,22 +79,22 @@
     return [self dateFromTime:sunrise];    
 }
 
-- (NSDate *)beginCivilTwilight
+- (NSDate * _Nullable)beginCivilTwilight
 {
     return [self sunriseOffsetByDegrees:kZenithCivil];
 }
 
-- (NSDate *)beginNauticalTwilight
+- (NSDate * _Nullable)beginNauticalTwilight
 {
     return [self sunriseOffsetByDegrees:kZenithNautical];    
 }
 
-- (NSDate *)beginAstronomicalTwilight
+- (NSDate * _Nullable)beginAstronomicalTwilight
 {
     return [self sunriseOffsetByDegrees:kZenithAstronomical];    
 }
 
-- (NSDate *)sunset
+- (NSDate * _Nullable)sunset
 {
     double sunset = [self UTCSunset:kZenithGeometric];
     
@@ -105,7 +106,7 @@
     return [self adjustedSunsetDateWithSunset:[self dateFromTime:sunset] andSunrise:[self sunrise]];
 }
 
-- (NSDate *)seaLevelSunset
+- (NSDate * _Nullable)seaLevelSunset
 {
     double sunset = [self UTCSeaLevelSunset:kZenithGeometric];
     
@@ -117,7 +118,7 @@
     return [self adjustedSunsetDateWithSunset:[self dateFromTime:sunset] andSunrise:[self sunrise]];
 }
 
-- (NSDate *)adjustedSunsetDateWithSunset:(NSDate*)sunset andSunrise:(NSDate *)sunrise
+- (NSDate * _Nullable)adjustedSunsetDateWithSunset:(NSDate*)sunset andSunrise:(NSDate * _Nonnull)sunrise
 {
  
     if (sunrise != nil && sunset != nil && ([sunrise timeIntervalSinceDate:sunset] > 0))
@@ -128,20 +129,20 @@
     return sunset;
 }
 
-- (NSDate *)endCivilTwilight
+- (NSDate * _Nullable)endCivilTwilight
 {
     return [self sunsetOffsetByDegrees:kZenithCivil];
 }
 
-- (NSDate *)endNauticalTwilight{
+- (NSDate * _Nullable)endNauticalTwilight{
     return [self sunsetOffsetByDegrees:kZenithNautical];
 }
 
-- (NSDate *)endAstronomicalTwilight{
+- (NSDate * _Nullable)endAstronomicalTwilight{
     return [self sunsetOffsetByDegrees:kZenithAstronomical];    
 }
 
-- (NSDate *)sunriseOffsetByDegrees:(double)offsetZenith
+- (NSDate * _Nullable)sunriseOffsetByDegrees:(double)offsetZenith
 {
     double dawn = [self UTCSunrise:offsetZenith];
    
@@ -153,7 +154,7 @@
     return  [self dateFromTime:dawn];
 }
 
-- (NSDate *)sunsetOffsetByDegrees:(double)offsetZenith
+- (NSDate * _Nullable)sunsetOffsetByDegrees:(double)offsetZenith
 {
     double sunset = [self UTCSunset:offsetZenith];
     
@@ -189,7 +190,7 @@
 
 #pragma mark - Temporal Hour (Shaa Zmanis)
 
-- (double)temporalHourFromSunrise:(NSDate *)sunrise toSunset:(NSDate*)sunset
+- (double)temporalHourFromSunrise:(NSDate * _Nonnull)sunrise toSunset:(NSDate*)sunset
 {
     if (sunrise == nil || sunset == nil)
     {
@@ -200,7 +201,7 @@
     
 }
 
-- (NSDate *)sunTransit
+- (NSDate * _Nullable)sunTransit
 {
     return [[self sunrise] dateByAddingTimeInterval:[self temporalHourFromSunrise:[self sunrise] toSunset:[self sunset]]*6];
 }
@@ -208,7 +209,7 @@
 
 #pragma mark - NSDate Utility Methods
 
-- (NSDate *)dateFromTime:(double)time
+- (NSDate * _Nullable)dateFromTime:(double)time
 {
     
     return [self dateFromTime:time inTimeZone:[NSTimeZone localTimeZone] onDate:self.workingDate];
@@ -223,7 +224,7 @@
 //  Returns nil if the time passed in is NAN.
 //  
 
-- (NSDate *)dateFromTime:(double)time inTimeZone:(NSTimeZone *)tz onDate:(NSDate *)date
+- (NSDate * _Nullable)dateFromTime:(double)time inTimeZone:(NSTimeZone *)tz onDate:(NSDate * _Nonnull)date
 {
     
     //
@@ -232,7 +233,12 @@
     
     if (time == NAN)
     {
-        NSLog(@"<Uh-Oh:> Received an invalid number. I can't do anything with that...");
+        NSLog(@"(%@: %@) Received an invalid number. I can't do anything with that...", self.class, NSStringFromSelector(_cmd));
+        return nil;
+    }
+    
+    if (date == nil) {
+        NSLog(@"(%@: %@) Received an invalid date. I can't do anything with that...", self.description, NSStringFromSelector(_cmd));
         return nil;
     }
     
@@ -316,7 +322,7 @@
     return returnDate; 
 }
 
-- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)tz withSeconds:(BOOL)shouldShowSeconds{
+- (NSString *)stringFromDate:(NSDate * _Nonnull)date forTimeZone:(NSTimeZone *)tz withSeconds:(BOOL)shouldShowSeconds{
     
     NSDateFormatter *form = [[NSDateFormatter alloc] init];
     
@@ -334,7 +340,7 @@
     return [form stringFromDate:date];
 }
 
-- (NSString *)stringFromDate:(NSDate *)date forTimeZone:(NSTimeZone *)timezone
+- (NSString *)stringFromDate:(NSDate * _Nonnull)date forTimeZone:(NSTimeZone *)timezone
 {
     
     return [self stringFromDate:date forTimeZone:timezone withSeconds:YES];

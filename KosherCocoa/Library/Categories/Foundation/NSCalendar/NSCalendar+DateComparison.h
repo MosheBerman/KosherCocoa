@@ -14,11 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSCalendar (DateComparison)
 
-- (BOOL)date:(NSDate *)firstDate isSameDayAs:(NSDate *)anotherDate;
-- (BOOL)date:(NSDate*)firstDate isSameWeekAs:(NSDate *)anotherDate;
-- (BOOL)date:(NSDate*)firstDate isSameMonthAs:(NSDate *)anotherDate;
-- (BOOL)date:(NSDate *)firstDate isSameYearAs:(NSDate *)anotherDate;
-- (BOOL)date:(NSDate *)firstDate isSameEraAs:(NSDate *)anotherDate;
+- (BOOL)date:(NSDate * _Nonnull)firstDate isSameDayAs:(NSDate * _Nonnull)anotherDate;
+- (BOOL)date:(NSDate*)firstDate isSameWeekAs:(NSDate * _Nonnull)anotherDate;
+- (BOOL)date:(NSDate*)firstDate isSameMonthAs:(NSDate * _Nonnull)anotherDate;
+- (BOOL)date:(NSDate * _Nonnull)firstDate isSameYearAs:(NSDate * _Nonnull)anotherDate;
+- (BOOL)date:(NSDate * _Nonnull)firstDate isSameEraAs:(NSDate * _Nonnull)anotherDate;
 
 @end
 

@@ -444,7 +444,7 @@
     return [comps month];
 }
 
-- (NSDate *)moladForDate:(NSDate*)date
+- (NSDate * _Nullable)moladForDate:(NSDate*)date
 {
     NSUInteger monthDifference = [self numberOfMonthsBetweenMoladTohuAndDate:date];
     return [self moladByAddingMonthsToTohu:monthDifference];
@@ -477,7 +477,7 @@
 //TODO: Currently returns the time even if it is during the day. It should return
 //the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
 
-- (nullable NSDate *)tchilasZmanKidushLevana3DaysForDate:(NSDate *)date
+- (nullable NSDate *)tchilasZmanKidushLevana3DaysForDate:(NSDate * _Nonnull)date
 {
     NSDate *molad = [self moladForDate:date];
     
@@ -488,7 +488,7 @@
 }
 
 //  This method exists only for KosherJava compatibility
-- (NSDate *)tchilasZmanKidushLevana3DaysForMonth:(NSInteger)month ofYear:(NSInteger)year
+- (NSDate * _Nullable)tchilasZmanKidushLevana3DaysForMonth:(NSInteger)month ofYear:(NSInteger)year
 {
     NSDate *dateFromMonthAndYear = [NSDate dateWithHebrewMonth:month andDay:1 andYear:year];
     
@@ -499,7 +499,7 @@
 //TODO: Currently returns the time even if it is during the day. It should return
 //the 72 Minute Tzais after to the time if the zman is between Alos and Tzais.
 
-- (nullable NSDate *)tchilasZmanKidushLevana7DaysForDate:(NSDate *)date
+- (nullable NSDate *)tchilasZmanKidushLevana7DaysForDate:(NSDate * _Nonnull)date
 {
     NSDate *molad = [self moladForDate:date];
     
@@ -528,7 +528,7 @@
 //It should return the 72 Minute Alos
 // prior to the time if the zman is between Alos and Tzais.
 
-- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(NSDate *)date
+- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldosForDate:(NSDate * _Nonnull)date
 {
     
     //  Get the molad
@@ -582,7 +582,7 @@
 // during the day. It should return the  Alos prior to the
 // time if the zman is between Alos and Tzais.
 
-- (nullable NSDate *)sofZmanKidushLevana15DaysForDate:(NSDate *)date
+- (nullable NSDate *)sofZmanKidushLevana15DaysForDate:(NSDate * _Nonnull)date
 {
     //  Get the molad
     
@@ -620,8 +620,9 @@
 - (NSInteger)currentHebrewMonth
 {
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
+    NSDate *date = [self workingDateAdjustedForSunset];
     
-    return [[hebrewCalendar components:NSCalendarUnitMonth fromDate:[self workingDateAdjustedForSunset]] month];
+    return [[hebrewCalendar components:NSCalendarUnitMonth fromDate:date] month];
 }
 
 //Returns the day of the current hebrew month
@@ -744,7 +745,7 @@
 //  Returns the friday following a given date
 //
 
-- (nullable NSDate *)fridayFollowingDate:(NSDate *)workingDate
+- (nullable NSDate *)fridayFollowingDate:(NSDate * _Nonnull)workingDate
 {
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 	

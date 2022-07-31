@@ -13,60 +13,90 @@
 
 - (NSInteger)weekOfMonthInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitWeekOfMonth fromDate:date];
     return [comps weekOfMonth];
 }
 
 - (NSInteger)weekOfYearInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitWeekOfYear fromDate:date];
     return [comps weekOfYear];
 }
 
 - (NSInteger)weekdayInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitWeekday fromDate:date];
     return [comps weekday];
 }
 
 - (NSInteger)secondsInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitSecond fromDate:date];
     return [comps second];
 }
 
 - (NSInteger)minutesInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitMinute fromDate:date];
     return [comps minute];
 }
 
 - (NSInteger)hoursInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitHour fromDate:date];
     return [comps hour];
 }
 
 - (NSInteger)daysInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitDay fromDate:date];
     return [comps day];
 }
 
 - (NSInteger)monthsInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitMonth fromDate:date];
     return [comps month];
 }
 
 - (NSInteger)yearsInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitYear fromDate:date];
     return [comps year];
 }
 
 - (NSInteger)eraInDate:(NSDate*)date
 {
+    if (!date) {
+        return -1;
+    }
     NSDateComponents *comps = [self components:NSCalendarUnitEra fromDate:date];
     return [comps era];
 }

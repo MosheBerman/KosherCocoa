@@ -166,6 +166,8 @@ class KCJewishCalendarTests: XCTestCase {
         dec12th2017Components.year = 2017
         dec12th2017Components.day = 12
         dec12th2017Components.month = 12
+        dec12th2017Components.hour = 10
+        dec12th2017Components.minute = 0
         
         guard let gregorianDateBeforeChanuka = gregorianCalendar.date(from: dec12th2017Components) else {
             XCTAssert(false, "Couldn't create date representing Dec 12, 2017, before sunset.")
