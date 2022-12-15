@@ -47,7 +47,7 @@ KosherCocoa is hereby released under the modified LGPL License, version 2.1. See
 > By using this project in your app, you represent that your app does not replicate Ultimate Zmanim in primary functionality or in appearance. You agree not to release an app which includes a list of zmanim as its primary function, neither paid nor for free. An example of an acceptable use is to dynamically change contents of a siddur app, or calculate the weekly torah reading in a chumash app. You further agree to comply with any and all takedown requests.
 > 
 > This clause is not intended to change or override anything in the LGPL 2.1 license, nor is it intended to override local laws and regulations.
-
+ 
 Basically, I'm tired of copycat apps, so please stop.
 
 Thanks!
