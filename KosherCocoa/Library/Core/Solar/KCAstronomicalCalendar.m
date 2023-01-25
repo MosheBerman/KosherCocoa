@@ -37,7 +37,7 @@
     
     if (self) {
         
-        KCNOAACalculator *tempCalc = [[KCNOAACalculator alloc] initWithGeoLocation:aGeoLocation];
+        KCSunriseAndSunsetCalculator *tempCalc = [[KCSunriseAndSunsetCalculator alloc] initWithGeoLocation:aGeoLocation];
         
         _astronomicalCalculator = tempCalc;
         
@@ -173,7 +173,7 @@
 
 - (double)UTCSeaLevelSunrise:(double)zenith
 {
-    double sunrise = [((KCNOAACalculator *)self.astronomicalCalculator) UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:NO]; 
+    double sunrise = [((KCSunriseAndSunsetCalculator *)self.astronomicalCalculator) UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:NO]; 
     
     return sunrise;
 }

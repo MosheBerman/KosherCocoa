@@ -11,7 +11,7 @@
 @import Foundation;
 
 #import "KCGeoLocation.h"
-#import "KCNOAACalculator.h"
+#import "KCSunriseAndSunsetCalculator.h"
 
 /** 
  A class that calculates various sunrise and sunset values. 
@@ -24,10 +24,11 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 /**
  * The calculator to use. 
  *
- *  The default calculator is the KCNOAACalculator. However, you can use the KCSunriseAndSunsetCalculator as well.
+ *  The default calculator in KosherCocoa is the KCSunriseAndSunsetCalculator which is based on the SunTimesCalculator in KosherJava.
+ *  However, you can use the KCNOAACalculator as well.
  */
 
-@property (nonatomic, strong, nonnull) KCNOAACalculator *astronomicalCalculator;
+@property (nonatomic, strong, nonnull) KCSunriseAndSunsetCalculator *astronomicalCalculator;
 
 /**
  *  The location of the user.
