@@ -257,25 +257,25 @@
     
     // Find the time of solar noon at the location, and use that declination. This is better than start of the
     // Julian day
-    double noonmin = [self getSolarNoonUTC:julianCenturies longitude:-longitude];
-    double tnoon = [self getJulianCenturiesFromJulianDay:julianDay + noonmin / 1440.0];
+    double noonMin = [self getSolarNoonUTC:julianCenturies longitude:(-longitude)];
+    double tNoon = [self getJulianCenturiesFromJulianDay:julianDay + noonMin / 1440.0];
     
     // First pass to approximate sunrise (using solar noon)
-    double eqTime = [self getEquationOfTime:tnoon];
-    double solarDec = [self getSunDeclination:tnoon];
+    double eqTime = [self getEquationOfTime:tNoon];
+    double solarDec = [self getSunDeclination:tNoon];
     double hourAngle = [self getSunHourAngleAtSunrise:latitude solarDec:solarDec zenith:zenith];
     
-    double delta = -longitude - toDegrees(hourAngle);
+    double delta = (-longitude) - toDegrees(hourAngle);
     double timeDiff = 4 * delta;
     double timeUTC = 720 + timeDiff - eqTime;
     
     // Second pass includes fractional Julian Day in gamma calc
-    double newt = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] + timeUTC/ 1440.0];
-    eqTime = [self getEquationOfTime:newt];
-    solarDec = [self getSunDeclination:newt];
+    double newTime = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] + timeUTC/ 1440.0];
+    eqTime = [self getEquationOfTime:newTime];
+    solarDec = [self getSunDeclination:newTime];
     hourAngle = [self getSunHourAngleAtSunrise:latitude solarDec:solarDec zenith:zenith];
     
-    delta = -longitude - toDegrees(hourAngle);
+    delta = (-longitude) - toDegrees(hourAngle);
     timeDiff = 4 * delta;
     timeUTC = 720 + timeDiff - eqTime;
     return timeUTC;
@@ -283,12 +283,12 @@
 
 - (double)getSolarNoonUTC:(double)julianCenturies longitude:(double)longitude {
     // First pass uses approximate solar noon to calculate equation of time
-    double tnoon = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] + longitude / 360.0];
-    double eqTime = [self getEquationOfTime:tnoon];
+    double tNoon = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] + longitude / 360.0];
+    double eqTime = [self getEquationOfTime:tNoon];
     double solNoonUTC = 720 + (longitude * 4) - eqTime; // min
     
-    double newt = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] - 0.5 + solNoonUTC / 1440.0];
-    eqTime = [self getEquationOfTime:newt];
+    double newTime = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] - 0.5 + solNoonUTC / 1440.0];
+    eqTime = [self getEquationOfTime:newTime];
     return 720 + (longitude * 4) - eqTime; // min
 }
 
@@ -298,25 +298,25 @@
     
     // Find the time of solar noon at the location, and use that declination. This is better than start of the
     // Julian day
-    double noonmin = [self getSolarNoonUTC:julianCenturies longitude:-longitude];
-    double tnoon = [self getJulianCenturiesFromJulianDay:julianDay + noonmin / 1440.0];
+    double noonMin = [self getSolarNoonUTC:julianCenturies longitude:(-longitude)];
+    double tNoon = [self getJulianCenturiesFromJulianDay:julianDay + noonMin / 1440.0];
     
     // First calculates sunrise and approx length of day
-    double eqTime = [self getEquationOfTime:tnoon];
-    double solarDec = [self getSunDeclination:tnoon];
+    double eqTime = [self getEquationOfTime:tNoon];
+    double solarDec = [self getSunDeclination:tNoon];
     double hourAngle = [self getSunHourAngleAtSunset:latitude solarDec:solarDec zenith:zenith];
     
-    double delta = -longitude - toDegrees(hourAngle);
+    double delta = (-longitude) - toDegrees(hourAngle);
     double timeDiff = 4 * delta;
     double timeUTC = 720 + timeDiff - eqTime;
     
     // Second pass includes fractional Julian Day in gamma calc
-    double newt = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] + timeUTC/ 1440.0];
-    eqTime = [self getEquationOfTime:newt];
-    solarDec = [self getSunDeclination:newt];
+    double newTime = [self getJulianCenturiesFromJulianDay:[self getJulianDayFromJulianCenturies:julianCenturies] + timeUTC/ 1440.0];
+    eqTime = [self getEquationOfTime:newTime];
+    solarDec = [self getSunDeclination:newTime];
     hourAngle = [self getSunHourAngleAtSunset:latitude solarDec:solarDec zenith:zenith];
     
-    delta = -longitude - toDegrees(hourAngle);
+    delta = (-longitude) - toDegrees(hourAngle);
     timeDiff = 4 * delta;
     timeUTC = 720 + timeDiff - eqTime;
     return timeUTC;
@@ -431,13 +431,6 @@
     return parts;
     
 }
-
-
-//
-//  The dealloc method, as required for
-//  iOS/Cocoa touch memory management
-//
-
 
 - (double)UTCSunriseForDate:(nonnull NSDate *)date andZenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation {
     return [self getUTCSunrise:date geoLocation:_geoLocation zenith:zenith adjustForElevation:adjustForElevation];
