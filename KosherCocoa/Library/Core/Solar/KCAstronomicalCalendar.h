@@ -12,6 +12,8 @@
 
 #import "KCGeoLocation.h"
 #import "KCSunriseAndSunsetCalculator.h"
+#import "KCNOAACalculator.h"
+#import "KCAstronomicalCalculator.h"
 
 /** 
  A class that calculates various sunrise and sunset values. 
@@ -28,7 +30,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
  *  However, you can use the KCNOAACalculator as well.
  */
 
-@property (nonatomic, strong, nonnull) KCSunriseAndSunsetCalculator *astronomicalCalculator;
+@property (nonatomic, strong, nonnull) id<KCAstronomicalCalculator> *astronomicalCalculator;
 
 /**
  *  The location of the user.
