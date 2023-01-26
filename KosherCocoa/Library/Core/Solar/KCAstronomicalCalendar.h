@@ -30,7 +30,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
  *  However, you can use the KCNOAACalculator as well.
  */
 
-@property (nonatomic, strong, nonnull) id<KCAstronomicalCalculator> *astronomicalCalculator;
+@property (nonatomic, strong, nonnull) typeof(KCAstronomicalCalculator) *astronomicalCalculator;
 
 /**
  *  The location of the user.

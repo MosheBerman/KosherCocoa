@@ -15,7 +15,7 @@
 
 /** A class that uses the United States Naval Almanac Algorithm to calculate sunrise and sunset. */
 
-NS_SWIFT_NAME(KCSunriseAndSunsetCalculator)
+NS_SWIFT_NAME(SunriseAndSunsetCalculator)
 @interface KCSunriseAndSunsetCalculator : NSObject <KCAstronomicalCalculator>
 
 /**
