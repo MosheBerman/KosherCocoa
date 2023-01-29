@@ -11,6 +11,7 @@
 #import "KCAstronomicalCalendar.h"
 #import "MBCalendarCategories.h"
 #import "KCAstronomicalCalendar+DateManipulation.h"
+#import "KCNOAACalculator.h"
 
 @interface KCAstronomicalCalendar ()
 
