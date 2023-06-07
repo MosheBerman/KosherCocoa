@@ -300,17 +300,19 @@
     return [[self alos16Point1Degrees]dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees]*6.5];
 }
 
-- (nullable NSDate *) minchaGedolaGreaterThan30{
-    if ([self minchaGedola30Minutes] == nil || [self minchaGedola] == nil) {
+- (nullable NSDate *)minchaGedolaGreaterThan30 {
+    NSDate *minchaGedola30Minutes = [self minchaGedola30Minutes];
+    NSDate *minchaGedola = [self minchaGedola];
+    
+    if (minchaGedola30Minutes == nil || minchaGedola == nil) {
         return nil;
     }
     
-    if ([self minchaGedola] > 0) {
-        return [self minchaGedola30Minutes];
-    }else{
-        return [self minchaGedola];
+    if ([minchaGedola compare:minchaGedola30Minutes] == NSOrderedDescending) {
+        return minchaGedola;
+    } else {
+        return minchaGedola30Minutes;
     }
-    
 }
 
 - (nullable NSDate *) minchaKetana16Point1Degrees{
@@ -584,12 +586,17 @@
 - (nullable NSDate *)solarMidnight {
     KCComplexZmanimCalendar *clonedCalendar = [self copy];
     [clonedCalendar setWorkingDate:[self dateByAddingDays:1 toDate:clonedCalendar.workingDate]];
-    NSDate *sunset = [self sunset];
-    NSDate *sunrise = [self sunrise];
-    
-    return [[self sunset] dateByAddingTimeInterval:[self temporalHourFromSunrise:sunrise toSunset:sunset] *6];
+        
+    return [[self chatzos] dateByAddingTimeInterval:clonedCalendar.chatzos.timeIntervalSince1970 - [self chatzos].timeIntervalSince1970 / 2];
 }
 
-
-
+//implement copy method:
+- (id)copyWithZone:(NSZone *)zone {
+    KCComplexZmanimCalendar *clonedCalendar = [[KCComplexZmanimCalendar allocWithZone:zone] init];
+    clonedCalendar.geoLocation = self.geoLocation;
+    clonedCalendar.workingDate = self.workingDate;
+    clonedCalendar.astronomicalCalculator = self.astronomicalCalculator;
+    return clonedCalendar;
+}
+    
 @end

@@ -29,6 +29,32 @@ class KCJewishCalendarTests: XCTestCase {
         super.tearDown()
     }
     
+    func testHolidays() {
+        let jewishCalendar = JewishCalendar()
+        
+        var lagComponents = DateComponents()
+        lagComponents.year = 5778
+        lagComponents.month = Int(HebrewMonth.iyar.rawValue)
+        lagComponents.day = 17//day is off because of adjustment with sunset, should be 18
+        
+        jewishCalendar.workingDate = hebrewCalendar.date(from: lagComponents)!
+        
+        var holiday = jewishCalendar.yomTovIndex()
+        
+        XCTAssertEqual(holiday, 33)
+        
+        var spkComponents = DateComponents()//Shushan Purim Katan test
+        spkComponents.year = 5776//leap year
+        spkComponents.month = Int(HebrewMonth.adar.rawValue)
+        spkComponents.day = 14//day is off because of adjustment with sunset, should be 15
+        
+        jewishCalendar.workingDate = hebrewCalendar.date(from: spkComponents)!
+        
+        holiday = jewishCalendar.yomTovIndex()
+        
+        XCTAssertEqual(holiday, 34)
+    }
+    
     // MARK: - Test Basic Calculation of Chanuka
     
     func testFirstNightOfChanuka() {

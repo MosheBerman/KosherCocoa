@@ -84,7 +84,9 @@ enum kYomimTovim {
     kYomHashoah,
     kYomHazikaron,
     kYomHaatzmaut,
-    kYomYerushalayim
+    kYomYerushalayim,
+    kLagBaomer,
+    kShushanPurimKatan
 };
 
 
