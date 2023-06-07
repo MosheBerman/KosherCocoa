@@ -12,9 +12,11 @@
 
 #import "KCGeoLocation.h"
 #import "KCSunriseAndSunsetCalculator.h"
+#import "KCNOAACalculator.h"
+#import "KCAstronomicalCalculator.h"
 
-/** 
- A class that calculates various sunrise and sunset values. 
+/**
+ A class that calculates various sunrise and sunset values.
  */
 NS_SWIFT_NAME(AstronomicalCalendar)
 @interface KCAstronomicalCalendar : NSObject
@@ -22,13 +24,13 @@ NS_SWIFT_NAME(AstronomicalCalendar)
  // MARK: - Configuring the Calendar
 
 /**
- * The calculator to use. 
+ * The calculator to use.
  *
- *  In KosherCocoa, it's always a KCSunriseAndSunsetCalculator. The
- *  original Java library offered several calculator options.
+ *  The default calculator in KosherCocoa is the KCSunriseAndSunsetCalculator which is based on the SunTimesCalculator in KosherJava.
+ *  However, you can use the KCNOAACalculator as well.
  */
 
-@property (nonatomic, strong, nonnull) KCSunriseAndSunsetCalculator *astronomicalCalculator;
+@property (nonatomic, strong, nonnull) typeof(KCAstronomicalCalculator) *astronomicalCalculator;
 
 /**
  *  The location of the user.
@@ -63,29 +65,29 @@ NS_SWIFT_NAME(AstronomicalCalendar)
  */
 
 /**
- *  This method calculates sunrise at the current geolocation. 
- *  
- *  The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation. 
- *  This is adjusted by the KCAstronomicalCalculator to add approximately 50/60 of a degree 
+ *  This method calculates sunrise at the current geolocation.
+ *
+ *  The zenith used for the calculation uses geometric zenith of 90 degrees plus elevation.
+ *  This is adjusted by the KCAstronomicalCalculator to add approximately 50/60 of a degree
  *  to account for 34 archminutes of refraction and 16 archminutes for the sun's radius for
  *  a total of 90.83333 degrees.
  *
  *  @see KCSunriseAndSunsetCalculator
- *  @return Sunrise as an NSDate. 
- *  If the calculation cannot be computed, such as in the Arctic Circle, where there is 
- *  at least one day a year that the sun does not rise, and one where it does not set, 
+ *  @return Sunrise as an NSDate.
+ *  If the calculation cannot be computed, such as in the Arctic Circle, where there is
+ *  at least one day a year that the sun does not rise, and one where it does not set,
  *  nil will be returned.
  */
 
 - (nullable NSDate *)sunrise;
 
 /**
- *  This method calculates sunrise at sea-level at 
- *  the latitude and longitude represented by the 
+ *  This method calculates sunrise at sea-level at
+ *  the latitude and longitude represented by the
  *  current geolocation.
  *
  *  Non-sunrise and sunset calculations such as dawn and dusk, depend on the amount of
- *  visible light, something that is not affected by elevation. This method returns 
+ *  visible light, something that is not affected by elevation. This method returns
  *  sunrise calculated at sea level. This forms the base for dawn calculations that are
  *  calculated as a dip below the horizon before sunrise.
  *
@@ -121,7 +123,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 // MARK: - Calculating Sunset
 
 /**
- *  This method returns an NSDate representing the time of sunset on 
+ *  This method returns an NSDate representing the time of sunset on
  *  the KCAstronomicalCalendar instance's workingDate property.
  *
  *  This method takes elevation into account.
@@ -148,8 +150,8 @@ NS_SWIFT_NAME(AstronomicalCalendar)
  * sunset}. Note that the degree offset is from the vertical, so for a calculation of 14&deg; after sunset, an
  * offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.
  *
- * @param offsetZenith the degrees after {@link #getSunset()} to use in the calculation. 
- *          For time before sunset use negative numbers. Note that the degree offset is from the vertical, so for a calculation of 14&deg; 
+ * @param offsetZenith the degrees after {@link #getSunset()} to use in the calculation.
+ *          For time before sunset use negative numbers. Note that the degree offset is from the vertical, so for a calculation of 14&deg;
  *          after sunset, an offset of 14 + {@link #GEOMETRIC_ZENITH} = 104 would have to be passed as a parameter.
  * @return The {@link java.util.Date}of the offset after (or before) {@link #getSunset()}. If the calculation can't
  *         be computed such as in the Arctic Circle where there is at least one day a year where the sun does not
@@ -278,7 +280,7 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 - (double)temporalHourFromSunrise:(nonnull NSDate *)sunrise toSunset:(nonnull NSDate*)sunset;
 
 /**
- * A method that returns sundial or solar noon. It occurs when the Sun is 
+ * A method that returns sundial or solar noon. It occurs when the Sun is
  * http://en.wikipedia.org/wiki/Transit_%28astronomy%29 transitting the
  * http://en.wikipedia.org/wiki/Meridian_%28astronomy%29" celestial meridian. In this class it is
  * calculated as halfway between sea level sunrise and sea level sunset, which can be slightly off the real transit
