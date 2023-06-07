@@ -11,6 +11,7 @@
 #import "KCAstronomicalCalendar.h"
 #import "MBCalendarCategories.h"
 #import "KCAstronomicalCalendar+DateManipulation.h"
+#import "KCNOAACalculator.h"
 
 @interface KCAstronomicalCalendar ()
 
@@ -37,7 +38,7 @@
     
     if (self) {
         
-        KCSunriseAndSunsetCalculator *tempCalc = [[KCSunriseAndSunsetCalculator alloc] initWithGeoLocation:aGeoLocation];
+        KCAstronomicalCalculator *tempCalc = [[KCNOAACalculator alloc] initWithGeoLocation:aGeoLocation];
         
         _astronomicalCalculator = tempCalc;
         
@@ -173,7 +174,7 @@
 
 - (double)UTCSeaLevelSunrise:(double)zenith
 {
-    double sunrise = [((KCSunriseAndSunsetCalculator *)self.astronomicalCalculator) UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:NO]; 
+    double sunrise = [((KCNOAACalculator *)self.astronomicalCalculator) UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:NO]; 
     
     return sunrise;
 }

@@ -43,4 +43,8 @@
 
 #define kEarthRadiusInKilometers 6356.9
 
+#define kJulianDayJan_1_2000 2451545.0
+
+#define kJulianDaysPerCentury 36525.0
+
 #endif //__KC_KCAstronomical_h
