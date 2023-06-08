@@ -91,9 +91,7 @@
     NSDateComponents *components = [self yearMonthAndDayFromDate:date];
     
     NSInteger year = components.year;
-    
     NSInteger month = components.month;
-    
     NSInteger day = components.day;
 
     if (month <= 2) {
