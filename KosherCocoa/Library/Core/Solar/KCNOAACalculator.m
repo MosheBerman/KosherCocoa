@@ -98,7 +98,7 @@
         year -= 1;
         month += 12;
     }
-    int a = (int) year / 100;//loses precison but that is how the java port does it
+    int a = ((int) year) / 100;//loses precison but that is how the java port does it
     int b = 2 - a + a / 4;
 
     return floor(365.25 * (year + 4716)) + floor(30.6001 * (month + 1)) + day + b - 1524.5;
