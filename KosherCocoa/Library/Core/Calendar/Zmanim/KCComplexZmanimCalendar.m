@@ -587,7 +587,7 @@
     KCComplexZmanimCalendar *clonedCalendar = [self copy];
     [clonedCalendar setWorkingDate:[self dateByAddingDays:1 toDate:clonedCalendar.workingDate]];
         
-    return [[self chatzos] dateByAddingTimeInterval:clonedCalendar.chatzos.timeIntervalSince1970 - [self chatzos].timeIntervalSince1970 / 2];
+    return [[self chatzos] dateByAddingTimeInterval:(clonedCalendar.chatzos.timeIntervalSince1970 - [self chatzos].timeIntervalSince1970) / 2];
 }
 
 //implement copy method:
