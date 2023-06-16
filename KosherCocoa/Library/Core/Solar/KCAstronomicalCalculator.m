@@ -53,7 +53,7 @@
 
 - (double)elevationAdjustmentForElevation:(double)elevation
 { 
-    return toDegrees(acos(kEarthRadius/(kEarthRadius + (elevation / 1000))));
+    return toDegrees(acos(kEarthRadiusInKilometers/(kEarthRadiusInKilometers + (elevation / 1000))));
 }
 
 //

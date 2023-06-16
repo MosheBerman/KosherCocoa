@@ -75,6 +75,10 @@
 		4618EE1C1BF4F9F900C33159 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACE17CAF3B900056F16 /* NSDateComponents+AllComponents.m */; };
 		469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469066551F4A7090009E5D46 /* KosherCocoa.podspec */; };
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
+		5D435CEA2A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */; };
+		5D435CEC2A3C352500F66AE0 /* KCNOAACalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D435CEF2A3C35B000F66AE0 /* KCNOAACalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */; };
+		5D435CF22A3C369900F66AE0 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */; };
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
@@ -169,6 +173,10 @@
 		46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaMetadataTests.swift; sourceTree = "<group>"; };
 		46DB495C1D9837D100F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCAstronomicalCalculatorTests.swift; sourceTree = "<group>"; };
+		5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCNOAACalculator.h; sourceTree = "<group>"; };
+		5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCNOAACalculator.m; sourceTree = "<group>"; };
+		5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
 		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -400,7 +408,10 @@
 		466A3AE817CAF3B900056F16 /* Solar */ = {
 			isa = PBXGroup;
 			children = (
+				5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */,
+				5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */,
 				466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */,
+				5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */,
 				466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */,
 				466A3AEC17CAF3B900056F16 /* KCAstronomicalCalendar.m */,
 				466A3AED17CAF3B900056F16 /* KCGeoLocation.h */,
@@ -441,6 +452,7 @@
 		46DB49591D9837D100F3A576 /* KosherCocoaTests */ = {
 			isa = PBXGroup;
 			children = (
+				5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */,
 				46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */,
 				F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */,
 				46DB495C1D9837D100F3A576 /* Info.plist */,
@@ -491,6 +503,7 @@
 				4618ED071BF44B1400C33159 /* KCDaf.h in Headers */,
 				4618ED0E1BF44B4200C33159 /* KCSefiraFormatter.h in Headers */,
 				4618ED321BF4516900C33159 /* KCTractates.h in Headers */,
+				5D435CEC2A3C352500F66AE0 /* KCNOAACalculator.h in Headers */,
 				4618ED091BF44B1B00C33159 /* KCDafYomiCalculator.h in Headers */,
 				4618ECE81BF449EF00C33159 /* KosherCocoa.h in Headers */,
 				4618ED141BF44B7100C33159 /* KCZmanimCalendar.h in Headers */,
@@ -555,7 +568,6 @@
 					};
 					46DB49631D9839F100F3A576 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = HK64RUWW3P;
 						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 					};
@@ -605,6 +617,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D435CF22A3C369900F66AE0 /* KCAstronomicalCalculator.m in Sources */,
+				5D435CEF2A3C35B000F66AE0 /* KCNOAACalculator.m in Sources */,
 				4618ED111BF44B6400C33159 /* KCSefiratHaomerCalculator.m in Sources */,
 				4618ED1C1BF44BA400C33159 /* trigonometry.c in Sources */,
 				4618ED061BF44B0D00C33159 /* KCJewishHoliday.m in Sources */,
@@ -638,6 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D435CEA2A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift in Sources */,
 				F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */,
 				F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */,
 			);
@@ -867,7 +882,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = HK64RUWW3P;
+				DEVELOPMENT_TEAM = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = KosherCocoaTests/Info.plist;
