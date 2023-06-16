@@ -79,6 +79,7 @@
 		5D435CEC2A3C352500F66AE0 /* KCNOAACalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D435CEF2A3C35B000F66AE0 /* KCNOAACalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */; };
 		5D435CF22A3C369900F66AE0 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */; };
+		5D435CF42A3C389C00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */; };
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
@@ -177,6 +178,7 @@
 		5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCNOAACalculator.h; sourceTree = "<group>"; };
 		5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCNOAACalculator.m; sourceTree = "<group>"; };
 		5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
+		5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-06-16 at 2.27.26 AM.png"; sourceTree = "<group>"; };
 		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -455,6 +457,7 @@
 				5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */,
 				46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */,
 				F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */,
+				5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */,
 				46DB495C1D9837D100F3A576 /* Info.plist */,
 			);
 			path = KosherCocoaTests;
@@ -607,6 +610,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D435CF42A3C389C00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
