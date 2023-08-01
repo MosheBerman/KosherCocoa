@@ -11,6 +11,7 @@
 #import "KCAstronomicalCalendar.h"
 #import "MBCalendarCategories.h"
 #import "KCAstronomicalCalendar+DateManipulation.h"
+#import "KCNOAACalculator.h"
 
 @interface KCAstronomicalCalendar ()
 
@@ -37,7 +38,7 @@
     
     if (self) {
         
-        KCSunriseAndSunsetCalculator *tempCalc = [[KCSunriseAndSunsetCalculator alloc] initWithGeoLocation:aGeoLocation];
+        KCAstronomicalCalculator *tempCalc = [[KCNOAACalculator alloc] initWithGeoLocation:aGeoLocation];
         
         _astronomicalCalculator = tempCalc;
         
@@ -76,7 +77,7 @@
         return nil;
     }
     
-    return [self dateFromTime:sunrise];    
+    return [self dateFromTime:sunrise];
 }
 
 - (NSDate * _Nullable)beginCivilTwilight
@@ -86,12 +87,12 @@
 
 - (NSDate * _Nullable)beginNauticalTwilight
 {
-    return [self sunriseOffsetByDegrees:kZenithNautical];    
+    return [self sunriseOffsetByDegrees:kZenithNautical];
 }
 
 - (NSDate * _Nullable)beginAstronomicalTwilight
 {
-    return [self sunriseOffsetByDegrees:kZenithAstronomical];    
+    return [self sunriseOffsetByDegrees:kZenithAstronomical];
 }
 
 - (NSDate * _Nullable)sunset
@@ -139,7 +140,7 @@
 }
 
 - (NSDate * _Nullable)endAstronomicalTwilight{
-    return [self sunsetOffsetByDegrees:kZenithAstronomical];    
+    return [self sunsetOffsetByDegrees:kZenithAstronomical];
 }
 
 - (NSDate * _Nullable)sunriseOffsetByDegrees:(double)offsetZenith
@@ -173,19 +174,19 @@
 
 - (double)UTCSeaLevelSunrise:(double)zenith
 {
-    double sunrise = [((KCSunriseAndSunsetCalculator *)self.astronomicalCalculator) UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:NO]; 
+    double sunrise = [((KCNOAACalculator *)self.astronomicalCalculator) UTCSunriseForDate:self.workingDate andZenith:zenith adjustForElevation:NO];
     
     return sunrise;
 }
 
 - (double)UTCSunset:(double)zenith
 {
-    return [self.astronomicalCalculator UTCSunsetForDate:self.workingDate andZenith:zenith adjustForElevation:YES];    
+    return [self.astronomicalCalculator UTCSunsetForDate:self.workingDate andZenith:zenith adjustForElevation:YES];
 }
 
 - (double)UTCSeaLevelSunset:(double)zenith
 {
-    return [self.astronomicalCalculator UTCSunsetForDate:self.workingDate andZenith:zenith adjustForElevation:NO];    
+    return [self.astronomicalCalculator UTCSunsetForDate:self.workingDate andZenith:zenith adjustForElevation:NO];
 }
 
 #pragma mark - Temporal Hour (Shaa Zmanis)
@@ -219,10 +220,10 @@
 //
 //  A method that returns the calculated time
 //  as an NSDate object based on a given time
-//  zone and a given date. 
+//  zone and a given date.
 //
 //  Returns nil if the time passed in is NAN.
-//  
+//
 
 - (NSDate * _Nullable)dateFromTime:(double)time inTimeZone:(NSTimeZone *)tz onDate:(NSDate * _Nonnull)date
 {
@@ -252,7 +253,7 @@
     double calculatedTime = time;
     
     //
-    //  Create an instance of 
+    //  Create an instance of
     //  the Gregorian calendar.
     //
     
@@ -266,7 +267,7 @@
     NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitWeekOfYear | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitEra  fromDate:date];
     
     //
-    //  Set the componenets time 
+    //  Set the componenets time
     //  zone to GMT, since all of
     //  our calculations were done
     //  in GMT intially.
@@ -279,7 +280,7 @@
     int minutes = (int) (calculatedTime *= 60);     // retain only the minutes
     calculatedTime -= minutes;
     int seconds = (int)(calculatedTime * 60);       // retain only the seconds
-    //calculatedTime -= seconds;                    // remaining milliseconds - Commented out for Build & Analyze    
+    //calculatedTime -= seconds;                    // remaining milliseconds - Commented out for Build & Analyze
     
     [components setHour: hours];
     [components setMinute:minutes];
@@ -287,7 +288,7 @@
     
     //
     //  Convert the NSDateComponents
-    //  to an NSDate which we will 
+    //  to an NSDate which we will
     //  return to the user.
     //
     
@@ -296,17 +297,17 @@
     //
     //  Here we apply a time zone
     //  offset. If the time is greater
-    //  than 24, or less than 0, then 
+    //  than 24, or less than 0, then
     //  we "roll" the date by a day.
     //
-    //  We start by getting the 
+    //  We start by getting the
     //  timezone offset in hours...
     //
     
     double offsetFromGMT = [tz secondsFromGMTForDate:date]/3600.0;
     
     //
-    //  ... here we perform the check 
+    //  ... here we perform the check
     //  then roll the date as necessary.
     //
     
@@ -319,7 +320,7 @@
         returnDate = [self dateByAddingDays:1 toDate:returnDate];
     }
     
-    return returnDate; 
+    return returnDate;
 }
 
 - (NSString *)stringFromDate:(NSDate * _Nonnull)date forTimeZone:(NSTimeZone *)tz withSeconds:(BOOL)shouldShowSeconds{
@@ -328,7 +329,7 @@
     
     if (shouldShowSeconds)
     {
-        [form setTimeStyle:NSDateFormatterMediumStyle];        
+        [form setTimeStyle:NSDateFormatterMediumStyle];
     }
     else
     {

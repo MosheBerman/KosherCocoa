@@ -43,4 +43,16 @@
 
 #define kEarthRadiusInKilometers 6356.9
 
+/** kJulianDayJan_1_2000
+ *
+ *  The Julian day of January 1, 2000
+ */
+#define kJulianDayJan_1_2000 2451545.0
+
+/** kJulianDaysPerCentury
+ *
+ *  The amount of Julian days per century
+ */
+#define kJulianDaysPerCentury 36525.0
+
 #endif //__KC_KCAstronomical_h
