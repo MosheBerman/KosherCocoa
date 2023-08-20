@@ -9,9 +9,10 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-@import Foundation;
-#import "KCComplexZmanimCalendar.h"
-#import "KCDaf.h"
+#import <Foundation/Foundation.h>
+
+#import <KosherCocoa/KCComplexZmanimCalendar.h>
+#import <KosherCocoa/KCDaf.h>
 
 /**
  A class that can be used to check when Jewish holidays are.

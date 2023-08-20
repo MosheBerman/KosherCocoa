@@ -8,8 +8,8 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-@import Foundation;
-#import "KCAstronomicalCalendar.h"
+#import <Foundation/Foundation.h>
+#import <KosherCocoa/KCAstronomicalCalendar.h>
 
 NS_SWIFT_NAME(ZmanimCalendar)
 @interface KCZmanimCalendar : KCAstronomicalCalendar
