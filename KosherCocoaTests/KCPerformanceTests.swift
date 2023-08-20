@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import KosherCocoa
 
 final class KCPerformanceTests: XCTestCase {
 
@@ -18,18 +19,12 @@ final class KCPerformanceTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
+    func testWallclockTimeToGetAlos() throws {
         // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
+            let geoLocation = GeoLocation(latitude: 40.096, andLongitude: -74.222, elevation: 29.02, andTimeZone: TimeZone(identifier: "America/New_York")!)
+            let zmanimCalendar = ZmanimCalendar(location: geoLocation)
+            _ = zmanimCalendar.alos72()
         }
     }
 
