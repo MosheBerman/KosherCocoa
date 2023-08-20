@@ -8,10 +8,10 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-@import Foundation;
-#import "KCGeoLocation.h"
-#import "KCConstants.h"
-#import "KCAstronomicalCalculator.h"
+#import <Foundation/Foundation.h>
+#import <KosherCocoa/KCGeoLocation.h>
+#import <KosherCocoa/KCConstants.h>
+#import <KosherCocoa/KCAstronomicalCalculator.h>
 
 /** A class that uses the United States Naval Almanac Algorithm to calculate sunrise and sunset. */
 

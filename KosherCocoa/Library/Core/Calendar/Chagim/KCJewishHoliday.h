@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Moshe Berman. All rights reserved.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 /**
  This class represents a Jewish holiday, including major and minor fasts, as well as modern Israeli holidays.

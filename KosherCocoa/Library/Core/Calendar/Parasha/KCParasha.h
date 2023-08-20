@@ -8,8 +8,8 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-@import Foundation;
-#import "KCParashaReadings.h"
+#import <Foundation/Foundation.h>
+#import <KosherCocoa/KCParashaReadings.h>
 
 /**
  A class that represents a weekly parasha 
