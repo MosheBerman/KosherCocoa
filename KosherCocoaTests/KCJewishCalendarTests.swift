@@ -11,8 +11,8 @@ import KosherCocoa
 
 class KCJewishCalendarTests: XCTestCase {
     
-    let hebrewCalendar = Calendar(identifier: .hebrew)
-    let gregorianCalendar = Calendar(identifier: .gregorian)
+    var hebrewCalendar = Calendar(identifier: .hebrew)
+    var gregorianCalendar = Calendar(identifier: .gregorian)
     let dateFormatter = DateFormatter()
     
     override func setUp() {
@@ -39,7 +39,9 @@ class KCJewishCalendarTests: XCTestCase {
         kislevComponents.year = 5778
         kislevComponents.month = Int(HebrewMonth.kislev.rawValue)
         kislevComponents.day = 25
-        
+        kislevComponents.hour = 5
+
+
         guard let firstNightOfChanuka = hebrewCalendar.date(from: kislevComponents) else {
             XCTAssert(false, "Couldn't create date representing first night of Chanuka, 5778.")
             return
@@ -66,7 +68,10 @@ class KCJewishCalendarTests: XCTestCase {
             kislevComponents.year = year
             kislevComponents.month = Int(HebrewMonth.kislev.rawValue)
             kislevComponents.day = 25
-            
+            kislevComponents.hour = 9
+            kislevComponents.minute = 0
+            hebrewCalendar.timeZone = TimeZone(identifier: "America/New_York")!
+
             guard let firstNightOfChanuka = hebrewCalendar.date(from: kislevComponents) else {
                 XCTAssert(false, "Couldn't create date representing first night of Chanuka, 5778.")
                 return
@@ -166,24 +171,27 @@ class KCJewishCalendarTests: XCTestCase {
         dec12th2017Components.year = 2017
         dec12th2017Components.day = 12
         dec12th2017Components.month = 12
-        dec12th2017Components.hour = 10
+        dec12th2017Components.hour = 4
         dec12th2017Components.minute = 0
-        
+
+        guard let timeZone = TimeZone(identifier: "EST") else {
+            XCTAssert(false, "Couldn't get time zone for EST by abbreviation.")
+            return
+        }
+
+        gregorianCalendar.timeZone = timeZone
+
         guard let gregorianDateBeforeChanuka = gregorianCalendar.date(from: dec12th2017Components) else {
             XCTAssert(false, "Couldn't create date representing Dec 12, 2017, before sunset.")
             return
         }
         
-        guard let timeZone = TimeZone(abbreviation: "EST") else {
-            XCTAssert(false, "Couldn't get time zone for EST by abbreviation.")
-            return
-        }
-        
+
         // We need to set this up, since we aren't mocking sunset.
         let geoLocation = GeoLocation(latitude: 40.7128 , andLongitude: -74.0060, andTimeZone: timeZone)
         let jewishCalendar = JewishCalendar(location: geoLocation)
         jewishCalendar.workingDate = gregorianDateBeforeChanuka
-        
+
         // First test that before sunset (the initial 12/12/17 date object) is not Night 1-8
         XCTAssertFalse(jewishCalendar.isChanukah())
     }
