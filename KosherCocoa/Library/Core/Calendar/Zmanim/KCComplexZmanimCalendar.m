@@ -301,16 +301,18 @@
 }
 
 - (nullable NSDate *) minchaGedolaGreaterThan30{
-    if ([self minchaGedola30Minutes] == nil || [self minchaGedola] == nil) {
+    NSDate *minchaGedola30Minutes = [self minchaGedola30Minutes];
+    NSDate *minchaGedola = [self minchaGedola];
+
+    if (minchaGedola30Minutes == nil || minchaGedola == nil) {
         return nil;
     }
     
-    if ([self minchaGedola] > 0) {
-        return [self minchaGedola30Minutes];
-    }else{
-        return [self minchaGedola];
+    if (minchaGedola.timeIntervalSince1970 > minchaGedola30Minutes.timeIntervalSince1970) {
+        return minchaGedola;
+    } else {
+        return minchaGedola30Minutes;
     }
-    
 }
 
 - (nullable NSDate *) minchaKetana16Point1Degrees{
