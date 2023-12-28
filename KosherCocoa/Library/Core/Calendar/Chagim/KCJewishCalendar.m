@@ -762,7 +762,7 @@
 {
     NSDate *returnDate = [super workingDate];
     
-    BOOL isAfterSunset = [returnDate timeIntervalSinceDate:returnDate] > 0;
+    BOOL isAfterSunset = [returnDate timeIntervalSinceDate:self.sunset] > 0;
     
     if (isAfterSunset)
     {
