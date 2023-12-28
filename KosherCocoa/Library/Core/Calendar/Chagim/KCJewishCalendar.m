@@ -313,7 +313,9 @@
     [components setYear:[hebrewCalendar component:NSCalendarUnitYear fromDate:date]];
     [components setMonth:KCHebrewMonthKislev];
     [components setDay:25];
-    
+    [components setHour:[hebrewCalendar component:NSCalendarUnitHour fromDate:date]];
+    [components setMinute:[hebrewCalendar component:NSCalendarUnitMinute fromDate:date]];
+
     NSDate *firstNightOfChanuka = [hebrewCalendar dateFromComponents:components];
     
     NSInteger calculatedDay = [hebrewCalendar components:NSCalendarUnitDay fromDate:firstNightOfChanuka toDate:date options:0].day + 1;
