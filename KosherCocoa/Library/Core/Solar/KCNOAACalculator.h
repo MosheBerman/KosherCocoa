@@ -5,10 +5,10 @@
 //  Created by Elyahu on 1/23/23.
 //
 
-@import Foundation;
-#import "KCGeoLocation.h"
-#import "KCConstants.h"
-#import "KCAstronomicalCalculator.h"
+#import <Foundation/Foundation.h>
+#import <KosherCocoa/KCGeoLocation.h>
+#import <KosherCocoa/KCConstants.h>
+#import <KosherCocoa/KCAstronomicalCalculator.h>
 
 /** A class that uses the US National Oceanic and Atmospheric Administration Algorithm to calculate sunrise and sunset.
  * Implementation of sunrise and sunset methods to calculate astronomical times based on the <a

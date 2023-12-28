@@ -8,8 +8,8 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-@import Foundation;
-#import "KCDaf.h"
+#import <Foundation/Foundation.h>
+#import <KosherCocoa/KCDaf.h>
 
 /**
  This class calculates the current Daf Yomi being studied.

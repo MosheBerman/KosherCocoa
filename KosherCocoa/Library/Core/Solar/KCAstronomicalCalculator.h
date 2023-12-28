@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 /**
  *  A protocol defining methods to return sunrise and sunset times.
@@ -16,7 +16,7 @@
 NS_SWIFT_NAME(AstronomicalCalculator)
 @interface KCAstronomicalCalculator : NSObject <NSObject>
 
-- (id)init;
+- (id _Nullable)init;
 
 // MARK: - Calculating Sunrise
 

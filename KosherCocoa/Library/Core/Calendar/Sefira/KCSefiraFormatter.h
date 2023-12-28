@@ -25,7 +25,7 @@
  */
 
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 /**
  *  This flag determines which custom
