@@ -662,7 +662,12 @@
 //Determine if kislev is short this year
 - (BOOL)isKislevShort
 {
-    return [self lengthOfHebrewYear:[self currentHebrewYear]] % 10 == 3;
+    return [self lengthOfHebrewYear:[self currentHebrewYear]] == KCHebrewYearTypeChaser;
+}
+
+- (BOOL)isCheshvanLong
+{
+    return [self lengthOfHebrewYear:[self currentHebrewYear]] == KCHebrewYearTypeShalaim;
 }
 
 //Get the current hebrew year
