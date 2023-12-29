@@ -75,7 +75,7 @@
 		4618EE1C1BF4F9F900C33159 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACE17CAF3B900056F16 /* NSDateComponents+AllComponents.m */; };
 		469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469066551F4A7090009E5D46 /* KosherCocoa.podspec */; };
 		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
-		5D435CEA2A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */; };
+		5D435CEA2A3C34CB00F66AE0 /* KCNOAACalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CE92A3C34CB00F66AE0 /* KCNOAACalculatorTests.swift */; };
 		5D435CEC2A3C352500F66AE0 /* KCNOAACalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D435CEF2A3C35B000F66AE0 /* KCNOAACalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */; };
 		5D435CF22A3C369900F66AE0 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */; };
@@ -174,7 +174,7 @@
 		46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaMetadataTests.swift; sourceTree = "<group>"; };
 		46DB495C1D9837D100F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCAstronomicalCalculatorTests.swift; sourceTree = "<group>"; };
+		5D435CE92A3C34CB00F66AE0 /* KCNOAACalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCNOAACalculatorTests.swift; sourceTree = "<group>"; };
 		5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCNOAACalculator.h; sourceTree = "<group>"; };
 		5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCNOAACalculator.m; sourceTree = "<group>"; };
 		5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
@@ -454,7 +454,7 @@
 		46DB49591D9837D100F3A576 /* KosherCocoaTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */,
+				5D435CE92A3C34CB00F66AE0 /* KCNOAACalculatorTests.swift */,
 				46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */,
 				F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */,
 				5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */,
@@ -656,7 +656,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D435CEA2A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift in Sources */,
+				5D435CEA2A3C34CB00F66AE0 /* KCNOAACalculatorTests.swift in Sources */,
 				F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */,
 				F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */,
 			);

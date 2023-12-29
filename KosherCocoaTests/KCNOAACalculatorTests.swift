@@ -1,16 +1,18 @@
-//
-//  KCAstronomicalCalculatorTests.swift
-//  KosherCocoaTests
-//
-//  Created by Elyahu on 2/5/23.
-//  Copyright © 2023 Moshe Berman. All rights reserved.
-//
+/**
+ *  KCNOAACalculatorTests
+ *  KosherCocoa 3
+ *
+ *  Created by Elyahu on 2/5/23.
+ *  Updated by Moshe Berman on 12/29/23.
+ *
+ *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
+ */
 
 import XCTest
 import KosherCocoa
 
-final class KCAstronomicalCalculatorTests: XCTestCase {
-    
+final class KCNOAACalculatorTests: XCTestCase {
+
     let gregorianCalendar = Calendar(identifier: .gregorian)
 
     override func setUpWithError() throws {
