@@ -14,6 +14,14 @@ import KosherCocoa
 final class KCNOAACalculatorTests: XCTestCase {
 
     let gregorianCalendar = Calendar(identifier: .gregorian)
+    let lakewood: GeoLocation = GeoLocation(
+        latitude: 40.08213,
+        andLongitude: -74.20970,
+        andTimeZone: TimeZone(identifier: "America/New_York")!
+    )
+    lazy var lakewoodCalculator:NOAACalculator = {
+        NOAACalculator(geoLocation: lakewood)
+    }()
 
     override func setUpWithError() throws {
         try super.setUpWithError()
@@ -24,13 +32,12 @@ final class KCNOAACalculatorTests: XCTestCase {
     }
 
     func testCalculatorNames() throws {
-        let calculator = NOAACalculator(geoLocation: GeoLocation())
-        XCTAssertEqual(calculator.calculatorName, "US National Oceanic and Atmospheric Administration Algorithm")
+        XCTAssertEqual(lakewoodCalculator.calculatorName, "US National Oceanic and Atmospheric Administration Algorithm")
     }
     
     func testCalculatorSunrise() throws {
-        let lakewoodCalculator = NOAACalculator(geoLocation: GeoLocation(latitude: 40.08213, andLongitude: -74.20970, andTimeZone: TimeZone(identifier: "America/New_York")!))
-        
+
+
         var januaryFirst = DateComponents()
         januaryFirst.year = 2023
         januaryFirst.month = 1
