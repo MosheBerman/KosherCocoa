@@ -23,6 +23,10 @@ final class KCNOAACalculatorTests: XCTestCase {
         NOAACalculator(geoLocation: lakewood)
     }()
 
+    lazy var calendar: AstronomicalCalendar = {
+        AstronomicalCalendar(location: lakewoodCalculator.geoLocation)
+    }()
+
     override func setUpWithError() throws {
         try super.setUpWithError()
     }
@@ -36,8 +40,6 @@ final class KCNOAACalculatorTests: XCTestCase {
     }
     
     func testCalculatorSunrise() throws {
-
-
         var januaryFirst = DateComponents()
         januaryFirst.year = 2023
         januaryFirst.month = 1
