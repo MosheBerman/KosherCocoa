@@ -83,8 +83,9 @@
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F5C6076F2B3F0CD100A1E94C /* KCAstronomicalCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C6076E2B3F0CD100A1E94C /* KCAstronomicalCalculatorTests.swift */; };
 		F5C607722B3F13A100A1E94C /* SunriseSunsetLakewoodNOAA.csv in Resources */ = {isa = PBXBuildFile; fileRef = F5C607712B3F13A100A1E94C /* SunriseSunsetLakewoodNOAA.csv */; };
-		F5C607772B3F5A4E00A1E94C /* KCDynamicTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C607762B3F5A4E00A1E94C /* KCDynamicTestCase.m */; };
+		F5C607772B3F5A4E00A1E94C /* DynamicTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C607762B3F5A4E00A1E94C /* DynamicTestCase.m */; };
 		F5C607792B3F5BE600A1E94C /* TestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C607782B3F5BE600A1E94C /* TestLoader.swift */; };
+		F5C607B72B4226BA00A1E94C /* DynamicNOAACalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C607B62B4226BA00A1E94C /* DynamicNOAACalculatorTests.swift */; };
 		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
 /* End PBXBuildFile section */
@@ -187,8 +188,10 @@
 		F5C6076E2B3F0CD100A1E94C /* KCAstronomicalCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCAstronomicalCalculatorTests.swift; sourceTree = "<group>"; };
 		F5C607712B3F13A100A1E94C /* SunriseSunsetLakewoodNOAA.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SunriseSunsetLakewoodNOAA.csv; sourceTree = "<group>"; };
 		F5C607752B3F5A4D00A1E94C /* KosherCocoaTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KosherCocoaTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		F5C607762B3F5A4E00A1E94C /* KCDynamicTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCDynamicTestCase.m; sourceTree = "<group>"; };
+		F5C607762B3F5A4E00A1E94C /* DynamicTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicTestCase.m; sourceTree = "<group>"; };
 		F5C607782B3F5BE600A1E94C /* TestLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLoader.swift; sourceTree = "<group>"; };
+		F5C607B52B42158500A1E94C /* DynamicTestCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicTestCase.h; sourceTree = "<group>"; };
+		F5C607B62B4226BA00A1E94C /* DynamicNOAACalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicNOAACalculatorTests.swift; sourceTree = "<group>"; };
 		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -466,7 +469,9 @@
 				F5C607712B3F13A100A1E94C /* SunriseSunsetLakewoodNOAA.csv */,
 				5D435CE92A3C34CB00F66AE0 /* KCNOAACalculatorTests.swift */,
 				F5C607782B3F5BE600A1E94C /* TestLoader.swift */,
-				F5C607762B3F5A4E00A1E94C /* KCDynamicTestCase.m */,
+				F5C607762B3F5A4E00A1E94C /* DynamicTestCase.m */,
+				F5C607B52B42158500A1E94C /* DynamicTestCase.h */,
+				F5C607B62B4226BA00A1E94C /* DynamicNOAACalculatorTests.swift */,
 				F5C6076E2B3F0CD100A1E94C /* KCAstronomicalCalculatorTests.swift */,
 				46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */,
 				F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */,
@@ -674,9 +679,10 @@
 				5D435CEA2A3C34CB00F66AE0 /* KCNOAACalculatorTests.swift in Sources */,
 				F5C6076F2B3F0CD100A1E94C /* KCAstronomicalCalculatorTests.swift in Sources */,
 				F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */,
+				F5C607B72B4226BA00A1E94C /* DynamicNOAACalculatorTests.swift in Sources */,
 				F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */,
 				F5C607792B3F5BE600A1E94C /* TestLoader.swift in Sources */,
-				F5C607772B3F5A4E00A1E94C /* KCDynamicTestCase.m in Sources */,
+				F5C607772B3F5A4E00A1E94C /* DynamicTestCase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
