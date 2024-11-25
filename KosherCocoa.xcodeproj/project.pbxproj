@@ -96,8 +96,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KCAstronomicalCalendar+DateManipulation.h"; path = "KosherCocoa/Library/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.h"; sourceTree = "<group>"; };
-		460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KCAstronomicalCalendar+DateManipulation.m"; path = "KosherCocoa/Library/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.m"; sourceTree = "<group>"; };
+		460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KCAstronomicalCalendar+DateManipulation.h"; path = "KosherCocoa/Sources/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.h"; sourceTree = "<group>"; };
+		460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KCAstronomicalCalendar+DateManipulation.m"; path = "KosherCocoa/Sources/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.m"; sourceTree = "<group>"; };
 		460AAF4E18187BA00033AABF /* KCSefiraFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiraFormatter.h; sourceTree = "<group>"; };
 		460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraFormatter.m; sourceTree = "<group>"; };
 		4610DD9018086BB40055A4F9 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = SOURCE_ROOT; };
@@ -240,7 +240,7 @@
 		4618BB8A1664216E00AD3CE5 /* KosherCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				466A3AB617CAF3B900056F16 /* Library */,
+				466A3AB617CAF3B900056F16 /* Sources */,
 				4618ED361BF4D85000C33159 /* Supporting Files */,
 			);
 			path = KosherCocoa;
@@ -255,7 +255,7 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		466A3AB617CAF3B900056F16 /* Library */ = {
+		466A3AB617CAF3B900056F16 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				F52587411ECD019A009E623C /* Localizable.strings */,
@@ -264,7 +264,7 @@
 				466A3ACF17CAF3B900056F16 /* Core */,
 				466A3AF417CAF3B900056F16 /* Headers */,
 			);
-			path = Library;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		466A3AB717CAF3B900056F16 /* Categories */ = {
