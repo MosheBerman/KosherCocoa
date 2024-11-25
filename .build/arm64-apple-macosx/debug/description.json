@@ -1,0 +1,737 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.xctest/Contents/MacOS/KosherCocoaPackageTests",
+      "packagePath" : "/Users/mosheberman/Developer/KosherCocoa",
+      "productName" : "KosherCocoaPackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa_KosherCocoa.bundle/en.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Sources/KosherCocoa/Resources/en.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa_KosherCocoa.bundle/en.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa_KosherCocoa.bundle/he.lproj/Localizable.strings" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Sources/KosherCocoa/Resources/he.lproj/Localizable.strings"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa_KosherCocoa.bundle/he.lproj/Localizable.strings"
+        }
+      ]
+    },
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa_KosherCocoa.bundle/Info.plist" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Info.plist"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa_KosherCocoa.bundle/Info.plist"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.KosherCocoaPackageTests-arm64-apple-macosx14.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/sources",
+      "importPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules/KosherCocoaTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "KosherCocoaPackageTests",
+      "moduleOutputPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules/KosherCocoaPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/mosheberman/Developer/KosherCocoa/Sources/KosherCocoa/Headers",
+        "-module-cache-path",
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/KosherCocoaPackageTests-Swift.h",
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "koshercocoa"
+      ],
+      "outputFileMapPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules/KosherCocoaPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.KosherCocoaTests-arm64-apple-macosx14.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/sources",
+      "importPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCAstronomicalCalculatorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCJewishCalendarTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KosherCocoaMetadataTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+Components.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+Juncture.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+Ranges.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+hebrewYearTypes.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDate/NSDate+Components.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDate/NSDate+ConvenientDates.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDate/NSDate+Description.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDateComponents/NSDateComponents+AllComponents.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Chagim/KCJewishCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Chagim/KCJewishHoliday.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Daf Yomi/KCDaf.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Daf Yomi/KCDafYomiCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Parasha/KCParasha.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Parasha/KCParashatHashavuaCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Sefira/KCSefiraFormatter.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Sefira/KCSefiratHaomerCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Zmanim/KCComplexZmanimCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Zmanim/KCZman.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Zmanim/KCZmanimCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCAstronomicalCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCAstronomicalCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCGeoLocation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCNOAACalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCSunriseAndSunsetCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Utilities/trigonometry.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/resource_bundle_accessor.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "KosherCocoaTests",
+      "moduleOutputPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules/KosherCocoaTests.swiftmodule",
+      "objects" : [
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KCAstronomicalCalculatorTests.swift.o",
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KCJewishCalendarTests.swift.o",
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KosherCocoaMetadataTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.0",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-Xcc",
+        "-fmodule-map-file=/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/module.modulemap",
+        "-Xcc",
+        "-I",
+        "-Xcc",
+        "/Users/mosheberman/Developer/KosherCocoa/Sources/KosherCocoa/Headers",
+        "-module-cache-path",
+        "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-color-diagnostics",
+        "-swift-version",
+        "6",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "koshercocoa"
+      ],
+      "outputFileMapPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KCAstronomicalCalculatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KCJewishCalendarTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KosherCocoaMetadataTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules/KosherCocoaTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCAstronomicalCalculatorTests.swift",
+        "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCJewishCalendarTests.swift",
+        "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KosherCocoaMetadataTests.swift"
+      ],
+      "tempsPath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "KosherCocoaPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "KosherCocoaPackageTests",
+      "-package-name",
+      "koshercocoa",
+      "-incremental",
+      "-c",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/mosheberman/Developer/KosherCocoa/Sources/KosherCocoa/Headers",
+      "-module-cache-path",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/KosherCocoaPackageTests-Swift.h",
+      "-color-diagnostics",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "koshercocoa",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "KosherCocoaTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "KosherCocoaTests",
+      "-package-name",
+      "koshercocoa",
+      "-incremental",
+      "-c",
+      "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCAstronomicalCalculatorTests.swift",
+      "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCJewishCalendarTests.swift",
+      "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KosherCocoaMetadataTests.swift",
+      "-I",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.0",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-Xcc",
+      "-fmodule-map-file=/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/module.modulemap",
+      "-Xcc",
+      "-I",
+      "-Xcc",
+      "/Users/mosheberman/Developer/KosherCocoa/Sources/KosherCocoa/Headers",
+      "-module-cache-path",
+      "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-color-diagnostics",
+      "-swift-version",
+      "6",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "koshercocoa",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "KosherCocoa" : [
+
+    ],
+    "KosherCocoaPackageTests" : [
+      "KosherCocoaTests",
+      "KosherCocoa"
+    ],
+    "KosherCocoaTests" : [
+      "KosherCocoa"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "writeCommands" : {
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/sources"
+    },
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+Components.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+DateComparison.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+DateManipulation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+Juncture.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+Ranges.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSCalendar/NSCalendar+hebrewYearTypes.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDate/NSDate+Components.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDate/NSDate+ConvenientDates.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDate/NSDate+Description.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/Foundation/NSDateComponents/NSDateComponents+AllComponents.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Chagim/KCJewishCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Chagim/KCJewishHoliday.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Daf Yomi/KCDaf.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Daf Yomi/KCDafYomiCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Parasha/KCParasha.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Parasha/KCParashatHashavuaCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Sefira/KCSefiraFormatter.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Sefira/KCSefiratHaomerCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Zmanim/KCComplexZmanimCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Zmanim/KCZman.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Calendar/Zmanim/KCZmanimCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCAstronomicalCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCAstronomicalCalendar.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCGeoLocation.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCNOAACalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Solar/KCSunriseAndSunsetCalculator.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/Core/Utilities/trigonometry.c.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoa.build/resource_bundle_accessor.m.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KCAstronomicalCalculatorTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KCJewishCalendarTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/KosherCocoaMetadataTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCAstronomicalCalculatorTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KCJewishCalendarTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/mosheberman/Developer/KosherCocoa/Tests/KosherCocoaTests/KosherCocoaMetadataTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaTests.build/sources"
+    },
+    "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

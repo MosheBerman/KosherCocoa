@@ -1,0 +1,4 @@
+module KosherCocoaPackageTests {
+    header "/Users/mosheberman/Developer/KosherCocoa/.build/arm64-apple-macosx/debug/KosherCocoaPackageTests.build/KosherCocoaPackageTests-Swift.h"
+    requires objc
+}

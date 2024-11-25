@@ -3,17 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4618ECE81BF449EF00C33159 /* KosherCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4618ECE71BF449EF00C33159 /* KosherCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFD1BF44AD500C33159 /* KCAstronomicalCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AE917CAF3B900056F16 /* KCAstronomicalCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFE1BF44AD500C33159 /* KCAstronomicalCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEB17CAF3B900056F16 /* KCAstronomicalCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ECFF1BF44AD500C33159 /* KCGeoLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AED17CAF3B900056F16 /* KCGeoLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED001BF44AD500C33159 /* KCSunriseAndSunsetCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AEF17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = 460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */; };
-		4618ED021BF44AFB00C33159 /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */; };
 		4618ED031BF44AFF00C33159 /* KCJewishCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3AD217CAF3B900056F16 /* KCJewishCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618ED041BF44B0500C33159 /* KCJewishCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3AD317CAF3B900056F16 /* KCJewishCalendar.m */; };
 		4618ED051BF44B0800C33159 /* KCJewishHoliday.h in Headers */ = {isa = PBXBuildFile; fileRef = 461E6DFC194474C300C497A8 /* KCJewishHoliday.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,16 +70,14 @@
 		4618EE1A1BF4F9F100C33159 /* NSDate+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACB17CAF3B900056F16 /* NSDate+Description.m */; };
 		4618EE1B1BF4F9F400C33159 /* NSDateComponents+AllComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 466A3ACD17CAF3B900056F16 /* NSDateComponents+AllComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4618EE1C1BF4F9F900C33159 /* NSDateComponents+AllComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 466A3ACE17CAF3B900056F16 /* NSDateComponents+AllComponents.m */; };
-		469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 469066551F4A7090009E5D46 /* KosherCocoa.podspec */; };
-		46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
-		5D435CEA2A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */; };
 		5D435CEC2A3C352500F66AE0 /* KCNOAACalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D435CEF2A3C35B000F66AE0 /* KCNOAACalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */; };
 		5D435CF22A3C369900F66AE0 /* KCAstronomicalCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */; };
 		5D435CF42A3C389C00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */; };
-		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
-		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
-		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
+		F5FD23922CF4017200EE642C /* KosherCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD23912CF4017200EE642C /* KosherCocoa.h */; };
+		F5FD23962CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD23942CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.m */; };
+		F5FD23972CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD23932CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.h */; };
+		F5FD23AA2CF406D900EE642C /* KosherCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,16 +91,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KCAstronomicalCalendar+DateManipulation.h"; path = "KosherCocoa/Sources/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.h"; sourceTree = "<group>"; };
-		460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "KCAstronomicalCalendar+DateManipulation.m"; path = "KosherCocoa/Sources/Categories/KosherCocoa/KCAstronomicalCalendar+DateManipulation.m"; sourceTree = "<group>"; };
 		460AAF4E18187BA00033AABF /* KCSefiraFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCSefiraFormatter.h; sourceTree = "<group>"; };
 		460AAF4F18187BA00033AABF /* KCSefiraFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCSefiraFormatter.m; sourceTree = "<group>"; };
 		4610DD9018086BB40055A4F9 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = SOURCE_ROOT; };
 		4610DD911808999A0055A4F9 /* KCParashaReadings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCParashaReadings.h; sourceTree = "<group>"; };
-		46130E031BF52DF7001D19FC /* KosherCocoa copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KosherCocoa copy-Info.plist"; path = "/Users/Moshe/code/ios/KosherCocoa/KosherCocoa copy-Info.plist"; sourceTree = "<absolute>"; };
 		4618ECE51BF449EF00C33159 /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4618ECE71BF449EF00C33159 /* KosherCocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KosherCocoa.h; path = ../KosherCocoa.h; sourceTree = "<group>"; };
-		4618ECE91BF449EF00C33159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KosherCocoa/Info.plist; sourceTree = "<group>"; };
 		461E6DFC194474C300C497A8 /* KCJewishHoliday.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCJewishHoliday.h; sourceTree = "<group>"; };
 		461E6DFD194474C300C497A8 /* KCJewishHoliday.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCJewishHoliday.m; sourceTree = "<group>"; };
 		466A3AB917CAF3B900056F16 /* MBCalendarCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCalendarCategories.h; sourceTree = "<group>"; };
@@ -171,17 +161,31 @@
 		469066551F4A7090009E5D46 /* KosherCocoa.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KosherCocoa.podspec; sourceTree = "<group>"; };
 		46BAA9F41AD592B300A0FE4B /* KCZman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCZman.h; sourceTree = "<group>"; };
 		46BAA9F51AD592B300A0FE4B /* KCZman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCZman.m; sourceTree = "<group>"; };
-		46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KosherCocoaMetadataTests.swift; sourceTree = "<group>"; };
 		46DB495C1D9837D100F3A576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46DB49641D9839F100F3A576 /* KosherCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KosherCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCAstronomicalCalculatorTests.swift; sourceTree = "<group>"; };
 		5D435CEB2A3C352500F66AE0 /* KCNOAACalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCNOAACalculator.h; sourceTree = "<group>"; };
 		5D435CEE2A3C35B000F66AE0 /* KCNOAACalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCNOAACalculator.m; sourceTree = "<group>"; };
 		5D435CF12A3C369900F66AE0 /* KCAstronomicalCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCAstronomicalCalculator.m; sourceTree = "<group>"; };
 		5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-06-16 at 2.27.26 AM.png"; sourceTree = "<group>"; };
-		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
+		F5FD23912CF4017200EE642C /* KosherCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KosherCocoa.h; sourceTree = "<group>"; };
+		F5FD23932CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KCAstronomicalCalendar+DateManipulation.h"; sourceTree = "<group>"; };
+		F5FD23942CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KCAstronomicalCalendar+DateManipulation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F5FD23A92CF405F800EE642C /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 4618ECE41BF449EF00C33159 /* KosherCocoa */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F5FD239A2CF4051600EE642C /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F5FD23A92CF405F800EE642C /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+		F5FD23AD2CF4086100EE642C /* KosherCocoaTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KosherCocoaTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4618ECE11BF449EF00C33159 /* Frameworks */ = {
@@ -195,23 +199,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46DB49691D9839F200F3A576 /* KosherCocoa.framework in Frameworks */,
+				F5FD23AA2CF406D900EE642C /* KosherCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		460699E6182172BC008DA62C /* KosherCocoa */ = {
-			isa = PBXGroup;
-			children = (
-				460699E3182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.h */,
-				460699E4182172B9008DA62C /* KCAstronomicalCalendar+DateManipulation.m */,
-			);
-			name = KosherCocoa;
-			path = ../../..;
-			sourceTree = "<group>";
-		};
 		4618BB7A1664216E00AD3CE5 = {
 			isa = PBXGroup;
 			children = (
@@ -221,10 +215,9 @@
 				469066531F4A6728009E5D46 /* LICENSE */,
 				469066541F4A6728009E5D46 /* README.md */,
 				4610DD9018086BB40055A4F9 /* TODO.md */,
-				4618BB8A1664216E00AD3CE5 /* KosherCocoa */,
-				46DB49591D9837D100F3A576 /* KosherCocoaTests */,
+				4618BB8A1664216E00AD3CE5 /* Sources */,
+				46DB49591D9837D100F3A576 /* Tests */,
 				4618BB861664216E00AD3CE5 /* Products */,
-				46130E031BF52DF7001D19FC /* KosherCocoa copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,40 +230,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4618BB8A1664216E00AD3CE5 /* KosherCocoa */ = {
+		4618BB8A1664216E00AD3CE5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				466A3AB617CAF3B900056F16 /* Sources */,
-				4618ED361BF4D85000C33159 /* Supporting Files */,
+				466A3AB617CAF3B900056F16 /* KosherCocoa */,
 			);
-			path = KosherCocoa;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		4618ED361BF4D85000C33159 /* Supporting Files */ = {
+		466A3AB617CAF3B900056F16 /* KosherCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				4618ECE91BF449EF00C33159 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			path = ..;
-			sourceTree = "<group>";
-		};
-		466A3AB617CAF3B900056F16 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				F52587411ECD019A009E623C /* Localizable.strings */,
-				4618ECE71BF449EF00C33159 /* KosherCocoa.h */,
+				F5FD239A2CF4051600EE642C /* Resources */,
+				F5FD23912CF4017200EE642C /* KosherCocoa.h */,
 				466A3AB717CAF3B900056F16 /* Categories */,
 				466A3ACF17CAF3B900056F16 /* Core */,
 				466A3AF417CAF3B900056F16 /* Headers */,
 			);
-			path = Sources;
+			path = KosherCocoa;
 			sourceTree = "<group>";
 		};
 		466A3AB717CAF3B900056F16 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				460699E6182172BC008DA62C /* KosherCocoa */,
+				F5FD23952CF401E100EE642C /* KosherCocoa */,
 				466A3AB817CAF3B900056F16 /* Foundation */,
 			);
 			path = Categories;
@@ -451,16 +434,23 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
-		46DB49591D9837D100F3A576 /* KosherCocoaTests */ = {
+		46DB49591D9837D100F3A576 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5D435CE92A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift */,
-				46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */,
-				F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */,
+				F5FD23AD2CF4086100EE642C /* KosherCocoaTests */,
 				5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */,
 				46DB495C1D9837D100F3A576 /* Info.plist */,
 			);
-			path = KosherCocoaTests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F5FD23952CF401E100EE642C /* KosherCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				F5FD23932CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.h */,
+				F5FD23942CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.m */,
+			);
+			path = KosherCocoa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,10 +472,12 @@
 				4618ED0D1BF44B3400C33159 /* KCParashatHashavuaCalculator.h in Headers */,
 				4618ED341BF4516900C33159 /* KCZenithExtended.h in Headers */,
 				4618ECFF1BF44AD500C33159 /* KCGeoLocation.h in Headers */,
+				F5FD23972CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
 				4618ED0A1BF44B2900C33159 /* KCParasha.h in Headers */,
 				4618ED2F1BF4516900C33159 /* KCJewishHolidays.h in Headers */,
 				4618ED311BF4516900C33159 /* KCSunCalculationTypes.h in Headers */,
 				4618ECFE1BF44AD500C33159 /* KCAstronomicalCalendar.h in Headers */,
+				F5FD23922CF4017200EE642C /* KosherCocoa.h in Headers */,
 				4618ED131BF44B6B00C33159 /* KCComplexZmanimCalendar.h in Headers */,
 				4618ED351BF4516900C33159 /* KCParashaReadings.h in Headers */,
 				4618EE141BF4F9CC00C33159 /* MBCalendarCategories.h in Headers */,
@@ -508,9 +500,7 @@
 				4618ED321BF4516900C33159 /* KCTractates.h in Headers */,
 				5D435CEC2A3C352500F66AE0 /* KCNOAACalculator.h in Headers */,
 				4618ED091BF44B1B00C33159 /* KCDafYomiCalculator.h in Headers */,
-				4618ECE81BF449EF00C33159 /* KosherCocoa.h in Headers */,
 				4618ED141BF44B7100C33159 /* KCZmanimCalendar.h in Headers */,
-				4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +520,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				F5FD239A2CF4051600EE642C /* Resources */,
+			);
 			name = KosherCocoa;
 			productName = KosherCocoa;
 			productReference = 4618ECE51BF449EF00C33159 /* KosherCocoa.framework */;
@@ -547,6 +540,9 @@
 			);
 			dependencies = (
 				46DB496B1D9839F200F3A576 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F5FD23AD2CF4086100EE642C /* KosherCocoaTests */,
 			);
 			name = KosherCocoaTests;
 			productName = KosherCocoaTests;
@@ -601,8 +597,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				469066561F4A7090009E5D46 /* KosherCocoa.podspec in Resources */,
-				F52587431ECD019A009E623C /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +620,6 @@
 				4618ED111BF44B6400C33159 /* KCSefiratHaomerCalculator.m in Sources */,
 				4618ED1C1BF44BA400C33159 /* trigonometry.c in Sources */,
 				4618ED061BF44B0D00C33159 /* KCJewishHoliday.m in Sources */,
-				4618ED021BF44AFB00C33159 /* KCAstronomicalCalendar+DateManipulation.m in Sources */,
 				4618ED241BF44E5600C33159 /* NSCalendar+DateManipulation.m in Sources */,
 				4618ED2A1BF44E5600C33159 /* NSCalendar+Ranges.m in Sources */,
 				4618ED221BF44E5600C33159 /* NSCalendar+DateComparison.m in Sources */,
@@ -640,6 +633,7 @@
 				4618ED1A1BF44B9A00C33159 /* KCGeoLocation.m in Sources */,
 				4618ED281BF44E5600C33159 /* NSCalendar+Juncture.m in Sources */,
 				4618ED191BF44B9700C33159 /* KCAstronomicalCalendar.m in Sources */,
+				F5FD23962CF401E100EE642C /* KCAstronomicalCalendar+DateManipulation.m in Sources */,
 				4618ED121BF44B6800C33159 /* KCComplexZmanimCalendar.m in Sources */,
 				4618ED0C1BF44B3100C33159 /* KCParashatHashavuaCalculator.m in Sources */,
 				4618ED201BF44E5600C33159 /* NSCalendar+Components.m in Sources */,
@@ -656,9 +650,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D435CEA2A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift in Sources */,
-				F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */,
-				F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,17 +662,6 @@
 			targetProxy = 46DB496A1D9839F200F3A576 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F52587411ECD019A009E623C /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F52587421ECD019A009E623C /* en */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4618BBA81664216F00AD3CE5 /* Debug */ = {
@@ -774,7 +754,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -784,6 +765,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -807,22 +789,27 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = KosherCocoa/Info.plist;
+				INFOPLIST_FILE = Sources/KosherCocoa/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
 			};
 			name = Debug;
 		};
@@ -831,6 +818,7 @@
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -856,28 +844,34 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = KosherCocoa/Info.plist;
+				INFOPLIST_FILE = Sources/KosherCocoa/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WARNING_CFLAGS = "-Wno-quoted-include-in-framework-header";
-				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
 			};
 			name = Release;
 		};
 		46DB496D1D9839F200F3A576 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -890,12 +884,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = KosherCocoaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -908,6 +909,7 @@
 		46DB496E1D9839F200F3A576 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -922,12 +924,19 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = KosherCocoaTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosheberman.KosherCocoaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,4";

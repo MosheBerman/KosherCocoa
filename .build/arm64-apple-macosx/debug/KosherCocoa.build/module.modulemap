@@ -1,0 +1,4 @@
+module KosherCocoa {
+    umbrella header "/Users/mosheberman/Developer/KosherCocoa/Sources/KosherCocoa/Headers/KosherCocoa.h"
+    export *
+}
