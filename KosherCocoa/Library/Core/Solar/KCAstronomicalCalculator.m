@@ -6,9 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "KCAstronomicalCalculator.h"
-#import "KCConstants.h"
-#import "trigonometry.h"
+#import <KosherCocoa/KCAstronomicalCalculator.h>
+#import <KosherCocoa/KCConstants.h>
+#import <KosherCocoa/trigonometry.h>
 
 @implementation KCAstronomicalCalculator
 

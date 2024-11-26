@@ -11,17 +11,17 @@
 #ifndef MBCalendarKit_NSCalendarCategories_h
 #define MBCalendarKit_NSCalendarCategories_h
 
-#import "NSCalendar+Components.h"
-#import "NSCalendar+DateComparison.h"
-#import "NSCalendar+DateManipulation.h"
-#import "NSCalendar+Ranges.h"
-#import "NSCalendar+Juncture.h"
-#import "NSCalendar+hebrewYearTypes.h"
+#import <KosherCocoa/NSCalendar+Components.h>
+#import <KosherCocoa/NSCalendar+DateComparison.h>
+#import <KosherCocoa/NSCalendar+DateManipulation.h>
+#import <KosherCocoa/NSCalendar+Ranges.h>
+#import <KosherCocoa/NSCalendar+Juncture.h>
+#import <KosherCocoa/NSCalendar+hebrewYearTypes.h>
 
-#import "NSDate+Components.h"
-#import "NSDate+ConvenientDates.h"
-#import "NSDate+Description.h"
+#import <KosherCocoa/NSDate+Components.h>
+#import <KosherCocoa/NSDate+ConvenientDates.h>
+#import <KosherCocoa/NSDate+Description.h>
 
-#import "NSDateComponents+AllComponents.h"
+#import <KosherCocoa/NSDateComponents+AllComponents.h>
 
 #endif

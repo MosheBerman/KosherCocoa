@@ -8,12 +8,12 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
-#import "KCGeoLocation.h"
-#import "KCSunriseAndSunsetCalculator.h"
-#import "KCNOAACalculator.h"
-#import "KCAstronomicalCalculator.h"
+#import <KosherCocoa/KCGeoLocation.h>
+#import <KosherCocoa/KCSunriseAndSunsetCalculator.h>
+#import <KosherCocoa/KCNOAACalculator.h>
+#import <KosherCocoa/KCAstronomicalCalculator.h>
 
 /**
  A class that calculates various sunrise and sunset values.
