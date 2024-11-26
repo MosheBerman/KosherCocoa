@@ -8,26 +8,26 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 FOUNDATION_EXPORT double KosherCocoaVersionNumber;
 FOUNDATION_EXPORT const unsigned char KosherCocoaVersionString[];
 
-#import <KosherCocoa/KCJewishCalendar.h>
-#import <KosherCocoa/KCJewishHoliday.h>
+#import <KCJewishCalendar.h>
+#import <KCJewishHoliday.h>
 
-#import <KosherCocoa/KCDafYomiCalculator.h>
+#import <KCDafYomiCalculator.h>
 
-#import <KosherCocoa/KCParashatHashavuaCalculator.h>
-#import <KosherCocoa/KCParasha.h>
+#import <KCParashatHashavuaCalculator.h>
+#import <KCParasha.h>
 
-#import <KosherCocoa/KCSefiraFormatter.h>
-#import <KosherCocoa/KCSefiratHaomerCalculator.h>
+#import <KCSefiraFormatter.h>
+#import <KCSefiratHaomerCalculator.h>
 
-#import <KosherCocoa/KCAstronomicalCalculator.h>
-#import <KosherCocoa/KCGeoLocation.h>
-#import <KosherCocoa/KCSunriseAndSunsetCalculator.h>
+#import <KCAstronomicalCalculator.h>
+#import <KCGeoLocation.h>
+#import <KCSunriseAndSunsetCalculator.h>
 
-#import <KosherCocoa/KCComplexZmanimCalendar.h>
-#import <KosherCocoa/KCZmanimCalendar.h>
-#import <KosherCocoa/KCZman.h>
+#import <KCComplexZmanimCalendar.h>
+#import <KCZmanimCalendar.h>
+#import <KCZman.h>
