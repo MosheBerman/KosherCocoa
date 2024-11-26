@@ -59,7 +59,7 @@
 {
     double sunrise = [self UTCSunrise:kZenithGeometric];
     
-    if (sunrise == NAN)
+    if (isnan(sunrise))
     {
         return nil;
     }
@@ -72,7 +72,7 @@
 {
     double sunrise = [self UTCSeaLevelSunrise:kZenithGeometric];
     
-    if (sunrise == NAN)
+    if (isnan(sunrise))
     {
         return nil;
     }
@@ -99,7 +99,7 @@
 {
     double sunset = [self UTCSunset:kZenithGeometric];
     
-    if (sunset == NAN)
+    if (isnan(sunset))
     {
         return nil;
     }
@@ -111,7 +111,7 @@
 {
     double sunset = [self UTCSeaLevelSunset:kZenithGeometric];
     
-    if (sunset == NAN)
+    if (isnan(sunset))
     {
         return nil;
     }
@@ -147,7 +147,7 @@
 {
     double dawn = [self UTCSunrise:offsetZenith];
    
-    if (dawn == NAN)
+    if (isnan(dawn))
     {
         return nil;
     }
@@ -159,7 +159,7 @@
 {
     double sunset = [self UTCSunset:offsetZenith];
     
-    if (sunset == NAN)
+    if (isnan(sunset))
     {
         return nil;
     }
@@ -232,7 +232,7 @@
     //  Return nil if the time is NAN
     //
     
-    if (time == NAN)
+    if (isnan(time))
     {
         NSLog(@"(%@: %@) Received an invalid number. I can't do anything with that...", self.class, NSStringFromSelector(_cmd));
         return nil;
