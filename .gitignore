@@ -19,5 +19,3 @@ DerivedData
 .idea/
 ./java
 ./java/*
-./.build
-./.build/*
