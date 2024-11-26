@@ -10,8 +10,8 @@
  */
 
 @import Foundation;
-#import "KCComplexZmanimCalendar.h"
-#import "KCDaf.h"
+#import <KCComplexZmanimCalendar.h>
+#import <KCDaf.h>
 
 /**
  A class that can be used to check when Jewish holidays are.

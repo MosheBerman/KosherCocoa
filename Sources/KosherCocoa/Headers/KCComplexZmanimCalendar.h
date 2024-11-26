@@ -8,7 +8,7 @@
  *  Use of KosherCocoa 3 is governed by the LGPL 2.1 License.
  */
 
-#import "KCZmanimCalendar.h"
+#import <KCZmanimCalendar.h>
 
 /**
  *  This class extends ZmanimCalendar and provides many

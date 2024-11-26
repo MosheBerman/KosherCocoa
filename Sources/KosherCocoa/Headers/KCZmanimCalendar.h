@@ -9,7 +9,7 @@
  */
 
 @import Foundation;
-#import "KCAstronomicalCalendar.h"
+#import <KCAstronomicalCalendar.h>
 
 NS_SWIFT_NAME(ZmanimCalendar)
 @interface KCZmanimCalendar : KCAstronomicalCalendar
