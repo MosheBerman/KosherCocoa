@@ -9,10 +9,11 @@
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false
+
   },
   "testTargets" : [
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:KosherCocoa.xcodeproj",
         "identifier" : "46DB49631D9839F100F3A576",

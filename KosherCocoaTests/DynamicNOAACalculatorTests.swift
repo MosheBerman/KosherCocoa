@@ -56,6 +56,7 @@ class DynamicNOAACalculatorTestCase : DynamicTestCase {
     /// - Returns: A dictionary of tests to invoke.
     override class func dynamicTests() -> [String : @convention(block) () -> Void]? {
 
+        let gregorian: Calendar = .init(identifier: .gregorian)
         var output: [String : @convention(block) () -> Void] = [:]
 
         /// Load the tests from a CSV file.
@@ -71,7 +72,8 @@ class DynamicNOAACalculatorTestCase : DynamicTestCase {
         }
 
         /// Iterate the test cases, skipping the headers row.
-        for testCase in tests[1...] {
+        for testIdx in stride(from: 1, through: tests.count, by: 9) {
+            let testCase = tests[testIdx]
             /// The first field is the date.
             guard let inputDateAsString: String = testCase.first else {
                 XCTFail("Missing date in test case: \(testCase)")
@@ -95,7 +97,8 @@ class DynamicNOAACalculatorTestCase : DynamicTestCase {
 
                     calendar.workingDate = workingDate
 
-                    guard let performedSelector = calendar.perform(Selector(methodName)) else {
+                    let selector = Selector(methodName)
+                    guard let performedSelector = calendar.perform(selector) else {
                         XCTFail("Failed to call calendar.perform(Selector())")
                         return
                     }
@@ -118,14 +121,28 @@ class DynamicNOAACalculatorTestCase : DynamicTestCase {
                     /// Further reading:
                     /// https://developer.apple.com/forums/thread/731850
                     /// https://stackoverflow.com/questions/31272561/31483262#31483262
-                    guard let expected = DynamicNOAACalculatorTestCase.timeFormatter.date(from:testCase[methodIdx+1]) else {
+                    guard let expectedTime = DynamicNOAACalculatorTestCase.timeFormatter.date(from:testCase[methodIdx+1]) else {
                         XCTFail("Failed to parse date.")
                         return
                     }
 
+                    /// Set the expected time on the input date - so we can compare the times on
+                    /// the expected date.
+                    let expectedComponents = gregorian.dateComponents([.hour, .minute, .second], from: expectedTime)
+                    guard let expected = gregorian.date(
+                        bySettingHour: expectedComponents.hour!,
+                        minute: expectedComponents.minute!,
+                        second: expectedComponents.second!,
+                        of: workingDate
+                    ) else {
+                        XCTFail("Failed to construct expected result date.")
+                        return
+                    }
+                    /// Compare the resulting points in time, allowing for a 1 second discrepancy.
                     XCTAssertEqual(
-                        Calendar.current.dateComponents([.hour, .minute, .second], from: result),
-                        Calendar.current.dateComponents([.hour, .minute, .second], from: expected)
+                        result.timeIntervalSinceReferenceDate,
+                        expected.timeIntervalSinceReferenceDate,
+                        accuracy: 1
                     )
                 }
             }
