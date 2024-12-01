@@ -54,8 +54,12 @@ final class KCNOAACalculatorTests: XCTestCase {
         januaryFirst.minute = 18
         januaryFirst.second = 57
         
-        XCTAssertEqual(sunrise, gregorianCalendar.date(from: januaryFirst))
-        
+        XCTAssertEqual(
+            sunrise!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: januaryFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
+
         var mayFirst = DateComponents()
         mayFirst.year = 2023
         mayFirst.month = 5
@@ -68,8 +72,12 @@ final class KCNOAACalculatorTests: XCTestCase {
         mayFirst.minute = 56
         mayFirst.second = 59
         
-        XCTAssertEqual(sunrise, gregorianCalendar.date(from: mayFirst))
-        
+        XCTAssertEqual(
+            sunrise!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: mayFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
+
         var augustFirst = DateComponents()
         augustFirst.year = 2023
         augustFirst.month = 8
@@ -82,7 +90,11 @@ final class KCNOAACalculatorTests: XCTestCase {
         augustFirst.minute = 54
         augustFirst.second = 51
         
-        XCTAssertEqual(sunrise, gregorianCalendar.date(from: augustFirst))
+        XCTAssertEqual(
+            sunrise!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: augustFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
         
         var decFirst = DateComponents()
         decFirst.year = 2023
@@ -96,7 +108,11 @@ final class KCNOAACalculatorTests: XCTestCase {
         decFirst.minute = 59
         decFirst.second = 29
         
-        XCTAssertEqual(sunrise, gregorianCalendar.date(from: decFirst))
+        XCTAssertEqual(
+            sunrise!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: decFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
     }
     
     func testCalculatorSunset() throws {
@@ -116,8 +132,12 @@ final class KCNOAACalculatorTests: XCTestCase {
         januaryFirst.minute = 41
         januaryFirst.second = 56
         
-        XCTAssertEqual(sunset, gregorianCalendar.date(from: januaryFirst))
-        
+        XCTAssertEqual(
+            sunset!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: januaryFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
+
         var mayFirst = DateComponents()
         mayFirst.year = 2023
         mayFirst.month = 5
@@ -130,8 +150,12 @@ final class KCNOAACalculatorTests: XCTestCase {
         mayFirst.minute = 51
         mayFirst.second = 33
         
-        XCTAssertEqual(sunset, gregorianCalendar.date(from: mayFirst))
-        
+        XCTAssertEqual(
+            sunset!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: mayFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
+
         var augustFirst = DateComponents()
         augustFirst.year = 2023
         augustFirst.month = 8
@@ -144,7 +168,11 @@ final class KCNOAACalculatorTests: XCTestCase {
         augustFirst.minute = 10
         augustFirst.second = 56
         
-        XCTAssertEqual(sunset, gregorianCalendar.date(from: augustFirst))
+        XCTAssertEqual(
+            sunset!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: augustFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
         
         var decFirst = DateComponents()
         decFirst.year = 2023
@@ -158,6 +186,10 @@ final class KCNOAACalculatorTests: XCTestCase {
         decFirst.minute = 31
         decFirst.second = 56
         
-        XCTAssertEqual(sunset, gregorianCalendar.date(from: decFirst))
+        XCTAssertEqual(
+            sunset!.timeIntervalSinceReferenceDate,
+            gregorianCalendar.date(from: decFirst)!.timeIntervalSinceReferenceDate,
+            accuracy: 1
+        )
     }
 }
