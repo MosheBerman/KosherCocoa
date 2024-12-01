@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "0F669B91-740D-4830-8F60-25E79EAD0B69",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:KosherCocoa.xcodeproj",
+        "identifier" : "46DB49631D9839F100F3A576",
+        "name" : "KosherCocoaTests"
+      }
+    }
+  ],
+  "version" : 1
+}

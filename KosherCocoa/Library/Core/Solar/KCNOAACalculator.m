@@ -297,7 +297,7 @@
     //
     
     NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    
+    gregorianCalendar.timeZone = self.geoLocation.timeZone;
     //
     //  Set up the date components
     //
