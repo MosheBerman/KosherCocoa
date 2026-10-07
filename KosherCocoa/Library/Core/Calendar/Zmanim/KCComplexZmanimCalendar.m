@@ -550,26 +550,44 @@
 }
 
 - (nullable NSDate *) sofZmanAchilasChametzGra{
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
     return [self sofZmanTfilaGra];
 }
 
 - (nullable NSDate *) sofZmanAchilasChametzMGA72Minutes{
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
     return [self sofZmanTfilaMGA72Minutes];
 }
 
 - (nullable NSDate *) sofZmanAchilasChametzMGA16Point1Degrees{
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
     return [self sofZmanTfilaMGA16Point1Degrees];
 }
 
 - (nullable NSDate *) sofZmanBiurChametzGra{
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
     return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra] * 5];
 }
 
 - (nullable NSDate *) sofZmanBiurChametzMGA72Minutes{
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
     return [[self alos72] dateByAddingTimeInterval:[self shaahZmanisMogenAvraham] * 5];
 }
 
 - (nullable NSDate *) sofZmanBiurChametzMGA16Point1Degrees{
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
     return [[self alos16Point1Degrees]dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees] * 5];
 }
 
