@@ -2116,3 +2116,116 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (nullable NSDate *)sofZmanTfilaGRASunriseToFixedLocalChatzos;
 
 @end
+
+/**
+ *  GeonimDegreesMinutes category on KCComplexZmanimCalendar.
+ *
+ *  Degree- and minute-based alos/tzais/misheyakir variants ported from
+ *  KosherJava's ComprehensiveZmanimCalendar that were missing from the port.
+ *
+ *  Not re-declared here (already in the port, see the mapping fragment):
+ *  tzaisGeonim3Point7Degrees, tzaisGeonim3Point8Degrees (BaalHatanya category),
+ *  tzaisGeonim4Point8Degrees, tzaisGeonim5Point95Degrees,
+ *  tzaisGeonim7Point083Degrees, alos60, alos90, alos96, alos120, tzais50,
+ *  tzais60, tzais90, tzais96, tzais120.
+ */
+
+/** Zenith constants needed by this category (guarded so a later central definition wins). */
+#ifndef kZenithFourPointFortyTwo
+#define kZenithFourPointFortyTwo (kZenithGeometric + 4.42)
+#endif
+#ifndef kZenithFourPointSixtySix
+#define kZenithFourPointSixtySix (kZenithGeometric + 4.66)
+#endif
+#ifndef kZenithSixPointFortyFive
+#define kZenithSixPointFortyFive (kZenithGeometric + 6.45)
+#endif
+#ifndef kZenithSevenPointSixtySeven
+#define kZenithSevenPointSixtySeven (kZenithGeometric + 7.67)
+#endif
+#ifndef kZenithNinePointThree
+#define kZenithNinePointThree (kZenithGeometric + 9.3)
+#endif
+#ifndef kZenithNinePointSeventyFive
+#define kZenithNinePointSeventyFive (kZenithGeometric + 9.75)
+#endif
+#ifndef kZenithSevenPointSixtyFive
+#define kZenithSevenPointSixtyFive (kZenithGeometric + 7.65)
+#endif
+#ifndef kZenithNinePointFive
+#define kZenithNinePointFive (kZenithGeometric + 9.5)
+#endif
+#ifndef kZenithTwelvePointEightyFive
+#define kZenithTwelvePointEightyFive (kZenithGeometric + 12.85)
+#endif
+#ifndef kZenithNineteenDegrees
+#define kZenithNineteenDegrees (kZenithGeometric + 19)
+#endif
+
+@interface KCComplexZmanimCalendar (GeonimDegreesMinutes)
+
+/**
+ *  Tzais (Geonim) when the sun is 4.42° below the western horizon (3/4 of a
+ *  22.5-minute mil, 16.875 minutes after sunset). For lechumra use only.
+ *  Returns nil if uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim4Point42Degrees;
+
+/**
+ *  Tzais (Geonim) when the sun is 4.66° below the western horizon (3/4 of a
+ *  24-minute mil, 18 minutes after sunset). For lechumra use only. Returns nil
+ *  if uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim4Point66Degrees;
+
+/**
+ *  Tzais (Geonim) when the sun is 6.45° below the western horizon (Rav
+ *  Tucazinsky, no later than 31 minutes after sunset in Jerusalem). Returns
+ *  nil if uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim6Point45Degrees;
+
+/**
+ *  Tzais (Geonim) when the sun is 7.67° below the western horizon (45 minutes
+ *  after sunset at the NY summer solstice). Returns nil if uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim7Point67Degrees;
+
+/**
+ *  Tzais (Geonim, Luach Itim Lebinah) when the sun is 9.3° below the western
+ *  horizon. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim9Point3Degrees;
+
+/**
+ *  Tzais (Geonim) when the sun is 9.75° below the western horizon (60 minutes
+ *  after sunset on a day with 60-minute solar hours). Returns nil if
+ *  uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim9Point75Degrees;
+
+/**
+ *  Misheyakir when the sun is 7.65° below the eastern horizon. Returns nil if
+ *  uncomputable.
+ */
+- (nullable NSDate *)misheyakir7Point65Degrees;
+
+/**
+ *  Misheyakir when the sun is 9.5° below the eastern horizon (Rav Dovid
+ *  Kronglass's 45 minutes in Baltimore). Returns nil if uncomputable.
+ */
+- (nullable NSDate *)misheyakir9Point5Degrees;
+
+/**
+ *  Misheyakir when the sun is 12.85° below the eastern horizon. For lechumra
+ *  use only. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)misheyakir12Point85Degrees;
+
+/**
+ *  Alos when the sun is 19° below the eastern horizon. Returns nil if
+ *  uncomputable.
+ */
+- (nullable NSDate *)alos19Degrees;
+
+@end
