@@ -339,24 +339,6 @@ static double KCMeeusSunHourAngle(double latitude, double solarDeclination, doub
 }
 
 //
-//  Adjusts the zenith to account for solar refraction, solar radius and elevation, using this
-//  calculator's configured refraction, solar radius and earth radius instead of the
-//  kRefraction/kSolarRadius/kEarthRadiusInKilometers constants. Deviation from KosherJava: uses
-//  the fixed 16' solar radius; the date-based apparent solar radius table is not ported.
-//
-
-- (double)adjustZenith:(double)zenith forElevation:(double)elevation
-{
-    if (zenith == kZenithGeometric)
-    {
-        zenith = zenith
-        + (self.solarRadius + self.refraction + [self elevationAdjustmentForElevation:elevation]);
-    }
-
-    return zenith;
-}
-
-//
 //  Returns the elevation dip using this calculator's configured earth radius (in kilometers,
 //  matching KosherJava's getEarthRadius) instead of the kEarthRadiusInKilometers constant.
 //
@@ -378,7 +360,7 @@ static double KCMeeusSunHourAngle(double latitude, double solarDeclination, doub
                        solarEvent:(KCMeeusSolarEvent)solarEvent
 {
     double elevation = adjustForElevation ? self.geoLocation.altitude : 0;
-    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation];
+    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation onDate:date];
     double riseSet = [self getSunRiseSetUTCForDate:date
                                          latitude:geoLocation.latitude
                                         longitude:-geoLocation.longitude

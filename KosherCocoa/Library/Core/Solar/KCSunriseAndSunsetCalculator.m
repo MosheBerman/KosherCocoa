@@ -305,11 +305,11 @@
     
     if (adjustForElevation)
     {
-        zenith = [self adjustZenith:zenith forElevation:self.geoLocation.altitude];
+        zenith = [self adjustZenith:zenith forElevation:self.geoLocation.altitude onDate:date];
     }
     else
     {
-        zenith = [self adjustZenith:zenith forElevation:0];
+        zenith = [self adjustZenith:zenith forElevation:0 onDate:date];
     }
     
     NSDateComponents *components = [self yearMonthAndDayFromDate:date];
@@ -336,11 +336,11 @@
     
     if (adjustForElevation)
     {
-        zenith = [self adjustZenith:zenith forElevation:self.geoLocation.altitude];
+        zenith = [self adjustZenith:zenith forElevation:self.geoLocation.altitude onDate:date];
     }
     else
     {
-        zenith = [self adjustZenith:zenith forElevation:0];
+        zenith = [self adjustZenith:zenith forElevation:0 onDate:date];
     }
     
     NSDateComponents *components = [self yearMonthAndDayFromDate:date];
@@ -401,43 +401,6 @@
     ////NSLog(@"Elevation Adjustment: %.15f", elevationAdjustment);
     
     return elevationAdjustment;
-}
-
-//
-//	Adjusts the zenith to account for solar refraction, solar radius and
-//	elevation. The value for Sun's zenith and true rise/set Zenith (used in
-//	this class and subclasses)is the angle that the center of the Sun makes
-//	to a line perpendicular to the Earth's surface. If the Sun were a point
-//	and the Earth were without an atmosphere, true sunset and sunrise would
-//	correspond to a 90&deg; zenith. Because the Sun is not a point, and
-//	because the atmosphere refracts light, this 90&deg; zenith does not, in
-//	fact, correspond to true sunset or sunrise, instead the centre of the
-//	Sun's disk must lie just below the horizon for the upper edge to be
-//	obscured. This means that a zenith of just above 90&deg; must be used.
-//	The Sun subtends an angle of 16 minutes of arc (this can be changed via
-//	the {@link #setSolarRadius(double)} method , and atmospheric refraction
-//	accounts for 34 minutes or so (this can be changed via the
-//	{@link #setRefraction(double)} method), giving a total of 50 arcminutes.
-//	The total value for ZENITH is 90+(5/6)or 90.8333333&deg; for true
-//	sunrise/sunset. Since a person at an elevation can see blow the horizon
-//	of a person at sea level, this will also adjust the zenith to account for
-//	elevation if available.
-//
-//	@return The zenith adjusted to include the
-//	        {@link #getSolarRadius sun's radius},
-//	        {@link #getRefraction refraction} and
-//	        {@link #getElevationAdjustment elevation} adjustment.
-//
-
-- (double)adjustZenith:(double)zenith forElevation:(double)elevation
-{
-    if (zenith == kZenithGeometric)
-    {
-        zenith = zenith
-        + (kSolarRadius + kRefraction + [self elevationAdjustmentForElevation:elevation]);
-    }
-    
-    return zenith;
 }
 
 // Mark: - Method to get day, month, and year
