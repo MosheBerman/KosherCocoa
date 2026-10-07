@@ -20,7 +20,7 @@
     
     if (self)
     {
-        [self setCalculatorName:@"United States Naval Almanac Algorithm"];
+        [self setCalculatorName:@"US Naval Almanac Algorithm"];
         
         //
         //  If there's no GeoLocation, then
