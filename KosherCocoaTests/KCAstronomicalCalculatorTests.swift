@@ -26,7 +26,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         XCTAssertEqual(calculator.calculatorName, "US National Oceanic and Atmospheric Administration Algorithm")
         
         let SunriseAndSunsetCalculator = SunriseAndSunsetCalculator(geoLocation: GeoLocation())
-        XCTAssertEqual(SunriseAndSunsetCalculator.calculatorName, "United States Naval Almanac Algorithm")
+        XCTAssertEqual(SunriseAndSunsetCalculator.calculatorName, "US Naval Almanac Algorithm")
     }
     
     func testCalculatorSunrise() throws {

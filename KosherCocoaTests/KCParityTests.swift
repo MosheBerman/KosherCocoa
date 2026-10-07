@@ -188,6 +188,6 @@ final class KCParityTests: XCTestCase {
 
         let usno = SunriseAndSunsetCalculator(geoLocation: GeoLocation())
         XCTAssertEqual(usno.calculatorName,
-                       "United States Naval Almanac Algorithm")
+                       "US Naval Almanac Algorithm")
     }
 }
