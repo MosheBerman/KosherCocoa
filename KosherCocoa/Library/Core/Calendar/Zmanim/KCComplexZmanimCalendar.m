@@ -704,3 +704,64 @@
 }
 
 @end
+
+/**
+ *  Returns YES when the given date is 14 Nissan (Erev Pesach), the only day
+ *  the chametz deadlines apply. Canonical KosherJava returns null for these
+ *  zmanim on any other date.
+ */
+static BOOL KCIsErevPesach(NSDate *date, NSTimeZone *timeZone) {
+    NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
+    hebrewCalendar.timeZone = timeZone;
+    NSDateComponents *components = [hebrewCalendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay)
+                                                    fromDate:date];
+    // Apple's Hebrew calendar numbers months from Tishrei = 1, so Nissan is 7
+    // (8 in a leap year, when Adar I and Adar II take 6 and 7).
+    BOOL leapYear = ((7 * components.year + 1) % 19) < 7;
+    NSInteger nissan = leapYear ? 8 : 7;
+    return components.month == nissan && components.day == 14;
+}
+
+@implementation KCComplexZmanimCalendar (Chametz)
+
+- (nullable NSDate *)sofZmanAchilasChametzBaalHatanya {
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
+    return [self sofZmanTfilaBaalHatanya];
+}
+
+- (nullable NSDate *)sofZmanAchilasChametzMGA72MinutesZmanis {
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
+    return [self sofZmanTfilaMGA72MinutesZmanis];
+}
+
+- (nullable NSDate *)sofZmanBiurChametzBaalHatanya {
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
+    double shaahZmanis = [self shaahZmanisBaalHatanya];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self sunriseOffsetByDegrees:kZenithGeometric + 1.583] dateByAddingTimeInterval:shaahZmanis * 5];
+}
+
+- (nullable NSDate *)sofZmanBiurChametzMGA72MinutesZmanis {
+    if (!KCIsErevPesach(self.workingDate, self.geoLocation.timeZone)) {
+        return nil;
+    }
+    double shaahZmanis = [self shaahZmanis72MinutesZmanis];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self alos72Zmanis] dateByAddingTimeInterval:shaahZmanis * 5];
+}
+
+@end

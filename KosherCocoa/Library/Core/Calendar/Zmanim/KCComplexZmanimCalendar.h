@@ -1997,3 +1997,46 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (nullable NSDate *)tzaisGeonim3Point8Degrees;
 
 @end
+
+/**
+ *  Chametz category on KCComplexZmanimCalendar.
+ *
+ *  Erev Pesach chametz deadlines (achila/biur) for the Baal Hatanya and
+ *  MGA 72-minutes-zmanis calculations, ported from KosherJava's
+ *  ComprehensiveZmanimCalendar. The GRA, MGA 72-minutes, and MGA 16.1°
+ *  variants already exist in this class and are not re-declared here.
+ *
+ *  Note: unlike the pre-existing chametz methods in this class, these four
+ *  are gated on 14 Nissan (Erev Pesach) and return nil on any other date,
+ *  matching canonical KosherJava. Gating the six pre-existing GRA/MGA
+ *  variants is a follow-up; they remain unmapped by the parity test.
+ */
+@interface KCComplexZmanimCalendar (Chametz)
+
+/**
+ *  Latest time for eating chametz on Erev Pesach according to the Baal Hatanya.
+ *  Identical to sofZmanTfilaBaalHatanya. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanAchilasChametzBaalHatanya;
+
+/**
+ *  Latest time for eating chametz on Erev Pesach according to the Magen Avraham
+ *  with alos 72 minutes zmaniyos before sunrise. Identical to
+ *  sofZmanTfilaMGA72MinutesZmanis. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanAchilasChametzMGA72MinutesZmanis;
+
+/**
+ *  Latest time for burning chametz on Erev Pesach according to the Baal Hatanya:
+ *  5 shaos zmaniyos after netz amiti. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanBiurChametzBaalHatanya;
+
+/**
+ *  Latest time for burning chametz on Erev Pesach according to the Magen Avraham
+ *  with alos 72 minutes zmaniyos before sunrise: 5 shaos zmaniyos after
+ *  alos72Zmanis. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanBiurChametzMGA72MinutesZmanis;
+
+@end

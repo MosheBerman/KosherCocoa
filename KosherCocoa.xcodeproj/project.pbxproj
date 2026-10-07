@@ -91,6 +91,7 @@
 		13C8B340433528A0A95B9CBE /* KCSPACalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 603D3ED40CD5571CBFED532F /* KCSPACalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52A4F82B01985473AC8E48E4 /* KCSPACalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 297CF52E219EEC2B92E26E4A /* KCSPACalculator.m */; };
 		FD18DB607730F8067F042326 /* Mapping-baal-hatanya-ahavat-shalom.json in Resources */ = {isa = PBXBuildFile; fileRef = BDDBCB09E8C7C9815B84A125 /* Mapping-baal-hatanya-ahavat-shalom.json */; };
+		9E20DD16F33DF113D60321A6 /* Mapping-chametz.json in Resources */ = {isa = PBXBuildFile; fileRef = 6EF99394E39DA3C548E7BE97 /* Mapping-chametz.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +198,7 @@
 		603D3ED40CD5571CBFED532F /* KCSPACalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCSPACalculator.h; sourceTree = "<group>"; };
 		297CF52E219EEC2B92E26E4A /* KCSPACalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCSPACalculator.m; sourceTree = "<group>"; };
 		BDDBCB09E8C7C9815B84A125 /* Mapping-baal-hatanya-ahavat-shalom.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-baal-hatanya-ahavat-shalom.json; sourceTree = "<group>"; };
+		6EF99394E39DA3C548E7BE97 /* Mapping-chametz.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-chametz.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,6 +482,7 @@
 				5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */,
 				46DB495C1D9837D100F3A576 /* Info.plist */,				79E9B464B244A0E2EB5EA899 /* Golden */,
 				DE60A48FA25F869C2A20BEC5 /* Golden */,
+				C885B62C331240B343F0101F /* Golden */,
 
 			);
 			path = KosherCocoaTests;
@@ -487,6 +490,7 @@
 		};
 		79E9B464B244A0E2EB5EA899 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
 		DE60A48FA25F869C2A20BEC5 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
+		C885B62C331240B343F0101F /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -639,6 +643,7 @@
 				5D435CF42A3C389C00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png in Resources */,				86D738832D8E549974366BF2 /* ZmanimGolden.json in Resources */,
 				6EB32EF00D85997023695031 /* Mapping-core.json in Resources */,
 				FD18DB607730F8067F042326 /* Mapping-baal-hatanya-ahavat-shalom.json in Resources */,
+				9E20DD16F33DF113D60321A6 /* Mapping-chametz.json in Resources */,
 
 			);
 			runOnlyForDeploymentPostprocessing = 0;
