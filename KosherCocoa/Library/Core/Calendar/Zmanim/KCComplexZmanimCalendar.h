@@ -2343,3 +2343,50 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (long)shaahZmanisAlos16Point1DegreesToTzaisGeonim7Point083Degrees;
 
 @end
+
+/**
+ *  Polar category on KCComplexZmanimCalendar.
+ *
+ *  Zmanim for polar regions (days with no sunrise/sunset) ported from
+ *  KosherJava's ComprehensiveZmanimCalendar: the Ben Ish Chai azimuth-based
+ *  sunrise/sunset and plag hamincha, and Rav Moshe Sternbuch's
+ *  Teshuvos Vehanhagos start-of-day and plag hamincha. All return nil when
+ *  there is a regular sunrise/sunset that day.
+ */
+
+@interface KCComplexZmanimCalendar (Polar)
+
+/**
+ *  Polar sunrise (Ben Ish Chai): time the sun is due east (azimuth 90°) on
+ *  days with no sunrise. Returns nil if there is sunrise that day.
+ */
+- (nullable NSDate *)polarSunriseBenIshChai;
+
+/**
+ *  Polar sunset (Ben Ish Chai): time the sun is due west (azimuth 270°) on
+ *  days with no sunset. Returns nil if there is sunset that day.
+ */
+- (nullable NSDate *)polarSunsetBenIshChai;
+
+/**
+ *  Plag hamincha (Ben Ish Chai) in polar regions: 10.75 shaos zmaniyos of a
+ *  day from polar sunrise to polar sunset. Returns nil if there is sunrise
+ *  or sunset that day.
+ */
+- (nullable NSDate *)polarPlagHaminchaBenIshChai;
+
+/**
+ *  Start of day in polar regions (Rav Moshe Sternbuch, Teshuvos Vehanhagos):
+ *  chatzos hayom in the polar winter, chatzos halayla in the polar summer.
+ *  Returns nil if there is sunrise or sunset that day.
+ */
+- (nullable NSDate *)polarStartOfDayTeshuvosVehanhagos;
+
+/**
+ *  Plag hamincha (Teshuvos Vehanhagos) in polar regions: 10.75 shaos
+ *  zmaniyos of the day ending at the polar start of day. Returns nil if
+ *  there is sunrise or sunset that day.
+ */
+- (nullable NSDate *)polarPlagHaminchaTeshuvosVehanhagos;
+
+@end
