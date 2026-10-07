@@ -83,6 +83,9 @@
 		F52587431ECD019A009E623C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F52587411ECD019A009E623C /* Localizable.strings */; };
 		F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */; };
 		F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */; };
+		DEBCCDB970D338B8DDBB8562 /* KCParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D57ED9E479C31E2248899B /* KCParityTests.swift */; };
+		86D738832D8E549974366BF2 /* ZmanimGolden.json in Resources */ = {isa = PBXBuildFile; fileRef = 3900BFD5A69856DAC6BA7B8C /* ZmanimGolden.json */; };
+		6EB32EF00D85997023695031 /* Mapping-core.json in Resources */ = {isa = PBXBuildFile; fileRef = 43022FE03EEFDFDE54D9EE27 /* Mapping-core.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +184,9 @@
 		5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2023-06-16 at 2.27.26 AM.png"; sourceTree = "<group>"; };
 		F52587421ECD019A009E623C /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = Localizations/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCJewishCalendarTests.swift; sourceTree = "<group>"; };
+		29D57ED9E479C31E2248899B /* KCParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCParityTests.swift; sourceTree = "<group>"; };
+		3900BFD5A69856DAC6BA7B8C /* ZmanimGolden.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ZmanimGolden.json; sourceTree = "<group>"; };
+		43022FE03EEFDFDE54D9EE27 /* Mapping-core.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-core.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -458,11 +464,13 @@
 				46DB495A1D9837D100F3A576 /* KosherCocoaMetadataTests.swift */,
 				F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */,
 				5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */,
-				46DB495C1D9837D100F3A576 /* Info.plist */,
+				46DB495C1D9837D100F3A576 /* Info.plist */,				79E9B464B244A0E2EB5EA899 /* Golden */,
+
 			);
 			path = KosherCocoaTests;
 			sourceTree = "<group>";
 		};
+		79E9B464B244A0E2EB5EA899 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -610,7 +618,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D435CF42A3C389C00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png in Resources */,
+				5D435CF42A3C389C00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png in Resources */,				86D738832D8E549974366BF2 /* ZmanimGolden.json in Resources */,
+				6EB32EF00D85997023695031 /* Mapping-core.json in Resources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +668,8 @@
 			files = (
 				5D435CEA2A3C34CB00F66AE0 /* KCAstronomicalCalculatorTests.swift in Sources */,
 				F5F902FA1FC53B17003FE90D /* KosherCocoaMetadataTests.swift in Sources */,
-				F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */,
+				F5F902FC1FC53C01003FE90D /* KCJewishCalendarTests.swift in Sources */,				DEBCCDB970D338B8DDBB8562 /* KCParityTests.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

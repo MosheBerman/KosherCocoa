@@ -1,0 +1,2083 @@
+{
+  "fixtures": {
+    "lakewood": {
+      "name": "Lakewood, NJ",
+      "lat": 40.0721087,
+      "lon": -74.2400243,
+      "elev": 15,
+      "tz": "America/New_York"
+    },
+    "norway": {
+      "name": "Northern Norway",
+      "lat": 70.1498248,
+      "lon": 9.1456867,
+      "elev": 0,
+      "tz": "Europe/Oslo"
+    },
+    "norway_utc": {
+      "name": "Northern Norway",
+      "lat": 70.1498248,
+      "lon": 9.1456867,
+      "elev": 0,
+      "tz": "UTC"
+    }
+  },
+  "cases": [
+    {
+      "method": "getAlos120Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:09:51.403184642Z"
+    },
+    {
+      "method": "getAlos120Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:19:10.103476730Z"
+    },
+    {
+      "method": "getAlos16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:49:30.219906135Z"
+    },
+    {
+      "method": "getAlos18Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:39:33.523030241Z"
+    },
+    {
+      "method": "getAlos19Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:34:19.165263704Z"
+    },
+    {
+      "method": "getAlos19Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:30:07.461349050Z"
+    },
+    {
+      "method": "getAlos26Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T08:57:25.521762580Z"
+    },
+    {
+      "method": "getAlos60Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:09:51.403184642Z"
+    },
+    {
+      "method": "getAlos72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:57:51.403184642Z"
+    },
+    {
+      "method": "getAlos72Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:03:26.623359895Z"
+    },
+    {
+      "method": "getAlos90Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:39:51.403184642Z"
+    },
+    {
+      "method": "getAlos90Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:46:50.428403708Z"
+    },
+    {
+      "method": "getAlos96Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:33:51.403184642Z"
+    },
+    {
+      "method": "getAlos96Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:41:18.363418313Z"
+    },
+    {
+      "method": "getAlosBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:45:19.050001055Z"
+    },
+    {
+      "method": "getBainHashmashosRT13Point24Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:19:17.914866983Z"
+    },
+    {
+      "method": "getBainHashmashosRT13Point5MinutesBefore7Point083Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:33:33.446858525Z"
+    },
+    {
+      "method": "getBainHashmashosRT2Stars",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:41:41.407497564Z"
+    },
+    {
+      "method": "getBainHashmashosRT58Point5Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:12:29.201432122Z"
+    },
+    {
+      "method": "getBainHashmashosYereim13Point5Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:00:29.201432122Z"
+    },
+    {
+      "method": "getBainHashmashosYereim16Point875Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:57:06.701432122Z"
+    },
+    {
+      "method": "getBainHashmashosYereim18Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:55:59.201432122Z"
+    },
+    {
+      "method": "getBainHashmashosYereim2Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:58:15.259245832Z"
+    },
+    {
+      "method": "getBainHashmashosYereim2Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:54:28.539077180Z"
+    },
+    {
+      "method": "getBainHashmashosYereim3Point05Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:53:07.410874002Z"
+    },
+    {
+      "method": "getBeginAstronomicalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:39:33.523030241Z"
+    },
+    {
+      "method": "getBeginCivilTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:42:27.439221886Z"
+    },
+    {
+      "method": "getBeginNauticalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:10:57.242471901Z"
+    },
+    {
+      "method": "getCandleLighting",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:55:59.201432122Z"
+    },
+    {
+      "method": "getChatzosHalayla",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-18T04:42:06.833038724Z"
+    },
+    {
+      "method": "getChatzosHayom",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T16:42:12.781249470Z"
+    },
+    {
+      "method": "getChatzosHayomAsHalfDay",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T16:41:55.302308378Z"
+    },
+    {
+      "method": "getEndAstronomicalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:44:09.707296295Z"
+    },
+    {
+      "method": "getEndCivilTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:41:21.435143220Z"
+    },
+    {
+      "method": "getEndNauticalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:12:49.151356447Z"
+    },
+    {
+      "method": "getFixedLocalChatzosHayom",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T16:56:57.605832Z"
+    },
+    {
+      "method": "getMinchaGedola16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:16:13.988705527Z"
+    },
+    {
+      "method": "getMinchaGedola30Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:12:12.781249470Z"
+    },
+    {
+      "method": "getMinchaGedola72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:15:35.627235356Z"
+    },
+    {
+      "method": "getMinchaGedolaAhavatShalom",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:13:52.057872856Z"
+    },
+    {
+      "method": "getMinchaGedolaAteretTorah",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:00:49.269815683Z"
+    },
+    {
+      "method": "getMinchaGedolaBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:09:55.476611672Z"
+    },
+    {
+      "method": "getMinchaGedolaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:09:35.627235356Z"
+    },
+    {
+      "method": "getMinchaGedolaGRAFixedLocalChatzos30Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:26:57.605832Z"
+    },
+    {
+      "method": "getMinchaGedolaGRAGreaterThan30",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:12:12.781249470Z"
+    },
+    {
+      "method": "getMinchaKetana16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T20:42:24.958920631Z"
+    },
+    {
+      "method": "getMinchaKetana72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T20:37:37.576797224Z"
+    },
+    {
+      "method": "getMinchaKetanaAhavatShalom",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T19:51:21.615491489Z"
+    },
+    {
+      "method": "getMinchaKetanaAteretTorah",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T20:13:27.414333739Z"
+    },
+    {
+      "method": "getMinchaKetanaBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T19:57:57.216239627Z"
+    },
+    {
+      "method": "getMinchaKetanaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T19:55:37.576797224Z"
+    },
+    {
+      "method": "getMinchaKetanaGRAFixedLocalChatzosToSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T20:01:53.536598735Z"
+    },
+    {
+      "method": "getMisheyakir10Point2Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:20:22.960720797Z"
+    },
+    {
+      "method": "getMisheyakir11Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:16:11.433376090Z"
+    },
+    {
+      "method": "getMisheyakir11Point5Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:13:34.311221155Z"
+    },
+    {
+      "method": "getMisheyakir12Point85Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:06:30.324568897Z"
+    },
+    {
+      "method": "getMisheyakir7Point65Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:33:46.155182911Z"
+    },
+    {
+      "method": "getMisheyakir9Point5Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:24:03.203710034Z"
+    },
+    {
+      "method": "getPlagAhavatShalom",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:10:33.114910614Z"
+    },
+    {
+      "method": "getPlagAlos16Point1DegreesToTzaisGeonim7Point083Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:26:03.735717649Z"
+    },
+    {
+      "method": "getPlagAlosToSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T20:56:26.182523158Z"
+    },
+    {
+      "method": "getPlagHamincha120Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:39:48.389114669Z"
+    },
+    {
+      "method": "getPlagHamincha120MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:32:26.084716766Z"
+    },
+    {
+      "method": "getPlagHamincha16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:08:19.529843591Z"
+    },
+    {
+      "method": "getPlagHamincha18Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:16:10.938101909Z"
+    },
+    {
+      "method": "getPlagHamincha19Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:23:38.065797743Z"
+    },
+    {
+      "method": "getPlagHamincha26Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:49:27.074658511Z"
+    },
+    {
+      "method": "getPlagHamincha60Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:52:18.389114669Z"
+    },
+    {
+      "method": "getPlagHamincha72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:01:48.389114669Z"
+    },
+    {
+      "method": "getPlagHamincha72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:57:23.006475925Z"
+    },
+    {
+      "method": "getPlagHamincha90Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:16:03.389114669Z"
+    },
+    {
+      "method": "getPlagHamincha90MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:10:31.660816241Z"
+    },
+    {
+      "method": "getPlagHamincha96Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:20:48.389114669Z"
+    },
+    {
+      "method": "getPlagHamincha96MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:14:54.545596351Z"
+    },
+    {
+      "method": "getPlagHaminchaAteretTorah",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:33:43.307882929Z"
+    },
+    {
+      "method": "getPlagHaminchaBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:07:57.941084608Z"
+    },
+    {
+      "method": "getPlagHaminchaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:04:48.389114669Z"
+    },
+    {
+      "method": "getPlagHaminchaGRAFixedLocalChatzosToSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:07:56.369015426Z"
+    },
+    {
+      "method": "getPolarPlagHaminchaBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarPlagHaminchaTeshuvosVehanhagos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarStartOfDayTeshuvosVehanhagos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarSunriseBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarSunsetBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSamuchLeMinchaKetana16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T20:08:03.130551447Z"
+    },
+    {
+      "method": "getSamuchLeMinchaKetana72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T20:03:57.251870246Z"
+    },
+    {
+      "method": "getSamuchLeMinchaKetanaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T19:27:57.251870246Z"
+    },
+    {
+      "method": "getSeaLevelSunrise",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T11:09:51.403184642Z"
+    },
+    {
+      "method": "getSeaLevelSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:13:59.201432122Z"
+    },
+    {
+      "method": "getShaahZmanis120Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H15M20.649853956S"
+    },
+    {
+      "method": "getShaahZmanis120MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H13M47.533138608S"
+    },
+    {
+      "method": "getShaahZmanis16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H8M43.656738368S"
+    },
+    {
+      "method": "getShaahZmanis18Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H10M23.015355504S"
+    },
+    {
+      "method": "getShaahZmanis19Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H11M57.265530111S"
+    },
+    {
+      "method": "getShaahZmanis26Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H17M23.865385668S"
+    },
+    {
+      "method": "getShaahZmanis60Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H5M20.649853956S"
+    },
+    {
+      "method": "getShaahZmanis72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H7M20.649853956S"
+    },
+    {
+      "method": "getShaahZmanis72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H6M24.779824747S"
+    },
+    {
+      "method": "getShaahZmanis90Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H10M20.649853956S"
+    },
+    {
+      "method": "getShaahZmanis90MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H9M10.812317445S"
+    },
+    {
+      "method": "getShaahZmanis96Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H11M20.649853956S"
+    },
+    {
+      "method": "getShaahZmanis96MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H10M6.156481678S"
+    },
+    {
+      "method": "getShaahZmanisAlos16Point1DegreesToTzaisGeonim3Point7Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H3M18.553246773S"
+    },
+    {
+      "method": "getShaahZmanisAlos16Point1DegreesToTzaisGeonim3Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H3M21.1995353S"
+    },
+    {
+      "method": "getShaahZmanisAlos16Point1DegreesToTzaisGeonim7Point083Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H4M47.768912699S"
+    },
+    {
+      "method": "getShaahZmanisAteretTorah",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H4M12.714839352S"
+    },
+    {
+      "method": "getShaahZmanisBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT56M0.579875985S"
+    },
+    {
+      "method": "getShaahZmanisGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT55M20.649853956S"
+    },
+    {
+      "method": "getSofZmanAchilasChametzBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzMGA16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzMGA72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzMGA16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzMGA72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanKidushLevana15Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanKidushLevanaBetweenMoldos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanShma3HoursBeforeChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:42:12.781249470Z"
+    },
+    {
+      "method": "getSofZmanShmaAlos16Point1DegreesToTzaisGeonim7Point083Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:03:53.526644232Z"
+    },
+    {
+      "method": "getSofZmanShmaAlos16Point1ToSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T12:55:37.465287630Z"
+    },
+    {
+      "method": "getSofZmanShmaAteretTorah",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:16:04.767877951Z"
+    },
+    {
+      "method": "getSofZmanShmaBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:53:53.447045725Z"
+    },
+    {
+      "method": "getSofZmanShmaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:55:53.352746510Z"
+    },
+    {
+      "method": "getSofZmanShmaGRASunriseToFixedLocalChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:03:24.504508319Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA120Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T12:55:53.352746510Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:15:41.190121239Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA16Point1DegreesToFixedLocalChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:23:13.912869066Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA18Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:10:42.569096753Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA18DegreesToFixedLocalChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:18:15.564431120Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA19Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:05:59.257939383Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:19:53.352746510Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA72MinutesToFixedLocalChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:27:24.504508319Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:22:40.962834136Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA90Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:10:53.352746510Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA90MinutesToFixedLocalChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:18:24.504508319Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA90MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:14:22.865356043Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA96Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:07:53.352746510Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA96MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:11:36.832863347Z"
+    },
+    {
+      "method": "getSofZmanTfila2HoursBeforeChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:42:12.781249470Z"
+    },
+    {
+      "method": "getSofZmanTfilaAteretTorah",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:20:17.482717303Z"
+    },
+    {
+      "method": "getSofZmanTfilaBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:49:54.026921710Z"
+    },
+    {
+      "method": "getSofZmanTfilaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:51:14.002600466Z"
+    },
+    {
+      "method": "getSofZmanTfilaGRASunriseToFixedLocalChatzos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T15:01:15.538282878Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA120Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:11:14.002600466Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:24:24.846859607Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA18Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:21:05.584452257Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA19Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:17:56.523469494Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:27:14.002600466Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:29:05.742658883Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA90Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:21:14.002600466Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA90MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:23:33.677673488Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA96Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:19:14.002600466Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA96MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:21:42.989345025Z"
+    },
+    {
+      "method": "getSolarMidnight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-18T04:42:06.833038724Z"
+    },
+    {
+      "method": "getSunTransit",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T16:42:12.781249470Z"
+    },
+    {
+      "method": "getSunrise",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T11:09:11.571783718Z"
+    },
+    {
+      "method": "getSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:14:38.994862349Z"
+    },
+    {
+      "method": "getTchilasZmanKidushLevana3Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getTchilasZmanKidushLevana7Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getTemporalHour",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT55M20.649853956S"
+    },
+    {
+      "method": "getTzais120Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-18T00:13:59.201432122Z"
+    },
+    {
+      "method": "getTzais120Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-18T00:04:40.501140034Z"
+    },
+    {
+      "method": "getTzais16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:34:14.100766559Z"
+    },
+    {
+      "method": "getTzais18Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:44:09.707296295Z"
+    },
+    {
+      "method": "getTzais19Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:53:34.647710389Z"
+    },
+    {
+      "method": "getTzais26Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-18T00:26:11.906390602Z"
+    },
+    {
+      "method": "getTzais50Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:03:59.201432122Z"
+    },
+    {
+      "method": "getTzais60Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:13:59.201432122Z"
+    },
+    {
+      "method": "getTzais72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:25:59.201432122Z"
+    },
+    {
+      "method": "getTzais72Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:20:23.981256869Z"
+    },
+    {
+      "method": "getTzais90Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:43:59.201432122Z"
+    },
+    {
+      "method": "getTzais90Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:37:00.176213056Z"
+    },
+    {
+      "method": "getTzais96Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:49:59.201432122Z"
+    },
+    {
+      "method": "getTzais96Zmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:42:32.241198451Z"
+    },
+    {
+      "method": "getTzaisAteretTorah",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:53:59.201432122Z"
+    },
+    {
+      "method": "getTzaisBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:41:21.435143220Z"
+    },
+    {
+      "method": "getTzaisGeonim3Point7Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:29:12.858867416Z"
+    },
+    {
+      "method": "getTzaisGeonim3Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:29:44.614329739Z"
+    },
+    {
+      "method": "getTzaisGeonim4Point42Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:33:01.330786672Z"
+    },
+    {
+      "method": "getTzaisGeonim4Point66Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:34:17.404148028Z"
+    },
+    {
+      "method": "getTzaisGeonim4Point8Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:35:01.761613150Z"
+    },
+    {
+      "method": "getTzaisGeonim5Point95Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:41:05.633594744Z"
+    },
+    {
+      "method": "getTzaisGeonim6Point45Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:43:43.582328133Z"
+    },
+    {
+      "method": "getTzaisGeonim7Point083Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:47:03.446858525Z"
+    },
+    {
+      "method": "getTzaisGeonim7Point67Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:50:08.395485971Z"
+    },
+    {
+      "method": "getTzaisGeonim8Point5Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:54:29.772724455Z"
+    },
+    {
+      "method": "getTzaisGeonim9Point3Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:58:41.421314719Z"
+    },
+    {
+      "method": "getTzaisGeonim9Point75Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:01:02.865384009Z"
+    },
+    {
+      "method": "getZmanMolad",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getAlos16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:49:30.219906135Z"
+    },
+    {
+      "method": "getAlos72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:57:51.403184642Z"
+    },
+    {
+      "method": "getSofZmanShmaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:55:53.352746510Z"
+    },
+    {
+      "method": "getSofZmanShmaMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T13:19:53.352746510Z"
+    },
+    {
+      "method": "getSofZmanTfilaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:51:14.002600466Z"
+    },
+    {
+      "method": "getSofZmanTfilaMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T14:27:14.002600466Z"
+    },
+    {
+      "method": "getChatzosHayom",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T16:42:12.781249470Z"
+    },
+    {
+      "method": "getChatzosHayomAsHalfDay",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T16:41:55.302308378Z"
+    },
+    {
+      "method": "getChatzosHalayla",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-18T04:42:06.833038724Z"
+    },
+    {
+      "method": "getMinchaGedolaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T17:09:35.627235356Z"
+    },
+    {
+      "method": "getMinchaKetanaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T19:55:37.576797224Z"
+    },
+    {
+      "method": "getPlagHaminchaGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:04:48.389114669Z"
+    },
+    {
+      "method": "getCandleLighting",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T21:55:59.201432122Z"
+    },
+    {
+      "method": "getTzais72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:25:59.201432122Z"
+    },
+    {
+      "method": "getTzaisGeonim8Point5Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:54:29.772724455Z"
+    },
+    {
+      "method": "getShaahZmanisGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT55M20.649853956S"
+    },
+    {
+      "method": "getShaahZmanis72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT1H7M20.649853956S"
+    },
+    {
+      "method": "getSunrise",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T11:09:11.571783718Z"
+    },
+    {
+      "method": "getSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:14:38.994862349Z"
+    },
+    {
+      "method": "getSeaLevelSunrise",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T11:09:51.403184642Z"
+    },
+    {
+      "method": "getSeaLevelSunset",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:13:59.201432122Z"
+    },
+    {
+      "method": "getSunTransit",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T16:42:12.781249470Z"
+    },
+    {
+      "method": "getSolarMidnight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-18T04:42:06.833038724Z"
+    },
+    {
+      "method": "getBeginCivilTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:42:27.439221886Z"
+    },
+    {
+      "method": "getBeginNauticalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T10:10:57.242471901Z"
+    },
+    {
+      "method": "getBeginAstronomicalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T09:39:33.523030241Z"
+    },
+    {
+      "method": "getEndCivilTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T22:41:21.435143220Z"
+    },
+    {
+      "method": "getEndNauticalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:12:49.151356447Z"
+    },
+    {
+      "method": "getEndAstronomicalTwilight",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "instant",
+      "expected": "2017-10-17T23:44:09.707296295Z"
+    },
+    {
+      "method": "getTemporalHour",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "duration",
+      "expected": "PT55M20.649853956S"
+    },
+    {
+      "method": "getSunrise",
+      "calendar": "comprehensive",
+      "fixture": "norway_utc",
+      "date": "2017-06-21",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSunset",
+      "calendar": "comprehensive",
+      "fixture": "norway_utc",
+      "date": "2017-06-21",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "instant",
+      "expected": "2017-04-10T14:47:45.675920561Z"
+    },
+    {
+      "method": "getSofZmanBiurChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "instant",
+      "expected": "2017-04-10T15:53:07.762314340Z"
+    },
+    {
+      "method": "getSofZmanAchilasChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzMGA72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzMGA16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzMGA72Minutes",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzMGA72MinutesZmanis",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzMGA16Point1Degrees",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzBaalHatanya",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-04-10",
+      "kind": "nonNull",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanAchilasChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanBiurChametzGRA",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getZmanMolad",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-20",
+      "kind": "instant",
+      "expected": "2017-10-20T09:52:00.170666666Z"
+    },
+    {
+      "method": "getTchilasZmanKidushLevana3Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-23",
+      "kind": "instant",
+      "expected": "2017-10-23T09:52:00.170666666Z"
+    },
+    {
+      "method": "getTchilasZmanKidushLevana7Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-27",
+      "kind": "instant",
+      "expected": "2017-10-27T09:52:00.170666666Z"
+    },
+    {
+      "method": "getSofZmanKidushLevana15Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-05",
+      "kind": "instant",
+      "expected": "2017-10-05T21:07:56.837333333Z"
+    },
+    {
+      "method": "getSofZmanKidushLevanaBetweenMoldos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-05",
+      "kind": "instant",
+      "expected": "2017-10-05T15:29:58.503333333Z"
+    },
+    {
+      "method": "getZmanMolad",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getTchilasZmanKidushLevana3Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSofZmanKidushLevana15Days",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarSunriseBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "norway",
+      "date": "2017-06-21",
+      "kind": "instant",
+      "expected": "2017-06-21T06:01:13.021342105Z"
+    },
+    {
+      "method": "getPolarSunsetBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "norway",
+      "date": "2017-06-21",
+      "kind": "instant",
+      "expected": "2017-06-21T16:49:17.587975180Z"
+    },
+    {
+      "method": "getPolarPlagHaminchaBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "norway",
+      "date": "2017-06-21",
+      "kind": "instant",
+      "expected": "2017-06-21T15:41:47.112284232Z"
+    },
+    {
+      "method": "getPolarStartOfDayTeshuvosVehanhagos",
+      "calendar": "comprehensive",
+      "fixture": "norway",
+      "date": "2017-06-21",
+      "kind": "instant",
+      "expected": "2017-06-21T23:25:21.765329979Z"
+    },
+    {
+      "method": "getPolarPlagHaminchaTeshuvosVehanhagos",
+      "calendar": "comprehensive",
+      "fixture": "norway",
+      "date": "2017-06-21",
+      "kind": "instant",
+      "expected": "2017-06-21T20:55:21.765329979Z"
+    },
+    {
+      "method": "getSunrise",
+      "calendar": "comprehensive",
+      "fixture": "norway",
+      "date": "2017-06-21",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getSunset",
+      "calendar": "comprehensive",
+      "fixture": "norway",
+      "date": "2017-06-21",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarSunriseBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarSunsetBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarPlagHaminchaBenIshChai",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarStartOfDayTeshuvosVehanhagos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    },
+    {
+      "method": "getPolarPlagHaminchaTeshuvosVehanhagos",
+      "calendar": "comprehensive",
+      "fixture": "lakewood",
+      "date": "2017-10-17",
+      "kind": "null",
+      "expected": null
+    }
+  ]
+}
