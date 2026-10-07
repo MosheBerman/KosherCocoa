@@ -408,3 +408,93 @@
 }
 
 @end
+
+#import <math.h>
+
+/* Degree-based trig helpers, implemented in trigonometry.c. */
+double sinDeg(double deg);
+double cosDeg(double deg);
+double tanDeg(double deg);
+double acosDeg(double x);
+
+/* NOAA calculator primitives used by the time-at-azimuth algorithm below.
+ * Declared here because KCNOAACalculator.h does not publish them; they exist
+ * in KCNOAACalculator.m. */
+@interface KCNOAACalculator (PolarInternal)
+- (double)getJulianDay:(NSDate *)date;
+- (double)getJulianCenturiesFromJulianDay:(double)julianDay;
+- (double)getSunDeclination:(double)julianCenturies;
+- (double)getEquationOfTime:(double)julianCenturies;
+@end
+
+/* Anchor a UTC fractional-hour time on a Y/M/D, exactly like Java's
+ * getInstantFromTime: UTC midnight of the date plus the time. */
+static NSDate *KCPolarUTCDate(NSInteger year, NSInteger month, NSInteger day, double timeUTC) {
+    NSCalendar *utcCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    utcCalendar.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    comps.year = year;
+    comps.month = month;
+    comps.day = day;
+    NSDate *utcMidnight = [utcCalendar dateFromComponents:comps];
+    return [utcMidnight dateByAddingTimeInterval:timeUTC * 3600.0];
+}
+
+@implementation KCAstronomicalCalendar (Polar)
+
+- (nullable NSDate *)timeAtAzimuth90Or270:(double)azimuth {
+    if (azimuth != 90.0 && azimuth != 270.0) {
+        @throw [NSException exceptionWithName:NSInvalidArgumentException
+                                       reason:@"The targetAzimuth must be 90 or 270. Other azimuth values are not supported."
+                                     userInfo:nil];
+    }
+    if (![self.astronomicalCalculator isKindOfClass:[KCNOAACalculator class]]) {
+        return nil;
+    }
+    KCNOAACalculator *calculator = (KCNOAACalculator *)self.astronomicalCalculator;
+    double longitude = self.geoLocation.longitude;
+    double latitude = self.geoLocation.latitude;
+
+    /* Port of NOAACalculator.getTimeAtAzimuth: iterate 3 times refining the
+     * fraction of the day at which the sun hits the target azimuth. */
+    double julianDay = [calculator getJulianDay:self.workingDate];
+    double solarNoonBase = 0.5 - (longitude / 360.0);
+    double dateTime = solarNoonBase + ((azimuth == 90.0) ? 0.25 : 0.75);
+    for (int i = 0; i < 3; i++) {
+        double julianCenturies = [calculator getJulianCenturiesFromJulianDay:(julianDay + dateTime)];
+        double ratio = tanDeg([calculator getSunDeclination:julianCenturies]) / tanDeg(latitude);
+        if (isnan(ratio) || ratio > 1.0 || ratio < -1.0) {
+            return nil;
+        }
+        double offset = ((azimuth == 90.0) ? -1.0 : 1.0) * (acosDeg(ratio) / 360.0);
+        dateTime = solarNoonBase + offset - ([calculator getEquationOfTime:julianCenturies] / 1440.0);
+    }
+    /* (dateTime * 24 % 24 + 24) % 24 */
+    double timeUTC = fmod(dateTime * 24.0, 24.0);
+    if (timeUTC < 0.0) {
+        timeUTC += 24.0;
+    }
+
+    /* Port of AstronomicalCalendar.getInstantFromTime's date shift: the
+     * location-local Y/M/D of the working date (the port does not implement
+     * Java's antimeridian adjustment), rolled a day for the SUNRISE/SUNSET
+     * edge cases, anchored at UTC midnight. */
+    NSCalendar *locationCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    locationCalendar.timeZone = self.geoLocation.timeZone;
+    NSDateComponents *ymd = [locationCalendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay)
+                                               fromDate:self.workingDate];
+    double localTimeHours = (longitude / 15.0) + timeUTC;
+    NSInteger day = ymd.day;
+    if (azimuth == 90.0) {
+        if (localTimeHours > 18.0) {
+            day -= 1;
+        }
+    } else {
+        if (localTimeHours < 6.0) {
+            day += 1;
+        }
+    }
+    return KCPolarUTCDate(ymd.year, ymd.month, day, timeUTC);
+}
+
+@end

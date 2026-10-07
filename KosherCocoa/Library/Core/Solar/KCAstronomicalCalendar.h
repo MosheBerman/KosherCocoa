@@ -370,3 +370,25 @@ NS_SWIFT_NAME(AstronomicalCalendar)
 - (nonnull NSCalendar *)internalCalendar;
 
 @end
+
+/**
+ *  Polar category on KCAstronomicalCalendar.
+ *
+ *  Ports KosherJava AstronomicalCalendar.getTimeAtAzimuth90Or270(double),
+ *  needed by the polar zmanim on KCComplexZmanimCalendar. The NOAA
+ *  time-at-azimuth algorithm is implemented here using the calculator's
+ *  Julian day / declination / equation-of-time primitives. Like the rest of
+ *  this class, an uncomputable time is signaled by returning nil.
+ */
+
+@interface KCAstronomicalCalendar (Polar)
+
+/**
+ *  Time when the sun reaches azimuth 90° (directly east) or 270° (directly
+ *  west) on the working date. Used for polar sunrise/sunset opinions.
+ *  Throws NSInvalidArgumentException for other azimuths. Returns nil if the
+ *  azimuth is never reached (e.g. tropics/poles edge cases).
+ */
+- (nullable NSDate *)timeAtAzimuth90Or270:(double)azimuth;
+
+@end

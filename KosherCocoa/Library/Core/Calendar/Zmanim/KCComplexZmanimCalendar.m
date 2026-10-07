@@ -980,3 +980,203 @@ static BOOL KCIsErevPesach(NSDate *date, NSTimeZone *timeZone) {
 }
 
 @end
+
+#import <math.h>
+
+/* Degree-based trig helpers, implemented in trigonometry.c. */
+double sinDeg(double deg);
+double cosDeg(double deg);
+double tanDeg(double deg);
+double acosDeg(double x);
+
+/* NOAA calculator primitives (declared here because KCNOAACalculator.h does
+ * not publish them; they exist in KCNOAACalculator.m). */
+@interface KCNOAACalculator (PolarInternal)
+- (double)getJulianDay:(NSDate *)date;
+- (double)getJulianCenturiesFromJulianDay:(double)julianDay;
+- (double)getSunDeclination:(double)julianCenturies;
+- (double)getEquationOfTime:(double)julianCenturies;
+@end
+
+/* Anchor a UTC fractional-hour time on a Y/M/D, exactly like Java's
+ * getInstantFromTime: UTC midnight of the date plus the time. */
+static NSDate *KCPolarUTCDate(NSInteger year, NSInteger month, NSInteger day, double timeUTC) {
+    NSCalendar *utcCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    utcCalendar.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    NSDateComponents *comps = [[NSDateComponents alloc] init];
+    comps.year = year;
+    comps.month = month;
+    comps.day = day;
+    NSDate *utcMidnight = [utcCalendar dateFromComponents:comps];
+    return [utcMidnight dateByAddingTimeInterval:timeUTC * 3600.0];
+}
+
+/* Port of NOAACalculator.getUTCNoon / getUTCMidnight: UTC solar noon or
+ * midnight in fractional hours, normalized to [0, 24). negLongitude is the
+ * negated location longitude, as Java passes it. */
+static double KCPolarUTCNoonOrMidnight(KCNOAACalculator *calculator, NSDate *date, double negLongitude, BOOL isNoon) {
+    double julianDay = [calculator getJulianDay:date];
+    double tnoon = [calculator getJulianCenturiesFromJulianDay:(julianDay + negLongitude / 360.0)];
+    double equationOfTime = [calculator getEquationOfTime:tnoon];
+    double solNoonUTC = negLongitude * 4.0 - equationOfTime;
+    for (int i = 0; i < 2; i++) {
+        double newt = [calculator getJulianCenturiesFromJulianDay:(julianDay + solNoonUTC / 1440.0)];
+        equationOfTime = [calculator getEquationOfTime:newt];
+        solNoonUTC = (isNoon ? 720.0 : 1440.0) + negLongitude * 4.0 - equationOfTime;
+    }
+    double normalized = fmod(solNoonUTC / 60.0, 24.0);
+    if (normalized < 0.0) {
+        normalized += 24.0;
+    }
+    return normalized;
+}
+
+/* NOAA refraction adjustment for solar elevation. */
+static double KCPolarRefractionAdjustment(double elevation) {
+    if (elevation > 85.0) {
+        return 0.0;
+    }
+    double te = tanDeg(elevation);
+    double correction;
+    if (elevation > 5.0) {
+        correction = 58.1 / te - 0.07 / pow(te, 3.0) + 0.000086 / pow(te, 5.0);
+    } else if (elevation > -0.575) {
+        correction = 1735.0 + elevation * (-518.2 + elevation * (103.4 + elevation * (-12.79 + 0.711 * elevation)));
+    } else {
+        correction = -20.774 / te;
+    }
+    return correction / 3600.0;
+}
+
+/* Port of NOAACalculator.getSolarElevation (elevation, not azimuth). Returns
+ * NAN for a nil date. */
+static double KCPolarSolarElevation(NSDate *date, KCGeoLocation *geoLocation, KCNOAACalculator *calculator) {
+    if (date == nil || geoLocation == nil || calculator == nil) {
+        return NAN;
+    }
+    double lat = geoLocation.latitude;
+    double lon = geoLocation.longitude;
+    NSCalendar *utcCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    utcCalendar.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:0];
+    NSDateComponents *comps = [utcCalendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitNanosecond)
+                                            fromDate:date];
+    double fractionalDay = (comps.hour + (comps.minute + (comps.second + comps.nanosecond / 1000000000.0) / 60.0) / 60.0) / 24.0;
+    /* Julian day of the UTC date (port of NOAACalculator.getJulianDay). */
+    long year = comps.year;
+    long month = comps.month;
+    long day = comps.day;
+    if (month <= 2) {
+        year -= 1;
+        month += 12;
+    }
+    long a = year / 100;
+    long b = 2 - a + a / 4;
+    double julianDay = floor(365.25 * (year + 4716)) + floor(30.6001 * (month + 1)) + day + b - 1524.5 + fractionalDay;
+    double julianCenturies = (julianDay - kJulianDayJan_1_2000) / kJulianDaysPerCentury;
+    double decl = [calculator getSunDeclination:julianCenturies];
+    double eot = [calculator getEquationOfTime:julianCenturies];
+    double trueSolarTime = fmod((fractionalDay + eot / 1440.0 + lon / 360.0) + 2.0, 1.0);
+    if (trueSolarTime < 0.0) {
+        trueSolarTime += 1.0;
+    }
+    double hourAngle = trueSolarTime * 2.0 * M_PI - M_PI;
+    double cosZenith = sinDeg(lat) * sinDeg(decl) + cosDeg(lat) * cosDeg(decl) * cos(hourAngle);
+    if (cosZenith > 1.0) {
+        cosZenith = 1.0;
+    } else if (cosZenith < -1.0) {
+        cosZenith = -1.0;
+    }
+    double zenithDeg = acosDeg(cosZenith);
+    return (90.0 - zenithDeg) + KCPolarRefractionAdjustment(90.0 - zenithDeg);
+}
+
+/* Solar noon or midnight as an NSDate, following Java's getSunTransit /
+ * getSolarMidnight (calculator based, so it works in polar regions where the
+ * port's sunTransit/solarMidnight return nil), with getInstantFromTime's
+ * NOON/MIDNIGHT date-shift rules. */
+static NSDate *KCPolarNoonOrMidnightDate(KCAstronomicalCalendar *calendar, BOOL isMidnight) {
+    KCNOAACalculator *calculator = (KCNOAACalculator *)calendar.astronomicalCalculator;
+    double longitude = calendar.geoLocation.longitude;
+    double timeUTC = KCPolarUTCNoonOrMidnight(calculator, calendar.workingDate, -longitude, !isMidnight);
+    NSCalendar *locationCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    locationCalendar.timeZone = calendar.geoLocation.timeZone;
+    NSDateComponents *ymd = [locationCalendar components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay)
+                                                fromDate:calendar.workingDate];
+    double localTimeHours = (longitude / 15.0) + timeUTC;
+    NSInteger day = ymd.day;
+    if (isMidnight) {
+        if (localTimeHours < 12.0) {
+            day += 1;
+        }
+    } else {
+        if (localTimeHours < 0.0) {
+            day += 1;
+        } else if (localTimeHours > 24.0) {
+            day -= 1;
+        }
+    }
+    return KCPolarUTCDate(ymd.year, ymd.month, day, timeUTC);
+}
+
+@implementation KCComplexZmanimCalendar (Polar)
+
+- (nullable NSDate *)polarSunriseBenIshChai {
+    if ([self seaLevelSunrise] == nil) {
+        return [self timeAtAzimuth90Or270:90.0];
+    }
+    return nil;
+}
+
+- (nullable NSDate *)polarSunsetBenIshChai {
+    if ([self seaLevelSunset] == nil) {
+        return [self timeAtAzimuth90Or270:270.0];
+    }
+    return nil;
+}
+
+- (nullable NSDate *)polarPlagHaminchaBenIshChai {
+    NSDate *polarSunrise = [self polarSunriseBenIshChai];
+    NSDate *polarSunset = [self polarSunsetBenIshChai];
+    double shaahZmanis = [self temporalHourFromSunrise:polarSunrise toSunset:polarSunset];
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+    return [polarSunrise dateByAddingTimeInterval:shaahZmanis * 10.75];
+}
+
+- (nullable NSDate *)polarStartOfDayTeshuvosVehanhagos {
+    if ([self seaLevelSunrise] == nil && [self seaLevelSunset] == nil) {
+        if (![self.astronomicalCalculator isKindOfClass:[KCNOAACalculator class]]) {
+            return nil;
+        }
+        KCNOAACalculator *calculator = (KCNOAACalculator *)self.astronomicalCalculator;
+        NSDate *chatzosHayom = KCPolarNoonOrMidnightDate(self, NO);
+        NSDate *chatzosHalayla = KCPolarNoonOrMidnightDate(self, YES);
+        double chatzosHayomSolarElevation = KCPolarSolarElevation(chatzosHayom, self.geoLocation, calculator);
+        double chatzosHalaylaSolarElevation = KCPolarSolarElevation(chatzosHalayla, self.geoLocation, calculator);
+        /* Java defaults: solar radius 16' + refraction 34'. */
+        double sunriseElevation = (16.0 / 60.0) + (34.0 / 60.0);
+        if (chatzosHayomSolarElevation < (0 - sunriseElevation) && chatzosHalaylaSolarElevation < (0 - sunriseElevation) &&
+            [self alos16Point1Degrees] == nil && [self seaLevelSunrise] == nil) {
+            return chatzosHayom;
+        } else if (chatzosHayomSolarElevation > (0 - sunriseElevation) && chatzosHalaylaSolarElevation > (0 - sunriseElevation)) {
+            return chatzosHalayla;
+        }
+    }
+    return nil;
+}
+
+- (nullable NSDate *)polarPlagHaminchaTeshuvosVehanhagos {
+    NSDate *polarStartOfDay = [self polarStartOfDayTeshuvosVehanhagos];
+    if (polarStartOfDay == nil) {
+        return nil;
+    }
+    NSDate *yesterday = [polarStartOfDay dateByAddingTimeInterval:-24 * 60 * 60];
+    double shaahZmanis = [self temporalHourFromSunrise:yesterday toSunset:polarStartOfDay];
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+    return [yesterday dateByAddingTimeInterval:shaahZmanis * 10.75];
+}
+
+@end
