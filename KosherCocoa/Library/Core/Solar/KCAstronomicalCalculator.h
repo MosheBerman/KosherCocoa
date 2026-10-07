@@ -18,6 +18,13 @@ NS_SWIFT_NAME(AstronomicalCalculator)
 
 - (id)init;
 
+/** Atmospheric refraction in degrees. Default 34/60. */
+@property (nonatomic, assign) double refraction;
+/** Solar radius in degrees. Default 16/60. */
+@property (nonatomic, assign) double solarRadius;
+/** Earth radius in meters. Default 6371.0088. */
+@property (nonatomic, assign) double earthRadius;
+
 // MARK: - Calculating Sunrise
 
 /**

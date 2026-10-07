@@ -14,6 +14,9 @@
 
 - (id)init
 {
+    self.refraction = 34.0 / 60.0;
+    self.solarRadius = 16.0 / 60.0;
+    self.earthRadius = 6371.0088;
     return self;
 }
 
