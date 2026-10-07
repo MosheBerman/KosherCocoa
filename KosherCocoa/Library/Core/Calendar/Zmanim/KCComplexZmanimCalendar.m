@@ -1180,3 +1180,103 @@ static NSDate *KCPolarNoonOrMidnightDate(KCAstronomicalCalendar *calendar, BOOL 
 }
 
 @end
+
+#import "KCJewishCalendar.h"
+
+/* Port of the alos == nil || tzais == nil branch of
+ * ComprehensiveZmanimCalendar.getMoladBasedTime: returns the molad-based time
+ * only if it falls on the working date (midnight to midnight in the
+ * location's timezone), otherwise nil. */
+static NSDate *KCMoladBasedTimeOnWorkingDate(KCComplexZmanimCalendar *calendar, NSDate *moladBasedTime) {
+    if (moladBasedTime == nil) {
+        return nil;
+    }
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    gregorian.timeZone = calendar.geoLocation.timeZone;
+    NSDate *lastMidnight = [gregorian startOfDayForDate:calendar.workingDate];
+    NSDateComponents *oneDay = [[NSDateComponents alloc] init];
+    oneDay.day = 1;
+    NSDate *midnightTonight = [gregorian startOfDayForDate:[gregorian dateByAddingComponents:oneDay
+                                                                                     toDate:calendar.workingDate
+                                                                                    options:0]];
+    if ([moladBasedTime compare:lastMidnight] == NSOrderedAscending ||
+        [moladBasedTime compare:midnightTonight] == NSOrderedDescending) {
+        return nil;
+    }
+    return moladBasedTime;
+}
+
+/* A KCJewishCalendar bound to the complex calendar's location and working
+ * date, for the working date's Hebrew month/year/day. initWithLocation: is
+ * used (not plain init) because the Hebrew date accessors consult sunset. */
+static KCJewishCalendar *KCMoladJewishCalendarForDate(KCComplexZmanimCalendar *calendar, NSDate *date) {
+    KCJewishCalendar *jewishCalendar = [[KCJewishCalendar alloc] initWithLocation:calendar.geoLocation];
+    jewishCalendar.workingDate = date;
+    return jewishCalendar;
+}
+
+@implementation KCComplexZmanimCalendar (Molad)
+
+- (nullable NSDate *)zmanMolad {
+    KCJewishCalendar *jewishCalendar = KCMoladJewishCalendarForDate(self, self.workingDate);
+    NSInteger dayOfMonth = [jewishCalendar currentHebrewDayOfMonth];
+    if (dayOfMonth > 2 && dayOfMonth < 27) {
+        return nil;
+    }
+    NSDate *molad = KCMoladBasedTimeOnWorkingDate(self, [jewishCalendar moladAsDateForMonth:[jewishCalendar currentHebrewMonth]
+                                                                                   ofYear:[jewishCalendar currentHebrewYear]]);
+    if (molad == nil && dayOfMonth > 26) {
+        /* The molad can fall at the end of the previous month; try the next month. */
+        NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
+        NSDate *nextMonthDate = [hebrewCalendar dateByAddingMonths:1 toDate:self.workingDate];
+        KCJewishCalendar *nextJewishCalendar = KCMoladJewishCalendarForDate(self, nextMonthDate);
+        molad = KCMoladBasedTimeOnWorkingDate(self, [jewishCalendar moladAsDateForMonth:[nextJewishCalendar currentHebrewMonth]
+                                                                                ofYear:[nextJewishCalendar currentHebrewYear]]);
+    }
+    return molad;
+}
+
+- (nullable NSDate *)tchilasZmanKidushLevana3Days {
+    KCJewishCalendar *jewishCalendar = KCMoladJewishCalendarForDate(self, self.workingDate);
+    NSInteger dayOfMonth = [jewishCalendar currentHebrewDayOfMonth];
+    if (dayOfMonth > 5 && dayOfMonth < 30) {
+        return nil;
+    }
+    NSDate *zman = KCMoladBasedTimeOnWorkingDate(self, [jewishCalendar tchilasZmanKidushLevana3DaysForDate:self.workingDate]);
+    if (zman == nil && dayOfMonth == 30) {
+        /* Extreme case: the zman can fall on Rosh Chodesh of the next month. */
+        NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
+        NSDate *nextMonthDate = [hebrewCalendar dateByAddingMonths:1 toDate:self.workingDate];
+        zman = KCMoladBasedTimeOnWorkingDate(self, [jewishCalendar tchilasZmanKidushLevana3DaysForDate:nextMonthDate]);
+    }
+    return zman;
+}
+
+- (nullable NSDate *)tchilasZmanKidushLevana7Days {
+    KCJewishCalendar *jewishCalendar = KCMoladJewishCalendarForDate(self, self.workingDate);
+    NSInteger dayOfMonth = [jewishCalendar currentHebrewDayOfMonth];
+    if (dayOfMonth < 4 || dayOfMonth > 9) {
+        return nil;
+    }
+    return KCMoladBasedTimeOnWorkingDate(self, [jewishCalendar tchilasZmanKidushLevana7DaysForDate:self.workingDate]);
+}
+
+- (nullable NSDate *)sofZmanKidushLevana15Days {
+    KCJewishCalendar *jewishCalendar = KCMoladJewishCalendarForDate(self, self.workingDate);
+    NSInteger dayOfMonth = [jewishCalendar currentHebrewDayOfMonth];
+    if (dayOfMonth < 11 || dayOfMonth > 17) {
+        return nil;
+    }
+    return KCMoladBasedTimeOnWorkingDate(self, [jewishCalendar sofZmanKidushLevana15DaysForDate:self.workingDate]);
+}
+
+- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldos {
+    KCJewishCalendar *jewishCalendar = KCMoladJewishCalendarForDate(self, self.workingDate);
+    NSInteger dayOfMonth = [jewishCalendar currentHebrewDayOfMonth];
+    if (dayOfMonth < 11 || dayOfMonth > 16) {
+        return nil;
+    }
+    return KCMoladBasedTimeOnWorkingDate(self, [jewishCalendar sofZmanKidushLevanaBetweenMoldosForDate:self.workingDate]);
+}
+
+@end

@@ -96,6 +96,7 @@
 		2AE532662BA197368D373C47 /* Mapping-geonim-degrees-minutes.json in Resources */ = {isa = PBXBuildFile; fileRef = BB942ECAA17144AE409D7DF5 /* Mapping-geonim-degrees-minutes.json */; };
 		EC98D3544A77D94CC1378066 /* Mapping-bain-hashmashos-samuch-shaah.json in Resources */ = {isa = PBXBuildFile; fileRef = 060311E8F6337542F3304BE5 /* Mapping-bain-hashmashos-samuch-shaah.json */; };
 		DEA51A36D33CE0794EF011E0 /* Mapping-polar.json in Resources */ = {isa = PBXBuildFile; fileRef = 20EED24B24BEADA20A3DDDAD /* Mapping-polar.json */; };
+		CCFE627213CA35308B2AE233 /* Mapping-molad-kidush-levana.json in Resources */ = {isa = PBXBuildFile; fileRef = F8BD77B2E2F7EF23E032109E /* Mapping-molad-kidush-levana.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,7 @@
 		BB942ECAA17144AE409D7DF5 /* Mapping-geonim-degrees-minutes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-geonim-degrees-minutes.json; sourceTree = "<group>"; };
 		060311E8F6337542F3304BE5 /* Mapping-bain-hashmashos-samuch-shaah.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-bain-hashmashos-samuch-shaah.json; sourceTree = "<group>"; };
 		20EED24B24BEADA20A3DDDAD /* Mapping-polar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-polar.json; sourceTree = "<group>"; };
+		F8BD77B2E2F7EF23E032109E /* Mapping-molad-kidush-levana.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-molad-kidush-levana.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,6 +497,7 @@
 				755DD8DDF77C11A3CE327628 /* Golden */,
 				CAA7F26EDACBEF7491C1D288 /* Golden */,
 				A960EA5C4E260DC7F1E7E444 /* Golden */,
+				82299C5338D5CA01A0307D7E /* Golden */,
 
 			);
 			path = KosherCocoaTests;
@@ -507,6 +510,7 @@
 		755DD8DDF77C11A3CE327628 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
 		CAA7F26EDACBEF7491C1D288 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
 		A960EA5C4E260DC7F1E7E444 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
+		82299C5338D5CA01A0307D7E /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -664,6 +668,7 @@
 				2AE532662BA197368D373C47 /* Mapping-geonim-degrees-minutes.json in Resources */,
 				EC98D3544A77D94CC1378066 /* Mapping-bain-hashmashos-samuch-shaah.json in Resources */,
 				DEA51A36D33CE0794EF011E0 /* Mapping-polar.json in Resources */,
+				CCFE627213CA35308B2AE233 /* Mapping-molad-kidush-levana.json in Resources */,
 
 			);
 			runOnlyForDeploymentPostprocessing = 0;

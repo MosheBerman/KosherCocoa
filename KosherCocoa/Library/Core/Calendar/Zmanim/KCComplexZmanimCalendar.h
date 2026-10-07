@@ -2390,3 +2390,47 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (nullable NSDate *)polarPlagHaminchaTeshuvosVehanhagos;
 
 @end
+
+/**
+ *  Molad category on KCComplexZmanimCalendar.
+ *
+ *  No-argument molad and Kiddush Levana zmanim ported from KosherJava's
+ *  ComprehensiveZmanimCalendar. Each computes for the calendar's working date
+ *  by delegating the molad math to KCJewishCalendar, applying KosherJava's
+ *  day-of-month gates and returning the time only if it falls on the working
+ *  date (midnight to midnight), else nil.
+ */
+
+@interface KCComplexZmanimCalendar (Molad)
+
+/**
+ *  The molad for the working date's Hebrew month, if it occurs on the
+ *  working date. Returns nil otherwise.
+ */
+- (nullable NSDate *)zmanMolad;
+
+/**
+ *  Earliest Kiddush Levana (3 days after the molad, Rabbeinu Yonah) if it
+ *  occurs on the working date. Returns nil otherwise.
+ */
+- (nullable NSDate *)tchilasZmanKidushLevana3Days;
+
+/**
+ *  Earliest Kiddush Levana (7 days after the molad) if it occurs on the
+ *  working date. Returns nil otherwise.
+ */
+- (nullable NSDate *)tchilasZmanKidushLevana7Days;
+
+/**
+ *  Latest Kiddush Levana (15 days after the molad, Shulchan Aruch) if it
+ *  occurs on the working date. Returns nil otherwise.
+ */
+- (nullable NSDate *)sofZmanKidushLevana15Days;
+
+/**
+ *  Latest Kiddush Levana (halfway between molad and molad, Maharil) if it
+ *  occurs on the working date. Returns nil otherwise.
+ */
+- (nullable NSDate *)sofZmanKidushLevanaBetweenMoldos;
+
+@end
