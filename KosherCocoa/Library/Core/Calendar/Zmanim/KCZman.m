@@ -264,7 +264,11 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(shaahZmanis96MinutesZmanis)),
                      NSStringFromSelector(@selector(shaahZmanisAteretTorah)),
                      NSStringFromSelector(@selector(shaahZmanis120Minutes)),
-                     NSStringFromSelector(@selector(shaahZmanis120MinutesZmanis))
+                     NSStringFromSelector(@selector(shaahZmanis120MinutesZmanis)),
+                     NSStringFromSelector(@selector(shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point7Degrees)),
+                     NSStringFromSelector(@selector(shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point8Degrees)),
+                     NSStringFromSelector(@selector(shaahZmanisAlos16Point1DegreesToTzaisGeonim7Point083Degrees)),
+                     NSStringFromSelector(@selector(shaahZmanisBaalHatanya))
                      ],
                  
                  /**
@@ -284,7 +288,12 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(alos26Degrees)),
                      NSStringFromSelector(@selector(alos18Degrees)),
                      NSStringFromSelector(@selector(alos19Point8Degrees)),
-                     NSStringFromSelector(@selector(alos16Point1Degrees))
+                     NSStringFromSelector(@selector(alos16Point1Degrees)),
+                     NSStringFromSelector(@selector(alos19Degrees)),
+                     NSStringFromSelector(@selector(alosBaalHatanya)),
+                     NSStringFromSelector(@selector(beginCivilTwilight)),
+                     NSStringFromSelector(@selector(beginNauticalTwilight)),
+                     NSStringFromSelector(@selector(beginAstronomicalTwilight))
                      ],
                  
                  /**
@@ -295,7 +304,10 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(misheyakir10Point2Degrees)),
                      NSStringFromSelector(@selector(misheyakir11Degrees)),
                      NSStringFromSelector(@selector(misheyakir11Point5Degrees)),
-                     NSStringFromSelector(@selector(misheyakirAteretTorahWithMinutes:))
+                     NSStringFromSelector(@selector(misheyakirAteretTorahWithMinutes:)),
+                     NSStringFromSelector(@selector(misheyakir12Point85Degrees)),
+                     NSStringFromSelector(@selector(misheyakir7Point65Degrees)),
+                     NSStringFromSelector(@selector(misheyakir9Point5Degrees))
                      ],
                  
                  /**
@@ -303,7 +315,8 @@ NS_ASSUME_NONNULL_BEGIN
                   */
                  
                  @[
-                     NSStringFromSelector(@selector(sunrise))
+                     NSStringFromSelector(@selector(sunrise)),
+                     NSStringFromSelector(@selector(seaLevelSunrise))
                      ],
                  
                  /**
@@ -326,6 +339,13 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(sofZmanShmaMGA120Minutes)),
                      NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToSunset)),
                      NSStringFromSelector(@selector(sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees)),
+                     NSStringFromSelector(@selector(sofZmanShmaAteretTorah)),
+                     NSStringFromSelector(@selector(sofZmanShmaBaalHatanya)),
+                     NSStringFromSelector(@selector(sofZmanShmaGRASunriseToFixedLocalChatzos)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA16Point1DegreesToFixedLocalChatzos)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA18DegreesToFixedLocalChatzos)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA72MinutesToFixedLocalChatzos)),
+                     NSStringFromSelector(@selector(sofZmanShmaMGA90MinutesToFixedLocalChatzos))
                      ],
                  
                  /**
@@ -345,7 +365,10 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(sofZmanTfilaMGA96Minutes)),
                      NSStringFromSelector(@selector(sofZmanTfilaMGA96MinutesZmanis)),
                      NSStringFromSelector(@selector(sofZmanTfilaMGA120Minutes)),
-                     NSStringFromSelector(@selector(sofZmanTfila2HoursBeforeChatzos))
+                     NSStringFromSelector(@selector(sofZmanTfila2HoursBeforeChatzos)),
+                     NSStringFromSelector(@selector(sofZmanTfilaAteretTorah)),
+                     NSStringFromSelector(@selector(sofZmanTfilaBaalHatanya)),
+                     NSStringFromSelector(@selector(sofZmanTfilaGRASunriseToFixedLocalChatzos))
                      ],
                  
                  /**
@@ -354,7 +377,9 @@ NS_ASSUME_NONNULL_BEGIN
                  
                  @[
                      NSStringFromSelector(@selector(chatzos)),
-                     NSStringFromSelector(@selector(fixedLocalChatzos))
+                     NSStringFromSelector(@selector(fixedLocalChatzos)),
+                     NSStringFromSelector(@selector(sunTransit)),
+                     NSStringFromSelector(@selector(solarMidnight))
                      ],
                  
                  /**
@@ -367,7 +392,11 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(minchaGedola30Minutes)),
                      NSStringFromSelector(@selector(minchaGedola16Point1Degrees)),
                      NSStringFromSelector(@selector(minchaGedolaGreaterThan30)),
-                     NSStringFromSelector(@selector(minchaGedolaAteretTorah))
+                     NSStringFromSelector(@selector(minchaGedolaAteretTorah)),
+                     NSStringFromSelector(@selector(minchaGedolaAhavatShalom)),
+                     NSStringFromSelector(@selector(minchaGedolaBaalHatanya)),
+                     NSStringFromSelector(@selector(minchaGedolaGRAFixedLocalChatzos30Minutes)),
+                     NSStringFromSelector(@selector(minchaGedolaGRAGreaterThan30))
                      ],
                  
                  /**
@@ -378,7 +407,10 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(minchaKetana)),
                      NSStringFromSelector(@selector(minchaKetana16Point1Degrees)),
                      NSStringFromSelector(@selector(minchaKetana72Minutes)),
-                     NSStringFromSelector(@selector(minchaKetanaAteretTorah))
+                     NSStringFromSelector(@selector(minchaKetanaAteretTorah)),
+                     NSStringFromSelector(@selector(minchaKetanaAhavatShalom)),
+                     NSStringFromSelector(@selector(minchaKetanaBaalHatanya)),
+                     NSStringFromSelector(@selector(minchaKetanaGRAFixedLocalChatzosToSunset))
                      ],
                  
                  /**
@@ -399,7 +431,13 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(plagHamincha19Point8Degrees)),
                      NSStringFromSelector(@selector(plagHamincha26Degrees)),
                      NSStringFromSelector(@selector(plagAlosToSunset)),
-                     NSStringFromSelector(@selector(plagAlos16Point1ToTzaisGeonim7Point083Degrees))
+                     NSStringFromSelector(@selector(plagAlos16Point1ToTzaisGeonim7Point083Degrees)),
+                     NSStringFromSelector(@selector(plagHamincha120Minutes)),
+                     NSStringFromSelector(@selector(plagHamincha120MinutesZmanis)),
+                     NSStringFromSelector(@selector(plagHaminchaAhavatShalom)),
+                     NSStringFromSelector(@selector(plagHaminchaAteretTorah)),
+                     NSStringFromSelector(@selector(plagHaminchaBaalHatanya)),
+                     NSStringFromSelector(@selector(plagHaminchaGRAFixedLocalChatzosToSunset))
                      ],
                  
                  /**
@@ -407,7 +445,9 @@ NS_ASSUME_NONNULL_BEGIN
                   */
                  
                  @[
-                     NSStringFromSelector(@selector(sunset))
+                     NSStringFromSelector(@selector(sunset)),
+                     NSStringFromSelector(@selector(seaLevelSunset)),
+                     NSStringFromSelector(@selector(ateretTorahSunsetOffset))
                      ],
                  
                  /**
@@ -418,7 +458,17 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(bainHashmashosRT13Degrees)),
                      NSStringFromSelector(@selector(bainHashmashosRT58Point5Minutes)),
                      NSStringFromSelector(@selector(bainHashmashosRT13Point5MinutesBefore7Point083Degrees)),
-                     NSStringFromSelector(@selector(bainHashmashosRT2Stars))
+                     NSStringFromSelector(@selector(bainHashmashosRT2Stars)),
+                     NSStringFromSelector(@selector(bainHashmashosRT13Point24Degrees)),
+                     NSStringFromSelector(@selector(bainHashmashosYereim13Point5Minutes)),
+                     NSStringFromSelector(@selector(bainHashmashosYereim16Point875Minutes)),
+                     NSStringFromSelector(@selector(bainHashmashosYereim18Minutes)),
+                     NSStringFromSelector(@selector(bainHashmashosYereim2Point1Degrees)),
+                     NSStringFromSelector(@selector(bainHashmashosYereim2Point8Degrees)),
+                     NSStringFromSelector(@selector(bainHashmashosYereim3Point05Degrees)),
+                     NSStringFromSelector(@selector(samuchLeMinchaKetanaGRA)),
+                     NSStringFromSelector(@selector(samuchLeMinchaKetana72Minutes)),
+                     NSStringFromSelector(@selector(samuchLeMinchaKetana16Point1Degrees))
                      ],
                  
                  /**
@@ -450,6 +500,18 @@ NS_ASSUME_NONNULL_BEGIN
                      NSStringFromSelector(@selector(tzais26Degrees)),
                      NSStringFromSelector(@selector(tzais18Degrees)),
                      NSStringFromSelector(@selector(tzais19Point8Degrees)),
+                     NSStringFromSelector(@selector(endCivilTwilight)),
+                     NSStringFromSelector(@selector(endNauticalTwilight)),
+                     NSStringFromSelector(@selector(endAstronomicalTwilight)),
+                     NSStringFromSelector(@selector(tzaisBaalHatanya)),
+                     NSStringFromSelector(@selector(tzaisGeonim3Point7Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim3Point8Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim4Point42Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim4Point66Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim6Point45Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim7Point67Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim9Point3Degrees)),
+                     NSStringFromSelector(@selector(tzaisGeonim9Point75Degrees))
                      ],
                  
                  /**
@@ -459,7 +521,9 @@ NS_ASSUME_NONNULL_BEGIN
                  @[
                      NSStringFromSelector(@selector(sofZmanAchilasChametzGra)),
                      NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72Minutes)),
-                     NSStringFromSelector(@selector(sofZmanAchilasChametzMGA16Point1Degrees))
+                     NSStringFromSelector(@selector(sofZmanAchilasChametzMGA16Point1Degrees)),
+                     NSStringFromSelector(@selector(sofZmanAchilasChametzBaalHatanya)),
+                     NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72MinutesZmanis))
                      ],
                  
                  /**
@@ -469,7 +533,31 @@ NS_ASSUME_NONNULL_BEGIN
                  @[
                      NSStringFromSelector(@selector(sofZmanBiurChametzGra)),
                      NSStringFromSelector(@selector(sofZmanBiurChametzMGA72Minutes)),
-                     NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees))
+                     NSStringFromSelector(@selector(sofZmanBiurChametzMGA16Point1Degrees)),
+                     NSStringFromSelector(@selector(sofZmanBiurChametzBaalHatanya)),
+                     NSStringFromSelector(@selector(sofZmanBiurChametzMGA72MinutesZmanis))
+                     ],
+                 /**
+                  *    Polar
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(polarSunriseBenIshChai)),
+                     NSStringFromSelector(@selector(polarSunsetBenIshChai)),
+                     NSStringFromSelector(@selector(polarPlagHaminchaBenIshChai)),
+                     NSStringFromSelector(@selector(polarStartOfDayTeshuvosVehanhagos)),
+                     NSStringFromSelector(@selector(polarPlagHaminchaTeshuvosVehanhagos))
+                     ],
+                 /**
+                  *    Molad and Kidush Levana
+                  */
+                 
+                 @[
+                     NSStringFromSelector(@selector(zmanMolad)),
+                     NSStringFromSelector(@selector(tchilasZmanKidushLevana3Days)),
+                     NSStringFromSelector(@selector(tchilasZmanKidushLevana7Days)),
+                     NSStringFromSelector(@selector(sofZmanKidushLevana15Days)),
+                     NSStringFromSelector(@selector(sofZmanKidushLevanaBetweenMoldos))
                      ]
                  
                  ];
@@ -500,6 +588,8 @@ NS_ASSUME_NONNULL_BEGIN
              @"צאת",
              @"סזא״ח",
              @"סזב״ח",
+             @"קוטב",
+             @"קידוש לבנה"
              ];
 }
 
@@ -524,7 +614,9 @@ NS_ASSUME_NONNULL_BEGIN
              @"Twilight",
              @"Tzait",
              @"Eat",
-             @"Burn"
+             @"Burn",
+             @"Polar",
+             @"Levana"
              ];
 }
 
@@ -1621,6 +1713,615 @@ NS_ASSUME_NONNULL_BEGIN
                          @"koshercocoa.name.transliterated.sepharad" : @"Biur Chametz (M\"A 16.1 Maalot)",
                          @"koshercocoa.name.localized" : NSLocalizedString(@"Burn Chametz By (M\"A 16.1 Degrees)", @""),
                          @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the MGA based on alos being 16.1° before sunrise. This time is 5 shaos zmaniyos (solar hours) after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall with both being 16.1° below sunrise or sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point7Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"שעה זמנית (16.1 עד 3.7 מעלות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (16.1 To 3.7 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (16.1 To 3.7 Maalot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Temporal Hour (16.1 To 3.7 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"A temporal hour calculated using a day that starts at dawn when the sun is 16.1 degrees below the eastern geometric horizon and ends at nightfall when the sun is 3.7 degrees below the western geometric horizon. The day is split into 12 equal parts with each part being a temporal hour. This day is the basis of the zmanim of Rabbi Yaakov Moshe Hillel as published in the luach of the Bais Horaah of Yeshivat Chevrat Ahavat Shalom.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point8Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"שעה זמנית (16.1 עד 3.8 מעלות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (16.1 To 3.8 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (16.1 To 3.8 Maalot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Temporal Hour (16.1 To 3.8 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"A temporal hour calculated using a day that starts at dawn when the sun is 16.1 degrees below the eastern geometric horizon and ends at nightfall when the sun is 3.8 degrees below the western geometric horizon. The day is split into 12 equal parts with each part being a temporal hour.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(shaahZmanisAlos16Point1DegreesToTzaisGeonim7Point083Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"שעה זמנית (16.1 עד 7.083 מעלות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (16.1 To 7.083 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (16.1 To 7.083 Maalot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Temporal Hour (16.1 To 7.083 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"A temporal hour calculated using a day that starts at dawn when the sun is 16.1 degrees below the eastern geometric horizon and ends at nightfall when the sun is 7.083 degrees below the western geometric horizon. The day is split into 12 equal parts with each part being a temporal hour.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(shaahZmanisBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"שעה זמנית (בעל התניא)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sha'ah Zmanis (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sha'ah Zmanit (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Temporal Hour (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"A temporal hour according to the opinion of the Baal Hatanya. The day is calculated from sunrise to sunset with a 1.583 degree dip below the horizon, and is split into 12 equal parts with each part being a temporal hour.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(alos19Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(עלות (19 מעלות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (19 Ma'alot)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (19 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Dawn (19 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Dawn calculated when the sun is 19 degrees below the eastern geometric horizon before sunrise. This is the Rambam's alos according to Rabbi Moshe Kosower's Maaglei Tzedek.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(alosBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"(עלות (בעל התניא",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Dawn (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Dawn according to the Baal Hatanya, calculated when the sun is 16.9 degrees below the eastern geometric horizon before sunrise. This is based on the time to walk 4 mil at 18 minutes a mil, or 72 minutes, before netz amiti.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(beginCivilTwilight)) : @{
+                         @"koshercocoa.name.hebrew" : @"(עלות (דמדומים אזרחיים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (Civil Twilight)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (Civil Twilight)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Beginning of Civil Twilight", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of civil twilight, calculated when the sun is 6 degrees below the eastern geometric horizon before sunrise.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(beginNauticalTwilight)) : @{
+                         @"koshercocoa.name.hebrew" : @"(עלות (דמדומים ימיים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (Nautical Twilight)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (Nautical Twilight)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Beginning of Nautical Twilight", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of nautical twilight, calculated when the sun is 12 degrees below the eastern geometric horizon before sunrise.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(beginAstronomicalTwilight)) : @{
+                         @"koshercocoa.name.hebrew" : @"(עלות (דמדומים אסטרונומיים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Alos HaShachar (Astronomical Twilight)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Alot HaShachar (Astronomical Twilight)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Beginning of Astronomical Twilight", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of astronomical twilight, calculated when the sun is 18 degrees below the eastern geometric horizon before sunrise.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(misheyakir12Point85Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(משיכיר (12.85 מעלות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (12.85 Ma'alos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (12.85 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Misheyakir (12.85 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The misheyakir based on the position of the sun when it is 12.85 degrees below geometric zenith. This is based on the position of the sun slightly later than 57 minutes before sunrise in Jerusalem around the equinox, and is mentioned for use in pressing circumstances in the Birur Halacha Tinyana.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(misheyakir7Point65Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(משיכיר (7.65 מעלות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (7.65 Ma'alos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (7.65 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Misheyakir (7.65 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The misheyakir based on the position of the sun when it is 7.65 degrees below geometric zenith. The degrees are based on a 35 to 36 minute zman around the equinox when twilight is the shortest. This time is based on Rabbi Moshe Feinstein in Ohr Hachaim.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(misheyakir9Point5Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(משיכיר (9.5 מעלות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Misheyakir (9.5 Ma'alos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Misheyakir (9.5 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Misheyakir (9.5 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The misheyakir based on the position of the sun when it is 9.5 degrees below geometric zenith. This is based on Rabbi Dovid Kronglass's calculation of 45 minutes in Baltimore as mentioned in Divrei Chachamim No. 24.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(seaLevelSunrise)) : @{
+                         @"koshercocoa.name.hebrew" : @"נץ החמה (מפלס הים)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Naitz Hachama (Sea Level)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Netz Hachama (Sea Level)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Sunrise (Sea Level)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Sunrise calculated at sea level without elevation adjustment. Non-sunrise and sunset calculations such as dawn and dusk depend on the amount of visible light, which is not affected by elevation, so they are based on this sea level sunrise.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanShmaAteretTorah)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (עטרת תורה)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Ateret Torah)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriat Shema (Ateret Torah)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Shema (Ateret Torah)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman krias shema based on the calculation of Chacham Yosef Harari-Raful of Yeshivat Ateret Torah. The day starts 1/10th of the day before sunrise and usually ends 40 minutes after sunset, configurable by the Ateret Torah sunset offset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanShmaBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"(סוף זמן קריאת שמע (בעל התניא",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriat Shema (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Shema (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman krias shema. This time is 3 shaos zmaniyos after netz amiti based on the opinion of the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanShmaGRASunriseToFixedLocalChatzos)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (גר״א עד חצות קבוע)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (Vilna Gaon, Sunrise To Fixed Local Chatzos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriat Shema (Vilna Gaon, Sunrise To Fixed Local Chatzot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Shema (Vilna Gaon, Sunrise To Fixed Local Chatzos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman krias shema according to Rav Moshe Feinstein's opinion, calculated according to the Vilna Gaon using only the first half of the day. The half day starts at sunrise and ends at fixed local chatzos, and 3 shaos zmaniyos of that half day are added to sunrise.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanShmaMGA16Point1DegreesToFixedLocalChatzos)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (מ״א 16.1 מעלות עד חצות קבוע)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (M'A 16.1 Ma'alos To Fixed Local Chatzos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriat Shema (M'A 16.1 Ma'alot To Fixed Local Chatzot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Shema (M'A 16.1 Degrees To Fixed Local Chatzos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman krias shema according to Rav Moshe Feinstein's opinion, calculated according to the MGA using only the first half of the day. The half day starts at alos of 16.1 degrees and ends at fixed local chatzos, and 3 shaos zmaniyos of that half day are added to alos.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanShmaMGA18DegreesToFixedLocalChatzos)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (מ״א 18 מעלות עד חצות קבוע)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (M'A 18 Ma'alos To Fixed Local Chatzos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriat Shema (M'A 18 Ma'alot To Fixed Local Chatzot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Shema (M'A 18 Degrees To Fixed Local Chatzos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman krias shema according to Rav Moshe Feinstein's opinion, calculated according to the MGA using only the first half of the day. The half day starts at alos of 18 degrees and ends at fixed local chatzos, and 3 shaos zmaniyos of that half day are added to alos.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanShmaMGA72MinutesToFixedLocalChatzos)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (מ״א 72 דקות עד חצות קבוע)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (M'A 72 Dakos To Fixed Local Chatzos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriat Shema (M'A 72 Dakot To Fixed Local Chatzot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Shema (M'A 72 Minutes To Fixed Local Chatzos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman krias shema according to Rav Moshe Feinstein's opinion, calculated according to the MGA using only the first half of the day. The half day starts at alos of 72 minutes before sunrise and ends at fixed local chatzos, and 3 shaos zmaniyos of that half day are added to alos.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanShmaMGA90MinutesToFixedLocalChatzos)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קריאת שמע (מ״א 90 דקות עד חצות קבוע)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Krias Shema (M'A 90 Dakos To Fixed Local Chatzos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kriat Shema (M'A 90 Dakot To Fixed Local Chatzot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Shema (M'A 90 Minutes To Fixed Local Chatzos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman krias shema according to Rav Moshe Feinstein's opinion, calculated according to the MGA using only the first half of the day. The half day starts at alos of 90 minutes before sunrise and ends at fixed local chatzos, and 3 shaos zmaniyos of that half day are added to alos.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanTfilaAteretTorah)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן תפילה (עטרת תורה)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Tefila (Ateret Torah)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Tfila (Ateret Torah)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Tefila (Ateret Torah)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman tefila based on the calculation of Chacham Yosef Harari-Raful of Yeshivat Ateret Torah. The day starts 1/10th of the day before sunrise and usually ends 40 minutes after sunset, configurable by the Ateret Torah sunset offset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanTfilaBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"(סוף זמן תפילה (בעל התניא",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Tefila (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Tfila (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Tefila (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman tefila. This time is 4 shaos zmaniyos after netz amiti based on the opinion of the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanTfilaGRASunriseToFixedLocalChatzos)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן תפילה (גר״א עד חצות קבוע)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Tefila (Vilna Gaon, Sunrise To Fixed Local Chatzos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Tfila (Vilna Gaon, Sunrise To Fixed Local Chatzot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Tefila (Vilna Gaon, Sunrise To Fixed Local Chatzos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest zman tefila according to Rav Moshe Feinstein's opinion, calculated according to the Vilna Gaon using only the first half of the day. The half day starts at sunrise and ends at fixed local chatzos, and 4 shaos zmaniyos of that half day are added to sunrise.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sunTransit)) : @{
+                         @"koshercocoa.name.hebrew" : @"מעבר השמש",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sun Transit",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sun Transit",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Solar Noon (Sun Transit)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Sundial or solar noon. It occurs when the sun is transiting the celestial meridian.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(solarMidnight)) : @{
+                         @"koshercocoa.name.hebrew" : @"חצות לילה (שמש)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Solar Midnight",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Solar Midnight",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Solar Midnight", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Solar midnight, when the sun is transiting the lower celestial meridian. It is calculated as the end of the day and may fall after midnight of the day it is calculated for.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(minchaGedolaAhavatShalom)) : @{
+                         @"koshercocoa.name.hebrew" : @"(אהבת שלום) מנחה גדולה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Gedolah (Ahavat Shalom)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola (Ahavat Shalom)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Earliest Mincha (Ahavat Shalom)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Mincha gedola based on the opinion of Rabbi Yaakov Moshe Hillel as published in the luach of the Bais Horaah of Yeshivat Chevrat Ahavat Shalom. It is calculated as half a shaah zmanis after chatzos, with shaos zmaniyos based on a day starting at alos of 16.1 degrees and ending at tzais of 3.7 degrees.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(minchaGedolaBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"(בעל התניא) מנחה גדולה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Gedolah (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Earliest Mincha (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Mincha gedola according to the Baal Hatanya. This time is 6.5 shaos zmaniyos after netz amiti, with the day calculated from sunrise to sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(minchaGedolaGRAFixedLocalChatzos30Minutes)) : @{
+                         @"koshercocoa.name.hebrew" : @"מנחה גדולה (גר״א 30 דקות אחרי חצות קבוע)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Gedolah (Vilna Gaon, 30 Minutes After Fixed Local Chatzos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola (Vilna Gaon, 30 Dakot After Fixed Local Chatzot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Earliest Mincha (Vilna Gaon, 30 Minutes After Fixed Local Chatzos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Rav Moshe Feinstein's opinion of mincha gedola according to the Vilna Gaon, calculated as 30 minutes after fixed local chatzos.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(minchaGedolaGRAGreaterThan30)) : @{
+                         @"koshercocoa.name.hebrew" : @"(גר״א לפחות 30) מנחה גדולה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Gedolah (Vilna Gaon, At Least 30 Minutes)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Gedola (Vilna Gaon, At Least 30 Minutes)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Earliest Mincha (Vilna Gaon, At Least 30 Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Calculates the later time between 30 minutes after fixed local chatzos and the standard mincha gedola calculation according to the Vilna Gaon. Whichever is later in the day is used.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(minchaKetanaAhavatShalom)) : @{
+                         @"koshercocoa.name.hebrew" : @"(אהבת שלום) מנחה קטנה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Ketanah (Ahavat Shalom)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana (Ahavat Shalom)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Optimal Mincha (Ahavat Shalom)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Mincha ketana based on the opinion of Rabbi Yaakov Moshe Hillel as published in the luach of the Bais Horaah of Yeshivat Chevrat Ahavat Shalom. It is calculated as 2.5 shaos zmaniyos before tzais of 3.8 degrees, with shaos zmaniyos based on a day starting at alos of 16.1 degrees and ending at tzais of 3.7 degrees.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(minchaKetanaBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"(בעל התניא) מנחה קטנה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Ketanah (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Optimal Mincha (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Mincha ketana according to the Baal Hatanya. This time is 9.5 shaos zmaniyos after netz amiti, with the day calculated from sunrise to sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(minchaKetanaGRAFixedLocalChatzosToSunset)) : @{
+                         @"koshercocoa.name.hebrew" : @"מנחה קטנה (גר״א, חצות קבוע עד שקיעה)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Mincha Ketanah (Vilna Gaon, Fixed Local Chatzos To Sunset)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Mincha Ketana (Vilna Gaon, Fixed Local Chatzot To Sunset)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Optimal Mincha (Vilna Gaon, Fixed Local Chatzos To Sunset)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Rav Moshe Feinstein's opinion of mincha ketana according to the Vilna Gaon. It is calculated as 3.5 shaos zmaniyos of a half day starting at fixed local chatzos and ending at sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(plagHamincha120Minutes)) : @{
+                         @"koshercocoa.name.hebrew" : @"(120 דקות) פלג המנחה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha (120 Dakos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha (120 Dakot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Mincha (120 Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Plag hamincha according to the Magen Avraham with the day starting at alos 120 minutes before sunrise. This is calculated as 10.75 shaos zmaniyos after dawn. Since it is based on an extremely early alos and a very late tzais, it should be used lechumra only.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(plagHamincha120MinutesZmanis)) : @{
+                         @"koshercocoa.name.hebrew" : @"(120 דקות זמניות) פלג המנחה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha (120 Dakos Zmaniyos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha (120 Dakot Zmaniyot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Mincha (120 Solar Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Plag hamincha. This is calculated as 10.75 hours after dawn using 120 minute solar hours after alos of 120 zmaniyos minutes before sunrise.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(plagHaminchaAhavatShalom)) : @{
+                         @"koshercocoa.name.hebrew" : @"(אהבת שלום) פלג המנחה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha (Ahavat Shalom)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha (Ahavat Shalom)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Mincha (Ahavat Shalom)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Plag hamincha based on the opinion of Rabbi Yaakov Moshe Hillel as published in the luach of the Bais Horaah of Yeshivat Chevrat Ahavat Shalom. It is calculated as 1.25 shaos zmaniyos before tzais of 3.8 degrees, with shaos zmaniyos based on a day starting at alos of 16.1 degrees.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(plagHaminchaAteretTorah)) : @{
+                         @"koshercocoa.name.hebrew" : @"(עטרת תורה) פלג המנחה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha (Ateret Torah)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha (Ateret Torah)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Mincha (Ateret Torah)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Plag hamincha based on the calculation of Chacham Yosef Harari-Raful of Yeshivat Ateret Torah. This is calculated as 10.75 shaos zmaniyos after alos, where the day starts 1/10th of the day before sunrise and usually ends 40 minutes after sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(plagHaminchaBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"(בעל התניא) פלג המנחה",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Mincha (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Plag hamincha according to the Baal Hatanya. This is calculated as 10.75 shaos zmaniyos after netz amiti, with the day calculated from sunrise to sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(plagHaminchaGRAFixedLocalChatzosToSunset)) : @{
+                         @"koshercocoa.name.hebrew" : @"פלג המנחה (גר״א, חצות קבוע עד שקיעה)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Plag Hamincha (Vilna Gaon, Fixed Local Chatzos To Sunset)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Plag Hamincha (Vilna Gaon, Fixed Local Chatzot To Sunset)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Mincha (Vilna Gaon, Fixed Local Chatzos To Sunset)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Rav Moshe Feinstein's opinion of plag hamincha according to the Vilna Gaon. It is calculated as 4.75 shaos zmaniyos of a half day starting at fixed local chatzos and ending at sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(seaLevelSunset)) : @{
+                         @"koshercocoa.name.hebrew" : @"שקיעת החמה (מפלס הים)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Shkiyas Hachamah (Sea Level)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Shki'at Hachama (Sea Level)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Sunset (Sea Level)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Sunset calculated at sea level without elevation adjustment. Non-sunrise and sunset calculations such as dawn and dusk depend on the amount of visible light, which is not affected by elevation, so they are based on this sea level sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(ateretTorahSunsetOffset)) : @{
+                         @"koshercocoa.name.hebrew" : @"היסט שקיעה (עטרת תורה)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Ateret Torah Sunset Offset",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Ateret Torah Sunset Offset",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Ateret Torah Sunset Offset", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The configurable offset in minutes after sunset used for tzais in the calculations of Chacham Yosef Harari-Raful of Yeshivat Ateret Torah. It defaults to 40 minutes.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(bainHashmashosRT13Point24Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(13.24 מעלות) בין השמשות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Bein Hashmashos (13.24 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Bein Hashmashot (13.24 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Twilight (13.24 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Bain hashmashos according to Rabbeinu Tam calculated when the sun is 13.24 degrees below the western geometric horizon after sunset. This is based on the same calculation as bain hashmashos Rabbeinu Tam 58.5 minutes, but uses a degree based calculation instead of exact minutes.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(bainHashmashosYereim13Point5Minutes)) : @{
+                         @"koshercocoa.name.hebrew" : @"(יראים, 13.5 דקות) בין השמשות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Bein Hashmashos (Yereim, 13.5 Dakos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Bein Hashmashot (Yereim, 13.5 Dakot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Twilight (Yereim, 13.5 Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of bain hashmashos according to the Yereim, Rabbi Eliezer of Metz, calculated as 13.5 minutes or 3/4 of an 18 minute mil before sunset. According to the Yereim, bain hashmashos starts 3/4 of a mil before sunset and tzais starts at sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(bainHashmashosYereim16Point875Minutes)) : @{
+                         @"koshercocoa.name.hebrew" : @"(יראים, 16.875 דקות) בין השמשות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Bein Hashmashos (Yereim, 16.875 Dakos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Bein Hashmashot (Yereim, 16.875 Dakot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Twilight (Yereim, 16.875 Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of bain hashmashos according to the Yereim, Rabbi Eliezer of Metz, calculated as 16.875 minutes or 3/4 of a 22.5 minute mil before sunset. According to the Yereim, bain hashmashos starts 3/4 of a mil before sunset and tzais starts at sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(bainHashmashosYereim18Minutes)) : @{
+                         @"koshercocoa.name.hebrew" : @"(יראים, 18 דקות) בין השמשות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Bein Hashmashos (Yereim, 18 Dakos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Bein Hashmashot (Yereim, 18 Dakot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Twilight (Yereim, 18 Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of bain hashmashos according to the Yereim, Rabbi Eliezer of Metz, calculated as 18 minutes or 3/4 of a 24 minute mil before sunset. According to the Yereim, bain hashmashos starts 3/4 of a mil before sunset and tzais starts at sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(bainHashmashosYereim2Point1Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(יראים, 2.1 מעלות) בין השמשות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Bein Hashmashos (Yereim, 2.1 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Bein Hashmashot (Yereim, 2.1 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Twilight (Yereim, 2.1 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of bain hashmashos according to the Yereim, Rabbi Eliezer of Metz, calculated as the sun's position 2.1 degrees above the horizon around the equinox in Yerushalayim. This is its position 13.5 minutes or 3/4 of an 18 minute mil before sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(bainHashmashosYereim2Point8Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(יראים, 2.8 מעלות) בין השמשות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Bein Hashmashos (Yereim, 2.8 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Bein Hashmashot (Yereim, 2.8 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Twilight (Yereim, 2.8 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of bain hashmashos according to the Yereim, Rabbi Eliezer of Metz, calculated as the sun's position 2.8 degrees above the horizon around the equinox in Yerushalayim. This is its position 16.875 minutes or 3/4 of a 22.5 minute mil before sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(bainHashmashosYereim3Point05Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(יראים, 3.05 מעלות) בין השמשות",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Bein Hashmashos (Yereim, 3.05 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Bein Hashmashot (Yereim, 3.05 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Twilight (Yereim, 3.05 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The beginning of bain hashmashos according to the Yereim, Rabbi Eliezer of Metz, calculated as the sun's position 3.05 degrees above the horizon around the equinox in Yerushalayim. This is its position 18 minutes or 3/4 of a 24 minute mil before sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(samuchLeMinchaKetanaGRA)) : @{
+                         @"koshercocoa.name.hebrew" : @"סמוך למנחה קטנה (גר״א)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Samuch LeMincha Ketana (Vilna Gaon)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Samuch LeMincha Ketana (Vilna Gaon)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Near Mincha Ketana (Vilna Gaon)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Samuch lemincha ketana, the time near mincha ketana that is half an hour before mincha ketana, or 9 shaos zmaniyos after the start of a day calculated according to the Vilna Gaon from sunrise to sunset. This is the time that eating or other activity should not begin prior to praying mincha.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(samuchLeMinchaKetana72Minutes)) : @{
+                         @"koshercocoa.name.hebrew" : @"סמוך למנחה קטנה (72 דקות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Samuch LeMincha Ketana (72 Dakos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Samuch LeMincha Ketana (72 Dakot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Near Mincha Ketana (72 Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Samuch lemincha ketana, the time near mincha ketana that is half an hour before mincha ketana, or 9 shaos zmaniyos after the start of a day from alos of 72 minutes before sunrise to tzais of 72 minutes after sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(samuchLeMinchaKetana16Point1Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"סמוך למנחה קטנה (16.1 מעלות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Samuch LeMincha Ketana (16.1 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Samuch LeMincha Ketana (16.1 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Near Mincha Ketana (16.1 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Samuch lemincha ketana, the time near mincha ketana that is half an hour before mincha ketana, or 9 shaos zmaniyos after the start of a day from alos of 16.1 degrees to tzais of 16.1 degrees.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(endCivilTwilight)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף דמדומים אזרחיים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"End of Civil Twilight",
+                         @"koshercocoa.name.transliterated.sepharad" : @"End of Civil Twilight",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"End of Civil Twilight", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The end of civil twilight, calculated when the sun is 6 degrees below the western geometric horizon after sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(endNauticalTwilight)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף דמדומים ימיים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"End of Nautical Twilight",
+                         @"koshercocoa.name.transliterated.sepharad" : @"End of Nautical Twilight",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"End of Nautical Twilight", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The end of nautical twilight, calculated when the sun is 12 degrees below the western geometric horizon after sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(endAstronomicalTwilight)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף דמדומים אסטרונומיים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"End of Astronomical Twilight",
+                         @"koshercocoa.name.transliterated.sepharad" : @"End of Astronomical Twilight",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"End of Astronomical Twilight", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The end of astronomical twilight, calculated when the sun is 18 degrees below the western geometric horizon after sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"(בעל התניא) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Nightfall according to the Baal Hatanya, calculated when the sun is 6 degrees below the western geometric horizon after sunset. This is based on the position of the sun about 24 minutes after sunset in Jerusalem around the equinox.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim3Point7Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(3.7 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (3.7 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (3.7 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (3.7 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the opinion of the Geonim calculated at the sun's position 3.7 degrees below the western horizon. This is the position of the sun 13.5 minutes after sunset, the time it takes to walk 3/4 of a mil at 18 minutes a mil.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim3Point8Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(3.8 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (3.8 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (3.8 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (3.8 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the opinion of the Geonim calculated at the sun's position 3.8 degrees below the western horizon. This is 13.5 minutes after sunset plus 30 seconds for the time it takes to walk 49 amos.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim4Point42Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(4.42 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (4.42 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (4.42 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (4.42 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the opinion of the Geonim calculated as 3/4 of a mil based on a 22.5 minute mil, or 16.875 minutes. This is the sun's position at 4.42 degrees below the western horizon. This is a very early zman and should not be relied on without rabbinical guidance.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim4Point66Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(4.66 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (4.66 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (4.66 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (4.66 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the opinion of the Geonim calculated as 3/4 of a mil based on a 24 minute mil, or 18 minutes. This is the sun's position at 4.66 degrees below the western horizon. This is a very early zman and should not be relied on without rabbinical guidance.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim6Point45Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(6.45 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (6.45 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (6.45 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (6.45 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the opinion of the Geonim as calculated by Rabbi Yechiel Michel Tucazinsky as the position of the sun no later than 31 minutes after sea level sunset in Jerusalem. The sun's position at this time computes to 6.45 degrees below the western horizon.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim7Point67Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(7.67 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (7.67 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (7.67 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (7.67 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the opinion of the Geonim calculated as 45 minutes after sunset during the summer solstice in New York, when twilight is the longest. The sun's position at this time computes to 7.67 degrees below the western horizon.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim9Point3Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(9.3 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (9.3 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (9.3 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (9.3 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the calculations used in the Luach Itim Lebinah as the stringent time for tzais. It is calculated as the sun's position at 9.3 degrees below the western horizon.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tzaisGeonim9Point75Degrees)) : @{
+                         @"koshercocoa.name.hebrew" : @"(9.75 מעלות) צאת הכוכבים",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tzais Hakochavim (9.75 Maalos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Tzait Hakochavim (9.75 Ma'alot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Starlight (9.75 Degrees)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The nightfall based on the opinion of the Geonim calculated as 60 minutes after sunset around the equinox. The sun's position at this time computes to 9.75 degrees below the western horizon. This is the opinion of Rabbi Eliyahu Henkin.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanAchilasChametzBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן אכילת חמץ (בעל התניא)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Achilas Chametz (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Achilat Chametz (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz By (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time one is allowed eating chametz on Erev Pesach according to the opinion of the Baal Hatanya. This time is identical to the sof zman tefilah Baal Hatanya. This time is 4 shaos zmaniyos after netz amiti based on the opinion of the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanAchilasChametzMGA72MinutesZmanis)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן אכילת חמץ (מ״א 72 דקות זמניות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Achilas Chametz (M'A 72 Dakos Zmaniyos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Achilat Chametz (M'A 72 Dakot Zmaniyot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Eat Chametz By (M'A 72 Temporal Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time one is allowed eating chametz on Erev Pesach according to the opinion of the MGA based on alos being 72 zmaniyos minutes before sunrise. This time is identical to the sof zman tefilah MGA 72 minutes zmanis. This time is 4 shaos zmaniyos after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanBiurChametzBaalHatanya)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן ביעור חמץ (בעל התניא)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Biur Chametz (Baal Hatanya)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Biur Chametz (Baal Hatanya)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Burn Chametz By (Baal Hatanya)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the Baal Hatanya. This time is 5 shaos zmaniyos after netz amiti based on the opinion of the Baal Hatanya that the day is calculated from sunrise to sunset.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanBiurChametzMGA72MinutesZmanis)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן ביעור חמץ (מ״א 72 דקות זמניות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Biur Chametz (M'A 72 Dakos Zmaniyos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Biur Chametz (M'A 72 Dakot Zmaniyot)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Burn Chametz By (M'A 72 Temporal Minutes)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time for burning chametz on Erev Pesach according to the opinion of the MGA based on alos being 72 zmaniyos minutes before sunrise. This time is 5 shaos zmaniyos after dawn based on the opinion of the MGA that the day is calculated from dawn to nightfall.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(polarSunriseBenIshChai)) : @{
+                         @"koshercocoa.name.hebrew" : @"נץ החמה (אזור הקוטב, בן איש חי)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Polar Sunrise (Ben Ish Chai)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Polar Sunrise (Ben Ish Chai)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Polar Sunrise (Ben Ish Chai)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Sunrise in polar regions on days with no sunrise, calculated as the time when the sun is directly due east at an azimuth of 90 degrees. This is the opinion of Rabbi Yehosef Schwarz brought down lehalacha by the Ben Ish Chai. If there is sunrise that day, no time is returned.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(polarSunsetBenIshChai)) : @{
+                         @"koshercocoa.name.hebrew" : @"שקיעת החמה (אזור הקוטב, בן איש חי)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Polar Sunset (Ben Ish Chai)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Polar Sunset (Ben Ish Chai)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Polar Sunset (Ben Ish Chai)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Sunset in polar regions on days with no sunset, calculated as the time when the sun is directly due west at an azimuth of 270 degrees. This is the opinion of Rabbi Yehosef Schwarz brought down lehalacha by the Ben Ish Chai. If there is sunset that day, no time is returned.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(polarPlagHaminchaBenIshChai)) : @{
+                         @"koshercocoa.name.hebrew" : @"פלג המנחה (קוטב, בן איש חי)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Polar Plag Hamincha (Ben Ish Chai)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Polar Plag Hamincha (Ben Ish Chai)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Polar Plag Hamincha (Ben Ish Chai)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Plag hamincha in polar regions on days with no sunrise or sunset, calculated as 10.75 shaos zmaniyos of a day starting at polar sunrise and ending at polar sunset according to the Ben Ish Chai.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(polarStartOfDayTeshuvosVehanhagos)) : @{
+                         @"koshercocoa.name.hebrew" : @"תחילת היום (קוטב, תשובות והנהגות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Start of Day (Polar, Teshuvos Vehanhagos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Start of Day (Polar, Teshuvos Vehanhagos)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Start of Polar Day (Teshuvos Vehanhagos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The time of the Jewish calendar transition to the next day in polar regions according to Rav Moshe Sternbuch in Teshuvos Vehanhagos. During the polar summer it is the sun's lowest position at chatzos halayla, and during the polar winter its highest position at chatzos hayom.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(polarPlagHaminchaTeshuvosVehanhagos)) : @{
+                         @"koshercocoa.name.hebrew" : @"פלג המנחה (קוטב, תשובות והנהגות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Polar Plag Hamincha (Teshuvos Vehanhagos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Polar Plag Hamincha (Teshuvos Vehanhagos)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Polar Plag Hamincha (Teshuvos Vehanhagos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"Plag hamincha in polar regions according to Rav Moshe Sternbuch in Teshuvos Vehanhagos, calculated as 10.75 shaos zmaniyos starting 24 hours prior to the start of the next day. This is very close to 2.5 clock hours before the start of the next day, and is the start of the time that maariv can be recited.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(zmanMolad)) : @{
+                         @"koshercocoa.name.hebrew" : @"זמן המולד",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Zman Hamolad",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Zman Hamolad",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Time of the Molad", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The point in time of the molad, the astronomical new moon that starts the Hebrew month.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tchilasZmanKidushLevana3Days)) : @{
+                         @"koshercocoa.name.hebrew" : @"תחילת זמן קידוש לבנה (3 ימים)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tchilas Zman Kidush Levana (3 Days)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Techilat Zman Kidush Levana (3 Days)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Earliest Kidush Levana (3 Days)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The earliest time of Kidush Levana according to Rabbeinu Yonah's opinion that it can be said 3 days after the molad. The time is returned even if it occurs during the day when Kidush Levana cannot be said.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(tchilasZmanKidushLevana7Days)) : @{
+                         @"koshercocoa.name.hebrew" : @"תחילת זמן קידוש לבנה (7 ימים)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Tchilas Zman Kidush Levana (7 Days)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Techilat Zman Kidush Levana (7 Days)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Earliest Kidush Levana (7 Days)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The earliest time of Kidush Levana according to the opinions that it should not be said until 7 days after the molad. The time is returned even if it occurs during the day when Kidush Levana cannot be said.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanKidushLevana15Days)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קידוש לבנה (15 ימים)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kidush Levana (15 Days)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kidush Levana (15 Days)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Kidush Levana (15 Days)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time of Kidush Levana calculated as 15 days after the molad. This is the opinion of the Shulchan Aruch, Orach Chaim 426.", @"")
+                         },
+                 
+                 NSStringFromSelector(@selector(sofZmanKidushLevanaBetweenMoldos)) : @{
+                         @"koshercocoa.name.hebrew" : @"סוף זמן קידוש לבנה (בין המולדות)",
+                         @"koshercocoa.name.transliterated.ashkenaz" : @"Sof Zman Kidush Levana (Between Moldos)",
+                         @"koshercocoa.name.transliterated.sepharad" : @"Sof Zman Kidush Levana (Between Moldos)",
+                         @"koshercocoa.name.localized" : NSLocalizedString(@"Latest Kidush Levana (Between Moldos)", @""),
+                         @"koshercocoa.explanation.localized" : NSLocalizedString(@"The latest time of Kidush Levana according to the Maharil's opinion that it is calculated as halfway between molad and molad, or 14 days, 18 hours and 22 minutes after the month's molad.", @"")
+                         }
                          }
                  };
         
