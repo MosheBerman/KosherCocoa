@@ -27,6 +27,7 @@ FOUNDATION_EXPORT const unsigned char KosherCocoaVersionString[];
 #import <KosherCocoa/KCAstronomicalCalculator.h>
 #import <KosherCocoa/KCGeoLocation.h>
 #import <KosherCocoa/KCMeeusCalculator.h>
+#import <KosherCocoa/KCSPACalculator.h>
 #import <KosherCocoa/KCSunriseAndSunsetCalculator.h>
 
 #import <KosherCocoa/KCComplexZmanimCalendar.h>
