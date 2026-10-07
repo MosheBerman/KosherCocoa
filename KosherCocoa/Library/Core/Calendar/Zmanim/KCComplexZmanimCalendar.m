@@ -880,3 +880,47 @@ static BOOL KCIsErevPesach(NSDate *date, NSTimeZone *timeZone) {
 }
 
 @end
+
+@implementation KCComplexZmanimCalendar (GeonimDegreesMinutes)
+
+- (nullable NSDate *)tzaisGeonim4Point42Degrees {
+    return [self sunsetOffsetByDegrees:kZenithFourPointFortyTwo];
+}
+
+- (nullable NSDate *)tzaisGeonim4Point66Degrees {
+    return [self sunsetOffsetByDegrees:kZenithFourPointSixtySix];
+}
+
+- (nullable NSDate *)tzaisGeonim6Point45Degrees {
+    return [self sunsetOffsetByDegrees:kZenithSixPointFortyFive];
+}
+
+- (nullable NSDate *)tzaisGeonim7Point67Degrees {
+    return [self sunsetOffsetByDegrees:kZenithSevenPointSixtySeven];
+}
+
+- (nullable NSDate *)tzaisGeonim9Point3Degrees {
+    return [self sunsetOffsetByDegrees:kZenithNinePointThree];
+}
+
+- (nullable NSDate *)tzaisGeonim9Point75Degrees {
+    return [self sunsetOffsetByDegrees:kZenithNinePointSeventyFive];
+}
+
+- (nullable NSDate *)misheyakir7Point65Degrees {
+    return [self sunriseOffsetByDegrees:kZenithSevenPointSixtyFive];
+}
+
+- (nullable NSDate *)misheyakir9Point5Degrees {
+    return [self sunriseOffsetByDegrees:kZenithNinePointFive];
+}
+
+- (nullable NSDate *)misheyakir12Point85Degrees {
+    return [self sunriseOffsetByDegrees:kZenithTwelvePointEightyFive];
+}
+
+- (nullable NSDate *)alos19Degrees {
+    return [self sunriseOffsetByDegrees:kZenithNineteenDegrees];
+}
+
+@end
