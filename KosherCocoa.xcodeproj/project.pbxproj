@@ -86,6 +86,8 @@
 		DEBCCDB970D338B8DDBB8562 /* KCParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D57ED9E479C31E2248899B /* KCParityTests.swift */; };
 		86D738832D8E549974366BF2 /* ZmanimGolden.json in Resources */ = {isa = PBXBuildFile; fileRef = 3900BFD5A69856DAC6BA7B8C /* ZmanimGolden.json */; };
 		6EB32EF00D85997023695031 /* Mapping-core.json in Resources */ = {isa = PBXBuildFile; fileRef = 43022FE03EEFDFDE54D9EE27 /* Mapping-core.json */; };
+		F5D47DB13674C3FBC3AD6DDC /* KCMeeusCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BC4143EBAEB3863CED1F19 /* KCMeeusCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BF8B6F76202AD2046EAFEA /* KCMeeusCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C28BB625212030B1B8D29A66 /* KCMeeusCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +189,8 @@
 		29D57ED9E479C31E2248899B /* KCParityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCParityTests.swift; sourceTree = "<group>"; };
 		3900BFD5A69856DAC6BA7B8C /* ZmanimGolden.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ZmanimGolden.json; sourceTree = "<group>"; };
 		43022FE03EEFDFDE54D9EE27 /* Mapping-core.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-core.json; sourceTree = "<group>"; };
+		C5BC4143EBAEB3863CED1F19 /* KCMeeusCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCMeeusCalculator.h; sourceTree = "<group>"; };
+		C28BB625212030B1B8D29A66 /* KCMeeusCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCMeeusCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -425,7 +429,9 @@
 				466A3AED17CAF3B900056F16 /* KCGeoLocation.h */,
 				466A3AEE17CAF3B900056F16 /* KCGeoLocation.m */,
 				466A3AEF17CAF3B900056F16 /* KCSunriseAndSunsetCalculator.h */,
-				466A3AF017CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m */,
+				466A3AF017CAF3B900056F16 /* KCSunriseAndSunsetCalculator.m */,				C5BC4143EBAEB3863CED1F19 /* KCMeeusCalculator.h */,
+				C28BB625212030B1B8D29A66 /* KCMeeusCalculator.m */,
+
 			);
 			path = Solar;
 			sourceTree = "<group>";
@@ -518,7 +524,8 @@
 				4618ED091BF44B1B00C33159 /* KCDafYomiCalculator.h in Headers */,
 				4618ECE81BF449EF00C33159 /* KosherCocoa.h in Headers */,
 				4618ED141BF44B7100C33159 /* KCZmanimCalendar.h in Headers */,
-				4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */,
+				4618ED011BF44AEA00C33159 /* KCAstronomicalCalendar+DateManipulation.h in Headers */,				F5D47DB13674C3FBC3AD6DDC /* KCMeeusCalculator.h in Headers */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +665,8 @@
 				4618ED0F1BF44B5C00C33159 /* KCSefiraFormatter.m in Sources */,
 				4618ED081BF44B1700C33159 /* KCDaf.m in Sources */,
 				4618ED151BF44B7A00C33159 /* KCZmanimCalendar.m in Sources */,
-				4618EE181BF4F9EA00C33159 /* NSDate+ConvenientDates.m in Sources */,
+				4618EE181BF4F9EA00C33159 /* NSDate+ConvenientDates.m in Sources */,				B9BF8B6F76202AD2046EAFEA /* KCMeeusCalculator.m in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
