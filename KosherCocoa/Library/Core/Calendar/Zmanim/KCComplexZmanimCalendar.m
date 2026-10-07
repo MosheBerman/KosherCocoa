@@ -924,3 +924,59 @@ static BOOL KCIsErevPesach(NSDate *date, NSTimeZone *timeZone) {
 }
 
 @end
+
+@implementation KCComplexZmanimCalendar (BainHashmashos)
+
+- (nullable NSDate *)bainHashmashosYereim13Point5Minutes {
+    return [[self seaLevelSunset] dateByAddingTimeInterval:-13.5 * 60];
+}
+
+- (nullable NSDate *)bainHashmashosYereim16Point875Minutes {
+    return [[self seaLevelSunset] dateByAddingTimeInterval:-16.875 * 60];
+}
+
+- (nullable NSDate *)bainHashmashosYereim18Minutes {
+    return [self dateBySubtractingMinutes:18 fromDate:[self seaLevelSunset]];
+}
+
+- (nullable NSDate *)bainHashmashosYereim2Point1Degrees {
+    return [self sunsetOffsetByDegrees:kZenithMinus2Point1];
+}
+
+- (nullable NSDate *)bainHashmashosYereim2Point8Degrees {
+    return [self sunsetOffsetByDegrees:kZenithMinus2Point8];
+}
+
+- (nullable NSDate *)bainHashmashosYereim3Point05Degrees {
+    return [self sunsetOffsetByDegrees:kZenithMinus3Point05];
+}
+
+- (nullable NSDate *)bainHashmashosRT13Point24Degrees {
+    return [self sunsetOffsetByDegrees:kZenithThirteenPointTwentyFourDegrees];
+}
+
+- (nullable NSDate *)samuchLeMinchaKetanaGRA {
+    return [[self seaLevelSunrise] dateByAddingTimeInterval:[self shaahZmanisGra] * 9];
+}
+
+- (nullable NSDate *)samuchLeMinchaKetana72Minutes {
+    return [[self alos72] dateByAddingTimeInterval:[self shaahZmanis72Minutes] * 9];
+}
+
+- (nullable NSDate *)samuchLeMinchaKetana16Point1Degrees {
+    return [[self alos16Point1Degrees] dateByAddingTimeInterval:[self shaahZmanis16Point1Degrees] * 9];
+}
+
+- (long)shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point7Degrees {
+    return [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self tzaisGeonim3Point7Degrees]];
+}
+
+- (long)shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point8Degrees {
+    return [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self tzaisGeonim3Point8Degrees]];
+}
+
+- (long)shaahZmanisAlos16Point1DegreesToTzaisGeonim7Point083Degrees {
+    return [self temporalHourFromSunrise:[self alos16Point1Degrees] toSunset:[self tzaisGeonim7Point083Degrees]];
+}
+
+@end

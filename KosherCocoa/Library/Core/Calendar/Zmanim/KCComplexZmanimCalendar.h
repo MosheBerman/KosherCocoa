@@ -2229,3 +2229,117 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (nullable NSDate *)alos19Degrees;
 
 @end
+
+/**
+ *  BainHashmashos category on KCComplexZmanimCalendar.
+ *
+ *  Bain hashmashos (Yereim and Rabbeinu Tam degree variant), samuch lemincha
+ *  ketana, and the Ahavat Shalom shaah zmanis variants ported from KosherJava's
+ *  ComprehensiveZmanimCalendar.
+ *
+ *  Not re-declared here (already in the port, see the mapping fragment):
+ *  bainHashmashosRT2Stars, bainHashmashosRT58Point5Minutes,
+ *  bainHashmashosRT13Point5MinutesBefore7Point083Degrees,
+ *  plagAlos16Point1ToTzaisGeonim7Point083Degrees, plagAlosToSunset,
+ *  sofZmanShmaAlos16Point1ToSunset.
+ *
+ *  Note: the port has no useAstronomicalChatzosForOtherZmanim setting, so the
+ *  samuch lemincha ketana methods always use the shaah-zmanis branch, matching
+ *  KosherJava's default.
+ */
+
+/** Zenith constants needed by this category (guarded so a later central definition wins). */
+#ifndef kZenithMinus2Point1
+#define kZenithMinus2Point1 (kZenithGeometric - 2.1)
+#endif
+#ifndef kZenithMinus2Point8
+#define kZenithMinus2Point8 (kZenithGeometric - 2.8)
+#endif
+#ifndef kZenithMinus3Point05
+#define kZenithMinus3Point05 (kZenithGeometric - 3.05)
+#endif
+
+@interface KCComplexZmanimCalendar (BainHashmashos)
+
+/**
+ *  Beginning of bain hashmashos (Yereim) 13.5 minutes before sunset (3/4 of an
+ *  18-minute mil). Returns nil if uncomputable.
+ */
+- (nullable NSDate *)bainHashmashosYereim13Point5Minutes;
+
+/**
+ *  Beginning of bain hashmashos (Yereim) 16.875 minutes before sunset (3/4 of
+ *  a 22.5-minute mil). Returns nil if uncomputable.
+ */
+- (nullable NSDate *)bainHashmashosYereim16Point875Minutes;
+
+/**
+ *  Beginning of bain hashmashos (Yereim) 18 minutes before sunset (3/4 of a
+ *  24-minute mil). Returns nil if uncomputable.
+ */
+- (nullable NSDate *)bainHashmashosYereim18Minutes;
+
+/**
+ *  Beginning of bain hashmashos (Yereim) when the sun is 2.1° above the western
+ *  horizon (13.5 minutes before sunset at the equinox/equilux). Returns nil if
+ *  uncomputable.
+ */
+- (nullable NSDate *)bainHashmashosYereim2Point1Degrees;
+
+/**
+ *  Beginning of bain hashmashos (Yereim) when the sun is 2.8° above the western
+ *  horizon (16.875 minutes before sunset at the equinox/equilux). Returns nil
+ *  if uncomputable.
+ */
+- (nullable NSDate *)bainHashmashosYereim2Point8Degrees;
+
+/**
+ *  Beginning of bain hashmashos (Yereim) when the sun is 3.05° above the
+ *  western horizon (18 minutes before sunset at the equinox/equilux). Returns
+ *  nil if uncomputable.
+ */
+- (nullable NSDate *)bainHashmashosYereim3Point05Degrees;
+
+/**
+ *  Beginning of bain hashmashos (Rabbeinu Tam) when the sun is 13.24° below
+ *  the western horizon. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)bainHashmashosRT13Point24Degrees;
+
+/**
+ *  Samuch lemincha ketana (GRA): 9 shaos zmaniyos after sunrise. Returns nil
+ *  if uncomputable.
+ */
+- (nullable NSDate *)samuchLeMinchaKetanaGRA;
+
+/**
+ *  Samuch lemincha ketana: 9 shaos zmaniyos after alos 72 minutes. Returns nil
+ *  if uncomputable.
+ */
+- (nullable NSDate *)samuchLeMinchaKetana72Minutes;
+
+/**
+ *  Samuch lemincha ketana: 9 shaos zmaniyos after alos 16.1°. Returns nil if
+ *  uncomputable.
+ */
+- (nullable NSDate *)samuchLeMinchaKetana16Point1Degrees;
+
+/**
+ *  Shaah zmanis of a day from alos 16.1° to tzais (Geonim) 3.7°, in seconds.
+ *  LONG_MIN if uncomputable.
+ */
+- (long)shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point7Degrees;
+
+/**
+ *  Shaah zmanis of a day from alos 16.1° to tzais (Geonim) 3.8°, in seconds.
+ *  LONG_MIN if uncomputable.
+ */
+- (long)shaahZmanisAlos16Point1DegreesToTzaisGeonim3Point8Degrees;
+
+/**
+ *  Shaah zmanis of a day from alos 16.1° to tzais (Geonim) 7.083°, in
+ *  seconds. LONG_MIN if uncomputable.
+ */
+- (long)shaahZmanisAlos16Point1DegreesToTzaisGeonim7Point083Degrees;
+
+@end
