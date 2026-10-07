@@ -22,9 +22,6 @@
  * resulting solar position is good to roughly an arc-second. Meeus computes positions in Terrestrial Time (TT), so an
  * estimate of &Delta;T (TT - UT) is applied when evaluating the Sun's position.
  *
- * Deviation from KosherJava: uses the fixed 16' solar radius; the date-based apparent solar radius table is not
- * ported.
- *
  * The following public KosherJava MeeusCalculator methods are intentionally not ported because
  * KCAstronomicalCalculator has no hook for them: getUTCNoon, getUTCMidnight, getTimeAtAzimuth, getSolarElevation,
  * getSolarAzimuth, and setApplyDeltaT/isApplyDeltaT. The &Delta;T (TT - UT) correction is always applied, matching

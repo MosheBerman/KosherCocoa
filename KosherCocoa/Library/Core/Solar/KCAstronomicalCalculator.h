@@ -20,10 +20,15 @@ NS_SWIFT_NAME(AstronomicalCalculator)
 
 /** Atmospheric refraction in degrees. Default 34/60. */
 @property (nonatomic, assign) double refraction;
-/** Solar radius in degrees. Default 16/60. */
+/** Fixed solar radius in degrees, used for sunrise and sunset only when useApparentSolarRadius is NO. Default 16/60. */
 @property (nonatomic, assign) double solarRadius;
 /** Earth radius in meters. Default 6371.0088. */
 @property (nonatomic, assign) double earthRadius;
+/**
+ *  If YES (the default), sunrise and sunset use the date-based apparent solar radius from
+ *  apparentSolarRadiusForDate: instead of the fixed solarRadius. Setting solarRadius sets this to NO.
+ */
+@property (nonatomic, assign) BOOL useApparentSolarRadius;
 
 // MARK: - Calculating Sunrise
 
@@ -120,5 +125,35 @@ NS_SWIFT_NAME(AstronomicalCalculator)
  */
 
 - (double)adjustZenith:(double)zenith forElevation:(double)elevation;
+
+/**
+ *    Date-aware variant of adjustZenith:forElevation:. When useApparentSolarRadius is YES (the default)
+ *    and date is not nil, the zenith is adjusted with the apparent solar radius for that date;
+ *    otherwise the fixed solarRadius is used.
+ *
+ *  @param zenith The zenith to use with the calculation.
+ *
+ *  @param elevation The elevation to use for the calculation.
+ *
+ *  @param date The date used for the apparent solar radius lookup, or nil for the fixed solarRadius.
+ *
+ *    @return The zenith adjusted to include the sun's radius, refraction, and
+ *  elevation adjustment.
+ */
+
+- (double)adjustZenith:(double)zenith forElevation:(double)elevation onDate:(nullable NSDate *)date;
+
+/**
+ *    Returns the Sun's apparent angular semi-diameter (the "solar radius") for the given date, in degrees.
+ *    The value is read from a table keyed by day of year, precomputed from the VSOP87 Earth-Sun distance
+ *    for the common reference year 2050. A nil date falls back to the fixed solarRadius. February 29
+ *    resolves to February 28's value.
+ *
+ *  @param date The date to look up, or nil for the fixed solarRadius.
+ *
+ *    @return The Sun's apparent semi-diameter in degrees.
+ */
+
+- (double)apparentSolarRadiusForDate:(nullable NSDate *)date;
 
 @end

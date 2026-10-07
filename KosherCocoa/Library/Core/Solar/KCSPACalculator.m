@@ -107,7 +107,7 @@ typedef NS_ENUM(NSInteger, KCSolarEvent) {
 
 /**
  *  Calculate UTC sunrise or sunset (or any twilight angle) in 24-hour format. The horizon geometry (refraction, the
- *  sun's radius and the elevation dip) is supplied entirely by the parent adjustZenith:forElevation:, so the SPA
+ *  sun's radius and the elevation dip) is supplied entirely by the parent adjustZenith:forElevation:onDate:, so the SPA
  *  topocentric solution is solved for the un-refracted, parallax-corrected center of the Sun reaching that zenith.
  *
  *  @param localDate the date.
@@ -119,7 +119,7 @@ typedef NS_ENUM(NSInteger, KCSolarEvent) {
  */
 - (double)getUTCSunRiseSet:(NSDate *)localDate geoLocation:(KCGeoLocation *)geoLocation zenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation solarEvent:(KCSolarEvent)solarEvent {
     double elevation = adjustForElevation ? self.geoLocation.altitude : 0;
-    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation];
+    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation onDate:localDate];
     double riseSet = [self solveRiseSet:localDate geoLocation:geoLocation adjustedZenith:adjustedZenith solarEvent:solarEvent];
     if (isnan(riseSet)) {
         return NAN;
@@ -302,7 +302,7 @@ typedef NS_ENUM(NSInteger, KCSolarEvent) {
 
 /**
  *  Topocentric true (un-refracted) zenith of the Sun's center, used by the rise/set solver so that refraction
- *  is supplied solely by the parent adjustZenith:forElevation:.
+ *  is supplied solely by the parent adjustZenith:forElevation:onDate:.
  *
  *  @param julianDayUT the UT Julian day.
  *  @param latitude observer latitude in degrees.

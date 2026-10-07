@@ -55,7 +55,7 @@
 
 - (double)getUTCSunrise:(NSDate *)calendar geoLocation:(KCGeoLocation *)geoLocation zenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation {
     double elevation = adjustForElevation ? self.geoLocation.altitude : 0;
-    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation];
+    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation onDate:calendar];
 
     double sunrise = [self getSunriseUTC:[self getJulianDay:calendar] latitude:geoLocation.latitude longitude:geoLocation.longitude zenith:adjustedZenith];
     sunrise = sunrise / 60;
@@ -72,7 +72,7 @@
 
 - (double)getUTCSunset:(NSDate *)calendar geoLocation:(KCGeoLocation *)geoLocation zenith:(double)zenith adjustForElevation:(BOOL)adjustForElevation {
     double elevation = adjustForElevation ? self.geoLocation.altitude : 0;
-    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation];
+    double adjustedZenith = [self adjustZenith:zenith forElevation:elevation onDate:calendar];
 
     double sunset = [self getSunsetUTC:[self getJulianDay:calendar] latitude:geoLocation.latitude longitude:geoLocation.longitude zenith:adjustedZenith];
     sunset = sunset / 60;

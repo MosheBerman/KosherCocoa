@@ -30,6 +30,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
     }
     
     func testCalculatorSunrise() throws {
+        // Pinned to the second. Values use the date-based apparent solar radius.
         let lakewoodCalculator = NOAACalculator(geoLocation: GeoLocation(latitude: 40.08213, andLongitude: -74.20970, andTimeZone: TimeZone(identifier: "America/New_York")!))
         
         var januaryFirst = DateComponents()
@@ -44,7 +45,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         
         januaryFirst.hour = 7
         januaryFirst.minute = 18
-        januaryFirst.second = 57
+        januaryFirst.second = 55
         
         XCTAssertEqual(sunrise, gregorianCalendar.date(from: januaryFirst))
         
@@ -72,7 +73,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         
         augustFirst.hour = 5
         augustFirst.minute = 54
-        augustFirst.second = 51
+        augustFirst.second = 52
         
         XCTAssertEqual(sunrise, gregorianCalendar.date(from: augustFirst))
         
@@ -86,12 +87,13 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         
         decFirst.hour = 6
         decFirst.minute = 59
-        decFirst.second = 29
+        decFirst.second = 27
         
         XCTAssertEqual(sunrise, gregorianCalendar.date(from: decFirst))
     }
     
     func testCalculatorSunset() throws {
+        // Pinned to the second. Values use the date-based apparent solar radius.
         let lakewoodCalculator = NOAACalculator(geoLocation: GeoLocation(latitude: 40.08213, andLongitude: -74.20970, andTimeZone: TimeZone(identifier: "America/New_York")!))
         
         var januaryFirst = DateComponents()
@@ -106,7 +108,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         
         januaryFirst.hour = 16
         januaryFirst.minute = 41
-        januaryFirst.second = 56
+        januaryFirst.second = 58
         
         XCTAssertEqual(sunset, gregorianCalendar.date(from: januaryFirst))
         
@@ -120,7 +122,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         
         mayFirst.hour = 19
         mayFirst.minute = 51
-        mayFirst.second = 33
+        mayFirst.second = 32
         
         XCTAssertEqual(sunset, gregorianCalendar.date(from: mayFirst))
         
@@ -134,7 +136,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         
         augustFirst.hour = 20
         augustFirst.minute = 10
-        augustFirst.second = 56
+        augustFirst.second = 55
         
         XCTAssertEqual(sunset, gregorianCalendar.date(from: augustFirst))
         
@@ -148,7 +150,7 @@ final class KCAstronomicalCalculatorTests: XCTestCase {
         
         decFirst.hour = 16
         decFirst.minute = 31
-        decFirst.second = 56
+        decFirst.second = 58
         
         XCTAssertEqual(sunset, gregorianCalendar.date(from: decFirst))
     }
