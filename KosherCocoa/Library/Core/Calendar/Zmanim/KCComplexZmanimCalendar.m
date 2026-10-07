@@ -593,3 +593,114 @@
 
 
 @end
+
+@implementation KCComplexZmanimCalendar (BaalHatanya)
+
+- (nullable NSDate *)alosBaalHatanya {
+    return [self sunriseOffsetByDegrees:kZenithGeometric + 16.9];
+}
+
+- (double)shaahZmanisBaalHatanya {
+    return [self temporalHourFromSunrise:[self sunriseOffsetByDegrees:kZenithGeometric + 1.583]
+                               toSunset:[self sunsetOffsetByDegrees:kZenithGeometric + 1.583]];
+}
+
+- (nullable NSDate *)sofZmanShmaBaalHatanya {
+    double shaahZmanis = [self shaahZmanisBaalHatanya];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self sunriseOffsetByDegrees:kZenithGeometric + 1.583] dateByAddingTimeInterval:shaahZmanis * 3];
+}
+
+- (nullable NSDate *)sofZmanTfilaBaalHatanya {
+    double shaahZmanis = [self shaahZmanisBaalHatanya];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self sunriseOffsetByDegrees:kZenithGeometric + 1.583] dateByAddingTimeInterval:shaahZmanis * 4];
+}
+
+- (nullable NSDate *)minchaGedolaBaalHatanya {
+    double shaahZmanis = [self shaahZmanisBaalHatanya];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self sunriseOffsetByDegrees:kZenithGeometric + 1.583] dateByAddingTimeInterval:shaahZmanis * 6.5];
+}
+
+- (nullable NSDate *)minchaKetanaBaalHatanya {
+    double shaahZmanis = [self shaahZmanisBaalHatanya];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self sunriseOffsetByDegrees:kZenithGeometric + 1.583] dateByAddingTimeInterval:shaahZmanis * 9.5];
+}
+
+- (nullable NSDate *)plagHaminchaBaalHatanya {
+    double shaahZmanis = [self shaahZmanisBaalHatanya];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self sunriseOffsetByDegrees:kZenithGeometric + 1.583] dateByAddingTimeInterval:shaahZmanis * 10.75];
+}
+
+- (nullable NSDate *)tzaisBaalHatanya {
+    return [self sunsetOffsetByDegrees:kZenithGeometric + 6];
+}
+
+- (nullable NSDate *)tzaisGeonim3Point7Degrees {
+    return [self sunsetOffsetByDegrees:kZenithThreePointSeven];
+}
+
+- (nullable NSDate *)tzaisGeonim3Point8Degrees {
+    return [self sunsetOffsetByDegrees:kZenithGeometric + 3.8];
+}
+
+- (nullable NSDate *)minchaGedolaAhavatShalom {
+    NSDate *chatzos = [self chatzos];
+    NSDate *minchaGedola30 = [self minchaGedola30Minutes];
+    double shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees]
+                                             toSunset:[self tzaisGeonim3Point7Degrees]];
+
+    if (chatzos == nil || minchaGedola30 == nil || shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    NSDate *minchaGedolaAhavatShalom = [chatzos dateByAddingTimeInterval:shaahZmanis / 2];
+    return [minchaGedola30 compare:minchaGedolaAhavatShalom] == NSOrderedDescending ? minchaGedola30 : minchaGedolaAhavatShalom;
+}
+
+- (nullable NSDate *)minchaKetanaAhavatShalom {
+    double shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees]
+                                             toSunset:[self tzaisGeonim3Point8Degrees]];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self tzaisGeonim3Point8Degrees] dateByAddingTimeInterval:shaahZmanis * -2.5];
+}
+
+- (nullable NSDate *)plagHaminchaAhavatShalom {
+    double shaahZmanis = [self temporalHourFromSunrise:[self alos16Point1Degrees]
+                                             toSunset:[self tzaisGeonim3Point8Degrees]];
+
+    if (shaahZmanis == LONG_MIN) {
+        return nil;
+    }
+
+    return [[self tzaisGeonim3Point8Degrees] dateByAddingTimeInterval:shaahZmanis * -1.25];
+}
+
+@end

@@ -1895,3 +1895,105 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (nullable NSDate *)solarMidnight;
 
 @end
+
+/**
+ *  BaalHatanya category on KCComplexZmanimCalendar.
+ *
+ *  Zmanim calculated according to the opinion of the Baal Hatanya (day from
+ *  netz amiti, 1.583° below the horizon, to shkiah amiti, 1.583° below the
+ *  horizon) and the Ahavat Shalom luach of Yeshivat Chevrat Ahavat Shalom
+ *  (day from alos 16.1° to tzais 3.7°/3.8°).
+ *
+ *  Ported from KosherJava's ComprehensiveZmanimCalendar. The Baal Hatanya
+ *  1.583° dip has no named kZenith* constant in this library, so it is
+ *  expressed inline as (kZenithGeometric + 1.583), matching Java's
+ *  ZENITH_1_POINT_583. Likewise 16.9° and 6° alos/tzais dips and the 3.8°
+ *  tzais dip are expressed inline; 3.7° uses the existing kZenithThreePointSeven.
+ */
+@interface KCComplexZmanimCalendar (BaalHatanya)
+
+/**
+ *  The Baal Hatanya's alos (dawn), when the sun is 16.9° below the eastern
+ *  geometric horizon before netz amiti. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)alosBaalHatanya;
+
+/**
+ *  Mincha gedola according to the Baal Hatanya: 6.5 shaos zmaniyos after
+ *  netz amiti (sunriseBaalHatanya). Returns nil if uncomputable.
+ */
+- (nullable NSDate *)minchaGedolaBaalHatanya;
+
+/**
+ *  Mincha ketana according to the Baal Hatanya: 9.5 shaos zmaniyos after
+ *  netz amiti. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)minchaKetanaBaalHatanya;
+
+/**
+ *  Plag hamincha according to the Baal Hatanya: 10.75 shaos zmaniyos after
+ *  netz amiti. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)plagHaminchaBaalHatanya;
+
+/**
+ *  The Baal Hatanya's shaah zmanis (temporal hour): the day from netz amiti
+ *  to shkiah amiti (both 1.583° below the horizon) divided into 12 equal parts.
+ *
+ *  @return NSTimeInterval The length of a shaah zmanis in seconds.
+ *  LONG_MIN is returned if the calculation can't be computed.
+ */
+- (double)shaahZmanisBaalHatanya;
+
+/**
+ *  Latest zman krias shema according to the Baal Hatanya: 3 shaos zmaniyos
+ *  after netz amiti. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanShmaBaalHatanya;
+
+/**
+ *  Latest zman tfila according to the Baal Hatanya: 4 shaos zmaniyos after
+ *  netz amiti. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanTfilaBaalHatanya;
+
+/**
+ *  Tzais (nightfall) according to the Baal Hatanya, when the sun is 6° below
+ *  the western geometric horizon after sunset. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)tzaisBaalHatanya;
+
+/**
+ *  Mincha gedola per the Ahavat Shalom luach: half a shaah zmanis (day from
+ *  alos 16.1° to tzais 3.7°) after chatzos, or 30 minutes after chatzos,
+ *  whichever is later. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)minchaGedolaAhavatShalom;
+
+/**
+ *  Mincha ketana per the Ahavat Shalom luach: 2.5 shaos zmaniyos (day from
+ *  alos 16.1° to tzais 3.8°) before tzais 3.8°. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)minchaKetanaAhavatShalom;
+
+/**
+ *  Plag hamincha per the Ahavat Shalom luach: 1.25 shaos zmaniyos (day from
+ *  alos 16.1° to tzais 3.8°) before tzais 3.8°. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)plagHaminchaAhavatShalom;
+
+/**
+ *  Tzais (nightfall) when the sun is 3.7° below the western geometric horizon
+ *  (Geonim, 13.5 minutes after sunset). Helper for the Ahavat Shalom zmanim.
+ *  Returns nil if uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim3Point7Degrees;
+
+/**
+ *  Tzais (nightfall) when the sun is 3.8° below the western geometric horizon
+ *  (Geonim, 14 minutes after sunset). Helper for the Ahavat Shalom zmanim.
+ *  Use lechumra only. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)tzaisGeonim3Point8Degrees;
+
+@end
