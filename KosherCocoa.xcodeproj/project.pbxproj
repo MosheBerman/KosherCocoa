@@ -90,6 +90,7 @@
 		B9BF8B6F76202AD2046EAFEA /* KCMeeusCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = C28BB625212030B1B8D29A66 /* KCMeeusCalculator.m */; };
 		13C8B340433528A0A95B9CBE /* KCSPACalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 603D3ED40CD5571CBFED532F /* KCSPACalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52A4F82B01985473AC8E48E4 /* KCSPACalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 297CF52E219EEC2B92E26E4A /* KCSPACalculator.m */; };
+		FD18DB607730F8067F042326 /* Mapping-baal-hatanya-ahavat-shalom.json in Resources */ = {isa = PBXBuildFile; fileRef = BDDBCB09E8C7C9815B84A125 /* Mapping-baal-hatanya-ahavat-shalom.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +196,7 @@
 		C28BB625212030B1B8D29A66 /* KCMeeusCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCMeeusCalculator.m; sourceTree = "<group>"; };
 		603D3ED40CD5571CBFED532F /* KCSPACalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCSPACalculator.h; sourceTree = "<group>"; };
 		297CF52E219EEC2B92E26E4A /* KCSPACalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCSPACalculator.m; sourceTree = "<group>"; };
+		BDDBCB09E8C7C9815B84A125 /* Mapping-baal-hatanya-ahavat-shalom.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mapping-baal-hatanya-ahavat-shalom.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -477,12 +479,14 @@
 				F5F902FB1FC53C01003FE90D /* KCJewishCalendarTests.swift */,
 				5D435CF32A3C389B00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png */,
 				46DB495C1D9837D100F3A576 /* Info.plist */,				79E9B464B244A0E2EB5EA899 /* Golden */,
+				DE60A48FA25F869C2A20BEC5 /* Golden */,
 
 			);
 			path = KosherCocoaTests;
 			sourceTree = "<group>";
 		};
 		79E9B464B244A0E2EB5EA899 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
+		DE60A48FA25F869C2A20BEC5 /* Golden */ = {isa = PBXGroup; children = (); path = Golden; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -634,6 +638,7 @@
 			files = (
 				5D435CF42A3C389C00F66AE0 /* Screenshot 2023-06-16 at 2.27.26 AM.png in Resources */,				86D738832D8E549974366BF2 /* ZmanimGolden.json in Resources */,
 				6EB32EF00D85997023695031 /* Mapping-core.json in Resources */,
+				FD18DB607730F8067F042326 /* Mapping-baal-hatanya-ahavat-shalom.json in Resources */,
 
 			);
 			runOnlyForDeploymentPostprocessing = 0;
