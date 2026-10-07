@@ -480,11 +480,9 @@
 - (nullable NSDate *)tchilasZmanKidushLevana3DaysForDate:(NSDate * _Nonnull)date
 {
     NSDate *molad = [self moladForDate:date];
-    
+
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
-    [hebrewCalendar dateByAddingDays:3 toDate:molad];
-    
-    return [self moladForDate:molad];
+    return [hebrewCalendar dateByAddingDays:3 toDate:molad];
 }
 
 //  This method exists only for KosherJava compatibility
@@ -502,11 +500,9 @@
 - (nullable NSDate *)tchilasZmanKidushLevana7DaysForDate:(NSDate * _Nonnull)date
 {
     NSDate *molad = [self moladForDate:date];
-    
+
     NSCalendar *hebrewCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierHebrew];
-    [hebrewCalendar dateByAddingDays:7 toDate:molad];
-    
-    return [self moladForDate:molad];
+    return [hebrewCalendar dateByAddingDays:7 toDate:molad];
 }
 
 //  This method exists only for KosherJava compatibility
@@ -550,10 +546,11 @@
     
     NSDate *nextMolad = [self moladForDate:nextMonth];
     
-    //  Pull out the number of seconds in between the two moladot
+    //  Pull out the number of seconds in between the two moladot and add half
+    //  of it to the molad (Maharil: halfway between molad and molad).
     NSDateComponents *secondsComps = [hebrewCalendar components:NSCalendarUnitSecond fromDate:molad toDate:nextMolad options:0];
 
-    molad = [molad dateByAddingTimeInterval:[secondsComps second]];
+    molad = [molad dateByAddingTimeInterval:[secondsComps second] / 2];
     
     return molad;
 }
