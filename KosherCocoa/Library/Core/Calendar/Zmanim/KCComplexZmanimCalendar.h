@@ -2040,3 +2040,79 @@ NS_SWIFT_NAME(ComplexZmanimCalendar)
 - (nullable NSDate *)sofZmanBiurChametzMGA72MinutesZmanis;
 
 @end
+
+/**
+ *  FixedLocalChatzos category on KCComplexZmanimCalendar.
+ *
+ *  Zmanim based on fixed local chatzos (mean solar noon), ported from
+ *  KosherJava's ComprehensiveZmanimCalendar. These use a half-day based
+ *  shaah zmanis: the interval from the start of the half day (alos/sunrise or
+ *  chatzos) to its end (fixedLocalChatzos or sunset) divided into 6 parts.
+ *
+ *  The existing fixedLocalChatzos, ateretTorahSunsetOffset, and
+ *  sofZmanShmaAlos16Point1ToTzaisGeonim7Point083Degrees methods are reused
+ *  and are not re-declared here.
+ */
+@interface KCComplexZmanimCalendar (FixedLocalChatzos)
+
+/**
+ *  Mincha gedola as 30 minutes after fixed local chatzos (not half a shaah
+ *  zmanis after chatzos). Returns nil if uncomputable.
+ */
+- (nullable NSDate *)minchaGedolaGRAFixedLocalChatzos30Minutes;
+
+/**
+ *  The later of minchaGedola and minchaGedola30Minutes. Returns nil if either
+ *  is uncomputable.
+ */
+- (nullable NSDate *)minchaGedolaGRAGreaterThan30;
+
+/**
+ *  Mincha ketana GRA from fixed local chatzos to sunset: 3.5 half-day based
+ *  shaos zmaniyos after fixedLocalChatzos. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)minchaKetanaGRAFixedLocalChatzosToSunset;
+
+/**
+ *  Plag hamincha GRA from fixed local chatzos to sunset: 4.75 half-day based
+ *  shaos zmaniyos after fixedLocalChatzos. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)plagHaminchaGRAFixedLocalChatzosToSunset;
+
+/**
+ *  Latest zman krias shema GRA from sunrise to fixed local chatzos: 3 half-day
+ *  based shaos zmaniyos after sunrise. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanShmaGRASunriseToFixedLocalChatzos;
+
+/**
+ *  Latest zman krias shema MGA from alos 16.1° to fixed local chatzos: 3
+ *  half-day based shaos zmaniyos after alos. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanShmaMGA16Point1DegreesToFixedLocalChatzos;
+
+/**
+ *  Latest zman krias shema MGA from alos 18° to fixed local chatzos: 3
+ *  half-day based shaos zmaniyos after alos. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanShmaMGA18DegreesToFixedLocalChatzos;
+
+/**
+ *  Latest zman krias shema MGA from alos 72 minutes to fixed local chatzos: 3
+ *  half-day based shaos zmaniyos after alos. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanShmaMGA72MinutesToFixedLocalChatzos;
+
+/**
+ *  Latest zman krias shema MGA from alos 90 minutes to fixed local chatzos: 3
+ *  half-day based shaos zmaniyos after alos. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanShmaMGA90MinutesToFixedLocalChatzos;
+
+/**
+ *  Latest zman tfila GRA from sunrise to fixed local chatzos: 4 half-day
+ *  based shaos zmaniyos after sunrise. Returns nil if uncomputable.
+ */
+- (nullable NSDate *)sofZmanTfilaGRASunriseToFixedLocalChatzos;
+
+@end

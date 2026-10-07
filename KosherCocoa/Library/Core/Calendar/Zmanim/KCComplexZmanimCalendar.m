@@ -765,3 +765,118 @@ static BOOL KCIsErevPesach(NSDate *date, NSTimeZone *timeZone) {
 }
 
 @end
+
+@implementation KCComplexZmanimCalendar (FixedLocalChatzos)
+
+- (nullable NSDate *)minchaGedolaGRAFixedLocalChatzos30Minutes {
+    return [self dateByAddingMinutes:30 toDate:[self fixedLocalChatzos]];
+}
+
+- (nullable NSDate *)minchaGedolaGRAGreaterThan30 {
+    NSDate *minchaGedola30 = [self minchaGedola30Minutes];
+    NSDate *minchaGedola = [self minchaGedola];
+
+    if (minchaGedola30 == nil || minchaGedola == nil) {
+        return nil;
+    }
+
+    return [minchaGedola30 compare:minchaGedola] == NSOrderedDescending ? minchaGedola30 : minchaGedola;
+}
+
+- (nullable NSDate *)minchaKetanaGRAFixedLocalChatzosToSunset {
+    NSDate *startOfHalfDay = [self fixedLocalChatzos];
+    NSDate *endOfHalfDay = [self sunset];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 3.5];
+}
+
+- (nullable NSDate *)plagHaminchaGRAFixedLocalChatzosToSunset {
+    NSDate *startOfHalfDay = [self fixedLocalChatzos];
+    NSDate *endOfHalfDay = [self sunset];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 4.75];
+}
+
+- (nullable NSDate *)sofZmanShmaGRASunriseToFixedLocalChatzos {
+    NSDate *startOfHalfDay = [self sunrise];
+    NSDate *endOfHalfDay = [self fixedLocalChatzos];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 3];
+}
+
+- (nullable NSDate *)sofZmanShmaMGA16Point1DegreesToFixedLocalChatzos {
+    NSDate *startOfHalfDay = [self alos16Point1Degrees];
+    NSDate *endOfHalfDay = [self fixedLocalChatzos];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 3];
+}
+
+- (nullable NSDate *)sofZmanShmaMGA18DegreesToFixedLocalChatzos {
+    NSDate *startOfHalfDay = [self alos18Degrees];
+    NSDate *endOfHalfDay = [self fixedLocalChatzos];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 3];
+}
+
+- (nullable NSDate *)sofZmanShmaMGA72MinutesToFixedLocalChatzos {
+    NSDate *startOfHalfDay = [self alos72];
+    NSDate *endOfHalfDay = [self fixedLocalChatzos];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 3];
+}
+
+- (nullable NSDate *)sofZmanShmaMGA90MinutesToFixedLocalChatzos {
+    NSDate *startOfHalfDay = [self alos90];
+    NSDate *endOfHalfDay = [self fixedLocalChatzos];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 3];
+}
+
+- (nullable NSDate *)sofZmanTfilaGRASunriseToFixedLocalChatzos {
+    NSDate *startOfHalfDay = [self sunrise];
+    NSDate *endOfHalfDay = [self fixedLocalChatzos];
+
+    if (startOfHalfDay == nil || endOfHalfDay == nil) {
+        return nil;
+    }
+
+    double shaahZmanis = [endOfHalfDay timeIntervalSinceDate:startOfHalfDay] / 6;
+    return [startOfHalfDay dateByAddingTimeInterval:shaahZmanis * 4];
+}
+
+@end
